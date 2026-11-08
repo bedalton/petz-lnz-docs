@@ -1,0 +1,92 @@
+[
+  {
+    "version": "petz4",
+    "path": "Resource/Dogz/Scottie.dog",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "png_bytes": 5694
+  },
+  {
+    "version": "petz4",
+    "path": "Resource/Catz/Siamese.cat",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "png_bytes": 5011
+  },
+  {
+    "version": "petz3",
+    "path": "Resource/Dogz/Scottie.dog",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "png_bytes": 5694
+  },
+  {
+    "version": "petz3",
+    "path": "Resource/Catz/Siamese.cat",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "png_bytes": 5011
+  },
+  {
+    "version": "petz5",
+    "path": "Resource/Dogz/Scottie.dog",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "png_bytes": 5694
+  },
+  {
+    "version": "petz5",
+    "path": "Resource/Catz/Siamese.cat",
+    "parameters": {
+      "seed": 0,
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "age": 100,
+      "fatness": 50
+    },
+    "ok": true,
+    "input_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "png_bytes": 5011
+  }
+]

@@ -1,0 +1,6 @@
+.DS_Store
+/games/
+/scratch/
+# Existing external renderer checkout: record integration before vendoring.
+/petz-renderer-mcp/
+__pycache__/

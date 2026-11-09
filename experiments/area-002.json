@@ -1,0 +1,1226 @@
+{
+  "experiment": "AREA-002",
+  "backend": "local stdio MCP default head pose; direct Python head rotation32",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "settings": {
+    "three_four": [
+      [
+        3,
+        4
+      ],
+      false,
+      null,
+      3
+    ],
+    "four_three": [
+      [
+        4,
+        3
+      ],
+      false,
+      null,
+      4
+    ],
+    "reverse_endpoints": [
+      [
+        3,
+        4
+      ],
+      true,
+      null,
+      3
+    ],
+    "skip_one_eight": [
+      [
+        1,
+        8,
+        4,
+        3
+      ],
+      false,
+      null,
+      4
+    ],
+    "omit_first": [
+      [
+        3,
+        4
+      ],
+      false,
+      3,
+      4
+    ],
+    "only_ignored": [
+      [
+        1,
+        8
+      ],
+      false,
+      null,
+      8
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 94,
+      "neighbor_ids": {
+        "1": 90,
+        "3": 91,
+        "4": 92,
+        "8": 93
+      },
+      "paths": {
+        "three_four": "Dogz-three_four.dog",
+        "four_three": "Dogz-four_three.dog",
+        "reverse_endpoints": "Dogz-reverse_endpoints.dog",
+        "skip_one_eight": "Dogz-skip_one_eight.dog",
+        "omit_first": "Dogz-omit_first.dog",
+        "only_ignored": "Dogz-only_ignored.dog"
+      },
+      "input_hashes": {
+        "three_four": "ec5f34ba453fdff23fea537b701b8b757ee337dd100752dc502ba03edcf63a49",
+        "four_three": "40854a5628566293bd0214c93d67a28b4fc6a54dc671330419264bb81bfbd3af",
+        "reverse_endpoints": "26f8ccd522fd102312de31ca9475df8147ff89221ab740313d02e854c47b776d",
+        "skip_one_eight": "6e5dcf1ffdba2328db523f1014b0177e39e8c91df4ed514696ced9b345798d39",
+        "omit_first": "48655372cfe85e584f92ee5f5bdcf0761256095fb037fb31586e7f6a03441f2d",
+        "only_ignored": "fb952d5dc44d55f378f391b5ec4f7a4269e2eb10f2a3e894d45dba25f3f77a75"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -25,
+            "y": -97,
+            "z": -71,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -15,
+            "y": -130,
+            "z": -27,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -12,
+            "y": -51,
+            "z": -78,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 94,
+      "neighbor_ids": {
+        "1": 90,
+        "3": 91,
+        "4": 92,
+        "8": 93
+      },
+      "paths": {
+        "three_four": "Catz-three_four.cat",
+        "four_three": "Catz-four_three.cat",
+        "reverse_endpoints": "Catz-reverse_endpoints.cat",
+        "skip_one_eight": "Catz-skip_one_eight.cat",
+        "omit_first": "Catz-omit_first.cat",
+        "only_ignored": "Catz-only_ignored.cat"
+      },
+      "input_hashes": {
+        "three_four": "bfbcb9be43c5e431075a0ff136c64c247bb16f49b3e9aafb2e2b0f2eeb661ad1",
+        "four_three": "1ccd14dcf59791dbba0e491769d912310d1c5f0101bf1096405ddf572b281672",
+        "reverse_endpoints": "dc335717a7288ae7f4523459f7367254082000d0b98903810e67a9ea0a2de84c",
+        "skip_one_eight": "441e1e178bf4090b4c4e5a1e5ab216863ac6ba23e2af3253fb7d9313f2d9bee0",
+        "omit_first": "6faeaf33fac448fa5ae316075387e189767ca1a66f89ceb22e8959bf65b55624",
+        "only_ignored": "065ea56c3f92e0724d6872f63060fc45394e4bec131729897d2c1c4aff9646e4"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -22,
+            "y": -93,
+            "z": -74,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -134,
+            "z": -36,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "three_four",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "four_three",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_endpoints",
+          "marker_area": 3,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "skip_one_eight",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omit_first",
+          "marker_area": 4,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 0,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "only_ignored",
+          "marker_area": 8,
+          "neighbor_areas": {
+            "1": 1,
+            "3": 3,
+            "4": 4,
+            "8": 8
+          },
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -24,
+            "y": -5,
+            "z": -236,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-three_four.dog",
+        "after_path": "Dogz-four_three.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b3b6dad44d1262fbc214666ad0162210f9e7aa3fa112034ec5b3e5ecff88d727",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-three_four.dog",
+        "after_path": "Dogz-four_three.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "64f86c19adfb7101ed59af99346a3e9697969f29bab455e1a715abaf96f52275",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-three_four.dog",
+        "after_path": "Dogz-reverse_endpoints.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b3b6dad44d1262fbc214666ad0162210f9e7aa3fa112034ec5b3e5ecff88d727",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-three_four.dog",
+        "after_path": "Dogz-reverse_endpoints.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "64f86c19adfb7101ed59af99346a3e9697969f29bab455e1a715abaf96f52275",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-three_four.cat",
+        "after_path": "Catz-four_three.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "df2440db6cc19e36c715b28c7bb325f40135073a8f84c3e576790b3a91cf7801",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-three_four.cat",
+        "after_path": "Catz-four_three.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "62656e16da61cc6bb1402a5184ee34a794abee74a5e7d00abc6344101125c643",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-three_four.cat",
+        "after_path": "Catz-reverse_endpoints.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "df2440db6cc19e36c715b28c7bb325f40135073a8f84c3e576790b3a91cf7801",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-three_four.cat",
+        "after_path": "Catz-reverse_endpoints.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "62656e16da61cc6bb1402a5184ee34a794abee74a5e7d00abc6344101125c643",
+      "cells_equal": true
+    }
+  ],
+  "evaluation_source_sha256": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

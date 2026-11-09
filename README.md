@@ -27,6 +27,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 - [Connector session overview and integrity checks](docs/session-2026-11-09-connectors.md)
 
+- [AREA-002: conflicting neighbor precedence](experiments/area-002.md)
 - [AREA-001: connection-derived body areas](experiments/area-001.md)
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
 - [LINE-004: short rows and default thickness](experiments/line-004.md)

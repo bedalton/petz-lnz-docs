@@ -3,7 +3,7 @@ import json
 from collections import Counter
 from petz_renderer.formats.resolver import ResourceResolver
 from research_common import ROOT,SHA
-EXPERIMENTS=('line-002','line-003','morph-001','area-001','line-004')
+EXPERIMENTS=('line-002','line-003','morph-001','area-001','line-004','area-002')
 summary=[]
 for experiment in EXPERIMENTS:
     report=json.loads((ROOT/'experiments'/f'{experiment}.json').read_text())

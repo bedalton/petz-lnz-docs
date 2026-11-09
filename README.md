@@ -12,6 +12,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 - [Dogz base-ball labels](format-reference/anatomy/dogz.md), [Catz base-ball labels](format-reference/anatomy/catz.md): visual checks mostly pending
 - [Section inheritance](format-reference/inheritance.md)
+- [Move](format-reference/move.md) and [renderer evidence gaps](troubleshooting/rendering-gaps.md)
 - [Head Enlargement](format-reference/head-enlargement.md)
 - [Choosing head editing controls](visual-editing/head-ball.md)
 
@@ -24,3 +25,4 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [HEAD-001: head size versus spacing](experiments/head-001.md)
 
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable hash/control manifest.
+- [MOVE-001: reference-column behavior](experiments/move-001.md)

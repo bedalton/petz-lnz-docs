@@ -24,7 +24,7 @@ AGENTS.md → STATUS.md → docs/research-plan.md. Commit every logical unit usi
 
 ## Next actions
 
-HEAD-001 completed: see experiments/head-001.md and tools/head_shape_probe.py. Eight aligned MCP comparisons (front/side standing), numerical checks in three poses. Equal +25 increments to A or B give identical radius arrays but spread versus crowd feature centers; renderer uses A+B for base diameters, A-B for spacing with an A!=100 gate. Four comparison images reviewed. Next test the A=100 gate and Move reference-column behavior; update source discrepancy. Expand ball-map visual coverage systematically, not by assuming stock labels prove behavior. Documentation structure is agent-first; website deferred.
+HEAD-001 completed: see experiments/head-001.md and tools/head_shape_probe.py. Eight aligned MCP comparisons (front/side standing), numerical checks in three poses. Equal +25 increments to A or B give identical radius arrays but spread versus crowd feature centers; renderer uses A+B for base diameters, A-B for spacing with an A!=100 gate. Four comparison images reviewed. MOVE-001 now complete: tools/move_probe.py, 36 numerical asset loads and eight MCP comparisons. Zero-vector reference rows are no-ops; omitted reference equals self; nonzero reference matters in sitting/lying, hidden by neutral standing rotations. Scottie projections propagate head movement to 6,30,63. Community anchoring gap documented, not a confirmed renderer defect. Next test the A=100 head gate and improve coverage/navigation/checks. Expand ball-map visual coverage systematically, not by assuming stock labels prove behavior. Documentation structure is agent-first; website deferred.
 
 ## Safeguards and open limits
 

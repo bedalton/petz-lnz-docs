@@ -1,0 +1,784 @@
+{
+  "experiment": "MORPH-001",
+  "backend": "local stdio MCP default state; direct Python explicit updates",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "group": 15,
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_rows": {
+        "active": "52, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "dormant": "52, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 15, -1, -1",
+        "omitted": "52, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1"
+      },
+      "line_row": "52, 90, 0, 125, 244, 244, 25, 25, 0, 1",
+      "paths": {
+        "original": "Dogz-original.dog",
+        "active": "Dogz-active.dog",
+        "dormant": "Dogz-dormant.dog",
+        "omitted": "Dogz-omitted.dog"
+      },
+      "input_hashes": {
+        "original": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "active": "b0168d4e7c46e953a66e128b3d4554ae6e4e91d1e9046f61bc7d567731fd1652",
+        "dormant": "71cbbfdf5334e77471e7f6d2aba9ae011d017d2aa79c847ec3c28e9d8320d6c7",
+        "omitted": "a77c1f2539cd193ed514765a2a06159561386090b8845ab97633db00a4a2766a"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "standing",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "standing",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "standing",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "sitting",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "lying",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_rows": {
+        "active": "24, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "dormant": "24, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 15, -1, -1",
+        "omitted": "24, -36, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1"
+      },
+      "line_row": "24, 90, 0, 125, 244, 244, 25, 25, 0, 1",
+      "paths": {
+        "original": "Catz-original.cat",
+        "active": "Catz-active.cat",
+        "dormant": "Catz-dormant.cat",
+        "omitted": "Catz-omitted.cat"
+      },
+      "input_hashes": {
+        "original": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "active": "263f3b6ed7aadc81987be1a16db4003dceee738165445c29cd77a08ed05dddc5",
+        "dormant": "20aa20b498ee26626b7441db1cd5a644655006a47d6b7115024e025973fb6428",
+        "omitted": "dde18f7b68be2c6f297f1fa11083ebb27b0407c80b95d4217a2cbc9c3c0f1724"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "standing",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "standing",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "standing",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "sitting",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "sitting",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 0,
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "diameter": 0,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "group_amount": 0,
+          "visible_prefix": 24,
+          "group_mask": 1
+        },
+        {
+          "pose": "lying",
+          "amount": 25,
+          "offset": [
+            -9,
+            -20,
+            0
+          ],
+          "diameter": 5,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 25,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 50,
+          "offset": [
+            -18,
+            -40,
+            0
+          ],
+          "diameter": 10,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 50,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        },
+        {
+          "pose": "lying",
+          "amount": 100,
+          "offset": [
+            -36,
+            -80,
+            0
+          ],
+          "diameter": 20,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "group_amount": 100,
+          "visible_prefix": 24,
+          "group_mask": 32769
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "original",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Dogz-original.dog",
+        "after_path": "Dogz-dormant.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c6ba82ae90a02c7d7b2d032231f8667db8fffa1c967ffcb441cb9666f9efe0e8",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "original",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Dogz-original.dog",
+        "after_path": "Dogz-dormant.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b258b5d18df2f87b678b435e2109157e47c629030b9175ee6f39fc413f395a1e",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "active",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Dogz-active.dog",
+        "after_path": "Dogz-dormant.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "3fd28f46b77292e439cff0a87d2cf03961c3ff7403ebb54a6de959079b5069a4",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "active",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Dogz-active.dog",
+        "after_path": "Dogz-dormant.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "7e3a301be04f9da1b3641e892d4f838f668bd333fe3caea88edde4dcb0dcfae5",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "dormant",
+        "omitted"
+      ],
+      "controls": {
+        "before_path": "Dogz-dormant.dog",
+        "after_path": "Dogz-omitted.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c6ba82ae90a02c7d7b2d032231f8667db8fffa1c967ffcb441cb9666f9efe0e8",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "dormant",
+        "omitted"
+      ],
+      "controls": {
+        "before_path": "Dogz-dormant.dog",
+        "after_path": "Dogz-omitted.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b258b5d18df2f87b678b435e2109157e47c629030b9175ee6f39fc413f395a1e",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "original",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Catz-original.cat",
+        "after_path": "Catz-dormant.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1e56397792e52b38178dedffd11422cca5dd729d9bfd09de55f97b0436a87b77",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "original",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Catz-original.cat",
+        "after_path": "Catz-dormant.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4c71bd3b0b834744ffead55de1b9ce9e6e4ea8f93276d9c20e5dd68fc0aa6d45",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "active",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Catz-active.cat",
+        "after_path": "Catz-dormant.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "12f90b13af37cc5b5dad686daa32ee96e0f3b65f4b4a2b2fdf1c84e2309d17ca",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "active",
+        "dormant"
+      ],
+      "controls": {
+        "before_path": "Catz-active.cat",
+        "after_path": "Catz-dormant.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5a7149ab80b2da548198c7e8ca788eddb94294645e78a88fd7c0e3323bbf1c55",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "dormant",
+        "omitted"
+      ],
+      "controls": {
+        "before_path": "Catz-dormant.cat",
+        "after_path": "Catz-omitted.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1e56397792e52b38178dedffd11422cca5dd729d9bfd09de55f97b0436a87b77",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "dormant",
+        "omitted"
+      ],
+      "controls": {
+        "before_path": "Catz-dormant.cat",
+        "after_path": "Catz-omitted.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4c71bd3b0b834744ffead55de1b9ce9e6e4ea8f93276d9c20e5dd68fc0aa6d45",
+      "cells_equal": true
+    }
+  ]
+}

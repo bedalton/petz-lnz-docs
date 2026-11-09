@@ -7,7 +7,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Topic | Current evidence / remaining work |
 | --- | --- |
 | 256 Eyelid Color | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Add Ball | Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); remaining fields need tests |
+| Add Ball | Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); remaining fields need tests |
 | Add Ball Override | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Additional Frames | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Adjust Clothing | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -64,7 +64,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 
 1. Seek native iris omission evidence after EYE-002; tongue-out validation deferred (user reports provided MCP animations lack it, VIS-002).
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
-3. Expand LINE-001 beyond one connector; body areas and morph groups.
+3. Expand connectors, body areas and morph groups beyond MORPH-001 ordinary sizing.
 4. Another breed per species; broaden edited cross-version checks beyond PROJECT-003 projections.
 5. Further shape/color/texture/marking sections, growth/variation and design examples.
 

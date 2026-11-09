@@ -17,12 +17,14 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [Linez and connections](format-reference/linez.md)
 - [Move](format-reference/move.md), [Project Ball](format-reference/project-ball.md)
 - [Iris/pupil colors](visual-editing/eye-colors.md)
+- [Added-ball groups](format-reference/add-groups.md)
 - [Added-ball fields](format-reference/add-ball.md), [attached details](visual-editing/attached-details.md)
 - [Omissions](format-reference/omissions.md), [visibility diagnosis](visual-editing/visibility.md)
 - [Renderer evidence gaps](troubleshooting/rendering-gaps.md)
 
 ## Evidence
 
+- [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
 - [LINE-003: connector draw order](experiments/line-003.md)
 - [LINE-002: connector widths](experiments/line-002.md)
 - [LINE-001: connected marker and omissions](experiments/line-001.md)

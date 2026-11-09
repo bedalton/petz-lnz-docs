@@ -14,6 +14,7 @@ Use one numeric ID per row. Preserve existing rows. The renderer reads the first
 | Ordinary visible ball | Can disappear; incident lines are removed too |
 | Already omitted ball | No further pixel change |
 | Added unconnected marker | Visibility becomes false; position/radius and row retained |
+| Connected added marker | Omission removes its incident connector; parent omission leaves marker visible ([LINE-001](../experiments/line-001.md)) |
 | Iris ID | No pixel change in tested views because iris drawing uses host-eye overlays |
 | Right host eye / host plus iris | Same pixels as each other, different from control in EYE-002 front/side |
 

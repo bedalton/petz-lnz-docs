@@ -28,6 +28,6 @@ An ordinary head-attached marker did **not** automatically grow or stretch away 
 
 With a valid size-base-ball ID, rendering/attachment.py computes radius as `(size * ball_scale >> 8) + referenced_ball.radius`, then clamps it. This differs from ordinary addball diameter scaling, which uses a shift by 9. ADD-001 used size=-8 relative to the head and observed matching radius growth. Keep this distinction and clamping in mind; do not convert that row into a general pixel-size promise.
 
-To hide a detail, append its ID to Omissions. In the tested unconnected marker this preserved its row, ID and computed dimensions while hiding it. Omission interactions with lines, groups and morphs need separate investigation.
+To hide a detail, append its ID to Omissions. In the tested unconnected marker this preserved its row, ID and computed dimensions while hiding it. [LINE-001](../experiments/line-001.md) tests a head-to-marker connector: omitting either endpoint removes it; omitting the parent does not hide the marker. Groups and morphs still need separate investigation.
 
 Source revision: 9d72d7afd5f7460ef18133c6179caaf8055082d9; appearance/core.py, appearance/evaluation.py, rendering/attachment.py and rendering/morphs.py. Only a subset of these fields has controlled visual tests.

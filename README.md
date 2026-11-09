@@ -26,3 +26,4 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable hash/control manifest.
 - [MOVE-001: reference-column behavior](experiments/move-001.md)
+- [HEAD-002: A=100 spacing boundary](experiments/head-002.md)

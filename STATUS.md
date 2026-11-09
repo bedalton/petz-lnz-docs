@@ -9,6 +9,7 @@ Updated: 2026-11-09
 - Findings: master head IDs Dogz 52/Catz 24; isolated size/color/move edits change renders, but head-ball movement does not move all facial features.
 - Latest shape result: [HEAD-001](experiments/head-001.md) separates head radius and spacing effects; eight aligned comparisons and three-pose numerical checks.
 - Move: [MOVE-001](experiments/move-001.md) confirms rotated offsets, zero-vector no-op and downstream projection effects. Native anchoring discrepancy tracked as GAP-001.
-- Next: Head Enlargement A=100 gate; coverage ledger and documentation checks; expand visual anatomy validation.
+- Head boundary: [HEAD-002](experiments/head-002.md) confirms A=100 skips spacing while neighboring values activate it.
+- Next: coverage ledger/documentation checks, then controlled visual anatomy validation and added-ball interactions.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

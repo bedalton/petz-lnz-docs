@@ -1,0 +1,566 @@
+{
+  "experiment": "VIS-002",
+  "backend": "local stdio MCP render_contact_sheet",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "runtime_reference": "vis-001.json",
+  "master_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+  "installed_python_sources_sha256": "b604960e20b0e9e542104bc38614c1cfd15b7017dc499e3057b4adcd445ac912",
+  "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+  "input_sha256": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3",
+  "omission_manifest_sha256": "40dc8e861483342f45cad19e355a1a063a542fdc8b2f702a5b897d8a11bbc49f",
+  "pages": [
+    {
+      "stem": "Catz-standing-yaw0",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "c8b47acbdcc10e19cba4880783563a0607723efea736ec9d332545fd40429fc5",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "c07181ae6d31093df07c7c931248db52d83e15b0c54f398ff51cbdeacfc42f77",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-standing-yaw90",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "63bea7f01389ed1a3bad5ca1a8587be1c37903166dcc3cefbb7999cb1be83f4c",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "2595aed9486248d9371b0e5dbabb2df945e2c5f136d54236078cefa7ad201300",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-standing-yaw180",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "7381c7053823dd58f791a4bc02e2fa1c9550f667bceee29da59ef218642f3444",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "8957873ca62fe7f4dc95a619c14d41388c5b57dec6fec77bc06b7b2189a609a0",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-standing-yaw270",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "99e56b393cfdc37a054a29d76a91f933b1c65582bacb30a72581ee588d904761",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "e44721a557a81b24e66dd4d0edef0f27a719c92e00519293250aad91e13c340c",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "e44721a557a81b24e66dd4d0edef0f27a719c92e00519293250aad91e13c340c",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "e44721a557a81b24e66dd4d0edef0f27a719c92e00519293250aad91e13c340c",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "74ece830033fadf30037a6a0310f869d68034d6bdcc246c283d472ec39cbabe3",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-sitting-yaw0",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "0ce723e76962dd94e15bc16e2739b11e31305807351666732c77f493e05776c0",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "f9eff968829f416daa527c6d6a51b6d33edf7a039e1791f1259dfd83d87a5f35",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-sitting-yaw90",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "5a7ec19b33d03e3d333eb2f53ee4b0e00b90cc30f04f6b497e24cf6a9db9772d",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "e12c43ac7d6b1122f48bb47302b4d305bf434bb81efe3ebc184ddf8e0c5f056d",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-sitting-yaw180",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "bdd340bcc80e842508a08aa82057b7b73657768e97fdf73ec9b763a7469c4219",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "56b96da8eb7072be8d9fb0cef2bf847be6c0eb7597451eab7905c897898c63e0",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-sitting-yaw270",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "c7d0ab290740582d89b874e4ab63e9cb73a703847e06cfc9f1ee630d4ac4c143",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "b9a965d70e497983b964c26710bd611ea2ce8d54be0a06b4c34662cc9130a9df",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "b9a965d70e497983b964c26710bd611ea2ce8d54be0a06b4c34662cc9130a9df",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "b9a965d70e497983b964c26710bd611ea2ce8d54be0a06b4c34662cc9130a9df",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "9f35afddb13ebd98a071587badf5323174f36cafd288b57bb7794b37d1b91347",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-lying-yaw0",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "36066a73fb9517d6408e4523ab7dd953cb5360896bf768459b37d29349a03ceb",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "a9f6c13e2893370608b8b90f544f9ed9a63829dfd6df68d846b0054def453d89",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-lying-yaw90",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "16dd26afc4ee7ee14a5f9ba4e50140cfb0e865f181d74f1e342c0a569a696053",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "e2241cbca474fa28f8ae5e8ab46b6761a72d63f3e1e8fbdb70ea49db50dfccb4",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-lying-yaw180",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "8d2a2f7d90450f791053c00ceea1c27d565644bb6c9b5ac5f0ce869ee487a9e7",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "603709be9601f1be72b63617d026bdfcff10c3328cdab44f0ef97a45472d6ffe",
+          "same_as_control": false
+        }
+      ]
+    },
+    {
+      "stem": "Catz-lying-yaw270",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "cell_ball_ids": [
+        null,
+        55,
+        56,
+        24
+      ],
+      "png_sha256": "812ed476fa4f49aed54ebb5a31f5d5d61ac463d2bec0e4b3bc66dc5f499946dc",
+      "cells": [
+        {
+          "ball": null,
+          "pixel_sha256": "8b95a842210ee0215251efeb8ec85b7ddc0e9f012c375a7b675744be39c65772",
+          "same_as_control": true
+        },
+        {
+          "ball": 55,
+          "pixel_sha256": "8b95a842210ee0215251efeb8ec85b7ddc0e9f012c375a7b675744be39c65772",
+          "same_as_control": true
+        },
+        {
+          "ball": 56,
+          "pixel_sha256": "8b95a842210ee0215251efeb8ec85b7ddc0e9f012c375a7b675744be39c65772",
+          "same_as_control": true
+        },
+        {
+          "ball": 24,
+          "pixel_sha256": "240d6475585223e533bd7f0c6d922b49a7403f3e2fdb0c7f9c1e878d0db4ab63",
+          "same_as_control": false
+        }
+      ]
+    }
+  ]
+}

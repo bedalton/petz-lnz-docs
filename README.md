@@ -33,6 +33,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [ADD-001: attachment, resizing and omission](experiments/add-001.md)
 - [OMIT-001: all-base-ball omission sweep](experiments/omit-001.md)
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)
+- [VIS-002: Catz 55/56 across poses and views](experiments/vis-002.md)
 
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable manifest; read that only when checking detailed evidence.
 

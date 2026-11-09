@@ -16,7 +16,7 @@ Private inputs/copies/images/provenance live under ignored scratch/research/<exp
 
 ## Completed research
 
-README.md links eleven experiment writeups and manifests. All behavior findings remain renderer/asset/code evidence, not native-game validation.
+README.md links twelve experiment writeups and manifests. All behavior findings remain renderer/asset/code evidence, not native-game validation.
 
 - SMOKE-001: Scottie/Siamese inspection/renders across Petz 3/4/5.
 - ANATOMY-001: 67 candidate labels per species from Dalmatian/Siamese; cross-version label/key agreement, not complete visual semantics.
@@ -29,9 +29,11 @@ README.md links eleven experiment writeups and manifests. All behavior findings 
 
 - VIS-001: three-pose numerical audit of all unchanged OMIT-001 IDs. Dogz 63/64 and Catz 57–62 have zero radius; Catz 55/56 remain positive (4 standing, 1 sitting/lying), with occlusion only a hypothesis. No new renders. See [writeup](experiments/vis-001.md), manifest and tools/visibility_geometry.py.
 
+- VIS-002: local MCP, 12 sheets / 24 target observations for Catz 55/56 across three poses and four yaws. All unchanged; head controls all change. Three sheets visually reviewed. See [writeup](experiments/vis-002.md). Uses unchanged OMIT-001 private copy; atomic resume checks in tools/visibility_views.py.
+
 ## Next research
 
-Render Catz 55/56 omissions in more poses/angles; these are the remaining positive-radius, non-iris, non-omitted unchanged cases after VIS-001. Test more frames/angles and another breed per species before promoting visual atlas identities. Consider iris/host omission combinations and independent native evidence. Expand connected added details, body areas/morph groups, remaining shape/color/texture sections and edited cross-version checks. Do not repair ambiguous renderer behavior without a reproducer and evidence of intended native semantics.
+Test iris/host omission combinations. VIS-002 broadened Catz 55/56 sampling without exposing a contribution; seek an open-mouth frame or isolation probe before calling this occlusion. Test more frames/angles and another breed per species before promoting visual atlas identities. Consider iris/host omission combinations and independent native evidence. Expand connected added details, body areas/morph groups, remaining shape/color/texture sections and edited cross-version checks. Do not repair ambiguous renderer behavior without a reproducer and evidence of intended native semantics.
 
 ## Checks and safeguards
 

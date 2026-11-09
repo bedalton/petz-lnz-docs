@@ -61,7 +61,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Render unresolved Catz 55/56 in more poses/angles after VIS-001; test iris/host combinations.
+1. Test iris/host combinations; VIS-002 leaves Catz 55/56 cause unresolved after three poses/four yaws.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.

@@ -2,7 +2,7 @@
 
 Updated: 2026-11-09
 
-- Environment recovery: [RESTORE-001](experiments/restore-001.md); renderer reinstalled at recorded revision, but missing game resources prevent local MCP startup. Prior private artifacts are absent.
+- Environment restored: [RESTORE-002](experiments/restore-002.md); game folders corrected, local Petz 4 HTTP MCP connected, six cross-version stdio smoke pairs pass and match prior hashes. Prior private artifacts are still absent.
 
 - Complete: local MCP baseline across six species/version combinations; first copy-only Petz 4 edits and native-resolution visual review.
 - Latest inventory: [ANATOMY-001](experiments/anatomy-001.md), with 67 candidate labels per species across versions; [community sources](sources/community-index.md).

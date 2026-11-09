@@ -1,0 +1,119 @@
+{
+  "backend": "local stdio MCP smoke; Petz 4 loopback HTTP MCP discovery",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16",
+  "dependency_file_hash": "37a2119cae6312ea96a7dca6f1ecd9768a9db7550312a108d849f2cc3eb36c55",
+  "shared_engine_hashes": {
+    "petz3": {
+      "petz 3.exe": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+      "resource/catz 3 rez.dll": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+      "resource/dogz 3 rez.dll": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+      "resource/petz 3 rez.dll": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb"
+    },
+    "petz4": {
+      "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+      "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+    },
+    "petz5": {
+      "petz 5.exe": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+      "resource/catz 5 rez.dll": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+      "resource/dogz 5 rez.dll": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+      "resource/petz 5 rez.dll": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff"
+    }
+  },
+  "matches_prior_smoke": true,
+  "results": [
+    {
+      "version": "petz4",
+      "path": "Resource/Dogz/Scottie.dog",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "png_bytes": 5694
+    },
+    {
+      "version": "petz4",
+      "path": "Resource/Catz/Siamese.cat",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "png_bytes": 5011
+    },
+    {
+      "version": "petz3",
+      "path": "Resource/Dogz/Scottie.dog",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+      "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "png_bytes": 5694
+    },
+    {
+      "version": "petz3",
+      "path": "Resource/Catz/Siamese.cat",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "png_bytes": 5011
+    },
+    {
+      "version": "petz5",
+      "path": "Resource/Dogz/Scottie.dog",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+      "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "png_bytes": 5694
+    },
+    {
+      "version": "petz5",
+      "path": "Resource/Catz/Siamese.cat",
+      "parameters": {
+        "seed": 0,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "ok": true,
+      "input_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "png_bytes": 5011
+    }
+  ]
+}

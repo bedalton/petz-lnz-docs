@@ -8,7 +8,7 @@ Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for re
 
 ## Current container recovery
 
-[RESTORE-001](experiments/restore-001.md): checkout and environment restored, but games/ and previous private evidence are missing. Local launcher check fails before server construction. No local MCP connection is active. Restore game resources before rendering; freshly resolved dependencies require renewed provenance. Earlier environment descriptions below are historical unless reconfirmed.
+[RESTORE-002](experiments/restore-002.md): user restored games; moved nested games/games/petz3–5 to games/petz3–5. Local Petz 4 HTTP server is running at http://127.0.0.1:8765/mcp in this container session; real HTTP discovery/capability call passed. Six stdio inspect/render pairs pass and match prior SMOKE-001 records exactly. New private evidence: scratch/research/restore-002. Previous private experiments remain missing; do not assume their copies/checkpoints exist. Dependencies freshly resolved; manifest records engine and dependency hashes. No source changes.
 
 ## Environment and persistence
 

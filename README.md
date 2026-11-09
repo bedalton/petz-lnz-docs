@@ -22,7 +22,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 ## Evidence
 
-- [RESTORE-001: container recovery](experiments/restore-001.md)
+- [RESTORE-001: container recovery](experiments/restore-001.md), [RESTORE-002: local MCP restored](experiments/restore-002.md)
 - [PROJECT-001: synthetic projection semantics](experiments/project-001.md)
 
 - [SMOKE-001: local rendering across versions](experiments/smoke-001.md)

@@ -7,6 +7,7 @@ Updated: 2026-11-09
 - Prior: [BALL-001](experiments/ball-001.md), [manifest](experiments/ball-001.json), [head editing note](visual-editing/head-ball.md).
 - Inheritance: [INHERIT-001](experiments/inherit-001.md) confirms whole-section replacement for Key Balls in both sampled Petz 4 breeds.
 - Findings: master head IDs Dogz 52/Catz 24; isolated size/color/move edits change renders, but head-ball movement does not move all facial features.
-- Next: aligned comparisons/geometry checks and head-group controls; Move reference discrepancy.
+- Latest shape result: [HEAD-001](experiments/head-001.md) separates head radius and spacing effects; eight aligned comparisons and three-pose numerical checks.
+- Next: test Move reference-column discrepancy and Head Enlargement A=100 gate; expand visual anatomy coverage.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

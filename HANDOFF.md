@@ -24,7 +24,7 @@ AGENTS.md → STATUS.md → docs/research-plan.md. Commit every logical unit usi
 
 ## Next actions
 
-Create aligned multi-view comparisons and numerical geometry checks for isolated versus group head controls. Then test Move reference-column behavior and update the source discrepancy. Expand ball-map visual coverage systematically, not by assuming stock labels prove behavior. Documentation structure is agent-first; website deferred.
+HEAD-001 completed: see experiments/head-001.md and tools/head_shape_probe.py. Eight aligned MCP comparisons (front/side standing), numerical checks in three poses. Equal +25 increments to A or B give identical radius arrays but spread versus crowd feature centers; renderer uses A+B for base diameters, A-B for spacing with an A!=100 gate. Four comparison images reviewed. Next test the A=100 gate and Move reference-column behavior; update source discrepancy. Expand ball-map visual coverage systematically, not by assuming stock labels prove behavior. Documentation structure is agent-first; website deferred.
 
 ## Safeguards and open limits
 

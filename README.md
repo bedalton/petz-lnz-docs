@@ -1,17 +1,26 @@
 # Petz LNZ research
 
-An evidence-backed, agent-first guide to designing Petz breeds from images and concepts, growing into a thorough LNZ reference.
+An evidence-backed, agent-first guide to designing Petz breeds from images and concepts, growing into a thorough LNZ reference. Research starts with Petz 4 Dogz/Catz, then validates edited behavior across Petz 3 and 5. Current findings describe renderer behavior; original-game fidelity remains unverified.
 
-- [Research plan](docs/research-plan.md): phases, evidence standards and acceptance criteria.
-- [Status](STATUS.md): current progress and next work.
-- [Handoff](HANDOFF.md): resume after a container restart.
-- [Agent instructions](AGENTS.md): persistence, research and commit rules.
+## Start here
 
-Research starts with Petz 4 Dogz and Catz, then validates findings across Petz 3 and 5. Documentation and experiments have not yet begun; renderer support is advertised, not locally verified in this project.
-
-Research started: see [local renderer baseline](experiments/smoke-001.md) and [initial inheritance finding](format-reference/inheritance.md). Current progress is maintained in STATUS.md.
-
-- [First controlled ball experiment](experiments/ball-001.md)
-- [Head-ball editing cautions](visual-editing/head-ball.md)
-- [Dogz anatomy index](format-reference/anatomy/dogz.md) and [Catz anatomy index](format-reference/anatomy/catz.md)
+- [Status](STATUS.md), [handoff](HANDOFF.md), [agent instructions](AGENTS.md)
+- [Research plan](docs/research-plan.md)
 - [Community source ledger](sources/community-index.md)
+
+## Reference and editing
+
+- [Dogz base-ball labels](format-reference/anatomy/dogz.md), [Catz base-ball labels](format-reference/anatomy/catz.md): visual checks mostly pending
+- [Section inheritance](format-reference/inheritance.md)
+- [Head Enlargement](format-reference/head-enlargement.md)
+- [Choosing head editing controls](visual-editing/head-ball.md)
+
+## Evidence
+
+- [SMOKE-001: local rendering across versions](experiments/smoke-001.md)
+- [BALL-001: isolated head-ball edits](experiments/ball-001.md)
+- [ANATOMY-001: labels and master keys](experiments/anatomy-001.md)
+- [INHERIT-001: section replacement](experiments/inherit-001.md)
+- [HEAD-001: head size versus spacing](experiments/head-001.md)
+
+Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable hash/control manifest.

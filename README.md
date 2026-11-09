@@ -23,6 +23,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 ## Evidence
 
+- [LINE-002: connector widths](experiments/line-002.md)
 - [LINE-001: connected marker and omissions](experiments/line-001.md)
 
 - [RESTORE-001: container recovery](experiments/restore-001.md), [RESTORE-002: local MCP restored](experiments/restore-002.md)

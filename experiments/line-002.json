@@ -1,0 +1,1123 @@
+{
+  "experiment": "LINE-002",
+  "backend": "local stdio MCP plus direct block construction",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "widths": {
+    "zero": [
+      0,
+      0
+    ],
+    "thin": [
+      10,
+      10
+    ],
+    "quarter": [
+      25,
+      25
+    ],
+    "full": [
+      100,
+      100
+    ],
+    "taper": [
+      100,
+      0
+    ],
+    "reverse": [
+      0,
+      100
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "marker": null,
+        "zero": "52, 90, 0, 125, 244, 244, 0, 0, 0, 1",
+        "thin": "52, 90, 0, 125, 244, 244, 10, 10, 0, 1",
+        "quarter": "52, 90, 0, 125, 244, 244, 25, 25, 0, 1",
+        "full": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "taper": "52, 90, 0, 125, 244, 244, 100, 0, 0, 1",
+        "reverse": "52, 90, 0, 125, 244, 244, 0, 100, 0, 1"
+      },
+      "paths": {
+        "marker": "Dogz-marker.dog",
+        "zero": "Dogz-zero.dog",
+        "thin": "Dogz-thin.dog",
+        "quarter": "Dogz-quarter.dog",
+        "full": "Dogz-full.dog",
+        "taper": "Dogz-taper.dog",
+        "reverse": "Dogz-reverse.dog"
+      },
+      "input_hashes": {
+        "marker": "c2af54d7b6ab2c4fb0388713c5371883ef897142111f8fa1c483f9407e982740",
+        "zero": "841a5a75fb5d1e0f1b46319a41bdb844e9e5b48ff4bd2c4cdbbee52e1239f3ee",
+        "thin": "78cc84efd69e4f7d7ab1367ff929929dfe38e1c7aedff10feecb49c6be8c9df5",
+        "quarter": "aaa352f143977af72812d18e78f3dbb5facf4c6abefa556b3eba892eafba6a81",
+        "full": "8bb4cfcce67a188330f0eb4433e082c8046f73e9391b7aade3f2e86b12616b8b",
+        "taper": "23a5dd3c3f95dacbfc47724143f23a2fe2ce9ffc331c6361a7e569b17102d603",
+        "reverse": "ae83c6b3fdeaf70c12af67a7ffe84f1040ccd503117be7678b9a129e684535f0"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "standing",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            10,
+            2
+          ],
+          "block_widths": [
+            10,
+            2
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            9
+          ],
+          "block_widths": [
+            43,
+            9
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            9
+          ],
+          "block_widths": [
+            1,
+            9
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            10,
+            2
+          ],
+          "block_widths": [
+            10,
+            2
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            9
+          ],
+          "block_widths": [
+            43,
+            9
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            9
+          ],
+          "block_widths": [
+            1,
+            9
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "lying",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            10,
+            2
+          ],
+          "block_widths": [
+            10,
+            2
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            9
+          ],
+          "block_widths": [
+            43,
+            9
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            5
+          ],
+          "preclamp_widths": [
+            0,
+            9
+          ],
+          "block_widths": [
+            1,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "marker": null,
+        "zero": "24, 90, 0, 125, 244, 244, 0, 0, 0, 1",
+        "thin": "24, 90, 0, 125, 244, 244, 10, 10, 0, 1",
+        "quarter": "24, 90, 0, 125, 244, 244, 25, 25, 0, 1",
+        "full": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "taper": "24, 90, 0, 125, 244, 244, 100, 0, 0, 1",
+        "reverse": "24, 90, 0, 125, 244, 244, 0, 100, 0, 1"
+      },
+      "paths": {
+        "marker": "Catz-marker.cat",
+        "zero": "Catz-zero.cat",
+        "thin": "Catz-thin.cat",
+        "quarter": "Catz-quarter.cat",
+        "full": "Catz-full.cat",
+        "taper": "Catz-taper.cat",
+        "reverse": "Catz-reverse.cat"
+      },
+      "input_hashes": {
+        "marker": "e5c4bf5b958a650476c5af559a84e6bc8bf3aadfb5aa4da2a95e0d74cf42fa72",
+        "zero": "513b5f288ba5f323c683c29933e281334d674b6063ca5347b052ba58b556007d",
+        "thin": "672297c69c8c6e60525cb5d2af9cbf201f1b097da4a920642d12f049765dfc7c",
+        "quarter": "852621c07b9a5ccc9f286b587f789d7427404fe6d5ff0e4a97c215fddba050a1",
+        "full": "6ec30e8338a4f2a90f4051b4e52d5821b9c0f2d9d82899348d93c91d978e42ea",
+        "taper": "33f8a24ca07d1cda0255a8696c9b9cf2f5f4908be41e113ed3e004e1c49c3cf9",
+        "reverse": "98d96e6dd4a06ebff5c7d39713b422e1f656e4794a60af9127f247da2654bed4"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "standing",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            10,
+            1
+          ],
+          "block_widths": [
+            10,
+            1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            7
+          ],
+          "block_widths": [
+            43,
+            7
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            7
+          ],
+          "block_widths": [
+            1,
+            7
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            10,
+            1
+          ],
+          "block_widths": [
+            10,
+            1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            7
+          ],
+          "block_widths": [
+            43,
+            7
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            7
+          ],
+          "block_widths": [
+            1,
+            7
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "zero",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            0
+          ],
+          "block_widths": null
+        },
+        {
+          "pose": "lying",
+          "variant": "thin",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            4,
+            0
+          ],
+          "block_widths": [
+            4,
+            1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "quarter",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            10,
+            1
+          ],
+          "block_widths": [
+            10,
+            1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "full",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            7
+          ],
+          "block_widths": [
+            43,
+            7
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "taper",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            43,
+            0
+          ],
+          "block_widths": [
+            43,
+            1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse",
+          "endpoint_radii": [
+            22,
+            4
+          ],
+          "preclamp_widths": [
+            0,
+            7
+          ],
+          "block_widths": [
+            1,
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "variant": "zero",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-zero.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6070a233a22edc7f1dd0875aa8d1d60375725bc333edf6675b019f6893daf2e7",
+      "cells_equal": true,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "zero",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-zero.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "85b75b2b000b7f1efcb831f5eda34af05c5ddf5b565569ce78d1493beb7457bd",
+      "cells_equal": true,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "thin",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-thin.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "5e580c48b808033b6743914084183240e576429a5356d8da574c6109fb3f8cdb",
+      "cells_equal": false,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "3d57ede83694ab550365576626061efab593ae7566173d4174f32f2f24fd6bba"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "thin",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-thin.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "dbf41d388c419bb987b918cebc7bb218d6b07dd9bf425115ec5faf8759f361a6",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "33cfdcfc4d54a99e8755d6d312ac9ca11652c060db4722f3ae41901a4867a809"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "quarter",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-quarter.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "e0a211e638fac567e6e88a3cf3fbff846a09949af44c345feef30ce4a1feb155",
+      "cells_equal": false,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "4bbd6e2f2b38f0cec92c38f2c6318a72e6effafd16f53bc4a0e4d32470007c6a"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "quarter",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-quarter.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8ac3901c668fcf371f4b83f425602e472c8f9de77e366103c295edd7e5b30c9b",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "8d4040e90794a8477ebca44519f2f97fb9e0dddb689c7bd55b6321a1cb2a362f"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "full",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-full.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b563b7fdb07c2437ce4b75157d9c97edb6986ec0ebf7ef48b290dcdf94a799d4",
+      "cells_equal": false,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "e299eca5bbba4f38f0e99078d3291d64d4d2f5a15effc02f047ccbdcfa263333"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "full",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-full.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c5f0f1ccc53207afef42eac0364322990bef93b38bedab7cd4c3ed4da89c72a7",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "6f961eaa062bdaccdd7852d23677e29740f4dca77834f6cb1d70317d1292d1d0"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "taper",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-taper.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "63a7f97eae6bd9c241525e562257b86b41cef73c46615e6f2bac6e77edc98341",
+      "cells_equal": false,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "07cd39472e7afbc70e34b756c1640572d92293a132ac3d771a9d3fb4d50f0b1b"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "taper",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-taper.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "a454a15f38ac0803fc8e6b56c7690e2061ea28e0916729dca08094b8ad288007",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "c71fa1752e99263ed6059227497e73fbd97a7fe8bc352d37e3002836cc431cb9"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "reverse",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-reverse.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "5c241901f07bb3c6823823c2ea45b6c7546bbbea414e041815e1830317938960",
+      "cells_equal": false,
+      "cell_hashes": [
+        "efdf5f29306a13152b13420216f6fb6f528d9ed9e0129fd298882f880eceecd7",
+        "e3321facf3bcce6bb3c80b0893abcf53249d05fd4a99d246cf90491b1954b618"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "reverse",
+      "controls": {
+        "before_path": "Dogz-marker.dog",
+        "after_path": "Dogz-reverse.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f1834b5fb2e35a8a77bc3b6888adecb99f977597e2db80e9fd8e0fb64e9dea99",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c7d3c8b44373a7e716c6957d6347e2e8e3a98194a86366ef5a739361669d426e",
+        "bebb13ceaccf68d5e1afc5f24bedb7a48446f7b0ca572c29218d3a7dcc604f15"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "zero",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-zero.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "3080a4b578095b9feacb2a18a9f8f540bc5622bf6c6518bd498339bbd08be8c2",
+      "cells_equal": true,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "zero",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-zero.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "aa7735884d460e8f15867c085743987ec09da92a08da40668412e5359b55e204",
+      "cells_equal": true,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "thin",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-thin.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "144b4549a4a6280595cc38ccce2a41b9f7963a6dfb582df0caba69c7cb247531",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "a6c0645c8740c58d43b31f59288ac00f6c5f8ac62743fb8ed67662b39407bb2b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "thin",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-thin.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c5dfa2c59e30aa81f7a4dea60ff0476e6aa29555c1418c1556d24cd27392e6ef",
+      "cells_equal": false,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "814df9c66bf0fe24fb62e49b4769ac63e71de6164a52d5f20ec7db36897a747a"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "quarter",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-quarter.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "250715954bc67621635b0d201e0c9013ce634c61ace52291b14e0b48de308048",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "1c7d2e7e2762847aad0092b39a6b2da57df53dcc5f0c94ece6e03b107b4a05bc"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "quarter",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-quarter.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "cd1fde0450e3f5eed06ec41dac25d03c6d23c9d0ab2e99e884f09b7527a11250",
+      "cells_equal": false,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "a6a99cb4eb2ca41776a5472a1a4fb33b7467a7dc1b383a471576ba69761b0bcf"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "full",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-full.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6a5da0a140056b0f9e3c75579d4045eadd0c86566515d1f8269673e110837b4a",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "1cb2f730fb7490d542d1ae4cdfe3b84fd325cb9e0b8da8c8e9c9c7066441f8f0"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "full",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-full.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5acda5f09aa3274c408cf3cdcde330dc9bf269ec0e52962e7562bf6ad28f0558",
+      "cells_equal": false,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "774049b910334b4e1d2af84d1e599194a06f256630fafa03a10cc89469dedf93"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "taper",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-taper.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "a8240adfd716e4e49c78d8db1594f4119600133e5424023bcd8346db8854b222",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "9e9c24d61cfbdf3bae9e4e17889574b23019582eed8eb380357cad9717fcf044"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "taper",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-taper.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "e05838dbbd19a1200edc35917a176d336becdd783f4c74815366868b8ebe53b0",
+      "cells_equal": false,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "a5926dca7c2866b47a033b24a522334fcfcd18df35f16a73089d8d6dac42da33"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "reverse",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-reverse.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "60cf40f8b27c3355739695ed4fd92bc7c7d99c406efe4987fa81f99b5e15b849",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3a750ed37b185e43b2e8048e5076b578dd9eba2a5a4cc56b788f73febb07e489",
+        "0b29593adb50559b4f79a405267768d6274b7df8e71bff3f2bb893461757c207"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "reverse",
+      "controls": {
+        "before_path": "Catz-marker.cat",
+        "after_path": "Catz-reverse.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "9eef0cab375ee7bd27788b5aec4fb4c52001e8e57529137fbdb109a80c2fa205",
+      "cells_equal": false,
+      "cell_hashes": [
+        "bccedd79916caa47e3f9d574c9e824013bf189534dff2d916830aa0e93623594",
+        "031b49f62bc8a2b583617f29bc1a410118ebee9c5f32e389e22f5e22ca9c9960"
+      ]
+    }
+  ]
+}

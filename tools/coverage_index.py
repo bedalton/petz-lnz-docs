@@ -6,7 +6,7 @@ rows=json.loads((ROOT/'experiments/anatomy-001.json').read_text())
 names={k for r in rows for field in ('breed_sections','master_sections') for k in r[field]}
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
- 'Linez':'Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); styling/order pending',
+ 'Linez':'Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); order/other styling pending',
  'Add Ball':'Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); remaining fields need tests',
  'Omissions':'All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending',
  'Head Enlargement':'Tested size/spacing and A=100 gate: [HEAD-001](../experiments/head-001.md), [HEAD-002](../experiments/head-002.md)',

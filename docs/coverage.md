@@ -7,7 +7,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Topic | Current evidence / remaining work |
 | --- | --- |
 | 256 Eyelid Color | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Add Ball | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Add Ball | Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); remaining fields need tests |
 | Add Ball Override | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Additional Frames | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Adjust Clothing | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -37,7 +37,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |
 | Num Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Omissions | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Omissions | Unconnected added-ball visibility tested in [ADD-001](../experiments/add-001.md); base/line/morph cases pending |
 | Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Project Ball | Downstream effect observed in MOVE-001; independent field test pending |
@@ -60,9 +60,9 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Added-ball attachment and head-control interactions.
+1. Multi-view base-ball identification with omitted/occluded/utility-ball handling.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
-3. Multi-view base-ball identification with omitted/occluded/utility-ball handling.
+3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.
 5. Further shape/color/texture/marking sections, growth/variation and design examples.
 

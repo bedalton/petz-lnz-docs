@@ -1,0 +1,2061 @@
+{
+  "experiment": "ADD-001",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "paths": {
+        "original": "Dogz-original.dog",
+        "control": "Dogz-control.dog",
+        "enlarged": "Dogz-enlarged.dog",
+        "moved": "Dogz-moved.dog",
+        "relative": "Dogz-relative.dog",
+        "relative_enlarged": "Dogz-relative_enlarged.dog",
+        "omitted": "Dogz-omitted.dog"
+      },
+      "input_hashes": {
+        "original": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "control": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b",
+        "enlarged": "04206eaaafa3a1ff8dc49e8809e835c71882887a3262b3ceecf8525a489d8861",
+        "moved": "c1720338a919633a41501f3735564b0c37a144f3b12f84190ce5c7e79d20e7b4",
+        "relative": "12da4e2c8522ae666a8d34c785c6fb0a52c5894a10609eb07ba1e9759c462738",
+        "relative_enlarged": "880878b0bf46bd418fe3736b0a3978451ba41189e60c9134bef087ee9ae9655c",
+        "omitted": "e857c9efdb16220caa7b4d4af720058d6dac81a3e742e34d15bb2e91e3be1e4a"
+      },
+      "added_rows": {
+        "control": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "enlarged": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "moved": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "relative": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, -8, 0, 0, -1, 52",
+        "relative_enlarged": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, -8, 0, 0, -1, 52",
+        "omitted": "52, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1"
+      },
+      "marker_fields": {
+        "control": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "enlarged": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "moved": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "relative": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": -8,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": 52
+        },
+        "relative_enlarged": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": -8,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": 52
+        },
+        "omitted": {
+          "base": 52,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        }
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "control",
+          "marker": {
+            "x": -19,
+            "y": -76,
+            "z": -83,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": -1,
+            "y": -52,
+            "z": -75,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "enlarged",
+          "marker": {
+            "x": -19,
+            "y": -76,
+            "z": -83,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": -1,
+            "y": -52,
+            "z": -75,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "moved",
+          "marker": {
+            "x": -9,
+            "y": -76,
+            "z": -83,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 10,
+            "y": -52,
+            "z": -75,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "relative",
+          "marker": {
+            "x": -19,
+            "y": -76,
+            "z": -83,
+            "radius": 17,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": -1,
+            "y": -52,
+            "z": -75,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -19,
+            "y": -76,
+            "z": -83,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": -1,
+            "y": -52,
+            "z": -75,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted",
+          "marker": {
+            "x": -19,
+            "y": -76,
+            "z": -83,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": -1,
+            "y": -52,
+            "z": -75,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              11,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "control",
+          "marker": {
+            "x": -13,
+            "y": -112,
+            "z": -32,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -84,
+            "z": -23,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "enlarged",
+          "marker": {
+            "x": -13,
+            "y": -112,
+            "z": -32,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -84,
+            "z": -23,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "moved",
+          "marker": {
+            "x": -4,
+            "y": -110,
+            "z": -31,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 10,
+            "y": -82,
+            "z": -22,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "relative",
+          "marker": {
+            "x": -13,
+            "y": -112,
+            "z": -32,
+            "radius": 17,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -84,
+            "z": -23,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -13,
+            "y": -112,
+            "z": -32,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -84,
+            "z": -23,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted",
+          "marker": {
+            "x": -13,
+            "y": -112,
+            "z": -32,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -84,
+            "z": -23,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              2,
+              1
+            ],
+            "posed_head_delta": [
+              9,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              9,
+              2,
+              0
+            ],
+            "prebody_head_delta": [
+              9,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "control",
+          "marker": {
+            "x": -14,
+            "y": -30,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 5,
+            "y": -4,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "enlarged",
+          "marker": {
+            "x": -14,
+            "y": -30,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 5,
+            "y": -4,
+            "z": -92,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "moved",
+          "marker": {
+            "x": -3,
+            "y": -30,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 15,
+            "y": -4,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "relative",
+          "marker": {
+            "x": -14,
+            "y": -30,
+            "z": -92,
+            "radius": 17,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 5,
+            "y": -4,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -14,
+            "y": -30,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 5,
+            "y": -4,
+            "z": -92,
+            "radius": 27,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted",
+          "marker": {
+            "x": -14,
+            "y": -30,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": 5,
+            "y": -4,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              10,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              11,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              10,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "paths": {
+        "original": "Catz-original.cat",
+        "control": "Catz-control.cat",
+        "enlarged": "Catz-enlarged.cat",
+        "moved": "Catz-moved.cat",
+        "relative": "Catz-relative.cat",
+        "relative_enlarged": "Catz-relative_enlarged.cat",
+        "omitted": "Catz-omitted.cat"
+      },
+      "input_hashes": {
+        "original": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "control": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0",
+        "enlarged": "003af331cb156c4994d1c5a70d0f994435202ef3f5f5ff5a913e957952d6bc2d",
+        "moved": "34e046250905680daff4749bebe473d92e4a6d56aefd9f25445041ea1ad767bf",
+        "relative": "d5dff08b596e2806c0d170eb350dd2a04a74e70e787bbca3e3439f7943b25930",
+        "relative_enlarged": "872a9d29562bc0c380091e339d9280cd3b2989b8b1dd6eb484391c90c158d07d",
+        "omitted": "842adf075d9052155d6d45bcefdc83a5bb2010a0e5591f7fe9f7ed44cb04e260"
+      },
+      "added_rows": {
+        "control": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "enlarged": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "moved": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+        "relative": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, -8, 0, 0, -1, 24",
+        "relative_enlarged": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, -8, 0, 0, -1, 24",
+        "omitted": "24, -35, -50, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1"
+      },
+      "marker_fields": {
+        "control": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "enlarged": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "moved": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        },
+        "relative": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": -8,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": 24
+        },
+        "relative_enlarged": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": -8,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": 24
+        },
+        "omitted": {
+          "base": 24,
+          "x": -35,
+          "y": -50,
+          "z": 0,
+          "color": 125,
+          "outline_color": 244,
+          "speckle_color": -1,
+          "fuzz": 0,
+          "group": -1,
+          "outline": -1,
+          "size": 20,
+          "body_area": 0,
+          "add_group": 0,
+          "texture": -1,
+          "size_base_ball": -1
+        }
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "control",
+          "marker": {
+            "x": -16,
+            "y": -76,
+            "z": -84,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 0,
+            "y": -56,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "enlarged",
+          "marker": {
+            "x": -16,
+            "y": -76,
+            "z": -84,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 0,
+            "y": -56,
+            "z": -78,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "moved",
+          "marker": {
+            "x": -7,
+            "y": -76,
+            "z": -84,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 8,
+            "y": -56,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "relative",
+          "marker": {
+            "x": -16,
+            "y": -76,
+            "z": -84,
+            "radius": 18,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 0,
+            "y": -56,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -16,
+            "y": -76,
+            "z": -84,
+            "radius": 24,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 0,
+            "y": -56,
+            "z": -78,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted",
+          "marker": {
+            "x": -16,
+            "y": -76,
+            "z": -84,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": 0,
+            "y": -56,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "posed_head_delta": [
+              8,
+              0,
+              0
+            ],
+            "prebody_marker_delta": [
+              9,
+              0,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "control",
+          "marker": {
+            "x": -10,
+            "y": -119,
+            "z": -39,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -96,
+            "z": -32,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "enlarged",
+          "marker": {
+            "x": -10,
+            "y": -119,
+            "z": -39,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -96,
+            "z": -32,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "moved",
+          "marker": {
+            "x": -2,
+            "y": -119,
+            "z": -38,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 9,
+            "y": -94,
+            "z": -31,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "relative",
+          "marker": {
+            "x": -10,
+            "y": -119,
+            "z": -39,
+            "radius": 18,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -96,
+            "z": -32,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -10,
+            "y": -119,
+            "z": -39,
+            "radius": 24,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -96,
+            "z": -32,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted",
+          "marker": {
+            "x": -10,
+            "y": -119,
+            "z": -39,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": 1,
+            "y": -96,
+            "z": -32,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              0,
+              1
+            ],
+            "posed_head_delta": [
+              8,
+              2,
+              1
+            ],
+            "prebody_marker_delta": [
+              8,
+              1,
+              0
+            ],
+            "prebody_head_delta": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "control",
+          "marker": {
+            "x": -15,
+            "y": 13,
+            "z": -249,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 2,
+            "y": 34,
+            "z": -245,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "enlarged",
+          "marker": {
+            "x": -15,
+            "y": 13,
+            "z": -249,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 2,
+            "y": 34,
+            "z": -245,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "moved",
+          "marker": {
+            "x": -7,
+            "y": 12,
+            "z": -250,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 10,
+            "y": 33,
+            "z": -246,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "relative",
+          "marker": {
+            "x": -15,
+            "y": 13,
+            "z": -249,
+            "radius": 18,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 2,
+            "y": 34,
+            "z": -245,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "relative_enlarged",
+          "marker": {
+            "x": -15,
+            "y": 13,
+            "z": -249,
+            "radius": 24,
+            "visible": true,
+            "parked": false
+          },
+          "head": {
+            "x": 2,
+            "y": 34,
+            "z": -245,
+            "radius": 28,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 8,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted",
+          "marker": {
+            "x": -15,
+            "y": 13,
+            "z": -249,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head": {
+            "x": 2,
+            "y": 34,
+            "z": -245,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "body_area": 0,
+          "movement_probe": {
+            "posed_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "posed_head_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_marker_delta": [
+              8,
+              -1,
+              -1
+            ],
+            "prebody_head_delta": [
+              8,
+              -1,
+              -1
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "before": "original",
+      "after": "control",
+      "controls": {
+        "before_path": "Dogz-original.dog",
+        "after_path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6e8346012f47cdbddce4cf52249f7349721fa352feb2264e464cec6624231b47",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "before": "control",
+      "after": "enlarged",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c7150d93d517529d1a9da4a35adc9b30ac61caefbb93e002c532dcf331c9b0c7",
+      "cell_hashes": [
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1",
+        "68547331fbe4d8df754a57d185fbb07d6bc24985f321a23b58f8b0431704d461"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "before": "control",
+      "after": "enlarged",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "ace438aa7935e56f4fa270b6131ad8b4e6cd346b8049b84686f3da5c6f5ca17f",
+      "cell_hashes": [
+        "e983f389b84d577d338a94b1eb63c003ae83993e5306c7923316b2eff2751b76",
+        "a3418f02d302dff4e9785f00461f823c687c77cda09a1653d66ba4609e8168cd"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "before": "control",
+      "after": "moved",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-moved.dog",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "93fb611a30afd444b05be89e2fb3dfaeb681453a5268b699587a49d5ba8194f3",
+      "cell_hashes": [
+        "6a507b1cb9668dac667c254eeb80e17347083ffd7e2b8d8524d64c8b06713ea3",
+        "440cc6ed0ed612bcc2a069200c848667ceeb30f47b568d64c85288c5aae7a1fe"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "before": "relative",
+      "after": "relative_enlarged",
+      "controls": {
+        "before_path": "Dogz-relative.dog",
+        "after_path": "Dogz-relative_enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "fe247c7ba1f2284b24a1cf929d86cf432ff7a0dd59811458af7a13c5802b23af",
+      "cell_hashes": [
+        "397dadea75f04eb8674caa241868e586cc2c1cb3775c2bfb8bbd11de8ce21010",
+        "ab5bfcb82efe345bb215108d19c0afba3a840e7f96c7022ccb9996355087d383"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "before": "control",
+      "after": "omitted",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-omitted.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6e4cd289422cf2355a30ba538e7888ade838c41dee66fadbcef78326fa28a79d",
+      "cell_hashes": [
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1",
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "original",
+      "after": "control",
+      "controls": {
+        "before_path": "Catz-original.cat",
+        "after_path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "01f27a6a382bf5f4f47712e6b55d208788ee32e86a4c7f1041f8323c6c9e3f9e",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "6c4f766e5492529abfc0a2bf455858120b4af49a19d8c2d5080f04d64976e000"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "control",
+      "after": "enlarged",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "76cb41de70475f0fe51b2a2a3810034018c2b19407553fb858dd486e7fb06e45",
+      "cell_hashes": [
+        "6ac7e811d3a324d8e042f3096198ec0e03b660e0c53368b9566081a68a571e8e",
+        "029427e44e163810643525a4612bbaddbaa0344dfa94f7791fc6670a2177c839"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "control",
+      "after": "enlarged",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "75c32d8fb8382e024ec9c7476d5b1aff177cef948467625db4416bc3019f4048",
+      "cell_hashes": [
+        "7368387148249bb6fa77408eb7b04334442a717419ae698687c1a01acc4625a3",
+        "bddbb65bd584f85e5be4b8b7ab38c59e4ec69932a02782d143929a944baa6590"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "control",
+      "after": "moved",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-moved.cat",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "1fd40d76645449bee7fd6930db19f58323514d9daa3c2dc439781cdb5fb73a49",
+      "cell_hashes": [
+        "3e059a357f1f53c606e01d335b09f4d7c2ea8c4d7838f2ca52901d5b35dfb4c8",
+        "5f92f94a6b81d6449c4aaf89a08dcf03ad2f802c9b35192b7093c4c6679326fd"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "relative",
+      "after": "relative_enlarged",
+      "controls": {
+        "before_path": "Catz-relative.cat",
+        "after_path": "Catz-relative_enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9e64b8aaf9b62dab961350b27268c28411a82175b6474522410cb4c7d2beec20",
+      "cell_hashes": [
+        "0924db5f0415c418f7012ebf2d5d7a9cb46c06569b57c5e824f4001f209e1a62",
+        "0990a1e571a30f500f73e78e757c39b8b7a311e28cb8b8cccb49259e078c0be6"
+      ]
+    },
+    {
+      "species": "Catz",
+      "before": "control",
+      "after": "omitted",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-omitted.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c42d5c7ae36f0c90a9d7dbb03eb5defc5ba4fb15d265f5147e0a3506aea58b46",
+      "cell_hashes": [
+        "6c4f766e5492529abfc0a2bf455858120b4af49a19d8c2d5080f04d64976e000",
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+      ]
+    }
+  ]
+}

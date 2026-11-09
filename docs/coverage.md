@@ -61,7 +61,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Seek exposed tongue frames/isolation probes after VIS-002; native iris omission evidence after EYE-002.
+1. Seek native iris omission evidence after EYE-002; tongue-out validation deferred (user reports provided MCP animations lack it, VIS-002).
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.

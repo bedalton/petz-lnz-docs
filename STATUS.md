@@ -31,6 +31,7 @@ Updated: 2026-11-09
 - Line defaults: [LINE-004](experiments/line-004.md); sixteen MCP equivalence pairs confirm short rows, default thickness 25/100, empty fallback and row precedence.
 - Latest session: [connector overview](docs/session-2026-11-09-connectors.md), 80 MCP pairs and 174 numerical checks; private inputs/images and original/engine hashes verified.
 - Latest: [AREA-002](experiments/area-002.md), 36 numerical checks and eight local MCP pairs: first eligible neighbor row wins; default-pose pixels conceal the classification change.
-- Next: body-area-list overrides and connected chains, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
+- Latest: [AREA-003](experiments/area-003.md), 36 numerical checks/eight MCP pairs: lists override connection areas; Head Balls beats Body Balls independent of section order; Lnz Version 1 bypasses lists in sampled species.
+- Next: connected chains and other list conflicts, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

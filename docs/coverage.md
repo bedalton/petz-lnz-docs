@@ -17,7 +17,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Breed Name | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Color Info Override | Head-only perturbation: [BALL-001](../experiments/ball-001.md) |
 | Default Linez File | Selected master recorded in provenance; selection/recursion test pending |
-| Default Linez Thickness | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Default Linez Thickness | 25/100, empty fallback and explicit-row precedence: [LINE-004](../experiments/line-004.md) |
 | Default Scales | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Draw Linez Before Ballz | Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md) |
 | Ear Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -33,7 +33,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Head Tilt Limits | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Key Balls | Master IDs inventoried; section replacement tested: [INHERIT-001](../experiments/inherit-001.md) |
 | Leg Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); other styling pending |
+| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); short-row/default-thickness controls: [LINE-004](../experiments/line-004.md); other styling pending |
 | Little one | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |

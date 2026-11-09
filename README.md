@@ -27,6 +27,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 - [AREA-001: connection-derived body areas](experiments/area-001.md)
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
+- [LINE-004: short rows and default thickness](experiments/line-004.md)
 - [LINE-003: connector draw order](experiments/line-003.md)
 - [LINE-002: connector widths](experiments/line-002.md)
 - [LINE-001: connected marker and omissions](experiments/line-001.md)

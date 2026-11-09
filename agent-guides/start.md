@@ -12,6 +12,7 @@ Read this page first for editing tasks; read STATUS.md and HANDOFF.md when conti
 | Move a ball | [Move](../format-reference/move.md); distinguish local rotated offsets from native anchoring claims |
 | Add a body-attached detail | [Attachment guide](../visual-editing/attached-details.md) and [row fields](../format-reference/add-ball.md) |
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |
+| A ball edit appears invisible | [Visibility diagnosis](../visual-editing/visibility.md) and [Omissions](../format-reference/omissions.md) |
 | Assess preview reliability | [Evidence gaps](../troubleshooting/rendering-gaps.md) and the relevant experiment |
 | Find unresearched topics | [Coverage ledger](../docs/coverage.md) |
 

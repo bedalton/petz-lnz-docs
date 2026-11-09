@@ -44,10 +44,19 @@ def main():
     (OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n')
     public=ROOT/'experiments/anatomy-001.json'
     public.write_text(json.dumps(report,indent=2)+'\n')
+    omission_file=ROOT/'experiments/omit-001.json'
+    omission_data=json.loads(omission_file.read_text())['observations'] if omission_file.exists() else []
     for species in ('Dogz','Catz'):
         row=next(r for r in report if r['species']==species)
-        lines=[f'# {species} base-ball label index','', 'Status: asset-reported labels; visual identification remains pending except for the initial head/eye probes.','', 'The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.','', '[Evidence and procedure](../../experiments/anatomy-001.md). Added balls begin after this index and need breed-specific mappings.','', '| ID | Asset label | Visual test |','| --- | --- | --- |']
+        lines=[f'# {species} base-ball label index','', 'Status: asset-reported labels; visual identification remains pending except for the initial head/eye probes.','', 'The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.','', '[Evidence and procedure](../../experiments/anatomy-001.md). Added balls begin after this index and need breed-specific mappings.','', 'Omission pixel sensitivity below comes from Petz 4 Scottie (Dogz) / Siamese (Catz), standing front/side. It is not per-ball semantic validation. [OMIT-001](../../experiments/omit-001.md).','', '| ID | Asset label | Targeted visual probe | Omission front / side |','| --- | --- | --- | --- |']
         eye_ids={i for pair in row["eyes"] for i in pair}
-        lines += [f'| {i} | {label} | {"BALL-001 (Petz 4 only)" if i==row["keys"][0] else "EYE-001 color routing (Petz 4 only)" if i in eye_ids else "Pending"} |' for i,label in enumerate(row['labels'])]
+        for i,label in enumerate(row['labels']):
+            probe='BALL-001 (Petz 4 only)' if i==row['keys'][0] else 'EYE-001 color routing (Petz 4 only)' if i in eye_ids else 'Pending'
+            sensitivity=[]
+            for yaw in (0,90):
+                values=[o for o in omission_data if o['species']==species and o['ball']==i and o['yaw']==yaw]
+                sensitivity.append('Unchanged' if values and values[0]['same_as_control'] else 'Changed' if values else 'Pending')
+            lines.append(f'| {i} | {label} | {probe} | {" / ".join(sensitivity)} |')
+        if species=='Dogz':lines += ['', 'Utility labels 65/66 conflict with other stock comments; preserve these as source labels, not verified semantic names. See OMIT-001.']
         (ROOT/f'format-reference/anatomy/{species.lower()}.md').write_text('\n'.join(lines)+'\n')
 if __name__=='__main__':main()

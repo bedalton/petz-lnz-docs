@@ -13,3 +13,5 @@ All six inputs have 67 Ballz Info rows. Dalmatian row comments and Siamese enume
 An important limitation: the sampled master LNZ resources do not contain Ballz Info. They identify selected key balls and eyes, but the complete aesthetic table is in these breed resources. Cat master jaw/chin key slots contain -1 even though labeled jaw/chin balls exist in the breed. Do not treat missing key slots as proof that the anatomy is absent.
 
 Label agreement is an economical starting map; per-ball perturbation and multi-view review remain necessary. L/R means the stock label, with anatomical-side interpretation pending. The only initial visual perturbations concern head IDs 52 (Dogz) and 24 (Catz) in BALL-001.
+
+Follow-up: [OMIT-001](omit-001.md) adds front/side omission sensitivity and records conflicting utility labels 65/66 among Dogz stock comments. The label agreement above is limited to the selected Dalmatian resources across versions.

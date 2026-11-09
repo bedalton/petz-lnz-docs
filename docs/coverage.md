@@ -37,7 +37,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |
 | Num Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Omissions | Unconnected added-ball visibility tested in [ADD-001](../experiments/add-001.md); base/line/morph cases pending |
+| Omissions | All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); iris overlay exception, native/morph cases pending |
 | Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Project Ball | Downstream effect observed in MOVE-001; independent field test pending |
@@ -55,12 +55,13 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Stock render smoke | Passed | Passed | Passed | Passed | Passed | Passed |
 | Stock label/key inventory | Sampled | Sampled | Sampled | Sampled | Sampled | Sampled |
 | Controlled edits | Pending | Pending | Sampled | Sampled | Pending | Pending |
+| Base omission sweep (two views) | Pending | Pending | Sampled | Sampled | Pending | Pending |
 | Complete per-ball visual map | Pending | Pending | Pending | Pending | Pending | Pending |
 | Native-game validation | Pending | Pending | Pending | Pending | Pending | Pending |
 
 ## Next priorities
 
-1. Multi-view base-ball identification with omitted/occluded/utility-ball handling.
+1. Investigate zero-size/occluded/overlay cases from the omission sweep; expand frames and views.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.

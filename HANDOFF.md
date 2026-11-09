@@ -33,3 +33,7 @@ Read experiments/ball-001.md. tools/ball_probe.py creates seed-resolved, fixed-r
 Private evidence is scratch/research/ball-001; tracked hash manifest is experiments/ball-001.json. First trial mistakenly used existing Scottie color 35 and correctly produced no change; corrected final trial uses 125. No renderer source changes. Procedure resolves/removes variation alternatives in copies, so it is not a general variation-preserving resource editor. Reruns overwrite the private directory.
 
 Next: master section and ball-label inventory, aligned multi-view comparison and numerical geometry checks, inheritance experiments and Head Enlargement/group controls. Community-source research remains outstanding. Commit this logical unit with no co-authors.
+
+## ANATOMY-001 and community reading
+
+Committed derived label indices for all 67 base balls per species. Dalmatian comments and Siamese enum labels agree across 3/4/5, as do master keys/eyes. See experiments/anatomy-001.md and JSON; tools/anatomy_inventory.py reproduces. Labels are asset-reported, visual tests mostly pending. Master LNZ has no Ballz Info in samples; cat key jaw/chin slots -1 do not mean those balls are absent. sources/community-index.md records three initial tutorials and a potential Move anchoring mismatch (zero-offset source claim versus rotated vectors in renderer). Next: multi-view geometry experiments, inheritance, head-group controls.

@@ -13,3 +13,5 @@ Research started: see [local renderer baseline](experiments/smoke-001.md) and [i
 
 - [First controlled ball experiment](experiments/ball-001.md)
 - [Head-ball editing cautions](visual-editing/head-ball.md)
+- [Dogz anatomy index](format-reference/anatomy/dogz.md) and [Catz anatomy index](format-reference/anatomy/catz.md)
+- [Community source ledger](sources/community-index.md)

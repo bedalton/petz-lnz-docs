@@ -17,6 +17,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [Section inheritance](format-reference/inheritance.md)
 - [Move](format-reference/move.md) and [renderer evidence gaps](troubleshooting/rendering-gaps.md)
 - [Head Enlargement](format-reference/head-enlargement.md)
+- [Changing iris/pupil colors](visual-editing/eye-colors.md)
 - [Choosing head editing controls](visual-editing/head-ball.md)
 
 ## Evidence
@@ -32,3 +33,5 @@ Raw stock resources, private breed copies and rendered images remain outside Git
 - [HEAD-002: A=100 spacing boundary](experiments/head-002.md)
 
 Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. Regenerate the section ledger with `tools/coverage_index.py` using the same interpreter.
+
+- [EYE-001: pupil, iris and host-eye colors](experiments/eye-001.md)

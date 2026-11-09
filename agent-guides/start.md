@@ -8,6 +8,7 @@ Read this page first for editing tasks; read STATUS.md and HANDOFF.md when conti
 | --- | --- |
 | Identify base-ball IDs | [Dogz index](../format-reference/anatomy/dogz.md) or [Catz index](../format-reference/anatomy/catz.md); mostly asset labels, not visually tested |
 | Enlarge or reshape a head | [Head control guide](../visual-editing/head-ball.md), then [field details](../format-reference/head-enlargement.md) |
+| Change iris/pupil colors | [Eye color guide](../visual-editing/eye-colors.md) |
 | Move a ball | [Move](../format-reference/move.md); distinguish local rotated offsets from native anchoring claims |
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |
 | Assess preview reliability | [Evidence gaps](../troubleshooting/rendering-gaps.md) and the relevant experiment |

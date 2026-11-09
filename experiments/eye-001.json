@@ -1,0 +1,775 @@
+{
+  "experiment": "EYE-001",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "cases": [
+    {
+      "species": "Dogz",
+      "eyes": {
+        "right_eye": 32,
+        "left_eye": 8,
+        "right_iris": 38,
+        "left_iris": 14
+      },
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "input_hashes": {
+        "control": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "pupil_fill": "cbadf5a082494833ea8cb530b7e123971e329d68dc95965f1d9a688042a3b523",
+        "iris_outline": "c195b21f4f1edfce459d89badb467e1b63d0ca60a3a783274cf24c32e82ea8b0",
+        "right_outline": "24a37ec77bd121508642996d3ff0413f20e9fb1b914a2f428e988f1815582508",
+        "host_fill": "a6488c72cb3afcd95c26f962fb2a19022d4f940305ad3e980c21d2305b8a1390"
+      },
+      "paths": {
+        "control": "Dogz-control.dog",
+        "pupil_fill": "Dogz-pupil_fill.dog",
+        "iris_outline": "Dogz-iris_outline.dog",
+        "right_outline": "Dogz-right_outline.dog",
+        "host_fill": "Dogz-host_fill.dog"
+      },
+      "edits": {
+        "control": {},
+        "pupil_fill": {
+          "section": "Color Info Override",
+          "rows": [
+            "38, 125",
+            "14, 125"
+          ]
+        },
+        "iris_outline": {
+          "section": "Outline Color Override",
+          "rows": [
+            "38, 125",
+            "14, 125"
+          ]
+        },
+        "right_outline": {
+          "section": "Outline Color Override",
+          "rows": [
+            "38, 125"
+          ]
+        },
+        "host_fill": {
+          "section": "Color Info Override",
+          "rows": [
+            "32, 125",
+            "8, 125"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "pose": "standing",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "standing",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            38
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            8,
+            32
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "sitting",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            38
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            8,
+            32
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "lying",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            38
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            38
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            8,
+            32
+          ]
+        }
+      ],
+      "standing_overlays": {
+        "control": {
+          "32": {
+            "fill": 244,
+            "outline_color": 6,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": -16,
+              "top": -52,
+              "right": -4,
+              "bottom": -40
+            }
+          },
+          "8": {
+            "fill": 244,
+            "outline_color": 2,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": 4,
+              "top": -54,
+              "right": 16,
+              "bottom": -42
+            }
+          }
+        },
+        "pupil_fill": {
+          "32": {
+            "fill": 125,
+            "outline_color": 6,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": -16,
+              "top": -52,
+              "right": -4,
+              "bottom": -40
+            }
+          },
+          "8": {
+            "fill": 125,
+            "outline_color": 2,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": 4,
+              "top": -54,
+              "right": 16,
+              "bottom": -42
+            }
+          }
+        },
+        "iris_outline": {
+          "32": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": -16,
+              "top": -52,
+              "right": -4,
+              "bottom": -40
+            }
+          },
+          "8": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": 4,
+              "top": -54,
+              "right": 16,
+              "bottom": -42
+            }
+          }
+        },
+        "right_outline": {
+          "32": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": -16,
+              "top": -52,
+              "right": -4,
+              "bottom": -40
+            }
+          },
+          "8": {
+            "fill": 244,
+            "outline_color": 2,
+            "outline_type": 4,
+            "host_fill": 245,
+            "bounds": {
+              "left": 4,
+              "top": -54,
+              "right": 16,
+              "bottom": -42
+            }
+          }
+        },
+        "host_fill": {
+          "32": {
+            "fill": 244,
+            "outline_color": 6,
+            "outline_type": 4,
+            "host_fill": 125,
+            "bounds": {
+              "left": -16,
+              "top": -52,
+              "right": -4,
+              "bottom": -40
+            }
+          },
+          "8": {
+            "fill": 244,
+            "outline_color": 2,
+            "outline_type": 4,
+            "host_fill": 125,
+            "bounds": {
+              "left": 4,
+              "top": -54,
+              "right": 16,
+              "bottom": -42
+            }
+          }
+        }
+      }
+    },
+    {
+      "species": "Catz",
+      "eyes": {
+        "right_eye": 15,
+        "left_eye": 14,
+        "right_iris": 28,
+        "left_iris": 27
+      },
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "input_hashes": {
+        "control": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "pupil_fill": "c042ce335de8b5058102ed0d45de807fa9b6e4e5433cd756c0f3495407063bfa",
+        "iris_outline": "d94120b251ec3dde208d94b6282ff3b51c48aca4625a7f7d17b3f386b2a8fd0a",
+        "right_outline": "9689e4c885b73c954203ef80c24023796302aee4150d517f93fb80178c963c20",
+        "host_fill": "934b934803d7982534073baf496727e418c26bfefb056f5e2449aa5a36de9881"
+      },
+      "paths": {
+        "control": "Catz-control.cat",
+        "pupil_fill": "Catz-pupil_fill.cat",
+        "iris_outline": "Catz-iris_outline.cat",
+        "right_outline": "Catz-right_outline.cat",
+        "host_fill": "Catz-host_fill.cat"
+      },
+      "edits": {
+        "control": {},
+        "pupil_fill": {
+          "section": "Color Info Override",
+          "rows": [
+            "28, 125",
+            "27, 125"
+          ]
+        },
+        "iris_outline": {
+          "section": "Outline Color Override",
+          "rows": [
+            "28, 125",
+            "27, 125"
+          ]
+        },
+        "right_outline": {
+          "section": "Outline Color Override",
+          "rows": [
+            "28, 125"
+          ]
+        },
+        "host_fill": {
+          "section": "Color Info Override",
+          "rows": [
+            "15, 125",
+            "14, 125"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "pose": "standing",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "standing",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            28
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            15
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "sitting",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            28
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            15
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "control",
+          "geometry_equal": true,
+          "changed_ball_info_ids": []
+        },
+        {
+          "pose": "lying",
+          "variant": "pupil_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "iris_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            27,
+            28
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "right_outline",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            28
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "host_fill",
+          "geometry_equal": true,
+          "changed_ball_info_ids": [
+            14,
+            15
+          ]
+        }
+      ],
+      "standing_overlays": {
+        "control": {
+          "15": {
+            "fill": 244,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": -16,
+              "top": -60,
+              "right": -6,
+              "bottom": -50
+            }
+          },
+          "14": {
+            "fill": 244,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": 5,
+              "top": -60,
+              "right": 15,
+              "bottom": -50
+            }
+          }
+        },
+        "pupil_fill": {
+          "15": {
+            "fill": 125,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": -16,
+              "top": -60,
+              "right": -6,
+              "bottom": -50
+            }
+          },
+          "14": {
+            "fill": 125,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": 5,
+              "top": -60,
+              "right": 15,
+              "bottom": -50
+            }
+          }
+        },
+        "iris_outline": {
+          "15": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": -16,
+              "top": -60,
+              "right": -6,
+              "bottom": -50
+            }
+          },
+          "14": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": 5,
+              "top": -60,
+              "right": 15,
+              "bottom": -50
+            }
+          }
+        },
+        "right_outline": {
+          "15": {
+            "fill": 244,
+            "outline_color": 125,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": -16,
+              "top": -60,
+              "right": -6,
+              "bottom": -50
+            }
+          },
+          "14": {
+            "fill": 244,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 201,
+            "bounds": {
+              "left": 5,
+              "top": -60,
+              "right": 15,
+              "bottom": -50
+            }
+          }
+        },
+        "host_fill": {
+          "15": {
+            "fill": 244,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 125,
+            "bounds": {
+              "left": -16,
+              "top": -60,
+              "right": -6,
+              "bottom": -50
+            }
+          },
+          "14": {
+            "fill": 244,
+            "outline_color": 203,
+            "outline_type": 3,
+            "host_fill": 125,
+            "bounds": {
+              "left": 5,
+              "top": -60,
+              "right": 15,
+              "bottom": -50
+            }
+          }
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "variant": "pupil_fill",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-pupil_fill.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "e753aa813c4faaea39348bf234a84f269f23030c1db9781df8bec65298a797d2",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "811d49216727354844d23357cd87af727804f05a62149e0b3254252ddaa0c28a"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "iris_outline",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-iris_outline.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6e59f294608b9b237e37fe8221294fe60073789861cf24de583d98f499a0a80f",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "80d1fbd2bb782d36ae8e92dac620ace3489e54a02d682342272331d1db879f57"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "right_outline",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-right_outline.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "702c95e36fff58981ee98292ff15f22ed4b9f465471006de3aaa23e32b64d404",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "7c5e9e0566668f4e1d9505c1eb25b90dd55e849dd01523556704ee3087705fb5"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "host_fill",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-host_fill.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "d7d4c7809d920acbb1a24a616a557a6e5efa09184717d6da2a3dd54830694fba",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "b1864333e251a60bfe22935ee946ba2b42327b15cabb439795abf1a78c25df8f"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "pupil_fill",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-pupil_fill.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "314e4a2980876554374c9302506f9cc1fe5b72f7004f6667622c3c1cb65a0541",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "2ea6c50e5235cd6865c2d695f1868600837ceb8073e5bb27d4b820d47dbba728"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "iris_outline",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-iris_outline.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "acf796d97a84c3c67ee1bfd9b7ef8a94fa5f07aa42e90c52c4d5975b593783a9",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "81a56cd061e0945fe0ad5bc4a063b1ee9a5f59abc632e0c1a6cb26f4713345d0"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "right_outline",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-right_outline.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "398271ea2b05c8be2b8d378560dbc009552fe82ba94e3a6145ebe41b2726ac24",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "f85eb3560dadd3cee09a00a3f637042e20f5b119a3e596086f5719de94a7c719"
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "host_fill",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-host_fill.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c30aae1076b9b61f2f86e8fa993f80441b9862644988ffb6336c76eea9f7e3ac",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "d02ec627b6d42b7a482fd98d8aff5aeb481d66174bdf0c4f6ae41e831a7b739a"
+      ]
+    }
+  ]
+}

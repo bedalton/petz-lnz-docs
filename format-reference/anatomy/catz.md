@@ -1,6 +1,6 @@
 # Catz base-ball label index
 
-Status: asset-reported labels; visual identification remains pending except for the initial head probes.
+Status: asset-reported labels; visual identification remains pending except for the initial head/eye probes.
 
 The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.
 
@@ -22,8 +22,8 @@ The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This i
 | 11 | earR2 | Pending |
 | 12 | elbowL | Pending |
 | 13 | elbowR | Pending |
-| 14 | eyeL | Pending |
-| 15 | eyeR | Pending |
+| 14 | eyeL | EYE-001 color routing (Petz 4 only) |
+| 15 | eyeR | EYE-001 color routing (Petz 4 only) |
 | 16 | fingerL1 | Pending |
 | 17 | fingerL2 | Pending |
 | 18 | fingerL3 | Pending |
@@ -35,8 +35,8 @@ The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This i
 | 24 | head | BALL-001 (Petz 4 only) |
 | 25 | hipL | Pending |
 | 26 | hipR | Pending |
-| 27 | irisL | Pending |
-| 28 | irisR | Pending |
+| 27 | irisL | EYE-001 color routing (Petz 4 only) |
+| 28 | irisR | EYE-001 color routing (Petz 4 only) |
 | 29 | jaw | Pending |
 | 30 | jowlL | Pending |
 | 31 | jowlR | Pending |

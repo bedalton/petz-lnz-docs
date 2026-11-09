@@ -1,6 +1,6 @@
 # Dogz base-ball label index
 
-Status: asset-reported labels; visual identification remains pending except for the initial head probes.
+Status: asset-reported labels; visual identification remains pending except for the initial head/eye probes.
 
 The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.
 
@@ -16,13 +16,13 @@ The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This i
 | 5 | L ear2 | Pending |
 | 6 | L ear3 | Pending |
 | 7 | L elbow | Pending |
-| 8 | L eye | Pending |
+| 8 | L eye | EYE-001 color routing (Petz 4 only) |
 | 9 | L finger1 | Pending |
 | 10 | L finger2 | Pending |
 | 11 | L finger3 | Pending |
 | 12 | L foot | Pending |
 | 13 | L hand | Pending |
-| 14 | L iris | Pending |
+| 14 | L iris | EYE-001 color routing (Petz 4 only) |
 | 15 | L jowl | Pending |
 | 16 | L knee | Pending |
 | 17 | L nostril | Pending |
@@ -40,13 +40,13 @@ The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This i
 | 29 | R ear2 | Pending |
 | 30 | R ear3 | Pending |
 | 31 | R elbow | Pending |
-| 32 | R eye | Pending |
+| 32 | R eye | EYE-001 color routing (Petz 4 only) |
 | 33 | R finger1 | Pending |
 | 34 | R finger2 | Pending |
 | 35 | R finger3 | Pending |
 | 36 | R foot | Pending |
 | 37 | R hand | Pending |
-| 38 | R iris | Pending |
+| 38 | R iris | EYE-001 color routing (Petz 4 only) |
 | 39 | R jowl | Pending |
 | 40 | R knee | Pending |
 | 41 | R nostril | Pending |

@@ -46,7 +46,8 @@ def main():
     public.write_text(json.dumps(report,indent=2)+'\n')
     for species in ('Dogz','Catz'):
         row=next(r for r in report if r['species']==species)
-        lines=[f'# {species} base-ball label index','', 'Status: asset-reported labels; visual identification remains pending except for the initial head probes.','', 'The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.','', '[Evidence and procedure](../../experiments/anatomy-001.md). Added balls begin after this index and need breed-specific mappings.','', '| ID | Asset label | Visual test |','| --- | --- | --- |']
-        lines += [f'| {i} | {label} | {"BALL-001 (Petz 4 only)" if i==row["keys"][0] else "Pending"} |' for i,label in enumerate(row['labels'])]
+        lines=[f'# {species} base-ball label index','', 'Status: asset-reported labels; visual identification remains pending except for the initial head/eye probes.','', 'The sampled stock labels and master key/eye IDs agree in Petz 3, 4 and 5. This is not a complete cross-breed or visual validation. L/R below preserves the asset label; anatomical-side conventions still need visual confirmation.','', '[Evidence and procedure](../../experiments/anatomy-001.md). Added balls begin after this index and need breed-specific mappings.','', '| ID | Asset label | Visual test |','| --- | --- | --- |']
+        eye_ids={i for pair in row["eyes"] for i in pair}
+        lines += [f'| {i} | {label} | {"BALL-001 (Petz 4 only)" if i==row["keys"][0] else "EYE-001 color routing (Petz 4 only)" if i in eye_ids else "Pending"} |' for i,label in enumerate(row['labels'])]
         (ROOT/f'format-reference/anatomy/{species.lower()}.md').write_text('\n'.join(lines)+'\n')
 if __name__=='__main__':main()

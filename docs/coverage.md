@@ -20,7 +20,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Default Linez Thickness | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Default Scales | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Ear Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Eyes | Master IDs inventoried; dedicated iris/pupil color experiment pending |
+| Eyes | Pupil fill, iris outline and host fill tested: [EYE-001](../experiments/eye-001.md); shape/clip controls pending |
 | Face Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Feet Enlargement | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Fur Color Areas | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -38,7 +38,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |
 | Num Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Omissions | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Outline Color Override | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Project Ball | Downstream effect observed in MOVE-001; independent field test pending |
 | Sounds | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -60,8 +60,8 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Iris/pupil fill versus outline experiment and initial eye-editing recipe.
-2. Added-ball attachment and head-control interactions.
+1. Added-ball attachment and head-control interactions.
+2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Multi-view base-ball identification with omitted/occluded/utility-ball handling.
 4. Another breed per species, followed by edited cross-version checks.
 5. Further shape/color/texture/marking sections, growth/variation and design examples.

@@ -11,6 +11,7 @@ Updated: 2026-11-09
 - Move: [MOVE-001](experiments/move-001.md) confirms rotated offsets, zero-vector no-op and downstream projection effects. Native anchoring discrepancy tracked as GAP-001.
 - Head boundary: [HEAD-002](experiments/head-002.md) confirms A=100 skips spacing while neighboring values activate it.
 - Navigation/checks: [agent entry point](agent-guides/start.md), [coverage ledger](docs/coverage.md); tools/check_docs.py checks links, JSON/hash syntax and private-file exclusion.
-- Next: iris/pupil fill-versus-outline experiment; then added-ball/head interactions and controlled visual anatomy validation.
+- Eye colors: [EYE-001](experiments/eye-001.md) distinguishes pupil fill, iris outline and host-eye fill; [editing recipe](visual-editing/eye-colors.md).
+- Next: added-ball/head interactions and controlled visual anatomy validation.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

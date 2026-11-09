@@ -20,7 +20,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Default Linez Thickness | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Default Scales | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Ear Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Eyes | Pupil fill, iris outline and host fill tested: [EYE-001](../experiments/eye-001.md); shape/clip controls pending |
+| Eyes | Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending |
 | Face Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Feet Enlargement | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Fur Color Areas | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -61,7 +61,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Test iris/host combinations; VIS-002 leaves Catz 55/56 cause unresolved after three poses/four yaws.
+1. Seek exposed tongue frames/isolation probes after VIS-002; native iris omission evidence after EYE-002.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.

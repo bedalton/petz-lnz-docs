@@ -20,3 +20,5 @@ Add the section header if the section is absent, after checking [inheritance](..
 Keep pupil fill, outline mode/width and sizes unchanged when changing only iris hue. In EYE-001 this retained geometry and changed the visible iris rings. For one eye, edit one iris ID. At tested front yaw 0°, the asset's right eye is viewer-left; use IDs instead of assuming screen sides at other angles.
 
 Render an aligned baseline comparison with fixed seed, adult age and fatness. Inspect both eyes for color, pupil contrast, clipping and unintended changes. Other breeds may have overrides, variation choices or unusual eye styling; inspect effective sections rather than assuming stock defaults. Saved pets and young resources are outside this recipe's tested scope.
+
+For visibility edits, [EYE-002](../experiments/eye-002.md) finds iris-only omission ineffective while host omission suppresses the eye overlay in sampled views. That broader edit does not implement an iris-only request; native behavior remains unverified.

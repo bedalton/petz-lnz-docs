@@ -1,6 +1,6 @@
 # Omissions
 
-Status: Petz 4 renderer-observed in Scottie/Siamese. [OMIT-001](../experiments/omit-001.md), plus [ADD-001](../experiments/add-001.md). Native-game behavior remains unverified.
+Status: Petz 4 renderer-observed in Scottie/Siamese. [OMIT-001](../experiments/omit-001.md), plus [ADD-001](../experiments/add-001.md) and [EYE-002](../experiments/eye-002.md). Native-game behavior remains unverified.
 
 ```text
 [Omissions]
@@ -15,6 +15,7 @@ Use one numeric ID per row. Preserve existing rows. The renderer reads the first
 | Already omitted ball | No further pixel change |
 | Added unconnected marker | Visibility becomes false; position/radius and row retained |
 | Iris ID | No pixel change in tested views because iris drawing uses host-eye overlays |
+| Right host eye / host plus iris | Same pixels as each other, different from control in EYE-002 front/side |
 
 An unchanged image is not proof that an ID is unused or incorrectly labeled. Check effective omissions, pose, radius, depth, line dependencies and special overlays. The Siamese base nose ID 37 is already omitted in the stock resource; this does not mean the visible nose is absent or controlled solely by that ID.
 

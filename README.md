@@ -30,6 +30,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [MOVE-001: reference-column behavior](experiments/move-001.md)
 - [HEAD-002: A=100 spacing boundary](experiments/head-002.md)
 - [EYE-001: pupil, iris and host-eye colors](experiments/eye-001.md)
+- [EYE-002: iris/host omission combinations](experiments/eye-002.md)
 - [ADD-001: attachment, resizing and omission](experiments/add-001.md)
 - [OMIT-001: all-base-ball omission sweep](experiments/omit-001.md)
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)

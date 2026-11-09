@@ -1,0 +1,255 @@
+{
+  "experiment": "EYE-002",
+  "backend": "local stdio MCP render_contact_sheet",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "installed_python_sources_sha256": "b604960e20b0e9e542104bc38614c1cfd15b7017dc499e3057b4adcd445ac912",
+  "cases": [
+    {
+      "species": "Dogz",
+      "path": "Dogz-eye-omissions.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "input_sha256": "ccb4ab324ca2a79c07dbb456e1765a2ee9d4dc071cadb743b158403ec1d7d628",
+      "master_sha256": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "right_host_id": 32,
+      "right_iris_id": 38,
+      "checks": [
+        {
+          "variant": "control",
+          "seed": 2,
+          "added_omissions": [],
+          "host_visible": true,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 70
+        },
+        {
+          "variant": "iris",
+          "seed": 1,
+          "added_omissions": [
+            38
+          ],
+          "host_visible": true,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 70
+        },
+        {
+          "variant": "host",
+          "seed": 0,
+          "added_omissions": [
+            32
+          ],
+          "host_visible": false,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 70
+        },
+        {
+          "variant": "both",
+          "seed": 3,
+          "added_omissions": [
+            38,
+            32
+          ],
+          "host_visible": false,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 70
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "path": "Catz-eye-omissions.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "input_sha256": "52e233abf9e6cade97222d93b2343c042a00313dbe6f2418354b00c7a98835ff",
+      "master_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "right_host_id": 15,
+      "right_iris_id": 28,
+      "checks": [
+        {
+          "variant": "control",
+          "seed": 2,
+          "added_omissions": [],
+          "host_visible": true,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 51
+        },
+        {
+          "variant": "iris",
+          "seed": 1,
+          "added_omissions": [
+            28
+          ],
+          "host_visible": true,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 51
+        },
+        {
+          "variant": "host",
+          "seed": 0,
+          "added_omissions": [
+            15
+          ],
+          "host_visible": false,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 51
+        },
+        {
+          "variant": "both",
+          "seed": 3,
+          "added_omissions": [
+            28,
+            15
+          ],
+          "host_visible": false,
+          "iris_visible": false,
+          "host_overlay_exists": true,
+          "line_count": 51
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "stem": "Dogz-yaw0",
+      "species": "Dogz",
+      "controls": {
+        "path": "Dogz-eye-omissions.dog",
+        "pose": "standing",
+        "seeds": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "columns": 4
+      },
+      "cell_variants": [
+        "control",
+        "iris",
+        "host",
+        "both"
+      ],
+      "png_sha256": "52e4fd92fc6499ee015c9ccc9ef8333640baa5291371af471b8207a451bcdb12",
+      "cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "df72415396c137db46aed81854e32b9d98c0fd3a28ea8c2c67eb59afaf022b99",
+        "df72415396c137db46aed81854e32b9d98c0fd3a28ea8c2c67eb59afaf022b99"
+      ],
+      "iris_equal_control": true,
+      "host_equal_both": true,
+      "host_equal_control": false
+    },
+    {
+      "stem": "Dogz-yaw90",
+      "species": "Dogz",
+      "controls": {
+        "path": "Dogz-eye-omissions.dog",
+        "pose": "standing",
+        "seeds": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "columns": 4
+      },
+      "cell_variants": [
+        "control",
+        "iris",
+        "host",
+        "both"
+      ],
+      "png_sha256": "0efd5e11ae795143bbb3342f0f495c627595920e8aaff88f1157b50ea38fba63",
+      "cell_hashes": [
+        "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a",
+        "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a",
+        "918ebd716cc2211f500a9571c3ceda5bc61ddc04ffc39f582f9aab145ca06036",
+        "918ebd716cc2211f500a9571c3ceda5bc61ddc04ffc39f582f9aab145ca06036"
+      ],
+      "iris_equal_control": true,
+      "host_equal_both": true,
+      "host_equal_control": false
+    },
+    {
+      "stem": "Catz-yaw0",
+      "species": "Catz",
+      "controls": {
+        "path": "Catz-eye-omissions.cat",
+        "pose": "standing",
+        "seeds": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "columns": 4
+      },
+      "cell_variants": [
+        "control",
+        "iris",
+        "host",
+        "both"
+      ],
+      "png_sha256": "792a624837723bb4478b6d37d031c7d36acdb4ee93e8b9862e993960fb85f198",
+      "cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "10348aadff5adeab99d280d4e4b12735c4186efd6758320499fd700b99df91f3",
+        "10348aadff5adeab99d280d4e4b12735c4186efd6758320499fd700b99df91f3"
+      ],
+      "iris_equal_control": true,
+      "host_equal_both": true,
+      "host_equal_control": false
+    },
+    {
+      "stem": "Catz-yaw90",
+      "species": "Catz",
+      "controls": {
+        "path": "Catz-eye-omissions.cat",
+        "pose": "standing",
+        "seeds": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "columns": 4
+      },
+      "cell_variants": [
+        "control",
+        "iris",
+        "host",
+        "both"
+      ],
+      "png_sha256": "1ba1894945dab5b514bc30b678bf4873a1fd8de5a9ebd0855858b99fe4bdb37b",
+      "cell_hashes": [
+        "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1",
+        "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1",
+        "6dea653dde8ef58d33ac01935a540a1942d79fd10aed32dc06b32c7eed740c27",
+        "6dea653dde8ef58d33ac01935a540a1942d79fd10aed32dc06b32c7eed740c27"
+      ],
+      "iris_equal_control": true,
+      "host_equal_both": true,
+      "host_equal_control": false
+    }
+  ]
+}

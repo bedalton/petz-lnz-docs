@@ -14,13 +14,16 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [Dogz base-ball labels](format-reference/anatomy/dogz.md), [Catz base-ball labels](format-reference/anatomy/catz.md): include automated front/side omission sensitivity; semantic visual checks mostly pending
 - [Section inheritance](format-reference/inheritance.md)
 - [Head Enlargement](format-reference/head-enlargement.md), [choosing head controls](visual-editing/head-ball.md)
-- [Move](format-reference/move.md)
+- [Move](format-reference/move.md), [Project Ball](format-reference/project-ball.md)
 - [Iris/pupil colors](visual-editing/eye-colors.md)
 - [Added-ball fields](format-reference/add-ball.md), [attached details](visual-editing/attached-details.md)
 - [Omissions](format-reference/omissions.md), [visibility diagnosis](visual-editing/visibility.md)
 - [Renderer evidence gaps](troubleshooting/rendering-gaps.md)
 
 ## Evidence
+
+- [RESTORE-001: container recovery](experiments/restore-001.md)
+- [PROJECT-001: synthetic projection semantics](experiments/project-001.md)
 
 - [SMOKE-001: local rendering across versions](experiments/smoke-001.md)
 - [BALL-001: isolated head-ball edits](experiments/ball-001.md)

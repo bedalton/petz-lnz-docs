@@ -40,7 +40,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Omissions | All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending |
 | Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Project Ball | Downstream effect observed in MOVE-001; independent field test pending |
+| Project Ball | [Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); full breed field test pending |
 | Sounds | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Species | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Texture List | Inventoried or implementation lead only; dedicated reference/experiment pending |

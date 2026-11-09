@@ -19,6 +19,7 @@ Updated: 2026-11-09
 - Visibility: [VIS-001](experiments/vis-001.md) audits unchanged IDs in three poses; zero-radius groups separated.
 - Focused visibility: [VIS-002](experiments/vis-002.md) finds Catz 55/56 omissions unchanged in 12 pose/yaw combinations; user identifies hidden tongue parts and no tongue-out MCP animation. Current investigation closed; direct visual validation deferred.
 - Eye visibility: [EYE-002](experiments/eye-002.md) confirms iris-only omission no-op, host-only equals both in two views/species. GAP-004 stays open.
+- Projection: [PROJECT-001](experiments/project-001.md) checks eleven synthetic cases; code-supported arithmetic/order only, no new renders.
 - Next: more frames/breeds, connected details and morphs; native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

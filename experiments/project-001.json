@@ -1,0 +1,225 @@
+{
+  "backend": "direct Python implementation; no MCP/render/game",
+  "python": "3.12.16",
+  "renderer": "0.1.0",
+  "source_hashes": {
+    "src/petz_renderer/appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "src/petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0"
+  },
+  "controls": {
+    "species": 0,
+    "coordinates": [
+      0,
+      10,
+      20
+    ],
+    "rotations": 0,
+    "shape": "bypassed: three-ball frame"
+  },
+  "cases": [
+    {
+      "name": "percent_0",
+      "rows": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        0,
+        20
+      ]
+    },
+    {
+      "name": "percent_50",
+      "rows": [
+        [
+          0,
+          1,
+          50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        5,
+        20
+      ]
+    },
+    {
+      "name": "percent_100",
+      "rows": [
+        [
+          0,
+          1,
+          100
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "name": "percent_150",
+      "rows": [
+        [
+          0,
+          1,
+          150
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        15,
+        20
+      ]
+    },
+    {
+      "name": "percent_-50",
+      "rows": [
+        [
+          0,
+          1,
+          -50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        -5,
+        20
+      ]
+    },
+    {
+      "name": "repeat",
+      "rows": [
+        [
+          0,
+          1,
+          50
+        ],
+        [
+          0,
+          1,
+          50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        2,
+        20
+      ]
+    },
+    {
+      "name": "chain",
+      "rows": [
+        [
+          0,
+          1,
+          50
+        ],
+        [
+          1,
+          2,
+          50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        5,
+        12
+      ]
+    },
+    {
+      "name": "reverse_chain",
+      "rows": [
+        [
+          1,
+          2,
+          50
+        ],
+        [
+          0,
+          1,
+          50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        5,
+        15
+      ]
+    },
+    {
+      "name": "invalid_ids",
+      "rows": [
+        [
+          -1,
+          1,
+          50
+        ],
+        [
+          0,
+          3,
+          50
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "name": "self",
+      "rows": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "moves": [],
+      "x": [
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "name": "move_before_projection",
+      "rows": [
+        [
+          0,
+          1,
+          50
+        ]
+      ],
+      "moves": [
+        {
+          "ball": 0,
+          "x": 2,
+          "y": 0,
+          "z": 0,
+          "relative_ball": 0
+        }
+      ],
+      "x": [
+        2,
+        6,
+        20
+      ]
+    }
+  ]
+}

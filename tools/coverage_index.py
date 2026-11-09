@@ -16,7 +16,7 @@ known={
  'Color Info Override':'Head-only perturbation: [BALL-001](../experiments/ball-001.md)',
  'Ballz Info':'67 labels per species inventoried; complete column/visual coverage pending: [ANATOMY-001](../experiments/anatomy-001.md)',
  'Eyes':'Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending',
- 'Project Ball':'Downstream effect observed in MOVE-001; independent field test pending',
+ 'Project Ball':'[Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); full breed field test pending',
  'Default Linez File':'Selected master recorded in provenance; selection/recursion test pending',
 }
 lines=['# Research coverage ledger','','This is a lower-bound topic inventory, not a complete LNZ specification. It combines six sampled adult breed/master resources with override sections already encountered in code/experiments. More stock breeds, young resources and community references may add topics.','','All controlled editing results currently concern Petz 4 Scottie/Siamese. No topic has native-game validation. Ball-label agreement across versions is asset evidence only.','','| Topic | Current evidence / remaining work |','| --- | --- |']

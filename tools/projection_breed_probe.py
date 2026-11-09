@@ -1,11 +1,13 @@
 """Copy-only, asset-backed Project Ball probe through local MCP."""
-import asyncio,json,sys
+import argparse,asyncio,json,sys
 from fastmcp import Client
 from fastmcp.client.transports import StdioTransport
 from petz_renderer.formats.resolver import ResourceResolver
 from petz_renderer.local import load_breed_assets
 from petz_renderer.rendering.positions import modify_positions
 from research_common import ROOT,SHA,adult,write_copy,save_result
+VERSION='petz4'
+EXPERIMENT='PROJECT-002'
 OUT=ROOT/'scratch/research/project-002'
 def xyz(b): return (b.x,b.y,b.z)
 def trunc(n): return n//100 if n>=0 else -((-n)//100)
@@ -13,7 +15,7 @@ async def main():
     OUT.mkdir(parents=True,exist_ok=False)
     cases=[];renders=[]
     for species in ('Dogz','Catz'):
-        source,raw,leaf,base,_,_=adult(species)
+        source,raw,leaf,base,_,_=adult(species, VERSION)
         head,nose=(52,55) if species=='Dogz' else (24,37)
         variants={'control':(), 'identity':(f'{head}, {nose}, 100',),
                   'half':(f'{head}, {nose}, 50',), 'long':(f'{head}, {nose}, 150',)}
@@ -22,7 +24,7 @@ async def main():
             sections=dict(base);sections['Project Ball']=rows
             path=OUT/f'{species}-{v}{source.suffix}'
             hashes[v]=write_copy(raw,leaf,sections,path);paths[v]=path.name
-        resolver=ResourceResolver((ROOT/'games/petz4',OUT));checks=[]
+        resolver=ResourceResolver((ROOT/'games'/VERSION,OUT),game_version=VERSION);checks=[]
         for pose in ('standing','sitting','lying'):
             assets={v:load_breed_assets(resolver,p,pose=pose,seed=0,age=100,fatness=50) for v,p in paths.items()}
             frames={v:modify_positions(a.appearance,a.frame) for v,a in assets.items()}
@@ -35,7 +37,7 @@ async def main():
                 checks.append({'pose':pose,'variant':v,'start_xyz':start,'control_end_xyz':end,'edited_end_xyz':expected,'changed_ids':changed})
         assert SHA(source.read_bytes())==SHA(raw)
         cases.append({'species':species,'source_sha256':SHA(raw),'head_id':head,'target_id':nose,'paths':paths,'input_hashes':hashes,'project_rows':variants,'geometry':checks})
-    transport=StdioTransport(sys.executable,['-I','-m','petz_renderer.service.local_mcp','--game-root',str(ROOT/'games/petz4'),'--asset-root',str(OUT)])
+    transport=StdioTransport(sys.executable,['-I','-m','petz_renderer.service.local_mcp','--game-root',str(ROOT/'games'/VERSION),'--game-version',VERSION,'--asset-root',str(OUT)])
     async with Client(transport) as client:
         caps=await client.call_tool('get_capabilities');(OUT/'capabilities.json').write_text(json.dumps(caps.data,indent=2))
         for case in cases:
@@ -48,7 +50,15 @@ async def main():
                     assert equal == (v=='identity')
                     renders.append({'species':case['species'],'variant':v,'controls':args,'png_sha256':SHA(png),'cells_equal':equal})
                     (OUT/'progress.json').write_text(json.dumps(renders,indent=2)+'\n');print(stem,flush=True)
-    report={'experiment':'PROJECT-002','backend':'local stdio MCP','renderer_revision':'9d72d7afd5f7460ef18133c6179caaf8055082d9','python':sys.version,'runtime_provenance':'restore-002.json','cases':cases,'comparisons':renders}
+    report={'experiment':EXPERIMENT,'game_version':VERSION,'backend':'local stdio MCP','renderer_revision':'9d72d7afd5f7460ef18133c6179caaf8055082d9','python':sys.version,'runtime_provenance':'restore-002.json','cases':cases,'comparisons':renders}
     (OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n')
-    (ROOT/'experiments/project-002.json').write_text(json.dumps(report,indent=2)+'\n')
-if __name__=='__main__': asyncio.run(main())
+    (ROOT/'experiments'/f'{EXPERIMENT.lower()}.json').write_text(json.dumps(report,indent=2)+'\n')
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--game-version',choices=('petz3','petz4','petz5'),default='petz4')
+    args=parser.parse_args()
+    VERSION=args.game_version
+    if VERSION!='petz4':
+        EXPERIMENT=f'PROJECT-003-{VERSION}'
+        OUT=ROOT/'scratch/research'/EXPERIMENT.lower()
+    asyncio.run(main())

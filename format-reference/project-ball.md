@@ -9,3 +9,5 @@ Rows run sequentially after Move. A later row sees positions changed by earlier 
 For actual editing, preserve inherited rows and use [copy-only controls](../agent-guides/start.md). Species-specific shapes, age interpolation and valid anatomy IDs require separate checks. Earlier downstream effects are recorded in [MOVE-001](../experiments/move-001.md).
 
 In those sampled breeds, a single head-to-nose row at 50/150 changes only the nose raw position in standing/sitting/lying; 100 matches an explicit empty-projection control. Front/side images show localized nose movement. This is not a coherent muzzle extension recipe. The experiment deliberately replaces inherited projection rows to isolate the field.
+
+[PROJECT-003](../experiments/project-003.md) repeats these isolated controls with Petz 3 and 5 engine resources. Sampled raw geometry and comparison PNG hashes match Petz 4 for both breeds. This cross-version evidence applies only to the tested controls; native behavior remains unvalidated.

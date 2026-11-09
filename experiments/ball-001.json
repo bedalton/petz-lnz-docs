@@ -1,0 +1,162 @@
+[
+  {
+    "species": "Dogz",
+    "variant": "original",
+    "ball": 52,
+    "controls": {
+      "path": "Resource/Dogz/Scottie.dog",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+    "matches_original": true
+  },
+  {
+    "species": "Dogz",
+    "variant": "control",
+    "ball": 52,
+    "controls": {
+      "path": "Dogz-control.dog",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "input_sha256": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+    "matches_original": true
+  },
+  {
+    "species": "Dogz",
+    "variant": "size",
+    "ball": 52,
+    "controls": {
+      "path": "Dogz-size.dog",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "68c2f15eaefe2d61bfc6e3112ef1598fc448dca7f7440e851e00b06c36cc36c9",
+    "input_sha256": "cf459c2a60a64b429f631f1ba402b03eb0189d8e9f43807bce6158c08f74424b",
+    "matches_original": false
+  },
+  {
+    "species": "Dogz",
+    "variant": "color",
+    "ball": 52,
+    "controls": {
+      "path": "Dogz-color.dog",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "dded8ce61985fc8e28ba72825e9f4617cd0ec758ee041495a0413a888e3d34b2",
+    "input_sha256": "8fad21f3e6b35a77b54d90a77230272290628be44f042178ded59b2191a3b71e",
+    "matches_original": false
+  },
+  {
+    "species": "Dogz",
+    "variant": "move",
+    "ball": 52,
+    "controls": {
+      "path": "Dogz-move.dog",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "60a790cfdcc8355564cd6f4d9e07dee964125105d59803c0c644c0dbbc659155",
+    "input_sha256": "30f65172a8fecb58e5ae22cd15a6691329c80bdb449e750242cb300197f6a800",
+    "matches_original": false
+  },
+  {
+    "species": "Catz",
+    "variant": "original",
+    "ball": 24,
+    "controls": {
+      "path": "Resource/Catz/Siamese.cat",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+    "matches_original": true
+  },
+  {
+    "species": "Catz",
+    "variant": "control",
+    "ball": 24,
+    "controls": {
+      "path": "Catz-control.cat",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "input_sha256": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+    "matches_original": true
+  },
+  {
+    "species": "Catz",
+    "variant": "size",
+    "ball": 24,
+    "controls": {
+      "path": "Catz-size.cat",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "83e88459ca9faa35c2ee759528b54c9c58fb2e91dd11eea6cdfc4fb828643f9a",
+    "input_sha256": "4b02f6d272214cacaf0a695876c07f9e372037ab236fe2d13179852ca9ff669e",
+    "matches_original": false
+  },
+  {
+    "species": "Catz",
+    "variant": "color",
+    "ball": 24,
+    "controls": {
+      "path": "Catz-color.cat",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1465e01fddd7e33c16e5312a9a569f2d335e6c922968263a9b3fa587ebaaceee",
+    "input_sha256": "dd3cafedcc3428d1f317d8be838ae75f5147c1b58a7dd67c3de17399932ee143",
+    "matches_original": false
+  },
+  {
+    "species": "Catz",
+    "variant": "move",
+    "ball": 24,
+    "controls": {
+      "path": "Catz-move.cat",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    "png_sha256": "ac3f6b9391c2a8a9230f2060fea3b3459bb160985b670459c1d005868252c39e",
+    "input_sha256": "9e02c5d29077cd80abc13c9075669e94fd8178b6b0424f3a8a348694639ca02d",
+    "matches_original": false
+  }
+]

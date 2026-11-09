@@ -1,0 +1,234 @@
+[
+  {
+    "species": "Dogz",
+    "variant": "absent",
+    "input_sha256": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+    "path": "Dogz-absent.dog",
+    "key_balls": {
+      "head": 52,
+      "chest": 50,
+      "neck": 54,
+      "jaw": 53,
+      "tongue1": 63,
+      "tongue2": 64,
+      "chin": 51,
+      "nose": 55,
+      "butt": 49,
+      "belly": 48
+    },
+    "effective_rows": 10,
+    "controls": {
+      "path": "Dogz-absent.dog",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "matches_absent": true
+  },
+  {
+    "species": "Dogz",
+    "variant": "empty",
+    "input_sha256": "bd805c81743226000dd67aa92db7c68c7dc00fc6f1e79d57dfa95326331c1823",
+    "path": "Dogz-empty.dog",
+    "key_balls": {
+      "head": -1,
+      "chest": -1,
+      "neck": -1,
+      "jaw": -1,
+      "tongue1": -1,
+      "tongue2": -1,
+      "chin": -1,
+      "nose": -1,
+      "butt": -1,
+      "belly": -1
+    },
+    "effective_rows": 0,
+    "controls": {
+      "path": "Dogz-empty.dog",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "05393e09e7f2287cc65ac39df04e5302e0cc8bc9a4f1ef135291cde0a0f4de98",
+    "matches_absent": false
+  },
+  {
+    "species": "Dogz",
+    "variant": "partial",
+    "input_sha256": "fb50ed594178d041e19f69e176273a41c651dfa3b03c3bfc4f0b9dd883dcd30f",
+    "path": "Dogz-partial.dog",
+    "key_balls": {
+      "head": 52,
+      "chest": -1,
+      "neck": -1,
+      "jaw": -1,
+      "tongue1": -1,
+      "tongue2": -1,
+      "chin": -1,
+      "nose": -1,
+      "butt": -1,
+      "belly": -1
+    },
+    "effective_rows": 1,
+    "controls": {
+      "path": "Dogz-partial.dog",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "05393e09e7f2287cc65ac39df04e5302e0cc8bc9a4f1ef135291cde0a0f4de98",
+    "matches_absent": false
+  },
+  {
+    "species": "Dogz",
+    "variant": "full",
+    "input_sha256": "8ba78e7ec32667b6817d33e73834c84e15036e394f6f6967d8e61433fa6f1315",
+    "path": "Dogz-full.dog",
+    "key_balls": {
+      "head": 52,
+      "chest": 50,
+      "neck": 54,
+      "jaw": 53,
+      "tongue1": 63,
+      "tongue2": 64,
+      "chin": 51,
+      "nose": 55,
+      "butt": 49,
+      "belly": 48
+    },
+    "effective_rows": 10,
+    "controls": {
+      "path": "Dogz-full.dog",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+    "matches_absent": true
+  },
+  {
+    "species": "Catz",
+    "variant": "absent",
+    "input_sha256": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+    "path": "Catz-absent.cat",
+    "key_balls": {
+      "head": 24,
+      "chest": 6,
+      "neck": 36,
+      "jaw": -1,
+      "tongue1": 55,
+      "tongue2": 56,
+      "chin": -1,
+      "nose": 37,
+      "butt": 3,
+      "belly": 2
+    },
+    "effective_rows": 10,
+    "controls": {
+      "path": "Catz-absent.cat",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "matches_absent": true
+  },
+  {
+    "species": "Catz",
+    "variant": "empty",
+    "input_sha256": "e6660506907a601249c1fdcbb978d7b3ec38f65f3a42e5757cfe97cb9d0e0636",
+    "path": "Catz-empty.cat",
+    "key_balls": {
+      "head": -1,
+      "chest": -1,
+      "neck": -1,
+      "jaw": -1,
+      "tongue1": -1,
+      "tongue2": -1,
+      "chin": -1,
+      "nose": -1,
+      "butt": -1,
+      "belly": -1
+    },
+    "effective_rows": 0,
+    "controls": {
+      "path": "Catz-empty.cat",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1b9180bac8f43656f66deee608814770786489a4094cf9b6366770a73cbebc79",
+    "matches_absent": false
+  },
+  {
+    "species": "Catz",
+    "variant": "partial",
+    "input_sha256": "24483cdcfe88d5c811a927eccca65abfffbf9d55f92f33486de74f3d2f57b306",
+    "path": "Catz-partial.cat",
+    "key_balls": {
+      "head": 24,
+      "chest": -1,
+      "neck": -1,
+      "jaw": -1,
+      "tongue1": -1,
+      "tongue2": -1,
+      "chin": -1,
+      "nose": -1,
+      "butt": -1,
+      "belly": -1
+    },
+    "effective_rows": 1,
+    "controls": {
+      "path": "Catz-partial.cat",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "1b9180bac8f43656f66deee608814770786489a4094cf9b6366770a73cbebc79",
+    "matches_absent": false
+  },
+  {
+    "species": "Catz",
+    "variant": "full",
+    "input_sha256": "54d18a12fdcb373d23fe9063336016b2e440770427fb35181a2bbb9e35c847a4",
+    "path": "Catz-full.cat",
+    "key_balls": {
+      "head": 24,
+      "chest": 6,
+      "neck": 36,
+      "jaw": -1,
+      "tongue1": 55,
+      "tongue2": 56,
+      "chin": -1,
+      "nose": 37,
+      "butt": 3,
+      "belly": 2
+    },
+    "effective_rows": 10,
+    "controls": {
+      "path": "Catz-full.cat",
+      "pose": "standing",
+      "seed": 0,
+      "age": 100,
+      "fatness": 50,
+      "yaw_degrees": 0
+    },
+    "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+    "matches_absent": true
+  }
+]

@@ -4,6 +4,9 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 ## Start here
 
+- [Agent editing entry point](agent-guides/start.md)
+- [Coverage ledger](docs/coverage.md)
+
 - [Status](STATUS.md), [handoff](HANDOFF.md), [agent instructions](AGENTS.md)
 - [Research plan](docs/research-plan.md)
 - [Community source ledger](sources/community-index.md)
@@ -27,3 +30,5 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable hash/control manifest.
 - [MOVE-001: reference-column behavior](experiments/move-001.md)
 - [HEAD-002: A=100 spacing boundary](experiments/head-002.md)
+
+Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. Regenerate the section ledger with `tools/coverage_index.py` using the same interpreter.

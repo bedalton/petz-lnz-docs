@@ -25,4 +25,4 @@ Radius arrays include added balls, but the two Head Enlargement values do not di
 
 ## Next checks
 
-Test A=100 with nonzero B, decrease values, inspect added-ball behavior, render sitting/lying comparisons and validate another breed before broad recipe claims. Cross-version edited tests remain outstanding.
+A=100 with B=25 and neighboring A values are now tested in [HEAD-002](head-002.md). Next inspect added-ball behavior, render sitting/lying comparisons and validate another breed before broad recipe claims. Cross-version edited tests remain outstanding.

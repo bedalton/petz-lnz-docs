@@ -6,6 +6,10 @@ Updated: 2026-11-09
 
 Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. User wants autonomous continuation through logical units until roughly 65% context use; exact context percentage is not exposed. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
 
+## Current container recovery
+
+[RESTORE-001](experiments/restore-001.md): checkout and environment restored, but games/ and previous private evidence are missing. Local launcher check fails before server construction. No local MCP connection is active. Restore game resources before rendering; freshly resolved dependencies require renewed provenance. Earlier environment descriptions below are historical unless reconfirmed.
+
 ## Environment and persistence
 
 Only /workspace is guaranteed persistent. Python 3.12.16 environment is scratch/petz-local-venv; uv cache and managed Python are under scratch. Use uv --link-mode copy on this mount (default cached-wheel installation failed with permission errors). Setup commands: experiments/smoke-001.md and petz-renderer-mcp/docs/local-mcp.md.

@@ -11,3 +11,5 @@ For actual editing, preserve inherited rows and use [copy-only controls](../agen
 In those sampled breeds, a single head-to-nose row at 50/150 changes only the nose raw position in standing/sitting/lying; 100 matches an explicit empty-projection control. Front/side images show localized nose movement. This is not a coherent muzzle extension recipe. The experiment deliberately replaces inherited projection rows to isolate the field.
 
 [PROJECT-003](../experiments/project-003.md) repeats these isolated controls with Petz 3 and 5 engine resources. Sampled raw geometry and comparison PNG hashes match Petz 4 for both breeds. This cross-version evidence applies only to the tested controls; native behavior remains unvalidated.
+
+[PROJECT-004](../experiments/project-004.md) repeats the isolated head-to-nose controls in Petz 4 Dalmatian/Persian, with the same position assertions and identity/image-change outcomes. Two breeds per species are now sampled; other anatomy and growth remain untested.

@@ -6,6 +6,7 @@ from petz_renderer.formats.resolver import ResourceResolver
 from petz_renderer.local import load_breed_assets
 from petz_renderer.rendering.positions import modify_positions
 from research_common import ROOT,SHA,adult,write_copy,save_result
+BREEDS={}
 VERSION='petz4'
 EXPERIMENT='PROJECT-002'
 OUT=ROOT/'scratch/research/project-002'
@@ -15,7 +16,7 @@ async def main():
     OUT.mkdir(parents=True,exist_ok=False)
     cases=[];renders=[]
     for species in ('Dogz','Catz'):
-        source,raw,leaf,base,_,_=adult(species, VERSION)
+        source,raw,leaf,base,_,_=adult(species, VERSION, **BREEDS.get(species, {}))
         head,nose=(52,55) if species=='Dogz' else (24,37)
         variants={'control':(), 'identity':(f'{head}, {nose}, 100',),
                   'half':(f'{head}, {nose}, 50',), 'long':(f'{head}, {nose}, 150',)}
@@ -36,7 +37,7 @@ async def main():
                 assert changed==[nose] and xyz(frames[v].balls[nose])==expected
                 checks.append({'pose':pose,'variant':v,'start_xyz':start,'control_end_xyz':end,'edited_end_xyz':expected,'changed_ids':changed})
         assert SHA(source.read_bytes())==SHA(raw)
-        cases.append({'species':species,'source_sha256':SHA(raw),'head_id':head,'target_id':nose,'paths':paths,'input_hashes':hashes,'project_rows':variants,'geometry':checks})
+        cases.append({'species':species,'source_file':source.name,'source_sha256':SHA(raw),'head_id':head,'target_id':nose,'paths':paths,'input_hashes':hashes,'project_rows':variants,'geometry':checks})
     transport=StdioTransport(sys.executable,['-I','-m','petz_renderer.service.local_mcp','--game-root',str(ROOT/'games'/VERSION),'--game-version',VERSION,'--asset-root',str(OUT)])
     async with Client(transport) as client:
         caps=await client.call_tool('get_capabilities');(OUT/'capabilities.json').write_text(json.dumps(caps.data,indent=2))
@@ -56,9 +57,15 @@ async def main():
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--game-version',choices=('petz3','petz4','petz5'),default='petz4')
+    parser.add_argument('--alternate-breeds',action='store_true')
     args=parser.parse_args()
     VERSION=args.game_version
     if VERSION!='petz4':
         EXPERIMENT=f'PROJECT-003-{VERSION}'
         OUT=ROOT/'scratch/research'/EXPERIMENT.lower()
+    if args.alternate_breeds:
+        if VERSION!='petz4': parser.error('alternate breed experiment currently requires petz4')
+        BREEDS={'Dogz':{'filename':'Dalmatian.dog','selector':'DM'},'Catz':{'filename':'Persian.cat','selector':'PR'}}
+        EXPERIMENT='PROJECT-004'
+        OUT=ROOT/'scratch/research/project-004'
     asyncio.run(main())

@@ -16,7 +16,7 @@ known={
  'Color Info Override':'Head-only perturbation: [BALL-001](../experiments/ball-001.md)',
  'Ballz Info':'67 labels per species inventoried; complete column/visual coverage pending: [ANATOMY-001](../experiments/anatomy-001.md)',
  'Eyes':'Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending',
- 'Project Ball':'[Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); Head/nose controls: [PROJECT-002](../experiments/project-002.md), [cross-version PROJECT-003](../experiments/project-003.md); other targets pending',
+ 'Project Ball':'[Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); Head/nose controls: [PROJECT-002](../experiments/project-002.md), [cross-version PROJECT-003](../experiments/project-003.md); [second breeds PROJECT-004](../experiments/project-004.md); other targets pending',
  'Default Linez File':'Selected master recorded in provenance; selection/recursion test pending',
 }
 lines=['# Research coverage ledger','','This is a lower-bound topic inventory, not a complete LNZ specification. It combines six sampled adult breed/master resources with override sections already encountered in code/experiments. More stock breeds, young resources and community references may add topics.','','Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also samples Project Ball edits in Petz 3 and 5. No topic has native-game validation. Ball-label agreement across versions is asset evidence only.','','| Topic | Current evidence / remaining work |','| --- | --- |']

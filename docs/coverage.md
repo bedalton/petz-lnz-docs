@@ -40,7 +40,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Omissions | All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending |
 | Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Project Ball | [Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); Head/nose controls: [PROJECT-002](../experiments/project-002.md), [cross-version PROJECT-003](../experiments/project-003.md); other targets pending |
+| Project Ball | [Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); Head/nose controls: [PROJECT-002](../experiments/project-002.md), [cross-version PROJECT-003](../experiments/project-003.md); [second breeds PROJECT-004](../experiments/project-004.md); other targets pending |
 | Sounds | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Species | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Texture List | Inventoried or implementation lead only; dedicated reference/experiment pending |

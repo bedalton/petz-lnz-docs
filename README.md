@@ -23,6 +23,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 ## Evidence
 
 - [RESTORE-001: container recovery](experiments/restore-001.md), [RESTORE-002: local MCP restored](experiments/restore-002.md)
+- [PROJECT-004: Dalmatian/Persian projections](experiments/project-004.md)
 - [PROJECT-003: edited cross-version projections](experiments/project-003.md)
 - [PROJECT-001: synthetic projection semantics](experiments/project-001.md), [PROJECT-002: breed projection controls](experiments/project-002.md)
 

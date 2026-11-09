@@ -7,8 +7,10 @@ from petz_renderer.appearance.lnz import parse_sections
 ROOT=Path(__file__).resolve().parents[1]
 SHA=lambda b: hashlib.sha256(b).hexdigest()
 
-def adult(species, version="petz4"):
-    filename,selector,master=('Scottie.dog','SC','DOGMASTER') if species=='Dogz' else ('Siamese.cat','SI','CATMASTER')
+def adult(species, version="petz4", *, filename=None, selector=None):
+    default_file,default_selector,master=('Scottie.dog','SC','DOGMASTER') if species=='Dogz' else ('Siamese.cat','SI','CATMASTER')
+    filename = default_file if filename is None else filename
+    selector = default_selector if selector is None else selector
     source=ROOT/'games'/version/'Resource'/species/filename
     raw=source.read_bytes(); pe=ResourceFile(raw)
     leaf=next(r for r in pe.resources if r.type=='LNZ' and r.name==selector)

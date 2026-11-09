@@ -22,6 +22,7 @@ Updated: 2026-11-09
 - Projection: [PROJECT-001](experiments/project-001.md) checks eleven synthetic cases; code-supported arithmetic/order only, no new renders.
 - Projection in breeds: [PROJECT-002](experiments/project-002.md); three-pose geometry checks and twelve local MCP comparisons confirm isolated head-to-nose scaling in Petz 4.
 - Edited cross-version sample: [PROJECT-003](experiments/project-003.md); Petz 3/5 projection controls match Petz 4 geometry and PNGs, narrowly scoped.
+- Second breeds: [PROJECT-004](experiments/project-004.md); Dalmatian/Persian pass isolated projection checks and twelve MCP comparisons.
 - Next: more frames/breeds, connected details and morphs; native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

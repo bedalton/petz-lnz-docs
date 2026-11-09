@@ -1,0 +1,522 @@
+{
+  "experiment": "PROJECT-004",
+  "game_version": "petz4",
+  "backend": "local stdio MCP",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_file": "Dalmatian.dog",
+      "source_sha256": "de80cf7242e1a85b32f2912834247b2cc738a7d93740398003e24b0ac9d7a91c",
+      "head_id": 52,
+      "target_id": 55,
+      "paths": {
+        "control": "Dogz-control.dog",
+        "identity": "Dogz-identity.dog",
+        "half": "Dogz-half.dog",
+        "long": "Dogz-long.dog"
+      },
+      "input_hashes": {
+        "control": "2c6cf300349fa74f167c820a397058886840b742abee6d3cf26e2b40ab38a5d0",
+        "identity": "4499be2d3eb6d38f6e9d94441d5cd0675b04d8b03ce044f0ac0068ddb14f845a",
+        "half": "f55d539086f48f869e50303aa06c1467054f073d9043097da8e4210d6ce7f38d",
+        "long": "8ae76f06772b899b33b7c3f9c9b0f660cb20dfeb298cf3f44f7ddd686c857b62"
+      },
+      "project_rows": {
+        "control": [],
+        "identity": [
+          "52, 55, 100"
+        ],
+        "half": [
+          "52, 55, 50"
+        ],
+        "long": [
+          "52, 55, 150"
+        ]
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "half",
+          "start_xyz": [
+            -3,
+            -183,
+            -95
+          ],
+          "control_end_xyz": [
+            -1,
+            -154,
+            -151
+          ],
+          "edited_end_xyz": [
+            -2,
+            -169,
+            -123
+          ],
+          "changed_ids": [
+            55
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "long",
+          "start_xyz": [
+            -3,
+            -183,
+            -95
+          ],
+          "control_end_xyz": [
+            -1,
+            -154,
+            -151
+          ],
+          "edited_end_xyz": [
+            0,
+            -140,
+            -179
+          ],
+          "changed_ids": [
+            55
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "half",
+          "start_xyz": [
+            -1,
+            -213,
+            34
+          ],
+          "control_end_xyz": [
+            2,
+            -188,
+            -25
+          ],
+          "edited_end_xyz": [
+            0,
+            -201,
+            5
+          ],
+          "changed_ids": [
+            55
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "long",
+          "start_xyz": [
+            -1,
+            -213,
+            34
+          ],
+          "control_end_xyz": [
+            2,
+            -188,
+            -25
+          ],
+          "edited_end_xyz": [
+            3,
+            -176,
+            -54
+          ],
+          "changed_ids": [
+            55
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "half",
+          "start_xyz": [
+            6,
+            -75,
+            -154
+          ],
+          "control_end_xyz": [
+            8,
+            -65,
+            -215
+          ],
+          "edited_end_xyz": [
+            7,
+            -70,
+            -184
+          ],
+          "changed_ids": [
+            55
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "long",
+          "start_xyz": [
+            6,
+            -75,
+            -154
+          ],
+          "control_end_xyz": [
+            8,
+            -65,
+            -215
+          ],
+          "edited_end_xyz": [
+            9,
+            -60,
+            -245
+          ],
+          "changed_ids": [
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_file": "Persian.cat",
+      "source_sha256": "39a637c2afa8d7f06e878a9e0e116e2c898df275aa121be7e35290681e905594",
+      "head_id": 24,
+      "target_id": 37,
+      "paths": {
+        "control": "Catz-control.cat",
+        "identity": "Catz-identity.cat",
+        "half": "Catz-half.cat",
+        "long": "Catz-long.cat"
+      },
+      "input_hashes": {
+        "control": "28cdbe1f3dd89b456f7c0ed91ef57a9f33b990657d6cd5dac4d1065cbb45ff9f",
+        "identity": "42fd55a07a69036e8a0f52cac6cfb862899b7a0f545071c431d41657b4a79a39",
+        "half": "8f98bab5ef426315733f59a820a2e6dbbd4d635a7419cda28900f51dab0c5d69",
+        "long": "95dd46fe291e043442c08e25f2395b89f62a7a5afa1dbb241c6a1665d329ee02"
+      },
+      "project_rows": {
+        "control": [],
+        "identity": [
+          "24, 37, 100"
+        ],
+        "half": [
+          "24, 37, 50"
+        ],
+        "long": [
+          "24, 37, 150"
+        ]
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "half",
+          "start_xyz": [
+            0,
+            -159,
+            -124
+          ],
+          "control_end_xyz": [
+            0,
+            -153,
+            -185
+          ],
+          "edited_end_xyz": [
+            0,
+            -156,
+            -154
+          ],
+          "changed_ids": [
+            37
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "long",
+          "start_xyz": [
+            0,
+            -159,
+            -124
+          ],
+          "control_end_xyz": [
+            0,
+            -153,
+            -185
+          ],
+          "edited_end_xyz": [
+            0,
+            -150,
+            -215
+          ],
+          "changed_ids": [
+            37
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "half",
+          "start_xyz": [
+            4,
+            -208,
+            2
+          ],
+          "control_end_xyz": [
+            8,
+            -207,
+            -59
+          ],
+          "edited_end_xyz": [
+            6,
+            -208,
+            -28
+          ],
+          "changed_ids": [
+            37
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "long",
+          "start_xyz": [
+            4,
+            -208,
+            2
+          ],
+          "control_end_xyz": [
+            8,
+            -207,
+            -59
+          ],
+          "edited_end_xyz": [
+            10,
+            -207,
+            -89
+          ],
+          "changed_ids": [
+            37
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "half",
+          "start_xyz": [
+            7,
+            -77,
+            -569
+          ],
+          "control_end_xyz": [
+            2,
+            -73,
+            -630
+          ],
+          "edited_end_xyz": [
+            5,
+            -75,
+            -599
+          ],
+          "changed_ids": [
+            37
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "long",
+          "start_xyz": [
+            7,
+            -77,
+            -569
+          ],
+          "control_end_xyz": [
+            2,
+            -73,
+            -630
+          ],
+          "edited_end_xyz": [
+            0,
+            -71,
+            -660
+          ],
+          "changed_ids": [
+            37
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "variant": "identity",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-identity.dog",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "0fc60f199b25a77bf6493636808ce493b234453b4ed87090387ee51e94bc45b1",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "identity",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-identity.dog",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "531600aefb3b25fc579394eb80c03eaa4d584f33688a0ec39eff6d98abc089b4",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "half",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-half.dog",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "fcb8d6e9dc3d4985b3cc843ff68ffd53dd042533e6ac90081a91bf573f1711db",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "half",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-half.dog",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "a3272c1ac8003d8de3b1944459eea09b6bd41004ec846b1ed20a5ccbe1607ec5",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "long",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-long.dog",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "307f6580e3aa64a28ff50fe230b9196d23740a5b4730d6015774b94ec95ffa0e",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "long",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-long.dog",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "98df5731bec8bccb138ecc25dd8539021df15cbeb83606b1c519a60f90426d63",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "variant": "identity",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-identity.cat",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "7f739492ef3d3745b7c8fb98909b686cd661c285f741d38962fc0b9f45cbec6c",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "variant": "identity",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-identity.cat",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "2136520fe05243aa14e4b6b9bcf2e29f4057f89fd9465bcecb4217e428c5bf3f",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "variant": "half",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-half.cat",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "7184f4640d98e440c0fc9aa85b93b2e5d7116c92f23ad42ebcffaac705410424",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "variant": "half",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-half.cat",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "fba3302a17e76b21f9565ccbf62df1cb7b2cd93f17d2690ad04f9c65869d382c",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "variant": "long",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-long.cat",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "036cee1a38506bf89c60dd4564ebb67730f24d979915bd040303541ab2734a6f",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "variant": "long",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-long.cat",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "seed": 0,
+        "age": 100,
+        "fatness": 50
+      },
+      "png_sha256": "3304f3c7ce9e1a5cc18d73051a7a8c618f9b1d97c1c0f8a3a9f70f5bce2a9330",
+      "cells_equal": false
+    }
+  ]
+}

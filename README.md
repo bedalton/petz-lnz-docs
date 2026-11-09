@@ -23,6 +23,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 ## Evidence
 
+- [LINE-003: connector draw order](experiments/line-003.md)
 - [LINE-002: connector widths](experiments/line-002.md)
 - [LINE-001: connected marker and omissions](experiments/line-001.md)
 

@@ -25,6 +25,7 @@ Updated: 2026-11-09
 - Second breeds: [PROJECT-004](experiments/project-004.md); Dalmatian/Persian pass isolated projection checks and twelve MCP comparisons.
 - Connections: [LINE-001](experiments/line-001.md); twelve MCP comparisons verify endpoint omissions remove a head-to-marker line; parent omission leaves marker visible.
 - Connector widths: [LINE-002](experiments/line-002.md); 24 MCP pairs and 36 block checks distinguish zero/zero rejection from single-zero tip clamping.
+- Connector order: [LINE-003](experiments/line-003.md); twenty MCP comparisons separate explicit row flags and global fallback, preserving existing lines.
 - Next: more frames/breeds, connected details and morphs; native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

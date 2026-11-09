@@ -1,0 +1,2155 @@
+{
+  "experiment": "LINE-003",
+  "backend": "local stdio MCP plus direct scheduler",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "settings": {
+    "before": [
+      1,
+      0
+    ],
+    "after": [
+      1,
+      1
+    ],
+    "default_before": [
+      1,
+      -1
+    ],
+    "default_after": [
+      0,
+      -1
+    ],
+    "override_before": [
+      0,
+      0
+    ],
+    "override_after": [
+      0,
+      1
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "before": "52, 90, 0, 125, 244, 244, 100, 100, 0, 0",
+        "after": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "default_before": "52, 90, 0, 125, 244, 244, 100, 100, 0, -1",
+        "default_after": "52, 90, 0, 125, 244, 244, 100, 100, 0, -1",
+        "override_before": "52, 90, 0, 125, 244, 244, 100, 100, 0, 0",
+        "override_after": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "before": "Dogz-before.dog",
+        "after": "Dogz-after.dog",
+        "default_before": "Dogz-default_before.dog",
+        "default_after": "Dogz-default_after.dog",
+        "override_before": "Dogz-override_before.dog",
+        "override_after": "Dogz-override_after.dog"
+      },
+      "input_hashes": {
+        "before": "5f1edff1cf0176c9cea9e52b1180a3eb5e45429bb965528a3921da649340ebce",
+        "after": "613bf78849bf150e9e22ec4dc6b855e730b1a4581f43b2efe31fdfb84bfb54aa",
+        "default_before": "53ee16fa6586920b537ea508df2a4811ec3a44691a638dbaeb22d79ec63a09d5",
+        "default_after": "df6785d8c5ff97684367db9ce56c30cc623e1894e518d032dc3de095ab441177",
+        "override_before": "a494a90feb97e3977ac65c4f34a0e9ce670875b900959d3c7400e4c817262edc",
+        "override_after": "96ecb530896e2b1417fabcae7b71e2a7645c3e573c8a45f43b75dff27bca402c"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                52,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                52
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  52
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "before": "24, 90, 0, 125, 244, 244, 100, 100, 0, 0",
+        "after": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "default_before": "24, 90, 0, 125, 244, 244, 100, 100, 0, -1",
+        "default_after": "24, 90, 0, 125, 244, 244, 100, 100, 0, -1",
+        "override_before": "24, 90, 0, 125, 244, 244, 100, 100, 0, 0",
+        "override_after": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "before": "Catz-before.cat",
+        "after": "Catz-after.cat",
+        "default_before": "Catz-default_before.cat",
+        "default_after": "Catz-default_after.cat",
+        "override_before": "Catz-override_before.cat",
+        "override_after": "Catz-override_after.cat"
+      },
+      "input_hashes": {
+        "before": "17f2aec01f5a2f7abd242861a1d0d7e8e94dc369cdfddbd359c161ed5fc1a5df",
+        "after": "72f9966258bcec6003a853d28de1ede441c56bac1223cf98258abd35abca0ddc",
+        "default_before": "0b4c2e79551e21b39ae36a4caeed0e332a45bef6b1da8ab27793353c8eea411c",
+        "default_after": "5654b3b0046c0c3a4adbf4d3828dfe081df11c619768ea6faec12883ee9534e3",
+        "override_before": "4abcfa1541bbc79638c10c547e72b54aa71be40fb2e4b010513be1ab20cfe30b",
+        "override_after": "fd621124b63252b38259ad04e72a1f87d7f17a8a6751faa0d4f6162fb4d85371"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "default_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "default_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "override_before",
+          "parsed_draw_after": false,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "line",
+                  0
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "override_after",
+          "parsed_draw_after": true,
+          "isolated_endpoint_schedules": [
+            {
+              "circle_order": [
+                24,
+                90
+              ],
+              "events": [
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            },
+            {
+              "circle_order": [
+                90,
+                24
+              ],
+              "events": [
+                [
+                  "circle",
+                  90
+                ],
+                [
+                  "circle",
+                  24
+                ],
+                [
+                  "line",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "after"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "215b088dc6c652060c2d309cd4546e5ac83a47eab64fd8222112191bcebf8122",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "after"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "e80b0a857fce0d780b09faf1c15c983bf19e36053c66e2a2f1baa8051c0f9182",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "default_before"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-default_before.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ac6715f5980c2599ba0e2b9c95e1e6db85937cfa172c597f3a161a7144541dba",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "default_before"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-default_before.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "ad151e2eaa97928170c9c2c8e8218f0877a484682199dc9880aaf816527b51e2",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "after",
+        "default_after"
+      ],
+      "controls": {
+        "before_path": "Dogz-after.dog",
+        "after_path": "Dogz-default_after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "23e172f598e05c46cb2218b1bf3da08483a07b86ddcc068e53510d07481c64cd",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "after",
+        "default_after"
+      ],
+      "controls": {
+        "before_path": "Dogz-after.dog",
+        "after_path": "Dogz-default_after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c932b1cc4f2b607d262b9865a89f8797286fd23d17d96c23a56cc547ece82998",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "override_before"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-override_before.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ac6715f5980c2599ba0e2b9c95e1e6db85937cfa172c597f3a161a7144541dba",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "before",
+        "override_before"
+      ],
+      "controls": {
+        "before_path": "Dogz-before.dog",
+        "after_path": "Dogz-override_before.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "ad151e2eaa97928170c9c2c8e8218f0877a484682199dc9880aaf816527b51e2",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "after",
+        "override_after"
+      ],
+      "controls": {
+        "before_path": "Dogz-after.dog",
+        "after_path": "Dogz-override_after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "23e172f598e05c46cb2218b1bf3da08483a07b86ddcc068e53510d07481c64cd",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "after",
+        "override_after"
+      ],
+      "controls": {
+        "before_path": "Dogz-after.dog",
+        "after_path": "Dogz-override_after.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c932b1cc4f2b607d262b9865a89f8797286fd23d17d96c23a56cc547ece82998",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "after"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1b5f3fa2ea9f27c870b680c036d0ff955d1df379c941e029ee17b2f92dc9af16",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "after"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "d97fff9fc24620f00cc0d710299fcb4894c91f1fc68ab95619c4911bff6c9294",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "default_before"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-default_before.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "eb26de697845edeadd70cd2d5f2556d2bfa58d4c5b6a57e13f1128016ebf773d",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "default_before"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-default_before.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "6889367294f5f58a284a97fd502665cf5745394842f8ca3582affdbb388781c0",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "after",
+        "default_after"
+      ],
+      "controls": {
+        "before_path": "Catz-after.cat",
+        "after_path": "Catz-default_after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "0d376a60311b8db79be16a4ad4908cc57462ee631fb28cf3d099a892ede477fa",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "after",
+        "default_after"
+      ],
+      "controls": {
+        "before_path": "Catz-after.cat",
+        "after_path": "Catz-default_after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "6ef3479f5e67dbd14b7cd2e5f76ae919c71b26bf7014129013c924a8418cce1a",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "override_before"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-override_before.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "eb26de697845edeadd70cd2d5f2556d2bfa58d4c5b6a57e13f1128016ebf773d",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "before",
+        "override_before"
+      ],
+      "controls": {
+        "before_path": "Catz-before.cat",
+        "after_path": "Catz-override_before.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "6889367294f5f58a284a97fd502665cf5745394842f8ca3582affdbb388781c0",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "after",
+        "override_after"
+      ],
+      "controls": {
+        "before_path": "Catz-after.cat",
+        "after_path": "Catz-override_after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "0d376a60311b8db79be16a4ad4908cc57462ee631fb28cf3d099a892ede477fa",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "after",
+        "override_after"
+      ],
+      "controls": {
+        "before_path": "Catz-after.cat",
+        "after_path": "Catz-override_after.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "6ef3479f5e67dbd14b7cd2e5f76ae919c71b26bf7014129013c924a8418cce1a",
+      "cells_equal": true
+    }
+  ]
+}

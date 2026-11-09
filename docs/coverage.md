@@ -19,6 +19,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Default Linez File | Selected master recorded in provenance; selection/recursion test pending |
 | Default Linez Thickness | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Default Scales | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Draw Linez Before Ballz | Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md) |
 | Ear Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Eyes | Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending |
 | Face Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
@@ -32,7 +33,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Head Tilt Limits | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Key Balls | Master IDs inventoried; section replacement tested: [INHERIT-001](../experiments/inherit-001.md) |
 | Leg Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); order/other styling pending |
+| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); other styling pending |
 | Little one | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |

@@ -14,6 +14,7 @@ Updated: 2026-11-09
 - Eye colors: [EYE-001](experiments/eye-001.md) distinguishes pupil fill, iris outline and host-eye fill; [editing recipe](visual-editing/eye-colors.md).
 - Added details: [ADD-001](experiments/add-001.md) tests attachment, relative radius and omission; [guide](visual-editing/attached-details.md).
 - Base visibility: [OMIT-001](experiments/omit-001.md) covers all 67 base IDs per species in front/side views (268 observations); anatomy indices show pixel sensitivity, not full semantic validation.
-- Next: zero-size/occluded/overlay cases, more frames/breeds, connected details and morphs.
+- Visibility: [VIS-001](experiments/vis-001.md) audits unchanged IDs in three poses; zero-radius groups separated, Catz 55/56 still unresolved.
+- Next: Catz 55/56 pose/angle renders, iris/host combinations, more frames/breeds, connected details and morphs.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

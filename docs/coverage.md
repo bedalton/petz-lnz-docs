@@ -37,7 +37,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |
 | Num Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Omissions | All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); iris overlay exception, native/morph cases pending |
+| Omissions | All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending |
 | Outline Color Override | Iris-ring perturbation: [EYE-001](../experiments/eye-001.md) |
 | Paint Ballz | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Project Ball | Downstream effect observed in MOVE-001; independent field test pending |
@@ -61,7 +61,7 @@ All controlled editing results currently concern Petz 4 Scottie/Siamese. No topi
 
 ## Next priorities
 
-1. Investigate zero-size/occluded/overlay cases from the omission sweep; expand frames and views.
+1. Render unresolved Catz 55/56 in more poses/angles after VIS-001; test iris/host combinations.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Connected added-ball details, body areas and morph groups.
 4. Another breed per species, followed by edited cross-version checks.

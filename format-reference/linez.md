@@ -19,3 +19,5 @@ Adding the tested connector changed no computed ball geometry. Omitting either e
 Preserve effective inherited Linez when introducing a breed-level section; LINE-001 materializes those rows before appending. This experiment does not establish general inheritance behavior for Linez. See [attached details](../visual-editing/attached-details.md) and [omissions](omissions.md).
 
 [LINE-003](../experiments/line-003.md) tests column 10 as 0 (before endpoint visits), 1 (after both endpoint visits), and -1 (global fallback). `Draw Linez Before Ballz` 1 defaults to before; 0 defaults to after. Explicit 0/1 override either global setting. This is endpoint-relative scheduling, not a promise to draw after every object in the scene. Existing line flags were frozen to isolate the comparisons.
+
+Connections can affect body-area classification as well as pixels. [AREA-001](../experiments/area-001.md) links a head-attached marker to an ankle and observes area 8 become area 3, changing its direct head-rotation response. See [body areas](body-areas.md).

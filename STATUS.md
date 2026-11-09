@@ -27,6 +27,7 @@ Updated: 2026-11-09
 - Connector widths: [LINE-002](experiments/line-002.md); 24 MCP pairs and 36 block checks distinguish zero/zero rejection from single-zero tip clamping.
 - Connector order: [LINE-003](experiments/line-003.md); twenty MCP comparisons separate explicit row flags and global fallback, preserving existing lines.
 - Add groups: [MORPH-001](experiments/morph-001.md); default group 15 parks a marker, distinct from omission; explicit numerical percentages scale offsets/ordinary size.
+- Body areas: [AREA-001](experiments/area-001.md); an ankle connection reassigns the marker from area 8 to 3, changing numerical head-rotation response.
 - Next: more frames/breeds, connected details and morphs; native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

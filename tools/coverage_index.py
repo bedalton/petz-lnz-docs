@@ -9,7 +9,7 @@ names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add
 known={
  'Draw Linez Before Ballz':'Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md)',
  'Linez':'Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); other styling pending',
- 'Add Ball':'Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); remaining fields need tests',
+ 'Add Ball':'Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); body-area propagation: [AREA-001](../experiments/area-001.md); remaining fields need tests',
  'Omissions':'All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending',
  'Head Enlargement':'Tested size/spacing and A=100 gate: [HEAD-001](../experiments/head-001.md), [HEAD-002](../experiments/head-002.md)',
  'Outline Color Override':'Iris-ring perturbation: [EYE-001](../experiments/eye-001.md)',

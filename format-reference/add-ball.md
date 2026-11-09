@@ -15,7 +15,7 @@ A row begins with the **parent/base ID**, not its own new ID. Added IDs are assi
 | 9 | Color group | -1 used; inheritance/painting semantics untested |
 | 10 | Outline mode | -1 used |
 | 11 | Size | Ordinary diameter; optional size reference changes radius calculation |
-| 12 | Body area | 0 inherits base area in this renderer; not a color group |
+| 12 | Body area | 0 inherits base area; connections can reassign area 8 ([AREA-001](../experiments/area-001.md)); not a color group |
 | 13 | Add group | 0 active and unused group 15 dormant by default; explicit numerical updates tested in [MORPH-001](../experiments/morph-001.md) |
 | 14 (optional) | Texture index | -1 used (untextured) |
 | 15 (optional) | Size-base-ball ID | -1 means no reference; head reference tested |

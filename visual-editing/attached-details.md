@@ -7,6 +7,20 @@ Initial scope: Petz 4 Scottie/Siamese, a synthetic head marker and one base-to-m
 3. Append a row, preserving existing rows and dependent references. Render insertion and movement comparisons with fixed controls.
 4. If the parent changes shape, explicitly inspect the detail. Ordinary attachment can follow movement while keeping its own radius and offset unchanged under Head Enlargement.
 5. If size should follow another ball, investigate the optional size-reference field. It adds a scaled radius adjustment to the referenced radius; it does not simply interpret size as an ordinary diameter.
-6. Check sitting/lying, depth overlap, connections and omissions before accepting the detail. Integer rounding means parent and attachment pixel deltas need not match exactly.
+6. After adding a connector, inspect effective body area. [AREA-001](../experiments/area-001.md) finds an ankle connection reassigns a head marker from area 8 to 3, changing its numerical head-rotation response. Explicit area 8 did not prevent reassignment.
+7. Check add group and parked state. [MORPH-001](../experiments/morph-001.md) distinguishes dormant geometry from omission; visible=true alone is insufficient.
+8. Check sitting/lying, depth overlap, connections and omissions before accepting the detail. Integer rounding means parent and attachment pixel deltas need not match exactly.
 
 Hide an experimental marker by adding its ID to Omissions rather than removing its row and shifting later IDs. [LINE-001](../experiments/line-001.md) also tests a connected marker: omitting either endpoint removes the connector. Omitting the parent head leaves the marker visible; hide each desired component explicitly. Read the [Linez field reference](../format-reference/linez.md) before adding connections.
+
+
+## Connector controls tested so far
+
+| Need | Tested control and evidence |
+| --- | --- |
+| Narrow a broad connector | Reduce endpoint percentages; equal percentages still depend on separate ball radii ([LINE-002](../experiments/line-002.md)) |
+| Suppress the connector with widths | Both zero reject its block; a single zero leaves a clamped tip in these tests ([LINE-002](../experiments/line-002.md)) |
+| Place fill relative to endpoint circles | Column 10: 0 before first visit, 1 after both; -1 uses global fallback ([LINE-003](../experiments/line-003.md)) |
+| Use a shortened row | Two IDs use defaults including global endpoint thickness; explicit row widths override it ([LINE-004](../experiments/line-004.md)) |
+
+These are sampled renderer controls, not a native-validated ornament recipe. Keep independent controls for appearance, body-area response and group visibility.

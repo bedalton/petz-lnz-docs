@@ -77,6 +77,10 @@ README.md links thirteen experiment writeups and manifests. All behavior finding
 
 [LINE-004](experiments/line-004.md): 36 numerical checks and sixteen MCP equivalence pairs, two sheets reviewed. Two-field rows resolve defaults; global thickness25/100 matches full rows; explicit25 overrides global100; empty section falls back100. Existing line styles frozen explicitly. tools/line_defaults_probe.py refuses overwrite. Missing-section inheritance and partial3–9-field rows remain untested.
 
+## Session verification and navigation
+
+[Session overview](docs/session-2026-11-09-connectors.md) indexes five units: 80 MCP pairs, 174 numerical checks, 18 reviewed sheets. tools/check_recent_evidence.py verifies 62 private inputs, 80 PNGs, original breed hashes and 12 shared-engine files without rerendering. All pass. Agent routes/attached-detail controls updated. Next targeted topics: multi-neighbor area precedence, relative-size/multi-group morphs, connector fuzz/edge/color, other connector breeds/versions, native validation.
+
 ## Next research
 
 Iris/host combinations are now sampled by EYE-002; seek native evidence before resolving GAP-004. Do not keep investigating Catz 55/56 no-ops in supplied poses: the user explained the hidden tongue and missing tongue-out animation; see VIS-002 for attribution and limits. Test more frames/angles and another breed per species before promoting visual atlas identities. Consider left-pair/other-breed checks and independent native evidence. Expand connected added details, body areas/morph groups, remaining shape/color/texture sections and edited cross-version checks. Do not repair ambiguous renderer behavior without a reproducer and evidence of intended native semantics.

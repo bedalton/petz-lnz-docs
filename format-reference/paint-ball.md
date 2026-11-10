@@ -20,6 +20,8 @@ For direct retained renders,persist the complete FrameState returned after drawi
 
 [PAINT-004](../experiments/paint-004.md) checks180 group-only synthetic comparisons:prepared commands remain equal across groups0/-1/1/2/15/255,with180 nonzero-group diagnostics. Color positive controls change fills in216/216 cases. This bypasses saved-pet assembly and supplies no new pixels.
 
-Uncertainty:the installed diagnostic explicitly reports nonzero paint group controls as unsupported;UPDATE-001's resolved-colour remap checks do not establish end-to-end saved-group override. Saved-group retint remains open. Clothing and source-reported offscreen flat-paint edge behavior are separate gaps. No renderer observation here is game validation.
+Uncertainty:the installed diagnostic explicitly reports nonzero paint group controls as unsupported;UPDATE-001's resolved-colour remap checks do not establish end-to-end saved-group override. Native saved-group retint semantics remain open. Clothing and source-reported offscreen flat-paint edge behavior are separate gaps. No renderer observation here is game validation.
 
 [PAINT-005](../experiments/paint-005.md) changes three skipped saved-prefix arrays independently/together in copies of Fuzzkin,Homebody and Goobe:72 direct edited views and24 fresh MCP variant views match unchanged caches/baselines. This tests ignored prefix payloads,not native array semantics or cached paint group tokens. PetzInfo checksums remain unvalidated.
+
+[PAINT-006](../experiments/paint-006.md) follows group edits through both saved caches and mixed-age assembly:all36 group0/group1 comparisons retain commands/pixels,while diagnostics change. Fuzzkin color65 edits change six views;Homebody/Goobe lack visible positive controls here. This establishes sampled renderer behavior,not native retint semantics.

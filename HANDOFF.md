@@ -346,3 +346,7 @@ Final aggregate additionally rehashes all660 PNG files and48 private state files
 ## Saved prefix-array continuation
 
 [PAINT-005](experiments/paint-005.md):three saved pets ×four prefix-array mutations,12 copies;72 direct edited/72 baseline draws and30 fresh stdio MCP views agree. Reader skips three count-checked array payloads;exact original/cache/tail boundaries retained. Forty-eight PAINT-001 fresh PNG links pass. Copies are renderer probes with unvalidated PetzInfo checksums,not game-ready files. tools/saved_colour_arrays.py --verify reconstructs/reloads all fixtures;private evidence scratch/research/paint-005. Cached group/color controls follow separately. Original files/renderer unchanged;ten-minute continuation ongoing.
+
+## Cached group/color controls
+
+[PAINT-006](experiments/paint-006.md) parses group0/group1 from both edited caches in Fuzzkin/Homebody/Goobe;all36 group comparisons preserve prepared commands/pixels. Diagnostics distinguish0 from1. Six Fuzzkin color65 controls change pixels;Homebody/Goobe commands do not change despite parsed colors. Nine copies,72 direct draws,18 MCP matches andsix reviewed sheets. First failed blanket-positive assertion archived privately in paint-006-attempt1. tools/saved_paint_groups.py --verify passes;private evidence scratch/research/paint-006. Explicit Fuzzkin age controls follow. Originals/renderer unchanged;ten-minute continuation ongoing.

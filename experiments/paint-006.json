@@ -1,0 +1,1727 @@
+{
+  "experiment": "PAINT-006",
+  "backend": "copy-only cached Paint Ballz substitutions; direct API and local stdio MCP",
+  "provenance": {
+    "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+    "source_hashes": {
+      "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "appearance/breed_variations.py": "d1aefb0e74f4a94f6a45e145b305339a9f19ec9cc40bdbee0c93200399687225",
+      "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+      "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "appearance/preview.py": "79b525a2696ef383b565256b711334294fd370cac4ef8563236894563f0051cc",
+      "appearance/variations.py": "03c4ed213ec6c694d7c07ee8e6f610d90b89ed1ae89bb839a7cba98e0f81d1fb",
+      "cli.py": "2f5b30afd3dee6d16460f9efbdd378d8b731469e5bd13c853ceaa86738491761",
+      "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "local.py": "d3b7bbbc59cbe445a18770caf19fda7dde3ff5d530e4ef1331e30b132f49a493",
+      "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "service/application.py": "69f2408f6fd47b90437bdf4f712f8e9d19e9382b78ca6af2553f15d517d74173",
+      "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "service/inspection.py": "24524a376ce7d2dc7aa74eee1bf1e0cbfb4c3b69fca37c3ed40de207de29a0c9",
+      "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "service/mcp.py": "2601e07d89fc967bdc5fc221940bec2161f7102db221e191425f73662bf62be3",
+      "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649",
+      "service/sheets.py": "ca0b9eb408d7854c1b3253ac72a198ef7f1582f57bdcca6839d63c06adb08b32",
+      "service/tool_inputs.py": "68815dbd2e41afd22276a1a9c032f81a1aa86e17ab3e63e60dd2ac83e6502e3c",
+      "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197"
+    },
+    "engine_hashes": {
+      "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+      "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+    },
+    "dependencies": {
+      "petz-renderer-mcp": "0.1.0",
+      "fastmcp": "4.1.6",
+      "pillow": "13.0.0"
+    },
+    "prior_manifest_sha256": "6101ac76fcc6d20bf407b174cc04b3e7f83e84459414185355215364aa13de1e"
+  },
+  "controls": {
+    "age_seed_fatness": "saved",
+    "raster_seed": 1,
+    "line_seed": 1,
+    "step": 0,
+    "cache_edits": "both adult/young; original byte lengths; only group or color token"
+  },
+  "sources": [
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "cache_spans": [
+        {
+          "cache": "adult",
+          "offset": 5998,
+          "length": 7581,
+          "sha256": "2f66e9243659a1fa160491a0bd921ce407631929c9856c3d72614ecb00734c75"
+        },
+        {
+          "cache": "young",
+          "offset": 13584,
+          "length": 7577,
+          "sha256": "30f8354c09dd7739c562e3dc8ad4d6ab152ecf5c0f89a02f528934ea71232904"
+        }
+      ],
+      "variants": [
+        {
+          "mode": "group0",
+          "path": "Fuzzkin-group0.pet",
+          "sha256": "395fd5a4751056015ebc7ea2cfa0a8f3cb007cdcdd9b9569e8b381a32f912f09",
+          "rows": {
+            "adult": 19,
+            "young": 19
+          },
+          "changed_bytes": 70
+        },
+        {
+          "mode": "group1",
+          "path": "Fuzzkin-group1.pet",
+          "sha256": "0383ad78d4d8088f9ef495cb70f1e9fc5c69c54ddbf587d3ba4c133412f3edbf",
+          "rows": {
+            "adult": 19,
+            "young": 19
+          },
+          "changed_bytes": 38
+        },
+        {
+          "mode": "color65",
+          "path": "Fuzzkin-color65.pet",
+          "sha256": "cfa804e6ade17c94967c52583be70e32f69fcaf8f343e83db2ed2054662c5145",
+          "rows": {
+            "adult": 19,
+            "young": 19
+          },
+          "changed_bytes": 70
+        }
+      ]
+    },
+    {
+      "name": "Homebody",
+      "path": "Adopted Petz/Homebody.pet",
+      "sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "cache_spans": [
+        {
+          "cache": "adult",
+          "offset": 5998,
+          "length": 5774,
+          "sha256": "35a6e1b38b3b2507879d1c3b4731887a82f7ca6e45d1d130eb28ba2cb35d6720"
+        },
+        {
+          "cache": "young",
+          "offset": 11777,
+          "length": 5771,
+          "sha256": "6c918fc37d20c1004575cf98fca4b708e8e5f49cec87c88f2b8e474e097e34ab"
+        }
+      ],
+      "variants": [
+        {
+          "mode": "group0",
+          "path": "Homebody-group0.pet",
+          "sha256": "60ffeae8e6765acb6d465960b8f02c781e647682d97820a686f44111db79cf22",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 64
+        },
+        {
+          "mode": "group1",
+          "path": "Homebody-group1.pet",
+          "sha256": "e505ddb4cac9a7904e9a7267abfcd992e5ddd531ca167e3beefab8915e61712a",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 32
+        },
+        {
+          "mode": "color65",
+          "path": "Homebody-color65.pet",
+          "sha256": "3d99aefcec3dc5db3e070a08c1763934a26fb0d2fd5ef0cfbd6dca11ee6c6f8a",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 32
+        }
+      ]
+    },
+    {
+      "name": "Goobe",
+      "path": "Adopted Petz/Goobe.pet",
+      "sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "cache_spans": [
+        {
+          "cache": "adult",
+          "offset": 5998,
+          "length": 7329,
+          "sha256": "8aa6fc399cd26731fe14e746aa2a276264addacb07382e16c1fc0520b95b5120"
+        },
+        {
+          "cache": "young",
+          "offset": 13332,
+          "length": 7326,
+          "sha256": "4d281b56ba34c33ec529dbb35517a42920bfa332a0d18eff5d346d7fb1b3006f"
+        }
+      ],
+      "variants": [
+        {
+          "mode": "group0",
+          "path": "Goobe-group0.pet",
+          "sha256": "b9206c83fd195e84fd98e151a9da78f7dfa242236d9062aa488b958c1d18e15d",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 64
+        },
+        {
+          "mode": "group1",
+          "path": "Goobe-group1.pet",
+          "sha256": "5288d9a335c22946fc5057a3ce89c29e6bc3c980b85805604470d9e48490390e",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 32
+        },
+        {
+          "mode": "color65",
+          "path": "Goobe-color65.pet",
+          "sha256": "4ead860a4084c6a468fc8773390f40f0a57fb41d79f7d00294b096e8bfbadfb4",
+          "rows": {
+            "adult": 16,
+            "young": 16
+          },
+          "changed_bytes": 64
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "name": "Fuzzkin",
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-standing-0-baseline.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "rgba_sha256": "10ecd875b1d61c9cc2924faa467dfb3524172ced7f2779ebf935d0b76c9a8008",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-standing-0-group0.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "rgba_sha256": "10ecd875b1d61c9cc2924faa467dfb3524172ced7f2779ebf935d0b76c9a8008",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-standing-0-group1.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "rgba_sha256": "10ecd875b1d61c9cc2924faa467dfb3524172ced7f2779ebf935d0b76c9a8008",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-standing-0-color65.png",
+          "png_sha256": "7ef7fafda0c4978fb921ca0ef07fc3e8ebbe14fe8dce7f62b6f65c99ee9e0f91",
+          "indexed_sha256": "3425d1f4c9e3d7f74512eae9e3f4a4cb1ba9b2253609a95d8fcd97a34f438b40",
+          "rgba_sha256": "b1b917a993506b1855e7cddce7a47138fb8876bc95fd9453b64cec0e5507f9c3",
+          "indexed_changed": 90,
+          "rgba_changed": 90,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-standing-0-sheet.png",
+      "sheet_sha256": "58bf2961396104d874fd9b3e2801733f6394162b513633de869f3ea67a5e86b7",
+      "cell_size": [
+        71,
+        90
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-standing-64-baseline.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "rgba_sha256": "bb6c8c992301f25329ba190ff2563b928965dd89af6536a51e9ea15f88ba3693",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-standing-64-group0.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "rgba_sha256": "bb6c8c992301f25329ba190ff2563b928965dd89af6536a51e9ea15f88ba3693",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-standing-64-group1.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "rgba_sha256": "bb6c8c992301f25329ba190ff2563b928965dd89af6536a51e9ea15f88ba3693",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-standing-64-color65.png",
+          "png_sha256": "8018e6de90a50c16001326b72dd47c05e5f77ec1e50c520bb6bee92639e1f5d2",
+          "indexed_sha256": "6b589fa17728cd87216e422b8cfda15f3b4f9c39c5f42adbdec373be812f2f8b",
+          "rgba_sha256": "c69cdc855cba2345d03030f46f2ea7577fe868ad4232b9eddd2f58534c812e4b",
+          "indexed_changed": 58,
+          "rgba_changed": 58,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-standing-64-sheet.png",
+      "sheet_sha256": "77a7269c00a8b7ef34e2fcbf1b245fcf8ed6fe55bef5cbbed5cb1491001bb1b7",
+      "cell_size": [
+        103,
+        99
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-sitting-0-baseline.png",
+          "png_sha256": "1fb3d30debc058027af46800ebc38b35aa301084996128c7f765009735a4d516",
+          "indexed_sha256": "2f64f02f246135ff3f41e14918f9a5580293d45d09f487c3bb86cda5a335e7b1",
+          "rgba_sha256": "c0215fd2dd11e14e8b07251a4c11e43485b10e8a3517b05d17087597b578987c",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-sitting-0-group0.png",
+          "png_sha256": "1fb3d30debc058027af46800ebc38b35aa301084996128c7f765009735a4d516",
+          "indexed_sha256": "2f64f02f246135ff3f41e14918f9a5580293d45d09f487c3bb86cda5a335e7b1",
+          "rgba_sha256": "c0215fd2dd11e14e8b07251a4c11e43485b10e8a3517b05d17087597b578987c",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-sitting-0-group1.png",
+          "png_sha256": "1fb3d30debc058027af46800ebc38b35aa301084996128c7f765009735a4d516",
+          "indexed_sha256": "2f64f02f246135ff3f41e14918f9a5580293d45d09f487c3bb86cda5a335e7b1",
+          "rgba_sha256": "c0215fd2dd11e14e8b07251a4c11e43485b10e8a3517b05d17087597b578987c",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-sitting-0-color65.png",
+          "png_sha256": "2b99c3536e46344874fe3a59e73b68fd836f89394766a22261d02b93148fee9a",
+          "indexed_sha256": "c65b8596f9b1a0c40c9f6b243eb6f4515b89073a1cca45eecba4cf870a2ba5a2",
+          "rgba_sha256": "42bda658ca1db1c3418ea2748c12909e54397f0957f69b0a8048b1206c7fa40b",
+          "indexed_changed": 49,
+          "rgba_changed": 49,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-sitting-0-sheet.png",
+      "sheet_sha256": "cf3500843ce93593d018a737a19aaa0cc2f23b36d1007546f54b521dc82a9fee",
+      "cell_size": [
+        71,
+        104
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-sitting-64-baseline.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "rgba_sha256": "558c4f02579fa73baedbc3c038b5d678fbb106d2dc10216205512d00059838b9",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-sitting-64-group0.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "rgba_sha256": "558c4f02579fa73baedbc3c038b5d678fbb106d2dc10216205512d00059838b9",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-sitting-64-group1.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "rgba_sha256": "558c4f02579fa73baedbc3c038b5d678fbb106d2dc10216205512d00059838b9",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-sitting-64-color65.png",
+          "png_sha256": "5d03981229ce05ebee9ff793d94517f97f6ff4147c3913810cb30e86c7ce1435",
+          "indexed_sha256": "6ea88beb8341e0fa9d3a0a51407eb67ebaef63b8577a43bf4f659d61686d672d",
+          "rgba_sha256": "3a35fb03d17c235c254646b573d514e882ee3666c1747b1e810280a3b4fc6294",
+          "indexed_changed": 48,
+          "rgba_changed": 48,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-sitting-64-sheet.png",
+      "sheet_sha256": "5f78b0a3177c725ccb38d49f676024dca6c3c9cb09fecda7c6334dc12323834f",
+      "cell_size": [
+        92,
+        110
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-lying-0-baseline.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "rgba_sha256": "635dc57ba242ee4a509d28ce1151fdb3d425d1a5f0439f9ff910c6fc14c05e84",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-lying-0-group0.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "rgba_sha256": "635dc57ba242ee4a509d28ce1151fdb3d425d1a5f0439f9ff910c6fc14c05e84",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-lying-0-group1.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "rgba_sha256": "635dc57ba242ee4a509d28ce1151fdb3d425d1a5f0439f9ff910c6fc14c05e84",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-lying-0-color65.png",
+          "png_sha256": "9edb7602eaf3608788bb6815c4f389e06a2a5d6e78b37eab267f6630b2a5a495",
+          "indexed_sha256": "b127bbe2b3db0668ea36a8d5ba4c9983da56ea096c5246c4c9f1edb142eee031",
+          "rgba_sha256": "afb6c2a428a0c916bf60a0fa7e196075bc8fe274415ac7a6a5b9f124038d3da0",
+          "indexed_changed": 3,
+          "rgba_changed": 3,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-lying-0-sheet.png",
+      "sheet_sha256": "c06375ac368f31ad549e052f495a4350cb327e3d8c942ffe6c3903fd5ec6731c",
+      "cell_size": [
+        71,
+        80
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Fuzzkin-lying-64-baseline.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "rgba_sha256": "0f1e5a6429c71754c05ccea1e2ffe03b5b14cbca7f7a8881659a380df941b177",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "Fuzzkin-lying-64-group0.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "rgba_sha256": "0f1e5a6429c71754c05ccea1e2ffe03b5b14cbca7f7a8881659a380df941b177",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "Fuzzkin-lying-64-group1.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "rgba_sha256": "0f1e5a6429c71754c05ccea1e2ffe03b5b14cbca7f7a8881659a380df941b177",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "Fuzzkin-lying-64-color65.png",
+          "png_sha256": "93c3accd26941cf91424de0b4e59061d154bbc56f65552beef6012972d281c98",
+          "indexed_sha256": "4595fa3987b0a4498439be08c7d35b19da2410d0653b0560161254e5b3667f87",
+          "rgba_sha256": "67068884ddf063274d542c3f98541fae0277b86ef7201ecf8980b12c53acdee4",
+          "indexed_changed": 21,
+          "rgba_changed": 21,
+          "prepared_commands_changed": true,
+          "paint_groups": [
+            -1,
+            2
+          ],
+          "paint_count": 19
+        }
+      },
+      "sheet": "Fuzzkin-lying-64-sheet.png",
+      "sheet_sha256": "36437b79d6cbf6b7959d96e27f733cd1aed79d3c7ba3fca15990c9561f575b15",
+      "cell_size": [
+        113,
+        74
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-standing-0-baseline.png",
+          "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+          "indexed_sha256": "d29b03f733ffb5bc3e657d1a6d3d50e2594790d69058edbf1aa44f9315de7e07",
+          "rgba_sha256": "920ee6c6b21c5f73a0b4c1c092d1e065a7b056e860aef4a74012291063bae438",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-standing-0-group0.png",
+          "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+          "indexed_sha256": "d29b03f733ffb5bc3e657d1a6d3d50e2594790d69058edbf1aa44f9315de7e07",
+          "rgba_sha256": "920ee6c6b21c5f73a0b4c1c092d1e065a7b056e860aef4a74012291063bae438",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-standing-0-group1.png",
+          "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+          "indexed_sha256": "d29b03f733ffb5bc3e657d1a6d3d50e2594790d69058edbf1aa44f9315de7e07",
+          "rgba_sha256": "920ee6c6b21c5f73a0b4c1c092d1e065a7b056e860aef4a74012291063bae438",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-standing-0-color65.png",
+          "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+          "indexed_sha256": "d29b03f733ffb5bc3e657d1a6d3d50e2594790d69058edbf1aa44f9315de7e07",
+          "rgba_sha256": "920ee6c6b21c5f73a0b4c1c092d1e065a7b056e860aef4a74012291063bae438",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-standing-0-sheet.png",
+      "sheet_sha256": "9426f76bb01df5d4a844b172126167bf9d9029dc16847ac32eaec4e3e71ea307",
+      "cell_size": [
+        75,
+        115
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-standing-64-baseline.png",
+          "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+          "indexed_sha256": "200921097b72a7051a3f2e5ae059626f454d21a9b6f75e43b8bf6d9677dce0a6",
+          "rgba_sha256": "ecb16eefe5e05e0cbb32812e8755ec266c1405446136a46dd2db2b1ffdb1e131",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-standing-64-group0.png",
+          "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+          "indexed_sha256": "200921097b72a7051a3f2e5ae059626f454d21a9b6f75e43b8bf6d9677dce0a6",
+          "rgba_sha256": "ecb16eefe5e05e0cbb32812e8755ec266c1405446136a46dd2db2b1ffdb1e131",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-standing-64-group1.png",
+          "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+          "indexed_sha256": "200921097b72a7051a3f2e5ae059626f454d21a9b6f75e43b8bf6d9677dce0a6",
+          "rgba_sha256": "ecb16eefe5e05e0cbb32812e8755ec266c1405446136a46dd2db2b1ffdb1e131",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-standing-64-color65.png",
+          "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+          "indexed_sha256": "200921097b72a7051a3f2e5ae059626f454d21a9b6f75e43b8bf6d9677dce0a6",
+          "rgba_sha256": "ecb16eefe5e05e0cbb32812e8755ec266c1405446136a46dd2db2b1ffdb1e131",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-standing-64-sheet.png",
+      "sheet_sha256": "d2213eabc29b457497e81f1225a39423ace13962f6265ef1b64fd7f00808869e",
+      "cell_size": [
+        135,
+        103
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-sitting-0-baseline.png",
+          "png_sha256": "e4df2399241fd9e738060ade79fb6653d45cbd8b4bf591adbcbeae7c56bf7b43",
+          "indexed_sha256": "fcd251f32c5774171eed092b88cc122ab3a16ee92f436bd053f45ddb71541c31",
+          "rgba_sha256": "55c7f90c1e912836bcd399d525ef2fe4675e10cf081d30df53d291b205c5bcd2",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-sitting-0-group0.png",
+          "png_sha256": "e4df2399241fd9e738060ade79fb6653d45cbd8b4bf591adbcbeae7c56bf7b43",
+          "indexed_sha256": "fcd251f32c5774171eed092b88cc122ab3a16ee92f436bd053f45ddb71541c31",
+          "rgba_sha256": "55c7f90c1e912836bcd399d525ef2fe4675e10cf081d30df53d291b205c5bcd2",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-sitting-0-group1.png",
+          "png_sha256": "e4df2399241fd9e738060ade79fb6653d45cbd8b4bf591adbcbeae7c56bf7b43",
+          "indexed_sha256": "fcd251f32c5774171eed092b88cc122ab3a16ee92f436bd053f45ddb71541c31",
+          "rgba_sha256": "55c7f90c1e912836bcd399d525ef2fe4675e10cf081d30df53d291b205c5bcd2",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-sitting-0-color65.png",
+          "png_sha256": "e4df2399241fd9e738060ade79fb6653d45cbd8b4bf591adbcbeae7c56bf7b43",
+          "indexed_sha256": "fcd251f32c5774171eed092b88cc122ab3a16ee92f436bd053f45ddb71541c31",
+          "rgba_sha256": "55c7f90c1e912836bcd399d525ef2fe4675e10cf081d30df53d291b205c5bcd2",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-sitting-0-sheet.png",
+      "sheet_sha256": "3325c060675bf775d603686ac65c0e9a54937b62f132d4670e9c949ae2692c5a",
+      "cell_size": [
+        81,
+        115
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-sitting-64-baseline.png",
+          "png_sha256": "9443a49d73fdcc5e1b6a4c8b1b1522fcd2c1b0a4b846965ab2ec7e9284bf5e51",
+          "indexed_sha256": "95bba7c834320b7feec1f30cecf846442a11d1c026d45240920d9c43404c144b",
+          "rgba_sha256": "f6f8c6967718c92fd0ac326e329645a0e599b0f8df2aa38f382100eff45bba93",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-sitting-64-group0.png",
+          "png_sha256": "9443a49d73fdcc5e1b6a4c8b1b1522fcd2c1b0a4b846965ab2ec7e9284bf5e51",
+          "indexed_sha256": "95bba7c834320b7feec1f30cecf846442a11d1c026d45240920d9c43404c144b",
+          "rgba_sha256": "f6f8c6967718c92fd0ac326e329645a0e599b0f8df2aa38f382100eff45bba93",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-sitting-64-group1.png",
+          "png_sha256": "9443a49d73fdcc5e1b6a4c8b1b1522fcd2c1b0a4b846965ab2ec7e9284bf5e51",
+          "indexed_sha256": "95bba7c834320b7feec1f30cecf846442a11d1c026d45240920d9c43404c144b",
+          "rgba_sha256": "f6f8c6967718c92fd0ac326e329645a0e599b0f8df2aa38f382100eff45bba93",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-sitting-64-color65.png",
+          "png_sha256": "9443a49d73fdcc5e1b6a4c8b1b1522fcd2c1b0a4b846965ab2ec7e9284bf5e51",
+          "indexed_sha256": "95bba7c834320b7feec1f30cecf846442a11d1c026d45240920d9c43404c144b",
+          "rgba_sha256": "f6f8c6967718c92fd0ac326e329645a0e599b0f8df2aa38f382100eff45bba93",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-sitting-64-sheet.png",
+      "sheet_sha256": "59a2caa0172d5b18a57e52c092aef1afc3e15ba419cdf16d857371f481153637",
+      "cell_size": [
+        107,
+        124
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-lying-0-baseline.png",
+          "png_sha256": "d468b53728e9e0a991b2ed7d10895b03d1637534bfc2712c8a8089b9f14cc04d",
+          "indexed_sha256": "1d7cc83c814367e23533783d243019479acd8c5156401fd897c44659f8bbf11c",
+          "rgba_sha256": "cc201445dae914c2ae2ec5a4294b0dc2e21a0d8bdf4b272df538c50e30b4ba20",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-lying-0-group0.png",
+          "png_sha256": "d468b53728e9e0a991b2ed7d10895b03d1637534bfc2712c8a8089b9f14cc04d",
+          "indexed_sha256": "1d7cc83c814367e23533783d243019479acd8c5156401fd897c44659f8bbf11c",
+          "rgba_sha256": "cc201445dae914c2ae2ec5a4294b0dc2e21a0d8bdf4b272df538c50e30b4ba20",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-lying-0-group1.png",
+          "png_sha256": "d468b53728e9e0a991b2ed7d10895b03d1637534bfc2712c8a8089b9f14cc04d",
+          "indexed_sha256": "1d7cc83c814367e23533783d243019479acd8c5156401fd897c44659f8bbf11c",
+          "rgba_sha256": "cc201445dae914c2ae2ec5a4294b0dc2e21a0d8bdf4b272df538c50e30b4ba20",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-lying-0-color65.png",
+          "png_sha256": "d468b53728e9e0a991b2ed7d10895b03d1637534bfc2712c8a8089b9f14cc04d",
+          "indexed_sha256": "1d7cc83c814367e23533783d243019479acd8c5156401fd897c44659f8bbf11c",
+          "rgba_sha256": "cc201445dae914c2ae2ec5a4294b0dc2e21a0d8bdf4b272df538c50e30b4ba20",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-lying-0-sheet.png",
+      "sheet_sha256": "0fa1dbee9cb408a8b02c45574b10b897eff0884733ade74f727aef64a364a936",
+      "cell_size": [
+        73,
+        102
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Homebody",
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Homebody-lying-64-baseline.png",
+          "png_sha256": "052526a6e34dd887f65e2e1119bbd270f86c83014ef68ec2ac5765eece88fc4d",
+          "indexed_sha256": "77f01bbc5e7ed9878a3d53af940a12eeadf2bbcaf797cf59ff6646bcd167528b",
+          "rgba_sha256": "cd8a82322f530ed3b933fd38ec61456bfa39c0e8c1e0a2e55e9c690d73c69f40",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Homebody-lying-64-group0.png",
+          "png_sha256": "052526a6e34dd887f65e2e1119bbd270f86c83014ef68ec2ac5765eece88fc4d",
+          "indexed_sha256": "77f01bbc5e7ed9878a3d53af940a12eeadf2bbcaf797cf59ff6646bcd167528b",
+          "rgba_sha256": "cd8a82322f530ed3b933fd38ec61456bfa39c0e8c1e0a2e55e9c690d73c69f40",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Homebody-lying-64-group1.png",
+          "png_sha256": "052526a6e34dd887f65e2e1119bbd270f86c83014ef68ec2ac5765eece88fc4d",
+          "indexed_sha256": "77f01bbc5e7ed9878a3d53af940a12eeadf2bbcaf797cf59ff6646bcd167528b",
+          "rgba_sha256": "cd8a82322f530ed3b933fd38ec61456bfa39c0e8c1e0a2e55e9c690d73c69f40",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Homebody-lying-64-color65.png",
+          "png_sha256": "052526a6e34dd887f65e2e1119bbd270f86c83014ef68ec2ac5765eece88fc4d",
+          "indexed_sha256": "77f01bbc5e7ed9878a3d53af940a12eeadf2bbcaf797cf59ff6646bcd167528b",
+          "rgba_sha256": "cd8a82322f530ed3b933fd38ec61456bfa39c0e8c1e0a2e55e9c690d73c69f40",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Homebody-lying-64-sheet.png",
+      "sheet_sha256": "b84a6e65ce2abc6c67714a63f34945728504b7a1e6a10d30445a4ca30267d804",
+      "cell_size": [
+        171,
+        76
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-standing-0-baseline.png",
+          "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+          "indexed_sha256": "c720bcaf442cbf7a17e00e446e2cec04bf8c1c2951671446d0ea7a78a92f9ebb",
+          "rgba_sha256": "7958e22cf28632eb869d8c3f90df7ce4ff41e6e1625b4e3387165707a07c412a",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-standing-0-group0.png",
+          "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+          "indexed_sha256": "c720bcaf442cbf7a17e00e446e2cec04bf8c1c2951671446d0ea7a78a92f9ebb",
+          "rgba_sha256": "7958e22cf28632eb869d8c3f90df7ce4ff41e6e1625b4e3387165707a07c412a",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-standing-0-group1.png",
+          "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+          "indexed_sha256": "c720bcaf442cbf7a17e00e446e2cec04bf8c1c2951671446d0ea7a78a92f9ebb",
+          "rgba_sha256": "7958e22cf28632eb869d8c3f90df7ce4ff41e6e1625b4e3387165707a07c412a",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-standing-0-color65.png",
+          "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+          "indexed_sha256": "c720bcaf442cbf7a17e00e446e2cec04bf8c1c2951671446d0ea7a78a92f9ebb",
+          "rgba_sha256": "7958e22cf28632eb869d8c3f90df7ce4ff41e6e1625b4e3387165707a07c412a",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-standing-0-sheet.png",
+      "sheet_sha256": "7247f8afbbe2b3f17e23c7df1c70dcb4a6bad9d352845208b4a77af546bf2725",
+      "cell_size": [
+        73,
+        129
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-standing-64-baseline.png",
+          "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+          "indexed_sha256": "c53435937eb32a8496dfd1ed9600704805ef0ed2fae2b1c33340b9704a2f78aa",
+          "rgba_sha256": "bd28a39b50d60c799cec0bd0f0d37296decfe6e46d1f3317dcc241d19c788289",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-standing-64-group0.png",
+          "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+          "indexed_sha256": "c53435937eb32a8496dfd1ed9600704805ef0ed2fae2b1c33340b9704a2f78aa",
+          "rgba_sha256": "bd28a39b50d60c799cec0bd0f0d37296decfe6e46d1f3317dcc241d19c788289",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-standing-64-group1.png",
+          "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+          "indexed_sha256": "c53435937eb32a8496dfd1ed9600704805ef0ed2fae2b1c33340b9704a2f78aa",
+          "rgba_sha256": "bd28a39b50d60c799cec0bd0f0d37296decfe6e46d1f3317dcc241d19c788289",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-standing-64-color65.png",
+          "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+          "indexed_sha256": "c53435937eb32a8496dfd1ed9600704805ef0ed2fae2b1c33340b9704a2f78aa",
+          "rgba_sha256": "bd28a39b50d60c799cec0bd0f0d37296decfe6e46d1f3317dcc241d19c788289",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-standing-64-sheet.png",
+      "sheet_sha256": "657adcd3cc6fc3ca50b6379797ff69a549e9f62939a8bee994ec8d91d6150aeb",
+      "cell_size": [
+        148,
+        122
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-sitting-0-baseline.png",
+          "png_sha256": "a9e29cd0d24733eb42b4b21ca6fa407ee151d76e3cefeb43a4c83a3683934f37",
+          "indexed_sha256": "daac052407fffa52fbd1b66ff67c2678ffd1cdf8cc1b122ab78202237f886b2c",
+          "rgba_sha256": "8799e41177aa51e157e5868491badea6a909dde9a1e57b5ff964b792bc54631d",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-sitting-0-group0.png",
+          "png_sha256": "a9e29cd0d24733eb42b4b21ca6fa407ee151d76e3cefeb43a4c83a3683934f37",
+          "indexed_sha256": "daac052407fffa52fbd1b66ff67c2678ffd1cdf8cc1b122ab78202237f886b2c",
+          "rgba_sha256": "8799e41177aa51e157e5868491badea6a909dde9a1e57b5ff964b792bc54631d",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-sitting-0-group1.png",
+          "png_sha256": "a9e29cd0d24733eb42b4b21ca6fa407ee151d76e3cefeb43a4c83a3683934f37",
+          "indexed_sha256": "daac052407fffa52fbd1b66ff67c2678ffd1cdf8cc1b122ab78202237f886b2c",
+          "rgba_sha256": "8799e41177aa51e157e5868491badea6a909dde9a1e57b5ff964b792bc54631d",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-sitting-0-color65.png",
+          "png_sha256": "a9e29cd0d24733eb42b4b21ca6fa407ee151d76e3cefeb43a4c83a3683934f37",
+          "indexed_sha256": "daac052407fffa52fbd1b66ff67c2678ffd1cdf8cc1b122ab78202237f886b2c",
+          "rgba_sha256": "8799e41177aa51e157e5868491badea6a909dde9a1e57b5ff964b792bc54631d",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-sitting-0-sheet.png",
+      "sheet_sha256": "0344abf52fe9e3e4dc8cfe190235a21e060d66d58e69d1bfd274b2af8d2ecf22",
+      "cell_size": [
+        74,
+        132
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-sitting-64-baseline.png",
+          "png_sha256": "a1377efbdd17daedc4f1d6c7ff615bb34c463f2f21ada42f5b63ae5df93c07c5",
+          "indexed_sha256": "45b30b0f1977a6302203edb7a86951d474619adc93d649f7fb50d379c97ff816",
+          "rgba_sha256": "bc482a18a98dd0ffcb26835b0e663fc8cb2b83303f10d7893da8ad01af7e7a2f",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-sitting-64-group0.png",
+          "png_sha256": "a1377efbdd17daedc4f1d6c7ff615bb34c463f2f21ada42f5b63ae5df93c07c5",
+          "indexed_sha256": "45b30b0f1977a6302203edb7a86951d474619adc93d649f7fb50d379c97ff816",
+          "rgba_sha256": "bc482a18a98dd0ffcb26835b0e663fc8cb2b83303f10d7893da8ad01af7e7a2f",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-sitting-64-group1.png",
+          "png_sha256": "a1377efbdd17daedc4f1d6c7ff615bb34c463f2f21ada42f5b63ae5df93c07c5",
+          "indexed_sha256": "45b30b0f1977a6302203edb7a86951d474619adc93d649f7fb50d379c97ff816",
+          "rgba_sha256": "bc482a18a98dd0ffcb26835b0e663fc8cb2b83303f10d7893da8ad01af7e7a2f",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-sitting-64-color65.png",
+          "png_sha256": "a1377efbdd17daedc4f1d6c7ff615bb34c463f2f21ada42f5b63ae5df93c07c5",
+          "indexed_sha256": "45b30b0f1977a6302203edb7a86951d474619adc93d649f7fb50d379c97ff816",
+          "rgba_sha256": "bc482a18a98dd0ffcb26835b0e663fc8cb2b83303f10d7893da8ad01af7e7a2f",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-sitting-64-sheet.png",
+      "sheet_sha256": "e6736739ce133c516ef966589610d28209bd9f1880720fc25a8365efd5245111",
+      "cell_size": [
+        133,
+        139
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-lying-0-baseline.png",
+          "png_sha256": "4fe9b797cdb3b6846fdbcf41e4cabdc94c44ca19e2f27418afb9593fbaa9c51a",
+          "indexed_sha256": "b141b0608fb472c728a4874f877b2f44e28a4612c0b4424a260ee91819355190",
+          "rgba_sha256": "97795b1c0f556e6357c009ae23080b514f9fd662494a6045fa8214bbeec0c1f6",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-lying-0-group0.png",
+          "png_sha256": "4fe9b797cdb3b6846fdbcf41e4cabdc94c44ca19e2f27418afb9593fbaa9c51a",
+          "indexed_sha256": "b141b0608fb472c728a4874f877b2f44e28a4612c0b4424a260ee91819355190",
+          "rgba_sha256": "97795b1c0f556e6357c009ae23080b514f9fd662494a6045fa8214bbeec0c1f6",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-lying-0-group1.png",
+          "png_sha256": "4fe9b797cdb3b6846fdbcf41e4cabdc94c44ca19e2f27418afb9593fbaa9c51a",
+          "indexed_sha256": "b141b0608fb472c728a4874f877b2f44e28a4612c0b4424a260ee91819355190",
+          "rgba_sha256": "97795b1c0f556e6357c009ae23080b514f9fd662494a6045fa8214bbeec0c1f6",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-lying-0-color65.png",
+          "png_sha256": "4fe9b797cdb3b6846fdbcf41e4cabdc94c44ca19e2f27418afb9593fbaa9c51a",
+          "indexed_sha256": "b141b0608fb472c728a4874f877b2f44e28a4612c0b4424a260ee91819355190",
+          "rgba_sha256": "97795b1c0f556e6357c009ae23080b514f9fd662494a6045fa8214bbeec0c1f6",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-lying-0-sheet.png",
+      "sheet_sha256": "ea41613e44001538b5e98e0e30adedbc7ecee20fb68800297a85def332b3d536",
+      "cell_size": [
+        73,
+        111
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    },
+    {
+      "name": "Goobe",
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "Goobe-lying-64-baseline.png",
+          "png_sha256": "3ec0b88e7b4e0f5fe026ff05890db5bf456ed0a2542f246f11667fb30650ce01",
+          "indexed_sha256": "f456fc129c27ab56d0aa209573f18653b74b56a01bbf974d5d3d3bb6e452e164",
+          "rgba_sha256": "240eaa3d4d114ab0bfcae79db539710ee8a5e37a7472549408df543cff577a9e",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        },
+        "group0": {
+          "png": "Goobe-lying-64-group0.png",
+          "png_sha256": "3ec0b88e7b4e0f5fe026ff05890db5bf456ed0a2542f246f11667fb30650ce01",
+          "indexed_sha256": "f456fc129c27ab56d0aa209573f18653b74b56a01bbf974d5d3d3bb6e452e164",
+          "rgba_sha256": "240eaa3d4d114ab0bfcae79db539710ee8a5e37a7472549408df543cff577a9e",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            0
+          ],
+          "paint_count": 16
+        },
+        "group1": {
+          "png": "Goobe-lying-64-group1.png",
+          "png_sha256": "3ec0b88e7b4e0f5fe026ff05890db5bf456ed0a2542f246f11667fb30650ce01",
+          "indexed_sha256": "f456fc129c27ab56d0aa209573f18653b74b56a01bbf974d5d3d3bb6e452e164",
+          "rgba_sha256": "240eaa3d4d114ab0bfcae79db539710ee8a5e37a7472549408df543cff577a9e",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            1
+          ],
+          "paint_count": 16
+        },
+        "color65": {
+          "png": "Goobe-lying-64-color65.png",
+          "png_sha256": "3ec0b88e7b4e0f5fe026ff05890db5bf456ed0a2542f246f11667fb30650ce01",
+          "indexed_sha256": "f456fc129c27ab56d0aa209573f18653b74b56a01bbf974d5d3d3bb6e452e164",
+          "rgba_sha256": "240eaa3d4d114ab0bfcae79db539710ee8a5e37a7472549408df543cff577a9e",
+          "indexed_changed": 0,
+          "rgba_changed": 0,
+          "prepared_commands_changed": false,
+          "paint_groups": [
+            -1
+          ],
+          "paint_count": 16
+        }
+      },
+      "sheet": "Goobe-lying-64-sheet.png",
+      "sheet_sha256": "035f03c173012e0d95a65974452fdb3977903c9ebaead752cc27c5aa4198716e",
+      "cell_size": [
+        174,
+        80
+      ],
+      "cell_order": [
+        "baseline",
+        "group0",
+        "group1",
+        "color65"
+      ]
+    }
+  ],
+  "mcp": [
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Fuzzkin-group0-0-mcp.png",
+      "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+      "metadata": "Fuzzkin-group0-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Fuzzkin-group1-0-mcp.png",
+      "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+      "metadata": "Fuzzkin-group1-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Fuzzkin-color65-0-mcp.png",
+      "png_sha256": "7ef7fafda0c4978fb921ca0ef07fc3e8ebbe14fe8dce7f62b6f65c99ee9e0f91",
+      "metadata": "Fuzzkin-color65-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Fuzzkin-group0-64-mcp.png",
+      "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+      "metadata": "Fuzzkin-group0-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Fuzzkin-group1-64-mcp.png",
+      "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+      "metadata": "Fuzzkin-group1-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Fuzzkin-color65-64-mcp.png",
+      "png_sha256": "8018e6de90a50c16001326b72dd47c05e5f77ec1e50c520bb6bee92639e1f5d2",
+      "metadata": "Fuzzkin-color65-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Homebody-group0-0-mcp.png",
+      "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+      "metadata": "Homebody-group0-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Homebody-group1-0-mcp.png",
+      "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+      "metadata": "Homebody-group1-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Homebody-color65-0-mcp.png",
+      "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+      "metadata": "Homebody-color65-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Homebody-group0-64-mcp.png",
+      "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+      "metadata": "Homebody-group0-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Homebody-group1-64-mcp.png",
+      "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+      "metadata": "Homebody-group1-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Homebody-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Homebody-color65-64-mcp.png",
+      "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+      "metadata": "Homebody-color65-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Goobe-group0-0-mcp.png",
+      "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+      "metadata": "Goobe-group0-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Goobe-group1-0-mcp.png",
+      "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+      "metadata": "Goobe-group1-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 0.0
+      },
+      "png": "Goobe-color65-0-mcp.png",
+      "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+      "metadata": "Goobe-color65-0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-group0.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Goobe-group0-64-mcp.png",
+      "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+      "metadata": "Goobe-group0-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-group1.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Goobe-group1-64-mcp.png",
+      "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+      "metadata": "Goobe-group1-64-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Goobe-color65.pet",
+        "pose": "standing",
+        "yaw_degrees": 90.0
+      },
+      "png": "Goobe-color65-64-mcp.png",
+      "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+      "metadata": "Goobe-color65-64-mcp-render.json"
+    }
+  ],
+  "summary": {
+    "copies": 9,
+    "fixtures": 18,
+    "direct_draws": 72,
+    "group_pixel_equivalences": 36,
+    "mcp_views": 18,
+    "color_positive_pixel_changes": 6
+  }
+}

@@ -1,6 +1,6 @@
 # Z Shade Slope in the renderer
 
-Evidence: [SHADE-001](../experiments/shade-001.md), Petz4 adult Scottie/Siamese and synthetic arithmetic. Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9; no native-game validation.
+Evidence: [SHADE-001](../experiments/shade-001.md) and [SHADE-002](../experiments/shade-002.md), Petz4 adult Scottie/Siamese and synthetic arithmetic. Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9; no native-game validation.
 
 `[Z Shade Slope]` takes a scalar integer. A standalone absent/empty/invalid value defaults to0, but absent leaf sections inherit: both sampled breed/master combinations resolve100. An explicit empty section instead resolves0.
 
@@ -16,4 +16,4 @@ The shading midpoint is the truncated mean of chest/butt center depths. A ball's
 
 Flat fill colors10–149 clamp within their original ten-color palette band; other indices pass through this helper unchanged. Host-eye fills are exempt in assembly. Textured circles/connectors use additional remapping and raster rules; see [Texture List](texture-list.md) and [connector textures](connector-textures.md). This section does not validate incomplete paths in [GAP-007](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
 
-Retained shading only updates when an active slot's midpoint-relative distance changes by more than10 from its last accepted distance. A fresh-state slope edit does not test this history behavior. Use fresh preparation when comparing authoring changes; appearance/topology changes invalidate retained FrameState. Other breeds, young resources, versions and native behavior remain untested.
+Retained shading only updates when an active slot's midpoint-relative distance changes by more than10 from its last accepted distance. Synthetic controls distinguish changes of10 from11; inactive slots retain history. In isolated shade-only return-to-pose compositions, wider yaw arcs change20/24 final scenes despite equal geometry/order/texture orientation; repeats and small yaw arcs change none. Head arcs can change stored offsets without changing fills or pixels. These are controlled renderer histories, not native animation validation. Use fresh preparation when comparing authoring changes; appearance/topology changes invalidate retained FrameState. Other breeds, young resources, versions and native behavior remain untested.

@@ -256,3 +256,7 @@ Next: custom art, young resources/broader versions, other evolving scenes, or in
 ## Latest depth shading research
 
 [SHADE-001](experiments/shade-001.md): Petz4 Scottie/Siamese,84 assembly loads/48 local MCP pairs,765 synthetic arithmetic slots/3,328 palette assertions. Absent section inherits100; empty equals0; -110 yields zero fresh offsets; -220 reverses0 response. [Reference](format-reference/z-shade-slope.md). Two sheets reviewed; verifier checks copies/PE boundaries,assembly,RGBA crops,sources/dependencies/engines. Private scratch/research/shade-001; two failed pre-MCP attempts archived and documented. Renderer/originals unchanged; no native claim. Next: retained shading threshold/history controls; this fifteen-minute continuation is ongoing.
+
+## Latest isolated shade histories
+
+[SHADE-002](experiments/shade-002.md):96 shade-only retained histories,384 transitions,192 indexed/RGBA cells,24 exact local MCP fresh baselines. Wider yaw changes20/24 scenes;repeat/small yaw none;head arc offsets change3 but no fills/pixels.88 synthetic events distinguish distance10/11 and active-slot retention;guard/midpoint/512-slot controls included. Two sheets reviewed; private scratch/research/shade-002. Verifier replays all states/compositions and checks baseline links/provenance. No renderer/native claim. Next: omissions affecting bounds/shading or other unresearched sections; fifteen-minute continuation remains ongoing.

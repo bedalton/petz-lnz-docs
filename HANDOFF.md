@@ -110,3 +110,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest omitted-marker research
 
 [AREA-006](experiments/area-006.md): 42 numerical loads/twelve local MCP pairs, two sheets reviewed. Late lists restore omitted marker areas1/8 without visibility or incident lines; hidden area8 geometry rotates numerically. Version1 bypasses lists. Initial incorrect harness assumption about parsed line retention was corrected; failed copies archived. Source/engine/original hashes verified. tools/omitted_area_lists.py refuses overwrite; scratch/research/area-006 private evidence. No renderer/native claims. Next: relative-size/multi-group morphs, other list conflicts/whiskers or connector styling.
+
+## Latest relative-size morph research
+
+[MORPH-002](experiments/morph-002.md): 48 numerical cases, twelve default-state local MCP pairs, two reviewed sheets. Group15 head-relative size20 retains evaluated size0 at positive percentages, so radius equals reference head; 100% geometry equals static relative0, differs from static relative20. Offsets scale normally; ordinary group15 size20 fully activates to static ordinary20. Ordered100→0→50 equals direct50. GAP-005 records uncertain native semantics; no renderer repair. Three installed sources/four engine hashes verified. tools/relative_morph_probe.py refuses overwrite; private scratch/research/morph-002. Next: multiple groups/update ordering, body-area prefix exceptions, other lists/whiskers or connector styling.

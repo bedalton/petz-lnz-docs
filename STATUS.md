@@ -35,6 +35,7 @@ Updated: 2026-11-10
 - Latest: [AREA-004](experiments/area-004.md), 24 numerical loads and eight local MCP pairs: chain propagation depends on added-ID order; all-area-8 cycle stays 8. HTTP MCP discovery/capabilities passed.
 - Latest: [AREA-005](experiments/area-005.md), 36 numerical loads and eight MCP pairs: anchored-cycle areas depend on ID order; late lists do not rerun neighbor propagation.
 - Latest: [AREA-006](experiments/area-006.md), 42 numerical loads/twelve MCP pairs: lists reclassify omitted markers without restoring visibility or incident lines.
-- Next: other list conflicts/whiskers, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
+- Latest: [MORPH-002](experiments/morph-002.md), 48 numerical cases/twelve MCP pairs: initially dormant relative-size marker retains zero evaluated size on activation (GAP-005).
+- Next: multi-group morphs, other list conflicts/whiskers, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Resume: [HANDOFF.md](HANDOFF.md).

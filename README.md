@@ -2,7 +2,7 @@
 
 An evidence-backed, agent-first guide to designing Petz breeds from images and concepts, growing into a thorough LNZ reference. Research starts with Petz 4 Dogz/Catz, then validates edited behavior across Petz 3 and 5. Current findings describe renderer behavior; original-game fidelity remains unverified.
 
-The Petz4 porting agent reports clothing, textured paint balls and textured Outline balls as incomplete, as relayed by the user. **Do not infer these features from MCP output.** See [limitations and provenance](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
+Renderer upgrade: [UPDATE-001](experiments/update-001.md) reviews changed findings after paint texture,Outline,clipping and add-ball projection fixes. Clothing remains unsupported. Renderer observations do not establish original-game fidelity.
 
 ## Start here
 

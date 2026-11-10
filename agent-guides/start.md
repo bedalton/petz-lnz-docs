@@ -2,7 +2,7 @@
 
 Read this page first for editing tasks; read STATUS.md and HANDOFF.md when continuing research. This project is an early evidence base, not yet a complete design-from-image system.
 
-Known incomplete features: **clothing, textured paint balls and textured Outline balls must not be inferred from MCP output**. See the [source-reported limitation and scope](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
+Read the [renderer update review](../experiments/update-001.md) before using historical pixels. Textured paint/Outline support has changed; clothing remains unsupported. Keep renderer observations separate from original-game evidence.
 
 ## Route by task
 

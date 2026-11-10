@@ -4,11 +4,11 @@ Updated: 2026-11-10
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is a fifteen-minute continuation, recorded in [the shading session](docs/session-2026-11-10-shading.md). The porting-agent limitations remain active below. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is to restart the updated renderer and follow [RENDERER_CHANGES.md](RENDERER_CHANGES.md). See [UPDATE-001](experiments/update-001.md); historical fifteen-minute authorization does not apply to this upgrade task. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
 
 ## Known incomplete features
 
-Clothing, textured paint balls and textured Outline balls are incomplete in the Petz4 renderer according to the porting agent, as relayed by the user. Do not infer these features from MCP output. [GAP-007](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp) preserves the quote, evidence level, version/build uncertainty and conditions for revisiting the restriction. Ordinary connector texture and flat outline-color tests do not establish support for these paths.
+Clothing remains unsupported. The earlier blanket textured paint/Outline limitation is withdrawn for integration6c1d883 after changed-path controls; see [UPDATE-001](experiments/update-001.md). Original-game appearance remains unvalidated. [GAP-007](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp) preserves the quote, evidence level, version/build uncertainty and conditions for revisiting the restriction. Ordinary connector texture and flat outline-color tests do not establish support for these paths.
 
 ## Current container recovery
 
@@ -272,3 +272,7 @@ Next: custom art, young resources/broader versions, other evolving scenes, or in
 Next: other breeds/versions/young-resource shading;component attribution for the one-pixel equal-fill omission case;untested shape/eyes/whiskers;or independent native evidence. All requested research stays in copies; unrelated istall-node untouched. Latest authorization is this fifteen-minute continuation only; follow the next requested duration.
 
 Final focused follow-up: [SHADE-003 equal-fill attribution](experiments/shade-003.md#equal-fill-case-follow-up), tools/check_shade_equal_fill.py,isolates the one-pixel Catz sitting-front omission44 residual to ball64 endpoint state. Endpoint substitution matches held pixels;paint substitution leaves the residual. Four extra direct draws,not additional saved buffers. Particular connector attribution remains open. Private result scratch/research/shade-003-equal-fill-attribution.json.
+
+## Renderer upgrade in progress
+
+[UPDATE-001](experiments/update-001.md): reinstalled noneditable package from6c1d883,restarted local HTTP MCP (PID8300),health passed.68 focused renderer tests pass;asset-free old/new controls confirm paint textures,Outline interiors,clip inset correction,legacy paint mapping and12 add-ball projection cases. No renderer source changes;pre-existing .gitignore modification preserved. Full top-level historical MCP replay underway under scratch/research/update-001; do not run old source-hash verifiers as if they validate the new build. Historical reports remain intact.

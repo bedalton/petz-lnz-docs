@@ -1,0 +1,22 @@
+{
+  "old_controls_sha256": "7da0c3184bcb3a6ebdb55db0790000d09047409066216365126d206d1388d42c",
+  "new_controls_sha256": "f9f415f04e57ef4c8e5a0c0513c4f787b9f9f240d55bb9a8d1340f4a3fbfe0b7",
+  "change_notice_sha256": "b03bd20ad22bebdfa82798a4abb8d3504f36fdc30c7616b1351461a694a744d1",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "counts": {
+    "parser": 3,
+    "outline_rasters_per_revision": 12,
+    "paint_rasters_per_revision": 21,
+    "clip_rasters_per_revision": 8,
+    "project_cases_per_revision": 12
+  },
+  "classifications": {
+    "blanket_textured_paint_incomplete": "withdrawn for updated renderer; renderer-only support confirmed",
+    "blanket_textured_outline_incomplete": "withdrawn for updated renderer; renderer-only support confirmed",
+    "non_outline_clip_inset_one": "corrected to zero",
+    "paint_legacy_texture_is_direct_slot": "corrected below Lnz Version 2",
+    "add_ball_projection_no_effect": "withdrawn except percent100 identity control",
+    "group_colour_retint": "three synthetic resolved colours remap distinctly; saved-group integration not exercised"
+  },
+  "test_log_sha256": "a296639db110b6b5eec0658b99e4ff869dd5ad5033916d0a159be9cb2e34fe05"
+}

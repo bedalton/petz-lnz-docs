@@ -2,7 +2,7 @@
 
 Updated: 2026-11-10
 
-- Known incomplete features: clothing, textured paint balls and textured Outline balls must not be inferred from MCP output; [GAP-007 records the user-relayed porting-agent report and scope](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
+- Renderer upgraded/restarted: [UPDATE-001](experiments/update-001.md),integration6c1d883. Textured paint/Outline blanket restrictions are withdrawn for this build after differential controls; clothing remains unsupported. Historical pixel evidence requires the linked replay review.
 
 - Environment restored: [RESTORE-002](experiments/restore-002.md); game folders corrected, local Petz 4 HTTP MCP connected, six cross-version stdio smoke pairs pass and match prior hashes. Prior private artifacts are still absent.
 

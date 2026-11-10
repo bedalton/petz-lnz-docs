@@ -113,3 +113,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-005](experiments/paint-005.md),12 copy-only saved-array mutations retain72 direct views and24 MCP variant views across three Petz4 saves. Skipped prefix data is distinct from cached paint groups.
 
 - Latest: [PAINT-006](experiments/paint-006.md),nine cached group/color copies:36 group equivalences,72 direct draws and18 MCP matches. Fuzzkin color controls change six views;other sampled paints lack visible positive controls.
+
+- Latest: [PAINT-007](experiments/paint-007.md),Fuzzkin ages0/50/100:36 group equivalences,72 direct draws and16 MCP matches;17/18 color controls change pixels.

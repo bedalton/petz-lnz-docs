@@ -25,3 +25,5 @@ Uncertainty:the installed diagnostic explicitly reports nonzero paint group cont
 [PAINT-005](../experiments/paint-005.md) changes three skipped saved-prefix arrays independently/together in copies of Fuzzkin,Homebody and Goobe:72 direct edited views and24 fresh MCP variant views match unchanged caches/baselines. This tests ignored prefix payloads,not native array semantics or cached paint group tokens. PetzInfo checksums remain unvalidated.
 
 [PAINT-006](../experiments/paint-006.md) follows group edits through both saved caches and mixed-age assembly:all36 group0/group1 comparisons retain commands/pixels,while diagnostics change. Fuzzkin color65 edits change six views;Homebody/Goobe lack visible positive controls here. This establishes sampled renderer behavior,not native retint semantics.
+
+[PAINT-007](../experiments/paint-007.md) extends Fuzzkin group equivalence across ages0/50/100,three poses andfront/side (36 comparisons;16 MCP matches). Color controls change17/18 fixtures;prepared paint eligibility does not guarantee a displayed change.

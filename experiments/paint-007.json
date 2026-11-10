@@ -1,0 +1,1204 @@
+{
+  "experiment": "PAINT-007",
+  "backend": "direct age override + local stdio MCP; existing private PAINT-006 copies",
+  "prior_manifest_sha256": "098f5c326ff57998664517406810b75494cd432375b18572198955b0323f4bdd",
+  "provenance": {
+    "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+    "source_hashes": {
+      "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "appearance/breed_variations.py": "d1aefb0e74f4a94f6a45e145b305339a9f19ec9cc40bdbee0c93200399687225",
+      "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+      "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "appearance/preview.py": "79b525a2696ef383b565256b711334294fd370cac4ef8563236894563f0051cc",
+      "appearance/variations.py": "03c4ed213ec6c694d7c07ee8e6f610d90b89ed1ae89bb839a7cba98e0f81d1fb",
+      "cli.py": "2f5b30afd3dee6d16460f9efbdd378d8b731469e5bd13c853ceaa86738491761",
+      "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "local.py": "d3b7bbbc59cbe445a18770caf19fda7dde3ff5d530e4ef1331e30b132f49a493",
+      "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "service/application.py": "69f2408f6fd47b90437bdf4f712f8e9d19e9382b78ca6af2553f15d517d74173",
+      "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "service/inspection.py": "24524a376ce7d2dc7aa74eee1bf1e0cbfb4c3b69fca37c3ed40de207de29a0c9",
+      "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "service/mcp.py": "2601e07d89fc967bdc5fc221940bec2161f7102db221e191425f73662bf62be3",
+      "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649",
+      "service/sheets.py": "ca0b9eb408d7854c1b3253ac72a198ef7f1582f57bdcca6839d63c06adb08b32",
+      "service/tool_inputs.py": "68815dbd2e41afd22276a1a9c032f81a1aa86e17ab3e63e60dd2ac83e6502e3c",
+      "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197"
+    },
+    "engine_hashes": {
+      "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+      "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+    },
+    "dependencies": {
+      "petz-renderer-mcp": "0.1.0",
+      "fastmcp": "4.1.6",
+      "pillow": "13.0.0"
+    },
+    "prior_manifest_sha256": "6101ac76fcc6d20bf407b174cc04b3e7f83e84459414185355215364aa13de1e"
+  },
+  "controls": {
+    "ages": [
+      0,
+      50,
+      100
+    ],
+    "seed_and_fatness": "saved",
+    "yaw_units": [
+      0,
+      64
+    ],
+    "raster_seed": 1,
+    "line_seed": 1,
+    "step": 0
+  },
+  "cases": [
+    {
+      "age": 0,
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "0-standing-0-baseline.png",
+          "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+          "rgba_sha256": "5653f81da935d3fc9bd2e0566339997c70ca0c2ca5f2d4703ff5876d6cd41962",
+          "indexed_sha256": "0d2d71313ad36b8752594ac3347e43a520bda4b16ce24d639a3e8b60fde4a1a2",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-standing-0-group0.png",
+          "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+          "rgba_sha256": "5653f81da935d3fc9bd2e0566339997c70ca0c2ca5f2d4703ff5876d6cd41962",
+          "indexed_sha256": "0d2d71313ad36b8752594ac3347e43a520bda4b16ce24d639a3e8b60fde4a1a2",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-standing-0-group1.png",
+          "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+          "rgba_sha256": "5653f81da935d3fc9bd2e0566339997c70ca0c2ca5f2d4703ff5876d6cd41962",
+          "indexed_sha256": "0d2d71313ad36b8752594ac3347e43a520bda4b16ce24d639a3e8b60fde4a1a2",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-standing-0-color65.png",
+          "png_sha256": "1fe1553a286f8cd59b1b5e70f5114e8e51b84beba46b16a229b89e44ab5855df",
+          "rgba_sha256": "66f0fdac82c38012d83caa2f5b28794783c7cc285900cf4597501411ab301b82",
+          "indexed_sha256": "2a5532ae612316cdc2ec5d313ec662e25f6f9ab62171026e672e6d31e4d2d66d",
+          "rgba_changed": 15,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 0,
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "0-standing-64-baseline.png",
+          "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+          "rgba_sha256": "3921b8f63c7c219ab169fa843bef56f31fc0120a7113f06541457cf9029831bf",
+          "indexed_sha256": "93492cb7dca2693c25e08932372a41bb588be2faeadc58cd9dcb3c9b82a25ab8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-standing-64-group0.png",
+          "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+          "rgba_sha256": "3921b8f63c7c219ab169fa843bef56f31fc0120a7113f06541457cf9029831bf",
+          "indexed_sha256": "93492cb7dca2693c25e08932372a41bb588be2faeadc58cd9dcb3c9b82a25ab8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-standing-64-group1.png",
+          "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+          "rgba_sha256": "3921b8f63c7c219ab169fa843bef56f31fc0120a7113f06541457cf9029831bf",
+          "indexed_sha256": "93492cb7dca2693c25e08932372a41bb588be2faeadc58cd9dcb3c9b82a25ab8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-standing-64-color65.png",
+          "png_sha256": "f8ae5cd720c5e09adb82c48cc5d37dc5204399e421bc44aae3940ffc95da5ff9",
+          "rgba_sha256": "401581554fae2eb7419f91ef59e41dc9bfa7ed617cf0ad87c082b8388f00a9b1",
+          "indexed_sha256": "0cbf704da895dd35fe1121b5313860ec828e5cff45afd3f28a509e6c5696ddac",
+          "rgba_changed": 34,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 0,
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "0-sitting-0-baseline.png",
+          "png_sha256": "36d639662c8feb42637bfba82b2369fca07d53471797d71a3dc958fd44f73007",
+          "rgba_sha256": "a29e0c043a482e4005adab7c36448b24c39ec851b86eb233e50ed7709cd8635a",
+          "indexed_sha256": "55a5b73fd95e47e0e9544c9a9463fd86f416b4ca53948ab3d9bbe236a1453a2e",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-sitting-0-group0.png",
+          "png_sha256": "36d639662c8feb42637bfba82b2369fca07d53471797d71a3dc958fd44f73007",
+          "rgba_sha256": "a29e0c043a482e4005adab7c36448b24c39ec851b86eb233e50ed7709cd8635a",
+          "indexed_sha256": "55a5b73fd95e47e0e9544c9a9463fd86f416b4ca53948ab3d9bbe236a1453a2e",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-sitting-0-group1.png",
+          "png_sha256": "36d639662c8feb42637bfba82b2369fca07d53471797d71a3dc958fd44f73007",
+          "rgba_sha256": "a29e0c043a482e4005adab7c36448b24c39ec851b86eb233e50ed7709cd8635a",
+          "indexed_sha256": "55a5b73fd95e47e0e9544c9a9463fd86f416b4ca53948ab3d9bbe236a1453a2e",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-sitting-0-color65.png",
+          "png_sha256": "48efb8159604d19df48cfb497c21eb52579b0bcded2831652646629df8b9d785",
+          "rgba_sha256": "d1d2a778de251f1cc8f3f53a17cb37ed391d757bc8c9d419e1c8d44273842269",
+          "indexed_sha256": "3bafd0ad1f17f296b8ae2a4afa38251c9e00e51ee8d1bcd99b3c2f80ce838413",
+          "rgba_changed": 21,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 0,
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "0-sitting-64-baseline.png",
+          "png_sha256": "a86e01fb6d300f40533d234aa7690cd666f649bf9e9013ee84cda6e5a670ee08",
+          "rgba_sha256": "0f78bc654ebec5e715ae1cef679204d5cb753af73acc45e258734fda48f14c55",
+          "indexed_sha256": "b8bee688118e360f4e19af2c0ae8cb89877b1a5b4465436c225a224e7fd9cc32",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-sitting-64-group0.png",
+          "png_sha256": "a86e01fb6d300f40533d234aa7690cd666f649bf9e9013ee84cda6e5a670ee08",
+          "rgba_sha256": "0f78bc654ebec5e715ae1cef679204d5cb753af73acc45e258734fda48f14c55",
+          "indexed_sha256": "b8bee688118e360f4e19af2c0ae8cb89877b1a5b4465436c225a224e7fd9cc32",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-sitting-64-group1.png",
+          "png_sha256": "a86e01fb6d300f40533d234aa7690cd666f649bf9e9013ee84cda6e5a670ee08",
+          "rgba_sha256": "0f78bc654ebec5e715ae1cef679204d5cb753af73acc45e258734fda48f14c55",
+          "indexed_sha256": "b8bee688118e360f4e19af2c0ae8cb89877b1a5b4465436c225a224e7fd9cc32",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-sitting-64-color65.png",
+          "png_sha256": "c7f71536104caa3cb67ed9e17b88cb60162ff0d848eeb6373770ecab9795cdd4",
+          "rgba_sha256": "033c20ea839c99898cf6a83a9b55308fd8556dc79c75fb2d4851dfe99dad2507",
+          "indexed_sha256": "171627238314c1f85f86397b591de11c8d2b5388ee8e142e88d984f8f4b0d5ca",
+          "rgba_changed": 23,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 0,
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "0-lying-0-baseline.png",
+          "png_sha256": "7cc0ec35af6bebc3064cb722073db9b00faefcf01003c0e75910109e1f9f5f4c",
+          "rgba_sha256": "ba32b8a8b2d3d68eb90c42b824980dbfe145902bd4645bf5f5d73374c97c7d2f",
+          "indexed_sha256": "1c3d8b8ba5afe41fdad48f7187a50f7cca2210f85d721b222a857d80a7ab3267",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-lying-0-group0.png",
+          "png_sha256": "7cc0ec35af6bebc3064cb722073db9b00faefcf01003c0e75910109e1f9f5f4c",
+          "rgba_sha256": "ba32b8a8b2d3d68eb90c42b824980dbfe145902bd4645bf5f5d73374c97c7d2f",
+          "indexed_sha256": "1c3d8b8ba5afe41fdad48f7187a50f7cca2210f85d721b222a857d80a7ab3267",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-lying-0-group1.png",
+          "png_sha256": "7cc0ec35af6bebc3064cb722073db9b00faefcf01003c0e75910109e1f9f5f4c",
+          "rgba_sha256": "ba32b8a8b2d3d68eb90c42b824980dbfe145902bd4645bf5f5d73374c97c7d2f",
+          "indexed_sha256": "1c3d8b8ba5afe41fdad48f7187a50f7cca2210f85d721b222a857d80a7ab3267",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-lying-0-color65.png",
+          "png_sha256": "e228070cdcf464fa7845daad5de19c97c3225dd268fff0a983b086565f3c80ba",
+          "rgba_sha256": "91e76d818935e90c03b0fab311b52ebb74016a539d3528a36ec30888b02c43e4",
+          "indexed_sha256": "46277ed389a1f0867c9161622a11cf59b501b465e870bbf04cbe9e0b5c6f3882",
+          "rgba_changed": 1,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 0,
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "0-lying-64-baseline.png",
+          "png_sha256": "2d403168bcd6d973c823a99f0b783c136f171cfe00b1feeb2b7454101393bb1c",
+          "rgba_sha256": "96eddd356275d0ee55f6005ab3c5dc779a69a3c644987d3e092218bc2bb9a620",
+          "indexed_sha256": "b77e998b514643493b04aa1e45dfd915f4a2de519d9fa34465fc799ad75e8b83",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "0-lying-64-group0.png",
+          "png_sha256": "2d403168bcd6d973c823a99f0b783c136f171cfe00b1feeb2b7454101393bb1c",
+          "rgba_sha256": "96eddd356275d0ee55f6005ab3c5dc779a69a3c644987d3e092218bc2bb9a620",
+          "indexed_sha256": "b77e998b514643493b04aa1e45dfd915f4a2de519d9fa34465fc799ad75e8b83",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "0-lying-64-group1.png",
+          "png_sha256": "2d403168bcd6d973c823a99f0b783c136f171cfe00b1feeb2b7454101393bb1c",
+          "rgba_sha256": "96eddd356275d0ee55f6005ab3c5dc779a69a3c644987d3e092218bc2bb9a620",
+          "indexed_sha256": "b77e998b514643493b04aa1e45dfd915f4a2de519d9fa34465fc799ad75e8b83",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "0-lying-64-color65.png",
+          "png_sha256": "7c53ff042c4135b9931418ec94beef7b1141874afe61bb8f54645f68bd3b97e8",
+          "rgba_sha256": "b489e39763649000bbc490718d95ed8959c6679031f922ab2b3e148053b01e3b",
+          "indexed_sha256": "d0c41eb78d7d701c5c6391919db95ef69b7210d76db7dea8eca53d7f2fd43933",
+          "rgba_changed": 2,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "50-standing-0-baseline.png",
+          "png_sha256": "4bbe3f93b9e321808d92162936faeff6391c2b4a5bc51181bac898f024bcdbee",
+          "rgba_sha256": "79340a52472d652d2f1c8bb02fde182065a72c8683983ad963245ffd8d27bf42",
+          "indexed_sha256": "6a5ec0f62fb0688b1560b7fed4a8bdf4d7716f4d5729ea9555aba2cba2f6c7e8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-standing-0-group0.png",
+          "png_sha256": "4bbe3f93b9e321808d92162936faeff6391c2b4a5bc51181bac898f024bcdbee",
+          "rgba_sha256": "79340a52472d652d2f1c8bb02fde182065a72c8683983ad963245ffd8d27bf42",
+          "indexed_sha256": "6a5ec0f62fb0688b1560b7fed4a8bdf4d7716f4d5729ea9555aba2cba2f6c7e8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-standing-0-group1.png",
+          "png_sha256": "4bbe3f93b9e321808d92162936faeff6391c2b4a5bc51181bac898f024bcdbee",
+          "rgba_sha256": "79340a52472d652d2f1c8bb02fde182065a72c8683983ad963245ffd8d27bf42",
+          "indexed_sha256": "6a5ec0f62fb0688b1560b7fed4a8bdf4d7716f4d5729ea9555aba2cba2f6c7e8",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-standing-0-color65.png",
+          "png_sha256": "2fb46d405e148c8d2d4d1d0372961eafe10db477191ee745b566d24460b270a9",
+          "rgba_sha256": "4a560b129cc9f9cbafe73a2be9556f82ff75516a6bab055f648c9e2f835518ec",
+          "indexed_sha256": "153b4dac0368254a1beb01f214c6ad96e6bdec0a1653202c320f424f8b1c2097",
+          "rgba_changed": 72,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "50-standing-64-baseline.png",
+          "png_sha256": "eaa912a41a90086e2d862b4a92c1dc499b20053bcaa6526993ac8c4f28032b44",
+          "rgba_sha256": "823fce902564776396c81be8a1a93d93dacbcba75fdf87ab9e3a05b46f98f695",
+          "indexed_sha256": "c2fad6b90f1870b419e1c10fa2909f00ece718d14a8b91803b55fc8b5f3fa3ee",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-standing-64-group0.png",
+          "png_sha256": "eaa912a41a90086e2d862b4a92c1dc499b20053bcaa6526993ac8c4f28032b44",
+          "rgba_sha256": "823fce902564776396c81be8a1a93d93dacbcba75fdf87ab9e3a05b46f98f695",
+          "indexed_sha256": "c2fad6b90f1870b419e1c10fa2909f00ece718d14a8b91803b55fc8b5f3fa3ee",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-standing-64-group1.png",
+          "png_sha256": "eaa912a41a90086e2d862b4a92c1dc499b20053bcaa6526993ac8c4f28032b44",
+          "rgba_sha256": "823fce902564776396c81be8a1a93d93dacbcba75fdf87ab9e3a05b46f98f695",
+          "indexed_sha256": "c2fad6b90f1870b419e1c10fa2909f00ece718d14a8b91803b55fc8b5f3fa3ee",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-standing-64-color65.png",
+          "png_sha256": "56359602390b37c358f0de9732c0d6f7831160a9b29e5782a61ebcaafb939646",
+          "rgba_sha256": "161cbf93647ca416b90fe3c379b3ba4335499aac3be3800ad8288142fd10c5c2",
+          "indexed_sha256": "c73dfca9dfd5b326e02da4a9cc67b02afd5bbc2ff929ae1c55b433aa6bde4cc8",
+          "rgba_changed": 74,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "50-sitting-0-baseline.png",
+          "png_sha256": "1c1bdc8af80ff4e313cb21e24617bf964bf9585ff18c57fab3bb7cd2b8ada5d9",
+          "rgba_sha256": "e650935bd2e9d61a61c3fc742c22454d6178e341016f031e6f301b10a845e01a",
+          "indexed_sha256": "0f2e549492c8581d89a0998a311ef07c281f3bb812cc47807ba7217d8b63196d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-sitting-0-group0.png",
+          "png_sha256": "1c1bdc8af80ff4e313cb21e24617bf964bf9585ff18c57fab3bb7cd2b8ada5d9",
+          "rgba_sha256": "e650935bd2e9d61a61c3fc742c22454d6178e341016f031e6f301b10a845e01a",
+          "indexed_sha256": "0f2e549492c8581d89a0998a311ef07c281f3bb812cc47807ba7217d8b63196d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-sitting-0-group1.png",
+          "png_sha256": "1c1bdc8af80ff4e313cb21e24617bf964bf9585ff18c57fab3bb7cd2b8ada5d9",
+          "rgba_sha256": "e650935bd2e9d61a61c3fc742c22454d6178e341016f031e6f301b10a845e01a",
+          "indexed_sha256": "0f2e549492c8581d89a0998a311ef07c281f3bb812cc47807ba7217d8b63196d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-sitting-0-color65.png",
+          "png_sha256": "8b2e054e82212979ddde72384a2aaa11bf89e280fac2acf9b4e264b12ab76fa7",
+          "rgba_sha256": "00ee9616c3c16c258cadef5f7274f9b79dfaa2037a9da29ca4316768ccc5099e",
+          "indexed_sha256": "307ebd84fd7467162fa77fb220c630a51ee80d74a2f1714fb7fad95ac42d9b11",
+          "rgba_changed": 78,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "50-sitting-64-baseline.png",
+          "png_sha256": "7b9963f15e8730c730f28f0ee0f18de9fb805169dd4e075e4bea5d5cd706ad38",
+          "rgba_sha256": "941b36a5551a41a7e3601d41b6ae6f1f261742ccc7abfa6b7ffe18d41f3a2a7c",
+          "indexed_sha256": "035e137f8c7062df8aed272c71851d0ad2c35a5d70a649cdb82c0785086cb66a",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-sitting-64-group0.png",
+          "png_sha256": "7b9963f15e8730c730f28f0ee0f18de9fb805169dd4e075e4bea5d5cd706ad38",
+          "rgba_sha256": "941b36a5551a41a7e3601d41b6ae6f1f261742ccc7abfa6b7ffe18d41f3a2a7c",
+          "indexed_sha256": "035e137f8c7062df8aed272c71851d0ad2c35a5d70a649cdb82c0785086cb66a",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-sitting-64-group1.png",
+          "png_sha256": "7b9963f15e8730c730f28f0ee0f18de9fb805169dd4e075e4bea5d5cd706ad38",
+          "rgba_sha256": "941b36a5551a41a7e3601d41b6ae6f1f261742ccc7abfa6b7ffe18d41f3a2a7c",
+          "indexed_sha256": "035e137f8c7062df8aed272c71851d0ad2c35a5d70a649cdb82c0785086cb66a",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-sitting-64-color65.png",
+          "png_sha256": "2bc37658de7b0a1bcc18a61d291a1fa966247bb43d420efac742c8bdaaf4b8d1",
+          "rgba_sha256": "fc41e6285914b6708373a68fa2f9b08b7cb9e62486f21e00026102788e062d1d",
+          "indexed_sha256": "56d59377a3c926bc4fa0b22901a42b1ca8f3ecdc9002308acacfde9f828bc866",
+          "rgba_changed": 60,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "50-lying-0-baseline.png",
+          "png_sha256": "8cc9e8f74e2e27975620f149af1fc507ab4cb484f70c4daa386e37245c227fa7",
+          "rgba_sha256": "ab2e9f738fd124d81394aeee319c7c4d8b78197ea76d37ef59e139a79707adef",
+          "indexed_sha256": "8415402193482536d46cb9fef1edbf48de8d83a7d7646fb4ce76a319766db41c",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-lying-0-group0.png",
+          "png_sha256": "8cc9e8f74e2e27975620f149af1fc507ab4cb484f70c4daa386e37245c227fa7",
+          "rgba_sha256": "ab2e9f738fd124d81394aeee319c7c4d8b78197ea76d37ef59e139a79707adef",
+          "indexed_sha256": "8415402193482536d46cb9fef1edbf48de8d83a7d7646fb4ce76a319766db41c",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-lying-0-group1.png",
+          "png_sha256": "8cc9e8f74e2e27975620f149af1fc507ab4cb484f70c4daa386e37245c227fa7",
+          "rgba_sha256": "ab2e9f738fd124d81394aeee319c7c4d8b78197ea76d37ef59e139a79707adef",
+          "indexed_sha256": "8415402193482536d46cb9fef1edbf48de8d83a7d7646fb4ce76a319766db41c",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-lying-0-color65.png",
+          "png_sha256": "8cc9e8f74e2e27975620f149af1fc507ab4cb484f70c4daa386e37245c227fa7",
+          "rgba_sha256": "ab2e9f738fd124d81394aeee319c7c4d8b78197ea76d37ef59e139a79707adef",
+          "indexed_sha256": "8415402193482536d46cb9fef1edbf48de8d83a7d7646fb4ce76a319766db41c",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 50,
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "50-lying-64-baseline.png",
+          "png_sha256": "9001021cafc58ad2cb940ee1c1775cbea4146903c1de96f9034ec30ef0b9ea51",
+          "rgba_sha256": "ee716a566f38004d14b74f054133c5d6a7fcaa10f1a67884bc162844ac564e30",
+          "indexed_sha256": "1656d28f60b3fd591ef23ede777aa91ea27608b061cd9759762f2d87998b028d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "50-lying-64-group0.png",
+          "png_sha256": "9001021cafc58ad2cb940ee1c1775cbea4146903c1de96f9034ec30ef0b9ea51",
+          "rgba_sha256": "ee716a566f38004d14b74f054133c5d6a7fcaa10f1a67884bc162844ac564e30",
+          "indexed_sha256": "1656d28f60b3fd591ef23ede777aa91ea27608b061cd9759762f2d87998b028d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "50-lying-64-group1.png",
+          "png_sha256": "9001021cafc58ad2cb940ee1c1775cbea4146903c1de96f9034ec30ef0b9ea51",
+          "rgba_sha256": "ee716a566f38004d14b74f054133c5d6a7fcaa10f1a67884bc162844ac564e30",
+          "indexed_sha256": "1656d28f60b3fd591ef23ede777aa91ea27608b061cd9759762f2d87998b028d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "50-lying-64-color65.png",
+          "png_sha256": "e6292a20c15585c2f026b0cae60f7f261baebeee1bcb16f3c0b41821a13c96d0",
+          "rgba_sha256": "6c2447dc5b3a8c85ba605db911909f0a11ca7df7b0270e01f93c23e67d01a090",
+          "indexed_sha256": "12047c08a02ea995a4b2a08fb2342b5e193c42c880ffb508121f516fb0c732f0",
+          "rgba_changed": 21,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 2,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "standing",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "100-standing-0-baseline.png",
+          "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+          "rgba_sha256": "8220488c8789f455cb83fe85f034a0ccf1fb65a86f5a91e14092666a60dd95b9",
+          "indexed_sha256": "dde84e2fc7c319d661ff5f6abed75446a120062847228bdeb5de0b14e7056059",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-standing-0-group0.png",
+          "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+          "rgba_sha256": "8220488c8789f455cb83fe85f034a0ccf1fb65a86f5a91e14092666a60dd95b9",
+          "indexed_sha256": "dde84e2fc7c319d661ff5f6abed75446a120062847228bdeb5de0b14e7056059",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-standing-0-group1.png",
+          "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+          "rgba_sha256": "8220488c8789f455cb83fe85f034a0ccf1fb65a86f5a91e14092666a60dd95b9",
+          "indexed_sha256": "dde84e2fc7c319d661ff5f6abed75446a120062847228bdeb5de0b14e7056059",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-standing-0-color65.png",
+          "png_sha256": "3263f25f7bbff55340bdd905670e24c41e06b59791242c9e354452534dd03f54",
+          "rgba_sha256": "cfab40f91bcaeeac70616b3c3462e1f884d255d22b6051754528dcaf92ea2b9a",
+          "indexed_sha256": "c1bb1bc92fb9fedf316d64d468c17c933c7527ba32c487fff62a7d1c3ba9d9fa",
+          "rgba_changed": 152,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "standing",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "100-standing-64-baseline.png",
+          "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+          "rgba_sha256": "e1ab9ee13264e5e8734d94c680319d613d9cfa3f666464ffdc1a3c7804afb36b",
+          "indexed_sha256": "021fba11f7e28a12678036f71e5b1c297cf35fd961db4f38e968b710bcf81681",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-standing-64-group0.png",
+          "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+          "rgba_sha256": "e1ab9ee13264e5e8734d94c680319d613d9cfa3f666464ffdc1a3c7804afb36b",
+          "indexed_sha256": "021fba11f7e28a12678036f71e5b1c297cf35fd961db4f38e968b710bcf81681",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-standing-64-group1.png",
+          "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+          "rgba_sha256": "e1ab9ee13264e5e8734d94c680319d613d9cfa3f666464ffdc1a3c7804afb36b",
+          "indexed_sha256": "021fba11f7e28a12678036f71e5b1c297cf35fd961db4f38e968b710bcf81681",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-standing-64-color65.png",
+          "png_sha256": "a4b6219a11ae19b25c750688284a533c98a4186bcc0e2f8595e1bf2f3626cf9a",
+          "rgba_sha256": "f0a3633516559b8202236526eb7a64f5b4523dd9653da1cd87ab0ead933a5e47",
+          "indexed_sha256": "3d929f6a034063428709f7b755e3a9c241bf272f4d77344cf3eae64e390ac89c",
+          "rgba_changed": 117,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "sitting",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "100-sitting-0-baseline.png",
+          "png_sha256": "4a4826673ba418c82a1e3fe87a4adad2bab4329a243a5dedb3cd0ad2fa511da9",
+          "rgba_sha256": "4800cd98f92eefe27effa459de2468d6eedcf60f5a73757a3512dd81d59d5af1",
+          "indexed_sha256": "87c152ba2a6a9956a403070515fe45cd5fb09dcfc5e3d2e173fab005d3f16d1d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-sitting-0-group0.png",
+          "png_sha256": "4a4826673ba418c82a1e3fe87a4adad2bab4329a243a5dedb3cd0ad2fa511da9",
+          "rgba_sha256": "4800cd98f92eefe27effa459de2468d6eedcf60f5a73757a3512dd81d59d5af1",
+          "indexed_sha256": "87c152ba2a6a9956a403070515fe45cd5fb09dcfc5e3d2e173fab005d3f16d1d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-sitting-0-group1.png",
+          "png_sha256": "4a4826673ba418c82a1e3fe87a4adad2bab4329a243a5dedb3cd0ad2fa511da9",
+          "rgba_sha256": "4800cd98f92eefe27effa459de2468d6eedcf60f5a73757a3512dd81d59d5af1",
+          "indexed_sha256": "87c152ba2a6a9956a403070515fe45cd5fb09dcfc5e3d2e173fab005d3f16d1d",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-sitting-0-color65.png",
+          "png_sha256": "e8ef054f228782385580767c2df4da5c85a2d1d2418897f113b75d69bf7ff59d",
+          "rgba_sha256": "e972d2fe877de9b1a424c79a5085c4c64d6782f4554bc941e6fd2352fab403ad",
+          "indexed_sha256": "23b3bccfd42838f986ae04e0ee05ff99e8b8984f207a66b3b0d95389ff5ba628",
+          "rgba_changed": 204,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "sitting",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "100-sitting-64-baseline.png",
+          "png_sha256": "19e23b2dca9e0a074cfc989616dbb6b18f50db32f0248c5856fd26662633fdf5",
+          "rgba_sha256": "05e0723cfd6f96bf380566df0956e53b9603c2c8c04936dc07ef19919d11fae3",
+          "indexed_sha256": "0ec3cab7f3b2d96aec7042a8864b0b1a09d08c5fd03fa8f71a95ce36cba6c503",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-sitting-64-group0.png",
+          "png_sha256": "19e23b2dca9e0a074cfc989616dbb6b18f50db32f0248c5856fd26662633fdf5",
+          "rgba_sha256": "05e0723cfd6f96bf380566df0956e53b9603c2c8c04936dc07ef19919d11fae3",
+          "indexed_sha256": "0ec3cab7f3b2d96aec7042a8864b0b1a09d08c5fd03fa8f71a95ce36cba6c503",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-sitting-64-group1.png",
+          "png_sha256": "19e23b2dca9e0a074cfc989616dbb6b18f50db32f0248c5856fd26662633fdf5",
+          "rgba_sha256": "05e0723cfd6f96bf380566df0956e53b9603c2c8c04936dc07ef19919d11fae3",
+          "indexed_sha256": "0ec3cab7f3b2d96aec7042a8864b0b1a09d08c5fd03fa8f71a95ce36cba6c503",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-sitting-64-color65.png",
+          "png_sha256": "8aa06afdd023fd5fe4f9e3f7baf43b95cca797df19a025f7d0028d7d683d4caf",
+          "rgba_sha256": "ad319d78d59d123ae142a551a55f6aa1b374ccffedaa1f3fc032511ba37661e6",
+          "indexed_sha256": "47098e3526a453e7ae4b5d87376b9d3e6e361aeb2766cbbf25ed073a10a1b3cb",
+          "rgba_changed": 114,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "lying",
+      "yaw": 0,
+      "outputs": {
+        "baseline": {
+          "png": "100-lying-0-baseline.png",
+          "png_sha256": "571aa0798e3a7eb3b351ace2635c86a16b4608374c33cfe977bebe3b26686330",
+          "rgba_sha256": "391c9f078a282f3211f6b2178c5e3faecbbc9802d615d2300a7e28d31a853c63",
+          "indexed_sha256": "406fcbdfd46fbd7e87984e37cb3c4d4c68358e6fcd0bbac08895a6ea5b306e05",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-lying-0-group0.png",
+          "png_sha256": "571aa0798e3a7eb3b351ace2635c86a16b4608374c33cfe977bebe3b26686330",
+          "rgba_sha256": "391c9f078a282f3211f6b2178c5e3faecbbc9802d615d2300a7e28d31a853c63",
+          "indexed_sha256": "406fcbdfd46fbd7e87984e37cb3c4d4c68358e6fcd0bbac08895a6ea5b306e05",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-lying-0-group1.png",
+          "png_sha256": "571aa0798e3a7eb3b351ace2635c86a16b4608374c33cfe977bebe3b26686330",
+          "rgba_sha256": "391c9f078a282f3211f6b2178c5e3faecbbc9802d615d2300a7e28d31a853c63",
+          "indexed_sha256": "406fcbdfd46fbd7e87984e37cb3c4d4c68358e6fcd0bbac08895a6ea5b306e05",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-lying-0-color65.png",
+          "png_sha256": "298d9fcc659c5b226da0886209c4118862a137bd40f0ddbfdaed3d5ccc160ca9",
+          "rgba_sha256": "a891144031852d79d133d66ddb204e795aff996ab7de5b4008469f94c67f9baf",
+          "indexed_sha256": "d4e11f7f92c39bd3f0e485b9d181276d336e03e2b06b6690c9e4b34e3e508617",
+          "rgba_changed": 13,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    },
+    {
+      "age": 100,
+      "pose": "lying",
+      "yaw": 64,
+      "outputs": {
+        "baseline": {
+          "png": "100-lying-64-baseline.png",
+          "png_sha256": "082c7b58e62372330f7e1e0df0e58ee21a24bcb66d152fb0d815fe53076194b9",
+          "rgba_sha256": "f8318d51b50cf4daa96913887045c4d8682a055ad3f27bfe6f88c478305cc6ad",
+          "indexed_sha256": "f0fb06d52e6f8670aee703cd96bd2ee2afcff9a8edae331fe08304ab945d2eec",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group0": {
+          "png": "100-lying-64-group0.png",
+          "png_sha256": "082c7b58e62372330f7e1e0df0e58ee21a24bcb66d152fb0d815fe53076194b9",
+          "rgba_sha256": "f8318d51b50cf4daa96913887045c4d8682a055ad3f27bfe6f88c478305cc6ad",
+          "indexed_sha256": "f0fb06d52e6f8670aee703cd96bd2ee2afcff9a8edae331fe08304ab945d2eec",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "group1": {
+          "png": "100-lying-64-group1.png",
+          "png_sha256": "082c7b58e62372330f7e1e0df0e58ee21a24bcb66d152fb0d815fe53076194b9",
+          "rgba_sha256": "f8318d51b50cf4daa96913887045c4d8682a055ad3f27bfe6f88c478305cc6ad",
+          "indexed_sha256": "f0fb06d52e6f8670aee703cd96bd2ee2afcff9a8edae331fe08304ab945d2eec",
+          "rgba_changed": 0,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        },
+        "color65": {
+          "png": "100-lying-64-color65.png",
+          "png_sha256": "3a1ad9609550eef98a04c1f7493d9d8e46e7f0b67d9ba59de63a8151c2622fb9",
+          "rgba_sha256": "367ac4e9bd80b4c994051caebb18b73857f7e705a633ba2c14d0ce5e7121a3b2",
+          "indexed_sha256": "511249de5cb93472f3f29069e723ebdcc88a8062211c1894c2a46ad8e90534c5",
+          "rgba_changed": 54,
+          "eligible_paint_commands": 3,
+          "textured_paint_commands": 3,
+          "layer_count": 1,
+          "paint_count": 19
+        }
+      }
+    }
+  ],
+  "mcp": [
+    {
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 0.0
+      },
+      "png": "0-0-baseline-mcp.png",
+      "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+      "metadata": "0-0-baseline-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 0.0
+      },
+      "png": "0-0-group0-mcp.png",
+      "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+      "metadata": "0-0-group0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 0.0
+      },
+      "png": "0-0-group1-mcp.png",
+      "png_sha256": "588db72cd7f21bec8bf7dcc75288df988ced70990de9954971623e4871b69563",
+      "metadata": "0-0-group1-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 0.0
+      },
+      "png": "0-0-color65-mcp.png",
+      "png_sha256": "1fe1553a286f8cd59b1b5e70f5114e8e51b84beba46b16a229b89e44ab5855df",
+      "metadata": "0-0-color65-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 90.0
+      },
+      "png": "0-64-baseline-mcp.png",
+      "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+      "metadata": "0-64-baseline-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 90.0
+      },
+      "png": "0-64-group0-mcp.png",
+      "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+      "metadata": "0-64-group0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 90.0
+      },
+      "png": "0-64-group1-mcp.png",
+      "png_sha256": "60c77812a2b1bbd6442a7b849b36bb5b4825e20e82231f3d4f35be58789705f8",
+      "metadata": "0-64-group1-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "age": 0,
+        "yaw_degrees": 90.0
+      },
+      "png": "0-64-color65-mcp.png",
+      "png_sha256": "f8ae5cd720c5e09adb82c48cc5d37dc5204399e421bc44aae3940ffc95da5ff9",
+      "metadata": "0-64-color65-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 0.0
+      },
+      "png": "100-0-baseline-mcp.png",
+      "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+      "metadata": "100-0-baseline-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 0.0
+      },
+      "png": "100-0-group0-mcp.png",
+      "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+      "metadata": "100-0-group0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 0.0
+      },
+      "png": "100-0-group1-mcp.png",
+      "png_sha256": "b35e4e1381880d0908e9f6398b81e3a2a16b98ebd7571136bd25e0ff7e825957",
+      "metadata": "100-0-group1-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 0.0
+      },
+      "png": "100-0-color65-mcp.png",
+      "png_sha256": "3263f25f7bbff55340bdd905670e24c41e06b59791242c9e354452534dd03f54",
+      "metadata": "100-0-color65-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 90.0
+      },
+      "png": "100-64-baseline-mcp.png",
+      "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+      "metadata": "100-64-baseline-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group0.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 90.0
+      },
+      "png": "100-64-group0-mcp.png",
+      "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+      "metadata": "100-64-group0-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-group1.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 90.0
+      },
+      "png": "100-64-group1-mcp.png",
+      "png_sha256": "d7e9dc045aa9a766b5e7ac75e5e70d3c3139922dda03365926ff99d72c910ad4",
+      "metadata": "100-64-group1-mcp-render.json"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-color65.pet",
+        "pose": "standing",
+        "age": 100,
+        "yaw_degrees": 90.0
+      },
+      "png": "100-64-color65-mcp.png",
+      "png_sha256": "a4b6219a11ae19b25c750688284a533c98a4186bcc0e2f8595e1bf2f3626cf9a",
+      "metadata": "100-64-color65-mcp-render.json"
+    }
+  ],
+  "summary": {
+    "age_fixtures": 18,
+    "direct_draws": 72,
+    "group_equivalences": 36,
+    "mcp_views": 16,
+    "color_positive_changes": 17
+  }
+}

@@ -350,3 +350,7 @@ Final aggregate additionally rehashes all660 PNG files and48 private state files
 ## Cached group/color controls
 
 [PAINT-006](experiments/paint-006.md) parses group0/group1 from both edited caches in Fuzzkin/Homebody/Goobe;all36 group comparisons preserve prepared commands/pixels. Diagnostics distinguish0 from1. Six Fuzzkin color65 controls change pixels;Homebody/Goobe commands do not change despite parsed colors. Nine copies,72 direct draws,18 MCP matches andsix reviewed sheets. First failed blanket-positive assertion archived privately in paint-006-attempt1. tools/saved_paint_groups.py --verify passes;private evidence scratch/research/paint-006. Explicit Fuzzkin age controls follow. Originals/renderer unchanged;ten-minute continuation ongoing.
+
+## Paint groups across ages
+
+[PAINT-007](experiments/paint-007.md):Fuzzkin ages0/50/100 ×three poses ×front/side;36 group0/group1 equalities,72 direct draws and16 fresh MCP matches. Both caches contribute below100;adult only at100. Three textured paints prepare in every fixture;17/18 color65 controls change pixels,age50 lying/front does not. tools/paint_group_ages.py --verify passes;copies reused from PAINT-006. No broader/native claim. Ten-minute continuation entering final integrity audit.

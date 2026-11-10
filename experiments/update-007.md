@@ -1,0 +1,11 @@
+# UPDATE-007: motion texture-state components
+
+Date: 2026-11-10. [Manifest](update-007.json). Integration6c1d883, Petz4 Scottie/Siamese authored128x128 connector fixtures. Extends [UPDATE-002](update-002.md)'s replay of [TEXTURE-004](texture-004.md) with separate paint-angle and combined-texture controls.
+
+**Renderer-observed:** all48 histories give equal host-only and combined host/paint texture pixels. Paint-angle-only matches fresh in all48. Combined texture state differs from full retained state in33 histories. Every isolated diagnostic connector raster remains equal to fresh, across all336 final draws. These are component counterfactuals, not additive causal shares. Equal pixels do not establish that state is identical or that paint angles never matter in other assets.
+
+The matrix covers two species, three poses, two views and four histories (repeat/yaw/head/tilt arcs returning to the original target). All192 transition states match the saved updated trajectories. All240 previously recorded final pixel cells match the earlier replay. Seven final components per history add96 new counterfactual draws: paint-angle-only and combined texture state. Ball geometry/bounds match fresh in every final composition; full differences may still include ordering, shading and raster interactions.
+
+`tools/revalidate_motion_components.py` requires a fresh scratch/research/update-007 folder. `tools/check_motion_components_update.py` reruns transitions and final draws, checks336 exact PNGs/state hashes, source/input/engine/dependency hashes and240 prior pixel links. It also links all48 fresh outputs to12 already verified UPDATE-002 local stdio MCP baselines; there are **no new MCP calls** in this unit. Retained trajectories remain direct renderer evidence. Historical manifests, renderer source and original files are unchanged.
+
+Scope does not include saved-pet painted-group attribution, arbitrary paint-angle perturbations, other breeds/versions or native-game validation. All48 pre-target states have16 paint-angle slots and every pair is(0,0),verified against the saved updated trajectories. Thus this matrix does not exercise accumulated nonzero paint-angle state;the no-difference controls have this important limit. These authored connector fixtures are not a general test of textured markings. GAP-006 remains open.

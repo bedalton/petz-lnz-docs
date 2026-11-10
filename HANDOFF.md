@@ -304,3 +304,9 @@ Resume from UPDATE-001/002/003 and RENDERER_CHANGES.md. Outstanding:64 missing-i
 ## Complete static matrix after upgrade
 
 [UPDATE-006](experiments/update-006.md) covers all12 TEXTURE-001 fixtures,96 sequence draws/144 resets/12 fresh MCP baselines,252 saved PNGs and240 draw-state links. Eleven fixtures stay stable through eight frames;Scottie sitting/front gives128 pixels frame3,141 frame8. At both targets,host-only/combined texture match full;geometry-only/paint-only match fresh in every fixture. Both scripts pass,originals/sources untouched. Broader static exclusion above is now closed for this12-fixture matrix only;motion paint-angle/group attribution and native validation remain open.
+
+## Motion component continuation
+
+[UPDATE-007](experiments/update-007.md) separates paint-only and combined-texture state in48 TEXTURE-004 histories. All192 transitions/240 prior cells match UPDATE-002;336 final PNG/state outputs verify. Host-only equals combined in48;paint-only equals fresh in48;combined differs from full in33. All diagnostic connector rasters match fresh. Links12 existing MCP baselines,no new MCP calls. Saved-pet/group attribution and broader/native evidence remain open;do not generalize this authored-connector matrix to arbitrary textured markings.
+
+Motion scope audit:all48 pre-target paint states contain16 zero pairs;UPDATE-007 does not exercise accumulated nonzero paint angles. The manifest/verifier record this explicitly. Next useful paint-state work should use an eligible textured saved pet such as Fuzzkin.

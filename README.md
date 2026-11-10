@@ -109,3 +109,5 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable manifest; read that only when checking detailed evidence.
 
 Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. Regenerate the section ledger with `tools/coverage_index.py` using the same interpreter.
+
+- [Saved-pet paint-angle motion](experiments/paint-001.md)

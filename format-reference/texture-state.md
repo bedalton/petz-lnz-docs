@@ -1,6 +1,6 @@
 # Retained texture orientation
 
-Scope: Petz 4 Scottie/Siamese renderer paths. This is a focused state reference, not a complete Texture List authoring specification. Native-game behavior remains unvalidated.
+Scope: Petz4 Scottie/Siamese renderer paths plus sampled saved Fuzzkin/Homebody. This is a focused state reference, not a complete Texture List authoring specification. Native-game behavior remains unvalidated.
 
 **Updated build:** [UPDATE-002](../experiments/update-002.md) confirms the selected history effects and corrects their pixel counts. FrameState now also retains per-paint texture angles; host-orientation-only resets are not complete texture-state resets.
 
@@ -19,3 +19,5 @@ Relevant controls: input hash/seed, game version, pose and frame, camera, fatnes
 [UPDATE-007](../experiments/update-007.md) adds paint-only and combined-texture controls to all48 updated motion histories:host-only equals combined,and paint-only equals fresh in all48;combined differs from full in33. The diagnostic connector stays unchanged. This authored-connector matrix does not establish general painted-marking or saved-group behavior.
 
 The UPDATE-007 pre-target paint-angle vectors are all zero (16 slots each). Its equal-pixel controls therefore do not test retention of accumulated nonzero paint angles.
+
+[PAINT-001](../experiments/paint-001.md) exercises nonzero paint angles:all24 Fuzzkin histories have three nonzero pre-target pairs,paint-only changes2–63 pixels,and host-only differs from combined texture. Homebody haszero paint-only effects in24 histories. Save the complete draw-returned FrameState;host-only orientation is insufficient for these textured markings. Named animation frames and raster RNG are fixed;native behavior remains unvalidated.

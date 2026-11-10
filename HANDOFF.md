@@ -318,3 +318,7 @@ Motion scope audit:all48 pre-target paint states contain16 zero pairs;UPDATE-007
 Final audit records seven tool hashes and checks actual checkout HEAD against all new manifests;see the session index. Required Git identities/no-coauthor rules verified.
 
 A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE-006 exactly,extending capabilities-only health. One additional health render call is separate from the44 research render calls.
+
+## Second ten-minute continuation: saved paint motion
+
+[PAINT-001](experiments/paint-001.md) closes the all-zero-state limitation for sampled Fuzzkin:three nonzero paint-angle pairs before every target;paint-only changes2–63 pixels and host-only differs from combined in24/24 histories. Homebody negative control haszero effects. All192 transitions/336 final draws/12 fresh local stdio MCP baselines verify;348 PNGs and48 UPDATE-003 fresh links checked. Saved controls preserved;originals/sources untouched. Nonzero paint-state behavior is renderer evidence only. Group retint/per-paint attribution remain open. Latest authorization is another ten minutes.

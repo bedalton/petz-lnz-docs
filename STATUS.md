@@ -95,3 +95,5 @@ Updated: 2026-11-10
 - Final continuation provenance:checkout revision and seven tool hashes recorded in the [session audit](docs/session-2026-11-10-upgrade-continuation.md);renderer retains only its pre-existing .gitignore change.
 
 - Final HTTP render control exactly matches the updated Scottie static baseline;health/audit hashes refreshed.
+
+- Latest: [PAINT-001](experiments/paint-001.md),Fuzzkin nonzero paint-angle state changes pixels in24/24 histories;Homebody negative control0/24. 192 transitions/336 final draws/12 new MCP baselines pass;348 PNGs verified.

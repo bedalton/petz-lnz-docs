@@ -115,3 +115,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-006](experiments/paint-006.md),nine cached group/color copies:36 group equivalences,72 direct draws and18 MCP matches. Fuzzkin color controls change six views;other sampled paints lack visible positive controls.
 
 - Latest: [PAINT-007](experiments/paint-007.md),Fuzzkin ages0/50/100:36 group equivalences,72 direct draws and16 MCP matches;17/18 color controls change pixels.
+
+- Paint-group continuation audited: [session](docs/session-2026-11-10-paint-groups.md),three complete unit replays pass;298 PNGs,21 copies/21 original hash links,64 MCP records,144 RGBA counts and18 cross-unit links verified. HTTP restarted and actual render matches baseline. No native claim.

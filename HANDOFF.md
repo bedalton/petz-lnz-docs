@@ -142,3 +142,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Pixel/texture session verification
 
 [Session index](docs/session-2026-11-10-textures.md) links MORPH-005/TEXTURE-001/002. tools/check_texture_session.py verifies96 sheets,396 RGBA cells,24 MCP baselines (including twelve saved morph baseline PNGs),96 full/private orientation state hashes, sources/dependencies/engine hashes. Final HTTP MCP discovery/capabilities pass; private health record scratch/research/texture-session-mcp-health.json. Five sheets reviewed. Focused format-reference/texture-state.md and agent route added; README evidence links consolidated. All checks pass. Next: independent native evidence for GAP-006, broader breeds/versions or connector styling. No renderer changes.
+
+## Latest connector fill research
+
+[LINE-005](experiments/line-005.md): 144 synthetic blocks,36 numerical loads,twenty local MCP pairs; two sheets reviewed. Flat diagnostic color180/200 controls confirm -1 selects start,-2 selects end including endpoint reversal. Synthetic -3/texture/shade cases pass but have no textured-breed/native claim. Installed/checkout sources,dependencies,three resource DLLs and original hashes recorded. Two failed-report harness runs archived privately; final evidence scratch/research/line-005. No renderer changes. Next: edge modes/colors and fuzz or independent native texture evidence.

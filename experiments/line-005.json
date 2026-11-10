@@ -1,0 +1,1506 @@
+{
+  "experiment": "LINE-005",
+  "backend": "local stdio MCP and synthetic Python blocks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "pillow": "13.0.0"
+  },
+  "source_hashes": {
+    "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "synthetic": [
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -3,
+      "expected_color": 85,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -2,
+      "expected_color": 85,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -1,
+      "expected_color": 25,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 125,
+      "expected_color": 125,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -3,
+      "expected_color": 84,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -2,
+      "expected_color": 84,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -1,
+      "expected_color": 24,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 125,
+      "expected_color": 124,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -3,
+      "expected_color": 89,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -2,
+      "expected_color": 89,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -1,
+      "expected_color": 29,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 125,
+      "expected_color": 129,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -3,
+      "expected_color": 25,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -2,
+      "expected_color": 25,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -1,
+      "expected_color": 85,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 125,
+      "expected_color": 125,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -3,
+      "expected_color": 24,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -2,
+      "expected_color": 24,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -1,
+      "expected_color": 84,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 125,
+      "expected_color": 124,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -3,
+      "expected_color": 29,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -2,
+      "expected_color": 29,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -1,
+      "expected_color": 89,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 125,
+      "expected_color": 129,
+      "texture_inherited": false
+    },
+    {
+      "textured": false,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -3,
+      "expected_color": 85,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -2,
+      "expected_color": 85,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -1,
+      "expected_color": 25,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 125,
+      "expected_color": 125,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -3,
+      "expected_color": 84,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -2,
+      "expected_color": 84,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -1,
+      "expected_color": 24,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 125,
+      "expected_color": 124,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -3,
+      "expected_color": 89,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -2,
+      "expected_color": 89,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -1,
+      "expected_color": 29,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 125,
+      "expected_color": 129,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": false,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -3,
+      "expected_color": 25,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -2,
+      "expected_color": 25,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": -1,
+      "expected_color": 85,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 125,
+      "expected_color": 125,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        0,
+        0
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -3,
+      "expected_color": 24,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -2,
+      "expected_color": 24,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": -1,
+      "expected_color": 84,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 125,
+      "expected_color": 124,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        -5,
+        2
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -3,
+      "expected_color": 29,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -2,
+      "expected_color": 29,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": -1,
+      "expected_color": 89,
+      "texture_inherited": true
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 0,
+      "expected_color": 0,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 125,
+      "expected_color": 129,
+      "texture_inherited": false
+    },
+    {
+      "textured": true,
+      "reverse": true,
+      "shades": [
+        6,
+        6
+      ],
+      "color_field": 200,
+      "expected_color": 200,
+      "texture_inherited": false
+    }
+  ],
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "start": "52, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "end": "52, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+        "explicit_start": "52, 90, 0, 180, 244, 244, 100, 100, 0, 1",
+        "explicit_end": "52, 90, 0, 200, 244, 244, 100, 100, 0, 1",
+        "reverse_start": "90, 52, 0, -1, 244, 244, 100, 100, 0, 1",
+        "reverse_end": "90, 52, 0, -2, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "start": "Dogz-start.dog",
+        "end": "Dogz-end.dog",
+        "explicit_start": "Dogz-explicit_start.dog",
+        "explicit_end": "Dogz-explicit_end.dog",
+        "reverse_start": "Dogz-reverse_start.dog",
+        "reverse_end": "Dogz-reverse_end.dog"
+      },
+      "input_hashes": {
+        "start": "715f8fd9727d9689fc08050abf6a4e3c7db0b458c40e1adb65cab01e6b53b2ec",
+        "end": "a762634232a8b3f28bbd8f0670b6b9e87f11c1b9e07a65aee8ca6c73b367fe60",
+        "explicit_start": "2872441509c74eace11530a14088ba8122656934772c7d2bf28a5b4914b8186a",
+        "explicit_end": "227c84c14294f1859e8a9e39380ca5b61c62e1e656f6f46b16e47baaa5dc0dfb",
+        "reverse_start": "d1397b98727a5aed8dc0149b54024c33b3d12afc642c75772d02f0a49f2e7ed8",
+        "reverse_end": "2eadf205c61b133139ea49010d9a2c53f0f0c277db5aeee466d51a6c39f2abcc"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "standing",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_end",
+          "line_color": -2
+        },
+        {
+          "pose": "sitting",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "sitting",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_end",
+          "line_color": -2
+        },
+        {
+          "pose": "lying",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "lying",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_end",
+          "line_color": -2
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "start": "24, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "end": "24, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+        "explicit_start": "24, 90, 0, 180, 244, 244, 100, 100, 0, 1",
+        "explicit_end": "24, 90, 0, 200, 244, 244, 100, 100, 0, 1",
+        "reverse_start": "90, 24, 0, -1, 244, 244, 100, 100, 0, 1",
+        "reverse_end": "90, 24, 0, -2, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "start": "Catz-start.cat",
+        "end": "Catz-end.cat",
+        "explicit_start": "Catz-explicit_start.cat",
+        "explicit_end": "Catz-explicit_end.cat",
+        "reverse_start": "Catz-reverse_start.cat",
+        "reverse_end": "Catz-reverse_end.cat"
+      },
+      "input_hashes": {
+        "start": "605e0c6380f5a9f120134dbf322f7d775a62b28e65e6787f0693bf5de9b1c955",
+        "end": "ae5130849b1caa07793eabdd522baa4af35c7073e3e0c6bb64b558060a74c795",
+        "explicit_start": "859193d4ff00679b0d3bc00b08ef8df677a2ef87951eb432d04a3f079db22809",
+        "explicit_end": "69e6fb822a9c8b7c3b754e1b1854ea6256c7167d307da6a4dc3ff0a28ded6de3",
+        "reverse_start": "6546cc0db0e4e558d68664171dee19bee4f405e478fc44910b07fbb229af0be0",
+        "reverse_end": "c17f2e3fc893a9923ed4e55f07a8c23eed8bdbf30ba175e583c4025f15775f52"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "standing",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_end",
+          "line_color": -2
+        },
+        {
+          "pose": "sitting",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "sitting",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_end",
+          "line_color": -2
+        },
+        {
+          "pose": "lying",
+          "variant": "start",
+          "line_color": -1
+        },
+        {
+          "pose": "lying",
+          "variant": "end",
+          "line_color": -2
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_start",
+          "line_color": 180
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_end",
+          "line_color": 200
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_start",
+          "line_color": -1
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_end",
+          "line_color": -2
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "start",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Dogz-start.dog",
+        "after_path": "Dogz-explicit_start.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f86ce5c351524a363487ef44b563080994221768b2e3eaa61fc0b0006183fa6c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "54add1668b359ef172750887c0dabffaef4ae365e9fd2bad6f2107a90bb8d9d3",
+        "54add1668b359ef172750887c0dabffaef4ae365e9fd2bad6f2107a90bb8d9d3"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "start",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Dogz-start.dog",
+        "after_path": "Dogz-explicit_start.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "70d278a3749720dcb185aa49fd899f4b61cf56b521b13b6616c874fcb398acf6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d5b16b3500b9882d79ab349c3c1b5f7c6366e5a828f39f386e82f1329e17a47e",
+        "d5b16b3500b9882d79ab349c3c1b5f7c6366e5a828f39f386e82f1329e17a47e"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "end",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Dogz-end.dog",
+        "after_path": "Dogz-explicit_end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "68301456bf3a9cfadd09d42b5bb6759a1fc03810467e11bcf215bd49951a6b49",
+      "cells_equal": true,
+      "cell_hashes": [
+        "06118e2eb28be615b546018a66c8b51051055fe58b17511aaa68d96fb6a5d393",
+        "06118e2eb28be615b546018a66c8b51051055fe58b17511aaa68d96fb6a5d393"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "end",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Dogz-end.dog",
+        "after_path": "Dogz-explicit_end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "95e1570592643d1daec5bdb4f861fbefc6ddb0b8484675c9fdce6c234f8feaa6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "0a15d9b7fd8146bd677ed9ca3efa3976b34c6edaa1f3d364de3b6768d4019708",
+        "0a15d9b7fd8146bd677ed9ca3efa3976b34c6edaa1f3d364de3b6768d4019708"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "start",
+        "end"
+      ],
+      "controls": {
+        "before_path": "Dogz-start.dog",
+        "after_path": "Dogz-end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f820ea86a8a5e92882ced20b8089ea285966309bb473e83fd97ae66061a8f098",
+      "cells_equal": false,
+      "cell_hashes": [
+        "54add1668b359ef172750887c0dabffaef4ae365e9fd2bad6f2107a90bb8d9d3",
+        "06118e2eb28be615b546018a66c8b51051055fe58b17511aaa68d96fb6a5d393"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "start",
+        "end"
+      ],
+      "controls": {
+        "before_path": "Dogz-start.dog",
+        "after_path": "Dogz-end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "06667daf9fa1a8d9dd69e4f058089382578511a69023999a8053b67f591d821d",
+      "cells_equal": false,
+      "cell_hashes": [
+        "d5b16b3500b9882d79ab349c3c1b5f7c6366e5a828f39f386e82f1329e17a47e",
+        "0a15d9b7fd8146bd677ed9ca3efa3976b34c6edaa1f3d364de3b6768d4019708"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_start",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_start.dog",
+        "after_path": "Dogz-explicit_end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "68301456bf3a9cfadd09d42b5bb6759a1fc03810467e11bcf215bd49951a6b49",
+      "cells_equal": true,
+      "cell_hashes": [
+        "06118e2eb28be615b546018a66c8b51051055fe58b17511aaa68d96fb6a5d393",
+        "06118e2eb28be615b546018a66c8b51051055fe58b17511aaa68d96fb6a5d393"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_start",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_start.dog",
+        "after_path": "Dogz-explicit_end.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "95e1570592643d1daec5bdb4f861fbefc6ddb0b8484675c9fdce6c234f8feaa6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "0a15d9b7fd8146bd677ed9ca3efa3976b34c6edaa1f3d364de3b6768d4019708",
+        "0a15d9b7fd8146bd677ed9ca3efa3976b34c6edaa1f3d364de3b6768d4019708"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_end",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_end.dog",
+        "after_path": "Dogz-explicit_start.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f86ce5c351524a363487ef44b563080994221768b2e3eaa61fc0b0006183fa6c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "54add1668b359ef172750887c0dabffaef4ae365e9fd2bad6f2107a90bb8d9d3",
+        "54add1668b359ef172750887c0dabffaef4ae365e9fd2bad6f2107a90bb8d9d3"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_end",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_end.dog",
+        "after_path": "Dogz-explicit_start.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "70d278a3749720dcb185aa49fd899f4b61cf56b521b13b6616c874fcb398acf6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d5b16b3500b9882d79ab349c3c1b5f7c6366e5a828f39f386e82f1329e17a47e",
+        "d5b16b3500b9882d79ab349c3c1b5f7c6366e5a828f39f386e82f1329e17a47e"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "start",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Catz-start.cat",
+        "after_path": "Catz-explicit_start.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9a2207e7e99b4cb31c72136e2f3b360b4b4cc99a5ee0759fb7e06da449542f32",
+      "cells_equal": true,
+      "cell_hashes": [
+        "644df542f5f4933eb46fc8a441ba44931722121fc3503076a0c2065a098028fb",
+        "644df542f5f4933eb46fc8a441ba44931722121fc3503076a0c2065a098028fb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "start",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Catz-start.cat",
+        "after_path": "Catz-explicit_start.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "50f35f553bea942314d67d6b1aa5270ceb3ad98822398ae0d26da168188c31f6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "16f8ca3198688865c3f5c41cfc041238db4df5db2f58fb94c56e28f85ad705e4",
+        "16f8ca3198688865c3f5c41cfc041238db4df5db2f58fb94c56e28f85ad705e4"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "end",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Catz-end.cat",
+        "after_path": "Catz-explicit_end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "445212955491438124c92a43b343186724f785b170e4a790ab6c6bb6cfd2c7e8",
+      "cells_equal": true,
+      "cell_hashes": [
+        "b3ba1bfcf55a383df9899d1fa765624c0a699ddc15f5fde534e43ba14d44b161",
+        "b3ba1bfcf55a383df9899d1fa765624c0a699ddc15f5fde534e43ba14d44b161"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "end",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Catz-end.cat",
+        "after_path": "Catz-explicit_end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "a68aaf42a1112ca96c5029232d6da5c5a59066852ad57728882fe783e262eb06",
+      "cells_equal": true,
+      "cell_hashes": [
+        "51de2cb3f676ab8896dc049173106bfd3fc372e15dcdafc917547d68841d006b",
+        "51de2cb3f676ab8896dc049173106bfd3fc372e15dcdafc917547d68841d006b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "start",
+        "end"
+      ],
+      "controls": {
+        "before_path": "Catz-start.cat",
+        "after_path": "Catz-end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "e2b7c9261f1c2e896928997445a945d2eef8e8909beaab0ae70069d2d9f7290e",
+      "cells_equal": false,
+      "cell_hashes": [
+        "644df542f5f4933eb46fc8a441ba44931722121fc3503076a0c2065a098028fb",
+        "b3ba1bfcf55a383df9899d1fa765624c0a699ddc15f5fde534e43ba14d44b161"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "start",
+        "end"
+      ],
+      "controls": {
+        "before_path": "Catz-start.cat",
+        "after_path": "Catz-end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f279d3ccdc533eac052aac5e4ff34dac050d22796051dc1253b4fb0b9ed6e485",
+      "cells_equal": false,
+      "cell_hashes": [
+        "16f8ca3198688865c3f5c41cfc041238db4df5db2f58fb94c56e28f85ad705e4",
+        "51de2cb3f676ab8896dc049173106bfd3fc372e15dcdafc917547d68841d006b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_start",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_start.cat",
+        "after_path": "Catz-explicit_end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "445212955491438124c92a43b343186724f785b170e4a790ab6c6bb6cfd2c7e8",
+      "cells_equal": true,
+      "cell_hashes": [
+        "b3ba1bfcf55a383df9899d1fa765624c0a699ddc15f5fde534e43ba14d44b161",
+        "b3ba1bfcf55a383df9899d1fa765624c0a699ddc15f5fde534e43ba14d44b161"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_start",
+        "explicit_end"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_start.cat",
+        "after_path": "Catz-explicit_end.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "a68aaf42a1112ca96c5029232d6da5c5a59066852ad57728882fe783e262eb06",
+      "cells_equal": true,
+      "cell_hashes": [
+        "51de2cb3f676ab8896dc049173106bfd3fc372e15dcdafc917547d68841d006b",
+        "51de2cb3f676ab8896dc049173106bfd3fc372e15dcdafc917547d68841d006b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_end",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_end.cat",
+        "after_path": "Catz-explicit_start.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9a2207e7e99b4cb31c72136e2f3b360b4b4cc99a5ee0759fb7e06da449542f32",
+      "cells_equal": true,
+      "cell_hashes": [
+        "644df542f5f4933eb46fc8a441ba44931722121fc3503076a0c2065a098028fb",
+        "644df542f5f4933eb46fc8a441ba44931722121fc3503076a0c2065a098028fb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_end",
+        "explicit_start"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_end.cat",
+        "after_path": "Catz-explicit_start.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "50f35f553bea942314d67d6b1aa5270ceb3ad98822398ae0d26da168188c31f6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "16f8ca3198688865c3f5c41cfc041238db4df5db2f58fb94c56e28f85ad705e4",
+        "16f8ca3198688865c3f5c41cfc041238db4df5db2f58fb94c56e28f85ad705e4"
+      ]
+    }
+  ]
+}

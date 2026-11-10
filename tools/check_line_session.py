@@ -7,10 +7,12 @@ import petz_renderer
 from research_common import ROOT,SHA,adult
 
 def main():
-    package=Path(petz_renderer.__file__).parent;copies=sheets=cells=states=0
+    package=Path(petz_renderer.__file__).parent;copies=sheets=cells=states=loads=direct=0
     for exp in ('line-005','line-006','line-007','line-008','line-009'):
         report=json.loads((ROOT/'experiments'/f'{exp}.json').read_text());folder=ROOT/'scratch/research'/exp
         assert report==json.loads((folder/'report.json').read_text())
+        loads+=sum(len(c['geometry']) for c in report.get('cases',[]))
+        direct+=len(report.get('synthetic',[]))+len(report.get('records',[]))
         for name,h in report['source_hashes'].items():
             assert SHA((package/name).read_bytes())==h
             assert SHA((ROOT/'petz-renderer-mcp/src/petz_renderer'/name).read_bytes())==h
@@ -35,6 +37,7 @@ def main():
                 assert record==snapshot['record']
                 for when in ('before','after'):
                     assert SHA(json.dumps(snapshot[when],sort_keys=True).encode())==record[f'state_{when}_sha256'];states+=1
-    summary={'private_copies':copies,'mcp_sheets':sheets,'rgba_cells':cells,'full_rng_table_states':states,'sources_dependencies_engines_originals_verified':True}
+    assert (loads,direct)==(156,256)
+    summary={'numerical_breed_loads':loads,'direct_block_raster_cases':direct,'private_copies':copies,'mcp_sheets':sheets,'rgba_cells':cells,'full_rng_table_states':states,'sources_dependencies_engines_originals_verified':True}
     out=ROOT/'scratch/research/line-session-verification.json';out.write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
 if __name__=='__main__':main()

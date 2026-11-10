@@ -4,13 +4,13 @@ Ten-minute continuation requested by the user. Five research units; renderer unc
 
 | Unit | Focus | Direct checks | MCP pairs |
 | --- | --- | --- | --- |
-| [LINE-005](../experiments/line-005.md) | Fill/endpoint selection and synthetic texture routing | 144 blocks +36 breed loads | 20 |
+| [LINE-005](../experiments/line-005.md) | Fill/endpoint selection and synthetic texture routing | 72 blocks +36 breed loads | 20 |
 | [LINE-006](../experiments/line-006.md) | Edge colors and modes | 48 rasters +42 breed loads | 20 |
 | [LINE-007](../experiments/line-007.md) | Fuzz bounds and repeated draws | 40 rasters +30 breed loads | 16 |
 | [LINE-008](../experiments/line-008.md) | Shared fuzz/whisker RNG history | 96 history rasters | 0 |
 | [LINE-009](../experiments/line-009.md) | Automatic edge mode | 48 breed loads | 20 |
 
-Totals:76 local stdio MCP pairs,156 numerical breed loads,144 synthetic blocks and184 isolated/history rasters. Eight sheets visually reviewed, two for each MCP unit. Stock breed scope is Petz4 Scottie/Siamese, fixed seed0/age100/fatness50; standing front/side MCP controls, three numerical poses. Synthetic histories use fresh line seed1 and clear prior pixels.
+Totals:76 local stdio MCP pairs,156 numerical breed loads,72 synthetic blocks and184 isolated/history rasters. Eight sheets visually reviewed, two for each MCP unit. Stock breed scope is Petz4 Scottie/Siamese, fixed seed0/age100/fatness50; standing front/side MCP controls, three numerical poses. Synthetic histories use fresh line seed1 and clear prior pixels.
 
 Fill -1 follows the start endpoint; -2 follows the end. Negative edge colors inherit shaded fill while explicit edges bypass fill shading. Mode0 uses scan-row boundaries, mode1 polygon-side strokes, -1 no special edges. Fuzz clamps0–7 and cached rows share RNG with whiskers. Automatic edge sentinel -2 selects -1 only for exact edge colors -1/-1. Flat inherited edges can hide resolved-mode differences in pixels.
 

@@ -105,7 +105,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 
 ## Latest anchored-cycle research
 
-[AREA-005](experiments/area-005.md): 36 numerical loads, 144 marker rotation assertions, eight local stdio MCP pairs (all equal, asserted), two reviewed sheets. Triangle A/B/C linked to area3 D resolves differently with ID order; omitted D restores cycle area8. Late Head Balls C override leaves already-derived A/B areas3. Source/engine hashes verified; no native claims or renderer changes. Script tools/body_area_cycles.py refuses overwrite; private evidence scratch/research/area-005. Next: omitted-marker/list interactions or other lists/whiskers, relative-size/multi-group morphs, connector styling.
+[AREA-005](experiments/area-005.md): 36 numerical loads, 72 marker rotation assertions, eight local stdio MCP pairs (all equal, asserted), two reviewed sheets. Triangle A/B/C linked to area3 D resolves differently with ID order; omitted D restores cycle area8. Late Head Balls C override leaves already-derived A/B areas3. Source/engine hashes verified; no native claims or renderer changes. Script tools/body_area_cycles.py refuses overwrite; private evidence scratch/research/area-005. Next: omitted-marker/list interactions or other lists/whiskers, relative-size/multi-group morphs, connector styling.
 
 ## Latest omitted-marker research
 
@@ -145,7 +145,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 
 ## Latest connector fill research
 
-[LINE-005](experiments/line-005.md): 144 synthetic blocks,36 numerical loads,twenty local MCP pairs; two sheets reviewed. Flat diagnostic color180/200 controls confirm -1 selects start,-2 selects end including endpoint reversal. Synthetic -3/texture/shade cases pass but have no textured-breed/native claim. Installed/checkout sources,dependencies,three resource DLLs and original hashes recorded. Two failed-report harness runs archived privately; final evidence scratch/research/line-005. No renderer changes. Next: edge modes/colors and fuzz or independent native texture evidence.
+[LINE-005](experiments/line-005.md): 72 synthetic blocks,36 numerical loads,twenty local MCP pairs; two sheets reviewed. Flat diagnostic color180/200 controls confirm -1 selects start,-2 selects end including endpoint reversal. Synthetic -3/texture/shade cases pass but have no textured-breed/native claim. Installed/checkout sources,dependencies,three resource DLLs and original hashes recorded. Two failed-report harness runs archived privately; final evidence scratch/research/line-005. No renderer changes. Next: edge modes/colors and fuzz or independent native texture evidence.
 
 ## Latest connector edge research
 
@@ -165,4 +165,6 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 
 ## Ten-minute connector styling session
 
-[Session index](docs/session-2026-11-10-line-styles.md) links LINE-005 through009. Five units:76 MCP pairs,156 numerical breed loads,328 synthetic block/raster/history checks; eight sheets reviewed. `tools/check_line_session.py` passes52 private copies,76 PNGs,152 RGBA cells,192 full RNG/table states,public/private reports,sources/dependencies/resource DLLs/originals. Summary scratch/research/line-session-verification.json. HTTP discovery/capabilities pass,health scratch/research/line-session-mcp-health.json. All units committed, no renderer changes, no native fidelity claims. Current user request was a ten-minute continuation; no ongoing longer-duration authorization assumed. Next: partial3–9-field rows,actual fuzzy breed histories/textured connectors or independent native evidence. Unrelated untracked istall-node remains untouched.
+[Session index](docs/session-2026-11-10-line-styles.md) links LINE-005 through009. Five units:76 MCP pairs,156 numerical breed loads,256 synthetic block/raster/history checks; eight sheets reviewed. `tools/check_line_session.py` passes52 private copies,76 PNGs,152 RGBA cells,192 full RNG/table states,public/private reports,sources/dependencies/resource DLLs/originals. Summary scratch/research/line-session-verification.json. HTTP discovery/capabilities pass,health scratch/research/line-session-mcp-health.json. All units committed, no renderer changes, no native fidelity claims. Current user request was a ten-minute continuation; no ongoing longer-duration authorization assumed. Next: partial3–9-field rows,actual fuzzy breed histories/textured connectors or independent native evidence. Unrelated untracked istall-node remains untouched.
+
+Final aggregate audit corrected LINE-005 synthetic count to72 (2 texture states ×2 endpoint orders ×3 shade pairs ×6 fields); total direct cases256. Counts now asserted by the session verifier.

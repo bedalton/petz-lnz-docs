@@ -41,7 +41,7 @@ Updated: 2026-11-10
 - Latest: [MORPH-005](experiments/morph-005.md), sixty pixel triples and twelve MCP baselines: isolated order changes no pixels; full retained preparation differs in ten Dogz sitting cases (121 pixels each).
 - Latest: [TEXTURE-001](experiments/texture-001.md), twelve static pose/views and twelve MCP baselines: Scottie sitting yaw0 changes from frame3; texture-only state reproduces the121-pixel difference (GAP-006).
 - Latest: [TEXTURE-002](experiments/texture-002.md), seven exact state replays trace constant-pose angle drift to quantized matrix self-product/rounding; GAP-006 remains open.
-- Latest: [LINE-005](experiments/line-005.md), 144 synthetic blocks/36 numerical loads/twenty local MCP pairs: fill -1 selects start, -2 selects end; flat-color reversal controls pass.
+- Latest: [LINE-005](experiments/line-005.md), 72 synthetic blocks/36 numerical loads/twenty local MCP pairs: fill -1 selects start, -2 selects end; flat-color reversal controls pass.
 - Latest: [LINE-006](experiments/line-006.md),48 raster fixtures/42 numerical loads/twenty MCP pairs: scan-row/polygon edges differ; negative edge colors inherit shaded fill.
 - Latest: [LINE-007](experiments/line-007.md),40 raster fixtures/30 numerical loads/sixteen MCP pairs: fuzz clamps0–7; repeated identical direct draws reuse cached offsets.
 - Latest: [LINE-008](experiments/line-008.md),96 asset-free history rasters: positive-fuzz/step0-whisker prior draws affect shared RNG; repeat/zero/step1 controls match.
@@ -50,5 +50,5 @@ Updated: 2026-11-10
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.
 - Pixel/texture session: [2026-11-10 textures](docs/session-2026-11-10-textures.md): three units,24 MCP baseline checks,96 sheets/396 RGBA cells and96 orientation snapshots verified.
-- Styling session verification: [2026-11-10 connector styles](docs/session-2026-11-10-line-styles.md): five units,76 MCP pairs,156 breed loads,328 synthetic block/raster/history checks;52 copies/152 RGBA cells/192 RNG states verified.
+- Styling session verification: [2026-11-10 connector styles](docs/session-2026-11-10-line-styles.md): five units,76 MCP pairs,156 breed loads,256 synthetic block/raster/history checks;52 copies/152 RGBA cells/192 RNG states verified.
 - Resume: [HANDOFF.md](HANDOFF.md).

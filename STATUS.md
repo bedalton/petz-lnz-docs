@@ -127,3 +127,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-010](experiments/paint-010.md),exact opposing directions at age56 reject surface paint or center non-surface commands. 32 direct/8 MCP draws; all opposed/matched sampled RGBA pairs equal.
 
 - Paint matching continuation audited: [session](docs/session-2026-11-10-paint-matching.md),368 direct/44 MCP draws,412 PNGs,9 copies,21 originals,304 RGBA comparisons,42 prior PNG and24 state links verified. Local HTTP health passes.
+
+- Renderer source review questions are collected in private `scratch/renderer-source-review.md`.

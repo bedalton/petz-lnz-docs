@@ -376,3 +376,7 @@ Final reference review adds Goobe to the Paint Ballz scope and places native-sem
 ## Ten-minute paint matching continuation audit
 
 [Session index](docs/session-2026-11-10-paint-matching.md) consolidates PAINT-008/009/010. Full unit replays and tools/check_paint_matching_session.py pass:368 direct draws,44 MCP records,412 PNGs,nine copies,21 original hash links,304 decoded RGBA comparisons,42 prior PNG and24 state links,62-source agreement. Seven sheets reviewed;four tool hashes and unit logs recorded in scratch/research/paint-matching-session-verification.json. HTTP discovery/capabilities and actual Fuzzkin baseline pass;no restart needed. Original files/renderer unchanged;unrelated istall-node untouched. Next: additional hosts/textured pets, controlled breed-version comparisons or native evidence. Midpoint command change has no sampled pixel signal. Authorization ends with this ten-minute continuation.
+
+## Renderer source review
+
+Private `scratch/renderer-source-review.md` lists prioritized discrepancies, controls, source paths, and questions for Renderer MCP. Start with fixed-pose texture drift, iris omission, and relative-size morph activation.

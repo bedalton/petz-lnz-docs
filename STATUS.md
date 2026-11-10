@@ -89,3 +89,9 @@ Updated: 2026-11-10
 - Latest: [UPDATE-006](experiments/update-006.md),all12 static fixtures replayed:eleven stable through eight frames;Scottie sitting/front retains128/141-pixel drift. 96 sequence+144 reset draws and12 MCP baselines verified.
 
 - Latest: [UPDATE-007](experiments/update-007.md),48 motion histories/192 transitions/336 final draws separate host and paint angles. Host=combined and paint-only=fresh throughout;combined differs from full in33 histories. Existing MCP baseline links only.
+
+- Ten-minute continuation audited: [session evidence](docs/session-2026-11-10-upgrade-continuation.md),UPDATE-005/006/007 verifiers pass;620 PNGs,18 original hash links and62 installed sources checked. HTTP restarted after stale-process discovery;health passes.
+
+- Final continuation provenance:checkout revision and seven tool hashes recorded in the [session audit](docs/session-2026-11-10-upgrade-continuation.md);renderer retains only its pre-existing .gitignore change.
+
+- Final HTTP render control exactly matches the updated Scottie static baseline;health/audit hashes refreshed.

@@ -310,3 +310,11 @@ Resume from UPDATE-001/002/003 and RENDERER_CHANGES.md. Outstanding:64 missing-i
 [UPDATE-007](experiments/update-007.md) separates paint-only and combined-texture state in48 TEXTURE-004 histories. All192 transitions/240 prior cells match UPDATE-002;336 final PNG/state outputs verify. Host-only equals combined in48;paint-only equals fresh in48;combined differs from full in33. All diagnostic connector rasters match fresh. Links12 existing MCP baselines,no new MCP calls. Saved-pet/group attribution and broader/native evidence remain open;do not generalize this authored-connector matrix to arbitrary textured markings.
 
 Motion scope audit:all48 pre-target paint states contain16 zero pairs;UPDATE-007 does not exercise accumulated nonzero paint angles. The manifest/verifier record this explicitly. Next useful paint-state work should use an eligible textured saved pet such as Fuzzkin.
+
+## Ten-minute continuation final audit
+
+[Session index](docs/session-2026-11-10-upgrade-continuation.md) links UPDATE-005/006/007 and the aggregate verifier. All unit checks pass;620 PNGs,18 original hash links,62-source agreement verified. Old HTTP PID8300 was stale;managed process11252/session98207 now serves8765 and discovery/capabilities pass. Recheck on resume. Research used fresh stdio processes. Next:nonzero paint-angle saved-pet controls,saved-group retint or independent native evidence. No renderer/original edits;istall-node untouched. Duration authorization ends with this ten-minute continuation.
+
+Final audit records seven tool hashes and checks actual checkout HEAD against all new manifests;see the session index. Required Git identities/no-coauthor rules verified.
+
+A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE-006 exactly,extending capabilities-only health. One additional health render call is separate from the44 research render calls.

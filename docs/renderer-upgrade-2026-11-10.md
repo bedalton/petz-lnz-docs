@@ -29,3 +29,5 @@ Remaining scope is explicit:the generic pass does not cover every baseline-only/
 [UPDATE-006](../experiments/update-006.md) completes the twelve-fixture static matrix:eleven remain stable;the Scottie sitting/front128/141-pixel drift is reproduced. Host-only and combined texture state match full at frames3/8;paint-only and geometry-only stay fresh in all fixtures. All252 PNGs/240 draw-state links and12 fresh MCP baselines verify.
 
 [UPDATE-007](../experiments/update-007.md) verifies192 motion transitions/336 final draws and240 prior pixel links. Host-only equals combined texture state and paint-only equals fresh in all48 histories;combined differs from full in33. Twelve existing fresh MCP baselines are linked;no new MCP calls.
+
+The [ten-minute continuation audit](session-2026-11-10-upgrade-continuation.md) consolidates UPDATE-005/006/007 integrity and current HTTP health. Earlier PID8300 references are historical;the session index records the restarted process.

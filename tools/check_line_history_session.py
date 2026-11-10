@@ -36,11 +36,14 @@ def main():
                 if exp=='line-011':
                     meta=json.loads((folder/f"{c['species']}-{c['pose']}-{c['yaw_degrees']}-mcp.json").read_text())
                     assert meta['png_sha256']==c['baseline_sha256'];mcp+=1
+                    assert c['cell_hashes'][1]==c['cell_hashes'][2]==c['cell_hashes'][6]
+                    assert c['local_mcp_baseline_match']
                     png_check(folder/c['baseline'],c['baseline_sha256'],c['cell_size'],[c['cell_hashes'][0]])
         for comparison in report.get('comparisons',[]):
             before,after=comparison['pair'];yaw=comparison['controls']['yaw_degrees'];stem=f"{comparison['species']}-{before}-{after}-{yaw}"
             meta=json.loads((folder/f'{stem}-render.json').read_text());assert meta['png_sha256']==comparison['png_sha256']
             assert [c['pixel_sha256'] for c in meta['cells']]==comparison['cell_hashes']
+            assert comparison['cells_equal'] and comparison['cell_hashes'][0]==comparison['cell_hashes'][1]
             png_check(folder/f'{stem}.png',comparison['png_sha256'],(meta['cell_width'],meta['cell_height']),comparison['cell_hashes']);mcp+=1
         if exp=='line-011':
             full=json.loads((folder/'states.json').read_text());assert len(full)==84
@@ -54,6 +57,16 @@ def main():
             full=json.loads((folder/'states.json').read_text());assert len(full)==72
             for c in report['cases']:
                 stem=f"{c['species']}-{c['pose']}-{c['yaw_degrees']}"
+                prior=json.loads((ROOT/'experiments/line-011.json').read_text())
+                original=next(x for x in prior['cases'] if (x['species'],x['pose'],x['yaw_degrees'])==(c['species'],c['pose'],c['yaw_degrees']))
+                assert c['cell_hashes'][0]==original['cell_hashes'][1]
+                assert c['cell_hashes'][1]==original['cell_hashes'][5]
+                assert c['cell_hashes'][4]==c['cell_hashes'][1] and c['cell_hashes'][5]==c['cell_hashes'][0]
+                assert c['cell_hashes'][2]!=c['cell_hashes'][1] and c['cell_hashes'][3]!=c['cell_hashes'][0]
+                group={r['label']:r['state'] for r in full if r['fixture']==stem}
+                assert len(group)==6
+                assert group['fresh']['after_scene']==group['only_target_connector_primed']['after_scene']==group['all_positive_fuzz_lines_primed']['after_scene']
+                assert group['whisker0_primed']['after_scene']==group['primed_except_target_connector']['after_scene']==group['primed_except_positive_fuzz_lines']['after_scene']
                 for row in (r for r in full if r['fixture']==stem):
                     assert SHA(json.dumps(row['state'],sort_keys=True).encode())==c[row['label']+'_state_sha256'];states+=2
     assert (len(copies),sheets,cells,states,mcp,loads)==(58,92,292,312,68,168)

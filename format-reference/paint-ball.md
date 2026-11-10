@@ -18,4 +18,6 @@ Paints clip against their host. The updated non-Outline host inset is0;Outline i
 
 For direct retained renders,persist the complete FrameState returned after drawing,including per-paint sampler write-back. [PAINT-003](../experiments/paint-003.md) shows that the vector is indexed by original paint-list order and a length mismatch resets the whole vector. Equal vector length does not prove compatibility after appearance edits. Fresh MCP stills do not exercise retained motion histories. See [texture state](texture-state.md) for controls and revision-specific evidence.
 
+[PAINT-004](../experiments/paint-004.md) checks180 group-only synthetic comparisons:prepared commands remain equal across groups0/-1/1/2/15/255,with180 nonzero-group diagnostics. Color positive controls change fills in216/216 cases. This bypasses saved-pet assembly and supplies no new pixels.
+
 Uncertainty:the installed diagnostic explicitly reports nonzero paint group controls as unsupported;UPDATE-001's resolved-colour remap checks do not establish end-to-end saved-group override. Saved-group retint remains open. Clothing and source-reported offscreen flat-paint edge behavior are separate gaps. No renderer observation here is game validation.

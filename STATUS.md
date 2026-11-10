@@ -107,3 +107,5 @@ Updated: 2026-11-10
 - Final saved-paint RGBA audit distinguishes two palette-alias counts in PAINT-001 geometry/order controls;all paint-angle counts agree. Details in the [session audit](docs/session-2026-11-10-saved-paints.md).
 
 - Final aggregate independently rehashes all660 PNGs and48 state files;all match their manifests.
+
+- Latest: [PAINT-004](experiments/paint-004.md),216 synthetic commands/180 group-only equivalences and216 color positive controls; nonzero groups diagnose unsupported. Saved-pet group retint remains open.

@@ -338,3 +338,7 @@ A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE
 Final decoded RGBA audit checks960 differences:only Fuzzkin sitting/side yaw-arc geometry146→144 and order116→114 differ from indexed-byte counts. Paint-angle results/counts unchanged. Aggregate records exact corrections;original PAINT-001 manifest preserved.
 
 Final aggregate additionally rehashes all660 PNG files and48 private state files against manifest digests;all pass. Working tree retains only unrelated untracked istall-node.
+
+## Paint group preparation continuation
+
+[PAINT-004](experiments/paint-004.md) narrows the saved-group question:216 synthetic prepared commands,180 group-only equivalences,180 unsupported-field diagnostics and216 color positive controls pass. Manifest includes all62 installed/checkout source hashes,package version and controls. Reproduce with tools/paint_group_controls.py --verify; no private assets,MCP calls,pixels or renderer/original edits. This bypasses parser/saved-pet assembly;end-to-end saved-group overrides remain open. Next:trace saved-pet group data into appearance assembly,other textured pets/versions or native evidence. Unrelated istall-node remains untouched.

@@ -300,3 +300,7 @@ Resume from UPDATE-001/002/003 and RENDERER_CHANGES.md. Outstanding:64 missing-i
 ## Ten-minute continuation: nested texture replay
 
 [UPDATE-005](experiments/update-005.md) closes the nested LINE-016 replay exclusion:32 local stdio MCP comparisons/64 RGBA cells preserve historical relationships and exactly match current Petz4 LINE-013 PNGs. All60 numerical connector records match;20 private inputs,engines,dependencies and62 installed sources verified. Both new scripts pass;historical manifests/copies and renderer/originals unchanged. Selected historical comparison/contact-sheet total is691 (659 top-level+32 nested). Earlier nested-scope exclusions above are historical. Other baseline-only/synthetic/history units,broader static replay,paint/group attribution and native evidence remain open. Latest authorization is this ten-minute continuation.
+
+## Complete static matrix after upgrade
+
+[UPDATE-006](experiments/update-006.md) covers all12 TEXTURE-001 fixtures,96 sequence draws/144 resets/12 fresh MCP baselines,252 saved PNGs and240 draw-state links. Eleven fixtures stay stable through eight frames;Scottie sitting/front gives128 pixels frame3,141 frame8. At both targets,host-only/combined texture match full;geometry-only/paint-only match fresh in every fixture. Both scripts pass,originals/sources untouched. Broader static exclusion above is now closed for this12-fixture matrix only;motion paint-angle/group attribution and native validation remain open.

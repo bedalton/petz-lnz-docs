@@ -85,3 +85,5 @@ Updated: 2026-11-10
 - Resume: [HANDOFF.md](HANDOFF.md); latest audit and next research routes are consolidated there.
 
 - Latest: [UPDATE-005](experiments/update-005.md),32 nested Petz3/5 texture comparisons and60 assembly checks confirmed;64 RGBA cells exactly match updated Petz4. Selected upgrade relationships now total691;historical pixels remain revision-specific.
+
+- Latest: [UPDATE-006](experiments/update-006.md),all12 static fixtures replayed:eleven stable through eight frames;Scottie sitting/front retains128/141-pixel drift. 96 sequence+144 reset draws and12 MCP baselines verified.

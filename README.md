@@ -2,7 +2,7 @@
 
 An evidence-backed, agent-first guide to designing Petz breeds from images and concepts, growing into a thorough LNZ reference. Research starts with Petz 4 Dogz/Catz, then validates edited behavior across Petz 3 and 5. Current findings describe renderer behavior; original-game fidelity remains unverified.
 
-Renderer upgrade: [UPDATE-001](experiments/update-001.md) reviews changed findings after paint texture,Outline,clipping and add-ball projection fixes. Clothing remains unsupported. Renderer observations do not establish original-game fidelity.
+Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) reviews changed findings after paint texture,Outline,clipping and add-ball projection fixes. Clothing remains unsupported. Renderer observations do not establish original-game fidelity.
 
 ## Start here
 
@@ -52,6 +52,7 @@ Renderer upgrade: [UPDATE-001](experiments/update-001.md) reviews changed findin
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
 - [Connector sampling session verification](docs/session-2026-11-10-connector-sampling.md)
 - [Texture authoring/motion session audit](docs/session-2026-11-10-texture-authoring.md)
+- [Recovered early renderer controls](experiments/update-004.md)
 - [Renderer update and historical comparison review](experiments/update-001.md)
 - [Updated eye/shading/state findings](experiments/update-002.md)
 - [Available saved-pet upgrade samples](experiments/update-003.md)

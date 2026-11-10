@@ -2,6 +2,7 @@
 
 Updated: 2026-11-10
 
+- Upgrade review complete: [current index](docs/renderer-upgrade-2026-11-10.md).659 selected historical comparison/sheet relationships preserved;affected numerical/pixel findings corrected. All missing-input top-level controls recovered. Remaining scope is explicit in the index.
 - Renderer upgraded/restarted: [UPDATE-001](experiments/update-001.md),integration6c1d883. Textured paint/Outline blanket restrictions are withdrawn for this build after differential controls; clothing remains unsupported. Historical pixel evidence requires the linked replay review.
 
 - Environment restored: [RESTORE-002](experiments/restore-002.md); game folders corrected, local Petz 4 HTTP MCP connected, six cross-version stdio smoke pairs pass and match prior hashes. Prior private artifacts are still absent.

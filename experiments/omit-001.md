@@ -1,5 +1,7 @@
 # OMIT-001: base-ball omission sweep
 
+**Renderer recovery review:** [UPDATE-004](update-004.md) confirms the recovered comparison/visibility outcomes on6c1d883. Measurements below are historical except the explicitly corrected Catz omission union count.
+
 Date: 2026-11-09. Status: Petz 4 renderer-observed/code-supported, not game-validated. Scottie and Siamese. Same renderer/runtime as SMOKE-001.
 
 ## Method
@@ -17,7 +19,7 @@ Private copies, inspection results, PNGs, provenance and atomic progress checkpo
 | Species | IDs changing pixels at front | At side | In either view | Already omitted base IDs |
 | --- | --- | --- | --- | --- |
 | Dogz | 53 | 53 | 57 | 4, 5, 28, 29, 65, 66 |
-| Catz | 50 | 50 | 53 | 37, 65, 66 |
+| Catz | 50 | 50 | 54 | 37, 65, 66 |
 
 IDs unchanged in both views:
 

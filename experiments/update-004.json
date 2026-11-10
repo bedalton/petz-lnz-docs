@@ -1,0 +1,2422 @@
+{
+  "experiment": "UPDATE-004",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "backend": "byte-identical rebuilt copies; fresh local stdio MCP",
+  "builds": [
+    {
+      "experiment": "add-001",
+      "prepare_assertions_pass": true
+    },
+    {
+      "experiment": "head-001",
+      "prepare_assertions_pass": true
+    },
+    {
+      "experiment": "move-001",
+      "prepare_assertions_pass": true
+    },
+    {
+      "experiment": "omit-001",
+      "prepare_assertions_pass": true
+    }
+  ],
+  "replays": [
+    {
+      "experiment": "add-001",
+      "index": 0,
+      "stem": "add-001-000",
+      "controls": {
+        "before_path": "Dogz-original.dog",
+        "after_path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-original.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-control.dog": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b"
+      },
+      "png_sha256": "79c3b6e01835c1da94584d58424a11aec0fbaf394cfd076c7f3d0f49ffd434ee",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "bb767d7adf951311e14159d335c3af5f6363ed23ad405cdde342c7dd8bf82826"
+      ],
+      "old_cell_hashes": [
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c",
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 1,
+      "stem": "add-001-001",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-control.dog": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b",
+        "Dogz-enlarged.dog": "04206eaaafa3a1ff8dc49e8809e835c71882887a3262b3ceecf8525a489d8861"
+      },
+      "png_sha256": "92b98070f4641371864d0fdecbf50def2fcfe8e091c696d4fa5cdb74b3bf784e",
+      "cell_hashes": [
+        "bb767d7adf951311e14159d335c3af5f6363ed23ad405cdde342c7dd8bf82826",
+        "81e5cb3fda6e78a2b04ca2500015743f46f7e4b15611a95a2a985f2d92c77cdf"
+      ],
+      "old_cell_hashes": [
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1",
+        "68547331fbe4d8df754a57d185fbb07d6bc24985f321a23b58f8b0431704d461"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 2,
+      "stem": "add-001-002",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-control.dog": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b",
+        "Dogz-enlarged.dog": "04206eaaafa3a1ff8dc49e8809e835c71882887a3262b3ceecf8525a489d8861"
+      },
+      "png_sha256": "e9788bccb8ca96e5a9e3ffdcf8646e8235e92460a910bc1573c9ee9483a02725",
+      "cell_hashes": [
+        "71446144e585b529574c8f67068b9cca692e55e68bc7a20d317af96596dc1766",
+        "fd4a9712c7161f5f561e2672933d085447d638f47d8ce8155ccb3e00c1302bcf"
+      ],
+      "old_cell_hashes": [
+        "e983f389b84d577d338a94b1eb63c003ae83993e5306c7923316b2eff2751b76",
+        "a3418f02d302dff4e9785f00461f823c687c77cda09a1653d66ba4609e8168cd"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 3,
+      "stem": "add-001-003",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-moved.dog",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-control.dog": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b",
+        "Dogz-moved.dog": "c1720338a919633a41501f3735564b0c37a144f3b12f84190ce5c7e79d20e7b4"
+      },
+      "png_sha256": "8cdeae2684dd98eeda5ba5e264b55afe10bff3f08d39a629822d83e874f129cf",
+      "cell_hashes": [
+        "a3dfd1ba878366a4802d8bf468b7279040f1e76174b08ca5ad403d13e5e6ee80",
+        "c7e2cc6e1a796686dd325a25f9889a757c5109516dc99530b8da340fc69dad64"
+      ],
+      "old_cell_hashes": [
+        "6a507b1cb9668dac667c254eeb80e17347083ffd7e2b8d8524d64c8b06713ea3",
+        "440cc6ed0ed612bcc2a069200c848667ceeb30f47b568d64c85288c5aae7a1fe"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 4,
+      "stem": "add-001-004",
+      "controls": {
+        "before_path": "Dogz-relative.dog",
+        "after_path": "Dogz-relative_enlarged.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-relative.dog": "12da4e2c8522ae666a8d34c785c6fb0a52c5894a10609eb07ba1e9759c462738",
+        "Dogz-relative_enlarged.dog": "880878b0bf46bd418fe3736b0a3978451ba41189e60c9134bef087ee9ae9655c"
+      },
+      "png_sha256": "9676ff9bc4db113bf2d33a78fc787d2da1714c08cb28f5453d64dd4082cd7588",
+      "cell_hashes": [
+        "c8b107e6ac6a8da149f962bed01878f57395832d31f50f30cd7ed2476a0c8a36",
+        "27b70f69c4bc342235f6493b0681a7a8cf2c7a019c2e3f640805f429ca406253"
+      ],
+      "old_cell_hashes": [
+        "397dadea75f04eb8674caa241868e586cc2c1cb3775c2bfb8bbd11de8ce21010",
+        "ab5bfcb82efe345bb215108d19c0afba3a840e7f96c7022ccb9996355087d383"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 5,
+      "stem": "add-001-005",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-omitted.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Dogz-control.dog": "514aeaa3812b29d5505c810d2c6c4405490ea287308d87817623f0a1462e173b",
+        "Dogz-omitted.dog": "e857c9efdb16220caa7b4d4af720058d6dac81a3e742e34d15bb2e91e3be1e4a"
+      },
+      "png_sha256": "9915a5304783a4f0c11a50e7ffeeffc117294bcb3043dc883f4e8ebbd5977850",
+      "cell_hashes": [
+        "bb767d7adf951311e14159d335c3af5f6363ed23ad405cdde342c7dd8bf82826",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ],
+      "old_cell_hashes": [
+        "901f65049ec028eeb2866fea459d2b9dd7da3f30e7a8982339f42481f21e19a1",
+        "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 6,
+      "stem": "add-001-006",
+      "controls": {
+        "before_path": "Catz-original.cat",
+        "after_path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-original.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-control.cat": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0"
+      },
+      "png_sha256": "8756b11a7cdd5731054d032917bfac5ef3c5e36f89597242655c78351cf2dae9",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "56c189092ffb7bd1fad78b157e58ec6d7a56c91da268e4f24805783d42ec0da0"
+      ],
+      "old_cell_hashes": [
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5",
+        "6c4f766e5492529abfc0a2bf455858120b4af49a19d8c2d5080f04d64976e000"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 7,
+      "stem": "add-001-007",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-control.cat": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0",
+        "Catz-enlarged.cat": "003af331cb156c4994d1c5a70d0f994435202ef3f5f5ff5a913e957952d6bc2d"
+      },
+      "png_sha256": "4287c360d73e5360154a534bf8c220b2816a91288c6d5f8545fbbce2a237822c",
+      "cell_hashes": [
+        "12ed8a346adb9b18df0ecf3e85d3a8432a6b987c2c8b5ade031f701de2c2adb4",
+        "59378a8c3c9ef469e3da68a0acc5918477ec1c9b96847689362cb330c3af51bc"
+      ],
+      "old_cell_hashes": [
+        "6ac7e811d3a324d8e042f3096198ec0e03b660e0c53368b9566081a68a571e8e",
+        "029427e44e163810643525a4612bbaddbaa0344dfa94f7791fc6670a2177c839"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 8,
+      "stem": "add-001-008",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-control.cat": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0",
+        "Catz-enlarged.cat": "003af331cb156c4994d1c5a70d0f994435202ef3f5f5ff5a913e957952d6bc2d"
+      },
+      "png_sha256": "2c2e7d4d56e8c4ae864bdc38bcb4213728265c99981d3b600087feb7df7ddeeb",
+      "cell_hashes": [
+        "607ecb80053912a5980c8aec640e3d9680782db0175134516698e15557f8944a",
+        "7292d03ae328035f1af7bd6e198da9653ad5bf62d0c8229bbf21219008067b29"
+      ],
+      "old_cell_hashes": [
+        "7368387148249bb6fa77408eb7b04334442a717419ae698687c1a01acc4625a3",
+        "bddbb65bd584f85e5be4b8b7ab38c59e4ec69932a02782d143929a944baa6590"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 9,
+      "stem": "add-001-009",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-moved.cat",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-control.cat": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0",
+        "Catz-moved.cat": "34e046250905680daff4749bebe473d92e4a6d56aefd9f25445041ea1ad767bf"
+      },
+      "png_sha256": "e9247244d4fdc86c919e124928861233de3c5cde9fccfa125df1bb5f2efe01e8",
+      "cell_hashes": [
+        "8ae5bdca60933af2b65b655b185e40fd377f12298c4a950439bd173564bcdec1",
+        "885fac5f2a6d020c281762c8ff7487972c06a5225f21720da07fafe0338ade37"
+      ],
+      "old_cell_hashes": [
+        "3e059a357f1f53c606e01d335b09f4d7c2ea8c4d7838f2ca52901d5b35dfb4c8",
+        "5f92f94a6b81d6449c4aaf89a08dcf03ad2f802c9b35192b7093c4c6679326fd"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 10,
+      "stem": "add-001-010",
+      "controls": {
+        "before_path": "Catz-relative.cat",
+        "after_path": "Catz-relative_enlarged.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-relative.cat": "d5dff08b596e2806c0d170eb350dd2a04a74e70e787bbca3e3439f7943b25930",
+        "Catz-relative_enlarged.cat": "872a9d29562bc0c380091e339d9280cd3b2989b8b1dd6eb484391c90c158d07d"
+      },
+      "png_sha256": "23f3a573941555c6dd3e07cf80c6b9882696a9354e1a7a5ffdba1e5e27eb90a0",
+      "cell_hashes": [
+        "86f325da1c8a88f2caa8f926bc9abcb0cae375179969ebba9a7d4294bad2524c",
+        "34a6b5eceb00c90ab4a31a0c61fdbb877b71ad0a30e161a8ccfce72dca7bdabb"
+      ],
+      "old_cell_hashes": [
+        "0924db5f0415c418f7012ebf2d5d7a9cb46c06569b57c5e824f4001f209e1a62",
+        "0990a1e571a30f500f73e78e757c39b8b7a311e28cb8b8cccb49259e078c0be6"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "add-001",
+      "index": 11,
+      "stem": "add-001-011",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-omitted.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/add-001",
+      "input_hashes": {
+        "Catz-control.cat": "4827a7d65d86eb9a96e89a990bf68d61d5768856312384c0100462edc45668d0",
+        "Catz-omitted.cat": "842adf075d9052155d6d45bcefdc83a5bb2010a0e5591f7fe9f7ed44cb04e260"
+      },
+      "png_sha256": "da04b7a14e26d5d072dfc9d75d8b2d68569c45696db4f8092dd85b1a1289e65e",
+      "cell_hashes": [
+        "56c189092ffb7bd1fad78b157e58ec6d7a56c91da268e4f24805783d42ec0da0",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ],
+      "old_cell_hashes": [
+        "6c4f766e5492529abfc0a2bf455858120b4af49a19d8c2d5080f04d64976e000",
+        "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 0,
+      "stem": "head-001-000",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-first.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Dogz-control.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-first.dog": "957ca5356f8eb657ab391cc1326e4e7e5690dee29e4be74c0a66bee709b883da"
+      },
+      "png_sha256": "e86e41a15c866b8edf580b2bb7b257e74c34e94f4dad01f8e5024f398ba6f9a7",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "7f1bccedc07542bb2938a2db8a959b769039ef55459219856e2a226b8a4579fb"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 1,
+      "stem": "head-001-001",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-first.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Dogz-control.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-first.dog": "957ca5356f8eb657ab391cc1326e4e7e5690dee29e4be74c0a66bee709b883da"
+      },
+      "png_sha256": "9d45be97a322ecff413d16b75388e89832756e8731e0e75f1429ab9fe9a7eb64",
+      "cell_hashes": [
+        "fa195cbe50ce62c022c611b095ebbb491e27edd9d748854dead06acc91271856",
+        "d6a4aeb95af5c24801f3bd938acc9cb2848c3510a970d6593ab601f71ac73d53"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 2,
+      "stem": "head-001-002",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-second.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Dogz-control.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-second.dog": "751b9fd8dc91d104d88db607293f8908490a1a210f117c7634af0e9503e02c24"
+      },
+      "png_sha256": "18497e19cfb3fc2fad5a537465a71950804bae17842bc6a80b65c1ce7d3805cf",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "12f6e1b1b9a82f470ffd7f9e515ca3546e48afa379320c38fa93fe7e59b05eed"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 3,
+      "stem": "head-001-003",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-second.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Dogz-control.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-second.dog": "751b9fd8dc91d104d88db607293f8908490a1a210f117c7634af0e9503e02c24"
+      },
+      "png_sha256": "e0b0e364f8c57868732405561ccc5e61a577c02123513c2cd1ed0025677e5021",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "fc83768cc2cb1576a359495005664dd6cb80a3e19df4461417ce3099f5946067"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 4,
+      "stem": "head-001-004",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-first.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Catz-control.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-first.cat": "30a6c1d98a158c331194c56c1f72772e193cfa35e68b4d637212c59f3c7a57d1"
+      },
+      "png_sha256": "6d7fcac10d58ff96cde69156dbeb2dd204e5d1d2c1e413b84f33418753f17253",
+      "cell_hashes": [
+        "201da5333a834501a87e8a3f35f88a984e758ba5f4e3ec89624e39ea64796034",
+        "2d448d6fd9fe1e73efbb8357c4f7203d921f9554d4a6ee093e9d843d8f5da8e3"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 5,
+      "stem": "head-001-005",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-first.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Catz-control.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-first.cat": "30a6c1d98a158c331194c56c1f72772e193cfa35e68b4d637212c59f3c7a57d1"
+      },
+      "png_sha256": "533d91bf6d3af1071de0206431e69ed782e67c814346ed3be6ac53ff4fb47956",
+      "cell_hashes": [
+        "c4f46995938748b9afd3510859e450fd4d7c5658fe30a777df091bf57eb4dc33",
+        "7292d03ae328035f1af7bd6e198da9653ad5bf62d0c8229bbf21219008067b29"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 6,
+      "stem": "head-001-006",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-second.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Catz-control.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-second.cat": "3781d29d8b1d9536de4b1b4deda2ae7c64aabc1db292161f27ec0b94785c720e"
+      },
+      "png_sha256": "786dcaf3433b51bd6d2e13c351a172bbd1d6aa09bd2d96c60705fc2590f3b5da",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "d7c8de32eff94821cb67ee608dd89a3728a9314a5cdd2e5c247ebb8a50ba59c7"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-001",
+      "index": 7,
+      "stem": "head-001-007",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-second.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/head-001",
+      "input_hashes": {
+        "Catz-control.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-second.cat": "3781d29d8b1d9536de4b1b4deda2ae7c64aabc1db292161f27ec0b94785c720e"
+      },
+      "png_sha256": "6e494d53376a3db284d0bf7e0c06f708b3c3e36b43f722c5a8441ed1750bc13b",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "bf21cc391007262e16b585035706f4b30a15b633c23a7f909b221a3b2c030ad4"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 0,
+      "stem": "move-001-000",
+      "controls": {
+        "before_path": "Dogz-control.dog",
+        "after_path": "Dogz-zero.dog",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Dogz-control.dog": "c4fd5f7c9e8769a447cb9a991bae5abb480b5faee6de1e09e95654f01c388796",
+        "Dogz-zero.dog": "833c7e409fe937f60a8cb5a3873cd7e5e7a9690b715e275178a170f19a418f8e"
+      },
+      "png_sha256": "e458c348d3144d2dedd1c08ec069320e3e9bb6a6a3ea50d5c93cb7c1230c1054",
+      "cell_hashes": [
+        "903e312050ae589f6185a546d908fe715a6f5700931ea4035b0f32b6288c149d",
+        "903e312050ae589f6185a546d908fe715a6f5700931ea4035b0f32b6288c149d"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 1,
+      "stem": "move-001-001",
+      "controls": {
+        "before_path": "Dogz-implicit.dog",
+        "after_path": "Dogz-explicit.dog",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Dogz-implicit.dog": "908abea10bbc3ea370b11c60f37fa8d77b34ab777a44398d783107c12efae5f8",
+        "Dogz-explicit.dog": "4976a0296e9c258153747922b9e36f14a6d454cd6a2a6e5176a44dc6be5829e2"
+      },
+      "png_sha256": "d6b59af934f1a6328ac997bea92619160287af08beff56f8fa6d37ee7e611c80",
+      "cell_hashes": [
+        "88162fe71de10e4a519f6343499cdbfea133ca57e3f243099c52039613fb9aee",
+        "88162fe71de10e4a519f6343499cdbfea133ca57e3f243099c52039613fb9aee"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 2,
+      "stem": "move-001-002",
+      "controls": {
+        "before_path": "Dogz-explicit.dog",
+        "after_path": "Dogz-chest.dog",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Dogz-explicit.dog": "4976a0296e9c258153747922b9e36f14a6d454cd6a2a6e5176a44dc6be5829e2",
+        "Dogz-chest.dog": "bd3163604dc048d1045097039c78456b2929f72508ed298c018482255805312c"
+      },
+      "png_sha256": "aa984379b9a2f16027c435f06bcee30422994377b7930c6e5f247a6a3430b0d3",
+      "cell_hashes": [
+        "0df1a1c4a0cc0bad6dd140218ab453de3ff89a59d9f5f9af555f38cbe740c940",
+        "50212ba6a99271f39fcf6740f08bdf969b7af1b16d7eb4a15553e568ddb9ece6"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 3,
+      "stem": "move-001-003",
+      "controls": {
+        "before_path": "Dogz-explicit.dog",
+        "after_path": "Dogz-chest.dog",
+        "pose": "lying",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Dogz-explicit.dog": "4976a0296e9c258153747922b9e36f14a6d454cd6a2a6e5176a44dc6be5829e2",
+        "Dogz-chest.dog": "bd3163604dc048d1045097039c78456b2929f72508ed298c018482255805312c"
+      },
+      "png_sha256": "f3050c858455a87472a2d8ae9213562acd9f27ad1c7b61474065236e33ca40ff",
+      "cell_hashes": [
+        "49fe64317f63bade043a30c9dfd8bc1ef1c641f9e40ac57e7c64b7fbd4548652",
+        "8316d176f0ba964203788fb1293bf6087e1185c058ab310269ad0af991aa7695"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 4,
+      "stem": "move-001-004",
+      "controls": {
+        "before_path": "Catz-control.cat",
+        "after_path": "Catz-zero.cat",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Catz-control.cat": "aedf1696d1395a90909f38c9668a0095267f324c7c1ff64b828212526482dffd",
+        "Catz-zero.cat": "f36026a5e23ae07f34bde9592c32b6ee00546d9ea639ec9cca41f3b8c1914dba"
+      },
+      "png_sha256": "70d7c5f7af0983dcde3adbba376c666ef36fb28392ec39bac34943533dcc8c48",
+      "cell_hashes": [
+        "a472ae228f5e1c328760b0344af4ad5d25c08b1ed0fa0d19da24a2138c429e20",
+        "a472ae228f5e1c328760b0344af4ad5d25c08b1ed0fa0d19da24a2138c429e20"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 5,
+      "stem": "move-001-005",
+      "controls": {
+        "before_path": "Catz-implicit.cat",
+        "after_path": "Catz-explicit.cat",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Catz-implicit.cat": "f5b3e18af061f8763c57a573c1f754ea8e93d22b08ee8527896230af24bde24a",
+        "Catz-explicit.cat": "f41dd6430d26c1bd03fa7006ee82523d3a3e66ef67f55b0141429dd7ccf4e8bc"
+      },
+      "png_sha256": "b9445864ad10dff5a8b917588283679c9fa93551c43f0e9c64ad35d0dcacda1b",
+      "cell_hashes": [
+        "75d9a19c01653c888378af8c4d50f632e665801cc3a8ae8967d230504ba24fb3",
+        "75d9a19c01653c888378af8c4d50f632e665801cc3a8ae8967d230504ba24fb3"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 6,
+      "stem": "move-001-006",
+      "controls": {
+        "before_path": "Catz-explicit.cat",
+        "after_path": "Catz-chest.cat",
+        "pose": "sitting",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Catz-explicit.cat": "f41dd6430d26c1bd03fa7006ee82523d3a3e66ef67f55b0141429dd7ccf4e8bc",
+        "Catz-chest.cat": "1f69402860c4c257801bf33552190cce5683d9906b27a7254561277c30b0d130"
+      },
+      "png_sha256": "e81a8bf2ff5816884a57dc6c5237ffd8500fb5b37ef62ecf0f4e848ac0401a93",
+      "cell_hashes": [
+        "75d9a19c01653c888378af8c4d50f632e665801cc3a8ae8967d230504ba24fb3",
+        "ee039f2bd28449497a104a0d3e40abba204e2e4d2a71e9057509e4ab74dffd42"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "move-001",
+      "index": 7,
+      "stem": "move-001-007",
+      "controls": {
+        "before_path": "Catz-explicit.cat",
+        "after_path": "Catz-chest.cat",
+        "pose": "lying",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "asset_root": "scratch/research/update-004/move-001",
+      "input_hashes": {
+        "Catz-explicit.cat": "f41dd6430d26c1bd03fa7006ee82523d3a3e66ef67f55b0141429dd7ccf4e8bc",
+        "Catz-chest.cat": "1f69402860c4c257801bf33552190cce5683d9906b27a7254561277c30b0d130"
+      },
+      "png_sha256": "1f63d6ce1c6482aaeb4f694f504220a18571513f780b8c34f5784c6efa249656",
+      "cell_hashes": [
+        "0c2c2efc215a2057cba4b95a0ec93a8de03e2978638e4bae7b064e830850b887",
+        "2edc06f6a76d6a4deca71b38d291907f4e33970cce4c5ecbac1a4e40ca4b641f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-002",
+      "index": 0,
+      "stem": "head-002-000",
+      "controls": {
+        "before_path": "Dogz-neutral.dog",
+        "after_path": "Dogz-gate.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-002",
+      "input_hashes": {
+        "Dogz-neutral.dog": "10aaa367a35c2db224d40d63883c63a02a03955092e0a547bdf6832530582950",
+        "Dogz-gate.dog": "92be1765f46f0eac94a3519b5e0ca4ab5c673a1b029d641095ae0afbdb178395"
+      },
+      "png_sha256": "d613b5ef45fb5331ee41aebe7495053244e5988bd8d1394bcd12d251b878a62c",
+      "cell_hashes": [
+        "aae014689e6d933edc5a34b85bd5c2dba14ca6d4bbc253450feb9442df300fe1",
+        "f107588854b84843912bc1dc9dfdaba61ab8f42dd953d8c4523aeb09dd611be7"
+      ],
+      "old_cell_hashes": [
+        "9669605ddcc99ea5c3cb206898e9be47194952cac06b9debb42e13bc4f1b6949",
+        "25606e698b43639c0040dfab2bcdb33b1a8ff5f088ea73b5c7233bfdf90ab3c6"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-002",
+      "index": 1,
+      "stem": "head-002-001",
+      "controls": {
+        "before_path": "Dogz-gate.dog",
+        "after_path": "Dogz-above.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-002",
+      "input_hashes": {
+        "Dogz-gate.dog": "92be1765f46f0eac94a3519b5e0ca4ab5c673a1b029d641095ae0afbdb178395",
+        "Dogz-above.dog": "5ac293ffb151b9be79240969d4311e0e7e1afbf6151ed6af954316a340d11abf"
+      },
+      "png_sha256": "154c6a10da3d5cf77c07a8d585bff0150a74caf90c0c1952a833432f6a18a784",
+      "cell_hashes": [
+        "f107588854b84843912bc1dc9dfdaba61ab8f42dd953d8c4523aeb09dd611be7",
+        "8ff0bf75f0f2b05663e1b013234f8e305a9fe2c31424278b98765bca0b851ed3"
+      ],
+      "old_cell_hashes": [
+        "25606e698b43639c0040dfab2bcdb33b1a8ff5f088ea73b5c7233bfdf90ab3c6",
+        "b8d5aa2af947e639433e120101001f355eb506154b10d6bcbe0091d9c5f5adca"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-002",
+      "index": 2,
+      "stem": "head-002-002",
+      "controls": {
+        "before_path": "Catz-neutral.cat",
+        "after_path": "Catz-gate.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-002",
+      "input_hashes": {
+        "Catz-neutral.cat": "758db6fc0eff6f1e23eb346c9491d937ea6a590d9d2eb5fe21a1db0da8c9239e",
+        "Catz-gate.cat": "44c1e1e54bd2a03c06cfb9b9a249609416f5751043dc48d30cd962d312a5f4d3"
+      },
+      "png_sha256": "d372ce883c0492a334f56c7c366ec82f81a894fd8b6f6a224bbbfb9c3fda891e",
+      "cell_hashes": [
+        "618566ca831806441363be0222957761cb4710b40a4780792159f30fc1f6cbda",
+        "bdc97133248173bca503df63e9b551c80348d9e394c7ba90ebb89f7baf8b179f"
+      ],
+      "old_cell_hashes": [
+        "5f169237d8a1474fd3f167a1abdbfdc7e84ff6c4536c487ccb85794d1cf73087",
+        "4af7fd86d839a684b9d8396e1ea43f7a27e9367263256cd11149281f5e3e88e7"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "head-002",
+      "index": 3,
+      "stem": "head-002-003",
+      "controls": {
+        "before_path": "Catz-gate.cat",
+        "after_path": "Catz-above.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "asset_root": "scratch/research/update-004/head-002",
+      "input_hashes": {
+        "Catz-gate.cat": "44c1e1e54bd2a03c06cfb9b9a249609416f5751043dc48d30cd962d312a5f4d3",
+        "Catz-above.cat": "64aeb7e3daf274061fd3aa0a6ac56198fcd970722aa85b55f0f6523aab08d610"
+      },
+      "png_sha256": "cbcba137520e3f6d39e180d8825eaf4fade1ee7e6bd9f3e54bb528bd4876396a",
+      "cell_hashes": [
+        "bdc97133248173bca503df63e9b551c80348d9e394c7ba90ebb89f7baf8b179f",
+        "ee07b224bcb08430eddd6f066513fe0556819039d63eea51f6f08facbc95132e"
+      ],
+      "old_cell_hashes": [
+        "4af7fd86d839a684b9d8396e1ea43f7a27e9367263256cd11149281f5e3e88e7",
+        "222d641425d499adc801db5452256ba56459876fcf6ce6c094f109f4175bcdb9"
+      ],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 0,
+      "stem": "omit-001-000",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          70,
+          68,
+          67,
+          66,
+          65,
+          63,
+          62,
+          61,
+          60,
+          58,
+          57,
+          56,
+          55,
+          54,
+          52
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "2016b52e4a82f918f1f9ac93686e3b5083ba1c90cbcd87fa6bab6b5678ee2aaf",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "ed835dbd5e9c5244eb6c48cd4521859d0ad69ce4a03ed97a36c6dc004e0caacd",
+        "ed459baab2967bb81c1088bb746496685ff475104c682b13c85de718d95e01b8",
+        "f24fa9bb010df0d5c8ae294632a9d8b0c2d2ba7699c824dafb8d144e2d1fad76",
+        "c9147c1bc19e56b45400b0b8e839216927f94fa36dca88c4ead592023b574c42",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "8ec49328a2522196e32ad9121df50bd2fbc14278676272e8a0895bc5adb1159f",
+        "58282ed97e6ac0fa66fe795c9d7fdd2d6302009018daf9157e363d5be5284f30",
+        "1fd395849810451006bb626f9871101e0564087c64da3ddb65dced77e5d15236",
+        "87861ae07ec11e6dada13a14c07d17ac836e009414c5bc00708d40c78dda4dd2",
+        "124ccc5d9ad70804d02756fd585b515e9dc5092b221eca1334c6d9b93c24c188",
+        "f6eff9b59519eb67508839426443c0505de64efbaa24a75bfe5d1fdbec84bcf0",
+        "3483355a39aba8ef9ca664743705c137b41211b4e5325c0e095b6a6b33581b84",
+        "63828a58a8629c4c7dd21bfc992b787b72bfe927d1dec805590a1b2854b71105",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 1,
+      "stem": "omit-001-001",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          51,
+          50,
+          49,
+          47,
+          46,
+          45,
+          44,
+          43,
+          41,
+          40,
+          39,
+          38,
+          36,
+          35,
+          34
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "60e9e1032d7648d1114eb35d5e4927d3c9067714661f52ee20df5b88cf5adc6e",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "3f46d73f284c39b6f3555b85a28f4de668ad1ac5877c1899f0ed1e1451822291",
+        "93590e2200a7b3b2b1725d0c14417217c1b09e0034e9e8ac23eb67829ad5170b",
+        "f16310b01ee29a6019fd5b64864bf8836fb724c3eb8288a6afaf7bd6f739d686",
+        "da59ff097f77f1581043e38231c2704e41b83a4a005daffe92854fad3bc1510e",
+        "9ed14e690b3c6599ce7f8b364d48de0230fe46ba5e8fd04de2f1ca05b7bc83c1",
+        "36709e6b4ce9516a699177947ec048fa46dbeafd6f02c0f0dd670cc704995fab",
+        "f9965b7475526d73ceabd4000d6dac58d87be83b3e05c4d2fd2b568a12e9a7f1",
+        "b18ed8bf502270de40c66a706fe8919883bd2188e647286e81429ffa75b0582a",
+        "b5668c037c22bae61a469727384bab255c37ecc621bbf1e1aea29580005c576d",
+        "7f74d9588de776248144b45712a1660ce7883b96a2fa357f47bf193dfbf9966f",
+        "ed6fabe3ebd076b86b67285317f4ed19c69458826ec285cf7c672e16b34d8d9d",
+        "947ead1b9306bb7b780e15e0ec3bf3ca1afe4c239872d65e2959331909bb4294",
+        "d592e33e3e9b6ff6ca380a981c70238e5e4a694a88b445504e7998b9b9cebb15",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 2,
+      "stem": "omit-001-002",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          33,
+          32,
+          30,
+          29,
+          28,
+          27,
+          25,
+          24,
+          23,
+          22,
+          21,
+          19,
+          18,
+          17,
+          16
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "e0c35389eeb43de399a07ad590915787c66aeeb7b6b19a204731dd35c035113f",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "ed8a7db7330bc5db54e7f8af0f030d897c04522720637c9f44d0616273f77856",
+        "020b04ffa4b0ffcdaa225c79402aba57604aa08f2be3ef8756c8e7559a97154e",
+        "fdc7571b8df17f56ce4e92da2cbcbd39af8f718bc66444f4ba8a414bea680247",
+        "3b236d9c90d9983b91927a0279cc701ebc89eb9df6d4b8221d86b39ec820cdb8",
+        "af5dd17d5a16626d4af5c2f1800fc2093afff7e7b59dfa52e258783ccebc1fa8",
+        "f1c814ba497e9950523680f26ebd41ab8634db7f11c0b31c66c86b07732f7003",
+        "2d33c4772509e7bfc311c1644d1161892ee767c2f98506861097b8114617aadf",
+        "1c2302af1bcdb299950429ed80a946921332a9e3f19c143e7f8920b0f72874c9",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "c5f851f9d6c06263c8b639da446ac391d48c671e5b146336c3dbbebde9e1095f",
+        "d134519dfc73dc5b38e0a805887fd47c77b125b2508d9186a5dd68692689f072",
+        "52e1b99ae0f47e7fc3d43f0c2b0746a5342d3957a3e2e73d3237bbb34d014f9a",
+        "de8d6a6b3145da5d5ac2567ecddbd0bf852089bc27cee373b4ae99ed8a0303c7",
+        "f313d1823e116158219897384666c912a42f2014e31dbbb0a751ae5513005d3e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 3,
+      "stem": "omit-001-003",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          14,
+          13,
+          12,
+          11,
+          9,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          1,
+          0,
+          82,
+          81
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "485edc626122e2d21c35d57d6b10726ebbc051b0bc180fbc27eb50b2332dac3c",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "cb20906934c46b96091f6994ee0408be05245a67710d5e59d4d79611c5e476ff",
+        "a15337e4fe1f091759dbe477910ab08e16e5fc71ca2a903ee36cd533bcfe0dc2",
+        "919f3ddaf40ed7c355f8db28f0661d297a8d530c913c8d3a2c27c75a78662123",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "cb48c90de07c58f960ca7f7250e1700d8f0bcadb4fd535ae9fdb17960f102610",
+        "fa831e6960b7616ca1ea1ca6a7f0f51b249ad1d99100de52d26fb84f08317f81",
+        "ab1db9dc8689da4e0ce008bbeb2a89298e819db6dba55db363ea36c468e0a7ce",
+        "56acdcead490713cdfde41ef039986807cbf3d29b5b45d5a464bf0b028ecf834",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "0f529860ab2bfe6dbe1c6056c184d20457b8abc315701021de6286a027a63c89",
+        "8ffb2644a84426448f878111040bf0b4b3600197bde9b59efc23d602029996b2",
+        "c2511c4daac7065d913c426213ec2493a4cf9a8eee8d3feaf6361cc6fef08728",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "d4a893186fefaa78438958584ef03514146285ded9f013e73d9dfbe64ed0b8eb",
+        "ec018b8eb8b30bf5c4e5b85e46e83756dd962a9f99af198ecfe154fb7bf6bf1c"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 4,
+      "stem": "omit-001-004",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          79,
+          78,
+          77,
+          76,
+          74,
+          73,
+          72
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "9b1cca11fb4c01f6d4e81b088e2c6ae8e4600a772aa21a7fcb94dcf6c7f340e9",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "c30acfcbe8d6329c08b7a291851b3c7c4fab5be9d00acbf5ce091a8ad69c6abd",
+        "f9c869e39a27b9b6c3794d82b11516121c41e5f3a2f2695b93f6c791cfa77bd7",
+        "b61df22ecc0535207f624fe65e731aee17f2345cdca59d3c7916f63ab751367c",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 5,
+      "stem": "omit-001-005",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          70,
+          68,
+          67,
+          66,
+          65,
+          63,
+          62,
+          61,
+          60,
+          58,
+          57,
+          56,
+          55,
+          54,
+          52
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "b6e91445d1f160c45ed0a4761984309280ca3dc153681d3e56c15ba80ca64285",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "99b57a99f56bbfa6d3dd4a25f8e170e54f213d882f07f118c2a2544112f6e78f",
+        "417fb203c9e5b0015ecc8e479e89675b21af01d1ec90625b03ea4a1df108b91d",
+        "c77d1403e65134a471e0cd96969c5265801aebaa721a7ce22fd4ae1b828b449c",
+        "5e563c66c0f730509e325b7d7a48ec34daf8e67047f929d7021726e95b9ce64d",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "5a67b32c0f90cfddefd522a7fa4b1eb7d52537a09c289c8818eadb78cdf50fb0",
+        "ce461539624b8ce01bc80ddba19dbf9daaf3f73f0fa8eba1b8c4d6f5abcc0440",
+        "5a9233841fb6d46a3324f4ff840fcb21ee9ec88715a263c1dbf9cf0c14c33695",
+        "8552bddf7744514ece315c1d27db11887875a6d2dea11b3fbde14a31de1233a6",
+        "442921bde9a04e3a773a41dfd2d44b2a7faa254fc8fd61b22458492d908a464e",
+        "cb72df481ac32a18a3dc4d9601cc77719117a162f53b730c9aba01f7f19d9913",
+        "4a175158e6ed8608a1d91338627198b89e9d9e8f301a33d5d501fb9017e28012",
+        "9fd3c126a0542a6e01723d743d7ce532d0284e8f2dc69537c4651a9e2f0379e0",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 6,
+      "stem": "omit-001-006",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          51,
+          50,
+          49,
+          47,
+          46,
+          45,
+          44,
+          43,
+          41,
+          40,
+          39,
+          38,
+          36,
+          35,
+          34
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "7efdd3d133fabf6d3acb4bafaa3b97c81db579891421dd0acf52172d990d4215",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "8503d4a1039033a0a87587db6092c32360873a90763d90720208444cd8c16a6e",
+        "24e359834850841dcc0c7e45c69280be22194373aca904b9238b78b4001d98a1",
+        "d519b1fbf332210a3bcd1dbc9c984590d992a871ce1101a37778e7bb121d42a2",
+        "2f3fdb766cbad428442cc82279aa20d1c9ddece7dfc0ddda0fa80233eba8a0d1",
+        "b3ade8a988d44eda73b0932364da567a83897b23eb83378d40d18a4499c55a02",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "72029a30afd8dc54c35a97b659cc19a3ce4f059324aca9927b8c1bd906138e67",
+        "f2556305201619ba23f449cb5ef5b85d022a75576cf0798979e8952c3393b5d8",
+        "be55f2c3bfc1be311e7ee57120e0ee1926bab61978921d25451b7889f2d92272",
+        "eb635a96ff30180ac632baac1eafa812692824b20336ddc492a682f88a413b8a",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "95ac59647f18c4d237e0bda9eb8dc3b6cfbfe8c7fa6f1831f9c970ba859ac1a1",
+        "24b30bb576e4e5dd18eaac440f040de5b090a0977f75d46ac9f5b6dcda803401",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 7,
+      "stem": "omit-001-007",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          33,
+          32,
+          30,
+          29,
+          28,
+          27,
+          25,
+          24,
+          23,
+          22,
+          21,
+          19,
+          18,
+          17,
+          16
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "69981326fe6843c56ed579ad91253c35dbded9e3d6d07f3d64a9adffab521adc",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "bce753dac72cc27b5f84cfaddc8b6154deb3aebc8c97cc061822a3b7570a4396",
+        "7043614b3035dd9f32e756ada73da1cd4587023100315d5f4a5e7ef5d8220dce",
+        "8804ff6a65bbcd801364d5788e2b5c5c68a5816a42b4d835b8149672eb2ee641",
+        "a3906a816a75ebf8ae6963ccc3e3be991e3bd0043b383dda0c9a18d7c29febc5",
+        "e3808a16cb8655b4a2d9a7b74c48e68da13de4e5b92e8f55139ef438f780a3bd",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "4ac8cd7b201e41a9d3755ac6de73e4ee9872c849fc4cc5c57362e40f524b5d6c",
+        "20c0aadff004237531180b2018f378e3fd0d62f687617e743ae66995955af579",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "7c5acbc422044066f9d5e4be7c3443364ab0a480a5eca72bdb87843020ff4549",
+        "4adf63fa8e59ba14b00fb5843cce0badb294adcfd23813a9ae90d8aa55a5b22d",
+        "c87d4702ddc2dcb37630622c988ee5910db610073d011138cc9920537bfb9bf7",
+        "7043614b3035dd9f32e756ada73da1cd4587023100315d5f4a5e7ef5d8220dce",
+        "06eb7eb13063df29c6e0fd8eb8be8aafc4ffd1b241ed2e07e9acf83ace227011",
+        "a9bb3c42a145dd445efa337c5476e8e6c1c66f854728abeda356e40aaa2c9f2d"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 8,
+      "stem": "omit-001-008",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          14,
+          13,
+          12,
+          11,
+          9,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          1,
+          0,
+          82,
+          81
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "12e618d1b1594727f36e4bdcd4ab063a75f7c72c23e47d82c239133878451298",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "28c0d2f26a0dd074b6992f945cba2cca406e036f8192080d2888d18e97bfdaa3",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "e64a3d4cf7fd67de153fd49dbbd3b7b73ffc8e6fdb19a111499303182712936d",
+        "2b5dd3a1cd9a4233176b9e885b2962b3cde1738a0ff9e5cd1934b29cb9c1f9f7",
+        "c1d91662cd0d48bb0c56508a083d9b7481068679920dabfda0e60ab9166d34ea",
+        "c6b8ce8ffd90c70a47e2c5070f119b136e7a87733e0cb9ef2e82d6c4628139d8",
+        "6b9157297b3fd087933a5e3ab50fcfdd2d6447d6edc9fdd9561e6f0ce6487cda",
+        "3bd5830b1d1a11b1db9873dbd0f8fa107e7f64bdea2e48961cd7f6d00f09b460",
+        "a7afde5851bddb4f1aba3522df6ced82c3a39100ce0e0c64302035cd7aa1ff71",
+        "ffa41a6e41cb9690dd7187dcb9fafe7e36e71f39c792e0c70b25bce641fea176",
+        "8deb1f38a2ccc49051e7f9812cca3d3ab907c22671c8516cccaf174bc9692ec1",
+        "5502b14fd7fea9b6b740c3abec0a047b454572d3698501924452446802bbfc15",
+        "d5ef0cd5434bfb4205de53fcb91e104c41c7fe20cf6a212bc1350e2bd0d92289",
+        "13ba9dd8acabb15bead980ad4e8f7c311793f0abc959a515e3e49493ebace484",
+        "e01338e6eb7f783ec8e9b7f8d21f3f15ace1d4311b887d6937bae99643749625"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 9,
+      "stem": "omit-001-009",
+      "controls": {
+        "path": "Dogz-sweep.dog",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          79,
+          78,
+          77,
+          76,
+          74,
+          73,
+          72
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Dogz-sweep.dog": "eda92ee5a5fcdd40942a8fa8b6d7a7333a57e19ed31e307eea1d3b3b68a3233c"
+      },
+      "png_sha256": "f29f0efa5ddf1961250dcf2fe08dccc64852257db71355016fd56eb0e149c586",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "96c6dea175f740b14c52cd253074cf89988783d87376b6e484c9c3f022f80e13",
+        "4fdf1f074877be24f928138c59ac0f204829ff2dca7959bf41166563a9e15e0d",
+        "526ce209f61c1cb7f4d27fe534b9fec9c8cd66c2d16967687b8ed270e1e0a6ca",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 10,
+      "stem": "omit-001-010",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          70,
+          68,
+          67,
+          66,
+          65,
+          63,
+          62,
+          61,
+          60,
+          58,
+          57,
+          56,
+          55,
+          54,
+          52
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "a7b303577a6baeb3a03f12d37a2e911803ead1c5e23c284862ac2e9735849ed6",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "883bcefe55bd9d120740926c1d3bea8fe3c76d493093571ea32ce496f1633faa",
+        "482a8ea8880673a73e7d7ae7ee564ed24686f4f4f8e246259554c2cf4daeee9a",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "7352ced457fa10230229fe2a194bdff513c8daab28e266a0b6b03281de87c332",
+        "cd4c92be0ca631b8ad8fa575ce274e1c5242a5b9b4dd71ba2c9b5a3fca207176",
+        "d4859004e25c5e4f8f3bec15abbc15289ef08631e0edb039dd32ce4a79c6e45c",
+        "29792510ab0a91e2493ffecb39f4185d7f91c2741f3a71d5809b652252d90afa",
+        "159c5c95a3a163f4056dada1090587c12d71fe28f51bd1811a111c39f9ae1014",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "5f595dd6b3ebb54bf679c3848fd6149d3d67b8b7ae251d4d3185bc5218c0ceac",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "a8394280a542fab07d9c8f352d4e5d22e568421c9a2e13bd10a1545469ed61ed",
+        "78347c56568835a82af63bc06018da5db47eddef00c27b594bf6001fa96432cb",
+        "f0fb550bb00d77086066827972d041c711b42ec2a4ddfc6da67f946932e93f2b",
+        "c16a4fb3f2a8e5b1d47d09951604cb63c0438b67e9b9beb5c69e922dcbba2508"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 11,
+      "stem": "omit-001-011",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          51,
+          50,
+          49,
+          47,
+          46,
+          45,
+          44,
+          43,
+          41,
+          40,
+          39,
+          38,
+          36,
+          35,
+          34
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "f86fb1d11e9504a72be5ebb8346550cc832706e6f6887d1bce91e8a3bccc0f5d",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "5def9081171317e3d13102461f83279994aef6f996555665924f6012881202b2",
+        "cbc51b3159406fcff2080bb8c15047b48b09118870cb037d9625d3cad0a3a898",
+        "a7f5f91fa8c3a53ea84becd1ebc5aced67997bd10b6d8b2f8a03f9f949044241",
+        "78bf145c73d114fdf17f8d4ebb709fd8e43ff9271e23b585b6b1af077d00ea8c",
+        "b036647e1303655095e79d444369eed32843cdeb13468d8aceecacc63d904537",
+        "0d204dbd888fa1c04e2bb2483a901b68b8b8be5f0deeeb6e836b5967c4a39861",
+        "543d9de51d8e3103000f8a1fba74fcf531709afcef4263d94ee9b43cac696b9a",
+        "5585fdc21b67220f4f5ecca4dbe882f0d1e2e86334b11a492ad72e54f1a87e27",
+        "c8b3c63e76a20e26fcb19f185eb9cd955ea2d1346a70f95d7a6bcd4391a1e028",
+        "ab390e0db08c169bb224531abd672a54f040069ab30a561b2b1b0b51bb04cb2f",
+        "bba72156661f3256e22a2eafd82ae7266ecc2c706f0402a8351b3952c75ee96e",
+        "8759582790aa5be147154ec9b714561d730422461b896daaba81877ab1860ca3",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "4e3ffe2efd521223e1989922219c02a1f825265fcf2d8763d5dec305bbcc31c2"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 12,
+      "stem": "omit-001-012",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          33,
+          32,
+          30,
+          29,
+          28,
+          27,
+          25,
+          24,
+          23,
+          22,
+          21,
+          19,
+          18,
+          17,
+          16
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "5a719855e28d4f7b4954f14328db8741f0f78137509123d6e295f325988168d0",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "f34e6c23532f66b8c18cbe7ac09d4b97ad031fa689bcb54e5711b1cba990b47d",
+        "104da5c00673852bc9abafd545a551129d217bd4ae20243f2436ce105c9c3cbc",
+        "e5717d96bb1f9595da50060955eaedf5ebb0f5c3eaaa94db47bd101ef9e1e544",
+        "01863d12833749136b344f89a7233da8ca745bedf0065de00534d32f99e04a11",
+        "0f5c0041d687297797115f9709a64efa02f144d7838e33e17edbad7a7c0149d9",
+        "0f37a10aad613995fe7ef74c08896ce3b720cf627f66f2050ae3954e8ee27d0b",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "106e74a3b93621fc9af63c8e298e87009ceba4d33de89cf171c24d60a9de31ae",
+        "9587fd4d6cd5c932c241d2778e7ea1b5525ca0c9eb8aebdf4c56ce42e323f7bb",
+        "04244312dc511781a39d419adcd5a0010082e9b5065cc1af1795c7b79c114477",
+        "fb9e52266b19c2c1ce2b01c196f9f52ca61137928f26d043ede66b45f6ae1f59",
+        "89628319dd99a1437c5e5ab2e9a39deefadebbc439c0e3fd41b3c235abde88d7",
+        "93042732879fba3bc108fff9cbf4332a002cab9b2a23aa4ecf548eb5d7f28360",
+        "b2ae8523a4f4f33c3ff32bfc59a22ac5cffcce529fd4499f74ecfe69037fb471"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 13,
+      "stem": "omit-001-013",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          14,
+          13,
+          12,
+          11,
+          9,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          1,
+          0,
+          82,
+          81
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "b07904403a2b17ab0c027a886c1391c80b2cd517816baf42fc1bcf76552c2e96",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "8b64eb3d4cb39dd3fb45fd0017eef52a01af8fe187f39c094f583c039f67f671",
+        "25c609bc4faf8c7b3a092f507ffd3603f3ff23fd785c152d6d68b2fb5cf3255d",
+        "9c71cca8719afe22eed88a7abad93b389647f8741d54c5b23abfc2bc17687c96",
+        "8bc77947c6c1f04a0dc7275b5a27831109f524b6f219303bb57b9e5e4ce7d709",
+        "35b5b9d0fcf016a34dba9cf0bceb461ce2c4393ee7378924301cb82eb69b656b",
+        "c9cb9a60028835bed630d6891e167209b503ead2714cfd78aeb8835112d7ad31",
+        "dfd79f2b9c77bbb7cffaaf2f94a40fe4d68b46c98fa977e95776cd63a865aa72",
+        "35762d01a0170e6de4d5f32d35df28423b48a81ae52bebf303901a25fb1518f5",
+        "6d131de766e2f6af12c02f7648946d2f13a24ef2acba9ef7cfa569e3362b905b",
+        "74478cb73bc88af87fbcd5473bdc5f059a7d73e256d5dd6bf1a063f7d8e10d8e",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 14,
+      "stem": "omit-001-014",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          79,
+          78,
+          77,
+          76,
+          74,
+          73,
+          72
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "58eb3b20cfc6c23d6e484b06150bb9f133a03c4cfbd446f5fbac84e4080a229f",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "3d910020f8b7a153f98f4f1049df7de732b4344382a70a7124910551e017e889",
+        "b7e2620af12123c13f54626633b55ce30d5279e551aefe11a0731ef4f70feab3",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 15,
+      "stem": "omit-001-015",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          70,
+          68,
+          67,
+          66,
+          65,
+          63,
+          62,
+          61,
+          60,
+          58,
+          57,
+          56,
+          55,
+          54,
+          52
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "a4a23d1fd83b998493be224b6948d8be94357889c7fd34c7edc777dc2b541634",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "e0c1db44217fedea6bd9a7d99fe2e29ad7742d51142bcd882a17dd893f69f250",
+        "2a5d81acece4a5686a21ad92c7000aaa85c240fc6ac5a6008590c2c778ca25a3",
+        "99c02d3a772cac4b791562f5e3cd63437e9abead0749feaad2d20cb8d48eb6ab",
+        "bf607c7c4a182cc0907851cce86eca91c6d5bac62784d62d1498d31830a74267",
+        "5a803252b78e091630a01ce3517816f61ab7671c2256fbce28a05427d9727ee5",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "0c69e821acf56caf3797fca28b41cb94f110cb63b937df90e846ae097b59bd9e",
+        "5db792a47ef4e54cc9476694cb28f7c593f98bc57a11b17fed6a6f047006065a",
+        "2a5e00652a2537021598f821ffa1e76979768952e2f4ccf91836372e84d4f3f8",
+        "1b89075ba3d06dc697791b045293ad601d3bc36734d5b2bb4f8443df5c8d9ef5",
+        "65d0b21b72af77353a76945b3c3e54af9144fcf8799e065b60aa341a4ca45e95",
+        "c6f3750f94d84f7d2379bbd81182855b6ff36e472664e8a9a837f22bc0f0ff21",
+        "740d42772d8a6786020fb98bd81855d32adced43445ad1006cd046dcd2d5a8c9",
+        "811cf26f70d19174f82a73b34ae0ee7ae1ca38cfed9e4821c27983398ce80161",
+        "410fdce4f03b7744b75382a27905266a02d677e1ac563326a9334ee108c2ef62"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 16,
+      "stem": "omit-001-016",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          51,
+          50,
+          49,
+          47,
+          46,
+          45,
+          44,
+          43,
+          41,
+          40,
+          39,
+          38,
+          36,
+          35,
+          34
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "10f32a2babba7054207241d892131728a01e1a05d52fe37ea1067b10476bc01f",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "05038dd6fce32ce1bb386c3b1514acf5fdeccf21c4af91fc4706c8502f2db279",
+        "4aff154415fd1ff2447740856e4707fa3db68f0657243e32367c2ac9ae12dd64",
+        "a519aae960e6393ea65c02db6a1510239a7727e22317be36dd36eedcf8351d00",
+        "608ad219b10099212b49e6c8689d7ab426ed74acb533416c091e428922c73a72",
+        "6cbbe5f2cd8ae42a5ccdc37125dc351903c1638d201fedcc35d689782edf71f2",
+        "0b6c99695ec7af9fc1a30e5daad3a36e42d318526d6df8ea24ce9ab6808c84c2",
+        "2ecc673b749f3bf8f0bd26320857c9ce80add1cfb403edb953a0c277396e97ea",
+        "584723ca3069e12e44a78d5840d97f23aa6f7dba3c7c4011975593d413715f38",
+        "bc5b9adba68af8bed993097cc2a14faec77358fc4c0051779590e48cb59d8f6c",
+        "0f42de9d140ecbe88c8519c493223f62a1662d8dbf31d2401a66c5d571af26c1",
+        "ec6829157f23c22e350db7546e2cf891b6fdc255401f7eff8983d21dc4a78194",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "2ebc776e086af48a3e3e590977eb75c413e83a6926cae11450729bb1ff454fd4"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 17,
+      "stem": "omit-001-017",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          33,
+          32,
+          30,
+          29,
+          28,
+          27,
+          25,
+          24,
+          23,
+          22,
+          21,
+          19,
+          18,
+          17,
+          16
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "193fc55ed186be9f3d549dd5095f5a79bdf8373d569fb8fe309ecdb6274fd7b0",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "0fdc6c106931ddc132a9d546dcf8b45f5270b95bfe21fea7a308670d2c030374",
+        "bcada340be47803ee59c7552e2bdea73683350511d253058bc4972abda2a968a",
+        "f081d341fd49459700ac90cf2f1dc00d27a647efbc8580c7ec3ef9c63cf02833",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "02a9e23a0c07eb88f6d286d7dc110c77834b61bacfea525a58dbcddfcf9ed631",
+        "cc1f4f0b0cf2bd5f04b093682aed3e693655b18f97b1bb3080b9b611613bb08f",
+        "06285d185495f4c02d916ff2aabe0608362b9a1a907889cb000c3595e1539ddf",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "20df1be3a9fcf72f0978751aa341cb5c41ecb65c7826066f7577d528689816d9",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "e271e91ae5322a13eaa0a072d0fc36035b57ce784a70f266dcbe1612b65abdb5",
+        "61f43ff95550285fd5bdca7e3a93e6a4ef8425f625d90e4bcf32ecbc986ef20f",
+        "59dfdd467f6669822592d8eb20aa15fc9b40dbdd3837eb70b0e4f8b9f19867c2",
+        "a2eb7c2f8982204888887130abb7d51294d38309803611e8ec770be1f0a830bd",
+        "e26bec36b51c54e600ce7da6f57bc18062712a1a5163f00814cf4fa8ef16fe76"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 18,
+      "stem": "omit-001-018",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          14,
+          13,
+          12,
+          11,
+          9,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          1,
+          0,
+          82,
+          81
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "8464ce08aff41d7a5bb338a90739b75f12bec16dee88f7e1c20e80bd3feb1303",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "3c1f65a0ea6f4fc9da3a2b04a174690021eac269917cef533ea8ebe6cacb9f76",
+        "e27fb5ced78753f22f3c3748af00a848b701a061f414c04e87791a8c92595926",
+        "c72b617642fc40be5d23ad30cb53af33b9c6edc16937da00144854b9e1f68165",
+        "0171d9073a7f1dfbb37c66cc8a1e6038e32ab9a63c824a15f34df996aee10bec",
+        "b427f819ff2933365769224d32ab4f9575eb8cbe26a82f5cedac359eb7fb455c",
+        "a261c26bb44704160aad4d6f742b55b9ea4f3dffc459d9573f72e827a27e151d",
+        "19dc6a15a5b7112951e89e0d19e71251210035372fdf291e9b2ef434cab66e39",
+        "00faf1e0a30824b0eead00a35e4dea4d3ed6fbabbb0d80fd1a97293129e0c70e",
+        "2021e528811e4af8e05fbb75d7afc10ad93d5efb05ab69c2072ddd52f227b486",
+        "d78c84a60d1b7fc57a9226e674e169d4229d7907ee87dc081ad87b97053f9a96",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "omit-001",
+      "index": 19,
+      "stem": "omit-001-019",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          79,
+          78,
+          77,
+          76,
+          74,
+          73,
+          72
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "cbf7d1ea0330205a08fb1ded1f3b8a37e4d3069f6f4137e2a1d087dcf57638c0",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "2a7e2db113236f2ce58e05cecb4a3be0e544a0fdeba083fda3c8d8d47912329d",
+        "532973538effea11c42e307da50bf7bbef30ffce7561e0d6a02c403f3bb9fa9a",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 0,
+      "stem": "vis-002-000",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "fdfe42f4cc4e9ad1d31d8700a854608db601716e7c7436f2a3ad028d06d15f47",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "ab390e0db08c169bb224531abd672a54f040069ab30a561b2b1b0b51bb04cb2f"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 1,
+      "stem": "vis-002-001",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "967c39a564e66132a45cdd8a0c13f834287ba7a23bab2b7a5061b41634c8bbb6",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "0f42de9d140ecbe88c8519c493223f62a1662d8dbf31d2401a66c5d571af26c1"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 2,
+      "stem": "vis-002-002",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "7381c7053823dd58f791a4bc02e2fa1c9550f667bceee29da59ef218642f3444",
+      "cell_hashes": [
+        "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+        "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+        "447dd9c3017fcf40365be1f703d8a076b80e5403f5ff31a2cfc39601ce171a87",
+        "8957873ca62fe7f4dc95a619c14d41388c5b57dec6fec77bc06b7b2189a609a0"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": true
+    },
+    {
+      "experiment": "vis-002",
+      "index": 3,
+      "stem": "vis-002-003",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "standing",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "72ae48a4a392143fb76fa79111c547bf21fe8ddfedf50df01b946cd2c12c8e13",
+      "cell_hashes": [
+        "81f7c7d38db76f77d9aaae1589053a7bdab54fd79d03a1cc1b6bb21cc85c7f35",
+        "81f7c7d38db76f77d9aaae1589053a7bdab54fd79d03a1cc1b6bb21cc85c7f35",
+        "81f7c7d38db76f77d9aaae1589053a7bdab54fd79d03a1cc1b6bb21cc85c7f35",
+        "c9a5142d40e5c7920d666022c68ed26ccdb84f581015fdbb66453258411cd748"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 4,
+      "stem": "vis-002-004",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "c2a641efec4862d7deaddf9911b4a3a35ef773538807a230cf0717098f3fc332",
+      "cell_hashes": [
+        "1778028154bd625a8dd79069701417e2cde4ae0b879e2d2ba4eb47c1176f5ffb",
+        "1778028154bd625a8dd79069701417e2cde4ae0b879e2d2ba4eb47c1176f5ffb",
+        "1778028154bd625a8dd79069701417e2cde4ae0b879e2d2ba4eb47c1176f5ffb",
+        "cf49522b889bbc45e078edc48061b9a51c284dac5b3bbac044015c630d74e0f7"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 5,
+      "stem": "vis-002-005",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "504a9c0ee9544a1f10427e8f6c07cb20fb38f5511e98ea8ac9dc86a7ef3d115a",
+      "cell_hashes": [
+        "a472ae228f5e1c328760b0344af4ad5d25c08b1ed0fa0d19da24a2138c429e20",
+        "a472ae228f5e1c328760b0344af4ad5d25c08b1ed0fa0d19da24a2138c429e20",
+        "a472ae228f5e1c328760b0344af4ad5d25c08b1ed0fa0d19da24a2138c429e20",
+        "194f95ae8a48f636dc846f3a5fa1c2ea29746948d74be892f84bf5a155114169"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 6,
+      "stem": "vis-002-006",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "bdd340bcc80e842508a08aa82057b7b73657768e97fdf73ec9b763a7469c4219",
+      "cell_hashes": [
+        "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+        "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+        "ac2972c7a5975d5c6b2632a221387f83cfea60af28732d1331cadc8667620316",
+        "56b96da8eb7072be8d9fb0cef2bf847be6c0eb7597451eab7905c897898c63e0"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": true
+    },
+    {
+      "experiment": "vis-002",
+      "index": 7,
+      "stem": "vis-002-007",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "sitting",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "8b3b25df4d4687548aa954c28cb68b074a906d3c9426f27b2e593688703ef1e1",
+      "cell_hashes": [
+        "7f0b68b69b0cc00f0d909024257d4f8f65d963e07f3227eb3615bd0b164d81f0",
+        "7f0b68b69b0cc00f0d909024257d4f8f65d963e07f3227eb3615bd0b164d81f0",
+        "7f0b68b69b0cc00f0d909024257d4f8f65d963e07f3227eb3615bd0b164d81f0",
+        "46b4f79aeeb964eac96b57cae7de33d271e0d9169d22bf2ce8b422546ba49bdb"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 8,
+      "stem": "vis-002-008",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "0fc8752da7874b0d5c3773178a80daaa941955adedc32b05811ceb2dbef43924",
+      "cell_hashes": [
+        "dfbaf07c68a01e176f80dbfb59347a6df90b57472424c8d73bd39d9bdd3063f2",
+        "dfbaf07c68a01e176f80dbfb59347a6df90b57472424c8d73bd39d9bdd3063f2",
+        "dfbaf07c68a01e176f80dbfb59347a6df90b57472424c8d73bd39d9bdd3063f2",
+        "eaf10d3487eef5e50fef8ffaee5f03d1cc05aefa4034954c07173e1c51e25511"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 9,
+      "stem": "vis-002-009",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "c7bf323081d0ae1ed3b0b35d3095b0e7985fb80707f4515c396ed62dee3f3a4f",
+      "cell_hashes": [
+        "23d123a4277bab1852c4dbca3d667a084bd6ba5c99d99863db611c5b3746893f",
+        "23d123a4277bab1852c4dbca3d667a084bd6ba5c99d99863db611c5b3746893f",
+        "23d123a4277bab1852c4dbca3d667a084bd6ba5c99d99863db611c5b3746893f",
+        "65d7f27f3ccc5d9a1852428232929e71f15c624b1060759ef1bc3502be7fd745"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    },
+    {
+      "experiment": "vis-002",
+      "index": 10,
+      "stem": "vis-002-010",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 180,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "8d2a2f7d90450f791053c00ceea1c27d565644bb6c9b5ac5f0ce869ee487a9e7",
+      "cell_hashes": [
+        "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+        "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+        "f8db56dbc08bdc56772205867f07e8f9c5182fe74ca1c05967772d871142462f",
+        "603709be9601f1be72b63617d026bdfcff10c3328cdab44f0ef97a45472d6ffe"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": true
+    },
+    {
+      "experiment": "vis-002",
+      "index": 11,
+      "stem": "vis-002-011",
+      "controls": {
+        "path": "Catz-sweep.cat",
+        "pose": "lying",
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 270,
+        "seeds": [
+          71,
+          2,
+          1,
+          40
+        ],
+        "columns": 4
+      },
+      "asset_root": "scratch/research/update-004/omit-001",
+      "input_hashes": {
+        "Catz-sweep.cat": "68f3f562187f844995b0ce0c74131a7d7c67e89cbc2df505b56eacac0dd256d3"
+      },
+      "png_sha256": "1bbf54b94b8f325ea7ad6c7dc10555e82a50e65ae53615d78d0e5162a3374182",
+      "cell_hashes": [
+        "6cecfe93c7a8a1c2f1352d9aeb79d1575d03203e99a20488e2edd454c5562882",
+        "6cecfe93c7a8a1c2f1352d9aeb79d1575d03203e99a20488e2edd454c5562882",
+        "6cecfe93c7a8a1c2f1352d9aeb79d1575d03203e99a20488e2edd454c5562882",
+        "85b90ccb955bfef0a88894fd71b8aceb22553e162808a9faa13e5126cb86fdba"
+      ],
+      "old_cell_hashes": [],
+      "relationship_confirmed": true,
+      "same_png": false
+    }
+  ],
+  "summary": {
+    "controls": 64,
+    "relationship_confirmed": 64,
+    "cells": 400
+  },
+  "historical_reports": {
+    "add-001": "945e03ec78229b99ac1f474d60ef7671622d09467fd65dac4997ee6eaab8815e",
+    "head-001": "ca7741d2005282c470d5789f15e2de818963ce79e075b9fd5807256a42641d67",
+    "move-001": "509014699877820082adecda23f96255a7e59fca118520f0c9fe988a33746cb4",
+    "head-002": "4ff08da7e697e3b73a37241e38b74d09ec4f5f1f90219be1f78e20b157f21d40",
+    "omit-001": "40dc8e861483342f45cad19e355a1a063a542fdc8b2f702a5b897d8a11bbc49f",
+    "vis-002": "4e12e1f73b12fac9b2c27fc3cc0d1f70f83ce290981a77c7825b0f25865a267b"
+  }
+}

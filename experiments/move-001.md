@@ -1,5 +1,7 @@
 # MOVE-001: reference rotation and zero-offset entries
 
+**Renderer recovery review:** [UPDATE-004](update-004.md) confirms the recovered comparison/visibility outcomes on6c1d883. Measurements below are historical except the explicitly corrected Catz omission union count.
+
 Date: 2026-11-09. Petz 4 Scottie and Siamese. Status: renderer-observed/code-supported; native-game semantics unresolved.
 
 ## Procedure

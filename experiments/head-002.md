@@ -1,5 +1,7 @@
 # HEAD-002: A=100 position-scaling boundary
 
+**Renderer recovery review:** [UPDATE-004](update-004.md) confirms the recovered comparison/visibility outcomes on6c1d883. Measurements below are historical except the explicitly corrected Catz omission union count.
+
 Date: 2026-11-09. Status: Petz 4 renderer-observed and code-supported, not game-validated. Scottie and Siamese; same environment/revision as SMOKE-001.
 
 ## Procedure

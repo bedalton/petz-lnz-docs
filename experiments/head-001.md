@@ -1,5 +1,7 @@
 # HEAD-001: separate head radius and feature spacing
 
+**Renderer recovery review:** [UPDATE-004](update-004.md) confirms the recovered comparison/visibility outcomes on6c1d883. Measurements below are historical except the explicitly corrected Catz omission union count.
+
 Date: 2026-11-09. Status: renderer-observed/code-supported, not game-validated. Petz 4 Scottie and Siamese.
 
 ## Procedure

@@ -46,8 +46,9 @@ Updated: 2026-11-10
 - Latest: [LINE-007](experiments/line-007.md),40 raster fixtures/30 numerical loads/sixteen MCP pairs: fuzz clamps0–7; repeated identical direct draws reuse cached offsets.
 - Latest: [LINE-008](experiments/line-008.md),96 asset-free history rasters: positive-fuzz/step0-whisker prior draws affect shared RNG; repeat/zero/step1 controls match.
 - Latest: [LINE-009](experiments/line-009.md),48 numerical loads/twenty MCP pairs: automatic edge mode tests exact -1/-1; equal pixels can conceal resolved-mode differences.
-- Next: independent native texture evidence, other list conflicts/whiskers, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
+- Next: independent native texture evidence, other list conflicts/whiskers, actual fuzzy breed histories, partial connector rows and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.
 - Pixel/texture session: [2026-11-10 textures](docs/session-2026-11-10-textures.md): three units,24 MCP baseline checks,96 sheets/396 RGBA cells and96 orientation snapshots verified.
+- Styling session verification: [2026-11-10 connector styles](docs/session-2026-11-10-line-styles.md): five units,76 MCP pairs,156 breed loads,328 synthetic block/raster/history checks;52 copies/152 RGBA cells/192 RNG states verified.
 - Resume: [HANDOFF.md](HANDOFF.md).

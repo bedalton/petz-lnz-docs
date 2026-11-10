@@ -11,7 +11,7 @@ Read this page first for editing tasks; read STATUS.md and HANDOFF.md when conti
 | Change iris/pupil colors | [Eye color guide](../visual-editing/eye-colors.md) |
 | Move a ball | [Move](../format-reference/move.md); distinguish local rotated offsets from native anchoring claims |
 | Add a body-attached detail | [Attachment guide](../visual-editing/attached-details.md) and [row fields](../format-reference/add-ball.md) |
-| Connect details or change connector width/order | [Linez](../format-reference/linez.md) |
+| Connect details or change connector width/order/style | [Linez](../format-reference/linez.md) |
 | A connected detail responds differently to head movement | [Body areas](../format-reference/body-areas.md) |
 | An added detail is dormant despite visible=true | [Add groups](../format-reference/add-groups.md) |
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |

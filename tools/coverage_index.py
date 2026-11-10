@@ -7,6 +7,10 @@ names={k for r in rows for field in ('breed_sections','master_sections') for k i
 names.add('Draw Linez Before Ballz')
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
+ 'Head Shot':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',
+ 'Little one':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',
+ 'Fur Markings':'Source-reported genetics/breeding control rather than drawing an existing pet: [change notice](../RENDERER_CHANGES.md)',
+ 'Fur Color Areas':'Source-reported genetics/breeding control rather than drawing an existing pet: [change notice](../RENDERER_CHANGES.md)',
  'Lnz Version':'Legacy paint texture mapping below2: [UPDATE-001](../experiments/update-001.md); body-area list gate: [AREA-003](../experiments/area-003.md)',
  'Z Shade Slope':'Fresh depth-gain/inheritance controls: [SHADE-001](../experiments/shade-001.md); [field reference](../format-reference/z-shade-slope.md); isolated retained-state thresholds/pixels: [SHADE-002](../experiments/shade-002.md); omission/bounds interaction: [SHADE-003](../experiments/shade-003.md); native semantics pending',
  'Adjust Clothing':'Clothing is source-reported incomplete in the Petz4 renderer; do not infer from MCP output: [GAP-007](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp)',

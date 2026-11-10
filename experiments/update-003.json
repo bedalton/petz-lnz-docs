@@ -1,0 +1,603 @@
+{
+  "experiment": "UPDATE-003",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "backend": "historical-source and updated direct render; fresh local stdio MCP matches",
+  "source_manifest_sha256": "4a3e28c19ebedbcba5338e49e07f838a4472d12c8f1c1a8f084804bcefd629ac",
+  "old_private_report_sha256": "56fdf5e742338ba2610d351188a91b598afc24960b65f9d55128d42b1dcd149c",
+  "new_private_report_sha256": "ba73805059ec547ed712c68fe7ac320b2bd25db7e984c7786bce8609d3c5be97",
+  "cases": [
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "8d92aa9f664557894c5659323b4a8cee3c1dce48d7be800f2e0d381a8471caa1",
+      "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+      "same_png": false,
+      "old_size": [
+        71,
+        90
+      ],
+      "size": [
+        71,
+        90
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "standing",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "37e5f663190e367a4fffde71c3490352427181caecd8be9860d734512c36747e",
+      "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+      "same_png": false,
+      "old_size": [
+        103,
+        99
+      ],
+      "size": [
+        103,
+        99
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "sitting",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "af8eae008e92e43aa7cdac6f6be80f94fc7717c551ed2c95e805e749d065719d",
+      "png_sha256": "1fb3d30debc058027af46800ebc38b35aa301084996128c7f765009735a4d516",
+      "same_png": false,
+      "old_size": [
+        71,
+        104
+      ],
+      "size": [
+        71,
+        104
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "sitting",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "1327d4fff7171948b3a8cd40edfcc573d0ad1ba844b8fcf858e68d0dbfa3822f",
+      "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+      "same_png": false,
+      "old_size": [
+        92,
+        110
+      ],
+      "size": [
+        92,
+        110
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "lying",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "d313e579c4c274b5ccd6d1d8bb573449bea9667ae168e4b913867186b1efa684",
+      "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+      "same_png": false,
+      "old_size": [
+        71,
+        80
+      ],
+      "size": [
+        71,
+        80
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Fuzzkin",
+      "controls": {
+        "path": "Adopted Petz/Fuzzkin.pet",
+        "pose": "lying",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "old_png_sha256": "e545645ca5d6018fbc72879c2fbc6b981d5abec25934f7d6baee375fe5ecb15b",
+      "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+      "same_png": false,
+      "old_size": [
+        113,
+        74
+      ],
+      "size": [
+        113,
+        74
+      ],
+      "changed_ball_ids": [
+        79,
+        82,
+        89
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 3,
+      "saved_age": 33,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "standing",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "4475e66b0a732aff71193cb25c0519248622007d95f571c8c5b519447aa3a619",
+      "png_sha256": "e60d251dbe40485b9508f1aa2ee763e515fd02cf7a9c2e782ed76e5fbe0060ce",
+      "same_png": false,
+      "old_size": [
+        73,
+        129
+      ],
+      "size": [
+        73,
+        129
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "standing",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "4cbd37ecb15b9198fdac43f53e7031f9d1a99a8ab64d409c4b6971976b27ab5d",
+      "png_sha256": "203b1b412b548d94555c46b30aa3f9b98b948e858c6129f5ce5b9f2281b9986f",
+      "same_png": false,
+      "old_size": [
+        148,
+        122
+      ],
+      "size": [
+        148,
+        122
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "sitting",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "0d7817592c34756d025c7117bcd6addc1ba9c7f3202a140e01d213931d23c010",
+      "png_sha256": "a9e29cd0d24733eb42b4b21ca6fa407ee151d76e3cefeb43a4c83a3683934f37",
+      "same_png": false,
+      "old_size": [
+        74,
+        132
+      ],
+      "size": [
+        74,
+        132
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        90
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "sitting",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "b691018bfd92dff314202fb2cd8398436a50d7b1d39fb080045cecc82e3b7274",
+      "png_sha256": "a1377efbdd17daedc4f1d6c7ff615bb34c463f2f21ada42f5b63ae5df93c07c5",
+      "same_png": false,
+      "old_size": [
+        133,
+        139
+      ],
+      "size": [
+        133,
+        139
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        90
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "lying",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "9e74e22fdab23fb8362b478c6476a9ad5d554bae772684e31b8cc008d59fce70",
+      "png_sha256": "4fe9b797cdb3b6846fdbcf41e4cabdc94c44ca19e2f27418afb9593fbaa9c51a",
+      "same_png": false,
+      "old_size": [
+        73,
+        111
+      ],
+      "size": [
+        73,
+        111
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Goobe",
+      "controls": {
+        "path": "Adopted Petz/Goobe.pet",
+        "pose": "lying",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "old_png_sha256": "0b3b37f4e4fd02287d55534c22752c6538bfbefdc6ac4e89d882626500e7623c",
+      "png_sha256": "3ec0b88e7b4e0f5fe026ff05890db5bf456ed0a2542f246f11667fb30650ce01",
+      "same_png": false,
+      "old_size": [
+        174,
+        80
+      ],
+      "size": [
+        174,
+        80
+      ],
+      "changed_ball_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 12,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "standing",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "be2393a9ace556f9cad896355f93d7dd613c66aa42acf216af648ef13b32de2e",
+      "png_sha256": "2da755d0640ab8e31707d93d5e7ce1b149b859a76d5e5b4eacb8a7805f9372c0",
+      "same_png": false,
+      "old_size": [
+        75,
+        115
+      ],
+      "size": [
+        75,
+        115
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "standing",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "f94c949c1e0a8bd8cd26484964616649fc7f1e204195fd5ceab45bbd897cf4c0",
+      "png_sha256": "1e2e2f8d4d193d812637276c2c297e25747daabac651153ffd0e21c312946ea5",
+      "same_png": false,
+      "old_size": [
+        135,
+        103
+      ],
+      "size": [
+        135,
+        103
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "sitting",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "550af9759d0da254bb0b9438b846fd4de6fdd2c1e43b64b2dc1a9045dbf09cbd",
+      "png_sha256": "e4df2399241fd9e738060ade79fb6653d45cbd8b4bf591adbcbeae7c56bf7b43",
+      "same_png": false,
+      "old_size": [
+        81,
+        115
+      ],
+      "size": [
+        81,
+        115
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "sitting",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "c98b47b37bd67c65495e813b36593c6adc0673155fbddee1517ec2a8434a84a5",
+      "png_sha256": "9443a49d73fdcc5e1b6a4c8b1b1522fcd2c1b0a4b846965ab2ec7e9284bf5e51",
+      "same_png": false,
+      "old_size": [
+        107,
+        124
+      ],
+      "size": [
+        107,
+        124
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "lying",
+        "yaw_degrees": 0
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "ee3e4cbbc228988407d811f52ac27489d4aacb0380ca45a45d0e55411740b89b",
+      "png_sha256": "d468b53728e9e0a991b2ed7d10895b03d1637534bfc2712c8a8089b9f14cc04d",
+      "same_png": false,
+      "old_size": [
+        73,
+        102
+      ],
+      "size": [
+        73,
+        102
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    },
+    {
+      "name": "Homebody",
+      "controls": {
+        "path": "Adopted Petz/Homebody.pet",
+        "pose": "lying",
+        "yaw_degrees": 90
+      },
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "old_png_sha256": "6ca121ee978ac5735fa100d22ea850f506e219ba54187f290d6364e9f420bbed",
+      "png_sha256": "052526a6e34dd887f65e2e1119bbd270f86c83014ef68ec2ac5765eece88fc4d",
+      "same_png": false,
+      "old_size": [
+        171,
+        76
+      ],
+      "size": [
+        171,
+        76
+      ],
+      "changed_ball_ids": [],
+      "old_textured_paints": 0,
+      "textured_paints": 0,
+      "saved_age": 15,
+      "saved_fatness": 50,
+      "game_version": "petz4",
+      "mcp_match": true
+    }
+  ],
+  "summary": {
+    "saved_pets": 3,
+    "views_per_revision": 18,
+    "mcp_matches": 18,
+    "png_changed": 18,
+    "geometry_changed": 12,
+    "textured_paint_increased": 6
+  },
+  "current_eligibility": [
+    {
+      "name": "Fuzzkin",
+      "lnz_version": 2,
+      "configured_paint_textures": 3,
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605"
+    },
+    {
+      "name": "Goobe",
+      "lnz_version": 2,
+      "configured_paint_textures": 0,
+      "input_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49"
+    },
+    {
+      "name": "Homebody",
+      "lnz_version": 2,
+      "configured_paint_textures": 0,
+      "input_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209"
+    }
+  ],
+  "unavailable_notice_samples": [
+    "Frisky",
+    "Chip"
+  ],
+  "scope": "Saved age/fatness/seed preserved; Petz4 native-port renderer only, no game validation"
+}

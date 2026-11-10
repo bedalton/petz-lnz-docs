@@ -102,3 +102,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest chain research
 
 [AREA-004](experiments/area-004.md): 24 numerical loads, 72 marker rotation checks and eight local stdio MCP pairs. Three-marker A–B–C chain resolves 8/3/3 in forward ID order, 3/3/3 in reverse ID order; reversed line rows unchanged. All-8 cycle remains8. Default-pose pairs identical; two sheets reviewed. Private evidence scratch/research/area-004; script tools/body_area_chains.py refuses overwrite. Engine/evaluation-source and original hashes verified. Existing HTTP MCP discovery/capabilities passed. No native claims. Next: anchored cycles, omitted-marker/list interactions, relative-size/multi-group morphs or connector styling.
+
+## Latest anchored-cycle research
+
+[AREA-005](experiments/area-005.md): 36 numerical loads, 144 marker rotation assertions, eight local stdio MCP pairs (all equal, asserted), two reviewed sheets. Triangle A/B/C linked to area3 D resolves differently with ID order; omitted D restores cycle area8. Late Head Balls C override leaves already-derived A/B areas3. Source/engine hashes verified; no native claims or renderer changes. Script tools/body_area_cycles.py refuses overwrite; private evidence scratch/research/area-005. Next: omitted-marker/list interactions or other lists/whiskers, relative-size/multi-group morphs, connector styling.

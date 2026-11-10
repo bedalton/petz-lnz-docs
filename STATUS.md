@@ -119,3 +119,5 @@ Updated: 2026-11-10
 - Paint-group continuation audited: [session](docs/session-2026-11-10-paint-groups.md),three complete unit replays pass;298 PNGs,21 copies/21 original hash links,64 MCP records,144 RGBA counts and18 cross-unit links verified. HTTP restarted and actual render matches baseline. No native claim.
 
 - Final reference review consolidates current group evidence and species/pet scope;[session audit](docs/session-2026-11-10-paint-groups.md) remains the resume index.
+
+- Latest: [PAINT-008](experiments/paint-008.md),five selective cache copies and216 direct/36 MCP draws: adult supplies color, matched young rows blend geometry by host ordinal, host count mismatch retains adult.

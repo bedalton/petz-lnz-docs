@@ -5,6 +5,8 @@ from io import BytesIO
 from pathlib import Path
 from PIL import Image
 import petz_renderer
+from petz_renderer.rendering.framebuffer import Framebuffer
+from petz_renderer.rendering.lines import LineBlock,LineRenderer
 from research_common import ROOT,SHA,adult
 
 
@@ -39,6 +41,19 @@ def main():
                 assert SHA(pixels)==record['indexed_sha256']
                 counts['synthetic_buffers']+=1
                 if name=='line-020':
+                    points=(10,12,265,12) if record['axis']=='horizontal' else (12,10,12,265)
+                    plain=Framebuffer(cw,ch,background=254)
+                    LineRenderer(seed=1).draw(plain,LineBlock(*points,start_thick=3,end_thick=3,color=125,
+                        left_color=180,right_color=200,fuzz=0,edge_mode=record['edge_mode']))
+                    assert SHA(plain.pixels)==record['plain_indexed_sha256']
+                    body_indices={y*cw+x for x,y,_,_ in row['samples']}
+                    assert body_indices=={i for i,v in enumerate(plain.pixels) if v==125}
+                    edge_count=0
+                    for i,value in enumerate(plain.pixels):
+                        if i not in body_indices:
+                            assert pixels[i]==value
+                            edge_count+=value in (180,200)
+                    assert edge_count==record['explicit_edge_assertions']
                     for x,y,sample,value in row['samples']:
                         expected=sample if record['has_sign'] and sample>=10 else (sample+record['shade_offset'])%256
                         assert value==expected and pixels[y*cw+x]==value

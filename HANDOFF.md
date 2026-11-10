@@ -4,7 +4,7 @@ Updated: 2026-11-10
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. User wants autonomous continuation through logical units until roughly 65% context use; exact context percentage is not exposed. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request authorized another ten-minute continuation. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
 
 ## Current container recovery
 
@@ -14,13 +14,13 @@ Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for re
 
 Only /workspace is guaranteed persistent. Python 3.12.16 environment is scratch/petz-local-venv; uv cache and managed Python are under scratch. Use uv --link-mode copy on this mount (default cached-wheel installation failed with permission errors). Setup commands: experiments/smoke-001.md and petz-renderer-mcp/docs/local-mcp.md.
 
-Renderer is a separate ignored checkout at 9d72d7afd5f7460ef18133c6179caaf8055082d9, noneditable installed package, with a pre-existing .gitignore modification. No source fixes made. No renderer AGENTS.md found at research start. Local stdio MCP works; hosted available as fallback. Saved .pet support is Petz 4 only. Use `git -c safe.directory=/workspace ...` if ownership checks require it; author/committer configuration is repository-local.
+Renderer is a separate ignored checkout at 9d72d7afd5f7460ef18133c6179caaf8055082d9, noneditable installed package, and is clean at the latest audit (an earlier restore recorded a pre-existing .gitignore modification). No source fixes made. No renderer AGENTS.md found at research start. Local stdio MCP works; hosted available as fallback. Saved .pet support is Petz 4 only. Use `git -c safe.directory=/workspace ...` if ownership checks require it; author/committer configuration is repository-local.
 
 Private inputs/copies/images/provenance live under ignored scratch/research/<experiment-id-lowercase>. games/ and renderer checkout are also ignored. Older experiment scripts overwrite output folders: archive evidence before changing/rerunning them. OMIT-001 instead refuses a fresh run over an existing checkpoint and supports --resume with source/sweep/PNG hash checks. Its resume assumes unchanged renderer/runtime/shared engines; check these before continuing across environment changes. Checkpoints are replaced atomically.
 
 ## Completed research
 
-README.md links thirteen experiment writeups and manifests. All behavior findings remain renderer/asset/code evidence, not native-game validation.
+README.md indexes the experiment writeups and manifests. All behavior findings remain renderer/asset/code evidence, not native-game validation.
 
 - SMOKE-001: Scottie/Siamese inspection/renders across Petz 3/4/5.
 - ANATOMY-001: 67 candidate labels per species from Dalmatian/Siamese; cross-version label/key agreement, not complete visual semantics.

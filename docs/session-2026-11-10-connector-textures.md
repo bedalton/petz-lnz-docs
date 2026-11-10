@@ -24,3 +24,5 @@ LINE-016 records its Petz4 baseline manifest hash. Version flags are explicit in
 See [focused texture reference](../format-reference/connector-textures.md), [field reference](../format-reference/linez.md) and [coverage](coverage.md). Next: other breeds/tile dimensions, threshold/diagonal controls, retained evolving scenes or independent native evidence. Existing texture-drift and iris-omission gaps remain open.
 
 Final local HTTP MCP discovery/get_capabilities pass; private health record scratch/research/line-texture-session-mcp-health.json. Actual experiment comparisons used version-specific local stdio processes.
+
+Final provenance audit: renderer checkout is clean, all session commits use the required author/committer without co-author trailers, and the only unrelated worktree item remains untracked istall-node. Handoff resume guidance now reflects the current timed request rather than an older context-based continuation note.

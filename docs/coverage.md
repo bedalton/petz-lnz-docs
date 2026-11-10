@@ -7,7 +7,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Topic | Current evidence / remaining work |
 | --- | --- |
 | 256 Eyelid Color | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Add Ball | Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); body-area propagation: [AREA-001](../experiments/area-001.md); conflicting-neighbor precedence: [AREA-002](../experiments/area-002.md); body-area lists and format-version gate: [AREA-003](../experiments/area-003.md); remaining fields need tests |
+| Add Ball | Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); body-area propagation: [AREA-001](../experiments/area-001.md); conflicting-neighbor precedence: [AREA-002](../experiments/area-002.md); body-area lists and format-version gate: [AREA-003](../experiments/area-003.md); chain ID-order propagation: [AREA-004](../experiments/area-004.md); remaining fields need tests |
 | Add Ball Override | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Additional Frames | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Adjust Clothing | Inventoried or implementation lead only; dedicated reference/experiment pending |

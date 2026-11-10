@@ -1,6 +1,6 @@
 # Handoff
 
-Updated: 2026-11-09
+Updated: 2026-11-10
 
 ## Resume
 
@@ -98,3 +98,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest body-area-list research
 
 [AREA-003](experiments/area-003.md): 36 numerical checks in Scottie/Siamese, three poses; Lnz Version3 Body Balls/Head Balls override connection-derived marker area3 with area1/8. Both lists resolve8 regardless of textual order. Synthetic Lnz Version1 bypasses lists; this is a format flag, not game version. Eight default-head-pose MCP pairs pixel-identical; two reviewed. Direct head_rotation32 moves only area8 markers. Four engine hashes and installed evaluation source verified. tools/body_area_lists.py refuses overwrite; private evidence scratch/research/area-003. Next: connected chains/cycles, omitted-marker/list interactions, other list conflicts/whisker handling, relative sizing/groups or connector styling. No native claims.
+
+## Latest chain research
+
+[AREA-004](experiments/area-004.md): 24 numerical loads, 72 marker rotation checks and eight local stdio MCP pairs. Three-marker A–B–C chain resolves 8/3/3 in forward ID order, 3/3/3 in reverse ID order; reversed line rows unchanged. All-8 cycle remains8. Default-pose pairs identical; two sheets reviewed. Private evidence scratch/research/area-004; script tools/body_area_chains.py refuses overwrite. Engine/evaluation-source and original hashes verified. Existing HTTP MCP discovery/capabilities passed. No native claims. Next: anchored cycles, omitted-marker/list interactions, relative-size/multi-group morphs or connector styling.

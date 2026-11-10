@@ -55,6 +55,8 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)
 - [VIS-002: Catz 55/56 across poses and views](experiments/vis-002.md)
 
+Latest connected-chain evidence: [AREA-004](experiments/area-004.md), with added-ID propagation controls and an all-head-area cycle.
+
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable manifest; read that only when checking detailed evidence.
 
 Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. Regenerate the section ledger with `tools/coverage_index.py` using the same interpreter.

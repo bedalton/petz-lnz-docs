@@ -1,0 +1,1776 @@
+{
+  "experiment": "AREA-004",
+  "backend": "local stdio MCP default head pose; direct Python head rotation32",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "settings": {
+    "forward": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        8,
+        3,
+        3
+      ]
+    ],
+    "reverse_ids": [
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        3,
+        3,
+        3
+      ]
+    ],
+    "reverse_lines": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        8,
+        3,
+        3
+      ]
+    ],
+    "cycle": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        8,
+        8,
+        8
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "id_maps": {
+        "forward": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        },
+        "reverse_ids": {
+          "2": 90,
+          "1": 91,
+          "0": 92
+        },
+        "reverse_lines": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        },
+        "cycle": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        }
+      },
+      "paths": {
+        "forward": "Dogz-forward.dog",
+        "reverse_ids": "Dogz-reverse_ids.dog",
+        "reverse_lines": "Dogz-reverse_lines.dog",
+        "cycle": "Dogz-cycle.dog"
+      },
+      "input_hashes": {
+        "forward": "687f8934c5fb6e3a4042b4e205b0b2b46e21d8a388a9e23837216eeeca64cbdc",
+        "reverse_ids": "f79847017baa20cade9cd9a876ba0a10122e6c622460b283b38824834d905611",
+        "reverse_lines": "9968febdc126900214db1427a8f162b27ae18af91b328d906e44dfaf3efe54ef",
+        "cycle": "53b2b838cef10c73caf00fe937d57fae7aabd2704dbcb72e2b0af2664d8d4ca8"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -25,
+              "y": -97,
+              "z": -71,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -25,
+              "y": -97,
+              "z": -71,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -25,
+              "y": -97,
+              "z": -71,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -15,
+              "y": -94,
+              "z": -81,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -91,
+              "z": -90,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -15,
+              "y": -130,
+              "z": -27,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -15,
+              "y": -130,
+              "z": -27,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -125,
+              "z": -33,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 17,
+              "y": -123,
+              "z": -31,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -15,
+              "y": -130,
+              "z": -27,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -125,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -119,
+              "z": -44,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -12,
+              "y": -51,
+              "z": -78,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -12,
+              "y": -51,
+              "z": -78,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -12,
+              "y": -51,
+              "z": -78,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": -47,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -44,
+              "z": -98,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "id_maps": {
+        "forward": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        },
+        "reverse_ids": {
+          "2": 90,
+          "1": 91,
+          "0": 92
+        },
+        "reverse_lines": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        },
+        "cycle": {
+          "0": 90,
+          "1": 91,
+          "2": 92
+        }
+      },
+      "paths": {
+        "forward": "Catz-forward.cat",
+        "reverse_ids": "Catz-reverse_ids.cat",
+        "reverse_lines": "Catz-reverse_lines.cat",
+        "cycle": "Catz-cycle.cat"
+      },
+      "input_hashes": {
+        "forward": "7a2d2b7a0d2bf56d645dd550ca3a25a5e3eed37ed12722e17436004c4c2b44dc",
+        "reverse_ids": "9b3f74b0920672481b039f104fbf7b078318ca9bbf3eee6c7b063e5f658a8549",
+        "reverse_lines": "f9d36294e42cf9959c5de8639f0f89108ead05689098ebda54388915fe630525",
+        "cycle": "cd8d7fc6a28b78bee69b9255ed9c609873b744c99d6da57c9b67af4130eb73d4"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -22,
+              "y": -93,
+              "z": -74,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -22,
+              "y": -93,
+              "z": -74,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -22,
+              "y": -93,
+              "z": -74,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -14,
+              "y": -90,
+              "z": -83,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -88,
+              "z": -90,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -11,
+              "y": -134,
+              "z": -36,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -11,
+              "y": -134,
+              "z": -36,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -130,
+              "z": -40,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -128,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -11,
+              "y": -134,
+              "z": -36,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -129,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -124,
+              "z": -50,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "forward",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -24,
+              "y": -5,
+              "z": -236,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_ids",
+          "semantic_areas": [
+            3,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_lines",
+          "semantic_areas": [
+            8,
+            3,
+            3
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -24,
+              "y": -5,
+              "z": -236,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "cycle",
+          "semantic_areas": [
+            8,
+            8,
+            8
+          ],
+          "neutral_markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "z": -254,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "head_rotated_markers": [
+            {
+              "x": -24,
+              "y": -5,
+              "z": -236,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -16,
+              "y": -2,
+              "z": -244,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -8,
+              "y": 0,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-forward.dog",
+        "after_path": "Dogz-reverse_ids.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "99af389d55fb14a0dbff6c9592a62c977edd81fc7f1505b8247a78bdd12e096f",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-forward.dog",
+        "after_path": "Dogz-reverse_ids.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "92754831cc6a55dbca1ccf5465e0dfb98489feb387d462e3af786203cd0dd914",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-forward.dog",
+        "after_path": "Dogz-reverse_lines.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "99af389d55fb14a0dbff6c9592a62c977edd81fc7f1505b8247a78bdd12e096f",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-forward.dog",
+        "after_path": "Dogz-reverse_lines.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "92754831cc6a55dbca1ccf5465e0dfb98489feb387d462e3af786203cd0dd914",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-forward.cat",
+        "after_path": "Catz-reverse_ids.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "fb39b0bd8204046aaac833937c6ead74be3eb7a06689846a656269d65e66b4aa",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-forward.cat",
+        "after_path": "Catz-reverse_ids.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0347294f8b67eafd1bea14c44254a4de2bd2c7f4c98d2b7c7eb0fcd294e6f648",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-forward.cat",
+        "after_path": "Catz-reverse_lines.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "fb39b0bd8204046aaac833937c6ead74be3eb7a06689846a656269d65e66b4aa",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-forward.cat",
+        "after_path": "Catz-reverse_lines.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0347294f8b67eafd1bea14c44254a4de2bd2c7f4c98d2b7c7eb0fcd294e6f648",
+      "cells_equal": true
+    }
+  ],
+  "evaluation_source_sha256": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

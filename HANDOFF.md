@@ -326,3 +326,7 @@ A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE
 ## Individual paint-angle attribution
 
 [PAINT-002](experiments/paint-002.md) isolates PAINT-001 host-versus-combined changes to angles on paint-list entries16/17/18. All other commands/geometry equal;all-three substitution restores host-only pixels in24/24. Individual visible counts4/23/16 of24;not anatomical semantics or additive attribution.144 PNGs/48 prior links verified,two private standing front/side sheets reviewed. No new MCP calls,renderer/original edits or native claims.
+
+## Paint-state vector controls
+
+[PAINT-003](experiments/paint-003.md):Fuzzkin has19 paint entries;18/20-entry states reset the whole paint vector during preparation.48 mismatch controls match host-only;24 exact-zero controls do too. Active-only and inactive-slot controls each match combined in24.168 PNGs/48 prior links verify;no new MCP calls or renderer/original edits. Same-count paint reordering is not tested;retain state with its exact appearance/index ordering.

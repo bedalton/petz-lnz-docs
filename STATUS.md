@@ -99,3 +99,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-001](experiments/paint-001.md),Fuzzkin nonzero paint-angle state changes pixels in24/24 histories;Homebody negative control0/24. 192 transitions/336 final draws/12 new MCP baselines pass;348 PNGs verified.
 
 - Latest: [PAINT-002](experiments/paint-002.md),three paint-angle command substitutions explain all24 Fuzzkin host/combined differences;144 PNGs/48 cross-unit links verified. Two front/side sheets reviewed.
+
+- Latest: [PAINT-003](experiments/paint-003.md),wrong-length paint-state vectors reset all angles:48 short/long controls match host-only;168 PNGs/48 prior links pass. Preserve full indexed state vectors.

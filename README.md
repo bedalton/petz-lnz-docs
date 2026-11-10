@@ -48,6 +48,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [AREA-002: conflicting neighbor precedence](experiments/area-002.md)
 - [AREA-001: connection-derived body areas](experiments/area-001.md)
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
+- [LINE-018: viewport clamping and texture eligibility](experiments/line-018.md)
 - [LINE-017: diagonal texture thresholds and samples](experiments/line-017.md)
 - [LINE-016: connector texture routing across versions](experiments/line-016.md)
 - [LINE-015: oversized textured breed connectors](experiments/line-015.md)

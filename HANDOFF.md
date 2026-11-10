@@ -218,3 +218,7 @@ Full installed-source audit:62 Python sources match renderer checkout; hash map 
 ## Latest diagonal texture research
 
 [LINE-017](experiments/line-017.md): 360 asset-free direct rasters,216 accepted/144 rejected,10,512 exact samples and180 reversed endpoint/taper pairs. Exact-fit tiles draw; one-pixel-short width/height rejects before RNG. Screen-aligned sampling holds across six slopes/directions and fuzz0/1/7. Plain support supplies window bounds; no clipping/signed shading/MCP/native claim. Private pixels/samples scratch/research/line-017/pixels.json hash-linked from manifest. Source hashes match installed/checkout; renderer unchanged. Reproducer tools/line_texture_diagonal.py refuses overwrite. Next: clipping or signed/shaded sampling, other breeds/evolving scenes or independent native evidence.
+
+## Latest clipped texture research
+
+[LINE-018](experiments/line-018.md):180 asset-free rasters,128 accepted/52 rejected,2,184 exact fuzz0 samples. Viewport corner clamps precede texture size guard; tile24 draws all cases on24x24 canvas. Nine of twelve plain geometry cases differ from cropping large translated controls; outside lines can collapse onto borders. Positive-fuzz support/RNG checks do not independently trace corner math. Private pixels/samples scratch/research/line-018 hash-linked; sources match checkout. No renderer/MCP/native claims. Next: signed/shaded paint,broader breeds/evolving scenes or native evidence.

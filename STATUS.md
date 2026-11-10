@@ -61,4 +61,5 @@ Updated: 2026-11-10
 - History session verification: [partial rows/composed RNG](docs/session-2026-11-10-line-history.md): three units,68 local MCP comparison/baseline checks,168 numerical loads,156 history/intervention compositions;58 copies/92 PNGs/292 RGBA cells/312 RNG snapshots verified, including cross-unit cell links and state-preserving attribution; Catz step0/1 control differences explicitly documented.
 - Texture connector session: [overview/verification](docs/session-2026-11-10-connector-textures.md): four units,64 MCP pairs,126 numerical loads,72 synthetic buffers/120 exact samples;42 copies/128 RGBA cells verified; all62 installed sources match clean renderer checkout; handoff duration/scope audited.
 - Latest: [LINE-017](experiments/line-017.md), 360 asset-free diagonal rasters/10,512 exact pixel samples: exact-fit thresholds, screen-aligned sampling and 180 reversed-taper equivalences; no MCP/native claim.
+- Latest: [LINE-018](experiments/line-018.md),180 asset-free rasters/2,184 samples: viewport corner clamping precedes size rejection; nine of twelve plain cases differ from cropping a larger render.
 - Resume: [HANDOFF.md](HANDOFF.md).

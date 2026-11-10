@@ -4,7 +4,7 @@ Updated: 2026-11-10
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is to record the porting-agent limitations; the previous timed continuation was fifteen minutes. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is a fifteen-minute continuation, recorded in [the shading session](docs/session-2026-11-10-shading.md). The porting-agent limitations remain active below. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
 
 ## Known incomplete features
 
@@ -264,3 +264,9 @@ Next: custom art, young resources/broader versions, other evolving scenes, or in
 ## Latest omission/shade interaction
 
 [SHADE-003](experiments/shade-003.md):804 base omission assemblies,23 three-cell shade counterfactuals,23 local MCP pairs/46 exact direct-MCP cell links.11 omissions reduce depth,seven change fills,eight change shade-only pixels;793 depth-preserving cases retain shade/fills.12 copies,69 indexed/RGBA cells checked,three sheets reviewed. Private scratch/research/shade-003; verifier checks loader incident-line pruning separately. Renderer/originals unchanged; no native claim. This fifteen-minute continuation is entering final integrity audit.
+
+## Fifteen-minute shading continuation audit
+
+[Session index](docs/session-2026-11-10-shading.md) consolidates SHADE-001/002/003 and exact verification counts. All three unit verifiers and tools/check_shading_session.py pass:26 saved copies/24 unique hashes,71 MCP pairs+24 fresh baselines,84 slope loads/804 omission assemblies,96 retained-shade histories/384 transitions,23 omission counterfactual compositions,214 PNGs/427 RGBA cells/261 indexed buffers,39 cross-unit pixel links. Seven sheets reviewed. All62 installed Python sources match the clean renderer checkout; local HTTP MCP discovery/capabilities passes. Sources/tool hashes,executable hash and health are private scratch/research/shading-*. No renderer/native claim; GAP-006/007 unchanged.
+
+Next: other breeds/versions/young-resource shading;component attribution for the one-pixel equal-fill omission case;untested shape/eyes/whiskers;or independent native evidence. All requested research stays in copies; unrelated istall-node untouched. Latest authorization is this fifteen-minute continuation only; follow the next requested duration.

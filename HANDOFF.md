@@ -364,3 +364,7 @@ Final reference review adds Goobe to the Paint Ballz scope and places native-sem
 ## Selective paint cache matching
 
 [PAINT-008](experiments/paint-008.md):Fuzzkin ages0/12/33/50/99/100,three poses/front-side;five copy variants,216 direct draws,36 MCP matches,18 PAINT-007 links. Young color has no effect;adult color changes34/36 views. Matched size changes22/36;young reorder changes24/36;one young row dropped makes all three host rows use adult,exactly matching baseline. Code and independent arithmetic support matching by host ordinal. Replay tools/saved_paint_age_matching.py --verify;private evidence scratch/research/paint-008. Originals/renderer unchanged,no native claim. Ten-minute continuation ongoing.
+
+## Same-length paint state reordering
+
+[PAINT-009](experiments/paint-009.md):24 Fuzzkin histories/120 direct draws. Same-host real angles equal,so remap changes nothing. Distinct diagnostic angle pairs isolate stale index binding;entries16/18 misattach in24/24 and pixels differ23/24 while geometry/ordering/non-angle commands stay fixed. Reorder alone also changes23 actual views. All24 PAINT-001 state and PNG links verify. tools/paint_state_reordering.py --verify passes;no new MCP,original/renderer edits or native claims. Ten-minute continuation ongoing.

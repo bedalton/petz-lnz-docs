@@ -121,3 +121,5 @@ Updated: 2026-11-10
 - Final reference review consolidates current group evidence and species/pet scope;[session audit](docs/session-2026-11-10-paint-groups.md) remains the resume index.
 
 - Latest: [PAINT-008](experiments/paint-008.md),five selective cache copies and216 direct/36 MCP draws: adult supplies color, matched young rows blend geometry by host ordinal, host count mismatch retains adult.
+
+- Latest: [PAINT-009](experiments/paint-009.md),24 same-length reorder fixtures/120 draws: actual active angles equal;distinct test angles misattach by stale index and change23/24 views.

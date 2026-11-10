@@ -1,0 +1,2055 @@
+{
+  "experiment": "PAINT-009",
+  "backend": "direct retained-state paint permutation; no new MCP calls",
+  "provenance": {
+    "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+    "source_hashes": {
+      "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "appearance/breed_variations.py": "d1aefb0e74f4a94f6a45e145b305339a9f19ec9cc40bdbee0c93200399687225",
+      "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+      "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "appearance/preview.py": "79b525a2696ef383b565256b711334294fd370cac4ef8563236894563f0051cc",
+      "appearance/variations.py": "03c4ed213ec6c694d7c07ee8e6f610d90b89ed1ae89bb839a7cba98e0f81d1fb",
+      "cli.py": "2f5b30afd3dee6d16460f9efbdd378d8b731469e5bd13c853ceaa86738491761",
+      "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "local.py": "d3b7bbbc59cbe445a18770caf19fda7dde3ff5d530e4ef1331e30b132f49a493",
+      "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "service/application.py": "69f2408f6fd47b90437bdf4f712f8e9d19e9382b78ca6af2553f15d517d74173",
+      "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "service/inspection.py": "24524a376ce7d2dc7aa74eee1bf1e0cbfb4c3b69fca37c3ed40de207de29a0c9",
+      "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "service/mcp.py": "2601e07d89fc967bdc5fc221940bec2161f7102db221e191425f73662bf62be3",
+      "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649",
+      "service/sheets.py": "ca0b9eb408d7854c1b3253ac72a198ef7f1582f57bdcca6839d63c06adb08b32",
+      "service/tool_inputs.py": "68815dbd2e41afd22276a1a9c032f81a1aa86e17ab3e63e60dd2ac83e6502e3c",
+      "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197"
+    },
+    "engine_hashes": {
+      "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+      "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+    },
+    "dependencies": {
+      "petz-renderer-mcp": "0.1.0",
+      "fastmcp": "4.1.6",
+      "pillow": "13.0.0"
+    },
+    "prior_manifest_sha256": "6101ac76fcc6d20bf407b174cc04b3e7f83e84459414185355215364aa13de1e"
+  },
+  "prior_manifest_sha256": "6101ac76fcc6d20bf407b174cc04b3e7f83e84459414185355215364aa13de1e",
+  "controls": {
+    "new_index_to_old_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      17,
+      16
+    ],
+    "angle_deltas": [
+      [
+        37,
+        -23
+      ],
+      [
+        -17,
+        11
+      ],
+      [
+        7,
+        41
+      ]
+    ],
+    "raster_seed": 1,
+    "line_seed": 1,
+    "step": 0,
+    "geometry_state": "fresh; only PAINT-001 host orientations and paint angles retained"
+  },
+  "cases": [
+    {
+      "prior_folder": "Fuzzkin-standing-0-repeat",
+      "state_sha256": "e6605dfda6d1cad100b52d9ac3d448d5f45184c272ee9b7f9ba83672651309ea",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-0-repeat-original_actual.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "rgba_sha256": "10ecd875b1d61c9cc2924faa467dfb3524172ced7f2779ebf935d0b76c9a8008",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-0-repeat-reordered_actual.png",
+          "png_sha256": "b7d38696e2db62ef19a309962f6f0b61c929f828c85da001f0cb7205be92a6a6",
+          "rgba_sha256": "5c9de7c12a16fc37e201a4bbf26a38b829eccf111157078610f3574612ad7af3",
+          "indexed_sha256": "0946d2f32f3f899fd09f4f914b76ca720dac1c864c55c502a790656ed49c11c2"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-0-repeat-reordered_actual_remap.png",
+          "png_sha256": "b7d38696e2db62ef19a309962f6f0b61c929f828c85da001f0cb7205be92a6a6",
+          "rgba_sha256": "5c9de7c12a16fc37e201a4bbf26a38b829eccf111157078610f3574612ad7af3",
+          "indexed_sha256": "0946d2f32f3f899fd09f4f914b76ca720dac1c864c55c502a790656ed49c11c2"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-0-repeat-reordered_tagged_stale.png",
+          "png_sha256": "9e01d6ccff33c8679fa74e6390df846c9a483926d37c3bf80d6bd0db50286507",
+          "rgba_sha256": "165e5f23525cc340f29af0622c725baa1e1b8f9d424d1928cc833b469e3c4140",
+          "indexed_sha256": "869d8cdcd6ee2fa83719d90b28f6754e83bcb15b9fc845bd93027cbdfe7de1c3"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-0-repeat-reordered_tagged_remap.png",
+          "png_sha256": "9dd25b1205f73cbd6ff6169c348c3813bb52431e2082d42444d145e64e308ff8",
+          "rgba_sha256": "ec1d7759187801e45a7df939d37b7218acb897978aabfc946e1a567bf6a414e6",
+          "indexed_sha256": "10fa60d92ad97dead145e9a54dce6f68fe52ca50ef59cb0387933dee92fef0eb"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -13
+        ],
+        [
+          0,
+          -13
+        ],
+        [
+          0,
+          -13
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -36
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          28
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          37,
+          -36
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 41,
+      "actual_order_only_rgba_changed": 37
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-0-yaw_arc",
+      "state_sha256": "b9890dce4519766f697bfef523c72df10132d7628dc2bcafad4139daadce1702",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-0-yaw_arc-original_actual.png",
+          "png_sha256": "78c2a49a81e1ea26b3757c3372a6a93c17cf8158baf3a8e85a1f980507d1bd0e",
+          "rgba_sha256": "cae6435a0ccfc7e5993249209d274e1af2a634f787afc76c77e11f0463ba897d",
+          "indexed_sha256": "b81fcc84b05053a387cf534fecf2ab120178157630cf54313303dba92fbe69a5"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-0-yaw_arc-reordered_actual.png",
+          "png_sha256": "fac6691cf7f2902f5158ffabb5460d773479178a5111e4ea52c26f95eb2050a0",
+          "rgba_sha256": "d7e8d3d4e8e41eb584aafd474c07bef8cc8ee6cb352185abe138025992b478c6",
+          "indexed_sha256": "83a230e31540d88fe920811d6714e6c496be9ee4a116ee5ca6953e709c22e58f"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-0-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "fac6691cf7f2902f5158ffabb5460d773479178a5111e4ea52c26f95eb2050a0",
+          "rgba_sha256": "d7e8d3d4e8e41eb584aafd474c07bef8cc8ee6cb352185abe138025992b478c6",
+          "indexed_sha256": "83a230e31540d88fe920811d6714e6c496be9ee4a116ee5ca6953e709c22e58f"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-0-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "07335619454f3fee2186de033aaa628b1fc8cdfb814888c06a716f40994d715a",
+          "rgba_sha256": "f860fcdacf9fc41cd24526ad0837d144168457be41f601fd0de37d84e7f7c3ae",
+          "indexed_sha256": "b139ede910451ec24d5f35c38289eef85fe2ba690d4b875c1591752e9882d86f"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-0-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "e97afcf6e6acbcf3c5ce46e72dfbb856ad8bda963a951093325bec9a6fcc639b",
+          "rgba_sha256": "37537c6aac6aed6049b87223c381336ad65e5119483c0fbc28fef1ed24dca7cb",
+          "indexed_sha256": "5bd1fe328940fb6f72a213e735c2c11d2bc6899bcf5c6b7d6d237672ab2c86ea"
+        }
+      },
+      "actual_active_angles": [
+        [
+          14,
+          -8
+        ],
+        [
+          14,
+          -8
+        ],
+        [
+          14,
+          -8
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          35,
+          -32
+        ],
+        [
+          -19,
+          2
+        ],
+        [
+          5,
+          32
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          5,
+          32
+        ],
+        [
+          -19,
+          2
+        ],
+        [
+          35,
+          -32
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 42,
+      "actual_order_only_rgba_changed": 37
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-0-head_arc",
+      "state_sha256": "12f6607479291480c84e40a29039d233be9ea6b8f09adbafe836e4beb57d351d",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-0-head_arc-original_actual.png",
+          "png_sha256": "27e936f7a3693ee097622ccfe4ad5b403552a4ca96b1d693aed643de611fb371",
+          "rgba_sha256": "e8320c16f115931093bb46409473008679e4320fb14b24ccdd48f5a807b201c3",
+          "indexed_sha256": "3378faaa24bf66c61785048db7a0981c2ac0ee4cdcdcf28bd69bab847224bfb7"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-0-head_arc-reordered_actual.png",
+          "png_sha256": "e9a04dbcb59de7bbd1f366da45544a9c28a0f203196564529b82920578f433d5",
+          "rgba_sha256": "d316c5c1b0d6ce294b26698cd9bf95202dc7343211372d8ce1b9d919afd9f4a3",
+          "indexed_sha256": "f3d1031cf6d6c5db9b54d2dfc04e573bfa156f1f64f52ae08a6bc96723c1fde6"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-0-head_arc-reordered_actual_remap.png",
+          "png_sha256": "e9a04dbcb59de7bbd1f366da45544a9c28a0f203196564529b82920578f433d5",
+          "rgba_sha256": "d316c5c1b0d6ce294b26698cd9bf95202dc7343211372d8ce1b9d919afd9f4a3",
+          "indexed_sha256": "f3d1031cf6d6c5db9b54d2dfc04e573bfa156f1f64f52ae08a6bc96723c1fde6"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-0-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "615df05de6000e40a24e4035786f7b8d30590d6e24141a9b0a3a4b60e185f8e2",
+          "rgba_sha256": "a2a3f146220bb0ca16a66bc141d1d475fbdc45ce5d0e9356a660873388c125f5",
+          "indexed_sha256": "ed0b0c4daf7df246af5f5858cde323c9462843397f394105fb4112c4ec2b29fa"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-0-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "f66110a269559273cc9fd37cab6cb544fa6c76ce598e8b098c65f946a84b0d5a",
+          "rgba_sha256": "c694096d9780fef82f5e3a0397e71a511043f32a1945726861cd2c633e24a328",
+          "indexed_sha256": "4c6678cd4ca0deda3c006c8d6aa8ada6f9b6d112a337eae50a63445234d3baf8"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -13
+        ],
+        [
+          0,
+          -13
+        ],
+        [
+          0,
+          -13
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -36
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          28
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          37,
+          -36
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 41,
+      "actual_order_only_rgba_changed": 37
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-0-tilt_arc",
+      "state_sha256": "cafa3d73b88455f6e7c0eeb21a9df42169eed69e8f3da9ea07c153fcba87249d",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-0-tilt_arc-original_actual.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "rgba_sha256": "10ecd875b1d61c9cc2924faa467dfb3524172ced7f2779ebf935d0b76c9a8008",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-0-tilt_arc-reordered_actual.png",
+          "png_sha256": "b7d38696e2db62ef19a309962f6f0b61c929f828c85da001f0cb7205be92a6a6",
+          "rgba_sha256": "5c9de7c12a16fc37e201a4bbf26a38b829eccf111157078610f3574612ad7af3",
+          "indexed_sha256": "0946d2f32f3f899fd09f4f914b76ca720dac1c864c55c502a790656ed49c11c2"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-0-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "b7d38696e2db62ef19a309962f6f0b61c929f828c85da001f0cb7205be92a6a6",
+          "rgba_sha256": "5c9de7c12a16fc37e201a4bbf26a38b829eccf111157078610f3574612ad7af3",
+          "indexed_sha256": "0946d2f32f3f899fd09f4f914b76ca720dac1c864c55c502a790656ed49c11c2"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-0-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "9e01d6ccff33c8679fa74e6390df846c9a483926d37c3bf80d6bd0db50286507",
+          "rgba_sha256": "165e5f23525cc340f29af0622c725baa1e1b8f9d424d1928cc833b469e3c4140",
+          "indexed_sha256": "869d8cdcd6ee2fa83719d90b28f6754e83bcb15b9fc845bd93027cbdfe7de1c3"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-0-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "9dd25b1205f73cbd6ff6169c348c3813bb52431e2082d42444d145e64e308ff8",
+          "rgba_sha256": "ec1d7759187801e45a7df939d37b7218acb897978aabfc946e1a567bf6a414e6",
+          "indexed_sha256": "10fa60d92ad97dead145e9a54dce6f68fe52ca50ef59cb0387933dee92fef0eb"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -5
+        ],
+        [
+          0,
+          -5
+        ],
+        [
+          0,
+          -5
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -36
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          28
+        ],
+        [
+          -17,
+          -2
+        ],
+        [
+          37,
+          -36
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 41,
+      "actual_order_only_rgba_changed": 37
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-90-repeat",
+      "state_sha256": "0a43577a768cb466c5e28e2ee73721bf878c9b90cbe77be42b447f2e84ef336b",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-90-repeat-original_actual.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "rgba_sha256": "bb6c8c992301f25329ba190ff2563b928965dd89af6536a51e9ea15f88ba3693",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-90-repeat-reordered_actual.png",
+          "png_sha256": "3601f79210ac5372347facd33e606c826547670eb0c36b7f12f1632761056aa0",
+          "rgba_sha256": "74596182924dff594cbfdd655ff4c9ef01c2a8ea40eaf88da25153c6d5d31f60",
+          "indexed_sha256": "6ec44d3bb7102094b2142055a200ab18b32ff2274ec20c122dcd503b351cfd78"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-90-repeat-reordered_actual_remap.png",
+          "png_sha256": "3601f79210ac5372347facd33e606c826547670eb0c36b7f12f1632761056aa0",
+          "rgba_sha256": "74596182924dff594cbfdd655ff4c9ef01c2a8ea40eaf88da25153c6d5d31f60",
+          "indexed_sha256": "6ec44d3bb7102094b2142055a200ab18b32ff2274ec20c122dcd503b351cfd78"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-90-repeat-reordered_tagged_stale.png",
+          "png_sha256": "0b94a3d359ddcf9262661938c50aa1db3fd78fb99c5cfd04d6abebec9b4a516e",
+          "rgba_sha256": "929f195ae9a5b2e1c290a77d7a8eb6f1202fad42b25b3a53f04fd9e0a9de9515",
+          "indexed_sha256": "17a67c20ba982785fbb4d303f8126ca55ea20fd2e01e6cb1b801b76134f0d651"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-90-repeat-reordered_tagged_remap.png",
+          "png_sha256": "b77b3dda515a421d15926df34ee54c6d6b1e0202dd463ebd41bbb3c2d9897f0f",
+          "rgba_sha256": "fc9cede9ac081eca4ed3627070533b4b586ac55a6ff009d46a8e60a9d79354f0",
+          "indexed_sha256": "425c2e88fb8342a190d6f48b4e7c8bc62b7af7d7cbf9e69df58d77909be087b3"
+        }
+      },
+      "actual_active_angles": [
+        [
+          64,
+          0
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          64,
+          0
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          101,
+          -23
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          71,
+          41
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          71,
+          41
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          101,
+          -23
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 21,
+      "actual_order_only_rgba_changed": 22
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-90-yaw_arc",
+      "state_sha256": "6fe7e394c601b8d55423c712176f8ea43c6ed44dd97572acc8c96ddc831e8aea",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-90-yaw_arc-original_actual.png",
+          "png_sha256": "1a125a68d56c76904bae2a50fc0983715f6a5fa50a97088efba5bfd14517bdc3",
+          "rgba_sha256": "8ce77246f15aea857352da1f8c5993f9c2efe40e8d60c6685a77864e9c31e4e8",
+          "indexed_sha256": "fa808e6274f4b40013a4f01ef6eca96ce5f3904e4c5877220f964f41a2b3c8ed"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-90-yaw_arc-reordered_actual.png",
+          "png_sha256": "fc6c761c76ebe79dbb3125b95dbccb4ebb66a9f2d638697380bd0a4d4c8a809f",
+          "rgba_sha256": "62014409e81d7d1d12a1d21140461f38b77004c20e9c72c31a69259042855398",
+          "indexed_sha256": "6bd85bc901100ff16a435fce7863dcdf9dc1b72e43cd5cc219c7d3a125b6ac64"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-90-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "fc6c761c76ebe79dbb3125b95dbccb4ebb66a9f2d638697380bd0a4d4c8a809f",
+          "rgba_sha256": "62014409e81d7d1d12a1d21140461f38b77004c20e9c72c31a69259042855398",
+          "indexed_sha256": "6bd85bc901100ff16a435fce7863dcdf9dc1b72e43cd5cc219c7d3a125b6ac64"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-90-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "0ffe53e1f7641f8ef2d8bcaaf412c2caebc66767fbfc65812f8a4eff0c833698",
+          "rgba_sha256": "fbb8a50c59bc9432605a96cc6467ccb780713aa2cf0647e27a3884899e553b08",
+          "indexed_sha256": "5aa956dd6d41d2e6a5d8b996eef2850e6aba328f6570cc4c91164e472ad5737d"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-90-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "6fb06f3f6e06fd2f8df239e99beb8084c3edfbf82ed4bbd9b6b4f0da0cd83cb5",
+          "rgba_sha256": "fb6342233c1ec7ce4df74999bcd90bc40e9da59840138480ca31bacf13e671a0",
+          "indexed_sha256": "5a4f2ee919fddc5eeb1afcfe3dfcaaaf0faeb430ff95dde508e93732df410d43"
+        }
+      },
+      "actual_active_angles": [
+        [
+          81,
+          2
+        ],
+        [
+          81,
+          2
+        ],
+        [
+          81,
+          2
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          102,
+          -19
+        ],
+        [
+          48,
+          15
+        ],
+        [
+          72,
+          45
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          72,
+          45
+        ],
+        [
+          48,
+          15
+        ],
+        [
+          102,
+          -19
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 24,
+      "actual_order_only_rgba_changed": 22
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-90-head_arc",
+      "state_sha256": "7e118c0fb84747b50551fc4fe8ea9963f52c75c042f1ff47859783e09309f3bf",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-90-head_arc-original_actual.png",
+          "png_sha256": "9e86d11c5999bc8762b30d620c07263d0bcd001fbd51dd8577d76d39d4c292ed",
+          "rgba_sha256": "f2afabc2136090ad171828507092cd95c7c6d04457089ef68c8b344f4fb3da4b",
+          "indexed_sha256": "4cfade8b552e31947991ceb2ea1afd7a6632f4448f2cceb0c9a17d56d9214654"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-90-head_arc-reordered_actual.png",
+          "png_sha256": "cf5f203e319819eb31ea123b694e670db9e1df158dbeb6d59ffc9a3944c9acf6",
+          "rgba_sha256": "9649e57eb2c9d46e6dcd537b5776be820ca014a8fa5ef841d659b82131e9c3bf",
+          "indexed_sha256": "8488b0c7b6479c7196570bdbb8de38b0896746cf433643e79e00631dc792c5f2"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-90-head_arc-reordered_actual_remap.png",
+          "png_sha256": "cf5f203e319819eb31ea123b694e670db9e1df158dbeb6d59ffc9a3944c9acf6",
+          "rgba_sha256": "9649e57eb2c9d46e6dcd537b5776be820ca014a8fa5ef841d659b82131e9c3bf",
+          "indexed_sha256": "8488b0c7b6479c7196570bdbb8de38b0896746cf433643e79e00631dc792c5f2"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-90-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "a8ebf266271195133b500974f252252bc49af92da6d4a709afab1cc238d55c06",
+          "rgba_sha256": "052f48d5f94cda61d9c6ed487cb6a4c29530117b0fadcb76221088bbeebd8d19",
+          "indexed_sha256": "abeed5a4c859dd383c28301e9a7239995a3a506b83b3b23133cbd06bd04a026d"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-90-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "ef10f5b493991376ec812e6d4abc19786f46b2236e179ac1ebeb381882494077",
+          "rgba_sha256": "b979beda7655d9ac484fc609c0a74bb6a05fe93a30cabeac6ee66d21526f288b",
+          "indexed_sha256": "788958e0f7534e9e90deb34ea69679d3a821d08548554ce4dd60d7b24b320af8"
+        }
+      },
+      "actual_active_angles": [
+        [
+          64,
+          0
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          64,
+          0
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          101,
+          -23
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          71,
+          41
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          71,
+          41
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          101,
+          -23
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 21,
+      "actual_order_only_rgba_changed": 22
+    },
+    {
+      "prior_folder": "Fuzzkin-standing-90-tilt_arc",
+      "state_sha256": "1443b0df1a0f11fe64a3d34eea16763ae98581bd171a2c4c32d3a7f56c3d8e7c",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-standing-90-tilt_arc-original_actual.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "rgba_sha256": "bb6c8c992301f25329ba190ff2563b928965dd89af6536a51e9ea15f88ba3693",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-standing-90-tilt_arc-reordered_actual.png",
+          "png_sha256": "3601f79210ac5372347facd33e606c826547670eb0c36b7f12f1632761056aa0",
+          "rgba_sha256": "74596182924dff594cbfdd655ff4c9ef01c2a8ea40eaf88da25153c6d5d31f60",
+          "indexed_sha256": "6ec44d3bb7102094b2142055a200ab18b32ff2274ec20c122dcd503b351cfd78"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-standing-90-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "3601f79210ac5372347facd33e606c826547670eb0c36b7f12f1632761056aa0",
+          "rgba_sha256": "74596182924dff594cbfdd655ff4c9ef01c2a8ea40eaf88da25153c6d5d31f60",
+          "indexed_sha256": "6ec44d3bb7102094b2142055a200ab18b32ff2274ec20c122dcd503b351cfd78"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-standing-90-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "0b94a3d359ddcf9262661938c50aa1db3fd78fb99c5cfd04d6abebec9b4a516e",
+          "rgba_sha256": "929f195ae9a5b2e1c290a77d7a8eb6f1202fad42b25b3a53f04fd9e0a9de9515",
+          "indexed_sha256": "17a67c20ba982785fbb4d303f8126ca55ea20fd2e01e6cb1b801b76134f0d651"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-standing-90-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "b77b3dda515a421d15926df34ee54c6d6b1e0202dd463ebd41bbb3c2d9897f0f",
+          "rgba_sha256": "fc9cede9ac081eca4ed3627070533b4b586ac55a6ff009d46a8e60a9d79354f0",
+          "indexed_sha256": "425c2e88fb8342a190d6f48b4e7c8bc62b7af7d7cbf9e69df58d77909be087b3"
+        }
+      },
+      "actual_active_angles": [
+        [
+          64,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          64,
+          8
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          101,
+          -23
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          71,
+          41
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          71,
+          41
+        ],
+        [
+          47,
+          11
+        ],
+        [
+          101,
+          -23
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 21,
+      "actual_order_only_rgba_changed": 22
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-0-repeat",
+      "state_sha256": "de28ce249f084b903b07d208376417297673117958e0a7beb6039ab7fc4108e1",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-0-repeat-original_actual.png",
+          "png_sha256": "e7b373076eaaf199f5831be5512ba0f6877b8b196d00f0b85e817895725a7903",
+          "rgba_sha256": "cf7df886b5e626e94607bf9e97f144a1956d68509f83e9647cbee2bbd556a66b",
+          "indexed_sha256": "31ecba2d87f5ef1267978d98de88b4df7bad37067db0ee27be3321463c86a64f"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-0-repeat-reordered_actual.png",
+          "png_sha256": "145defdf9745d80760ae2171950692f87274a11a37057f4afc73cced063cf807",
+          "rgba_sha256": "2d73ac7f87cd5d56a573e8d5edbe54777d37855c0ae6882c035a470ce43c0d57",
+          "indexed_sha256": "067cd159677e7cfef9194bb75dfa989568bd4e9723e9df716e29507cec16b08b"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-0-repeat-reordered_actual_remap.png",
+          "png_sha256": "145defdf9745d80760ae2171950692f87274a11a37057f4afc73cced063cf807",
+          "rgba_sha256": "2d73ac7f87cd5d56a573e8d5edbe54777d37855c0ae6882c035a470ce43c0d57",
+          "indexed_sha256": "067cd159677e7cfef9194bb75dfa989568bd4e9723e9df716e29507cec16b08b"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-0-repeat-reordered_tagged_stale.png",
+          "png_sha256": "60ab8e4f1d6abb42b736d03697d86a1a25b3bfb6feb7e9d818648b759003bc82",
+          "rgba_sha256": "6c9ce9cae346f1b0c915a4bd6f7e828bffe9c93b6e743f4353504994e50814ff",
+          "indexed_sha256": "1a77256167e2a859ca643cd32059fcab5237b95d805e40dd49a573d43b248c6a"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-0-repeat-reordered_tagged_remap.png",
+          "png_sha256": "913e4e009e9e0d2af1dfbcc2f66327939c4e3e4104eb39088392e162c3b58e8e",
+          "rgba_sha256": "d443498b1e7d91449b56d09d5e1ad2668ffef1dff0ebf9d1eb8342d4a72cb342",
+          "indexed_sha256": "65638bc01a2220f49c741c7539140121a15fa64472949a7f4587f2c1ce988fc1"
+        }
+      },
+      "actual_active_angles": [
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          39,
+          -10
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          9,
+          54
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          9,
+          54
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          39,
+          -10
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 29,
+      "actual_order_only_rgba_changed": 13
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-0-yaw_arc",
+      "state_sha256": "b960fda659a54fe79b08b189e3e02ee0e2dec1a888540a00cfe915f113c3796e",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-0-yaw_arc-original_actual.png",
+          "png_sha256": "a8660da441de213cb61f0fb82ae460f3a1e1035eefdd2dbd39949a3099f989e5",
+          "rgba_sha256": "2151540f6a52de06e58552f6ab321668e86076246f623c3ea80ec22dae2b95f5",
+          "indexed_sha256": "7e131cf8f443d91fb6b5036e96fc09cbd7cb2b7537afe1945f625d27a1d36261"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-0-yaw_arc-reordered_actual.png",
+          "png_sha256": "329d39f2f16831c054ad9ac5d926dcc14aad41bc5e730c2d3907f57971e715e2",
+          "rgba_sha256": "1d8299b120afcb7b4560f3ce57b464be98963cf4bae3cb6b14b41f8198446ca0",
+          "indexed_sha256": "29a56ffe36b9006bcc06651c1af7e226033e8b494bc2177002e821b13d550da2"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-0-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "329d39f2f16831c054ad9ac5d926dcc14aad41bc5e730c2d3907f57971e715e2",
+          "rgba_sha256": "1d8299b120afcb7b4560f3ce57b464be98963cf4bae3cb6b14b41f8198446ca0",
+          "indexed_sha256": "29a56ffe36b9006bcc06651c1af7e226033e8b494bc2177002e821b13d550da2"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-0-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "92a51f59b7269d5e567ad831f9814c2a7295354b68f1bae67bc12a8c11977c12",
+          "rgba_sha256": "582b9e643832551a0f46ae78752687a473901f5cd3c2dd3d44eb11453fab832c",
+          "indexed_sha256": "4df768d32e7f21455a8187aa3890194dee0c69b314def12cb91c2213c8d1e781"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-0-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "4824dfc0fb89364d5fa6818f885d2da00e42e5350e06b20a4ec223ec01ae2f65",
+          "rgba_sha256": "6f191ce4e2180bf672a099eaac9cad25b595a771f25782bb971ad5aad3e4be77",
+          "indexed_sha256": "32441c51d5f370f0207407e4c0fe3c1d6ccebf86e146980b5677159f0efb3e28"
+        }
+      },
+      "actual_active_angles": [
+        [
+          16,
+          17
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -7
+        ],
+        [
+          -17,
+          27
+        ],
+        [
+          7,
+          57
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          57
+        ],
+        [
+          -17,
+          27
+        ],
+        [
+          37,
+          -7
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 26,
+      "actual_order_only_rgba_changed": 19
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-0-head_arc",
+      "state_sha256": "d9f5af7060f4eb7e7d660493e340599d3b36cee43b9c7036acdf7de2d88bab55",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-0-head_arc-original_actual.png",
+          "png_sha256": "83cda24e00e8ef69fdbbb2d4e8688a24a2bdb5458521724a84447716ba5842ce",
+          "rgba_sha256": "b0c5b93f34b44000bdb6a79d1bdc5cde7e5031fd35c8edd3bbbf79b208b12a83",
+          "indexed_sha256": "a2a2b5cda11c9193f6e047f07062df122b54a7c40401b99a8ce9838ee59d023f"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-0-head_arc-reordered_actual.png",
+          "png_sha256": "b23bfce9148c1d72bc08a4666707d0b93ee23e4816beb73e6005d659aa3b7c35",
+          "rgba_sha256": "abfbaf6fe6deac9a977cb4cba9c6508e9c8fa91733a1bd95e16efd43d4c9e1c4",
+          "indexed_sha256": "1179a6f031c07cf57e6e436abf4af465da7959309d0449868a86b5559b13b320"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-0-head_arc-reordered_actual_remap.png",
+          "png_sha256": "b23bfce9148c1d72bc08a4666707d0b93ee23e4816beb73e6005d659aa3b7c35",
+          "rgba_sha256": "abfbaf6fe6deac9a977cb4cba9c6508e9c8fa91733a1bd95e16efd43d4c9e1c4",
+          "indexed_sha256": "1179a6f031c07cf57e6e436abf4af465da7959309d0449868a86b5559b13b320"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-0-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "fa215601c0f368fe086549a4e03255608cdef1b9a17e41cec37a502f5a1569f6",
+          "rgba_sha256": "5b7fde3ff5bb92861cfa5aa0c5ffc47e8c2fc381f223ca8fc74628d68a867255",
+          "indexed_sha256": "6766fb2dfc4f875294aefee18b7d0ce7d76e224e50bd51b8fe8d4a681e28e4a0"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-0-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "976f2d66267895d89b149cbf0915034d2fd17e02f3fd30f0e78ddc6a05f6971a",
+          "rgba_sha256": "ec4ef637a65e8f6e8b3309c8f932b0589b162208618007c35e96fb6a5062a1ce",
+          "indexed_sha256": "766c8b2c2c361c7d1369030ebd6ed10e80059042abb29bf35bf510a8b6cb3e13"
+        }
+      },
+      "actual_active_angles": [
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          13
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          39,
+          -10
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          9,
+          54
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          9,
+          54
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          39,
+          -10
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 29,
+      "actual_order_only_rgba_changed": 13
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-0-tilt_arc",
+      "state_sha256": "9208751f662719f3a6e952653c64b00d6242760255f87430598c98c3677598d8",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-0-tilt_arc-original_actual.png",
+          "png_sha256": "a20014a7600e78df4471dd4ac46c4ddfdd76d532dfaa4c3423756818259447d2",
+          "rgba_sha256": "799869c1e51fe521d90ed37e2b918dde80e964735ff0e1ba4011a00bb2429437",
+          "indexed_sha256": "f3e029d25338c11c2d53f874e2e6af28bfa92d3e6b9f95cbb7774ee17bc91104"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-0-tilt_arc-reordered_actual.png",
+          "png_sha256": "61b389053b628afdc7d503700c5d7dae14a82ee40234b800f619fc0b4dc1edee",
+          "rgba_sha256": "7c24fba022a5295de4375c2501669605890b6d1ba5da883e276b0e83f791de08",
+          "indexed_sha256": "d3bbc658bbe672979cfddb3694b92502faf9b08e3fb02b7700a191fb184693f4"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-0-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "61b389053b628afdc7d503700c5d7dae14a82ee40234b800f619fc0b4dc1edee",
+          "rgba_sha256": "7c24fba022a5295de4375c2501669605890b6d1ba5da883e276b0e83f791de08",
+          "indexed_sha256": "d3bbc658bbe672979cfddb3694b92502faf9b08e3fb02b7700a191fb184693f4"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-0-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "82526d005bca2d79aaaac73eca81f4c4fa1ed4084db3dfa7a0d0927f84ea3043",
+          "rgba_sha256": "a63db956912344c702eca94f48b1f21b281bc5a95aa4d49c1c3bd744aea46ffd",
+          "indexed_sha256": "57efaba0e9e00a9a70931f5d10c9e043fb4098f9c2b05fe17e8f39d17ed782b5"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-0-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "287e0beb56cd5dbbc6ba43a649ff3354554639c80cf2582263e5160c76778518",
+          "rgba_sha256": "75d8ae44ee98c5fa70c31b4977514c25b3f86fc6f0f09a7842933f954a2bc19f",
+          "indexed_sha256": "b08cb14ebbad566c4482299653d98839c60ea43bd6cb08a8af12bc4d8bc9dfea"
+        }
+      },
+      "actual_active_angles": [
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          2,
+          21
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          39,
+          -10
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          9,
+          54
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          9,
+          54
+        ],
+        [
+          -15,
+          24
+        ],
+        [
+          39,
+          -10
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 29,
+      "actual_order_only_rgba_changed": 13
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-90-repeat",
+      "state_sha256": "ae46f2997085ace6ac4b2ba3aa56e2519a340a5110f0ba5814ff8c43cd249ae8",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-90-repeat-original_actual.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "rgba_sha256": "558c4f02579fa73baedbc3c038b5d678fbb106d2dc10216205512d00059838b9",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-90-repeat-reordered_actual.png",
+          "png_sha256": "eea1c936c6e4afaa0910dbcb00b514516412f794ca6d01dacd52fddb5ccb633d",
+          "rgba_sha256": "648856871b06e959a02af2177b2760873579073ebaa300a309aa1bafe9d718e7",
+          "indexed_sha256": "969a06717859e5aaee406bf4db77117424a04a99b043f47b52c5a2d71b6b6b11"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-90-repeat-reordered_actual_remap.png",
+          "png_sha256": "eea1c936c6e4afaa0910dbcb00b514516412f794ca6d01dacd52fddb5ccb633d",
+          "rgba_sha256": "648856871b06e959a02af2177b2760873579073ebaa300a309aa1bafe9d718e7",
+          "indexed_sha256": "969a06717859e5aaee406bf4db77117424a04a99b043f47b52c5a2d71b6b6b11"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-90-repeat-reordered_tagged_stale.png",
+          "png_sha256": "d9a80937ce2a171407228ab64dae7e9796ed96d96c1665e80b6c16c69a143f17",
+          "rgba_sha256": "b623d72ae6b94eb2ddfc19cdb565d7160bf82329bad7b22d0ecd10628943de55",
+          "indexed_sha256": "764eb18b917840b875f662ea3ec4b3f90452e61df9441da6bcad589fae90ee60"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-90-repeat-reordered_tagged_remap.png",
+          "png_sha256": "02cd0756727239ba8e7cb032fe5f21cc594977c6e25299143c7eb410738303a3",
+          "rgba_sha256": "4e2c65a44af8659dac80bd91aa16b669bd77e24d90955b8eb9ab4eb2e97007be",
+          "indexed_sha256": "6080c46274709505a4033893f6e511073f4e957c58d4f321be8ba4bfd2b02a30"
+        }
+      },
+      "actual_active_angles": [
+        [
+          61,
+          60
+        ],
+        [
+          61,
+          60
+        ],
+        [
+          61,
+          60
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          98,
+          37
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          68,
+          101
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          68,
+          101
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          98,
+          37
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 25,
+      "actual_order_only_rgba_changed": 19
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-90-yaw_arc",
+      "state_sha256": "43194b655018bb8419b6535ebb972bddc2d334727cc92dbff4773eba07f72b75",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-90-yaw_arc-original_actual.png",
+          "png_sha256": "a2aff7c6ef9ab409d02844e389a3dea0333a03a55299d0c9813f4796e420ee77",
+          "rgba_sha256": "a473b8f0960fa262a74760f5fbef3ecc01c7752734f144727d53350ab8e43bf6",
+          "indexed_sha256": "10c46dc74071fd29a89985482e6bf772e1e101c29bc5acd6f534960fa07167d8"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-90-yaw_arc-reordered_actual.png",
+          "png_sha256": "da0b21c6a0f6ffa174a25d72d1fed729f28b38f63b6de9159396ac763d9d7aa3",
+          "rgba_sha256": "2969efe547e4ba8e6abac8993bb87e0e0c665f3801bfc71738be779edf99bf26",
+          "indexed_sha256": "2bdd756518cbcff31cb84675f9de3211b94f41da7c65a72e96b600d88de4f83d"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-90-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "da0b21c6a0f6ffa174a25d72d1fed729f28b38f63b6de9159396ac763d9d7aa3",
+          "rgba_sha256": "2969efe547e4ba8e6abac8993bb87e0e0c665f3801bfc71738be779edf99bf26",
+          "indexed_sha256": "2bdd756518cbcff31cb84675f9de3211b94f41da7c65a72e96b600d88de4f83d"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-90-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "1952f260477620d4ce7f8718e0d44d31e8a29d147265fdfe186e48943d2e0e34",
+          "rgba_sha256": "a518a8801f322ff5e824942ccf744685fc0026f71abc77a25c1d0780cc2f6df8",
+          "indexed_sha256": "8385a552fa5d3c0d1821f1786b1d5c19b7784787262402490ec86b5d94b67d73"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-90-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "cd4dea532b50f263f2d5e5998c0c15f42fccdcdb86bd0e95a34605d36fd1809a",
+          "rgba_sha256": "1d6c0071033122ca971ec222110c9f74d07f40154c282ac2b0fcefad4676641b",
+          "indexed_sha256": "609b005d0d1fec1df74d5aec6fdb62788330a798cdeda75e1cc4ae4bef9e7184"
+        }
+      },
+      "actual_active_angles": [
+        [
+          78,
+          62
+        ],
+        [
+          78,
+          62
+        ],
+        [
+          78,
+          62
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          100,
+          41
+        ],
+        [
+          46,
+          75
+        ],
+        [
+          70,
+          105
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          70,
+          105
+        ],
+        [
+          46,
+          75
+        ],
+        [
+          100,
+          41
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 19,
+      "actual_order_only_rgba_changed": 13
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-90-head_arc",
+      "state_sha256": "23a1edf0ad49bc6a96ebc6d0e127c1415cfb6547f2b3e1cb589ec9d0a19bfa75",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-90-head_arc-original_actual.png",
+          "png_sha256": "9e8bc61b03c0b11217a73106d7822572d67b287ebd16e76e0de5d6f47f8b0e1c",
+          "rgba_sha256": "a9bec003d6890250dba18a582825cfa01ca91a3dab47932a41455087e70fb7a9",
+          "indexed_sha256": "42de6e240f5309527282b3ad0fcbb3354fce07f96d534735ecb5b16690f82100"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-90-head_arc-reordered_actual.png",
+          "png_sha256": "95dc8f6355f41a6e5891ebf76ab9b36774731980bdd50d8da6c7c77851106aa3",
+          "rgba_sha256": "68bfafcd85e11bbe739f78659ea0a43b54111aada17302e2be38b01b3dd54655",
+          "indexed_sha256": "a4d481aafac196b49f9fb5b488b88be8ae1ce4d259d022ed9146ea67de8797e4"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-90-head_arc-reordered_actual_remap.png",
+          "png_sha256": "95dc8f6355f41a6e5891ebf76ab9b36774731980bdd50d8da6c7c77851106aa3",
+          "rgba_sha256": "68bfafcd85e11bbe739f78659ea0a43b54111aada17302e2be38b01b3dd54655",
+          "indexed_sha256": "a4d481aafac196b49f9fb5b488b88be8ae1ce4d259d022ed9146ea67de8797e4"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-90-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "520e5f8d233e8e3375d9f48e5af1ed023fff689c0c3c07f15fe879716accf6a1",
+          "rgba_sha256": "69ccce2845bb26f14a278a479553b747e6049cd4b1e24e301b4330df671dca8e",
+          "indexed_sha256": "09219c7c45112e47f8249efaee7c0064d6218452728591011ee28b85a70c830d"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-90-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "60e968136b34bfda7df27b68f728ab0f57dad76d40c168d43530a80720ed509a",
+          "rgba_sha256": "5f4b807300299147cefc86b35c8ca4642cc94588ab18046c1fa8c10142a85670",
+          "indexed_sha256": "0ade22b36d1bc2f61bc7c968f0b2b32699b25f1f69bc337fd03a031c14aeac9d"
+        }
+      },
+      "actual_active_angles": [
+        [
+          61,
+          60
+        ],
+        [
+          61,
+          60
+        ],
+        [
+          61,
+          60
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          98,
+          37
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          68,
+          101
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          68,
+          101
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          98,
+          37
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 25,
+      "actual_order_only_rgba_changed": 19
+    },
+    {
+      "prior_folder": "Fuzzkin-sitting-90-tilt_arc",
+      "state_sha256": "3487472300a55c4cbf55999c4e9930bff493b46fc2a5e9853de16c258481a309",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-sitting-90-tilt_arc-original_actual.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "rgba_sha256": "558c4f02579fa73baedbc3c038b5d678fbb106d2dc10216205512d00059838b9",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-sitting-90-tilt_arc-reordered_actual.png",
+          "png_sha256": "eea1c936c6e4afaa0910dbcb00b514516412f794ca6d01dacd52fddb5ccb633d",
+          "rgba_sha256": "648856871b06e959a02af2177b2760873579073ebaa300a309aa1bafe9d718e7",
+          "indexed_sha256": "969a06717859e5aaee406bf4db77117424a04a99b043f47b52c5a2d71b6b6b11"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-sitting-90-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "eea1c936c6e4afaa0910dbcb00b514516412f794ca6d01dacd52fddb5ccb633d",
+          "rgba_sha256": "648856871b06e959a02af2177b2760873579073ebaa300a309aa1bafe9d718e7",
+          "indexed_sha256": "969a06717859e5aaee406bf4db77117424a04a99b043f47b52c5a2d71b6b6b11"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-sitting-90-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "d9a80937ce2a171407228ab64dae7e9796ed96d96c1665e80b6c16c69a143f17",
+          "rgba_sha256": "b623d72ae6b94eb2ddfc19cdb565d7160bf82329bad7b22d0ecd10628943de55",
+          "indexed_sha256": "764eb18b917840b875f662ea3ec4b3f90452e61df9441da6bcad589fae90ee60"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-sitting-90-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "02cd0756727239ba8e7cb032fe5f21cc594977c6e25299143c7eb410738303a3",
+          "rgba_sha256": "4e2c65a44af8659dac80bd91aa16b669bd77e24d90955b8eb9ab4eb2e97007be",
+          "indexed_sha256": "6080c46274709505a4033893f6e511073f4e957c58d4f321be8ba4bfd2b02a30"
+        }
+      },
+      "actual_active_angles": [
+        [
+          61,
+          68
+        ],
+        [
+          61,
+          68
+        ],
+        [
+          61,
+          68
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          98,
+          37
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          68,
+          101
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          68,
+          101
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          98,
+          37
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 25,
+      "actual_order_only_rgba_changed": 19
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-0-repeat",
+      "state_sha256": "b610b65bf412ac3cb685dfde15a9ba15548bd0cbe1b3876cb190ca044e2dc027",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-0-repeat-original_actual.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "rgba_sha256": "635dc57ba242ee4a509d28ce1151fdb3d425d1a5f0439f9ff910c6fc14c05e84",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-0-repeat-reordered_actual.png",
+          "png_sha256": "29a37b26111df747a9f7618e0bc20ff44016323c4a065071990aee5547eea1ab",
+          "rgba_sha256": "83b09dcf3065caaa5aacaba8955e24893f9f49919047656ffa9cf7aec64f8218",
+          "indexed_sha256": "2b28e13e12c1d1cf0c02d009045c19badcaa628f40b7ac4605d973dfe5a78722"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-0-repeat-reordered_actual_remap.png",
+          "png_sha256": "29a37b26111df747a9f7618e0bc20ff44016323c4a065071990aee5547eea1ab",
+          "rgba_sha256": "83b09dcf3065caaa5aacaba8955e24893f9f49919047656ffa9cf7aec64f8218",
+          "indexed_sha256": "2b28e13e12c1d1cf0c02d009045c19badcaa628f40b7ac4605d973dfe5a78722"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-0-repeat-reordered_tagged_stale.png",
+          "png_sha256": "adb1b0b1dfe44af1644128ffddc4e94b7b46039e399f7b967f506d853b1eaf78",
+          "rgba_sha256": "0e908f7e202c7f6f48c32ca444a41c8dafa8f6b99a1ca18a48711b00c091d6d4",
+          "indexed_sha256": "a5f2e4c4b619d888e52c60032779b59589b0ea487de86ef30144bef7f631bccf"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-0-repeat-reordered_tagged_remap.png",
+          "png_sha256": "357504b45b7182ca0a58cc7b41ac387abe0db69dcf1545fd1ea97839931a5640",
+          "rgba_sha256": "5138bac195c2c8ae5f2492be5dcae8847b08d0dbc9a13a76c069edd2773d71f1",
+          "indexed_sha256": "50908a6d9786df0f42f5839f7384bc06e26a844af866b8809da47e7a5df723a7"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          -24
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -47
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          17
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          37,
+          -47
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 1,
+      "actual_order_only_rgba_changed": 1
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-0-yaw_arc",
+      "state_sha256": "a1b3edad35b7322b27a02d85dd776a64a72a7939c1faefc3aaa655ba29c08893",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-0-yaw_arc-original_actual.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "rgba_sha256": "1131295f4f75b2b8e754022ac64eda8e8291c52d04ee5da169f262ba9349791c",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-0-yaw_arc-reordered_actual.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "rgba_sha256": "1131295f4f75b2b8e754022ac64eda8e8291c52d04ee5da169f262ba9349791c",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-0-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "rgba_sha256": "1131295f4f75b2b8e754022ac64eda8e8291c52d04ee5da169f262ba9349791c",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-0-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "rgba_sha256": "1131295f4f75b2b8e754022ac64eda8e8291c52d04ee5da169f262ba9349791c",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-0-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "rgba_sha256": "1131295f4f75b2b8e754022ac64eda8e8291c52d04ee5da169f262ba9349791c",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e"
+        }
+      },
+      "actual_active_angles": [
+        [
+          14,
+          -19
+        ],
+        [
+          14,
+          -19
+        ],
+        [
+          14,
+          -19
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          35,
+          -43
+        ],
+        [
+          -19,
+          -9
+        ],
+        [
+          5,
+          21
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          5,
+          21
+        ],
+        [
+          -19,
+          -9
+        ],
+        [
+          35,
+          -43
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 0,
+      "actual_order_only_rgba_changed": 0
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-0-head_arc",
+      "state_sha256": "132dd2f164957ff65d2bf8de41bb55b83e11ed6f697105c308d177d5b86befe8",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-0-head_arc-original_actual.png",
+          "png_sha256": "1ff46988d15fc08da6b3a5048611f3201bc8d52d257a60aecb57106d85f846f2",
+          "rgba_sha256": "f28aa0451a918194740422770e76ae85266f0a221ae76fc41afe5ec1ed964cbc",
+          "indexed_sha256": "23f54ddf4e1e73f1af674528b5c8038006e806ae04531ed20ae51142df795b0d"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-0-head_arc-reordered_actual.png",
+          "png_sha256": "9b6d73e81f9bb3588e32ae61ac74c1618371ee4d1d37a1f42c7df6b47157b154",
+          "rgba_sha256": "de7991088543a60c5c06f9e4249a72af23b51f5a0148b5c884a679afcfc6ebdb",
+          "indexed_sha256": "f8f8dec596b783945276a21926d258d4bd3659b44adb8a765107773208633e5f"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-0-head_arc-reordered_actual_remap.png",
+          "png_sha256": "9b6d73e81f9bb3588e32ae61ac74c1618371ee4d1d37a1f42c7df6b47157b154",
+          "rgba_sha256": "de7991088543a60c5c06f9e4249a72af23b51f5a0148b5c884a679afcfc6ebdb",
+          "indexed_sha256": "f8f8dec596b783945276a21926d258d4bd3659b44adb8a765107773208633e5f"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-0-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "458d392e5ee66fe447d3d4d4e98277d33b02a4d1c88d6bf6095a16942afbc36a",
+          "rgba_sha256": "1c11bafeffef7166892ed67854e8149dcd4c900caace8c173cc0c438860131c2",
+          "indexed_sha256": "3cd968fd365b2dc87484a598039fa8ea28e52a819df3c7125da7b183941df175"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-0-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "b51c82bfd7abac57f2d6075e631b38d2e68068503995b1bcc1c00a16aebafa1f",
+          "rgba_sha256": "f949090c178a2c88a217737b9d0f447c7f5952f3e02e0f8e4292f3b77ba096a9",
+          "indexed_sha256": "82707622567dcb903354f1358c4d64bac319360529f9e0f3f09feb391ad61806"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          -24
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -47
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          17
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          37,
+          -47
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 1,
+      "actual_order_only_rgba_changed": 1
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-0-tilt_arc",
+      "state_sha256": "32738e290a07714ddfcb702a40b2b87d6eb12d277614d8f1428d113f3d8aa71b",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-0-tilt_arc-original_actual.png",
+          "png_sha256": "a4a6d0f01c3c8062867603d424465396001cb386b603020e19ba1a399f2f11e1",
+          "rgba_sha256": "df9293693abf4977c4b8abf0d302e74bc6f9faed674e198bde843357d5cab9db",
+          "indexed_sha256": "def405379f1168b752b977d09267af4a73e559cb921161c4288cff1e1c6552f6"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-0-tilt_arc-reordered_actual.png",
+          "png_sha256": "9c9f1d24d901d38c9c76baa7b1c649cf0d5a44b44f2159529efee9c5216898e9",
+          "rgba_sha256": "cef9e928963c43bf3723c018dd988fe47927b8476cb3b16682e89074106bf2b1",
+          "indexed_sha256": "a1323dd9660b5ff8e8f31e237b34b5f66360834283247889617cb9593700e252"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-0-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "9c9f1d24d901d38c9c76baa7b1c649cf0d5a44b44f2159529efee9c5216898e9",
+          "rgba_sha256": "cef9e928963c43bf3723c018dd988fe47927b8476cb3b16682e89074106bf2b1",
+          "indexed_sha256": "a1323dd9660b5ff8e8f31e237b34b5f66360834283247889617cb9593700e252"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-0-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "2da45f270257bbb1438ed49733a798ce63450fec195080a3617472aef181201e",
+          "rgba_sha256": "820033f397e27c660d13c2a45f47ed6e00356954adf7c16c9e8d576f9b259358",
+          "indexed_sha256": "10bbe19f6de5eb40f069ef872f016446ac72d239f880d9004505911efd18517e"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-0-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "b585804aeb937d21d6cdd88e5fd23d07611c828459ea8cee8e9854c5e4b24f46",
+          "rgba_sha256": "cef37362bd0b15d507139c21d2db53cc83aa3bef411fd4c008245bfebcc7f413",
+          "indexed_sha256": "6ba4dbe9302597c6d9c860655aed48c8f0badbf25b1c0dd6ef79ab5ec39b4c00"
+        }
+      },
+      "actual_active_angles": [
+        [
+          0,
+          -16
+        ],
+        [
+          0,
+          -16
+        ],
+        [
+          0,
+          -16
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          37,
+          -47
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          7,
+          17
+        ],
+        [
+          -17,
+          -13
+        ],
+        [
+          37,
+          -47
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 1,
+      "actual_order_only_rgba_changed": 1
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-90-repeat",
+      "state_sha256": "a227dc337143c4cdc7811cbc8e4cc2ed0a7ea62c7cf4d73f946e38441120e03a",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-90-repeat-original_actual.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "rgba_sha256": "0f1e5a6429c71754c05ccea1e2ffe03b5b14cbca7f7a8881659a380df941b177",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-90-repeat-reordered_actual.png",
+          "png_sha256": "42abd050a609180f8e00339061e0aa0d07cde45348c0e71e7a30059aa7ce44e0",
+          "rgba_sha256": "8d11ccf7ffb8a589aa0b5c82107f869478c9b4e736800e37ae18353423b0760e",
+          "indexed_sha256": "ffbc23f69a050ea64f38314d68a8b88c26a1c6481f81e7b50efb91b4780f09a3"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-90-repeat-reordered_actual_remap.png",
+          "png_sha256": "42abd050a609180f8e00339061e0aa0d07cde45348c0e71e7a30059aa7ce44e0",
+          "rgba_sha256": "8d11ccf7ffb8a589aa0b5c82107f869478c9b4e736800e37ae18353423b0760e",
+          "indexed_sha256": "ffbc23f69a050ea64f38314d68a8b88c26a1c6481f81e7b50efb91b4780f09a3"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-90-repeat-reordered_tagged_stale.png",
+          "png_sha256": "f34e86cb2ca1599a0a6a0c1b469a7ff8c81c92d2b918a1a76d3ad08724206c21",
+          "rgba_sha256": "280dccd3fde544ba43dd51db2b0d3aff8899ca3c0f6231a62250e93737cdc165",
+          "indexed_sha256": "1f665f59ac41eb7abafcb1742bf2a6a791df81464349d24670b39dbbff18e370"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-90-repeat-reordered_tagged_remap.png",
+          "png_sha256": "72055eb2091a2c0bc185a243d9cc48c43dbe96a8778979a3c7c6f303d7fafdd9",
+          "rgba_sha256": "5cda596e30914c4e92ec5dbaa20651e80887d31460ca96bfc199910d9fa7e951",
+          "indexed_sha256": "905f106d2cad588f736cf83773bace093cdd89337434aac8956e31b2e1a18f05"
+        }
+      },
+      "actual_active_angles": [
+        [
+          66,
+          -71
+        ],
+        [
+          66,
+          -71
+        ],
+        [
+          66,
+          -71
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          103,
+          -94
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          73,
+          -30
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          73,
+          -30
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          103,
+          -94
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 18,
+      "actual_order_only_rgba_changed": 8
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-90-yaw_arc",
+      "state_sha256": "a0d41852dd75cf24c2e5acc331a9973bcc93f1cbb7ac184ea20c88856bafcb30",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-90-yaw_arc-original_actual.png",
+          "png_sha256": "863d8bbb6ac324ff34c415cd6903fac77c19de74e9c63da0801adb10f60ea359",
+          "rgba_sha256": "9f2e3415bc8a4cff59e1b4ff5d63b925a9cd1bdac729112520a886bd23aa5e98",
+          "indexed_sha256": "64fdb6527f2fa23df07f33df8162332f78a072defe6be8b11bc5f77c51e7dbfe"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-90-yaw_arc-reordered_actual.png",
+          "png_sha256": "da544059fcd8a4b21c390ffdd7429405b8c95a3b8a80787634713ab8751c634d",
+          "rgba_sha256": "6d176cfbbc131743f9784bb2c37db407d0a696d02e35a2712cd69966a2a2f757",
+          "indexed_sha256": "57e6b0a7d0242e9d98bea4b8a0537226e496615b5271d1a1d9d3a74097a60efd"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-90-yaw_arc-reordered_actual_remap.png",
+          "png_sha256": "da544059fcd8a4b21c390ffdd7429405b8c95a3b8a80787634713ab8751c634d",
+          "rgba_sha256": "6d176cfbbc131743f9784bb2c37db407d0a696d02e35a2712cd69966a2a2f757",
+          "indexed_sha256": "57e6b0a7d0242e9d98bea4b8a0537226e496615b5271d1a1d9d3a74097a60efd"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-90-yaw_arc-reordered_tagged_stale.png",
+          "png_sha256": "fa328adf6556b9c9f96e8eb6993d3bc2b9c5a8f1a478c978c36f2212b1237c1d",
+          "rgba_sha256": "595d20b3a1fdf04db75c11a70db085ea960c4027c0525a3fb5dc59455353bd65",
+          "indexed_sha256": "42d3285279b715c4c096e800fc15de95d90d4192838a1b0f1684045b20e62027"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-90-yaw_arc-reordered_tagged_remap.png",
+          "png_sha256": "af528d925eb2a9aac72b31cc51030f2769b44c4b6a06bdcf662c828155da09d0",
+          "rgba_sha256": "f4edb33a3f7cbfb3013bd2cbf912cefcb7a4c96a400b63cb563254ecf70b3e80",
+          "indexed_sha256": "4a7a36ea1830ebc29124e5586177de2b067949be247e6462f3e2d8098f325b2f"
+        }
+      },
+      "actual_active_angles": [
+        [
+          82,
+          -69
+        ],
+        [
+          82,
+          -69
+        ],
+        [
+          82,
+          -69
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          103,
+          -91
+        ],
+        [
+          49,
+          -57
+        ],
+        [
+          73,
+          -27
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          73,
+          -27
+        ],
+        [
+          49,
+          -57
+        ],
+        [
+          103,
+          -91
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 17,
+      "actual_order_only_rgba_changed": 8
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-90-head_arc",
+      "state_sha256": "74a258b7675afa7792291736fe3557a8e2cdebdb161c7549f04c0a1e2d73293a",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-90-head_arc-original_actual.png",
+          "png_sha256": "002d99a0e1053da68492ee0fc914bfd48342f3c7df1d82ec475f6f448d54ac24",
+          "rgba_sha256": "f95e968fc070f6af8cdd6fc429dd196e4610fbc0e1e8ff9e14b3a7b5ca0f4127",
+          "indexed_sha256": "73f9b8210daef74163774077cb64d3702755856f42bc5cf603b1c13e85c65049"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-90-head_arc-reordered_actual.png",
+          "png_sha256": "5111c09d4b399060e2430d136272f8a2c33292b8899a4a881b3a06a8f9ed82ed",
+          "rgba_sha256": "67c2f4e2cb99183a4f5b25b70f8382ec2439108e951bb70d5b706845321af117",
+          "indexed_sha256": "2f4c6394c584cfb9b1ae4916993d9b3b165ea4f7981b7f86f9b3067ace3bc16c"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-90-head_arc-reordered_actual_remap.png",
+          "png_sha256": "5111c09d4b399060e2430d136272f8a2c33292b8899a4a881b3a06a8f9ed82ed",
+          "rgba_sha256": "67c2f4e2cb99183a4f5b25b70f8382ec2439108e951bb70d5b706845321af117",
+          "indexed_sha256": "2f4c6394c584cfb9b1ae4916993d9b3b165ea4f7981b7f86f9b3067ace3bc16c"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-90-head_arc-reordered_tagged_stale.png",
+          "png_sha256": "a8391453296d80e3b255b8ea9b46d662f7abdaaf79dc73ea1ce5ddd8c01dc999",
+          "rgba_sha256": "bbe85762b6da47d48dff801b6dca57c1effbc70a416d7f420210404c3c1ab5c8",
+          "indexed_sha256": "e6f8f419e9c5d5f601bfcc339d0c515b0e05a208101c8e228efaef5db9777b39"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-90-head_arc-reordered_tagged_remap.png",
+          "png_sha256": "ec76be2ce6e426e7a1bd19471d4602d0916414343a39587e37e2357d96b8cec7",
+          "rgba_sha256": "c0440cc83181953e2f3fa2dd9422be6e31b03618e2ddadd4382f3541ee79c0dc",
+          "indexed_sha256": "be0ae821b40c6841aa075747b21beaa563a4265a7e87c82f62ca0285a620b4bd"
+        }
+      },
+      "actual_active_angles": [
+        [
+          66,
+          -71
+        ],
+        [
+          66,
+          -71
+        ],
+        [
+          66,
+          -71
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          103,
+          -94
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          73,
+          -30
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          73,
+          -30
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          103,
+          -94
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 18,
+      "actual_order_only_rgba_changed": 8
+    },
+    {
+      "prior_folder": "Fuzzkin-lying-90-tilt_arc",
+      "state_sha256": "762a2127f4fe11fe1b8d78bb4c50def0285de04d76f3d4cc665face902c2c1d6",
+      "outputs": {
+        "original_actual": {
+          "png": "Fuzzkin-lying-90-tilt_arc-original_actual.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "rgba_sha256": "0f1e5a6429c71754c05ccea1e2ffe03b5b14cbca7f7a8881659a380df941b177",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155"
+        },
+        "reordered_actual": {
+          "png": "Fuzzkin-lying-90-tilt_arc-reordered_actual.png",
+          "png_sha256": "42abd050a609180f8e00339061e0aa0d07cde45348c0e71e7a30059aa7ce44e0",
+          "rgba_sha256": "8d11ccf7ffb8a589aa0b5c82107f869478c9b4e736800e37ae18353423b0760e",
+          "indexed_sha256": "ffbc23f69a050ea64f38314d68a8b88c26a1c6481f81e7b50efb91b4780f09a3"
+        },
+        "reordered_actual_remap": {
+          "png": "Fuzzkin-lying-90-tilt_arc-reordered_actual_remap.png",
+          "png_sha256": "42abd050a609180f8e00339061e0aa0d07cde45348c0e71e7a30059aa7ce44e0",
+          "rgba_sha256": "8d11ccf7ffb8a589aa0b5c82107f869478c9b4e736800e37ae18353423b0760e",
+          "indexed_sha256": "ffbc23f69a050ea64f38314d68a8b88c26a1c6481f81e7b50efb91b4780f09a3"
+        },
+        "reordered_tagged_stale": {
+          "png": "Fuzzkin-lying-90-tilt_arc-reordered_tagged_stale.png",
+          "png_sha256": "f34e86cb2ca1599a0a6a0c1b469a7ff8c81c92d2b918a1a76d3ad08724206c21",
+          "rgba_sha256": "280dccd3fde544ba43dd51db2b0d3aff8899ca3c0f6231a62250e93737cdc165",
+          "indexed_sha256": "1f665f59ac41eb7abafcb1742bf2a6a791df81464349d24670b39dbbff18e370"
+        },
+        "reordered_tagged_remap": {
+          "png": "Fuzzkin-lying-90-tilt_arc-reordered_tagged_remap.png",
+          "png_sha256": "72055eb2091a2c0bc185a243d9cc48c43dbe96a8778979a3c7c6f303d7fafdd9",
+          "rgba_sha256": "5cda596e30914c4e92ec5dbaa20651e80887d31460ca96bfc199910d9fa7e951",
+          "indexed_sha256": "905f106d2cad588f736cf83773bace093cdd89337434aac8956e31b2e1a18f05"
+        }
+      },
+      "actual_active_angles": [
+        [
+          66,
+          -63
+        ],
+        [
+          66,
+          -63
+        ],
+        [
+          66,
+          -63
+        ]
+      ],
+      "tagged_stale_command_angles": [
+        [
+          103,
+          -94
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          73,
+          -30
+        ]
+      ],
+      "tagged_remap_command_angles": [
+        [
+          73,
+          -30
+        ],
+        [
+          49,
+          -60
+        ],
+        [
+          103,
+          -94
+        ]
+      ],
+      "tagged_stale_remap_rgba_changed": 18,
+      "actual_order_only_rgba_changed": 8
+    }
+  ],
+  "summary": {
+    "histories": 24,
+    "draws": 120,
+    "prior_png_links": 24,
+    "actual_angle_remap_equivalences": 24,
+    "tagged_stale_remap_pixel_changes": 23,
+    "actual_order_pixel_changes": 23
+  }
+}

@@ -77,4 +77,5 @@ Updated: 2026-11-10
 - Latest: [SHADE-002](experiments/shade-002.md),96 isolated shade histories/384 transitions/24 MCP fresh baselines: wider yaw arcs change20/24 scenes with equal final geometry/order/texture orientation;10-distance gate retains history.
 - Latest: [SHADE-003](experiments/shade-003.md),804 omission cases/23 local MCP pairs/69 counterfactual cells:11 reduce depth,seven change fills,eight change pixels through shade substitution;46 direct/MCP cell links pass.
 - Shading continuation audit: [session index](docs/session-2026-11-10-shading.md),three units;71 MCP pairs+24 fresh baselines,84 slope loads/804 omission assemblies,96 histories/384 transitions,214 PNGs/427 RGBA cells/261 indexed buffers,39 cross-unit links;62 installed sources match clean checkout.
+- Focused SHADE-003 follow-up: the equal-fill one-pixel case isolates to ball64 endpoint state; endpoint substitution removes the residual,paint substitution does not. [Evidence](experiments/shade-003.md#equal-fill-case-follow-up).
 - Resume: [HANDOFF.md](HANDOFF.md); latest audit and next research routes are consolidated there.

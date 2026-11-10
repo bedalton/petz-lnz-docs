@@ -198,3 +198,7 @@ Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures 
 ## Latest connector texture window research
 
 [LINE-014](experiments/line-014.md):72 asset-free rasters,28 accepted/44 rejected,120 exact centerline samples; untextured controls all draw. Raster width includes fuzz; oversized texture windows reject before RNG/table generation. Period0/8 outputs match; centered x/y crops bias opposite ways on odd spare space. Private synthetic pixels scratch/research/line-014/pixels.json. No MCP/native/renderer changes. Next: actual breed oversized connector controls.
+
+## Latest composed texture-size controls
+
+[LINE-015](experiments/line-015.md):36 numerical loads,sixteen MCP pairs; two sheets reviewed. Offsets -80/-800 compare textured,explicit125 and absent line within each distance. Long textured line parses/builds but raster empty and MCP equals marker-only; long explicit remains visible. Stock256x256 tiles. Private scratch/research/line-015. No renderer repair/native-limit claim. Next: other tile thresholds,version/breed texture routing or native evidence.

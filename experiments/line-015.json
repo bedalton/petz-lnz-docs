@@ -1,0 +1,973 @@
+{
+  "experiment": "LINE-015",
+  "backend": "local stdio MCP plus asset-backed connector block checks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "pillow": "13.0.0"
+  },
+  "source_hashes": {
+    "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "synthetic": [],
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "short_texture": "52, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "short_explicit": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "short_none": null,
+        "long_texture": "52, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "long_explicit": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "long_none": null
+      },
+      "paths": {
+        "short_texture": "Dogz-short_texture.dog",
+        "short_explicit": "Dogz-short_explicit.dog",
+        "short_none": "Dogz-short_none.dog",
+        "long_texture": "Dogz-long_texture.dog",
+        "long_explicit": "Dogz-long_explicit.dog",
+        "long_none": "Dogz-long_none.dog"
+      },
+      "input_hashes": {
+        "short_texture": "b7ac25cef27042f010eed305d6a271033645c67d72c8e656ff580a33bdde7719",
+        "short_explicit": "5b85313a42d55a343c97c5a95ef41327fbc03a6b6db50fc5f77e55286f4e04b4",
+        "short_none": "fa0a1cfef6566b3428c713eb10e71082f8f430d15aab6ff506bebc3511dc85ae",
+        "long_texture": "7cb1a3904a528b92c036b5284ae7b1751b83d0b0ba984768b20d1dc7ebdde9da",
+        "long_explicit": "42f96eafde76ebcdbb0ec89764ee324c8f9f8b35f7218a8680bffaebc876ed26",
+        "long_none": "d78f3369371a073a49948cdf316a01003884e0ad366238307068fd2297e2ec20"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            43,
+            58,
+            25,
+            18
+          ],
+          "isolated_line_colored_pixels": 1180,
+          "canvas": [
+            91,
+            131
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            43,
+            58,
+            25,
+            18
+          ],
+          "isolated_line_colored_pixels": 1180,
+          "canvas": [
+            91,
+            131
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "standing",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "standing",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            43,
+            409,
+            25,
+            9
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            91,
+            482
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            43,
+            409,
+            25,
+            9
+          ],
+          "isolated_line_colored_pixels": 10444,
+          "canvas": [
+            91,
+            482
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "standing",
+          "variant": "long_none",
+          "connector": false
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            46,
+            52,
+            34,
+            9
+          ],
+          "isolated_line_colored_pixels": 1183,
+          "canvas": [
+            90,
+            147
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            46,
+            52,
+            34,
+            9
+          ],
+          "isolated_line_colored_pixels": 1183,
+          "canvas": [
+            90,
+            147
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            46,
+            417,
+            100,
+            9
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            112,
+            512
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            46,
+            417,
+            100,
+            9
+          ],
+          "isolated_line_colored_pixels": 10852,
+          "canvas": [
+            112,
+            512
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_none",
+          "connector": false
+        },
+        {
+          "pose": "lying",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            49,
+            76,
+            30,
+            34
+          ],
+          "isolated_line_colored_pixels": 1239,
+          "canvas": [
+            91,
+            120
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            49,
+            76,
+            30,
+            34
+          ],
+          "isolated_line_colored_pixels": 1239,
+          "canvas": [
+            91,
+            120
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "lying",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "lying",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            49,
+            430,
+            30,
+            9
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            91,
+            474
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            49,
+            430,
+            30,
+            9
+          ],
+          "isolated_line_colored_pixels": 10991,
+          "canvas": [
+            91,
+            474
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "lying",
+          "variant": "long_none",
+          "connector": false
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "short_texture": "24, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "short_explicit": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "short_none": null,
+        "long_texture": "24, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+        "long_explicit": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+        "long_none": null
+      },
+      "paths": {
+        "short_texture": "Catz-short_texture.cat",
+        "short_explicit": "Catz-short_explicit.cat",
+        "short_none": "Catz-short_none.cat",
+        "long_texture": "Catz-long_texture.cat",
+        "long_explicit": "Catz-long_explicit.cat",
+        "long_none": "Catz-long_none.cat"
+      },
+      "input_hashes": {
+        "short_texture": "ba36a164d8e4aa14f32904b48459f7adca07fa09d97e233bd9a4837d5e05fff4",
+        "short_explicit": "a230e94f7ef6fb2176b81a277f062bcc6c6bf37925f2e24954582137886e4328",
+        "short_none": "362a5edeb90c11a14b7fbd90e8e055e8b0fd86595e11ac8b141fb402c5cce608",
+        "long_texture": "a633e717e8c619a50f7a0d80b0d23979a0b0e03ff08284acab56d53e8e9bb2ef",
+        "long_explicit": "9f29569bbe4d9c3e8640621b1de2388077df6df9bf734535bb5b0a9f86791772",
+        "long_none": "b1dd4f58a620f68e4604962c1ca3c5f7af9fd4f41e9e8c8ed8fcf5734f464d9c"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            35,
+            74,
+            19,
+            42
+          ],
+          "isolated_line_colored_pixels": 927,
+          "canvas": [
+            71,
+            149
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            35,
+            74,
+            19,
+            42
+          ],
+          "isolated_line_colored_pixels": 927,
+          "canvas": [
+            71,
+            149
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "standing",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "standing",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            35,
+            334,
+            19,
+            8
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            71,
+            409
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            35,
+            334,
+            19,
+            8
+          ],
+          "isolated_line_colored_pixels": 8191,
+          "canvas": [
+            71,
+            409
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "standing",
+          "variant": "long_none",
+          "connector": false
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            38,
+            44,
+            29,
+            8
+          ],
+          "isolated_line_colored_pixels": 936,
+          "canvas": [
+            85,
+            150
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            38,
+            44,
+            29,
+            8
+          ],
+          "isolated_line_colored_pixels": 936,
+          "canvas": [
+            85,
+            150
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            38,
+            341,
+            82,
+            8
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            93,
+            447
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            38,
+            341,
+            82,
+            8
+          ],
+          "isolated_line_colored_pixels": 8483,
+          "canvas": [
+            93,
+            447
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "long_none",
+          "connector": false
+        },
+        {
+          "pose": "lying",
+          "variant": "short_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            37,
+            65,
+            19,
+            32
+          ],
+          "isolated_line_colored_pixels": 949,
+          "canvas": [
+            72,
+            115
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "short_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            37,
+            65,
+            19,
+            32
+          ],
+          "isolated_line_colored_pixels": 949,
+          "canvas": [
+            72,
+            115
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "lying",
+          "variant": "short_none",
+          "connector": false
+        },
+        {
+          "pose": "lying",
+          "variant": "long_texture",
+          "connector": true,
+          "paint_present": true,
+          "block_endpoints": [
+            41,
+            342,
+            8,
+            8
+          ],
+          "isolated_line_colored_pixels": 0,
+          "canvas": [
+            76,
+            392
+          ],
+          "tile_size": [
+            256,
+            256
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "long_explicit",
+          "connector": true,
+          "paint_present": false,
+          "block_endpoints": [
+            41,
+            342,
+            8,
+            8
+          ],
+          "isolated_line_colored_pixels": 8439,
+          "canvas": [
+            76,
+            392
+          ],
+          "tile_size": null
+        },
+        {
+          "pose": "lying",
+          "variant": "long_none",
+          "connector": false
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "short_texture",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-short_texture.dog",
+        "after_path": "Dogz-short_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b12e222edb60c0cbe99a4dcd191530b04e80e7c3fe4bc1717a65ed51914caa57",
+      "cells_equal": false,
+      "cell_hashes": [
+        "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a",
+        "571548e44b62085ac1332da84f1f4b8fdb775a8675314a65da44fa3124128233"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short_texture",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-short_texture.dog",
+        "after_path": "Dogz-short_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "83ee227b39b5e4fd067ec28d4324bb07d88bd33a79bbf532edacdc19b863ca68",
+      "cells_equal": false,
+      "cell_hashes": [
+        "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9",
+        "24d77578d8b0caf6f334b3764e178563b7f16d10c36e04a74adb27a1b1f6c488"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short_explicit",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-short_explicit.dog",
+        "after_path": "Dogz-short_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "38de07465bcc2882f6748ab4f193f01b10b82a6a582801ba89ffb5adace2ac8a",
+      "cells_equal": false,
+      "cell_hashes": [
+        "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60",
+        "571548e44b62085ac1332da84f1f4b8fdb775a8675314a65da44fa3124128233"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short_explicit",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-short_explicit.dog",
+        "after_path": "Dogz-short_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "9b212bffde7b065e370b1fb36b3041ce65b86e98cecd829f0f1944552e3720fd",
+      "cells_equal": false,
+      "cell_hashes": [
+        "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703",
+        "24d77578d8b0caf6f334b3764e178563b7f16d10c36e04a74adb27a1b1f6c488"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "long_texture",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-long_texture.dog",
+        "after_path": "Dogz-long_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "e38d3b539a2c28806d5617721737636a60dcd2c5458bc30a758234590a8a0ce2",
+      "cells_equal": true,
+      "cell_hashes": [
+        "0442f815b7f140528991a19afb97bc6929447670ba28a7a21ea8331358aa9007",
+        "0442f815b7f140528991a19afb97bc6929447670ba28a7a21ea8331358aa9007"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "long_texture",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-long_texture.dog",
+        "after_path": "Dogz-long_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "428aeb35da925bc42c9270ef6f897e1beb4d2866ee862adbe70a9f90362141ac",
+      "cells_equal": true,
+      "cell_hashes": [
+        "88e64d5215292bfcf124ea2862baef03d8695c3dee6d78ef2a76574bb4385a86",
+        "88e64d5215292bfcf124ea2862baef03d8695c3dee6d78ef2a76574bb4385a86"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "long_explicit",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-long_explicit.dog",
+        "after_path": "Dogz-long_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "4b627bc3a2edea75e2981d72a54dd163f6b083592d534accd89efcfc4c965d71",
+      "cells_equal": false,
+      "cell_hashes": [
+        "02a4b032e3d6356cc376a9a231ee5d2313a31f7eb89db931146075b71548930e",
+        "0442f815b7f140528991a19afb97bc6929447670ba28a7a21ea8331358aa9007"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "long_explicit",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Dogz-long_explicit.dog",
+        "after_path": "Dogz-long_none.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "27efc7a33fd0479c37ae6b88fa4e3b58fe63ff127fa82f9bfee443175f55c0ec",
+      "cells_equal": false,
+      "cell_hashes": [
+        "4ecf2c96017660661363384e579cf56002ed7e168bbd3e6053665b2ebd291b72",
+        "88e64d5215292bfcf124ea2862baef03d8695c3dee6d78ef2a76574bb4385a86"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short_texture",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Catz-short_texture.cat",
+        "after_path": "Catz-short_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "d4454e145c593c4e3d0b9937e5bdb39809c2527eac21102946d8fdf8154093d3",
+      "cells_equal": false,
+      "cell_hashes": [
+        "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370",
+        "315a8a748c0182d979f9e8581b6829de739e5a6791b774fbdd98fa2a445d463b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short_texture",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Catz-short_texture.cat",
+        "after_path": "Catz-short_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "eb119e6f19bf8078e9a0e476beedf61f83fa07fb7c8434f91e0d1fc40c100aeb",
+      "cells_equal": false,
+      "cell_hashes": [
+        "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403",
+        "7e18dc0ded44c04016b39e3ad313be9befede75d22c49be594b0487412e5ce80"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short_explicit",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Catz-short_explicit.cat",
+        "after_path": "Catz-short_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "7ba1c376cd1242662cdcce2fd646e9eaf4f7c1f628caa78fd96d355005f367ff",
+      "cells_equal": false,
+      "cell_hashes": [
+        "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff",
+        "315a8a748c0182d979f9e8581b6829de739e5a6791b774fbdd98fa2a445d463b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short_explicit",
+        "short_none"
+      ],
+      "controls": {
+        "before_path": "Catz-short_explicit.cat",
+        "after_path": "Catz-short_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "ecccde36a133736924392a766a5b065d6258460480831ecd8ea91872bf3b3903",
+      "cells_equal": false,
+      "cell_hashes": [
+        "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790",
+        "7e18dc0ded44c04016b39e3ad313be9befede75d22c49be594b0487412e5ce80"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "long_texture",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Catz-long_texture.cat",
+        "after_path": "Catz-long_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "4eaebbb6476562c60fb253acfb1db4f2166b592c99626841be271763c43706b0",
+      "cells_equal": true,
+      "cell_hashes": [
+        "8f7dfacf830cc66d55b9f30dbfb0bcaaca75721819fab2800363c850a5be4a95",
+        "8f7dfacf830cc66d55b9f30dbfb0bcaaca75721819fab2800363c850a5be4a95"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "long_texture",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Catz-long_texture.cat",
+        "after_path": "Catz-long_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "71720b1f0e6c84729156ef5be7a145b75ad45a4f4621f2ab765d96842dac150f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "0246c17876cc26469860e1e1b2757c30af167409634d0a2491775d933a6ca5c7",
+        "0246c17876cc26469860e1e1b2757c30af167409634d0a2491775d933a6ca5c7"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "long_explicit",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Catz-long_explicit.cat",
+        "after_path": "Catz-long_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "80cad25d393827e98f6d3963802f437ea2d3a1227135c5102c0897dcd50c8325",
+      "cells_equal": false,
+      "cell_hashes": [
+        "6a2da8178dec36712ad11351da2347d6b3579dbbaaf8ce478cc44c19956ef9a1",
+        "8f7dfacf830cc66d55b9f30dbfb0bcaaca75721819fab2800363c850a5be4a95"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "long_explicit",
+        "long_none"
+      ],
+      "controls": {
+        "before_path": "Catz-long_explicit.cat",
+        "after_path": "Catz-long_none.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "7c2f6a09d8d5d3f98976c8158eb6db076ee0fa5f073bbd3d10d6fce1298e83bc",
+      "cells_equal": false,
+      "cell_hashes": [
+        "7544ec9404b3a20f57a1cfd7372fc6cc4e85627e32183412e3408e520c224613",
+        "0246c17876cc26469860e1e1b2757c30af167409634d0a2491775d933a6ca5c7"
+      ]
+    }
+  ]
+}

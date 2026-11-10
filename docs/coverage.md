@@ -44,7 +44,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Project Ball | [Field reference](../format-reference/project-ball.md); synthetic arithmetic/order: [PROJECT-001](../experiments/project-001.md); Head/nose controls: [PROJECT-002](../experiments/project-002.md), [cross-version PROJECT-003](../experiments/project-003.md); [second breeds PROJECT-004](../experiments/project-004.md); other targets pending |
 | Sounds | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Species | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Texture List | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Texture List | Retained static-frame orientation controls: [TEXTURE-001](../experiments/texture-001.md); broader texture authoring/native fidelity pending |
 | Thin/Fat | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Whiskers | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Z Shade Slope | Inventoried or implementation lead only; dedicated reference/experiment pending |

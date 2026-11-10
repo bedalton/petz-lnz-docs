@@ -1,0 +1,2823 @@
+{
+  "experiment": "TEXTURE-001",
+  "backend": "direct Python retained FrameState composition; local stdio MCP first-frame checks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "controls": {
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "raster_seed": 1,
+    "step": 0,
+    "line_rng": "fresh seed1 every draw",
+    "animation_frame": "fixed per named pose; no morph updates"
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Dogz-standing-0-resets.png",
+        "sheet_sha256": "3868efbad7913ec7333030ab8ee3a268ec303daa3d999e8fab3df4b61568645e",
+        "cell_size": [
+          91,
+          131
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Dogz-standing-0-third-resets.png",
+        "sheet_sha256": "3868efbad7913ec7333030ab8ee3a268ec303daa3d999e8fab3df4b61568645e",
+        "cell_size": [
+          91,
+          131
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          },
+          {
+            "sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Dogz-standing-0-sequence.png",
+        "sheet_sha256": "d6041a1f75ac7a46e2ec5d7c749330839623067c990d19a942a1da7481943277",
+        "cell_size": [
+          91,
+          131
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          },
+          {
+            "rgba_sha256": "6646a93f969774655acda12d3d82f23884e56d352a6b9c0fce2baf101fd3f30c"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "dce2f1a4247b8658e7e58ea374b85bd2b93d671279b28a16cab09ee63c221291",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "19c5b0a1b1991b76a9515b961d25e5bf6995e896f9cb8761f12f98f5b337dd96",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7f1b169bd7213b47adf3cc907273c99e5aaa7d4971530a535cdb7f415457e247",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Dogz-standing-90-resets.png",
+        "sheet_sha256": "869e63be4e6555adc33b8d22358166432e5b705632953e304e7b321a0303d770",
+        "cell_size": [
+          175,
+          121
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Dogz-standing-90-third-resets.png",
+        "sheet_sha256": "869e63be4e6555adc33b8d22358166432e5b705632953e304e7b321a0303d770",
+        "cell_size": [
+          175,
+          121
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          },
+          {
+            "sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Dogz-standing-90-sequence.png",
+        "sheet_sha256": "aea21ed389e7383daaf233ed3ece85c42d0ea69bc80d9d3785c918b5166bb5a5",
+        "cell_size": [
+          175,
+          121
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          },
+          {
+            "rgba_sha256": "71672d432ada85d7d11789e863acddd93063a371c4b2f9895fc9ad8118e19c6a"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fb48d44959a76fb6fe32434cdedb25854cc26b7c93cb3b2b2df9b61c2d60afa2",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "6d94a2106f288a39fdd566a265252ca197a20d125049076f1ded40f61d655af5",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fde46dd506e8fbd03830610dff4fcc5440573bb86cd5e6e58e9d3e7fa7daf757",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "ead5d07bf3a635df45f737454319f8e9b0dba3ab680a707f235af9d9454bf78c",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Dogz-sitting-0-resets.png",
+        "sheet_sha256": "04c5a88c747e6da054b332a544cb0cd747b3044ee166b4b245de2cac62ee5740",
+        "cell_size": [
+          90,
+          134
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [
+          42
+        ],
+        "texture_angle_changes": [
+          {
+            "ball": 42,
+            "first": [
+              -5,
+              16
+            ],
+            "second": [
+              -5,
+              15
+            ]
+          }
+        ]
+      },
+      "third_resets": {
+        "sheet": "Dogz-sitting-0-third-resets.png",
+        "sheet_sha256": "995443606282b8f784ac24f841b49404a5cb3b061852f69d1335687312066ecd",
+        "cell_size": [
+          90,
+          134
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          },
+          {
+            "sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d"
+          },
+          {
+            "sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          121,
+          0,
+          121,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [
+          42
+        ],
+        "texture_angle_changes": [
+          {
+            "ball": 42,
+            "first": [
+              -5,
+              16
+            ],
+            "second": [
+              -5,
+              14
+            ]
+          }
+        ]
+      },
+      "sequence": {
+        "sheet": "Dogz-sitting-0-sequence.png",
+        "sheet_sha256": "6964574991ffeccde0d838616a93b1c81b9fc298b4c80d3e7f1ae8086560edde",
+        "cell_size": [
+          90,
+          134
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "34b07c8a9d45d622ce9b0d56c45ff96c5288164ca97bb3190b13dbf1d39d4af3"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "5d0e08fbfe4b29222f2ac4962e51b1bd30d9907927348476621c4fe0833ef086"
+          },
+          {
+            "rgba_sha256": "06cc3cdb3670fdf6347acf902b8311d53d54d401c5d09d47d22409163967ce9a"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a1b93dd4bb07bd4d5392c461fcd7d67a0da372fcc88020415007c875c676db81",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "54c2d251e70c04f01606ac67dbf0bedf22dce1f8690aee1dddd01b36db6721ed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "b44d4e49e8176d8555d01de9cc0f89830692750cec58599356fd6a4d1ff38d08",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  15
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d",
+            "changed_from_first": 121,
+            "orientation_state_sha256": "046acf80d374de07bb6c19bbcbb01367d6ff4e9f9f9e158d4e34a3cb62b892bf",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  14
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d",
+            "changed_from_first": 121,
+            "orientation_state_sha256": "d8cc11709520ecd4ef2e6b7b41b41c38444393769a67c1314e838f4354b48ffb",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  13
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d",
+            "changed_from_first": 121,
+            "orientation_state_sha256": "58245fd8f3c97b9111d495ce52cf087f5a4b3227a92ec9dfbcc4debc38647633",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  12
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d",
+            "changed_from_first": 121,
+            "orientation_state_sha256": "d025a7fc537cda1ce370acde91571aa1ca043feb6fcae4715584cbe9a35efeb5",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  11
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "aa82d5632c24794f424eaa88e96b1b88462364b562de98a28e4341e60d9cf26d",
+            "changed_from_first": 121,
+            "orientation_state_sha256": "1998aef0801a97140f42a563857ee39cb2d9596dcc2fc80374ccb5c5eadd66b5",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  10
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "3ef6530c0987b8b0255646dd9e9c9a8e952e386832c5685c083439cafa8627fa",
+            "changed_from_first": 131,
+            "orientation_state_sha256": "9de63f42061bdf68a4125a1333ab512617800674fc204b7d32f79545bbb75807",
+            "changed_orientations_from_first": [
+              {
+                "ball": 42,
+                "angles": [
+                  -5,
+                  9
+                ],
+                "frame_angles": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "first_png_sha256": "676dfc8b4dd9628c9f2ee95b4dcdbc40a7fb116d82a794bf03e091e6f9e51341",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Dogz-sitting-90-resets.png",
+        "sheet_sha256": "946169cfd40e0a0325e7d734d05c0cbbc8318ce79ba7a070870fa710ca7c1e3b",
+        "cell_size": [
+          155,
+          136
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Dogz-sitting-90-third-resets.png",
+        "sheet_sha256": "946169cfd40e0a0325e7d734d05c0cbbc8318ce79ba7a070870fa710ca7c1e3b",
+        "cell_size": [
+          155,
+          136
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          },
+          {
+            "sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Dogz-sitting-90-sequence.png",
+        "sheet_sha256": "1b8b1ef41fe245ae08b715afecc1e6898b6f2176b4f4f4ea8f88466c040362ab",
+        "cell_size": [
+          155,
+          136
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          },
+          {
+            "rgba_sha256": "edbe3d2b394002b08fb61eb722634dc110cc96a4df65c7a55701fe178f7b3aee"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "e7422b7b8cc37987a6f223e76b9cf1401ab8c6133ce0472f5ee110791eb84d00",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "03e51703738fbc9641ae19041c9133d3f3707dc56011b6d49821cf062b6376b4",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "984444e57f47e9fb25c6f125c4feea583d383d0d6cc15a6146ef58eb9209d704",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "e80ab3a8b26fffc50bf971df05b122030c5ccfbeb63534b2f77ed4a7760618aa",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Dogz-lying-0-resets.png",
+        "sheet_sha256": "d2667108d24c9b075f6066f68812f9485cb288de1f3421b3758625fbac45e5eb",
+        "cell_size": [
+          91,
+          120
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Dogz-lying-0-third-resets.png",
+        "sheet_sha256": "d2667108d24c9b075f6066f68812f9485cb288de1f3421b3758625fbac45e5eb",
+        "cell_size": [
+          91,
+          120
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          },
+          {
+            "sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Dogz-lying-0-sequence.png",
+        "sheet_sha256": "17d7e000deeef844a285ecb82477b2cfff0187d4812eab15478b9614320fc22d",
+        "cell_size": [
+          91,
+          120
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          },
+          {
+            "rgba_sha256": "a7ba4a5e2463d5591aed3070970ad99908f90d7cefa4fd37eb66fbd12f964921"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "80118b1e4793024c6d3cd5b255567a016feb754c28e022c452047a59b6a993e4",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "decbbd02fce2faf628646701215d7eaf4fd8a403bcab5e8a08993cd9055cfdd7",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d6040a6d339b07daaaf8ec1fd609c122a8a8256d169c09a045cbc1234ca7d336",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "d5ef603f467828602a00b6663ea4384908d53a00b20db93135adb948eb95d1fd",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Dogz",
+      "source": "Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Dogz-lying-90-resets.png",
+        "sheet_sha256": "275f7d63ef3f6efefebb6aa96181c2e6d4523f9bf20e081b747be80a12ec42c9",
+        "cell_size": [
+          202,
+          78
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Dogz-lying-90-third-resets.png",
+        "sheet_sha256": "275f7d63ef3f6efefebb6aa96181c2e6d4523f9bf20e081b747be80a12ec42c9",
+        "cell_size": [
+          202,
+          78
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          },
+          {
+            "sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Dogz-lying-90-sequence.png",
+        "sheet_sha256": "eefd4bf1c677eb33d1a8bfc13a56ed51c8b52d156ab6a4e521b6d4366ccebede",
+        "cell_size": [
+          202,
+          78
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          },
+          {
+            "rgba_sha256": "e1c912c7230feb50e7193e7dbe7ffee640b7c101df5a9859834d00962b8f80e0"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d47727184f1b219999e304206755b47a436e64a1c4c25e4d617d788a7dbb8587",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "511265932fbc98968c7794b93523cc14db79a10c5eb6dfceb1503c2bb7121f72",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "8f5ac341962b96763ad72fbadfc1fec0b9582c9484dac8d2d9ccd4f145343340",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "8230a6a7c6b513736a010f8e01541738e9bfc44f98c368189e9b9443f89d8398",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Catz-standing-0-resets.png",
+        "sheet_sha256": "45161b7702a849ab1f401ecb0e570115c14f5eb3dacd9d576a068794d1419428",
+        "cell_size": [
+          71,
+          149
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-standing-0-third-resets.png",
+        "sheet_sha256": "45161b7702a849ab1f401ecb0e570115c14f5eb3dacd9d576a068794d1419428",
+        "cell_size": [
+          71,
+          149
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          },
+          {
+            "sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-standing-0-sequence.png",
+        "sheet_sha256": "a3acc41068c0c0741d390698c3a4673f27430a46a75f3b67ccbd37bacebd78da",
+        "cell_size": [
+          71,
+          149
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          },
+          {
+            "rgba_sha256": "d9b4c7e35c13359b27af85e223704031fcc4d88583271a8e0b638c80f83580d5"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "07234abb8d69e7572ab296570205f113f9ce4e00556b8439f621e51651a1ac38",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "21053f538438a3c0db0cd63492216b86a68e226986eecdad190533de7b107b32",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "7d9ae22ec4ef42c76a3894980c574cee32d9f8f8a5cf412feedf4ccacee9568b",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Catz-standing-90-resets.png",
+        "sheet_sha256": "8fd6efafc600b26c834e226460f69cc55bf3b4e219a22b5ded27fc9ec3f05e22",
+        "cell_size": [
+          163,
+          135
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-standing-90-third-resets.png",
+        "sheet_sha256": "8fd6efafc600b26c834e226460f69cc55bf3b4e219a22b5ded27fc9ec3f05e22",
+        "cell_size": [
+          163,
+          135
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          },
+          {
+            "sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-standing-90-sequence.png",
+        "sheet_sha256": "fe979c58eae11ec51cf3db3e216745e88fb0d14e8c680d01a7805ef2993f41c0",
+        "cell_size": [
+          163,
+          135
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          },
+          {
+            "rgba_sha256": "c1bf207279e85cbce2a75a6a725e49750f9e2b070dc0f59f43f4951b245bfeb1"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "fe61c8c7ddeda2717e155cb378ea73dd5ee27bbf59ed97bfed73b7b6c4b239b2",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "c106c1ed351ce445080eead50ef758089c92510c2384ceb064d3fe2778d9333b",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "70f194b1b9f3980d9d75ae5d675219bf893e6a041d9572a1da6873be7566eb07",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Catz-sitting-0-resets.png",
+        "sheet_sha256": "1b7675afe4fb54c96a445ba6e533f3348e43fc1a16baaef1f7bf9f6393ed72df",
+        "cell_size": [
+          85,
+          145
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-sitting-0-third-resets.png",
+        "sheet_sha256": "1b7675afe4fb54c96a445ba6e533f3348e43fc1a16baaef1f7bf9f6393ed72df",
+        "cell_size": [
+          85,
+          145
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          },
+          {
+            "sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-sitting-0-sequence.png",
+        "sheet_sha256": "279fe8b64f04595cac93f61dc9b22f577985515c431e80a8ba8d3b611a4394c7",
+        "cell_size": [
+          85,
+          145
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          },
+          {
+            "rgba_sha256": "340ed48a6d581e226c55f397cbcc0f1f652b6fe6441a4e51e646de199e16a3fd"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "d35bb569d5c8bc6b3416eec8ae3a92291de859bca37cb5f7a9b2164f401512ec",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "f7b93163ef34075794b3b9eef7962b2cfb9a247798ccdb1547e058778693f0e1",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "4cf076f8cdbec7ed28dd814d618b797c6198d07cd9b12bc63b669b754093fdbc",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "8dc3f38e31a2a5c2faa07083615cec417b8919abdbc910efa9d72b6a507b9cb5",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Catz-sitting-90-resets.png",
+        "sheet_sha256": "f41a1ffdd225cc55d407220aec5b4322d302c0893d94e8a777bc80f803c1a7d1",
+        "cell_size": [
+          128,
+          152
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-sitting-90-third-resets.png",
+        "sheet_sha256": "f41a1ffdd225cc55d407220aec5b4322d302c0893d94e8a777bc80f803c1a7d1",
+        "cell_size": [
+          128,
+          152
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          },
+          {
+            "sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-sitting-90-sequence.png",
+        "sheet_sha256": "45ad402c2e092163642a90a64a606da65edd87852799a5d45788febbc6e24ed2",
+        "cell_size": [
+          128,
+          152
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          },
+          {
+            "rgba_sha256": "ba5849152f32149fafe1389a27cc6a8fe6179ba1af0811fc4c8a2818b5f11786"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "29a6089c9c5b12d80d5080a7c4bb429632f118a916043264b3d3e696320b047d",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "da60d23cdab5b6c0cbfd35deccf8def0ea5d9e80737aebc2ca87a687589d0013",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "a6562e584beccbff90877ea30a96cd448e5af908e70dffd214dae19911262534",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "420bed9dfb675241f0f1f52180ba0fccfb59cc788f47dd8af3b996b1beb26346",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "resets": {
+        "sheet": "Catz-lying-0-resets.png",
+        "sheet_sha256": "6e9ddef9bc247da8dd2e642094caf027b1e9147d255769af60c344bbd1bff35b",
+        "cell_size": [
+          72,
+          115
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-lying-0-third-resets.png",
+        "sheet_sha256": "6e9ddef9bc247da8dd2e642094caf027b1e9147d255769af60c344bbd1bff35b",
+        "cell_size": [
+          72,
+          115
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          },
+          {
+            "sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-lying-0-sequence.png",
+        "sheet_sha256": "ee10748bb342711f0cdaa0a9c3352a1a76d68250721e9bf880e37375c61de96b",
+        "cell_size": [
+          72,
+          115
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          },
+          {
+            "rgba_sha256": "30185cc183be8204e0490bcef14d702c46ff66eae67a94535e2bf4a880ee12e0"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "5b15c08febd79180b60c2636745e261fe18ed3c9700a8f8b3ffd33bb011eb5a1",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "fd51a2837178d2d3e826f6a5891a00999fd7708737343b54c97b177e6d987e6a",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "c5d8d8dfabd566aedbfd7c2792e0f9a848d265a2662aa81462befdcd71f4a915",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "4303c5b7a6fd01d7ac68d9734f706be57abfd74709b5658d04d209331573c27d",
+      "first_local_mcp_match": true
+    },
+    {
+      "species": "Catz",
+      "source": "Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "resets": {
+        "sheet": "Catz-lying-90-resets.png",
+        "sheet_sha256": "132587cf6d9ccc4df95a260040d78887fcae5b590bee9dcb2fddb4bd7f973431",
+        "cell_size": [
+          214,
+          80
+        ],
+        "cell_labels": [
+          "first",
+          "second_full_state",
+          "second_geometry_only",
+          "second_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "third_resets": {
+        "sheet": "Catz-lying-90-third-resets.png",
+        "sheet_sha256": "132587cf6d9ccc4df95a260040d78887fcae5b590bee9dcb2fddb4bd7f973431",
+        "cell_size": [
+          214,
+          80
+        ],
+        "cell_labels": [
+          "first",
+          "third_full_state",
+          "third_geometry_only",
+          "third_texture_only",
+          "fresh"
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          }
+        ],
+        "indexed_hashes": [
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          },
+          {
+            "sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed"
+          }
+        ],
+        "changed_from_first": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "full_vs_texture_only_changed_pixels": 0,
+        "geometry_only_vs_fresh_changed_pixels": 0,
+        "changed_command_ids": [],
+        "texture_angle_changes": []
+      },
+      "sequence": {
+        "sheet": "Catz-lying-90-sequence.png",
+        "sheet_sha256": "6f21f2a93cde8a8467a7bbb40b24a83d93c166a3a8aa9a74209a6cd957bf1e4a",
+        "cell_size": [
+          214,
+          80
+        ],
+        "cell_hashes": [
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          },
+          {
+            "rgba_sha256": "5c132c3d222a33b0ac3b0084a1bee136882daa3511cdedfb04d194cd93468e31"
+          }
+        ],
+        "frames": [
+          {
+            "frame": 1,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "5d5ee1c190f7f52dcdf0e930b5cbac4234cd15fae5e70afcfddc22f2d9a536f4",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 2,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 3,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 4,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 5,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 6,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 7,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          },
+          {
+            "frame": 8,
+            "indexed_sha256": "783fa2d00a817568f0ebcf25584c3af2d0e527800a75c4c0f55efe0a6da17aed",
+            "changed_from_first": 0,
+            "orientation_state_sha256": "edc62bdf82b2666e1e1e91e30e76b1a6d88833ba5f3b72e6306f91b0091a048a",
+            "changed_orientations_from_first": []
+          }
+        ]
+      },
+      "first_png_sha256": "2b5a859f17702f81d14cf5c60e8d0367bf917ada5a46936d4df08a4694332a85",
+      "first_local_mcp_match": true
+    }
+  ],
+  "summary": {
+    "third_frame_pixel_changes": 1,
+    "third_geometry_only_pixel_changes": 0,
+    "third_texture_only_pixel_changes": 1,
+    "third_full_vs_texture_only_differences": 0,
+    "second_frame_pixel_changes": 0,
+    "geometry_only_pixel_changes": 0,
+    "texture_only_pixel_changes": 0,
+    "full_vs_texture_only_differences": 0
+  },
+  "source_hashes": {
+    "rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+    "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+    "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+    "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009"
+  },
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

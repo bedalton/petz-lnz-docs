@@ -7,6 +7,7 @@ names={k for r in rows for field in ('breed_sections','master_sections') for k i
 names.add('Draw Linez Before Ballz')
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
+ 'Texture List':'Retained static-frame orientation controls: [TEXTURE-001](../experiments/texture-001.md); broader texture authoring/native fidelity pending',
  'Default Linez Thickness':'25/100, empty fallback and explicit-row precedence: [LINE-004](../experiments/line-004.md)',
  'Draw Linez Before Ballz':'Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md)',
  'Linez':'Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); short-row/default-thickness controls: [LINE-004](../experiments/line-004.md); other styling pending',

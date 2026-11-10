@@ -55,6 +55,8 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)
 - [VIS-002: Catz 55/56 across poses and views](experiments/vis-002.md)
 
+Latest static texture evidence: [TEXTURE-001](experiments/texture-001.md), isolating retained texture orientation from geometry/morph state.
+
 Latest explicit-state pixels: [MORPH-005](experiments/morph-005.md), including an order-only counterfactual and MCP baseline checks.
 
 Session index: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md), including verification and next steps.

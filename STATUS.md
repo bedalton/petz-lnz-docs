@@ -109,3 +109,5 @@ Updated: 2026-11-10
 - Final aggregate independently rehashes all660 PNGs and48 state files;all match their manifests.
 
 - Latest: [PAINT-004](experiments/paint-004.md),216 synthetic commands/180 group-only equivalences and216 color positive controls; nonzero groups diagnose unsupported. Saved-pet group retint remains open.
+
+- Latest: [PAINT-005](experiments/paint-005.md),12 copy-only saved-array mutations retain72 direct views and24 MCP variant views across three Petz4 saves. Skipped prefix data is distinct from cached paint groups.

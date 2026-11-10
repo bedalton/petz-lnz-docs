@@ -342,3 +342,7 @@ Final aggregate additionally rehashes all660 PNG files and48 private state files
 ## Paint group preparation continuation
 
 [PAINT-004](experiments/paint-004.md) narrows the saved-group question:216 synthetic prepared commands,180 group-only equivalences,180 unsupported-field diagnostics and216 color positive controls pass. Manifest includes all62 installed/checkout source hashes,package version and controls. Reproduce with tools/paint_group_controls.py --verify; no private assets,MCP calls,pixels or renderer/original edits. This bypasses parser/saved-pet assembly;end-to-end saved-group overrides remain open. Next:trace saved-pet group data into appearance assembly,other textured pets/versions or native evidence. Unrelated istall-node remains untouched.
+
+## Saved prefix-array continuation
+
+[PAINT-005](experiments/paint-005.md):three saved pets ×four prefix-array mutations,12 copies;72 direct edited/72 baseline draws and30 fresh stdio MCP views agree. Reader skips three count-checked array payloads;exact original/cache/tail boundaries retained. Forty-eight PAINT-001 fresh PNG links pass. Copies are renderer probes with unvalidated PetzInfo checksums,not game-ready files. tools/saved_colour_arrays.py --verify reconstructs/reloads all fixtures;private evidence scratch/research/paint-005. Cached group/color controls follow separately. Original files/renderer unchanged;ten-minute continuation ongoing.

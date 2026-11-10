@@ -1,0 +1,3321 @@
+{
+  "experiment": "LINE-014",
+  "backend": "asset-free direct Python indexed raster fixtures; no MCP/game data",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "source_hashes": {
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0"
+  },
+  "controls": {
+    "texture_size": [
+      8,
+      8
+    ],
+    "texture_values": "160..223 in row-major order",
+    "shade_offset": 0,
+    "has_sign": false,
+    "canvas": [
+      60,
+      60
+    ],
+    "line_seed": 1,
+    "widths": [
+      3,
+      3
+    ],
+    "edge_mode": -1
+  },
+  "records": [
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "2591c0d1d4786f06a21412c36822f1d5bfea999f0aec6e332e6f33dd82033f68",
+      "plain_indexed_sha256": "d740d1a6d9badd12afb7f4acc61ab0cca18118a8fa1423d2bcdab7f7b28acbbf",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "3ded142ca1003ffc5fd92240a47c6fabed772e7e01eb7838259ca61177871105",
+      "plain_indexed_sha256": "28469b9479e791cd9469163eefc3fc5f622e84393c393955559bba64e2d67dc1",
+      "rng_after": 752224798,
+      "table_lengths": [
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        7
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "fd6a44bcd37c04f857d9fb45910416c42cdf08eb80b509e87aab63c78dd7e070",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "2591c0d1d4786f06a21412c36822f1d5bfea999f0aec6e332e6f33dd82033f68",
+      "plain_indexed_sha256": "d740d1a6d9badd12afb7f4acc61ab0cca18118a8fa1423d2bcdab7f7b28acbbf",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "3ded142ca1003ffc5fd92240a47c6fabed772e7e01eb7838259ca61177871105",
+      "plain_indexed_sha256": "28469b9479e791cd9469163eefc3fc5f622e84393c393955559bba64e2d67dc1",
+      "rng_after": 752224798,
+      "table_lengths": [
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        7
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "fd6a44bcd37c04f857d9fb45910416c42cdf08eb80b509e87aab63c78dd7e070",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e257bff69e80aa3128fec0e982cf3e69f5574d89f31133a955b872cba1d12b8",
+      "plain_indexed_sha256": "4d375bb4939324dce6516eb16976d676241b41808ce70bfae6a74daa3ae8438e",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            0
+          ],
+          "value": 163
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            27
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "b25a8056a2ec80a8819fb1038874d6a07425d23de3a710cd3811551c5b28f74c",
+      "plain_indexed_sha256": "d6fbdea506c7ada3dc974ec693bb327855f75eeac0d3be80b581aaba63f679a4",
+      "rng_after": 1924036713,
+      "table_lengths": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        8
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "798b86d7dc75702b618d7d8d6c1d28e6a316f4f950affff8c114cede898b25c5",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e257bff69e80aa3128fec0e982cf3e69f5574d89f31133a955b872cba1d12b8",
+      "plain_indexed_sha256": "4d375bb4939324dce6516eb16976d676241b41808ce70bfae6a74daa3ae8438e",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            0
+          ],
+          "value": 163
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            27
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "b25a8056a2ec80a8819fb1038874d6a07425d23de3a710cd3811551c5b28f74c",
+      "plain_indexed_sha256": "d6fbdea506c7ada3dc974ec693bb327855f75eeac0d3be80b581aaba63f679a4",
+      "rng_after": 1924036713,
+      "table_lengths": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        8
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "798b86d7dc75702b618d7d8d6c1d28e6a316f4f950affff8c114cede898b25c5",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "46bc367634e6b28e45a0cc37b1b23836d646d44a52286b4a2ad3fbd4c29f3a1d",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "4c8186f63fa52cbe59730e39cbd6cd5b01dde3704d2b1e4e1586b5f19bc85a59",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "1a3817ccff0c8deadebc32e1e0e1301f1aa20c6906658bdd0bce91a045e9dab2",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "46bc367634e6b28e45a0cc37b1b23836d646d44a52286b4a2ad3fbd4c29f3a1d",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "4c8186f63fa52cbe59730e39cbd6cd5b01dde3704d2b1e4e1586b5f19bc85a59",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "1a3817ccff0c8deadebc32e1e0e1301f1aa20c6906658bdd0bce91a045e9dab2",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        7,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "c68e4bc6faea4559a64a910eccca5d6d9518785acb79dd876413a7063d592c4d",
+      "plain_indexed_sha256": "a68c2801251e1def23097fae6e291d304400da92bd552d84bfc97be92f484d82",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "465e1d2383d6a98a5e825caa72d418f0c347a352c97f26b8832918a18a0f2e19",
+      "plain_indexed_sha256": "82952132f59b341ac1b05df030683b72b3c2685a82d68ea9a198d284a5914e27",
+      "rng_after": 415139642,
+      "table_lengths": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        14,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "a5e2d47ccb4307d7e465b826f6f52d9d2dfed3d98fbf029cd6f717fc8d112499",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        7,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "c68e4bc6faea4559a64a910eccca5d6d9518785acb79dd876413a7063d592c4d",
+      "plain_indexed_sha256": "a68c2801251e1def23097fae6e291d304400da92bd552d84bfc97be92f484d82",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "465e1d2383d6a98a5e825caa72d418f0c347a352c97f26b8832918a18a0f2e19",
+      "plain_indexed_sha256": "82952132f59b341ac1b05df030683b72b3c2685a82d68ea9a198d284a5914e27",
+      "rng_after": 415139642,
+      "table_lengths": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        14,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "a5e2d47ccb4307d7e465b826f6f52d9d2dfed3d98fbf029cd6f717fc8d112499",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e61d2bbfcf43c854fae6db547dbf1ab8d283c9376fcc4109a53ac0151a52c17",
+      "plain_indexed_sha256": "1a8daafd5352351d5261967a76a76d6131ff5cbeec4ff7338634d9020c90c6e9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        },
+        {
+          "destination": [
+            27,
+            20
+          ],
+          "source": [
+            7,
+            4
+          ],
+          "value": 199
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "f9c0aacff83c7d35b4df08018ee5c8c2f16e2890e84f57173f8b5741d5c27ed9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        15,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "7769d27b240c0c3fc8643e82895a4d1c9be9730f785afcc05a391bc1d29ab85f",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e61d2bbfcf43c854fae6db547dbf1ab8d283c9376fcc4109a53ac0151a52c17",
+      "plain_indexed_sha256": "1a8daafd5352351d5261967a76a76d6131ff5cbeec4ff7338634d9020c90c6e9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        },
+        {
+          "destination": [
+            27,
+            20
+          ],
+          "source": [
+            7,
+            4
+          ],
+          "value": 199
+        }
+      ]
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "f9c0aacff83c7d35b4df08018ee5c8c2f16e2890e84f57173f8b5741d5c27ed9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        15,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "7769d27b240c0c3fc8643e82895a4d1c9be9730f785afcc05a391bc1d29ab85f",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "55038c18337e8ee62f1099cb2c85b99b9f21fdebbd08b5de282e1dff7eb9db0c",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        10,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "bb1f4800ee81773b59bd6b1d1df0705dc2fecf68920f1266c0c9026ffe9234a8",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        16,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "e612091efe580272f3dc6f19dbece3352ce06bca7dcd5a230259477f715c18ce",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "55038c18337e8ee62f1099cb2c85b99b9f21fdebbd08b5de282e1dff7eb9db0c",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        10,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "bb1f4800ee81773b59bd6b1d1df0705dc2fecf68920f1266c0c9026ffe9234a8",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 0,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        16,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "e612091efe580272f3dc6f19dbece3352ce06bca7dcd5a230259477f715c18ce",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "2591c0d1d4786f06a21412c36822f1d5bfea999f0aec6e332e6f33dd82033f68",
+      "plain_indexed_sha256": "d740d1a6d9badd12afb7f4acc61ab0cca18118a8fa1423d2bcdab7f7b28acbbf",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "3ded142ca1003ffc5fd92240a47c6fabed772e7e01eb7838259ca61177871105",
+      "plain_indexed_sha256": "28469b9479e791cd9469163eefc3fc5f622e84393c393955559bba64e2d67dc1",
+      "rng_after": 752224798,
+      "table_lengths": [
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        7
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "fd6a44bcd37c04f857d9fb45910416c42cdf08eb80b509e87aab63c78dd7e070",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "2591c0d1d4786f06a21412c36822f1d5bfea999f0aec6e332e6f33dd82033f68",
+      "plain_indexed_sha256": "d740d1a6d9badd12afb7f4acc61ab0cca18118a8fa1423d2bcdab7f7b28acbbf",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        7
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "3ded142ca1003ffc5fd92240a47c6fabed772e7e01eb7838259ca61177871105",
+      "plain_indexed_sha256": "28469b9479e791cd9469163eefc3fc5f622e84393c393955559bba64e2d67dc1",
+      "rng_after": 752224798,
+      "table_lengths": [
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        7
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "fd6a44bcd37c04f857d9fb45910416c42cdf08eb80b509e87aab63c78dd7e070",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e257bff69e80aa3128fec0e982cf3e69f5574d89f31133a955b872cba1d12b8",
+      "plain_indexed_sha256": "4d375bb4939324dce6516eb16976d676241b41808ce70bfae6a74daa3ae8438e",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            0
+          ],
+          "value": 163
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            27
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "b25a8056a2ec80a8819fb1038874d6a07425d23de3a710cd3811551c5b28f74c",
+      "plain_indexed_sha256": "d6fbdea506c7ada3dc974ec693bb327855f75eeac0d3be80b581aaba63f679a4",
+      "rng_after": 1924036713,
+      "table_lengths": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        8
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "798b86d7dc75702b618d7d8d6c1d28e6a316f4f950affff8c114cede898b25c5",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e257bff69e80aa3128fec0e982cf3e69f5574d89f31133a955b872cba1d12b8",
+      "plain_indexed_sha256": "4d375bb4939324dce6516eb16976d676241b41808ce70bfae6a74daa3ae8438e",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            3,
+            0
+          ],
+          "value": 163
+        },
+        {
+          "destination": [
+            20,
+            21
+          ],
+          "source": [
+            3,
+            1
+          ],
+          "value": 171
+        },
+        {
+          "destination": [
+            20,
+            22
+          ],
+          "source": [
+            3,
+            2
+          ],
+          "value": 179
+        },
+        {
+          "destination": [
+            20,
+            23
+          ],
+          "source": [
+            3,
+            3
+          ],
+          "value": 187
+        },
+        {
+          "destination": [
+            20,
+            24
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            20,
+            25
+          ],
+          "source": [
+            3,
+            5
+          ],
+          "value": 203
+        },
+        {
+          "destination": [
+            20,
+            26
+          ],
+          "source": [
+            3,
+            6
+          ],
+          "value": 211
+        },
+        {
+          "destination": [
+            20,
+            27
+          ],
+          "source": [
+            3,
+            7
+          ],
+          "value": 219
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        8
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "b25a8056a2ec80a8819fb1038874d6a07425d23de3a710cd3811551c5b28f74c",
+      "plain_indexed_sha256": "d6fbdea506c7ada3dc974ec693bb327855f75eeac0d3be80b581aaba63f679a4",
+      "rng_after": 1924036713,
+      "table_lengths": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        8
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "798b86d7dc75702b618d7d8d6c1d28e6a316f4f950affff8c114cede898b25c5",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "46bc367634e6b28e45a0cc37b1b23836d646d44a52286b4a2ad3fbd4c29f3a1d",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "4c8186f63fa52cbe59730e39cbd6cd5b01dde3704d2b1e4e1586b5f19bc85a59",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "1a3817ccff0c8deadebc32e1e0e1301f1aa20c6906658bdd0bce91a045e9dab2",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        3,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "46bc367634e6b28e45a0cc37b1b23836d646d44a52286b4a2ad3fbd4c29f3a1d",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        4,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "4c8186f63fa52cbe59730e39cbd6cd5b01dde3704d2b1e4e1586b5f19bc85a59",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "vertical",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        10,
+        9
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "1a3817ccff0c8deadebc32e1e0e1301f1aa20c6906658bdd0bce91a045e9dab2",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        7,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "c68e4bc6faea4559a64a910eccca5d6d9518785acb79dd876413a7063d592c4d",
+      "plain_indexed_sha256": "a68c2801251e1def23097fae6e291d304400da92bd552d84bfc97be92f484d82",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "465e1d2383d6a98a5e825caa72d418f0c347a352c97f26b8832918a18a0f2e19",
+      "plain_indexed_sha256": "82952132f59b341ac1b05df030683b72b3c2685a82d68ea9a198d284a5914e27",
+      "rng_after": 415139642,
+      "table_lengths": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        14,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "a5e2d47ccb4307d7e465b826f6f52d9d2dfed3d98fbf029cd6f717fc8d112499",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        7,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "c68e4bc6faea4559a64a910eccca5d6d9518785acb79dd876413a7063d592c4d",
+      "plain_indexed_sha256": "a68c2801251e1def23097fae6e291d304400da92bd552d84bfc97be92f484d82",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 21,
+      "indexed_sha256": "465e1d2383d6a98a5e825caa72d418f0c347a352c97f26b8832918a18a0f2e19",
+      "plain_indexed_sha256": "82952132f59b341ac1b05df030683b72b3c2685a82d68ea9a198d284a5914e27",
+      "rng_after": 415139642,
+      "table_lengths": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 7,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        14,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "a5e2d47ccb4307d7e465b826f6f52d9d2dfed3d98fbf029cd6f717fc8d112499",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e61d2bbfcf43c854fae6db547dbf1ab8d283c9376fcc4109a53ac0151a52c17",
+      "plain_indexed_sha256": "1a8daafd5352351d5261967a76a76d6131ff5cbeec4ff7338634d9020c90c6e9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        },
+        {
+          "destination": [
+            27,
+            20
+          ],
+          "source": [
+            7,
+            4
+          ],
+          "value": 199
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "f9c0aacff83c7d35b4df08018ee5c8c2f16e2890e84f57173f8b5741d5c27ed9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        15,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "7769d27b240c0c3fc8643e82895a4d1c9be9730f785afcc05a391bc1d29ab85f",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        8,
+        3
+      ],
+      "rejected": false,
+      "colored_pixels": 24,
+      "indexed_sha256": "3e61d2bbfcf43c854fae6db547dbf1ab8d283c9376fcc4109a53ac0151a52c17",
+      "plain_indexed_sha256": "1a8daafd5352351d5261967a76a76d6131ff5cbeec4ff7338634d9020c90c6e9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": [
+        {
+          "destination": [
+            20,
+            20
+          ],
+          "source": [
+            0,
+            4
+          ],
+          "value": 192
+        },
+        {
+          "destination": [
+            21,
+            20
+          ],
+          "source": [
+            1,
+            4
+          ],
+          "value": 193
+        },
+        {
+          "destination": [
+            22,
+            20
+          ],
+          "source": [
+            2,
+            4
+          ],
+          "value": 194
+        },
+        {
+          "destination": [
+            23,
+            20
+          ],
+          "source": [
+            3,
+            4
+          ],
+          "value": 195
+        },
+        {
+          "destination": [
+            24,
+            20
+          ],
+          "source": [
+            4,
+            4
+          ],
+          "value": 196
+        },
+        {
+          "destination": [
+            25,
+            20
+          ],
+          "source": [
+            5,
+            4
+          ],
+          "value": 197
+        },
+        {
+          "destination": [
+            26,
+            20
+          ],
+          "source": [
+            6,
+            4
+          ],
+          "value": 198
+        },
+        {
+          "destination": [
+            27,
+            20
+          ],
+          "source": [
+            7,
+            4
+          ],
+          "value": 199
+        }
+      ]
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "f9c0aacff83c7d35b4df08018ee5c8c2f16e2890e84f57173f8b5741d5c27ed9",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 8,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        15,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "7769d27b240c0c3fc8643e82895a4d1c9be9730f785afcc05a391bc1d29ab85f",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 0,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "55038c18337e8ee62f1099cb2c85b99b9f21fdebbd08b5de282e1dff7eb9db0c",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 1,
+      "computed_raster_size": [
+        10,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "bb1f4800ee81773b59bd6b1d1df0705dc2fecf68920f1266c0c9026ffe9234a8",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": false,
+      "fuzz": 7,
+      "computed_raster_size": [
+        16,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "e612091efe580272f3dc6f19dbece3352ce06bca7dcd5a230259477f715c18ce",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 0,
+      "computed_raster_size": [
+        9,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "55038c18337e8ee62f1099cb2c85b99b9f21fdebbd08b5de282e1dff7eb9db0c",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 1,
+      "computed_raster_size": [
+        10,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "bb1f4800ee81773b59bd6b1d1df0705dc2fecf68920f1266c0c9026ffe9234a8",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    },
+    {
+      "period": 8,
+      "axis": "horizontal",
+      "span": 9,
+      "reverse": true,
+      "fuzz": 7,
+      "computed_raster_size": [
+        16,
+        3
+      ],
+      "rejected": true,
+      "colored_pixels": 0,
+      "indexed_sha256": "967eedb2dc77a95e6270119ece23d9f47ca97c3b18ffa7d391d34e461b284f4c",
+      "plain_indexed_sha256": "e612091efe580272f3dc6f19dbece3352ce06bca7dcd5a230259477f715c18ce",
+      "rng_after": 1,
+      "table_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "centerline_samples": []
+    }
+  ],
+  "summary": {
+    "fixtures": 72,
+    "rejected": 44,
+    "accepted": 28,
+    "sample_assertions": 120
+  }
+}

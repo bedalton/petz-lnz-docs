@@ -194,3 +194,7 @@ Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures 
 ## Latest asset-backed connector textures
 
 [LINE-013](experiments/line-013.md):30 numerical loads,sixteen MCP pairs; two sheets reviewed. Equal base color125,head stock texture(slot1 Dogz/0 Catz),untextured marker. Head-selected negative fill differs from explicit125; end-selected equals explicit; reversed endpoint controls pass. Loaded/remapped texture hashes recorded,private scratch/research/line-013. No renderer/native claims. Next: texture raster size limits/sampling,broader breeds/versions or native evidence.
+
+## Latest connector texture window research
+
+[LINE-014](experiments/line-014.md):72 asset-free rasters,28 accepted/44 rejected,120 exact centerline samples; untextured controls all draw. Raster width includes fuzz; oversized texture windows reject before RNG/table generation. Period0/8 outputs match; centered x/y crops bias opposite ways on odd spare space. Private synthetic pixels scratch/research/line-014/pixels.json. No MCP/native/renderer changes. Next: actual breed oversized connector controls.

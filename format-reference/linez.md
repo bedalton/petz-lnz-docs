@@ -43,3 +43,5 @@ For tested two-field rows, `Default Linez Thickness` supplies both endpoint perc
 For retained RNG behavior and isolation controls, use the focused [connector state reference](connector-state.md).
 
 [LINE-013](../experiments/line-013.md) confirms visible inherited textures in Scottie/Siamese MCP renders: equal endpoint base color125, textured head and untextured marker; head-selected negative fill differs from explicit125, marker-selected negative fill matches it. Reversed endpoint controls agree. Actual loaded/remapped texture hashes are recorded; native fidelity remains unvalidated.
+
+[LINE-014](../experiments/line-014.md) tests synthetic texture windows: oversized raster boxes are rejected before fuzz RNG use; fuzz margin counts toward width. Accepted windows crop centrally, with opposite odd-space bias on x/y. Period0/8 controls match; no wrapping rescues oversized connectors in this path. Actual composed-size rejection remains a separate question.

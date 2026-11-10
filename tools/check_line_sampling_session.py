@@ -8,6 +8,8 @@ import petz_renderer
 from petz_renderer.rendering.framebuffer import Framebuffer
 from petz_renderer.rendering.lines import LineBlock,LineRenderer
 from petz_renderer.formats.resolver import ResourceResolver
+from petz_renderer.formats.pe import ResourceFile
+from petz_renderer.appearance.layers import load_layer
 from petz_renderer.local import load_breed_assets
 from petz_renderer.rendering.pose import posed_geometry
 from petz_renderer.rendering.preparation import prepare_frame
@@ -88,7 +90,7 @@ def main():
             counts['exact_body_samples']+=observed_samples
         else:
             for case in report['cases']:
-                source,raw,leaf,*_=adult(case['species'],filename=case['breed']['filename'],selector=case['breed']['selector'])
+                source,raw,leaf,base,master,_=adult(case['species'],filename=case['breed']['filename'],selector=case['breed']['selector'])
                 assert SHA(source.read_bytes())==case['source_sha256']
                 assert str(source.relative_to(ROOT))==case['source_path']
                 for variant,filename in case['paths'].items():
@@ -99,6 +101,7 @@ def main():
                     assert edited[leaf.offset+leaf.size:]==raw[leaf.offset+leaf.size:]
                     counts['private_copies']+=1
                 resolver=ResourceResolver((ROOT/'games/petz4',folder),game_version='petz4')
+                stock=load_layer(ResourceFile(raw),master,name=leaf.name,seed=0)
                 reference_shapes={}
                 for check in case['geometry']:
                     variant,pose=check['variant'],check['pose']
@@ -107,6 +110,7 @@ def main():
                     if pose in reference_shapes:assert shape==reference_shapes[pose]
                     else:reference_shapes[pose]=shape
                     frame=prepare_frame(assets.appearance,assets.sizes,assets.frame,textures=assets.textures,fatness=50)
+                    assert assets.appearance.lines[:-1]==stock.appearance.lines
                     line=assets.appearance.lines[-1]
                     block=build_line_block(line,tuple(b.endpoint for b in frame.balls))
                     assert block is not None

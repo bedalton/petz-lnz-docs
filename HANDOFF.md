@@ -238,3 +238,5 @@ Full installed-source audit:62 Python sources match renderer checkout; hash map 
 Final sampling audit additionally reconstructs LINE-020 flat masks,checks their saved hashes and verifies every saved edge/background byte,not only body samples/counts. Focused texture reference now explicitly states LINE-019 second-breed scope. All checks pass; no new native claim.
 
 Final sampling numerical audit now actually reloads all30 LINE-019 cases,checks variant pose-geometry invariance,block colors/paint presence,texture config/dimensions/hashes and remapped paint. All pass. Two additional front sheets reviewed;LINE-019 now has four reviewed sheets total (front/side for each breed). Originals and renderer remain unchanged.
+
+The final reload verifier also re-parses each original adult layer and asserts all preceding stock connector rows survive every variant unchanged. Duration and evidence scope remain limited to this ten-minute continuation.

@@ -114,3 +114,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest relative-size morph research
 
 [MORPH-002](experiments/morph-002.md): 48 numerical cases, twelve default-state local MCP pairs, two reviewed sheets. Group15 head-relative size20 retains evaluated size0 at positive percentages, so radius equals reference head; 100% geometry equals static relative0, differs from static relative20. Offsets scale normally; ordinary group15 size20 fully activates to static ordinary20. Ordered100→0→50 equals direct50. GAP-005 records uncertain native semantics; no renderer repair. Three installed sources/four engine hashes verified. tools/relative_morph_probe.py refuses overwrite; private scratch/research/morph-002. Next: multiple groups/update ordering, body-area prefix exceptions, other lists/whiskers or connector styling.
+
+## Latest multiple-group research
+
+[MORPH-003](experiments/morph-003.md): 108 numerical cases, twelve default-state MCP pairs, two reviewed sheets. Groups14/15 independent; A/C share14. Reversing distinct updates preserves final morph/posed geometry, but48 cases have different transition traces. Dormant head-area additions extend prefix yet remain parked and match dormant body-area pixels. Full100/100 equals static-all. Final geometry does not imply persistent sort/shading equivalence. Three source/four engine hashes verified; tools/multiple_morph_probe.py refuses overwrite; private scratch/research/morph-003. Next: retained-state assembly/order/shading, other lists/whiskers or connector styling.

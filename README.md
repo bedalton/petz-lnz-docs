@@ -55,6 +55,8 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)
 - [VIS-002: Catz 55/56 across poses and views](experiments/vis-002.md)
 
+Latest multiple-group evidence: [MORPH-003](experiments/morph-003.md), including shared members and dormant head-area prefixes.
+
 Latest relative-size morph evidence: [MORPH-002](experiments/morph-002.md), documenting GAP-005 without a speculative renderer change.
 
 Latest omitted-marker evidence: [AREA-006](experiments/area-006.md), separating late classification from visibility.

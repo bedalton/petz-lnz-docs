@@ -1,0 +1,9011 @@
+{
+  "experiment": "MORPH-003",
+  "backend": "local stdio MCP default state; direct Python explicit morph updates",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "settings": {
+    "dormant_body": [
+      [
+        14,
+        15,
+        14
+      ],
+      1
+    ],
+    "dormant_head": [
+      [
+        14,
+        15,
+        14
+      ],
+      8
+    ],
+    "static_all": [
+      [
+        0,
+        0,
+        0
+      ],
+      8
+    ],
+    "active_a": [
+      [
+        0,
+        15,
+        0
+      ],
+      8
+    ],
+    "active_b": [
+      [
+        14,
+        0,
+        14
+      ],
+      8
+    ]
+  },
+  "offsets": [
+    [
+      -36,
+      -80,
+      0
+    ],
+    [
+      -8,
+      -110,
+      0
+    ],
+    [
+      30,
+      -80,
+      0
+    ]
+  ],
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "first_marker_id": 90,
+      "paths": {
+        "dormant_body": "Dogz-dormant_body.dog",
+        "dormant_head": "Dogz-dormant_head.dog",
+        "static_all": "Dogz-static_all.dog",
+        "active_a": "Dogz-active_a.dog",
+        "active_b": "Dogz-active_b.dog"
+      },
+      "input_hashes": {
+        "dormant_body": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+        "dormant_head": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+        "static_all": "23442ede1a25a1acc5bde67809fb5bbdbc731ed6c3a6f0691c65cef0914e2715",
+        "active_a": "853b99c715cbf675a79787542af49ea586704dd440396c95a1691fade1989e1d",
+        "active_b": "fa2383f4a53d5d44bd94c73b6a5c4d3a20f41deacd783c39bfd5ba59ff7f4363"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -20,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -5,
+              "y": -107,
+              "z": -93,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 15,
+              "y": -92,
+              "z": -88,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -11,
+              "y": -127,
+              "z": -35,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -140,
+              "z": -36,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 23,
+              "y": -122,
+              "z": -30,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -14,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 1,
+              "y": -61,
+              "z": -91,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 21,
+              "y": -46,
+              "z": -92,
+              "radius": 5,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "first_marker_id": 90,
+      "paths": {
+        "dormant_body": "Catz-dormant_body.cat",
+        "dormant_head": "Catz-dormant_head.cat",
+        "static_all": "Catz-static_all.cat",
+        "active_a": "Catz-active_a.cat",
+        "active_b": "Catz-active_b.cat"
+      },
+      "input_hashes": {
+        "dormant_body": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+        "dormant_head": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+        "static_all": "41328cb95235047aa1ab76a91f4a46b3326849e4038e3947d2131ba6fe488155",
+        "active_a": "661aeb8d43a69c5f61a179d5eff55a94e7bd85f3636a4cb35c75b5c95c9e6a59",
+        "active_b": "85c83f69af4b6e6abf5b73597709a746faf23ad54ca84b6ca0b4563711092b99"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -101,
+              "z": -92,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -88,
+              "z": -88,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -8,
+              "y": -132,
+              "z": -42,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -142,
+              "z": -43,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 19,
+              "y": -127,
+              "z": -38,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 23,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 25,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_body",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              23,
+              1
+            ],
+            [
+              25,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 1,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            0,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            10,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            0,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 32769,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ]
+          ],
+          "marker_offsets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            0,
+            20,
+            0
+          ],
+          "markers": [
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            0,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            10,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            50,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -18,
+              -40,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              15,
+              -40,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            10,
+            20,
+            10
+          ],
+          "markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            0
+          ],
+          "visible_prefix": 26,
+          "mask": 16385,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            0,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 20480,
+              "y": 20480,
+              "z": 20480,
+              "radius": 0,
+              "visible": true,
+              "parked": true
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            50
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -4,
+              -55,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            10,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "dormant_head",
+          "amounts": [
+            100,
+            100
+          ],
+          "visible_prefix": 26,
+          "mask": 49153,
+          "forward_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              16385
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "reverse_transitions": [
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              32769
+            ],
+            [
+              26,
+              49153
+            ]
+          ],
+          "marker_offsets": [
+            [
+              -36,
+              -80,
+              0
+            ],
+            [
+              -8,
+              -110,
+              0
+            ],
+            [
+              30,
+              -80,
+              0
+            ]
+          ],
+          "marker_sizes": [
+            20,
+            20,
+            20
+          ],
+          "markers": [
+            {
+              "x": -16,
+              "y": 1,
+              "z": -253,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -4,
+              "y": -12,
+              "z": -257,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 12,
+              "y": -1,
+              "z": -255,
+              "radius": 4,
+              "visible": true,
+              "parked": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-dormant_body.dog",
+        "after_path": "Dogz-dormant_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c6ba82ae90a02c7d7b2d032231f8667db8fffa1c967ffcb441cb9666f9efe0e8",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-dormant_body.dog",
+        "after_path": "Dogz-dormant_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b258b5d18df2f87b678b435e2109157e47c629030b9175ee6f39fc413f395a1e",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-active_a.dog",
+        "after_path": "Dogz-static_all.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "706a1b537f7d66a70137eda14b489e709bbf36031e9c22d26b24b3c21847a16e",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-active_a.dog",
+        "after_path": "Dogz-static_all.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "98d19087ac84cbd6a10e4e5bcd83a20784b0c55bf13beb6129b29c73013499bc",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-active_b.dog",
+        "after_path": "Dogz-dormant_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "dd47c9387d4011580df7f348678364e373ff9d6ed9371f69b9f9b30001c37ec5",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-active_b.dog",
+        "after_path": "Dogz-dormant_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "2bd36b81d3debd7803ce93c377da47f3a7002088ef8d202da5dde9b60a58be6c",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-dormant_body.cat",
+        "after_path": "Catz-dormant_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1e56397792e52b38178dedffd11422cca5dd729d9bfd09de55f97b0436a87b77",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-dormant_body.cat",
+        "after_path": "Catz-dormant_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4c71bd3b0b834744ffead55de1b9ce9e6e4ea8f93276d9c20e5dd68fc0aa6d45",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-active_a.cat",
+        "after_path": "Catz-static_all.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "dba8010dd4e7d4d366a2b4f18dd58f5e27ff391aab3efec98a888c23c650e62c",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-active_a.cat",
+        "after_path": "Catz-static_all.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5678a996be4fcb819e5fa36fa3a5fa251f6e8b4ee5f50379006a24859b8b6d7e",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-active_b.cat",
+        "after_path": "Catz-dormant_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6fbfbe072678066f84c964182ee63b83b9b497b1e85160b5d81a56410270872f",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-active_b.cat",
+        "after_path": "Catz-dormant_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "1ae544de0577ca1fcb7ce9cc299eb0cd71cc6c924f7b0b9753b8909453bbcef7",
+      "cells_equal": false
+    }
+  ],
+  "source_hashes": {
+    "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+    "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+    "rendering/attachment.py": "e29179c4e5d8b3580cbd12b4131fa0cae592b201b20cedc998d754f8f502aa07"
+  },
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

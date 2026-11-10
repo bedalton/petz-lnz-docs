@@ -7,6 +7,12 @@ from PIL import Image
 import petz_renderer
 from petz_renderer.rendering.framebuffer import Framebuffer
 from petz_renderer.rendering.lines import LineBlock,LineRenderer
+from petz_renderer.formats.resolver import ResourceResolver
+from petz_renderer.local import load_breed_assets
+from petz_renderer.rendering.pose import posed_geometry
+from petz_renderer.rendering.preparation import prepare_frame
+from petz_renderer.rendering.connectors import build_line_block
+from petz_renderer.rendering.texture import remap_texture
 from research_common import ROOT,SHA,adult
 
 
@@ -92,7 +98,31 @@ def main():
                     assert edited[:leaf.offset]==raw[:leaf.offset]
                     assert edited[leaf.offset+leaf.size:]==raw[leaf.offset+leaf.size:]
                     counts['private_copies']+=1
-                counts['numerical_breed_loads']+=len(case['geometry'])
+                resolver=ResourceResolver((ROOT/'games/petz4',folder),game_version='petz4')
+                reference_shapes={}
+                for check in case['geometry']:
+                    variant,pose=check['variant'],check['pose']
+                    assets=load_breed_assets(resolver,case['paths'][variant],pose=pose,seed=0,age=100,fatness=50)
+                    shape=posed_geometry(assets.appearance,assets.sizes,assets.frame,fatness=50)
+                    if pose in reference_shapes:assert shape==reference_shapes[pose]
+                    else:reference_shapes[pose]=shape
+                    frame=prepare_frame(assets.appearance,assets.sizes,assets.frame,textures=assets.textures,fatness=50)
+                    line=assets.appearance.lines[-1]
+                    block=build_line_block(line,tuple(b.endpoint for b in frame.balls))
+                    assert block is not None
+                    slot=check['texture_index'];texture=assets.textures[slot]
+                    assert texture is not None
+                    assert check['line_color']==line.color and check['block_color']==block.color
+                    assert check['paint_present']==(block.paint is not None)
+                    assert check['texture_pixels_sha256']==SHA(texture.pixels)
+                    assert check['texture_size']==[texture.width,texture.height]
+                    config=assets.appearance.textures[slot]
+                    assert check['texture_config']==vars(config)
+                    if block.paint is not None:
+                        assert check['paint_pixels_sha256']==SHA(block.paint.texture.pixels)
+                        assert block.paint==remap_texture(texture,block.color,has_levels=config.has_levels,own_level=config.own_level)
+                    else:assert check['paint_pixels_sha256'] is None
+                    counts['numerical_breed_loads']+=1
             for row in report['comparisons']:
                 stem=f"{row['species']}-{row['pair'][0]}-{row['pair'][1]}-{row['controls']['yaw_degrees']}"
                 data=(folder/f'{stem}.png').read_bytes();assert SHA(data)==row['png_sha256']

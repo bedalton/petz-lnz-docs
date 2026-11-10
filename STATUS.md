@@ -62,8 +62,9 @@ Updated: 2026-11-10
 - Texture connector session: [overview/verification](docs/session-2026-11-10-connector-textures.md): four units,64 MCP pairs,126 numerical loads,72 synthetic buffers/120 exact samples;42 copies/128 RGBA cells verified; all62 installed sources match clean renderer checkout; handoff duration/scope audited.
 - Latest: [LINE-017](experiments/line-017.md), 360 asset-free diagonal rasters/10,512 exact pixel samples: exact-fit thresholds, screen-aligned sampling and 180 reversed-taper equivalences; no MCP/native claim.
 - Latest: [LINE-018](experiments/line-018.md),180 asset-free rasters/2,184 samples: viewport corner clamping precedes size rejection; nine of twelve plain cases differ from cropping a larger render.
-- Latest: [LINE-019](experiments/line-019.md),30 numerical loads/sixteen local MCP pairs extend texture routing to Petz4 Dalmatian/Persian;256x256 tiles, two sheets reviewed.
+- Latest: [LINE-019](experiments/line-019.md),30 numerical loads/sixteen local MCP pairs extend texture routing to Petz4 Dalmatian/Persian;256x256 tiles, four sheets reviewed.
 - Latest: [LINE-020](experiments/line-020.md),60 asset-free rasters/30,660 body and15,420 edge assertions: sign flag gates shade addition at source10; sampled0 writes directly to indexed buffer.
 - Sampling continuation: [session/audit](docs/session-2026-11-10-connector-sampling.md),four units;600 synthetic buffers/43,356 body samples/15,420 edge assertions,10 copies/16 MCP PNGs/32 RGBA cells,30 numerical loads verified. All62 installed sources match checkout; HTTP MCP health passes.
 - Sampling audit strengthened: saved LINE-020 edge/background bytes are independently checked against reconstructed flat controls; focused texture reference includes second-breed scope. See the [session audit](docs/session-2026-11-10-connector-sampling.md).
+- Final sampling verification reloads all30 saved breed/pose cases against recorded block/texture results; front/side visual review totals four sheets. [Session evidence](docs/session-2026-11-10-connector-sampling.md).
 - Resume: [HANDOFF.md](HANDOFF.md).

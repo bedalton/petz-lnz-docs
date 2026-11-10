@@ -1,0 +1,2573 @@
+{
+  "experiment": "MORPH-005",
+  "backend": "direct Python explicit-state indexed composition; local stdio MCP default-state crosschecks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "controls": {
+    "seed": 0,
+    "raster_seed": 1,
+    "raster_step": 0,
+    "line_rng": "fresh seed1 per draw, including retained frames",
+    "age": 100,
+    "fatness": 50,
+    "yaw": 0,
+    "head_rotation": 0
+  },
+  "reused_input_manifest": "morph-003.json",
+  "histories": {
+    "a_then_b": [
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "b_then_a": [
+      [
+        15,
+        50
+      ],
+      [
+        14,
+        50
+      ]
+    ],
+    "cycle": [
+      [
+        14,
+        100
+      ],
+      [
+        15,
+        100
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "noops": [
+      [
+        14,
+        50
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "unused": [
+      [
+        13,
+        100
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-standing-a_then_b.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-standing-b_then_a.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "cycle",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-standing-cycle.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "noops",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-standing-noops.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "unused",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-standing-unused.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-sitting-a_then_b.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-sitting-b_then_a.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "cycle",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-sitting-cycle.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "noops",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-sitting-noops.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "unused",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-sitting-unused.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-lying-a_then_b.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-lying-b_then_a.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "cycle",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-lying-cycle.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "noops",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-lying-noops.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "unused",
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "sheet": "Dogz-dormant_body-lying-unused.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-standing-a_then_b.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-standing-b_then_a.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "cycle",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-standing-cycle.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "noops",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-standing-noops.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "unused",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-standing-unused.png",
+      "sheet_sha256": "cd8d765d10ae5f9b341c4d7e83aa8b78d39917a788696f1a60ac2e03bdedf3d4",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        },
+        {
+          "rgba_sha256": "9025101ccbd62ad5ac5affe65a27578c4b7a26c189959c2d1c0b33ad01e19f48",
+          "indexed_sha256": "d28b203a126e438447f7507d4ac6e353c535976d1eb2a0a792c5982a1170657a"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-sitting-a_then_b.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-sitting-b_then_a.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "cycle",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-sitting-cycle.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "noops",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-sitting-noops.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "unused",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-sitting-unused.png",
+      "sheet_sha256": "223fd0981e459732f23ae882ac0f30be97af4208f39a93ebc890cf8682f3adef",
+      "cell_size": [
+        90,
+        134
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 121,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 121,
+      "same_prepared_commands": false,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        },
+        {
+          "rgba_sha256": "1f20557fa8defe184b305319cfe753801c4172c7d27757eb329e2bc34ec64756",
+          "indexed_sha256": "ee8f7ffa39b99c2784ed2fd3b9f94049f1687b7ce58c8e16e019218c845b8f8f"
+        },
+        {
+          "rgba_sha256": "e8aaed4463434e27948ee581334cd3b5dd6f6e96e07e7b71317c9f3dd5a0ecf6",
+          "indexed_sha256": "fc712f6377b9e600bbd8a32179dfd68e339f91676ffab0dbde841366ce781021"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "a_then_b",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-lying-a_then_b.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "b_then_a",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-lying-b_then_a.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "cycle",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-lying-cycle.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "noops",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-lying-noops.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "unused",
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "sheet": "Dogz-dormant_head-lying-unused.png",
+      "sheet_sha256": "ef878480857d5b77de209eaf5adfd453ee8195639c74bc7e5b9cbb43091cb9fd",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        },
+        {
+          "rgba_sha256": "f289c77f71be83c48b4b3f2b6430d464dfa0bccde8340e57380c3e8b37365996",
+          "indexed_sha256": "5709af7f90715baa987c313b7d6b5284a186a86d70cd5b465b47bf0d6277ff96"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "a_then_b",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-standing-a_then_b.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "b_then_a",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-standing-b_then_a.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "cycle",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-standing-cycle.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "noops",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-standing-noops.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "history": "unused",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-standing-unused.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "a_then_b",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-sitting-a_then_b.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "b_then_a",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-sitting-b_then_a.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "cycle",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-sitting-cycle.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "noops",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-sitting-noops.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "history": "unused",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-sitting-unused.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "a_then_b",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-lying-a_then_b.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "b_then_a",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-lying-b_then_a.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "cycle",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-lying-cycle.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "noops",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-lying-noops.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "history": "unused",
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "sheet": "Catz-dormant_body-lying-unused.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "a_then_b",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-standing-a_then_b.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "b_then_a",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-standing-b_then_a.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "cycle",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-standing-cycle.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "noops",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-standing-noops.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "history": "unused",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-standing-unused.png",
+      "sheet_sha256": "9aeb72f0af579cd313a18cc54302dbbcf2c7fab7ad1c7145fb8ead7275caea92",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        },
+        {
+          "rgba_sha256": "0fc595f13ce73daf83f7737ef31fe3acfd5df6b835e573c1af0ec97d39ccedf2",
+          "indexed_sha256": "c9483c17f96d95229013285b01ca3d22af30c2df4a1046c2e37bf7da79706f10"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "a_then_b",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-sitting-a_then_b.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "b_then_a",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-sitting-b_then_a.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "cycle",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-sitting-cycle.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "noops",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-sitting-noops.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "history": "unused",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-sitting-unused.png",
+      "sheet_sha256": "15ee002ccb3f6d3ec9450061f681e71abe0717d0f1d92442e7e11798908c87f3",
+      "cell_size": [
+        85,
+        145
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        },
+        {
+          "rgba_sha256": "3df9d4ca8046298597c7aa57ab5f0bf41eddb79cdbfa76492a00b49a55fbd8d0",
+          "indexed_sha256": "9d8bd58256e8e34e88654ec8efb3d4e2dcfa2fc66db0ec9415b16cfb5bbebb2c"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "a_then_b",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-lying-a_then_b.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "b_then_a",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-lying-b_then_a.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "cycle",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-lying-cycle.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": false,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "noops",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-lying-noops.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "history": "unused",
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "sheet": "Catz-dormant_head-lying-unused.png",
+      "sheet_sha256": "6c830fbe46c67511271fc059b00d022d173f1a81c298b310429c8bf62d61dba0",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_order": [
+        "batch",
+        "retained",
+        "batch_commands_retained_order"
+      ],
+      "batch_retained_changed_pixels": 0,
+      "batch_order_only_changed_pixels": 0,
+      "retained_order_only_changed_pixels": 0,
+      "same_prepared_commands": true,
+      "same_sorted_order": true,
+      "same_fills": true,
+      "cell_hashes": [
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        },
+        {
+          "rgba_sha256": "1fa8613cc3a948acaeefd75bdb8de6b76e797f76498fc69656a1b6d231df5a41",
+          "indexed_sha256": "a4ad0d354a2e62c9edf66a9e0ad9a815d0994c744f7b832a915c8f38274cb499"
+        }
+      ]
+    }
+  ],
+  "baselines": [
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "input": "Dogz-dormant_body.dog",
+      "png": "Dogz-dormant_body-standing-baseline.png",
+      "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "input": "Dogz-dormant_body.dog",
+      "png": "Dogz-dormant_body-sitting-baseline.png",
+      "png_sha256": "676dfc8b4dd9628c9f2ee95b4dcdbc40a7fb116d82a794bf03e091e6f9e51341",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "input": "Dogz-dormant_body.dog",
+      "png": "Dogz-dormant_body-lying-baseline.png",
+      "png_sha256": "d5ef603f467828602a00b6663ea4384908d53a00b20db93135adb948eb95d1fd",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "input": "Dogz-dormant_head.dog",
+      "png": "Dogz-dormant_head-standing-baseline.png",
+      "png_sha256": "1caf47ccb0398f9cb65ca4a0129e7573cf71599273e07ae168bf7ae77afbd2ed",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "input": "Dogz-dormant_head.dog",
+      "png": "Dogz-dormant_head-sitting-baseline.png",
+      "png_sha256": "676dfc8b4dd9628c9f2ee95b4dcdbc40a7fb116d82a794bf03e091e6f9e51341",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "input": "Dogz-dormant_head.dog",
+      "png": "Dogz-dormant_head-lying-baseline.png",
+      "png_sha256": "d5ef603f467828602a00b6663ea4384908d53a00b20db93135adb948eb95d1fd",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "input": "Catz-dormant_body.cat",
+      "png": "Catz-dormant_body-standing-baseline.png",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "input": "Catz-dormant_body.cat",
+      "png": "Catz-dormant_body-sitting-baseline.png",
+      "png_sha256": "8dc3f38e31a2a5c2faa07083615cec417b8919abdbc910efa9d72b6a507b9cb5",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "input": "Catz-dormant_body.cat",
+      "png": "Catz-dormant_body-lying-baseline.png",
+      "png_sha256": "4303c5b7a6fd01d7ac68d9734f706be57abfd74709b5658d04d209331573c27d",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "input": "Catz-dormant_head.cat",
+      "png": "Catz-dormant_head-standing-baseline.png",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "input": "Catz-dormant_head.cat",
+      "png": "Catz-dormant_head-sitting-baseline.png",
+      "png_sha256": "8dc3f38e31a2a5c2faa07083615cec417b8919abdbc910efa9d72b6a507b9cb5",
+      "local_mcp_png_match": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "input": "Catz-dormant_head.cat",
+      "png": "Catz-dormant_head-lying-baseline.png",
+      "png_sha256": "4303c5b7a6fd01d7ac68d9734f706be57abfd74709b5658d04d209331573c27d",
+      "local_mcp_png_match": true
+    }
+  ],
+  "changed_case_counts": {
+    "batch_retained_changed_pixels": 10,
+    "batch_order_only_changed_pixels": 0,
+    "retained_order_only_changed_pixels": 10
+  },
+  "source_hashes": {
+    "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+    "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+    "rendering/attachment.py": "e29179c4e5d8b3580cbd12b4131fa0cae592b201b20cedc998d754f8f502aa07",
+    "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+    "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+    "rendering/composition.py": "c8e51e94b239bab4cb55ecb6a7c54bfbfb8a5b6a78fd1d0dbfdea506907a0394",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9"
+  },
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

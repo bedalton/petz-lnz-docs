@@ -126,3 +126,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Ten-minute session verification
 
 [Session index](docs/session-2026-11-10-morphs.md) links AREA-006 and MORPH-002/003/004. tools/check_morph_session.py verifies 34 copies, 36 PNGs, 72 RGBA cell hashes, 120 assembly snapshots, original hashes, installed versions and 12 engine files. All pass; private output scratch/research/morph-session-verification.json. HTTP MCP live discovery/capabilities pass; health record scratch/research/morph-session-mcp-health.json. Six sheets reviewed. GAP-005 remains uncertainty, no speculative repair. Existing unrelated untracked istall-node left untouched.
+
+## Latest retained-state pixels
+
+[MORPH-005](experiments/morph-005.md):60 direct three-cell sheets (180 cells), twelve byte-identical local MCP baselines, two sheets reviewed. Order-only substitution changes no pixels despite47 changed sort orders. Full retained preparation changes121 pixels in all ten Dogz sitting cases; prepared commands differ, geometry/fills match. Fresh line RNG seed1/raster step0 held every draw; texture FrameState persisted. Exact texture-state cause still to isolate. Nine installed sources/four engines verified. tools/morph_pixel_probe.py refuses overwrite; scratch/research/morph-005 private evidence. Next: repeated static frames and independent geometry/texture-state resets; no native claims.

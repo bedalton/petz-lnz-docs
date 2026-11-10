@@ -117,3 +117,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-007](experiments/paint-007.md),Fuzzkin ages0/50/100:36 group equivalences,72 direct draws and16 MCP matches;17/18 color controls change pixels.
 
 - Paint-group continuation audited: [session](docs/session-2026-11-10-paint-groups.md),three complete unit replays pass;298 PNGs,21 copies/21 original hash links,64 MCP records,144 RGBA counts and18 cross-unit links verified. HTTP restarted and actual render matches baseline. No native claim.
+
+- Final reference review consolidates current group evidence and species/pet scope;[session audit](docs/session-2026-11-10-paint-groups.md) remains the resume index.

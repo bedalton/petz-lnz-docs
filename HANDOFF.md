@@ -188,3 +188,5 @@ Final aggregate audit corrected LINE-005 synthetic count to72 (2 texture states 
 Final local HTTP MCP discovery/capabilities pass; private health scratch/research/line-history-session-mcp-health.json. Renderer checkout remains unchanged.
 
 Final integrity audit extends the session verifier to cross-unit cell links,all-fuzzy substitution equivalences,diagnostic-only residuals and preserved final main-path states. All pass; see the session index for details.
+
+Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures and zero Dogz fixtures; MCP validates step0 only. History/intervention targets hold step1 fixed. Separate these effects from the three prior-step0 Catz side-view changes; detailed counts in LINE-011.

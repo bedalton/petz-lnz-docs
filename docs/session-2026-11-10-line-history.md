@@ -25,3 +25,5 @@ Next: cross-version/second-breed style checks, textured connector examples, reta
 Final local HTTP MCP discovery/get_capabilities pass; private health record scratch/research/line-history-session-mcp-health.json. Actual experiment renders use local stdio MCP.
 
 The verifier also independently checks LINE-012 fresh/primed cell equality against LINE-011, both all-positive-fuzz attribution directions, diagnostic-only residual differences, and preservation of saved main-path final states. LINE-011 repeat/whisker1 equality and all LINE-010 paired cell equalities are asserted.
+
+Raster-step scope: fresh step1 differs from the MCP-backed fresh step0 baseline in all six Catz fixtures and no Dogz fixture. All history/intervention comparisons hold targetstep1 fixed. Do not confuse this step-control difference with retained-state history.

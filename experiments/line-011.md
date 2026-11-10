@@ -10,6 +10,8 @@ Each fixture also saves a fresh step0 baseline. All12 baselines match render_por
 
 ## Results
 
+The fresh step0 baseline and fresh step1 target differ in all six Catz fixtures (49/226 standing front/side,48/257 sitting,101/187 lying indexed pixels) and in no Dogz fixture. MCP validation applies to the saved step0 baseline; it does not independently validate the alternate step1 target. These raster-step differences are distinct from the three Catz side-view changes caused by prior-step0 state history.
+
 | Prior line-renderer history | Changed target fixtures /12 |
 | --- | --- |
 | Fresh | 0 |

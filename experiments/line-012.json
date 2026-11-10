@@ -1,0 +1,737 @@
+{
+  "experiment": "LINE-012",
+  "backend": "direct Python per-connector state substitution; reuses LINE-011 exact MCP-backed controls, no new MCP",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "source_hashes": {
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+    "rendering/composition.py": "c8e51e94b239bab4cb55ecb6a7c54bfbfb8a5b6a78fd1d0dbfdea506907a0394",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "Pillow": "13.0.0"
+  },
+  "controls": {
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "line_seed": 1,
+    "target_step": 1,
+    "baseline_step": 0,
+    "prepared_scene": "identical frozen target; no FrameState retained",
+    "prior_pixels": "discarded before target"
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-standing-0.png",
+      "sheet_sha256": "de2d2d5f9743c1db03b7a7427a414358ce32d1a33e6dfaa92151dece27e1817a",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "bc7672c7dcc6e09f8668d58f83895fed2bf98355d8bc88764d0d55e8db738289"
+        },
+        {
+          "rgba_sha256": "3e6288a2549e38d7cf33a99dd6e8bccb4b7121bef3c502e56bfde6cee3e8117f"
+        },
+        {
+          "rgba_sha256": "97f4e37cc694dd6cdf94930a966393d114f6c1ee5f27c2d7f7addd850c4b6010"
+        },
+        {
+          "rgba_sha256": "bc7672c7dcc6e09f8668d58f83895fed2bf98355d8bc88764d0d55e8db738289"
+        },
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        }
+      ],
+      "primed_vs_fresh": 440,
+      "target_only_vs_fresh": 305,
+      "target_only_vs_primed": 138,
+      "others_only_vs_fresh": 136,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "7cad7d7f1d88d751ed18a2525e61de3287253f5c87aeac64499ef34d82b44cc4",
+      "whisker0_primed_state_sha256": "ea4c3011c42406d836c08a64dc03f31d8a0a1dafd639588e1fc0ec3cbc307ac9",
+      "only_target_connector_primed_state_sha256": "7cad7d7f1d88d751ed18a2525e61de3287253f5c87aeac64499ef34d82b44cc4",
+      "primed_except_target_connector_state_sha256": "ea4c3011c42406d836c08a64dc03f31d8a0a1dafd639588e1fc0ec3cbc307ac9",
+      "all_positive_fuzz_lines_primed_state_sha256": "7cad7d7f1d88d751ed18a2525e61de3287253f5c87aeac64499ef34d82b44cc4",
+      "primed_except_positive_fuzz_lines_state_sha256": "ea4c3011c42406d836c08a64dc03f31d8a0a1dafd639588e1fc0ec3cbc307ac9"
+    },
+    {
+      "species": "Dogz",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-standing-90.png",
+      "sheet_sha256": "292b1962c26bb6e89d302564434fbf51d4684dc6d399b77066cef44df03b9abe",
+      "cell_size": [
+        175,
+        137
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "356e799d21985740afa63e88ee82650105e4d811ebc38995e11ca2617b843cad"
+        },
+        {
+          "rgba_sha256": "0587939eec3db78c9a1d76d71f8bc15a24f1e6f665908c5887c95e047325ffd8"
+        },
+        {
+          "rgba_sha256": "cabe203ec994ab7a1bf297adb53b99a53f8c47390800a9d83afd4345485d4b4b"
+        },
+        {
+          "rgba_sha256": "356e799d21985740afa63e88ee82650105e4d811ebc38995e11ca2617b843cad"
+        },
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        }
+      ],
+      "primed_vs_fresh": 429,
+      "target_only_vs_fresh": 252,
+      "target_only_vs_primed": 179,
+      "others_only_vs_fresh": 178,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "05bd5cf51cf647a208f61950c55b1cd6229e9e3fc7fb7b2a850684126aea7bd7",
+      "whisker0_primed_state_sha256": "77b01c773209d4048e41bc78e0af8103a589f3a3729b495dfc7d541640d2fc34",
+      "only_target_connector_primed_state_sha256": "05bd5cf51cf647a208f61950c55b1cd6229e9e3fc7fb7b2a850684126aea7bd7",
+      "primed_except_target_connector_state_sha256": "77b01c773209d4048e41bc78e0af8103a589f3a3729b495dfc7d541640d2fc34",
+      "all_positive_fuzz_lines_primed_state_sha256": "05bd5cf51cf647a208f61950c55b1cd6229e9e3fc7fb7b2a850684126aea7bd7",
+      "primed_except_positive_fuzz_lines_state_sha256": "77b01c773209d4048e41bc78e0af8103a589f3a3729b495dfc7d541640d2fc34"
+    },
+    {
+      "species": "Dogz",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-sitting-0.png",
+      "sheet_sha256": "5e34bc1b4c54de84b7d9aa78f100553a57f5949bc4063fb2c754167364753b8b",
+      "cell_size": [
+        90,
+        147
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "d6e4468f0408848dbbdd1efd5cbed2aa30694105e9fa3303afb659ac8a773186"
+        },
+        {
+          "rgba_sha256": "59bb2aa0203a7a889eee2536a216142677ea4b58f2bfd17b98a7fb81ee3025ed"
+        },
+        {
+          "rgba_sha256": "172e5b814a9e1a61aae8b0f248271ece01f6b183ce03e8a07c356feb05fb2f1f"
+        },
+        {
+          "rgba_sha256": "d6e4468f0408848dbbdd1efd5cbed2aa30694105e9fa3303afb659ac8a773186"
+        },
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        }
+      ],
+      "primed_vs_fresh": 405,
+      "target_only_vs_fresh": 283,
+      "target_only_vs_primed": 122,
+      "others_only_vs_fresh": 122,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "34dc474d5c7f5a98d134301293c0ae37dfa7c57190b02f0e1f9d8fbbf9a137b9",
+      "whisker0_primed_state_sha256": "a64aa60ec01ae02fee5b712c61cdb61acd9e5bd226679b0d3d349d150bc9eb6d",
+      "only_target_connector_primed_state_sha256": "34dc474d5c7f5a98d134301293c0ae37dfa7c57190b02f0e1f9d8fbbf9a137b9",
+      "primed_except_target_connector_state_sha256": "a64aa60ec01ae02fee5b712c61cdb61acd9e5bd226679b0d3d349d150bc9eb6d",
+      "all_positive_fuzz_lines_primed_state_sha256": "34dc474d5c7f5a98d134301293c0ae37dfa7c57190b02f0e1f9d8fbbf9a137b9",
+      "primed_except_positive_fuzz_lines_state_sha256": "a64aa60ec01ae02fee5b712c61cdb61acd9e5bd226679b0d3d349d150bc9eb6d"
+    },
+    {
+      "species": "Dogz",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-sitting-90.png",
+      "sheet_sha256": "367040a1c0fc4fe18a7a13c690cc0c9cfa5358ef37655dfe6b1f85ccf5be0d4e",
+      "cell_size": [
+        155,
+        150
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "dcb865f89edac5a1c5a1504c4f3308a0beb00431473e4e990e02007e5258de22"
+        },
+        {
+          "rgba_sha256": "aa3bfdf4a58f27436b4ac2f671a4812ffa864e154af47d6a0c0e83a3079c3dd6"
+        },
+        {
+          "rgba_sha256": "6e87ac1a2bc0fa6c3239000d1659349cd50cb61aa349dad62d60f2406a2dcf85"
+        },
+        {
+          "rgba_sha256": "dcb865f89edac5a1c5a1504c4f3308a0beb00431473e4e990e02007e5258de22"
+        },
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        }
+      ],
+      "primed_vs_fresh": 424,
+      "target_only_vs_fresh": 249,
+      "target_only_vs_primed": 177,
+      "others_only_vs_fresh": 177,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "429ee650dd72297c6464635424cb03480e04355fbd7772aa203717ecc36706c4",
+      "whisker0_primed_state_sha256": "f36a1cbd16ea29da05249fa4934b0a721df6cd53baeeec5a7fab43383f025b2d",
+      "only_target_connector_primed_state_sha256": "429ee650dd72297c6464635424cb03480e04355fbd7772aa203717ecc36706c4",
+      "primed_except_target_connector_state_sha256": "f36a1cbd16ea29da05249fa4934b0a721df6cd53baeeec5a7fab43383f025b2d",
+      "all_positive_fuzz_lines_primed_state_sha256": "429ee650dd72297c6464635424cb03480e04355fbd7772aa203717ecc36706c4",
+      "primed_except_positive_fuzz_lines_state_sha256": "f36a1cbd16ea29da05249fa4934b0a721df6cd53baeeec5a7fab43383f025b2d"
+    },
+    {
+      "species": "Dogz",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-lying-0.png",
+      "sheet_sha256": "9cea3fe2b35c463fa54a335d8d486b1840b2d9b4544b985c1d848a4a64da336f",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "0e667c02e97236ff6da8a4c21a709a1a17dd610d73196a175fdea20c06177f01"
+        },
+        {
+          "rgba_sha256": "e2aba8bee42282c768fdc7971c9e8e3dd8345e10da93132f59cc25937e3e9bfb"
+        },
+        {
+          "rgba_sha256": "56daa4262d6955052dfe0405a9a5c302975c89d648f344661e7b78a1d968fac4"
+        },
+        {
+          "rgba_sha256": "0e667c02e97236ff6da8a4c21a709a1a17dd610d73196a175fdea20c06177f01"
+        },
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        }
+      ],
+      "primed_vs_fresh": 348,
+      "target_only_vs_fresh": 251,
+      "target_only_vs_primed": 97,
+      "others_only_vs_fresh": 99,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "ffafc919f945b6c16238f0ef2bdf59f2a5c8f895efb494ccf010b44cf83ba15c",
+      "whisker0_primed_state_sha256": "c2196c419258fccde1547be37641ceea32aa573b2a53f58341c8c578e0fc4515",
+      "only_target_connector_primed_state_sha256": "ffafc919f945b6c16238f0ef2bdf59f2a5c8f895efb494ccf010b44cf83ba15c",
+      "primed_except_target_connector_state_sha256": "c2196c419258fccde1547be37641ceea32aa573b2a53f58341c8c578e0fc4515",
+      "all_positive_fuzz_lines_primed_state_sha256": "ffafc919f945b6c16238f0ef2bdf59f2a5c8f895efb494ccf010b44cf83ba15c",
+      "primed_except_positive_fuzz_lines_state_sha256": "c2196c419258fccde1547be37641ceea32aa573b2a53f58341c8c578e0fc4515"
+    },
+    {
+      "species": "Dogz",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "sheet": "Dogz-lying-90.png",
+      "sheet_sha256": "74dea053bc1f3d8bceb6bd432a7086f29ec6ec96b70a88f61916442c63097591",
+      "cell_size": [
+        202,
+        95
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "7a852dcdd7d0f37b59ac8a8873c97a3877fd8b354dba471329da996133d668bb"
+        },
+        {
+          "rgba_sha256": "cc6e509c52ae3efe2bf5bb680c2cc35429a3efe4512868b125b3c195f1bc11bd"
+        },
+        {
+          "rgba_sha256": "cead24ce0a1abd3f8f7e943629ae373e08795aa0e2bd45c499276cfdaf7800ef"
+        },
+        {
+          "rgba_sha256": "7a852dcdd7d0f37b59ac8a8873c97a3877fd8b354dba471329da996133d668bb"
+        },
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        }
+      ],
+      "primed_vs_fresh": 389,
+      "target_only_vs_fresh": 260,
+      "target_only_vs_primed": 134,
+      "others_only_vs_fresh": 130,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 49,
+      "line_draw_count": 69,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "bce5807072e673e4a3066faaedc317aa26149c666f843464a4b39859a302ec4d",
+      "whisker0_primed_state_sha256": "f147fb779398f94d312076b182b8d8b6df77c5eeb02563f2b1bac19217b0c7a0",
+      "only_target_connector_primed_state_sha256": "bce5807072e673e4a3066faaedc317aa26149c666f843464a4b39859a302ec4d",
+      "primed_except_target_connector_state_sha256": "f147fb779398f94d312076b182b8d8b6df77c5eeb02563f2b1bac19217b0c7a0",
+      "all_positive_fuzz_lines_primed_state_sha256": "bce5807072e673e4a3066faaedc317aa26149c666f843464a4b39859a302ec4d",
+      "primed_except_positive_fuzz_lines_state_sha256": "f147fb779398f94d312076b182b8d8b6df77c5eeb02563f2b1bac19217b0c7a0"
+    },
+    {
+      "species": "Catz",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-standing-0.png",
+      "sheet_sha256": "f15f6f89e12c95cb4687c0337add07ab916ed148d9f08a77b247498e7a9f0de3",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        },
+        {
+          "rgba_sha256": "45c31ef3ffdb7eed3afe6d017ceba0605dec6b348b8124c4853df7c2cd665fa5"
+        },
+        {
+          "rgba_sha256": "5d3530b65685d53eb8ad99b6e02e40cfb02e40b659afde1376ad729a46bcf169"
+        },
+        {
+          "rgba_sha256": "9746917b40b61d43e0bbe09a3c1bf45c6cc4cd444575caa301186ec25e555333"
+        },
+        {
+          "rgba_sha256": "45c31ef3ffdb7eed3afe6d017ceba0605dec6b348b8124c4853df7c2cd665fa5"
+        },
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        }
+      ],
+      "primed_vs_fresh": 362,
+      "target_only_vs_fresh": 246,
+      "target_only_vs_primed": 116,
+      "others_only_vs_fresh": 116,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 35,
+      "line_draw_count": 51,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "whisker0_primed_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a",
+      "only_target_connector_primed_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "primed_except_target_connector_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a",
+      "all_positive_fuzz_lines_primed_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "primed_except_positive_fuzz_lines_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a"
+    },
+    {
+      "species": "Catz",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-standing-90.png",
+      "sheet_sha256": "82325f038c2716b013e1500f45d86bcc8fdd99d560cf36ca2f1413a807f83aa8",
+      "cell_size": [
+        163,
+        135
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "7334b864f35afffa3a2838ad97fa4d2bdb590ef9948b2af0eead029394b969c2"
+        },
+        {
+          "rgba_sha256": "3141675e5f833b7cbb42dd3c2e5c11f46a08c77bf8eac570b04cce03b3044a28"
+        },
+        {
+          "rgba_sha256": "31342aad87efd2ae6250a48f401bd04176ba44e372e3b1ae98e91f9f4150c51c"
+        },
+        {
+          "rgba_sha256": "d99b7ced73419220eb319bf414609b8ad3ff53a38b2badbdc8c38f19680dd955"
+        },
+        {
+          "rgba_sha256": "3141675e5f833b7cbb42dd3c2e5c11f46a08c77bf8eac570b04cce03b3044a28"
+        },
+        {
+          "rgba_sha256": "7334b864f35afffa3a2838ad97fa4d2bdb590ef9948b2af0eead029394b969c2"
+        }
+      ],
+      "primed_vs_fresh": 364,
+      "target_only_vs_fresh": 231,
+      "target_only_vs_primed": 133,
+      "others_only_vs_fresh": 133,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 36,
+      "line_draw_count": 52,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "1acb7e150fe4abc7b6b879d9422a08a6d5a2622f150f39936f115715a44f1ec4",
+      "whisker0_primed_state_sha256": "c22c8cbb7259c6a2b00e17d76b67a303a85e322e3a79a9ef2de389cbf53a8753",
+      "only_target_connector_primed_state_sha256": "1acb7e150fe4abc7b6b879d9422a08a6d5a2622f150f39936f115715a44f1ec4",
+      "primed_except_target_connector_state_sha256": "c22c8cbb7259c6a2b00e17d76b67a303a85e322e3a79a9ef2de389cbf53a8753",
+      "all_positive_fuzz_lines_primed_state_sha256": "1acb7e150fe4abc7b6b879d9422a08a6d5a2622f150f39936f115715a44f1ec4",
+      "primed_except_positive_fuzz_lines_state_sha256": "c22c8cbb7259c6a2b00e17d76b67a303a85e322e3a79a9ef2de389cbf53a8753"
+    },
+    {
+      "species": "Catz",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-sitting-0.png",
+      "sheet_sha256": "ac3a1786cc4caedbd6f11fd91cecca9ee2d6bb02e83a1b6f95fd601fc6a3b7cd",
+      "cell_size": [
+        85,
+        150
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "f9eb10c29d86795b44bae1d90baaad61a02c2393223087a1565e20f073195441"
+        },
+        {
+          "rgba_sha256": "1847544d70819cec9ba4bf93a8dcb3c085d0fc7802891356c203d43af2eb1fe8"
+        },
+        {
+          "rgba_sha256": "2d8671b1933325eafe306b4cef9291176a8ce4a13cacf5a4137e6253ffd27e87"
+        },
+        {
+          "rgba_sha256": "f9eb10c29d86795b44bae1d90baaad61a02c2393223087a1565e20f073195441"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        }
+      ],
+      "primed_vs_fresh": 380,
+      "target_only_vs_fresh": 278,
+      "target_only_vs_primed": 102,
+      "others_only_vs_fresh": 102,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 36,
+      "line_draw_count": 52,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "whisker0_primed_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a",
+      "only_target_connector_primed_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "primed_except_target_connector_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a",
+      "all_positive_fuzz_lines_primed_state_sha256": "363f1877331059f0b881445b0ecc6276ddae4a8810ac351c1383dc52040fe91a",
+      "primed_except_positive_fuzz_lines_state_sha256": "7f7a6df0c604190428ff6af4a92833cd008a874392637746e3cded45d449691a"
+    },
+    {
+      "species": "Catz",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-sitting-90.png",
+      "sheet_sha256": "668d97bbb6b2b80d46ce22630d4e1b934ecfc0219ff8c700c167a367f332f2e0",
+      "cell_size": [
+        128,
+        157
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "71256eec776e93db429fa13f6d7b588e2835b8a308b2559c34a551aef8524a87"
+        },
+        {
+          "rgba_sha256": "88cf04115b5c3f873dfa5ac8bd63ab7d25c63cadf864a840498675f4d2398d39"
+        },
+        {
+          "rgba_sha256": "93b2e0284b87acb875bcfffc3a20fc219d20f3902a4f46dd302b77c640a32469"
+        },
+        {
+          "rgba_sha256": "482be00fc9fd3653b5e53e59b0fe3019f72cdb1af48fd361c6a97c47908cfcbc"
+        },
+        {
+          "rgba_sha256": "88cf04115b5c3f873dfa5ac8bd63ab7d25c63cadf864a840498675f4d2398d39"
+        },
+        {
+          "rgba_sha256": "71256eec776e93db429fa13f6d7b588e2835b8a308b2559c34a551aef8524a87"
+        }
+      ],
+      "primed_vs_fresh": 351,
+      "target_only_vs_fresh": 218,
+      "target_only_vs_primed": 133,
+      "others_only_vs_fresh": 133,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 36,
+      "line_draw_count": 52,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "7a10de19ead228d614e36f9b4901f570b70d46f202d8e6d59b137d6727b222b0",
+      "whisker0_primed_state_sha256": "68c559a8b3118d16419af911c39c61732386d06a1b2f04e6f2bd7e5ac8b3b741",
+      "only_target_connector_primed_state_sha256": "7a10de19ead228d614e36f9b4901f570b70d46f202d8e6d59b137d6727b222b0",
+      "primed_except_target_connector_state_sha256": "68c559a8b3118d16419af911c39c61732386d06a1b2f04e6f2bd7e5ac8b3b741",
+      "all_positive_fuzz_lines_primed_state_sha256": "7a10de19ead228d614e36f9b4901f570b70d46f202d8e6d59b137d6727b222b0",
+      "primed_except_positive_fuzz_lines_state_sha256": "68c559a8b3118d16419af911c39c61732386d06a1b2f04e6f2bd7e5ac8b3b741"
+    },
+    {
+      "species": "Catz",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-lying-0.png",
+      "sheet_sha256": "7c2fb3d363545399d6bbee1ad34cfb43e84d36d2be5013e47bc98deca066f843",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        },
+        {
+          "rgba_sha256": "a43a475493932b0b3a9a4aa216ec18dd04847395c4a719eb5dbe2aaa8d9a83b3"
+        },
+        {
+          "rgba_sha256": "c9e7dfca6033586cdd75d29ad69c5abd4737d46094842b5325d658cb14bbc53e"
+        },
+        {
+          "rgba_sha256": "9196cb91a251baba96bde9b015aae5e6a1da784826aa8eb689ce7426496a289d"
+        },
+        {
+          "rgba_sha256": "a43a475493932b0b3a9a4aa216ec18dd04847395c4a719eb5dbe2aaa8d9a83b3"
+        },
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        }
+      ],
+      "primed_vs_fresh": 265,
+      "target_only_vs_fresh": 241,
+      "target_only_vs_primed": 24,
+      "others_only_vs_fresh": 24,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 35,
+      "line_draw_count": 51,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "bed0ae6d4fd88b97241d7dd07c649bbf582f98b827cc2a7a9a4ecebb1fd98ea4",
+      "whisker0_primed_state_sha256": "2ff5e9818f18098c4f6256c1d516b60f3b99a6181ea3a3eef8a4a04db82127a1",
+      "only_target_connector_primed_state_sha256": "bed0ae6d4fd88b97241d7dd07c649bbf582f98b827cc2a7a9a4ecebb1fd98ea4",
+      "primed_except_target_connector_state_sha256": "2ff5e9818f18098c4f6256c1d516b60f3b99a6181ea3a3eef8a4a04db82127a1",
+      "all_positive_fuzz_lines_primed_state_sha256": "bed0ae6d4fd88b97241d7dd07c649bbf582f98b827cc2a7a9a4ecebb1fd98ea4",
+      "primed_except_positive_fuzz_lines_state_sha256": "2ff5e9818f18098c4f6256c1d516b60f3b99a6181ea3a3eef8a4a04db82127a1"
+    },
+    {
+      "species": "Catz",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "sheet": "Catz-lying-90.png",
+      "sheet_sha256": "99ab55cfd8c5427c3000a01b2cc71e4acb8b6f7671dcc37cb7cded3fce2defb0",
+      "cell_size": [
+        214,
+        96
+      ],
+      "cell_labels": [
+        "fresh",
+        "whisker0_primed",
+        "only_target_connector_primed",
+        "primed_except_target_connector",
+        "all_positive_fuzz_lines_primed",
+        "primed_except_positive_fuzz_lines"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "081aa12e6ba1da95a8bc388486f496d7cfee0b87838d7dcda56b5976c97db329"
+        },
+        {
+          "rgba_sha256": "9fa5d1326d40445b44bc1916f296cd1c77a8c3c0e45852b2e14b1ea9d28ff71d"
+        },
+        {
+          "rgba_sha256": "9aaba2f46ea29a20635f6b42f93cef5fe6cc613158ff7859bfc7ecc57bfdc5f9"
+        },
+        {
+          "rgba_sha256": "c26d5f0f7ec836366cef5078fab8c2c1373e8d9deed22628c5c7e3812557b838"
+        },
+        {
+          "rgba_sha256": "9fa5d1326d40445b44bc1916f296cd1c77a8c3c0e45852b2e14b1ea9d28ff71d"
+        },
+        {
+          "rgba_sha256": "081aa12e6ba1da95a8bc388486f496d7cfee0b87838d7dcda56b5976c97db329"
+        }
+      ],
+      "primed_vs_fresh": 269,
+      "target_only_vs_fresh": 190,
+      "target_only_vs_primed": 79,
+      "others_only_vs_fresh": 79,
+      "all_fuzzy_vs_primed": 0,
+      "except_fuzzy_vs_fresh": 0,
+      "positive_fuzz_draw_count": 36,
+      "line_draw_count": 52,
+      "fresh_matches_line011": true,
+      "primed_matches_line011": true,
+      "fresh_state_sha256": "2e6aafef933a79382088980186dc5bdb4e3b2796fc2ac6e55261048cd598cb37",
+      "whisker0_primed_state_sha256": "117c4f152f67a96659066198988e2d12d8d15fc590dbf908c02f7967e52bf8a7",
+      "only_target_connector_primed_state_sha256": "2e6aafef933a79382088980186dc5bdb4e3b2796fc2ac6e55261048cd598cb37",
+      "primed_except_target_connector_state_sha256": "117c4f152f67a96659066198988e2d12d8d15fc590dbf908c02f7967e52bf8a7",
+      "all_positive_fuzz_lines_primed_state_sha256": "2e6aafef933a79382088980186dc5bdb4e3b2796fc2ac6e55261048cd598cb37",
+      "primed_except_positive_fuzz_lines_state_sha256": "117c4f152f67a96659066198988e2d12d8d15fc590dbf908c02f7967e52bf8a7"
+    }
+  ],
+  "summary": {
+    "fixtures": 12,
+    "target_only_matches_primed": 0,
+    "others_only_matches_fresh": 0,
+    "all_fuzzy_matches_primed": 12,
+    "except_fuzzy_matches_fresh": 12
+  }
+}

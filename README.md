@@ -44,6 +44,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [AREA-002: conflicting neighbor precedence](experiments/area-002.md)
 - [AREA-001: connection-derived body areas](experiments/area-001.md)
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
+- [LINE-012: fuzzy connector pixel attribution](experiments/line-012.md)
 - [LINE-011: composed breed random history](experiments/line-011.md)
 - [LINE-010: partial connector rows](experiments/line-010.md)
 - [LINE-009: automatic edge selection](experiments/line-009.md)

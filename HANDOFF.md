@@ -176,3 +176,7 @@ Final aggregate audit corrected LINE-005 synthetic count to72 (2 texture states 
 ## Latest composed line-history research
 
 [LINE-011](experiments/line-011.md):12 fixtures,84 history targets,12 eight-cell sheets,12 exact MCP baselines; two sheets reviewed. Fixed prepared scenes,targetstep1,discarded prior pixels. Same-step1 repeat/whisker1 controls equal fresh; other-pose history changes11/12,step0-whisker/fuzz3 priming changes12/12. Prior-scene-step0 changesthree Catz sideviews. Whole-scene attribution only; no retained FrameState or native simulation.168 RNG/table states private scratch/research/line-011/states.json. Reuses LINE-007 fuzz7 copies, verified hashes. Next: connector-only attribution, broader styles/species/version or native evidence.
+
+## Latest connector pixel attribution
+
+[LINE-012](experiments/line-012.md):12 six-cell sheets/72 compositions,144 before-target/after-scene RNG states; two sheets reviewed. Diagnostic connector-only swaps leave residual; all positive-fuzz connector pixel swaps reproduce primed12/12 and restore fresh12/12, while main-path state is preserved. Fresh/primed cells match LINE-011 exactly; no new MCP. Initial four-cell exploration archived privately, final scratch/research/line-012. No renderer/native claims. Next: other history attribution, broader breeds/versions, textured connector controls or native evidence.

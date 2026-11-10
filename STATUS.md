@@ -45,6 +45,7 @@ Updated: 2026-11-10
 - Latest: [LINE-006](experiments/line-006.md),48 raster fixtures/42 numerical loads/twenty MCP pairs: scan-row/polygon edges differ; negative edge colors inherit shaded fill.
 - Latest: [LINE-007](experiments/line-007.md),40 raster fixtures/30 numerical loads/sixteen MCP pairs: fuzz clamps0–7; repeated identical direct draws reuse cached offsets.
 - Latest: [LINE-008](experiments/line-008.md),96 asset-free history rasters: positive-fuzz/step0-whisker prior draws affect shared RNG; repeat/zero/step1 controls match.
+- Latest: [LINE-009](experiments/line-009.md),48 numerical loads/twenty MCP pairs: automatic edge mode tests exact -1/-1; equal pixels can conceal resolved-mode differences.
 - Next: independent native texture evidence, other list conflicts/whiskers, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.

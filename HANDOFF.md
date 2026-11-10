@@ -158,3 +158,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest random-history research
 
 [LINE-008](experiments/line-008.md):96 asset-free rasters; other-fuzz and step0-whisker histories change all12 target fixtures, short+other history changes9. Repeat,zero,step1,short-same controls all equal fresh. Full states private scratch/research/line-008/states.json; installed/checkout sources verified. No MCP/breed/native claims. Next: actual composed fuzzy breed history/default edge selection or independent native evidence.
+
+## Latest automatic edge research
+
+[LINE-009](experiments/line-009.md):48 numerical loads,twenty equal MCP pairs; two sheets reviewed. Explicit sentinel -2 resolves -1 only for exact edge colors -1/-1; -2/-2 resolves0. Inherited flat edges conceal mode differences. No omitted-column test despite parser-default code lead. Final scratch/research/line-009; no renderer/native claims. Next: partial3–9-field rows or actual fuzzy breed histories/native evidence.

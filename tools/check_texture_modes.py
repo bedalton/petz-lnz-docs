@@ -68,6 +68,8 @@ def main():
                 assert raster[(pose,-1,variant)]==raster[(pose,0,variant)]
                 assert len({raster[(pose,m,variant)] for m in (2,10,150)})==1
             for mode in expected:assert raster[(pose,mode,'textured')]!=raster[(pose,mode,'explicit')]
+            assert len({raster[(pose,m,'textured')] for m in (-1,0,125,149)})==1
+            assert len({raster[(pose,m,'textured')] for m in expected})==3
             # Report distinct connector-only images separately from composed sheets.
             print(case['species'],pose,'textured classes',len({raster[(pose,m,'textured')] for m in expected}))
     for rec in report['comparisons']:

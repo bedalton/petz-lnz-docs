@@ -16,4 +16,6 @@ Rows are interpreted as `art_path, mode, tile_width, tile_height`. Slot indices 
 
 Mode0,1 and2 produce different sampled connector pixels at base color125. Modes125/149 decode own levels11/13; do not interpret the raw field as a direct output color. The renderer uses has_levels/own_level when remapping original texture bytes and supplying shade/sign metadata. Forty synthetic all-byte remaps show bytes0–9 and150–255 unchanged at this remap stage; later raster shade addition can still change them. See [connector textures](connector-textures.md) for selection, limits and raster shading, and [retained texture state](texture-state.md) for frame history.
 
+The isolated connector samples also group modes125/149 with mode0 despite different flags/shade metadata. Standing Catz mode125 has a different whole remapped-art hash but equal connector-window pixels. Treat these equal previews as local observations, not equivalent authoring settings.
+
 All effective slots are loaded, so parser acceptance alone does not establish that dimensions or resources can be rendered. Invalid dimension loading, custom external art, young resources, other breeds/versions and native tint semantics remain untested here. Repeated preview agreement is not game validation.

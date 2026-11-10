@@ -70,4 +70,5 @@ Updated: 2026-11-10
 - Latest: [LINE-021](experiments/line-021.md),90 numerical loads/60 isolated rasters/40 MCP pairs: appended marker slots confirm small tile dimensions hide connectors while explicit fill draws; stock slots/lines preserved.
 - Latest: [TEXTURE-003](experiments/texture-003.md),18 parser cases/40 all-byte remaps/144 loads/96 isolated rasters/84 MCP pairs: mode equivalences and visible remap differences; [Texture List reference](format-reference/texture-list.md).
 - Latest: [TEXTURE-004](experiments/texture-004.md),48 return-to-pose histories/240 RGBA cells/twelve MCP fresh baselines:34 full scenes differ,all diagnostic connector rasters match fresh; state-isolation controls recorded.
-- Resume: [HANDOFF.md](HANDOFF.md).
+- Texture authoring continuation: [session/audit](docs/session-2026-11-10-texture-authoring.md),three research units;78 copies/184 PNGs/500 RGBA cells,124 MCP pairs+twelve fresh baselines,234 authoring loads+12 history fixtures,20 cross-unit pixel links and48 history fresh-baseline links verified. All62 installed sources match clean checkout; local HTTP MCP healthy.
+- Resume: [HANDOFF.md](HANDOFF.md); latest audit and next research routes are consolidated there.

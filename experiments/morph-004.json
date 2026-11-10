@@ -1,0 +1,3763 @@
+{
+  "experiment": "MORPH-004",
+  "backend": "direct Python asset-backed assembly; no new MCP images",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "controls": {
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "head_rotation": 0
+  },
+  "reused_input_manifest": "morph-003.json",
+  "histories": {
+    "a_then_b": [
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "b_then_a": [
+      [
+        15,
+        50
+      ],
+      [
+        14,
+        50
+      ]
+    ],
+    "cycle": [
+      [
+        14,
+        100
+      ],
+      [
+        15,
+        100
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "noops": [
+      [
+        14,
+        50
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ],
+    "unused": [
+      [
+        13,
+        100
+      ],
+      [
+        14,
+        50
+      ],
+      [
+        15,
+        50
+      ]
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "540a7c7977596fcb417210e1a2853a68b90b1ee8ad796a382a4757ba5420f400",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "1e905af6e0abc342c18cbdf747bc3bb364cff9c0ec1a30fa9337613d9754e864",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 81
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 88
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 89
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "14dda1843d19735e2cf33eab1357185c7c7c46fce79fe7f1f3184700f2a55b9a",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 81
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 88
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 89
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 84
+            },
+            {
+              "index": 56,
+              "batch": 84,
+              "incremental": 85
+            },
+            {
+              "index": 57,
+              "batch": 85,
+              "incremental": 3
+            },
+            {
+              "index": 58,
+              "batch": 3,
+              "incremental": 27
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 63
+            },
+            {
+              "index": 60,
+              "batch": 63,
+              "incremental": 83
+            },
+            {
+              "index": 61,
+              "batch": 83,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "540a7c7977596fcb417210e1a2853a68b90b1ee8ad796a382a4757ba5420f400",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "540a7c7977596fcb417210e1a2853a68b90b1ee8ad796a382a4757ba5420f400",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": false
+      },
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "4a96fc4df1ced8c6aaa388384206bbb77670e0f2b6842771522be5560fe150ac",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "43d20e5d5d01da8941f48e78c945e89ec6a25a3f711082d7a5ae4f1e9b6f1a75",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "8384e789f8e12cf8d302b130e422cefd25df2643412f96dea846af93fb6b1bb8",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 3
+            },
+            {
+              "index": 53,
+              "batch": 3,
+              "incremental": 88
+            },
+            {
+              "index": 54,
+              "batch": 88,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 51
+            },
+            {
+              "index": 57,
+              "batch": 51,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "52b29435479e276f9321613f3c82b8d28db054ade5c2bba18424b0be7288b331",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 51
+            },
+            {
+              "index": 57,
+              "batch": 51,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "4a96fc4df1ced8c6aaa388384206bbb77670e0f2b6842771522be5560fe150ac",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Dogz-dormant_body.dog",
+      "input_sha256": "e92115fa3cd3bd889187f14debc28b2e60089005108c57b056cc0ff10ee638fd",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "ea638dce75b24e6aebde03612d3de1bc3feebe807392153eda5566a0286c1b27",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 44,
+              "batch": 53,
+              "incremental": 91
+            },
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 53
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "9ec9acabeda0bb997b1d147f499a6e5a9618c41d0ace95945d392d3aace90de9",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 92
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 81
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 88
+            },
+            {
+              "index": 53,
+              "batch": 92,
+              "incremental": 89
+            },
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "9ec9acabeda0bb997b1d147f499a6e5a9618c41d0ace95945d392d3aace90de9",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 92
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 81
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 88
+            },
+            {
+              "index": 53,
+              "batch": 92,
+              "incremental": 89
+            },
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "d8607cca02b25063d4727cff1469260e5eedaf34fd95aaf31ddcf928571f2716",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 92
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 81
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 88
+            },
+            {
+              "index": 53,
+              "batch": 92,
+              "incremental": 89
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 84
+            },
+            {
+              "index": 56,
+              "batch": 84,
+              "incremental": 85
+            },
+            {
+              "index": 57,
+              "batch": 85,
+              "incremental": 3
+            },
+            {
+              "index": 58,
+              "batch": 3,
+              "incremental": 27
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 63
+            },
+            {
+              "index": 60,
+              "batch": 63,
+              "incremental": 83
+            },
+            {
+              "index": 61,
+              "batch": 83,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "9ec9acabeda0bb997b1d147f499a6e5a9618c41d0ace95945d392d3aace90de9",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 92
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 81
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 88
+            },
+            {
+              "index": 53,
+              "batch": 92,
+              "incremental": 89
+            },
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "5712c8657fa04b94c56a29834a40823711d5eef846bae8c8a7f09d9ec5aff173",
+          "incremental_snapshot_sha256": "9ec9acabeda0bb997b1d147f499a6e5a9618c41d0ace95945d392d3aace90de9",
+          "final_markers": [
+            {
+              "x": -11,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -3,
+              "y": -79,
+              "z": -84,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 7,
+              "y": -72,
+              "z": -82,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 49,
+              "batch": 81,
+              "incremental": 90
+            },
+            {
+              "index": 50,
+              "batch": 88,
+              "incremental": 92
+            },
+            {
+              "index": 51,
+              "batch": 89,
+              "incremental": 81
+            },
+            {
+              "index": 52,
+              "batch": 90,
+              "incremental": 88
+            },
+            {
+              "index": 53,
+              "batch": 92,
+              "incremental": 89
+            },
+            {
+              "index": 54,
+              "batch": 51,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 51
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": false
+      },
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "4a96fc4df1ced8c6aaa388384206bbb77670e0f2b6842771522be5560fe150ac",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "4a96fc4df1ced8c6aaa388384206bbb77670e0f2b6842771522be5560fe150ac",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "8384e789f8e12cf8d302b130e422cefd25df2643412f96dea846af93fb6b1bb8",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 3
+            },
+            {
+              "index": 53,
+              "batch": 3,
+              "incremental": 88
+            },
+            {
+              "index": 54,
+              "batch": 88,
+              "incremental": 91
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 51
+            },
+            {
+              "index": 57,
+              "batch": 51,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "52b29435479e276f9321613f3c82b8d28db054ade5c2bba18424b0be7288b331",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 51
+            },
+            {
+              "index": 57,
+              "batch": 51,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "e19dfae2d121678c942ecabfce5a52930b152941e6854ed306add00b3ddfd621",
+          "incremental_snapshot_sha256": "4a96fc4df1ced8c6aaa388384206bbb77670e0f2b6842771522be5560fe150ac",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -106,
+              "z": -29,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -112,
+              "z": -30,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 11,
+              "y": -102,
+              "z": -27,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 51,
+              "batch": 87,
+              "incremental": 91
+            },
+            {
+              "index": 52,
+              "batch": 91,
+              "incremental": 87
+            },
+            {
+              "index": 55,
+              "batch": 63,
+              "incremental": 89
+            },
+            {
+              "index": 56,
+              "batch": 89,
+              "incremental": 63
+            },
+            {
+              "index": 59,
+              "batch": 27,
+              "incremental": 64
+            },
+            {
+              "index": 60,
+              "batch": 64,
+              "incremental": 27
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    },
+    {
+      "species": "Dogz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Dogz-dormant_head.dog",
+      "input_sha256": "c1c07a24801dd499e13c384dc45371d4c1dad33eea669e8060351966d6106410",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "ea638dce75b24e6aebde03612d3de1bc3feebe807392153eda5566a0286c1b27",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 44,
+              "batch": 53,
+              "incremental": 91
+            },
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 53
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "b894f0f98c4b2b2cf60f7b7bb2754ba862c0f4545f6b42756c601e000458a3d7",
+          "incremental_snapshot_sha256": "6ed3b5093dd56645581ce505a063b5dab68a7711c7255b8eedb055c5ff40bafa",
+          "final_markers": [
+            {
+              "x": -5,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -32,
+              "z": -92,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 13,
+              "y": -25,
+              "z": -93,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 45,
+              "batch": 34,
+              "incremental": 91
+            },
+            {
+              "index": 46,
+              "batch": 52,
+              "incremental": 34
+            },
+            {
+              "index": 47,
+              "batch": 91,
+              "incremental": 52
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "standing",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "3215df0c0714b0802f3caa607d0a2bfbd7d840cc42787ec6e90559dae8ff529f",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 87
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "42d4c7b5668ec0772432a9725fee2f5dd3e92247cf3780cbc4e7f2571e37fb8b",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 87
+            },
+            {
+              "index": 59,
+              "batch": 91,
+              "incremental": 29
+            },
+            {
+              "index": 60,
+              "batch": 29,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "sitting",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "a909a13caa12de506aa7a1c6c263539fbcfef65415ec4f20449cef388ad15f96",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "59406d0ba8899f1db18ee36c6d19e31810a00c66949e86cd0f766e82fd41e06f",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 89
+            },
+            {
+              "index": 59,
+              "batch": 89,
+              "incremental": 29
+            },
+            {
+              "index": 60,
+              "batch": 29,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "a909a13caa12de506aa7a1c6c263539fbcfef65415ec4f20449cef388ad15f96",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "a909a13caa12de506aa7a1c6c263539fbcfef65415ec4f20449cef388ad15f96",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_body",
+      "pose": "lying",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_body.cat",
+      "input_sha256": "953a305b87312e584964184495cf3fd0dd6fd7f0b3f9319423aeffaedc5cf797",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "5e743d2c23f733651d40ba2c2ef4a6971093599db86123cdba71578db3370ef1",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 23
+            },
+            {
+              "index": 56,
+              "batch": 23,
+              "incremental": 29
+            },
+            {
+              "index": 57,
+              "batch": 29,
+              "incremental": 91
+            },
+            {
+              "index": 70,
+              "batch": 77,
+              "incremental": 78
+            },
+            {
+              "index": 71,
+              "batch": 78,
+              "incremental": 77
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "standing",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "eeab0ea5909820b640a06b54f86c1bc4a23747637c98fd10c8deaa6763a1ac64",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 92
+            },
+            {
+              "index": 57,
+              "batch": 92,
+              "incremental": 87
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "eeab0ea5909820b640a06b54f86c1bc4a23747637c98fd10c8deaa6763a1ac64",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 92
+            },
+            {
+              "index": 57,
+              "batch": 92,
+              "incremental": 87
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "0bb755307b6fa4e6b343a7bfa570dd235bde44e3e5328eb7d9886cce9607d976",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 92
+            },
+            {
+              "index": 57,
+              "batch": 92,
+              "incremental": 87
+            },
+            {
+              "index": 59,
+              "batch": 91,
+              "incremental": 29
+            },
+            {
+              "index": 60,
+              "batch": 29,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "eeab0ea5909820b640a06b54f86c1bc4a23747637c98fd10c8deaa6763a1ac64",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 92
+            },
+            {
+              "index": 57,
+              "batch": 92,
+              "incremental": 87
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "9a6064da49d953ac6d365a65897a0de339f98c1ecbd27476541d604c6fa4fc81",
+          "incremental_snapshot_sha256": "eeab0ea5909820b640a06b54f86c1bc4a23747637c98fd10c8deaa6763a1ac64",
+          "final_markers": [
+            {
+              "x": -8,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -2,
+              "y": -78,
+              "z": -85,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": -72,
+              "z": -83,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 87,
+              "incremental": 90
+            },
+            {
+              "index": 56,
+              "batch": 90,
+              "incremental": 92
+            },
+            {
+              "index": 57,
+              "batch": 92,
+              "incremental": 87
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "sitting",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "434e7cef0362f424cfcb2d20bd54b1133a5ef7e170ec621793d3bfef6e9967b1",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 5,
+              "incremental": 92
+            },
+            {
+              "index": 55,
+              "batch": 11,
+              "incremental": 5
+            },
+            {
+              "index": 56,
+              "batch": 92,
+              "incremental": 11
+            },
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "06b6589ab946c1c8edea2078cb80486ca2cb6c589760383dad054ca53a3e0b34",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 5,
+              "incremental": 92
+            },
+            {
+              "index": 55,
+              "batch": 11,
+              "incremental": 5
+            },
+            {
+              "index": 56,
+              "batch": 92,
+              "incremental": 11
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "1807c2052c6644974357643722d23809a39c53dbab8fdd842728cd5fdcf14708",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 5,
+              "incremental": 92
+            },
+            {
+              "index": 55,
+              "batch": 11,
+              "incremental": 5
+            },
+            {
+              "index": 56,
+              "batch": 92,
+              "incremental": 11
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 89
+            },
+            {
+              "index": 59,
+              "batch": 89,
+              "incremental": 29
+            },
+            {
+              "index": 60,
+              "batch": 29,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "434e7cef0362f424cfcb2d20bd54b1133a5ef7e170ec621793d3bfef6e9967b1",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 5,
+              "incremental": 92
+            },
+            {
+              "index": 55,
+              "batch": 11,
+              "incremental": 5
+            },
+            {
+              "index": 56,
+              "batch": 92,
+              "incremental": 11
+            },
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "dfd6220779d31e3a38123d74b8ab200f144ae07591020f5cb3831edda0630a23",
+          "incremental_snapshot_sha256": "434e7cef0362f424cfcb2d20bd54b1133a5ef7e170ec621793d3bfef6e9967b1",
+          "final_markers": [
+            {
+              "x": -4,
+              "y": -115,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 3,
+              "y": -119,
+              "z": -37,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 10,
+              "y": -112,
+              "z": -35,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 54,
+              "batch": 5,
+              "incremental": 92
+            },
+            {
+              "index": 55,
+              "batch": 11,
+              "incremental": 5
+            },
+            {
+              "index": 56,
+              "batch": 92,
+              "incremental": 11
+            },
+            {
+              "index": 57,
+              "batch": 90,
+              "incremental": 91
+            },
+            {
+              "index": 58,
+              "batch": 91,
+              "incremental": 90
+            }
+          ],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": false
+    },
+    {
+      "species": "Catz",
+      "variant": "dormant_head",
+      "pose": "lying",
+      "baseline_repeated_frame": {
+        "same_balls": true,
+        "same_fills": true,
+        "same_draw_order": true
+      },
+      "input": "Catz-dormant_head.cat",
+      "input_sha256": "a58f3ab59536351f8302befef309451e373d1a29c88555db61752ff5ebcd8541",
+      "histories": {
+        "a_then_b": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "b_then_a": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "cycle": {
+          "same_draw_order": false,
+          "same_sorted_order": false,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": false,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "8d79c7727f22baefdc003a784421f8dd0d0c765af149797e299dea969a72732b",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [
+            {
+              "index": 55,
+              "batch": 91,
+              "incremental": 23
+            },
+            {
+              "index": 56,
+              "batch": 23,
+              "incremental": 29
+            },
+            {
+              "index": 57,
+              "batch": 29,
+              "incremental": 91
+            }
+          ],
+          "shade_distance_changed_ids": [
+            90,
+            91,
+            92
+          ]
+        },
+        "noops": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        },
+        "unused": {
+          "same_draw_order": true,
+          "same_sorted_order": true,
+          "same_fills": true,
+          "same_shade_offsets": true,
+          "same_shade_distances": true,
+          "rejects_nonprefix_history": true,
+          "batch_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "incremental_snapshot_sha256": "4d8cf9ed8e437dad34543da5a3cf5995c5782a3bcab9ebef075d095a2d639a0c",
+          "final_markers": [
+            {
+              "x": -7,
+              "y": 17,
+              "z": -249,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": -1,
+              "y": 10,
+              "z": -251,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            },
+            {
+              "x": 6,
+              "y": 16,
+              "z": -250,
+              "radius": 2,
+              "visible": true,
+              "parked": false
+            }
+          ],
+          "draw_order_changed_positions": [],
+          "shade_distance_changed_ids": []
+        }
+      },
+      "retained_distinct_update_order_same_draw_order": true
+    }
+  ],
+  "batch_incremental_difference_counts": {
+    "same_draw_order": 47,
+    "same_sorted_order": 47,
+    "same_fills": 0,
+    "same_shade_offsets": 0,
+    "same_shade_distances": 12
+  },
+  "source_hashes": {
+    "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+    "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+    "rendering/attachment.py": "e29179c4e5d8b3580cbd12b4131fa0cae592b201b20cedc998d754f8f502aa07",
+    "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+    "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82"
+  },
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

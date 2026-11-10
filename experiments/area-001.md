@@ -1,5 +1,7 @@
 # AREA-001: connections can change body area
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Petz 4 Scottie/Siamese renderer evidence. Direct head-rotation geometry is separate from default-head-pose MCP images. Native-game behavior unvalidated.
 
 Run `scratch/petz-local-venv/bin/python tools/body_area_probe.py`. Refuses overwrite. Appends a group-0 head-attached marker and optionally connects it to head or base ID 0 (stock label ankle). Variants use body-area column 0, explicit 8 or explicit 1; ankle/marker omission controls remove the connection. Effective existing Linez preserved; source-copy safeguards applied.

@@ -1,5 +1,7 @@
 # AREA-002: conflicting neighbor precedence
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Petz 4 Scottie/Siamese only. Code-supported and renderer-observed results; no native-game validation.
 
 Run `scratch/petz-local-venv/bin/python tools/body_area_neighbors.py`. The script refuses an existing output directory. Private copies, responses and PNGs are under scratch/research/area-002. [Manifest](area-002.json) records original/copy hashes, controls, geometry, engine hashes, dependency versions and the installed evaluation-source hash (checked against the renderer checkout). No renderer changes. Existing effective Linez rows are preserved and fixed-span resource-copy safeguards apply.

@@ -1,5 +1,7 @@
 # LINE-005: connector fill and endpoint selection
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Code-supported synthetic blocks and renderer-observed Petz 4 Scottie/Siamese; no native-game validation.
 
 Run `scratch/petz-local-venv/bin/python tools/line_color_probe.py`. Refuses overwrite. Private copies and pixels: scratch/research/line-005. [Manifest](line-005.json) records input/PNG/cell hashes, installed/checkout source hashes, dependencies and three resource DLL hashes. Animation BHD/BDT hashes are in the private MCP metadata. Renderer revision: 9d72d7afd5f7460ef18133c6179caaf8055082d9. No renderer changes.

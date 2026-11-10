@@ -1,5 +1,7 @@
 # SHADE-003: omission can change shading elsewhere
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Petz4 adult Scottie/Siamese, slope100, seed0, age100, fatness50. Direct assembly/preparation with local stdio MCP comparisons. Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9 unchanged. Renderer-observed/code-supported evidence only, no native-game validation. [Manifest](shade-003.json). Reproducer `scratch/petz-local-venv/bin/python tools/shade_omission_probe.py` refuses overwrite; verifier `scratch/petz-local-venv/bin/python tools/check_shade_omissions.py`. Private evidence scratch/research/shade-003; audit scratch/research/shade-003-verification.json.
 
 The sweep independently omits each base ID0–66 across two species ×three poses ×yaw0/64 engine units:804 assembly cases. All center coordinates, radii and parked flags remain identical. Eleven omissions reduce visible depth bounds; seven change fill arrays. All793 cases preserving depth also preserve shade state and fills. Recomputing each altered case with the original depth denominator exactly restores the complete baseline ShadeState. Midpoint anchor coordinates and active-slot flags remain unchanged, so this is a bounds-driven effect in the tested fresh states.

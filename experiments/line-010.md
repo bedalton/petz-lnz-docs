@@ -1,5 +1,7 @@
 # LINE-010: partial connector rows
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date:2026-11-10. Renderer-observed Petz4 Scottie/Siamese and code-supported resolved appearance. No native syntax/fidelity claim. [Manifest](line-010.json). Run `scratch/petz-local-venv/bin/python tools/line_partial_probe.py`; refuses overwrite. Private copies/images: scratch/research/line-010. Source/dependency/engine/original/input/PNG/cell hashes recorded; renderer unchanged at9d72d7afd5f7460ef18133c6179caaf8055082d9.
 
 ## Controls

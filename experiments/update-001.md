@@ -26,4 +26,48 @@ Initial control attempts used an incorrect CircleClip attribute and a dormant ad
 
 ## Historical replays
 
-Available top-level path-based comparison/contact-sheet controls are being replayed into scratch/research/update-001, using exact historical input hashes and explicit game versions. Historical experiment JSON and raw evidence stay intact. Final replay counts, finding classifications and pending scope will be recorded here after completion. A pixel-hash change does not by itself overturn a comparison relationship or numerical claim.
+Available top-level path-based comparisons were replayed into scratch/research/update-001,using exact historical input hashes and explicit game versions. Historical experiment JSON and raw evidence stay intact. The completed table below separates current comparison findings from historical pixel hashes.
+
+## Completed historical MCP replay
+
+[Replay manifest](update-001.json); verifier `scratch/petz-local-venv/bin/python tools/check_renderer_update.py`. All583 available top-level comparison relationships are **confirmed** on the updated renderer. All415 comparisons carrying historical cell hashes have pixel drift;168 have only a recorded equality result, so their old exact cell pixels are not classified.565 of583 PNG byte hashes differ; PNG byte changes and decoded pixel changes are distinct claims. Six cross-version stock inspect/render smoke pairs pass; all six PNG hashes differ from RESTORE-002.
+
+| Historical unit | Replayed comparisons | Current comparison finding | Historical cell hashes |
+| --- | --- | --- | --- |
+| AREA-001 |8 |**Confirmed** equality/inequality relationships |not recorded |
+| AREA-002 |8 |**Confirmed** equality/inequality relationships |not recorded |
+| AREA-003 |8 |**Confirmed** equality/inequality relationships |not recorded |
+| AREA-004 |8 |**Confirmed** equality/inequality relationships |not recorded |
+| AREA-005 |8 |**Confirmed** equality/inequality relationships |not recorded |
+| AREA-006 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| LINE-001 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| LINE-002 |24 |**Confirmed** equality/inequality relationships |24/24 changed |
+| LINE-003 |20 |**Confirmed** equality/inequality relationships |not recorded |
+| LINE-004 |16 |**Confirmed** equality/inequality relationships |16/16 changed |
+| LINE-005 |20 |**Confirmed** equality/inequality relationships |20/20 changed |
+| LINE-006 |20 |**Confirmed** equality/inequality relationships |20/20 changed |
+| LINE-007 |16 |**Confirmed** equality/inequality relationships |16/16 changed |
+| LINE-009 |20 |**Confirmed** equality/inequality relationships |20/20 changed |
+| LINE-010 |56 |**Confirmed** equality/inequality relationships |56/56 changed |
+| LINE-013 |16 |**Confirmed** equality/inequality relationships |16/16 changed |
+| LINE-015 |16 |**Confirmed** equality/inequality relationships |16/16 changed |
+| LINE-019 |16 |**Confirmed** equality/inequality relationships |16/16 changed |
+| LINE-021 |40 |**Confirmed** equality/inequality relationships |40/40 changed |
+| MORPH-001 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| MORPH-002 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| MORPH-003 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| PROJECT-002 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| PROJECT-003-PETZ3 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| PROJECT-003-PETZ5 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| PROJECT-004 |12 |**Confirmed** equality/inequality relationships |not recorded |
+| SHADE-001 |48 |**Confirmed** equality/inequality relationships |48/48 changed |
+| SHADE-003 |23 |**Confirmed** equality/inequality relationships |23/23 changed |
+| TEXTURE-003 |84 |**Confirmed** equality/inequality relationships |84/84 changed |
+
+The pass replays29 experiment manifests and verifies1,166 decoded RGBA cells,392 distinct input paths and18 restoration-original hash links (twelve shared engine/executable files plus six breeds across Petz3/4/5). All62 installed source files match the checkout; eight changed since the old installation. New source-tree digest: `2099ceacbe26befa5b42a361b238481e926c4cdd5c9e8c6c7f2b45f261dc7b9c`. All saved inputs and historical JSON reports retain their hashes.
+
+**Current-build exact pixel claims are corrected/superseded where drift is observed.** The old images remain valid records of the old build. A confirmed comparison does not prove unchanged geometry, attribution, individual pixel counts or game fidelity. Selected geometry/history checks and rebuilt eyes are handled in UPDATE-002.
+
+The replay inventory has76 pending controls across ADD-001,EYE-001/002,HEAD-001/002,MOVE-001,OMIT-001,VIS-002 because their old private inputs are absent or do not pass the historical-hash lookup. EYE-001/002 are subsequently rebuilt byte-identically in UPDATE-002,covering12 of those controls;64 remain pending. Nested LINE-016 version reports,nonstandard baseline records and synthetic-only units are outside this generic top-level pass. Do not label them newly confirmed from this table.
+
+Old source-hash verifiers should continue to reject the new installation. They are provenance guards,not evidence that the historical experiment itself failed. Use the update verifiers and preserve historical outputs instead of relaxing their guards.

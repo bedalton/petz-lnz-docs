@@ -1,5 +1,7 @@
 # AREA-005: anchored cycles and late list overrides
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Petz 4 Scottie/Siamese. Code-supported and renderer-observed only; native-game fidelity remains unvalidated. No renderer changes.
 
 Run `scratch/petz-local-venv/bin/python tools/body_area_cycles.py`; existing output is refused. [Manifest](area-005.json) records controls, source/copy hashes, semantic ID maps, geometry, image hashes, dependencies, engine hashes and installed evaluation-source hash. Private evidence: scratch/research/area-005. Four Petz 4 engine hashes match RESTORE-002, and installed evaluation source matches checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9. Copy safeguards preserve unrelated resources and bytes outside the adult LNZ span; original hashes are unchanged.

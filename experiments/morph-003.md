@@ -1,5 +1,7 @@
 # MORPH-003: multiple groups and dormant prefixes
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Petz 4 Scottie/Siamese, renderer-observed/code-supported only. Native runtime and game fidelity unvalidated.
 
 Run `scratch/petz-local-venv/bin/python tools/multiple_morph_probe.py`; refuses existing output. [Manifest](morph-003.json) records inputs, controls, offsets, geometry, transition traces, masks, twelve MCP PNG hashes, dependency versions and source/engine hashes. Private evidence: scratch/research/morph-003. Three installed evaluation/morph/attachment sources match checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9; four engine hashes match RESTORE-002. Original game files and unrelated resources remain unchanged under copy safeguards.

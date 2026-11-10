@@ -1,5 +1,7 @@
 # LINE-021: appended texture slots and tile dimensions
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Renderer-observed local stdio MCP and asset-backed numerical/raster evidence for Petz4 Scottie/Siamese seed0 adult resources. No native-game validation. [Manifest](line-021.json). Reproducer: `scratch/petz-local-venv/bin/python tools/line_texture_dimensions.py` refuses overwrite; verifier: `scratch/petz-local-venv/bin/python tools/check_texture_dimensions.py`. Private evidence: scratch/research/line-021; verification: scratch/research/line-021-verification.json. Renderer unchanged at revision9d72d7afd5f7460ef18133c6179caaf8055082d9.
 
 An appended Texture List slot uses the selected stock head art, mode1 and dimensions32×256,256×32,64×64,128×128 or256×256. Only a new marker uses this slot. All effective stock texture slots and connector rows are preserved explicitly and checked after loading. The marker sits at head-relative(-35,-160,0), size20, color125. Three variants per dimension keep marker appearance fixed: end-selected texture(-2), explicit125, and absent diagnostic connector. This controls for changes in the marker's own textured circle. Stock originals are unchanged; edits stay within one copied adult resource leaf.

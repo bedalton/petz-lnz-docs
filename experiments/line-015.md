@@ -1,5 +1,7 @@
 # LINE-015: oversized textured connector in breeds
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date:2026-11-10. Renderer-observed Petz4 Scottie/Siamese, not native-game validation. [Manifest](line-015.json). Reproducer `scratch/petz-local-venv/bin/python tools/line_texture_limit_breed.py` refuses overwrite. Private copies/images scratch/research/line-015. No renderer changes; hashes/dependencies/backend recorded.
 
 Builds short offset -80 and long offset -800 head-attached marker controls. Within each distance group, compare inherited head texture (fill -1), explicit125 and no appended connector. Both endpoints have base color125; head retains its stock256x256 texture and marker is untextured. Fuzz0, edges244/244, widths100/100, edge mode0 and draw_after1 fixed; existing lines are frozen. Seed0, age100, fatness50.

@@ -1,5 +1,7 @@
 # AREA-006: omitted markers and explicit lists
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Petz 4 Scottie/Siamese, renderer-observed and code-supported only. Original-game behavior remains unvalidated. No renderer changes.
 
 Run `scratch/petz-local-venv/bin/python tools/omitted_area_lists.py`; refuses existing output. [Manifest](area-006.json) records inputs/hashes, controls, list ordering, geometry, 12 MCP comparisons, dependencies, engine hashes and evaluation-source hash. Private evidence: scratch/research/area-006. The first harness wrongly expected omitted incident lines to survive assembly; this assertion was corrected, with failed copies preserved under scratch/research/area-006-harness-failed. No renderer fix was needed. Four engine hashes match RESTORE-002; installed evaluation source matches checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9. Originals and unrelated resources remain unchanged under fixed-span copy safeguards.

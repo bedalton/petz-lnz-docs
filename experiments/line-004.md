@@ -1,5 +1,7 @@
 # LINE-004: short rows and default thickness
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Renderer-observed Petz 4 Scottie/Siamese; no native syntax/fidelity claim.
 
 Run `scratch/petz-local-venv/bin/python tools/line_defaults_probe.py`. Refuses overwrite. Appends the diagnostic head marker from LINE-001. Existing parsed lines are serialized fully to freeze their resolved style; numerical assertions verify they remain identical. Only the new connector consumes the tested global thickness defaults. Copy/resource safeguards preserve originals.

@@ -1,5 +1,7 @@
 # LINE-009: automatic connector edge mode
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Code-supported resolved appearance and renderer-observed Petz4 Scottie/Siamese; no native validation. [Manifest](line-009.json). Run `scratch/petz-local-venv/bin/python tools/line_auto_edge_probe.py`; refuses overwrite. Private evidence scratch/research/line-009. Uses explicit ten-field rows with edge-mode sentinel -2, not omitted columns.
 
 48 numerical loads (eight variants, three poses, two species) confirm that mode -2 resolves to -1 only when both edge colors are exactly -1. Colors180/200, mixed -1/200 and -2/-2 resolve to mode0. Explicit modes -1/0 remain as supplied. Thus arbitrary negative edge colors do not all select fill-only mode automatically, although they inherit fill during rasterization. Geometry and all frozen existing lines remain unchanged.

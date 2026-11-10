@@ -1,5 +1,7 @@
 # LINE-003: connector draw order and fallback
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Renderer-observed Petz 4 Scottie/Siamese, with direct scheduler checks. Native-game behavior unvalidated.
 
 Run `scratch/petz-local-venv/bin/python tools/line_order_probe.py`. Refuses overwrite. Creates six private adult-copy variants with the LINE-001 marker/connector. Existing parsed lines are serialized with all ten fields explicit, including resolved draw flags; assertions verify they remain identical in every loaded variant. This freezes existing connectors while changing the new row/global flag. Original resource safeguards apply.

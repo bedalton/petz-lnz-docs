@@ -1,5 +1,7 @@
 # LINE-006: connector edge colors and modes
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Code-supported isolated raster checks and renderer-observed Petz4 Scottie/Siamese; no native validation. [Manifest](line-006.json). Reproducer: `scratch/petz-local-venv/bin/python tools/line_edge_probe.py`; refuses overwrite. Private evidence: scratch/research/line-006. Renderer revision9d72d7afd5f7460ef18133c6179caaf8055082d9; installed/checkout source hashes, dependencies, original/copy hashes and resource DLL hashes recorded. No renderer modifications.
 
 ## Controls

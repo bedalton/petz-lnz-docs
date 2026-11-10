@@ -1,5 +1,7 @@
 # LINE-002: endpoint thickness sweep
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Renderer-observed Petz 4 Scottie/Siamese; direct connector-block checks supplement real local MCP images. No native-game validation.
 
 ## Reproduce and controls

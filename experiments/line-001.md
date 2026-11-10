@@ -1,5 +1,7 @@
 # LINE-001: connected added detail and omissions
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Renderer-observed Petz 4 Scottie/Siamese; no native-game validation.
 
 ## Method

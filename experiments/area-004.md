@@ -1,5 +1,7 @@
 # AREA-004: connected chains and evaluation order
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Petz 4 Scottie/Siamese. Code-supported and renderer-observed; native-game fidelity unvalidated. No renderer modifications.
 
 Reproduce with `scratch/petz-local-venv/bin/python tools/body_area_chains.py`; refuses an existing output directory. [Manifest](area-004.json) records inputs, controls, numerical geometry, eight MCP image hashes, dependencies, engine hashes and evaluation-source hash. Private copies, PNGs and responses: scratch/research/area-004. Installed evaluation source matches checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9; four engine hashes match RESTORE-002. Original breed hashes remain unchanged, and copy safeguards check unrelated resources and bytes outside the adult LNZ span.

@@ -1,5 +1,7 @@
 # TEXTURE-003: Texture List modes and connector remapping
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Asset-free parser/remap, asset-backed block/raster and local stdio MCP evidence for Petz4 Scottie/Siamese seed0 adults. No native-game validation. [Manifest](texture-003.json). Reproducer `scratch/petz-local-venv/bin/python tools/texture_mode_probe.py` refuses overwrite; verifier `scratch/petz-local-venv/bin/python tools/check_texture_modes.py`. Private evidence scratch/research/texture-003; audit scratch/research/texture-003-verification.json. Renderer unchanged at9d72d7afd5f7460ef18133c6179caaf8055082d9.
 
 Eighteen parser fixtures cover mode and dimension defaults, malformed numeric tokens and mode boundaries. Forty all-byte remaps cover eight modes ×five colors(10,19,20,125,149). Source bytes0–9 and150–255 remain unchanged in the remapped art; downstream shade addition is separate (LINE-020). No independent derivation of the renderer's ramp lookup tables or native calibration is claimed.

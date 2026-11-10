@@ -1,5 +1,7 @@
 # LINE-013: asset-backed connector textures
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date:2026-11-10. Renderer-observed Petz4 Scottie/Siamese; no native-game validation. [Manifest](line-013.json). Reproducer `scratch/petz-local-venv/bin/python tools/line_texture_probe.py` refuses overwrite. Private evidence scratch/research/line-013. No renderer changes; revision9d72d7afd5f7460ef18133c6179caaf8055082d9, installed/checkout source hashes, dependencies, resource DLL hashes, original/copy and PNG/cell hashes recorded.
 
 Both head and marker have base color125. The head retains its stock texture slot (Scottie1, Siamese0); the marker has texture -1. Connector fuzz0, edges244/244, widths100/100, edge mode0 and draw_after1 are fixed. Existing parsed Linez rows are frozen and checked unchanged. Seed0, age100, fatness50; three numerical poses, standing MCP yaws0/90.

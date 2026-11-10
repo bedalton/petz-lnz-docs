@@ -1,5 +1,7 @@
 # AREA-003: body-area-list precedence
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-09. Petz 4 Scottie/Siamese, code-supported and renderer-observed only. Original-game behavior unvalidated.
 
 Run `scratch/petz-local-venv/bin/python tools/body_area_lists.py`. Refuses existing output. Copies/images/responses remain private under scratch/research/area-003. [Manifest](area-003.json) records six variants, serialized list-section ordering, original/copy hashes, geometry, controls, dependency versions, engine hashes and installed evaluation-source hash. Four Petz 4 engine hashes match RESTORE-002; installed evaluation source matches checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9. No renderer changes.

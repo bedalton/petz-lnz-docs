@@ -276,3 +276,7 @@ Final focused follow-up: [SHADE-003 equal-fill attribution](experiments/shade-00
 ## Renderer upgrade in progress
 
 [UPDATE-001](experiments/update-001.md): reinstalled noneditable package from6c1d883,restarted local HTTP MCP (PID8300),health passed.68 focused renderer tests pass;asset-free old/new controls confirm paint textures,Outline interiors,clip inset correction,legacy paint mapping and12 add-ball projection cases. No renderer source changes;pre-existing .gitignore modification preserved. Full top-level historical MCP replay underway under scratch/research/update-001; do not run old source-hash verifiers as if they validate the new build. Historical reports remain intact.
+
+## Completed renderer MCP replay
+
+[UPDATE-001](experiments/update-001.md#completed-historical-mcp-replay):583 top-level comparison relationships confirmed,415 known cell-hash comparisons drift,168 only carry equality evidence,565 PNG bytes differ. Six stock cross-version inspect/render pairs pass with changed PNGs. tools/check_renderer_update.py verifies1,166 RGBA cells,392 distinct inputs and18 restoration-original hash links. Sources match6c1d883.76 controls initially pending;rebuilt eyes and latest numerical/state checks are in UPDATE-002;64 other missing-input controls and nested LINE-016 remain outside this pass. Historical JSON/raw evidence preserved.

@@ -1,5 +1,7 @@
 # LINE-019: connector texture routing in second breeds
 
+**Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
+
 Date: 2026-11-10. Renderer-observed local stdio MCP and asset-backed numerical/block evidence for Petz4 Dalmatian (DM) and Persian (PR), seed0 adult resources only. No native-game claim. [Manifest](line-019.json). Reproducer `scratch/petz-local-venv/bin/python tools/line_texture_breeds.py` refuses overwrite. Original sources unchanged; only private resource copies edited. Engine, source, input, loaded/remapped texture, PNG and RGBA cell hashes recorded. Private evidence scratch/research/line-019. Renderer unchanged.
 
 Repeats LINE-013's five variants and four comparison pairs with another breed per species. Head and marker base colors125; marker untextured; diagnostic head-to-marker connector100/100, fuzz0, edge mode0, after flag1. Effective stock lines retained explicitly. Same geometry is asserted across variants in standing/sitting/lying (30 asset loads). Both breeds' selected head slot1 is hair10.bmp, has_levels=true, own_level=-1, tiled256x256; this does not add a new tile-size sample.

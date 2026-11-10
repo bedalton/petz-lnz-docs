@@ -101,3 +101,9 @@ Updated: 2026-11-10
 - Latest: [PAINT-002](experiments/paint-002.md),three paint-angle command substitutions explain all24 Fuzzkin host/combined differences;144 PNGs/48 cross-unit links verified. Two front/side sheets reviewed.
 
 - Latest: [PAINT-003](experiments/paint-003.md),wrong-length paint-state vectors reset all angles:48 short/long controls match host-only;168 PNGs/48 prior links pass. Preserve full indexed state vectors.
+
+- Saved-paint session audited: [evidence/index](docs/session-2026-11-10-saved-paints.md),three units,660 research PNGs/648 final draws/192 persisted transitions/12 MCP baselines.20 original hashes and62-source agreement pass;new Paint Ballz reference indexed.
+
+- Final saved-paint RGBA audit distinguishes two palette-alias counts in PAINT-001 geometry/order controls;all paint-angle counts agree. Details in the [session audit](docs/session-2026-11-10-saved-paints.md).
+
+- Final aggregate independently rehashes all660 PNGs and48 state files;all match their manifests.

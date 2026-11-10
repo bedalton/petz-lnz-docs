@@ -113,3 +113,4 @@ Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. 
 - [Saved-pet paint-angle motion](experiments/paint-001.md)
 - [Individual paint-angle attribution](experiments/paint-002.md)
 - [Paint-state vector length controls](experiments/paint-003.md)
+- [Saved-paint continuation audit](docs/session-2026-11-10-saved-paints.md)

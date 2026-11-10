@@ -330,3 +330,11 @@ A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE
 ## Paint-state vector controls
 
 [PAINT-003](experiments/paint-003.md):Fuzzkin has19 paint entries;18/20-entry states reset the whole paint vector during preparation.48 mismatch controls match host-only;24 exact-zero controls do too. Active-only and inactive-slot controls each match combined in24.168 PNGs/48 prior links verify;no new MCP calls or renderer/original edits. Same-count paint reordering is not tested;retain state with its exact appearance/index ordering.
+
+## Saved-paint continuation final audit
+
+[Session index](docs/session-2026-11-10-saved-paints.md) consolidates PAINT-001/002/003 and their complete verifiers. Aggregate tools/check_paint_session.py passes:660 research PNGs,two reviewed sheets,20 original hash links,62-source agreement,seven tool hashes. New [Paint Ballz reference](format-reference/paint-ball.md) indexed for agents. HTTP discovery/capabilities healthy;research uses stdio. No renderer/original edits. Next:saved-group retint,other textured pets/versions or independent native evidence. Nonzero paint-angle gap now sampled with Fuzzkin;all-zero UPDATE-007 scope remains intact. Latest authorization is this ten-minute continuation only.
+
+Final decoded RGBA audit checks960 differences:only Fuzzkin sitting/side yaw-arc geometry146→144 and order116→114 differ from indexed-byte counts. Paint-angle results/counts unchanged. Aggregate records exact corrections;original PAINT-001 manifest preserved.
+
+Final aggregate additionally rehashes all660 PNG files and48 private state files against manifest digests;all pass. Working tree retains only unrelated untracked istall-node.

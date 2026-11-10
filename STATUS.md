@@ -44,4 +44,5 @@ Updated: 2026-11-10
 - Next: independent native texture evidence, other list conflicts/whiskers, relative-size/multi-group morphs, connector styling and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.
+- Pixel/texture session: [2026-11-10 textures](docs/session-2026-11-10-textures.md): three units,24 MCP baseline checks,96 sheets/396 RGBA cells and96 orientation snapshots verified.
 - Resume: [HANDOFF.md](HANDOFF.md).

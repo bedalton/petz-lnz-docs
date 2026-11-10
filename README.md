@@ -19,12 +19,23 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [Iris/pupil colors](visual-editing/eye-colors.md)
 - [Body areas](format-reference/body-areas.md)
 - [Added-ball groups](format-reference/add-groups.md)
+- [Retained texture state](format-reference/texture-state.md)
 - [Added-ball fields](format-reference/add-ball.md), [attached details](visual-editing/attached-details.md)
 - [Omissions](format-reference/omissions.md), [visibility diagnosis](visual-editing/visibility.md)
 - [Renderer evidence gaps](troubleshooting/rendering-gaps.md)
 
 ## Evidence
 
+- [Texture/pixel session and integrity checks](docs/session-2026-11-10-textures.md)
+- [Morph session and integrity checks](docs/session-2026-11-10-morphs.md)
+- [TEXTURE-001: retained static-frame pixels](experiments/texture-001.md), [TEXTURE-002: angle arithmetic](experiments/texture-002.md)
+- [MORPH-005: explicit-state pixel controls](experiments/morph-005.md)
+- [MORPH-004: retained assembly histories](experiments/morph-004.md)
+- [MORPH-003: multiple groups and prefixes](experiments/morph-003.md)
+- [MORPH-002: relative-size group activation](experiments/morph-002.md)
+- [AREA-006: omitted markers and lists](experiments/area-006.md)
+- [AREA-005: anchored cycles and late lists](experiments/area-005.md)
+- [AREA-004: connected-chain ID ordering](experiments/area-004.md)
 - [Connector session overview and integrity checks](docs/session-2026-11-09-connectors.md)
 
 - [AREA-003: body-area-list precedence](experiments/area-003.md)
@@ -54,26 +65,6 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [OMIT-001: all-base-ball omission sweep](experiments/omit-001.md)
 - [VIS-001: geometry behind unchanged omissions](experiments/vis-001.md)
 - [VIS-002: Catz 55/56 across poses and views](experiments/vis-002.md)
-
-Latest texture arithmetic: [TEXTURE-002](experiments/texture-002.md), tracing the repeated angle delta without changing renderer code.
-
-Latest static texture evidence: [TEXTURE-001](experiments/texture-001.md), isolating retained texture orientation from geometry/morph state.
-
-Latest explicit-state pixels: [MORPH-005](experiments/morph-005.md), including an order-only counterfactual and MCP baseline checks.
-
-Session index: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md), including verification and next steps.
-
-Latest assembly-history evidence: [MORPH-004](experiments/morph-004.md), separating final geometry from retained ordering and shade caches.
-
-Latest multiple-group evidence: [MORPH-003](experiments/morph-003.md), including shared members and dormant head-area prefixes.
-
-Latest relative-size morph evidence: [MORPH-002](experiments/morph-002.md), documenting GAP-005 without a speculative renderer change.
-
-Latest omitted-marker evidence: [AREA-006](experiments/area-006.md), separating late classification from visibility.
-
-Latest cycle evidence: [AREA-005](experiments/area-005.md), including an omitted anchor and a late list override.
-
-Latest connected-chain evidence: [AREA-004](experiments/area-004.md), with added-ID propagation controls and an all-head-area cycle.
 
 Raw stock resources, private breed copies and rendered images remain outside Git under ignored persistent scratch storage. Each experiment links its machine-readable manifest; read that only when checking detailed evidence.
 

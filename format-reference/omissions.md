@@ -23,3 +23,5 @@ An unchanged image is not proof that an ID is unused or incorrectly labeled. Che
 Omitting a host-eye ball and omitting an iris ball are different operations in this implementation. Do not assume every named component obeys a single visibility path; see [GAP-004](../troubleshooting/rendering-gaps.md).
 
 Implementation source at revision 9d72d7afd5f7460ef18133c6179caaf8055082d9: appearance/core.py parses omissions and drops Linez endpoints; rendering/attachment.py marks ordinary geometry invisible; rendering/assembly.py and preparation.py implement iris overlays. Other group/morph/head-tracking interactions remain open.
+
+Explicit area lists can reclassify an omitted added marker without making it visible: [AREA-006](../experiments/area-006.md). Head Balls restores area 8 and numerical head-rotation response, while visible remains false and incident parsed lines remain absent in sampled Petz 4 Scottie/Siamese.

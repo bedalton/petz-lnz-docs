@@ -1,0 +1,1647 @@
+{
+  "experiment": "AREA-006",
+  "backend": "local stdio MCP default head pose; direct Python head rotation32",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "runtime_provenance": "restore-002.json",
+  "settings": {
+    "visible": [
+      [],
+      3,
+      false,
+      3
+    ],
+    "omitted": [
+      [],
+      3,
+      true,
+      0
+    ],
+    "omitted_body": [
+      [
+        "Body Balls"
+      ],
+      3,
+      true,
+      1
+    ],
+    "omitted_head": [
+      [
+        "Head Balls"
+      ],
+      3,
+      true,
+      8
+    ],
+    "omitted_both": [
+      [
+        "Body Balls",
+        "Head Balls"
+      ],
+      3,
+      true,
+      8
+    ],
+    "omitted_head_v1": [
+      [
+        "Head Balls"
+      ],
+      1,
+      true,
+      0
+    ],
+    "visible_head": [
+      [
+        "Head Balls"
+      ],
+      3,
+      false,
+      8
+    ]
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "list_section_order": {
+        "visible": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls"
+        ],
+        "omitted": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls"
+        ],
+        "omitted_body": [
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Body Balls"
+        ],
+        "omitted_head": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ],
+        "omitted_both": [
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Body Balls",
+          "Head Balls"
+        ],
+        "omitted_head_v1": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ],
+        "visible_head": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ]
+      },
+      "paths": {
+        "visible": "Dogz-visible.dog",
+        "omitted": "Dogz-omitted.dog",
+        "omitted_body": "Dogz-omitted_body.dog",
+        "omitted_head": "Dogz-omitted_head.dog",
+        "omitted_both": "Dogz-omitted_both.dog",
+        "omitted_head_v1": "Dogz-omitted_head_v1.dog",
+        "visible_head": "Dogz-visible_head.dog"
+      },
+      "input_hashes": {
+        "visible": "bdbb3f7d4da544ef29fb9ff4d6e703244ff141bbd0467e4850673c1446e44739",
+        "omitted": "f31247368b03358830d08226e3512ba4460c01e8303f16c0d06753109f38d0fe",
+        "omitted_body": "d1a6ae153b1e3b4c8b8d3f5123a60ff1271174178888e874c2d3859510fcfaec",
+        "omitted_head": "09de967e83ca068af1fe0bc58821ad5553caaf0f943fa3fcc273a93d4ac7bd6a",
+        "omitted_both": "eedefa3da05b628a4bbfe2e1005e66260d3057cb45a9d2f67c9476451d33ebae",
+        "omitted_head_v1": "c2892364fda9dad981e06428a5eb6b0dcb269d7a57352da9de86df925babbeb5",
+        "visible_head": "59748b8941bb6da1b889c4fd25e3cdecdd802958c4d83fa8b215115ef3d3a275"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -25,
+            "y": -97,
+            "z": -71,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -25,
+            "y": -97,
+            "z": -71,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -25,
+            "y": -97,
+            "z": -71,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -15,
+            "y": -130,
+            "z": -27,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -15,
+            "y": -130,
+            "z": -27,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -15,
+            "y": -130,
+            "z": -27,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -12,
+            "y": -51,
+            "z": -78,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -12,
+            "y": -51,
+            "z": -78,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -12,
+            "y": -51,
+            "z": -78,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "list_section_order": {
+        "visible": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls"
+        ],
+        "omitted": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls"
+        ],
+        "omitted_body": [
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Head Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Body Balls"
+        ],
+        "omitted_head": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ],
+        "omitted_both": [
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Body Balls",
+          "Head Balls"
+        ],
+        "omitted_head_v1": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ],
+        "visible_head": [
+          "Body Balls",
+          "Right Leg Balls",
+          "Left Leg Balls",
+          "Right Hand Balls",
+          "Left Hand Balls",
+          "Right Foot Balls",
+          "Left Foot Balls",
+          "Right Arm Balls",
+          "Left Arm Balls",
+          "Right Ear Balls",
+          "Left Ear Balls",
+          "Tail Balls",
+          "Whisker Balls",
+          "Jowlz Balls",
+          "Right Brow Balls",
+          "Left Brow Balls",
+          "Extra Balls",
+          "Extra Head Balls",
+          "Head Balls"
+        ]
+      },
+      "paths": {
+        "visible": "Catz-visible.cat",
+        "omitted": "Catz-omitted.cat",
+        "omitted_body": "Catz-omitted_body.cat",
+        "omitted_head": "Catz-omitted_head.cat",
+        "omitted_both": "Catz-omitted_both.cat",
+        "omitted_head_v1": "Catz-omitted_head_v1.cat",
+        "visible_head": "Catz-visible_head.cat"
+      },
+      "input_hashes": {
+        "visible": "531834ad27d21f1725eb32204479a37102d93a86d3c391b48bce0cfc73b5522c",
+        "omitted": "07375c0104b41aefa6706b2110971508c23e8518583ff25e6bc663182f8ec050",
+        "omitted_body": "98b09532a3b14f3397466be2ed91dde6f20d0c428edf5e0c9446561e6f39e368",
+        "omitted_head": "9b932929fb98fa6138045fca292d8f2070c3b6ab5061e96b7fe7e2972165d866",
+        "omitted_both": "7cfcc23bf31f20a2e81f104fdbdc8a0b56cdaf02f033fcbba7cbeb28767df874",
+        "omitted_head_v1": "cd9d1dc080e131b8b7c7507e6abf7232b19e1eb677dd2adbeee0560e920bee66",
+        "visible_head": "cf7c710b864ca77097f98aa165b39ec2a69ca0d9e1c315ba4b38d5a3fe32f01d"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -22,
+            "y": -93,
+            "z": -74,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -22,
+            "y": -93,
+            "z": -74,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -22,
+            "y": -93,
+            "z": -74,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -134,
+            "z": -36,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -134,
+            "z": -36,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -11,
+            "y": -134,
+            "z": -36,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "visible",
+          "marker_area": 3,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted",
+          "marker_area": 0,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_body",
+          "marker_area": 1,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -24,
+            "y": -5,
+            "z": -236,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_both",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -24,
+            "y": -5,
+            "z": -236,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "omitted_head_v1",
+          "marker_area": 0,
+          "lnz_version": 1,
+          "omitted": true,
+          "incident_parsed_lines": 0,
+          "rotation_changed": false,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": false,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "visible_head",
+          "marker_area": 8,
+          "lnz_version": 3,
+          "omitted": false,
+          "incident_parsed_lines": 1,
+          "rotation_changed": true,
+          "neutral_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "head_rotated_marker": {
+            "x": -24,
+            "y": -5,
+            "z": -236,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-omitted.dog",
+        "after_path": "Dogz-omitted_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c6ba82ae90a02c7d7b2d032231f8667db8fffa1c967ffcb441cb9666f9efe0e8",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-omitted.dog",
+        "after_path": "Dogz-omitted_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b258b5d18df2f87b678b435e2109157e47c629030b9175ee6f39fc413f395a1e",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-omitted_head.dog",
+        "after_path": "Dogz-omitted_body.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c6ba82ae90a02c7d7b2d032231f8667db8fffa1c967ffcb441cb9666f9efe0e8",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-omitted_head.dog",
+        "after_path": "Dogz-omitted_body.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b258b5d18df2f87b678b435e2109157e47c629030b9175ee6f39fc413f395a1e",
+      "cells_equal": true
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-visible_head.dog",
+        "after_path": "Dogz-omitted_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "8e9224d8a1710710ce5b2bb8f563c735fac410406764b32e91fbd541b2b135d0",
+      "cells_equal": false
+    },
+    {
+      "species": "Dogz",
+      "controls": {
+        "before_path": "Dogz-visible_head.dog",
+        "after_path": "Dogz-omitted_head.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "1adbf43a4341bf2180607a765ab604c3996e5fc4b794ed36cb7ff75d37fd4652",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-omitted.cat",
+        "after_path": "Catz-omitted_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1e56397792e52b38178dedffd11422cca5dd729d9bfd09de55f97b0436a87b77",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-omitted.cat",
+        "after_path": "Catz-omitted_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4c71bd3b0b834744ffead55de1b9ce9e6e4ea8f93276d9c20e5dd68fc0aa6d45",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-omitted_head.cat",
+        "after_path": "Catz-omitted_body.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1e56397792e52b38178dedffd11422cca5dd729d9bfd09de55f97b0436a87b77",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-omitted_head.cat",
+        "after_path": "Catz-omitted_body.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4c71bd3b0b834744ffead55de1b9ce9e6e4ea8f93276d9c20e5dd68fc0aa6d45",
+      "cells_equal": true
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-visible_head.cat",
+        "after_path": "Catz-omitted_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "dc3b19dc1bf5d8ec2977e347eb1a4998934aa90684a947d92aa8e7d0e1182dcc",
+      "cells_equal": false
+    },
+    {
+      "species": "Catz",
+      "controls": {
+        "before_path": "Catz-visible_head.cat",
+        "after_path": "Catz-omitted_head.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5c39754b6487aab99c574daa1d6ccddc47e228050bb9dfd120aeb20d841b9d0e",
+      "cells_equal": false
+    }
+  ],
+  "evaluation_source_sha256": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+  "shared_engine_hashes": {
+    "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependency_versions": {
+    "fastmcp": "4.1.6",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "pydantic": "2.14.3"
+  }
+}

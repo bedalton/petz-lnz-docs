@@ -25,3 +25,5 @@ Direct signed/shaded TexturePaint controls [LINE-020](../experiments/line-020.md
 [TEXTURE-004](../experiments/texture-004.md) samples48 return-to-pose histories with the128×128 marker slot. Whole scenes often change, but the isolated diagnostic connector matches fresh in every case. It does not establish universal retained connector stability.
 
 Remaining: custom art, other evolving scenes and independent native evidence.
+
+Updated-build scope: [UPDATE-005](../experiments/update-005.md) rechecks all32 nested LINE-016 Petz3/5 comparisons and60 numerical connector cases. They preserve the recorded relationships and exactly match current Petz4 comparison images; historical pixels change. This adds no native-game validation.

@@ -53,6 +53,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [Connector sampling session verification](docs/session-2026-11-10-connector-sampling.md)
 - [Texture authoring/motion session audit](docs/session-2026-11-10-texture-authoring.md)
 - [Recovered early renderer controls](experiments/update-004.md)
+- [Nested cross-version texture replay](experiments/update-005.md)
 - [Renderer update and historical comparison review](experiments/update-001.md)
 - [Updated eye/shading/state findings](experiments/update-002.md)
 - [Available saved-pet upgrade samples](experiments/update-003.md)

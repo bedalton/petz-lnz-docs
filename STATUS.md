@@ -83,3 +83,5 @@ Updated: 2026-11-10
 - Latest revalidation: [UPDATE-002](experiments/update-002.md) confirms rebuilt eye relationships and selected shade/motion outcomes;corrects Dogz records,three shade-history counts,one omission count and18 motion vectors. GAP-006 is128 pixels at frame3/141 at frame8 on the new build; attribution retained.
 - Sample regression: [UPDATE-003](experiments/update-003.md),three saved pets/18 old-new views;all18 new views match local MCP. Fuzzkin prepares textured paints,Goobe geometry changes;available Homebody cache has no paint textures. Frisky/Chip unavailable.
 - Resume: [HANDOFF.md](HANDOFF.md); latest audit and next research routes are consolidated there.
+
+- Latest: [UPDATE-005](experiments/update-005.md),32 nested Petz3/5 texture comparisons and60 assembly checks confirmed;64 RGBA cells exactly match updated Petz4. Selected upgrade relationships now total691;historical pixels remain revision-specific.

@@ -5,7 +5,7 @@ Evidence: [LINE-001](../experiments/line-001.md), Petz 4 Scottie/Siamese local r
 | Column | Parsed field | Evidence |
 | --- | --- | --- |
 | 1–2 | Start/end ball IDs | Base head to appended marker tested |
-| 3 | Fuzz | 0 used |
+| 3 | Fuzz | -1/0/1/7/8 tested; clamps0–7 ([LINE-007](../experiments/line-007.md)) |
 | 4 | Fill color | 125 diagnostic color used |
 | 5–6 | Left/right colors | 180/200 and negative fill inheritance tested ([LINE-006](../experiments/line-006.md)) |
 | 7–8 | Start/end thickness | 0/0, 10/10, 25/25, 100/100, 100/0, 0/100 tested ([LINE-002](../experiments/line-002.md)) |
@@ -27,3 +27,5 @@ For tested two-field rows, `Default Linez Thickness` supplies both endpoint perc
 [LINE-005](../experiments/line-005.md) isolates fill selection: -1 follows the start endpoint; -2 follows the end, including reversed endpoints, in twenty Petz4 Scottie/Siamese MCP pairs with flat diagnostic colors. Nonnegative values use explicit fill. Synthetic blocks additionally show -3 selecting the end and negative values inheriting selected endpoint texture; explicit fill bypasses texture. Shading averages endpoint offsets with truncation toward zero, then clamps within a palette band for colors10–149. Synthetic texture routing and -3 acceptance are not native syntax/fidelity claims. Edge colors remain separate and untested by this unit.
 
 [LINE-006](../experiments/line-006.md) separates edge styles with flat fill220: modes0/1 differ from each other and from -1. Mode0 uses scan-row boundaries; mode1 strokes polygon sides. Edge colors are not anatomical sides. Negative edge colors inherit shaded fill; explicit edge colors bypass fill shading. Invalid mode2 draws no pixels in tested controls. Automatic -2 selection remains untested.
+
+[LINE-007](../experiments/line-007.md) tests fuzz: -1 equals0 and8 equals7; positive1/7 change the sampled MCP pixels. Isolated repeated draws reuse row-offset tables without advancing RNG after the first identical block. Other connector/whisker histories may change those tables; static repeatability is not native fidelity.

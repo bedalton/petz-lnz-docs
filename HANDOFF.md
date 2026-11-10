@@ -150,3 +150,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest connector edge research
 
 [LINE-006](experiments/line-006.md):48 isolated rasters,42 numerical loads,twenty MCP pairs; two sheets reviewed. Modes -1/0/1/2 and edge colors180/200/-1 tested with fill220. Negative edges inherit shaded fill; explicit edges bypass fill shading (initial fill125 equivalence assumption failed and archived). Initial obsolete-variant harness also archived. Final scratch/research/line-006; no renderer/native claims. Next: fuzz/default edge selection or native texture evidence.
+
+## Latest connector fuzz research
+
+[LINE-007](experiments/line-007.md):40 isolated rasters,30 numerical loads,sixteen MCP pairs; two reviewed sheets. Fuzz -1=0 and8=7, positive1/7 differ from0. Same renderer/block repeats preserve pixels/RNG/table after first draw; fresh seed1 matches. Other history/height/whisker interactions not yet sampled. Final scratch/research/line-007; no renderer changes/native claims.

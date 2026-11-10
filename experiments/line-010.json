@@ -1,0 +1,4270 @@
+{
+  "experiment": "LINE-010",
+  "backend": "local stdio MCP plus resolved breed appearance/geometry",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "profiles": {
+    "a": {
+      "thickness": 25,
+      "before": 1
+    },
+    "b": {
+      "thickness": 73,
+      "before": 0
+    }
+  },
+  "source_hashes": {
+    "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "Pillow": "13.0.0"
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "paths": {
+        "short3a": "Dogz-short3a.dog",
+        "full3a": "Dogz-full3a.dog",
+        "short4a": "Dogz-short4a.dog",
+        "full4a": "Dogz-full4a.dog",
+        "short5a": "Dogz-short5a.dog",
+        "full5a": "Dogz-full5a.dog",
+        "short6a": "Dogz-short6a.dog",
+        "full6a": "Dogz-full6a.dog",
+        "short7a": "Dogz-short7a.dog",
+        "full7a": "Dogz-full7a.dog",
+        "short8a": "Dogz-short8a.dog",
+        "full8a": "Dogz-full8a.dog",
+        "short9a": "Dogz-short9a.dog",
+        "full9a": "Dogz-full9a.dog",
+        "short3b": "Dogz-short3b.dog",
+        "full3b": "Dogz-full3b.dog",
+        "short4b": "Dogz-short4b.dog",
+        "full4b": "Dogz-full4b.dog",
+        "short5b": "Dogz-short5b.dog",
+        "full5b": "Dogz-full5b.dog",
+        "short6b": "Dogz-short6b.dog",
+        "full6b": "Dogz-full6b.dog",
+        "short7b": "Dogz-short7b.dog",
+        "full7b": "Dogz-full7b.dog",
+        "short8b": "Dogz-short8b.dog",
+        "full8b": "Dogz-full8b.dog",
+        "short9b": "Dogz-short9b.dog",
+        "full9b": "Dogz-full9b.dog"
+      },
+      "input_hashes": {
+        "short3a": "ef82c85c7ca5b65fcd7cbc60f0c79e45c8f519942ef0c3147141c6b5115ede4b",
+        "full3a": "2382381181a9a0bb5d5cfefbf22e5c19f46f1816a3f0fc1aa1909a48398d97af",
+        "short4a": "fbb84eb2cec3e0ac8eca4c27e9add6db7359f83edd7c9687ab114dae4d7adb07",
+        "full4a": "ebcb1e79d263782d44fbfc5604eb2c81e2e813d6c487ce78cf9d7be27e5c91d6",
+        "short5a": "504e7b45675a7795ca9efa28ca77627f9a8ed896a7419120fb43a468617abf62",
+        "full5a": "fd9c09c2b8ba3343b0f620db4dbdaafb047a3e27a6125a221ca4231844ceebb1",
+        "short6a": "18e5fca6acce4abce98aa3ae82d650af034abf84169691a08980ef9834ba4160",
+        "full6a": "d9563476e6b84c223a804bc7b66c0fce6d45e0a20fb0ab277f41534950e1cabc",
+        "short7a": "9b52e0cf4577adf5e9315847c0940a2d10ed9170704c72becab7fc5cb626d7e6",
+        "full7a": "fc1b87a13b7c25ab041e7600bd26174acc529c488e22ab2ddb1df93a91f00eb4",
+        "short8a": "ba6c7711f761b1fea0d9fea4aae65fbc574b85d2c0daca673dd97ad93f5e578c",
+        "full8a": "7104d5d84843e232f9a8babaa2c4f49514825f6042df193d0f28d15460d64cdb",
+        "short9a": "f69cf71d8e000564178ac099c070a914c6d1bc555f1aa592e00e20d637f9ff36",
+        "full9a": "b82e5189d77e6aa339fbb93659c9f2d2150901054221272396a56fb98ce5641b",
+        "short3b": "c8f472ec3dd74963c3d91935a0b65ae84eb958e4aecf8dccf0a6340cdfff6202",
+        "full3b": "85b3e9b733efefe42c339f9d1ee3b1fa55449796b64688cd0e0bf1eed1d1af1f",
+        "short4b": "e4c730bf09ab483de8af7803a6112fb8daa5007fe29532e0c5dd4946b5768800",
+        "full4b": "04cb7dcebd47ef0aa7311393bd7651e01a08583fe421c4f864f1fd32e9579c0a",
+        "short5b": "52110768a297a358040a49609bedc85e304d77ff5ba4fe06381ab227676ef4ef",
+        "full5b": "b98d1518ab576b3f7a1867d821fff0cb52bb8c370a413bbaee334865ca068bb8",
+        "short6b": "63027a40c789814a661163c10e260a62f22825bcb6aa11b463e084105d66c2f0",
+        "full6b": "a0923e5837b52e07c811f73c7d2f0f86023b15e18e2dcf1e62a02f712967300a",
+        "short7b": "9732cbee031f7d1b8f8cf7020a08f836e4287f4ad401a3518638c33a5cfb23be",
+        "full7b": "269fd9897c3a8fe82bea5e2dd541cb00d80b57b988dd606836ea810d541ec998",
+        "short8b": "0ddfe6b488d6e520413ddc47dd4db351adab33c63f248e26cfd207ec82a6f3cf",
+        "full8b": "121a9381b89a99978a4e3b143fc603da8ed2a405cf0a95a827303d7921230460",
+        "short9b": "b8b14bf7b113ffa2c5e81cf3a379aef19ee83436a7f02d749469311ccd3c622d",
+        "full9b": "f895947ed749cd3ca0afa02577228b73bb9be03299867f3890469fc601cba882"
+      },
+      "line_rows": {
+        "short3a": "52, 90, 1",
+        "full3a": "52, 90, 1, -1, 244, 244, 25, 25, 0, 0",
+        "short4a": "52, 90, 1, 220",
+        "full4a": "52, 90, 1, 220, 244, 244, 25, 25, 0, 0",
+        "short5a": "52, 90, 1, 220, 180",
+        "full5a": "52, 90, 1, 220, 180, 244, 25, 25, 0, 0",
+        "short6a": "52, 90, 1, 220, 180, 200",
+        "full6a": "52, 90, 1, 220, 180, 200, 25, 25, 0, 0",
+        "short7a": "52, 90, 1, 220, 180, 200, 33",
+        "full7a": "52, 90, 1, 220, 180, 200, 33, 25, 0, 0",
+        "short8a": "52, 90, 1, 220, 180, 200, 33, 67",
+        "full8a": "52, 90, 1, 220, 180, 200, 33, 67, 0, 0",
+        "short9a": "52, 90, 1, 220, 180, 200, 33, 67, 1",
+        "full9a": "52, 90, 1, 220, 180, 200, 33, 67, 1, 0",
+        "short3b": "52, 90, 1",
+        "full3b": "52, 90, 1, -1, 244, 244, 73, 73, 0, 1",
+        "short4b": "52, 90, 1, 220",
+        "full4b": "52, 90, 1, 220, 244, 244, 73, 73, 0, 1",
+        "short5b": "52, 90, 1, 220, 180",
+        "full5b": "52, 90, 1, 220, 180, 244, 73, 73, 0, 1",
+        "short6b": "52, 90, 1, 220, 180, 200",
+        "full6b": "52, 90, 1, 220, 180, 200, 73, 73, 0, 1",
+        "short7b": "52, 90, 1, 220, 180, 200, 33",
+        "full7b": "52, 90, 1, 220, 180, 200, 33, 73, 0, 1",
+        "short8b": "52, 90, 1, 220, 180, 200, 33, 67",
+        "full8b": "52, 90, 1, 220, 180, 200, 33, 67, 0, 1",
+        "short9b": "52, 90, 1, 220, 180, 200, 33, 67, 1",
+        "full9b": "52, 90, 1, 220, 180, 200, 33, 67, 1, 1"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "short3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full3a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full4a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full5a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full6a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full7a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full8a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full9a",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full3b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full4b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full5b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full6b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full7b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full8b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full9b",
+          "resolved": {
+            "start": 52,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        }
+      ],
+      "pairs": [
+        [
+          "short3a",
+          "full3a"
+        ],
+        [
+          "short4a",
+          "full4a"
+        ],
+        [
+          "short5a",
+          "full5a"
+        ],
+        [
+          "short6a",
+          "full6a"
+        ],
+        [
+          "short7a",
+          "full7a"
+        ],
+        [
+          "short8a",
+          "full8a"
+        ],
+        [
+          "short9a",
+          "full9a"
+        ],
+        [
+          "short3b",
+          "full3b"
+        ],
+        [
+          "short4b",
+          "full4b"
+        ],
+        [
+          "short5b",
+          "full5b"
+        ],
+        [
+          "short6b",
+          "full6b"
+        ],
+        [
+          "short7b",
+          "full7b"
+        ],
+        [
+          "short8b",
+          "full8b"
+        ],
+        [
+          "short9b",
+          "full9b"
+        ]
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "paths": {
+        "short3a": "Catz-short3a.cat",
+        "full3a": "Catz-full3a.cat",
+        "short4a": "Catz-short4a.cat",
+        "full4a": "Catz-full4a.cat",
+        "short5a": "Catz-short5a.cat",
+        "full5a": "Catz-full5a.cat",
+        "short6a": "Catz-short6a.cat",
+        "full6a": "Catz-full6a.cat",
+        "short7a": "Catz-short7a.cat",
+        "full7a": "Catz-full7a.cat",
+        "short8a": "Catz-short8a.cat",
+        "full8a": "Catz-full8a.cat",
+        "short9a": "Catz-short9a.cat",
+        "full9a": "Catz-full9a.cat",
+        "short3b": "Catz-short3b.cat",
+        "full3b": "Catz-full3b.cat",
+        "short4b": "Catz-short4b.cat",
+        "full4b": "Catz-full4b.cat",
+        "short5b": "Catz-short5b.cat",
+        "full5b": "Catz-full5b.cat",
+        "short6b": "Catz-short6b.cat",
+        "full6b": "Catz-full6b.cat",
+        "short7b": "Catz-short7b.cat",
+        "full7b": "Catz-full7b.cat",
+        "short8b": "Catz-short8b.cat",
+        "full8b": "Catz-full8b.cat",
+        "short9b": "Catz-short9b.cat",
+        "full9b": "Catz-full9b.cat"
+      },
+      "input_hashes": {
+        "short3a": "c12382933169943e8d90eaa85b70db9995904ed1535a34e7cf3c40dc36897789",
+        "full3a": "d839532863f66a2dac0fd8eda6825146ff8cefb1cc4ae216feb6f10e0fcdcd4f",
+        "short4a": "38c3d920a2330ade000c0b5c810f6e903c4a730777098c08732f175a8cabcd82",
+        "full4a": "e01ef5ea0791a9d4750644d721a3ac7b81d97fe5caeb1de28fbf31ea928dc9f6",
+        "short5a": "e5dcb104d65e0784af75cbca740a5e0d2afb1f51d5be4d119ffcc501908e1309",
+        "full5a": "329a3179cd08651fd23ad266d6df8b4197f37ed0fe8ae9ff9dcefa40215c5a00",
+        "short6a": "dcc044efa846517660d8a12b9ff2f3e805dda13893feb343819b615962dcfe3a",
+        "full6a": "57548ffbeb28950540e0ac2dd8ef39b6bcc37c4d97bd1ac378616bb76501f107",
+        "short7a": "3b1dd51aeead786e0120dda7fcdbbc150a24134a8415c8cedb68a9742c7a3f9d",
+        "full7a": "382510b3a1608b966c952f6ff560ec59c31f5631d295e38e7066117936d6ba67",
+        "short8a": "02e780227e04ed7f49325fb61ea1a37d23b30142546a21e3b7bb704e65865e17",
+        "full8a": "3afac81e30c99cbf48460826c03c68a3c6e9805032b4c2ec328fda27c3062c0a",
+        "short9a": "9b94a26b09ba0c1d442dcf9e822d63b36286ee7e64c7466cd712c82868d288ad",
+        "full9a": "9809f28b38f633236ee5467ef4a9cc8b703a98061e83ca6018eeb9b76a574bec",
+        "short3b": "0eba846e7a7df02a1a3f5b6a0530f41ceacfbce8cf66e6f49856817b9a213379",
+        "full3b": "a6b49e1fc700e5b5e8f2ed333120f9f8ef7c5db3d463eacb93f304985b69191f",
+        "short4b": "bfc95618beeb2cf6cb08f543ea2b72521eb4464c5234393a56194e9a0302d529",
+        "full4b": "e295385df6caab520c4f65e76853e725aa568d7c56e18b58d76ad2992597d6ef",
+        "short5b": "1b6b25602ba283e65617bfbc841add0f3435172cf378d49deb146faa0ef5ddd6",
+        "full5b": "c21867ae00cac2aa71ed170f8a83e68440ca398e8642b886c74afc6c60979d8a",
+        "short6b": "e565fc299f5923487473d6c9402543e0c30176a9a0518a8194934138de634101",
+        "full6b": "d268aca159f0ea9542e9a6b95e7bb7842e00c9a313fbc2b84380ef976ec388a9",
+        "short7b": "4ea209a560e835a88e33e5e6e633b206fee9fb36a2f78c80fc3c037d78b712c0",
+        "full7b": "af950304c82720708dd9a46acce03c1b4fb1cd83198b0d697b344422bc1f4a62",
+        "short8b": "0d2aaed3a77be6bdee514fafddf747718fccdec2941cbce208f461e650cc6e2a",
+        "full8b": "54d4d4c6bb9f84c6967165bacf3c45186d3cd26e6c5b0f1caf9b3c8e5c91ac6f",
+        "short9b": "b872f56806744664743a829907d1f09e6a5617f8ed50fc6524c3006bed460fff",
+        "full9b": "3a2a5838418087a8e18a0a4de7cb0188ec9b1aa4344ddf44c15269681d0be16e"
+      },
+      "line_rows": {
+        "short3a": "24, 90, 1",
+        "full3a": "24, 90, 1, -1, 244, 244, 25, 25, 0, 0",
+        "short4a": "24, 90, 1, 220",
+        "full4a": "24, 90, 1, 220, 244, 244, 25, 25, 0, 0",
+        "short5a": "24, 90, 1, 220, 180",
+        "full5a": "24, 90, 1, 220, 180, 244, 25, 25, 0, 0",
+        "short6a": "24, 90, 1, 220, 180, 200",
+        "full6a": "24, 90, 1, 220, 180, 200, 25, 25, 0, 0",
+        "short7a": "24, 90, 1, 220, 180, 200, 33",
+        "full7a": "24, 90, 1, 220, 180, 200, 33, 25, 0, 0",
+        "short8a": "24, 90, 1, 220, 180, 200, 33, 67",
+        "full8a": "24, 90, 1, 220, 180, 200, 33, 67, 0, 0",
+        "short9a": "24, 90, 1, 220, 180, 200, 33, 67, 1",
+        "full9a": "24, 90, 1, 220, 180, 200, 33, 67, 1, 0",
+        "short3b": "24, 90, 1",
+        "full3b": "24, 90, 1, -1, 244, 244, 73, 73, 0, 1",
+        "short4b": "24, 90, 1, 220",
+        "full4b": "24, 90, 1, 220, 244, 244, 73, 73, 0, 1",
+        "short5b": "24, 90, 1, 220, 180",
+        "full5b": "24, 90, 1, 220, 180, 244, 73, 73, 0, 1",
+        "short6b": "24, 90, 1, 220, 180, 200",
+        "full6b": "24, 90, 1, 220, 180, 200, 73, 73, 0, 1",
+        "short7b": "24, 90, 1, 220, 180, 200, 33",
+        "full7b": "24, 90, 1, 220, 180, 200, 33, 73, 0, 1",
+        "short8b": "24, 90, 1, 220, 180, 200, 33, 67",
+        "full8b": "24, 90, 1, 220, 180, 200, 33, 67, 0, 1",
+        "short9b": "24, 90, 1, 220, 180, 200, 33, 67, 1",
+        "full9b": "24, 90, 1, 220, 180, 200, 33, 67, 1, 1"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "short3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "short9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "full9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "short9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "full9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full3a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full4a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full5a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full6a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 25,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full7a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 25,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full8a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full9a",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full3b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": -1,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full4b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 244,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full5b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 244,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full6b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 73,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full7b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 73,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full8b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 0,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "short9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "full9b",
+          "resolved": {
+            "start": 24,
+            "end": 90,
+            "fuzz": 1,
+            "color": 220,
+            "left_color": 180,
+            "right_color": 200,
+            "start_thickness": 33,
+            "end_thickness": 67,
+            "edge_mode": 1,
+            "draw_after": true
+          }
+        }
+      ],
+      "pairs": [
+        [
+          "short3a",
+          "full3a"
+        ],
+        [
+          "short4a",
+          "full4a"
+        ],
+        [
+          "short5a",
+          "full5a"
+        ],
+        [
+          "short6a",
+          "full6a"
+        ],
+        [
+          "short7a",
+          "full7a"
+        ],
+        [
+          "short8a",
+          "full8a"
+        ],
+        [
+          "short9a",
+          "full9a"
+        ],
+        [
+          "short3b",
+          "full3b"
+        ],
+        [
+          "short4b",
+          "full4b"
+        ],
+        [
+          "short5b",
+          "full5b"
+        ],
+        [
+          "short6b",
+          "full6b"
+        ],
+        [
+          "short7b",
+          "full7b"
+        ],
+        [
+          "short8b",
+          "full8b"
+        ],
+        [
+          "short9b",
+          "full9b"
+        ]
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "short3a",
+        "full3a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short3a.dog",
+        "after_path": "Dogz-full3a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c7fbacf9c96bb701713bb1857fe39ee60a90fa5faadddbcbfe8421c95c046a0c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "b461affc21d026bb82a15c1b7e1c381c5479423ea079ce3fedccc74a5e5d36c8",
+        "b461affc21d026bb82a15c1b7e1c381c5479423ea079ce3fedccc74a5e5d36c8"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short3a",
+        "full3a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short3a.dog",
+        "after_path": "Dogz-full3a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0dcbb6fb2b89c0848dfd79f0a8a270408f22bc03c7135f8eb59430241eeea41f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "607cd7fd3529dfdb9e7d0650b84fda2842b229d9c28cef5db059f81127f26c5a",
+        "607cd7fd3529dfdb9e7d0650b84fda2842b229d9c28cef5db059f81127f26c5a"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short4a",
+        "full4a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short4a.dog",
+        "after_path": "Dogz-full4a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c00a12884ff6945411ffeaa03481cd794fba3aa273ff313b59df804426050d32",
+      "cells_equal": true,
+      "cell_hashes": [
+        "3d12352bcfdfd60266d06363cc697ccacb5e665f51c81ba40985db7a09f3797f",
+        "3d12352bcfdfd60266d06363cc697ccacb5e665f51c81ba40985db7a09f3797f"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short4a",
+        "full4a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short4a.dog",
+        "after_path": "Dogz-full4a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c124c6820ca49987644005c2836ec68c6c715b053aa7e19320640d1ae79870f8",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4820817bc45998a80a05559be778658233194709a243f3745e28eee494583c3d",
+        "4820817bc45998a80a05559be778658233194709a243f3745e28eee494583c3d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short5a",
+        "full5a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short5a.dog",
+        "after_path": "Dogz-full5a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "26781343ab2157281c7b33ee5a3e578fbe2479ab69c1c57cfb7c6a091aba21b6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "cd953742fe53267dd7a338941caf6d26921ee7e8328eab4ae629731dfe2636dd",
+        "cd953742fe53267dd7a338941caf6d26921ee7e8328eab4ae629731dfe2636dd"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short5a",
+        "full5a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short5a.dog",
+        "after_path": "Dogz-full5a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "3563e0fb6605f986d6237ed6b7ad0c5b2cf58584c8f1b8a5c8902372aa14d88e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "214f302ec597c9fcf80162a9db6e0a90762a0fdbc2ffadae2bf52f30b1c8abe2",
+        "214f302ec597c9fcf80162a9db6e0a90762a0fdbc2ffadae2bf52f30b1c8abe2"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short6a",
+        "full6a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short6a.dog",
+        "after_path": "Dogz-full6a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "4dc3eff6ce71a7e46ac482076f0d8c2ff8b0007081f2f9e1d012228a111d0ee7",
+      "cells_equal": true,
+      "cell_hashes": [
+        "7b6dc02bbc2328d92e6b915cb0ba08031297f3710a0d8b8df058f1f1881f8a97",
+        "7b6dc02bbc2328d92e6b915cb0ba08031297f3710a0d8b8df058f1f1881f8a97"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short6a",
+        "full6a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short6a.dog",
+        "after_path": "Dogz-full6a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "375c73321af3ff6ec43bb292687bc7a489052fa324c03a0f5e7dcad0bad45c6e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "ddce690f1eca07bf5ba556f38d3ed365164c3e216c68bd657ba980e72749cc6d",
+        "ddce690f1eca07bf5ba556f38d3ed365164c3e216c68bd657ba980e72749cc6d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short7a",
+        "full7a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short7a.dog",
+        "after_path": "Dogz-full7a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "39a2213f24fcdac6555e7db62642040a396b46cd0a5539f872e04642926bb923",
+      "cells_equal": true,
+      "cell_hashes": [
+        "5dbefe1a0b31d07cdac63ff9e4eb2e8d39ad5737a8f09fc2b99d0cb750b41133",
+        "5dbefe1a0b31d07cdac63ff9e4eb2e8d39ad5737a8f09fc2b99d0cb750b41133"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short7a",
+        "full7a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short7a.dog",
+        "after_path": "Dogz-full7a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "48c6b0c5b89966411fabe1e71a68ee3e11a557a2dde149fb7cb6abf7fe828d01",
+      "cells_equal": true,
+      "cell_hashes": [
+        "02933a5e81012c7f004d0d1550f650be534b0c3d9724e08576a679757e99abb7",
+        "02933a5e81012c7f004d0d1550f650be534b0c3d9724e08576a679757e99abb7"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short8a",
+        "full8a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short8a.dog",
+        "after_path": "Dogz-full8a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "d0bbf26a0ed5327862072082bf2401f116c291ff04a02a2b2cd3ac2dc4977491",
+      "cells_equal": true,
+      "cell_hashes": [
+        "100b29bf3380a79e380169658738f95b6f2788147fc98e8b2de864fea7a48bba",
+        "100b29bf3380a79e380169658738f95b6f2788147fc98e8b2de864fea7a48bba"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short8a",
+        "full8a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short8a.dog",
+        "after_path": "Dogz-full8a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "cecc1c3e65ca118606596b820dc21c24e4e9cefeeaa7ba48b85ccb5906f6ae0a",
+      "cells_equal": true,
+      "cell_hashes": [
+        "aa553fdfb085e36f3066d78c0a165c40964b57c9b7b22689233c0cfc9b146ef1",
+        "aa553fdfb085e36f3066d78c0a165c40964b57c9b7b22689233c0cfc9b146ef1"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short9a",
+        "full9a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short9a.dog",
+        "after_path": "Dogz-full9a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "e65396c445169cbe0ca0124b89cb7f769bfe80ba28c978169cf096fd8412a107",
+      "cells_equal": true,
+      "cell_hashes": [
+        "9df38154065f7828d58a15a688ee0d48e604bc5df1238789619bca66b022dfc4",
+        "9df38154065f7828d58a15a688ee0d48e604bc5df1238789619bca66b022dfc4"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short9a",
+        "full9a"
+      ],
+      "controls": {
+        "before_path": "Dogz-short9a.dog",
+        "after_path": "Dogz-full9a.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "de46abd2fa79edb33601eb8e5196fbaf8be6003f0045d969154dba7fc54d1c8c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "a0175a0088dafc118128480fe3a5e9b32ef64bbb2b12d297968c2b7cfeb7be7d",
+        "a0175a0088dafc118128480fe3a5e9b32ef64bbb2b12d297968c2b7cfeb7be7d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short3b",
+        "full3b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short3b.dog",
+        "after_path": "Dogz-full3b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "fc2daef3561ac4003aa4d5c786380c591923f3c299291670665b27aee3d354ee",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4692f4614020e586dc130ab3eccca2c92fa8794cdf500b030dff32ad9e86889d",
+        "4692f4614020e586dc130ab3eccca2c92fa8794cdf500b030dff32ad9e86889d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short3b",
+        "full3b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short3b.dog",
+        "after_path": "Dogz-full3b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "89b88076520db73c0c98471abee6d0322dcf03174ff144f35907c85b3f521183",
+      "cells_equal": true,
+      "cell_hashes": [
+        "c933c5c7dc386034843e827a6e87e8e187aee39cf646a0d06d18212483119a82",
+        "c933c5c7dc386034843e827a6e87e8e187aee39cf646a0d06d18212483119a82"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short4b",
+        "full4b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short4b.dog",
+        "after_path": "Dogz-full4b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "dbcd1d69154cd98d77942b8c40aaa4fd4c82cd1bd042577979a19800f0e8a15c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "8b523ac0ced27d7f2f6ff114f92e4d895825fb2f4d7cebe81994df1d8c8c9c3a",
+        "8b523ac0ced27d7f2f6ff114f92e4d895825fb2f4d7cebe81994df1d8c8c9c3a"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short4b",
+        "full4b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short4b.dog",
+        "after_path": "Dogz-full4b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "a14881f23695886aea377e48a90d46485e4fa66b2a3f5cfa0363d19bfde47093",
+      "cells_equal": true,
+      "cell_hashes": [
+        "ee4cd8d11315adf2d2495bef996a0cefae0b01b35fe5b6844d1a94f43c8e7f39",
+        "ee4cd8d11315adf2d2495bef996a0cefae0b01b35fe5b6844d1a94f43c8e7f39"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short5b",
+        "full5b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short5b.dog",
+        "after_path": "Dogz-full5b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c851afa1cb0e7175a00e741ee34f8d22fbc5e92bd2965a4eab7bd6c6874729de",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4cff1fd0d2becd3f8b61c7cb97828997725f7a89742ec87d6d13f158ea7900aa",
+        "4cff1fd0d2becd3f8b61c7cb97828997725f7a89742ec87d6d13f158ea7900aa"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short5b",
+        "full5b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short5b.dog",
+        "after_path": "Dogz-full5b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b17bbf80f32aa38e12d9d276241bfd1bf1e57e2a13785be9b7c9f339b33d78fa",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4231fc237e3f346165824515f9d2d96af8d38ba4bc7dcac8f5c5dd660bec4edb",
+        "4231fc237e3f346165824515f9d2d96af8d38ba4bc7dcac8f5c5dd660bec4edb"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short6b",
+        "full6b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short6b.dog",
+        "after_path": "Dogz-full6b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ab8ae26a3f579c227313849933c92a1e9fcbd9d32fe321479998515d67ac74f6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "a75de9e653e6c7492faab5a002ecd0c949020ce091530a55dfa37a81c482f54c",
+        "a75de9e653e6c7492faab5a002ecd0c949020ce091530a55dfa37a81c482f54c"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short6b",
+        "full6b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short6b.dog",
+        "after_path": "Dogz-full6b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f55e37c102ca6c392e3160f52736ea6ccb42f2a8f502c1425320c73be38295c6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4271d35a8b7f7336188227c53039b85c7f6ab3a5a7ac99bb4a8d7f284a4bccdc",
+        "4271d35a8b7f7336188227c53039b85c7f6ab3a5a7ac99bb4a8d7f284a4bccdc"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short7b",
+        "full7b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short7b.dog",
+        "after_path": "Dogz-full7b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "51eff85ba65d5836978070781e4cbc553f7416b1edcc2d3762dd803a89656d7e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d789f70bb03337aa43c66d04247f47f16c8d443f078e56c8a1c76c3364bf6a9b",
+        "d789f70bb03337aa43c66d04247f47f16c8d443f078e56c8a1c76c3364bf6a9b"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short7b",
+        "full7b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short7b.dog",
+        "after_path": "Dogz-full7b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5d63ebd72312770b2b193c0e12e14ca2bbe1268e88a3566e3a7a16a8375eae10",
+      "cells_equal": true,
+      "cell_hashes": [
+        "8b122a963eb38fd2465ba529ff2cc0fa14d68ecf95ea5d2280d8a09644004f17",
+        "8b122a963eb38fd2465ba529ff2cc0fa14d68ecf95ea5d2280d8a09644004f17"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short8b",
+        "full8b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short8b.dog",
+        "after_path": "Dogz-full8b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "51eff85ba65d5836978070781e4cbc553f7416b1edcc2d3762dd803a89656d7e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d789f70bb03337aa43c66d04247f47f16c8d443f078e56c8a1c76c3364bf6a9b",
+        "d789f70bb03337aa43c66d04247f47f16c8d443f078e56c8a1c76c3364bf6a9b"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short8b",
+        "full8b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short8b.dog",
+        "after_path": "Dogz-full8b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5d63ebd72312770b2b193c0e12e14ca2bbe1268e88a3566e3a7a16a8375eae10",
+      "cells_equal": true,
+      "cell_hashes": [
+        "8b122a963eb38fd2465ba529ff2cc0fa14d68ecf95ea5d2280d8a09644004f17",
+        "8b122a963eb38fd2465ba529ff2cc0fa14d68ecf95ea5d2280d8a09644004f17"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short9b",
+        "full9b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short9b.dog",
+        "after_path": "Dogz-full9b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "2dd658847a77187d0e1c4fe29d9918512352e01216ebd7801dcc4d2d1a1207f9",
+      "cells_equal": true,
+      "cell_hashes": [
+        "2e33229d05fd266f644158ad29e1889da939cb137f29321586f106c8a29f0365",
+        "2e33229d05fd266f644158ad29e1889da939cb137f29321586f106c8a29f0365"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "short9b",
+        "full9b"
+      ],
+      "controls": {
+        "before_path": "Dogz-short9b.dog",
+        "after_path": "Dogz-full9b.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "49e70dfb7d00609ceee8aff5f3edda40fad6952966523056eedac2a100728a3e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "fc8f6eb519cb667d63d9f47e9c5d4ca3c02aa6f5be05b087372f1f733eaa2a0e",
+        "fc8f6eb519cb667d63d9f47e9c5d4ca3c02aa6f5be05b087372f1f733eaa2a0e"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short3a",
+        "full3a"
+      ],
+      "controls": {
+        "before_path": "Catz-short3a.cat",
+        "after_path": "Catz-full3a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "a3cee315fee006e217028be5ea37b9341533af15d9b737dc6d52cbe646a80543",
+      "cells_equal": true,
+      "cell_hashes": [
+        "9f204a2d4f32657e5a6d92ea0a0523d04a2cfb20970a4f586b0e96345c6d9ee8",
+        "9f204a2d4f32657e5a6d92ea0a0523d04a2cfb20970a4f586b0e96345c6d9ee8"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short3a",
+        "full3a"
+      ],
+      "controls": {
+        "before_path": "Catz-short3a.cat",
+        "after_path": "Catz-full3a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "4adc946e99a6c45a58e79b43edac9395024b652121e865e4a15a7c839f82a147",
+      "cells_equal": true,
+      "cell_hashes": [
+        "166c00e5e7bae2b4909449c7c7447cb18bb8637156fccd8a14670ca4d63377fb",
+        "166c00e5e7bae2b4909449c7c7447cb18bb8637156fccd8a14670ca4d63377fb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short4a",
+        "full4a"
+      ],
+      "controls": {
+        "before_path": "Catz-short4a.cat",
+        "after_path": "Catz-full4a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6f909e231dbed505b05f318006b30cd73d09a4209bdcff04978f59a99436238d",
+      "cells_equal": true,
+      "cell_hashes": [
+        "59f3d13e5af25e54bd372aeac651269caf4b221b827b7c1299bf0213c2cf8268",
+        "59f3d13e5af25e54bd372aeac651269caf4b221b827b7c1299bf0213c2cf8268"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short4a",
+        "full4a"
+      ],
+      "controls": {
+        "before_path": "Catz-short4a.cat",
+        "after_path": "Catz-full4a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c22630a444c0ebaa21de889d05da2a8c0ed62f984ea856b0f46cd3463fddf235",
+      "cells_equal": true,
+      "cell_hashes": [
+        "e195929983894994690b9fa12d1898798a5c2a8377530bbd9747b13c46f1b9c4",
+        "e195929983894994690b9fa12d1898798a5c2a8377530bbd9747b13c46f1b9c4"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short5a",
+        "full5a"
+      ],
+      "controls": {
+        "before_path": "Catz-short5a.cat",
+        "after_path": "Catz-full5a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1db6038885ee01dce787dea6bb8a1038aab5fc7a516fc520f55d6d7d22b069bc",
+      "cells_equal": true,
+      "cell_hashes": [
+        "31e30352a35e1dd5e5c712aaf20434d142b163251fe76aadf50bfbb066b066e7",
+        "31e30352a35e1dd5e5c712aaf20434d142b163251fe76aadf50bfbb066b066e7"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short5a",
+        "full5a"
+      ],
+      "controls": {
+        "before_path": "Catz-short5a.cat",
+        "after_path": "Catz-full5a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "2b49c1de3405b00f18cf1b6f46a7f0d3204a9bd303875520c1eb08c77125cbb7",
+      "cells_equal": true,
+      "cell_hashes": [
+        "3c0a9fd1bf7b825e9e3b94fe2e1abff01fa7e1782594b5c29b81050b5be4a809",
+        "3c0a9fd1bf7b825e9e3b94fe2e1abff01fa7e1782594b5c29b81050b5be4a809"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short6a",
+        "full6a"
+      ],
+      "controls": {
+        "before_path": "Catz-short6a.cat",
+        "after_path": "Catz-full6a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "505b1ac960aa14a9371a6eac96796f8e5ac1fd3af103725dba4c972ecafceee5",
+      "cells_equal": true,
+      "cell_hashes": [
+        "847bdd07fc86e3c76997dcbe3492884403cf1afa0290bdbdb2db5e4be205fa15",
+        "847bdd07fc86e3c76997dcbe3492884403cf1afa0290bdbdb2db5e4be205fa15"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short6a",
+        "full6a"
+      ],
+      "controls": {
+        "before_path": "Catz-short6a.cat",
+        "after_path": "Catz-full6a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "d327bd4299e7798a898102db07f7555463c9f99ed9bd7561d446dffaa0fa2c4f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "00c15d23d667b6e36fd64016e1a59d3fff8674ad10638b7d3d1bc822882c208b",
+        "00c15d23d667b6e36fd64016e1a59d3fff8674ad10638b7d3d1bc822882c208b"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short7a",
+        "full7a"
+      ],
+      "controls": {
+        "before_path": "Catz-short7a.cat",
+        "after_path": "Catz-full7a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f3dd9ad544f562e0af53a687aabb625901c60b35ae037a41a5f207fd8056b4b2",
+      "cells_equal": true,
+      "cell_hashes": [
+        "cc7a84d925560334c4363e3d12cdd16c3ac3d2f1221aab57efd586ebdf47696f",
+        "cc7a84d925560334c4363e3d12cdd16c3ac3d2f1221aab57efd586ebdf47696f"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short7a",
+        "full7a"
+      ],
+      "controls": {
+        "before_path": "Catz-short7a.cat",
+        "after_path": "Catz-full7a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "34f9b8e18d94d666015117a2293fa548b8ae4ed649cafaad5dfee004361e3414",
+      "cells_equal": true,
+      "cell_hashes": [
+        "6bc90a0038565df1b6358f92f201661aad75ad9cc0e7ad655202629c7c5c2386",
+        "6bc90a0038565df1b6358f92f201661aad75ad9cc0e7ad655202629c7c5c2386"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short8a",
+        "full8a"
+      ],
+      "controls": {
+        "before_path": "Catz-short8a.cat",
+        "after_path": "Catz-full8a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "831ff9cd2a88b4e656bafb1ba28b0b5fc4cf2bc8c4ca6ea59819af7987bf9ca7",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4a9ec4dfa49ee28b4f8e15627b3f376fb9a6a1c730f5cddc497b6dfa287dcf0e",
+        "4a9ec4dfa49ee28b4f8e15627b3f376fb9a6a1c730f5cddc497b6dfa287dcf0e"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short8a",
+        "full8a"
+      ],
+      "controls": {
+        "before_path": "Catz-short8a.cat",
+        "after_path": "Catz-full8a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "736c250d2fb8d52a47d5623d6f5a9460c5d349f99b72a569b220d53cb1607612",
+      "cells_equal": true,
+      "cell_hashes": [
+        "1322251f26d444c847223cb46cce9978994ab8b24df7981a312c781a426c4874",
+        "1322251f26d444c847223cb46cce9978994ab8b24df7981a312c781a426c4874"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short9a",
+        "full9a"
+      ],
+      "controls": {
+        "before_path": "Catz-short9a.cat",
+        "after_path": "Catz-full9a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "7b77f5330a129da3a711ffa445f275beb50e143fc9b6ff0b2fc09c04209ad392",
+      "cells_equal": true,
+      "cell_hashes": [
+        "f9efaf03f260906052e6b8d652ddacfecc608c14db9b4641434cfcb303897f6a",
+        "f9efaf03f260906052e6b8d652ddacfecc608c14db9b4641434cfcb303897f6a"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short9a",
+        "full9a"
+      ],
+      "controls": {
+        "before_path": "Catz-short9a.cat",
+        "after_path": "Catz-full9a.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "9a127d186cdec00c71a911b7d4b06c3651bb97ed041ee7bf3f5a02b3a4c631a6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "24087a11774419b0b68bde0a6449ce6f93e1887faef9910805f4b779b6adf7a1",
+        "24087a11774419b0b68bde0a6449ce6f93e1887faef9910805f4b779b6adf7a1"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short3b",
+        "full3b"
+      ],
+      "controls": {
+        "before_path": "Catz-short3b.cat",
+        "after_path": "Catz-full3b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "5907774cfc8413dbe3958f13a72a283c5c4b36913f1a37b562c093a0c61b06e8",
+      "cells_equal": true,
+      "cell_hashes": [
+        "a68737f8097d4c21d3e0a16f10d55fe955d934c2e29c641b66c7457f013e8520",
+        "a68737f8097d4c21d3e0a16f10d55fe955d934c2e29c641b66c7457f013e8520"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short3b",
+        "full3b"
+      ],
+      "controls": {
+        "before_path": "Catz-short3b.cat",
+        "after_path": "Catz-full3b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "cb7face8cef175ec00e956918023d253325f14efd7d1c59b096dd1ec0f530f8c",
+      "cells_equal": true,
+      "cell_hashes": [
+        "bed50fdf4a7564dc6dbc7458190e4cc17210456600407f9106a61e84aa2ed203",
+        "bed50fdf4a7564dc6dbc7458190e4cc17210456600407f9106a61e84aa2ed203"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short4b",
+        "full4b"
+      ],
+      "controls": {
+        "before_path": "Catz-short4b.cat",
+        "after_path": "Catz-full4b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "2f22e201957b43786828edf4174e7996f82e2f7b552a63ff4732afd5c19631c6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "2512502ac0e1fec901acb8e7b4359d8efbb291182a71ca200ce1474d6f551779",
+        "2512502ac0e1fec901acb8e7b4359d8efbb291182a71ca200ce1474d6f551779"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short4b",
+        "full4b"
+      ],
+      "controls": {
+        "before_path": "Catz-short4b.cat",
+        "after_path": "Catz-full4b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "9c3faeb213d147adedb2a0281496a6b894d5ce7f03c42fcd5d5b6488c25613da",
+      "cells_equal": true,
+      "cell_hashes": [
+        "e435751d2f4a36159e86b921389ceae86ef310f079b68346c3d63fbc3f755d44",
+        "e435751d2f4a36159e86b921389ceae86ef310f079b68346c3d63fbc3f755d44"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short5b",
+        "full5b"
+      ],
+      "controls": {
+        "before_path": "Catz-short5b.cat",
+        "after_path": "Catz-full5b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "272e8d1afc5159a25e02e3fc2c784eced00be73411096206f2d7f4d0de080e21",
+      "cells_equal": true,
+      "cell_hashes": [
+        "6f0146706e03801d6daad8b1a5adff14491d320f4e005f47bbf5037c04fecd94",
+        "6f0146706e03801d6daad8b1a5adff14491d320f4e005f47bbf5037c04fecd94"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short5b",
+        "full5b"
+      ],
+      "controls": {
+        "before_path": "Catz-short5b.cat",
+        "after_path": "Catz-full5b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "b68f0e891e32e319de704afcf5b6ea4ec207240a4fa35c0afd632e908e8d02c5",
+      "cells_equal": true,
+      "cell_hashes": [
+        "7c0724671e1d560693e71d56f91f4b2d66e32d854330dda7e2206f99a1605907",
+        "7c0724671e1d560693e71d56f91f4b2d66e32d854330dda7e2206f99a1605907"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short6b",
+        "full6b"
+      ],
+      "controls": {
+        "before_path": "Catz-short6b.cat",
+        "after_path": "Catz-full6b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b122e6c86b79de3a8c09e28e43a30abde8a6244c75fc0a47847e5fb49b458106",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d9167579f21b460d432bc1578ea70ef563af7b5a5fbb65e08daa8cc2cc5a56e2",
+        "d9167579f21b460d432bc1578ea70ef563af7b5a5fbb65e08daa8cc2cc5a56e2"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short6b",
+        "full6b"
+      ],
+      "controls": {
+        "before_path": "Catz-short6b.cat",
+        "after_path": "Catz-full6b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "7f788a49f1779679c02e962693b83ff2369b9df17bb067121a9dfcf6193fe606",
+      "cells_equal": true,
+      "cell_hashes": [
+        "353dee510ceed3fd89dd9f6074113dac7429ea15e30be430f0a21cc431f8ccaa",
+        "353dee510ceed3fd89dd9f6074113dac7429ea15e30be430f0a21cc431f8ccaa"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short7b",
+        "full7b"
+      ],
+      "controls": {
+        "before_path": "Catz-short7b.cat",
+        "after_path": "Catz-full7b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "340c3581520515a59f771b9feac53595a24d1e87c86c4179a0bc760ab578118e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4323ad7d6a62949e571cd3576a5a3052f0adbf936f84c6a9e2c4cd907d7104c4",
+        "4323ad7d6a62949e571cd3576a5a3052f0adbf936f84c6a9e2c4cd907d7104c4"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short7b",
+        "full7b"
+      ],
+      "controls": {
+        "before_path": "Catz-short7b.cat",
+        "after_path": "Catz-full7b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8af823c09b3f5d04e297d924dfd32bf671693b547afc43a8fe09ab610bcd3155",
+      "cells_equal": true,
+      "cell_hashes": [
+        "aab0e69c228435b8aaa083930a68663e5aa775fc52e148d5b66c7fdf3f0109db",
+        "aab0e69c228435b8aaa083930a68663e5aa775fc52e148d5b66c7fdf3f0109db"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short8b",
+        "full8b"
+      ],
+      "controls": {
+        "before_path": "Catz-short8b.cat",
+        "after_path": "Catz-full8b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6edf4ee5de2198dc17996dd4d5b9697b7dae35febd8474b3b47e2da219e26064",
+      "cells_equal": true,
+      "cell_hashes": [
+        "848a49ec912cba42f4023e5df428e3dbd0462022157aacd801663d99da1f06f8",
+        "848a49ec912cba42f4023e5df428e3dbd0462022157aacd801663d99da1f06f8"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short8b",
+        "full8b"
+      ],
+      "controls": {
+        "before_path": "Catz-short8b.cat",
+        "after_path": "Catz-full8b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8af823c09b3f5d04e297d924dfd32bf671693b547afc43a8fe09ab610bcd3155",
+      "cells_equal": true,
+      "cell_hashes": [
+        "aab0e69c228435b8aaa083930a68663e5aa775fc52e148d5b66c7fdf3f0109db",
+        "aab0e69c228435b8aaa083930a68663e5aa775fc52e148d5b66c7fdf3f0109db"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short9b",
+        "full9b"
+      ],
+      "controls": {
+        "before_path": "Catz-short9b.cat",
+        "after_path": "Catz-full9b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "7eea25f035694b38689b6e77d8f7c02f646666f5a1974533bea8cdcc651072e2",
+      "cells_equal": true,
+      "cell_hashes": [
+        "5352efe06590f41fd35f82435e83a85f3a78c6c1ffe64cc6df2271c965fbf508",
+        "5352efe06590f41fd35f82435e83a85f3a78c6c1ffe64cc6df2271c965fbf508"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "short9b",
+        "full9b"
+      ],
+      "controls": {
+        "before_path": "Catz-short9b.cat",
+        "after_path": "Catz-full9b.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "50c1f1e6761143a3a821b057a87b526faa7933f476d80324f29d5c20a79d6fff",
+      "cells_equal": true,
+      "cell_hashes": [
+        "68a395e743bda80f4c158ffbb1d4ae44bfae428da3eda26af7fd52da116abf91",
+        "68a395e743bda80f4c158ffbb1d4ae44bfae428da3eda26af7fd52da116abf91"
+      ]
+    }
+  ]
+}

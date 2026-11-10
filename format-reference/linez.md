@@ -41,3 +41,5 @@ For tested two-field rows, `Default Linez Thickness` supplies both endpoint perc
 [LINE-012](../experiments/line-012.md) attributes the whisker0-priming difference in those twelve fixed scenes: the diagnostic line alone leaves residual pixels, while substituting all positive-fuzz connector pixels reproduces the full primed scene exactly; the reverse substitution recovers fresh. Main-path RNG consumption is preserved. This is research-only state intervention, not a renderer fix or native claim.
 
 For retained RNG behavior and isolation controls, use the focused [connector state reference](connector-state.md).
+
+[LINE-013](../experiments/line-013.md) confirms visible inherited textures in Scottie/Siamese MCP renders: equal endpoint base color125, textured head and untextured marker; head-selected negative fill differs from explicit125, marker-selected negative fill matches it. Reversed endpoint controls agree. Actual loaded/remapped texture hashes are recorded; native fidelity remains unvalidated.

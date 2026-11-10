@@ -190,3 +190,7 @@ Final local HTTP MCP discovery/capabilities pass; private health scratch/researc
 Final integrity audit extends the session verifier to cross-unit cell links,all-fuzzy substitution equivalences,diagnostic-only residuals and preserved final main-path states. All pass; see the session index for details.
 
 Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures and zero Dogz fixtures; MCP validates step0 only. History/intervention targets hold step1 fixed. Separate these effects from the three prior-step0 Catz side-view changes; detailed counts in LINE-011.
+
+## Latest asset-backed connector textures
+
+[LINE-013](experiments/line-013.md):30 numerical loads,sixteen MCP pairs; two sheets reviewed. Equal base color125,head stock texture(slot1 Dogz/0 Catz),untextured marker. Head-selected negative fill differs from explicit125; end-selected equals explicit; reversed endpoint controls pass. Loaded/remapped texture hashes recorded,private scratch/research/line-013. No renderer/native claims. Next: texture raster size limits/sampling,broader breeds/versions or native evidence.

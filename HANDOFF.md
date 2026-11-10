@@ -4,7 +4,7 @@ Updated: 2026-11-10
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request authorized another ten-minute continuation. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request authorized a fifteen-minute continuation. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
 
 ## Current container recovery
 
@@ -240,3 +240,7 @@ Final sampling audit additionally reconstructs LINE-020 flat masks,checks their 
 Final sampling numerical audit now actually reloads all30 LINE-019 cases,checks variant pose-geometry invariance,block colors/paint presence,texture config/dimensions/hashes and remapped paint. All pass. Two additional front sheets reviewed;LINE-019 now has four reviewed sheets total (front/side for each breed). Originals and renderer remain unchanged.
 
 The final reload verifier also re-parses each original adult layer and asserts all preceding stock connector rows survive every variant unchanged. Duration and evidence scope remain limited to this ten-minute continuation.
+
+## Latest composed tile dimensions
+
+[LINE-021](experiments/line-021.md):90 numerical loads/60 isolated rasters/40 local stdio MCP pairs in Petz4 Scottie/Siamese. Dedicated appended marker slot preserves stock slots/lines. Textured32×256,256×32,64×64 equal no-line controls in standing front/side;128×128,256×256 draw. Explicit125 always draws. Four sheets reviewed; source/engine/dependency/input/paint/PNG/cell hashes recorded. `tools/check_texture_dimensions.py` verifies copies,90 reloaded cases,60 reconstructed rasters and80 RGBA cells. Two failed harness runs archived privately (misplaced optional texture field, unavailable shell python). Private scratch/research/line-021; no renderer/native claims. Latest authorization is fifteen minutes, not an ongoing run. Next: Texture List modes/remap controls or retained evolving scenes/native evidence.

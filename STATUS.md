@@ -67,4 +67,5 @@ Updated: 2026-11-10
 - Sampling continuation: [session/audit](docs/session-2026-11-10-connector-sampling.md),four units;600 synthetic buffers/43,356 body samples/15,420 edge assertions,10 copies/16 MCP PNGs/32 RGBA cells,30 numerical loads verified. All62 installed sources match checkout; HTTP MCP health passes.
 - Sampling audit strengthened: saved LINE-020 edge/background bytes are independently checked against reconstructed flat controls; focused texture reference includes second-breed scope. See the [session audit](docs/session-2026-11-10-connector-sampling.md).
 - Final sampling verification reloads all30 saved breed/pose cases against recorded block/texture results and unchanged stock line rows; front/side visual review totals four sheets. [Session evidence](docs/session-2026-11-10-connector-sampling.md).
+- Latest: [LINE-021](experiments/line-021.md),90 numerical loads/60 isolated rasters/40 MCP pairs: appended marker slots confirm small tile dimensions hide connectors while explicit fill draws; stock slots/lines preserved.
 - Resume: [HANDOFF.md](HANDOFF.md).

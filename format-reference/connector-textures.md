@@ -18,4 +18,6 @@ Viewport clipping changes these bounds: [LINE-018](../experiments/line-018.md) o
 
 Direct signed/shaded TexturePaint controls [LINE-020](../experiments/line-020.md) sample all byte values with offsets-128/-1/0/1/127. Unsigned paint shades every byte modulo256; has_sign=true shades only source values below10. Sampled0 is written to the indexed buffer, and sampled texture bytes bypass flat-color substitutions. Explicit edge colors remain unchanged by texture shading. These controls begin after remapping and do not establish native semantics or exporter transparency.
 
-Remaining: other tile dimensions in composed breeds, retained evolving scenes and independent native evidence.
+[LINE-021](../experiments/line-021.md) appends a dedicated marker texture slot in Petz4 Scottie/Siamese while preserving all stock slots. Matched no-line controls confirm32×256,256×32 and64×64 textures suppress the diagnostic connection in standing front/side views;128×128 and256×256 draw. Explicit125 draws at every dimension. Three-pose isolated rasters agree. This samples authored tile dimensions without establishing an exact composed threshold.
+
+Remaining: texture-list mode/remap controls, retained evolving scenes and independent native evidence.

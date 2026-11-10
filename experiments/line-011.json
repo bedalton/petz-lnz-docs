@@ -1,0 +1,1328 @@
+{
+  "experiment": "LINE-011",
+  "backend": "direct prepared breed composition with retained LineRenderer; local stdio MCP first-frame controls",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "controls": {
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "line_seed": 1,
+    "target_step": 1,
+    "baseline_step": 0,
+    "prepared_scene": "identical frozen target; no FrameState retained",
+    "prior_pixels": "discarded before target"
+  },
+  "source_hashes": {
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+    "rendering/composition.py": "c8e51e94b239bab4cb55ecb6a7c54bfbfb8a5b6a78fd1d0dbfdea506907a0394",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+    "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "Pillow": "13.0.0"
+  },
+  "summary_changed_fixture_counts": {
+    "fresh": 0,
+    "repeat_scene_step1": 0,
+    "prior_scene_step0": 3,
+    "prior_other_pose_step1": 11,
+    "whisker0": 12,
+    "whisker1": 0,
+    "prime_fuzz3": 12
+  },
+  "cases": [
+    {
+      "species": "Dogz",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "prior_other_pose": "lying",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "57cd2e16220e049af15ca217167fa57f65051e234c03fc0cda8375e40a08b4d1",
+      "sheet": "Dogz-standing-0.png",
+      "sheet_sha256": "69a04a5b84caacd574aa8ec9116425218d065064335b9a4a61562eb304300816",
+      "cell_size": [
+        91,
+        131
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "ab1bf4ad8387282e416fd4286f49dc973360bff23beeb4e5490ab7089e24d77f"
+        },
+        {
+          "rgba_sha256": "bc7672c7dcc6e09f8668d58f83895fed2bf98355d8bc88764d0d55e8db738289"
+        },
+        {
+          "rgba_sha256": "400f6e1f5a513daf76223cd39040f5524956d56811bdd6d95ac2ae2fb935e879"
+        },
+        {
+          "rgba_sha256": "344ac854af9e23603e03a677c0851fa7e7c4ec1904a097fca1f7c2c6aa6f78d5"
+        }
+      ],
+      "baseline": "Dogz-standing-0-baseline.png",
+      "baseline_sha256": "e0e24cd9eaa793f05cfbbe16e8c7807a0b63a2fd25ed34a402640a5edfcc344c",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "b3170af7b7da74137792aeca3c1702e9b6682754ca79a39a3b640d37c29fcb99",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "b3170af7b7da74137792aeca3c1702e9b6682754ca79a39a3b640d37c29fcb99",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5",
+          "state_after_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "b3170af7b7da74137792aeca3c1702e9b6682754ca79a39a3b640d37c29fcb99",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5",
+          "state_after_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "7229ad992dbaa5986ec5b841e0f900c4251c538809a90f16e51494bbdeb7250d",
+          "pixels_different_from_fresh_step1": 154,
+          "state_before_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103",
+          "state_after_sha256": "7c077f589d8b2f7edb882d98c0a82e6c4e243c49dc784a56d6c959efa30afc77"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "ec7444344f4597d86ba914f7edce071d0123bb4565de0af73cebe3afb94951fc",
+          "pixels_different_from_fresh_step1": 440,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "84a02d7eb941335e27b4d66887f5cf7aa8d4df225657a0dfa503ddddb39aef39"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "b3170af7b7da74137792aeca3c1702e9b6682754ca79a39a3b640d37c29fcb99",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "2d5e2367c894af92b55fc8f76a891e37373911fa10a442aa37e72e647e7b750c",
+          "pixels_different_from_fresh_step1": 458,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "21b3246037da89bc5e3f599521fc5b8d6baa495593ff822b32fd2d19e2bdd646"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Dogz",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "prior_other_pose": "lying",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "4f16e745193525a3a4080886950af2fda5f6e4cba24b8ba82e10752079ab0d69",
+      "sheet": "Dogz-standing-90.png",
+      "sheet_sha256": "e394450d62568b6e6bb164b4f9f157ef808a2a8df304005896193140920737b1",
+      "cell_size": [
+        175,
+        137
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "28c12c54e4c42877706712f3d24c8f1204b37e13bde3048338eab95903d72fc1"
+        },
+        {
+          "rgba_sha256": "356e799d21985740afa63e88ee82650105e4d811ebc38995e11ca2617b843cad"
+        },
+        {
+          "rgba_sha256": "44ae014fb6f0d6df2f26f3183954344f01b0b3a3ebd118efbbaf82bcad8ed8dc"
+        },
+        {
+          "rgba_sha256": "3274fb83b76cc6962d8ebff51d0aca20d46ece4eae1d8dd967db5f67342b0e94"
+        }
+      ],
+      "baseline": "Dogz-standing-90-baseline.png",
+      "baseline_sha256": "e2860a29149bc6fc70c3e693d04ddf5c746c371104e8c352ab85a1d6dd724024",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "63a9b9250530ff6da254eaf5d66d17272fe3b8b47e2151045c5b59cd0171453e",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "63a9b9250530ff6da254eaf5d66d17272fe3b8b47e2151045c5b59cd0171453e",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6",
+          "state_after_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "63a9b9250530ff6da254eaf5d66d17272fe3b8b47e2151045c5b59cd0171453e",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6",
+          "state_after_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "22c009a2fa417df3cdab50f5ec5a562ca3c0534ec3ac30f67da2c4827a02e042",
+          "pixels_different_from_fresh_step1": 395,
+          "state_before_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1",
+          "state_after_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "db0bb3fb0823febe8bfa78ac8e0d4c2bbf03a87cb06cfbac8b2f9ed517a8b0b6",
+          "pixels_different_from_fresh_step1": 429,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "3c0f10a24b87cb6032e8c3adbedccd4b440a21ff034963aa5111a26ae0af6854"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "63a9b9250530ff6da254eaf5d66d17272fe3b8b47e2151045c5b59cd0171453e",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "5247cda8584c333b84ee217ac10818f15c21ab890001ead5ba0c6da81f4b8e74",
+          "pixels_different_from_fresh_step1": 444,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "b6d1345877f9f3c46824ac99a89baa46127c62c0029604efeca8c817c30f1e75"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Dogz",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "fd951d7644f783977be4f5287a7bc9577de9a4a018bdfb093ce9f0073fa304c0",
+      "sheet": "Dogz-sitting-0.png",
+      "sheet_sha256": "8fbbbe678e709d81d46598d27711db2085e5ae00f157b3f6c38b31ec7c9a695b",
+      "cell_size": [
+        90,
+        147
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "591c1dcd6611aef1e99dd418d3b8582e75aabe1cac3ce99647faa616c20c768f"
+        },
+        {
+          "rgba_sha256": "d6e4468f0408848dbbdd1efd5cbed2aa30694105e9fa3303afb659ac8a773186"
+        },
+        {
+          "rgba_sha256": "eb28744d734f07db60127f57bb27ba0ad3b14dad1e88deddb495b2d80a31638f"
+        },
+        {
+          "rgba_sha256": "ac4ee59df2eb9502ed3152e63a0e9f9c1892942c18d0b5db35c67508a92d82c1"
+        }
+      ],
+      "baseline": "Dogz-sitting-0-baseline.png",
+      "baseline_sha256": "23709d2bbf3aace792f7c97a129203d3be241f7f3363a065e7e970e9f7fa54a4",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "a6972c507042e820f205657c064d9236915af3f181f3799cac1a9f48c7871f7f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "a6972c507042e820f205657c064d9236915af3f181f3799cac1a9f48c7871f7f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37",
+          "state_after_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "a6972c507042e820f205657c064d9236915af3f181f3799cac1a9f48c7871f7f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37",
+          "state_after_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "c36cf0e397ce4d88d522ba1656d13a0cfd8ec6debfb5b946d5f281ac132ea22f",
+          "pixels_different_from_fresh_step1": 470,
+          "state_before_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5",
+          "state_after_sha256": "fa8dd6e857ac87d411e21b223f1daa84c59ec70564f4b87aafbafdc323703677"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "008c98ad8574710a250efbf6a265c007bb9e76db4a4eec18a9598da500bc31e2",
+          "pixels_different_from_fresh_step1": 405,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "4dc7a18ad6869aa5a02f52bcdaf44d2205cdadc806fde6eacdb5f2d3b52575e4"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "a6972c507042e820f205657c064d9236915af3f181f3799cac1a9f48c7871f7f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "45353951349a2a580adaa6d693f8af4367da42a05dac217e770a9574a3fcdc37"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "611128f234f6598a7d24393f4b732c9578d34bc3c2ce17b153e7e4879098e636",
+          "pixels_different_from_fresh_step1": 385,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "82d5bb927d5660040063b673913118ac6bf8ce4d259e5e9a86ff00d9a1157e91"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Dogz",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "5a72e1e09765414f46b96525dc5135e0d46ca82679f9da69c34f959f70dc5ced",
+      "sheet": "Dogz-sitting-90.png",
+      "sheet_sha256": "31f2bf782732933e847071cd19f005281a1684fa11614ee050713661485d7e18",
+      "cell_size": [
+        155,
+        150
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "4632b5250983d9658eb65ad28e06564ffe7f55b8b64dafc5d370d5d95989d82e"
+        },
+        {
+          "rgba_sha256": "dcb865f89edac5a1c5a1504c4f3308a0beb00431473e4e990e02007e5258de22"
+        },
+        {
+          "rgba_sha256": "8454e1a291a23f26c9113e9dd4399621ca073f59ce068e2ca599ae46bbe47e01"
+        },
+        {
+          "rgba_sha256": "6d2480a6fe9879f012062d326e718a59ebb897496a074a381904b43a151e0b69"
+        }
+      ],
+      "baseline": "Dogz-sitting-90-baseline.png",
+      "baseline_sha256": "64123012803ff48f314cf79c8719a9fd6a8a4ca4f9bee4a645aeedd3012d8a1b",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "a39a516e9df3a1be27231b784610d1a4044d5e95cd51ed0eac28d9f0695f9791",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "a39a516e9df3a1be27231b784610d1a4044d5e95cd51ed0eac28d9f0695f9791",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6",
+          "state_after_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "a39a516e9df3a1be27231b784610d1a4044d5e95cd51ed0eac28d9f0695f9791",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6",
+          "state_after_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "8e80eb220efa0f42473edb53539c2a3b47302c5c4ec989649da7412c53c62dcc",
+          "pixels_different_from_fresh_step1": 363,
+          "state_before_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6",
+          "state_after_sha256": "aa49bcb096f6c3c09ad4028e0daa204c59055ef14fb1f0ca34eb4233806303be"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "0ee92b83331c7b61990cca4013f55eb8a457eceb71bd8a8fec667f486949b235",
+          "pixels_different_from_fresh_step1": 424,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "666dc4b2467ae8bfc7f062ff8e9c990157911c9dae9cce972f89559f2146a08e"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "a39a516e9df3a1be27231b784610d1a4044d5e95cd51ed0eac28d9f0695f9791",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "aa39235135bec39a6ffaf14ff577d8ca68b24c30baa42bde43fb2744f6b3b8e6"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "7312654777c466b2a4167ac2f1223ce2603acaad1be55789d610c55664dfa334",
+          "pixels_different_from_fresh_step1": 433,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "478c56f30c9a3ddcfbce2c484ae9068cb13f476e2f5013126bb689a063d7706e"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Dogz",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "d547e7815c8077284c310b1e1aee3f044fd73c4ffa3cbe401ec75a68a5c5ca11",
+      "sheet": "Dogz-lying-0.png",
+      "sheet_sha256": "091af848cc3fdcee7984ca371e0a47cdc903331c43e75594ddf76137cd9e970e",
+      "cell_size": [
+        91,
+        120
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "532b4a895ede00a23ce747ba2806dc031d0878e3775098a85ce091209a7208f2"
+        },
+        {
+          "rgba_sha256": "0e667c02e97236ff6da8a4c21a709a1a17dd610d73196a175fdea20c06177f01"
+        },
+        {
+          "rgba_sha256": "f23a0bea3061ad7653ad20d2720b5c3d208b4b6ef9cc15f592299bfd6721c3f3"
+        },
+        {
+          "rgba_sha256": "e9927d9d0f9bc4b108bfc51d318295c850bda5952d2702ee67cfcf81804be917"
+        }
+      ],
+      "baseline": "Dogz-lying-0-baseline.png",
+      "baseline_sha256": "f73932c5c960d48275116c828c761c5c35a3a1eecc759a26b3df9a0f57ad1de7",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "89cca23ddbdf3891d7e91eab509b136698d3175432f3fa4738ebe85e3f4a1792",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "89cca23ddbdf3891d7e91eab509b136698d3175432f3fa4738ebe85e3f4a1792",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103",
+          "state_after_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "89cca23ddbdf3891d7e91eab509b136698d3175432f3fa4738ebe85e3f4a1792",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103",
+          "state_after_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "2e49ce3f0025f9b3ddfcdca1f292c356f8188ecf1d8c94777af84496d1c89b7a",
+          "pixels_different_from_fresh_step1": 109,
+          "state_before_sha256": "aade8a23613263533209c0ced0b06381ff9ff424a76088fd108374e1971030b5",
+          "state_after_sha256": "53146bcba982ae671adcfee5ad11ae9a9aed3a931eda96a946e03f41fc080661"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "2ba1d7d0abc405f0ec88a90ada8f689a3d19ef8601cd3b1845dd1f5cfbc3c467",
+          "pixels_different_from_fresh_step1": 348,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "1dd7bff866799bda285b73cf6f19f642ac1d6927ebe4e443351d2f0c1fba9f84"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "89cca23ddbdf3891d7e91eab509b136698d3175432f3fa4738ebe85e3f4a1792",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "46ebeaf2857a515337dbfc0ffc586bd149a5a2c367097253b9b29d9250442103"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "fe7f9b5ed334a9e7b5c3fa4ac3d3013692db3775e6ccafc31d216a2f7c0797d3",
+          "pixels_different_from_fresh_step1": 349,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "9328cd9820c7197d001e1bf1e82824b16a3beb7b9486965cc9c8a33acbd10e61"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Dogz",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Dogz-seven.dog",
+      "input_sha256": "56b2a9f650fa088e0f368089cce0f6db8de0579ebf6106a666c5e124efc26304",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "prepared_repr_sha256": "75b1768de2eb54b192719451582ae535f158c2cc06a0e47c5f923d88b1f90f25",
+      "sheet": "Dogz-lying-90.png",
+      "sheet_sha256": "37c21bbc1f9bf9e353636df046d1e6514a0bcdf43f443a6108f0bba18b5a7eb3",
+      "cell_size": [
+        202,
+        95
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "b844713e1e726cd96a9c359d16ea83bc3ec042a81b1ff856a28ceb7396511b04"
+        },
+        {
+          "rgba_sha256": "7a852dcdd7d0f37b59ac8a8873c97a3877fd8b354dba471329da996133d668bb"
+        },
+        {
+          "rgba_sha256": "9a7b50388ffbaafa94ba1c1d0f544cb3df8ae4ab0869d9f93fbb396bea29904b"
+        },
+        {
+          "rgba_sha256": "975e21c6da68325853935c36e84eac8c9fd55ac3300412d00e4be797e3bb6ec2"
+        }
+      ],
+      "baseline": "Dogz-lying-90-baseline.png",
+      "baseline_sha256": "b392262d563a9ddaa40c6d7afb4f13719ad8f8cd9b595311666d5eb1203848cb",
+      "step0_vs_fresh_step1_changed_pixels": 0,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "4b012954ed5f8c7dea30b85c33fa97dd977e05eb68c3edd152e17f43bdb3d283",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "4b012954ed5f8c7dea30b85c33fa97dd977e05eb68c3edd152e17f43bdb3d283",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1",
+          "state_after_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "4b012954ed5f8c7dea30b85c33fa97dd977e05eb68c3edd152e17f43bdb3d283",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1",
+          "state_after_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "1c17ceb0d0950a24887daf4df5b68b0471e62f869e427c822c8fd5fc49d50ee0",
+          "pixels_different_from_fresh_step1": 339,
+          "state_before_sha256": "5530626b1de8fc81f79e385ce080b36f1df41de52e6549866e567ecdfa22dbd6",
+          "state_after_sha256": "48ea66a4673d1d245675d04d9862b01d6ba763c23cca621390a2464f7f5f2455"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "037a4b06f40ca8c4ee083146e6675cd4365c5e37bcaabbc418306db12dc5b9ed",
+          "pixels_different_from_fresh_step1": 389,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "97fba4ff55d25cbb9d4c01cdb56316b5b6daeac4dcc827e6e7952040a0e236a9"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "4b012954ed5f8c7dea30b85c33fa97dd977e05eb68c3edd152e17f43bdb3d283",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "e761cb3f14cc49cce491c1a58b7fdd5f9dfa51b279e83b5f9eb3544891f353f1"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "c9f34fe706451d3833398cd3333577b1a6a43524212cb776f14853a4389e7e6a",
+          "pixels_different_from_fresh_step1": 378,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "17dbb6277f586689649a4d0f4251255fe803a88f5c3f6e0b94866814964416dc"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "prior_other_pose": "lying",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "f72b5b6097df87e12d3944be5d065f193b522d8667582f960fd26cfb029f86b9",
+      "sheet": "Catz-standing-0.png",
+      "sheet_sha256": "2f3e7597d4db1af50a2817822a7ff1db2b8cef159b1935d315f5f5c6d6998788",
+      "cell_size": [
+        71,
+        149
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "f67c68f69ed457e1cb3e23ea71e0b11ce30409e789238e332a6437ddc3c7341f"
+        },
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        },
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        },
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        },
+        {
+          "rgba_sha256": "a4059cf4c3d260419155e94db8b1612e332c87738ac317d68fbed0cd266c3438"
+        },
+        {
+          "rgba_sha256": "45c31ef3ffdb7eed3afe6d017ceba0605dec6b348b8124c4853df7c2cd665fa5"
+        },
+        {
+          "rgba_sha256": "55e58a31405cf7bdcf4b1b4b028d7406f6ae59401baa8eeffdc2ea1dc2d4fb9d"
+        },
+        {
+          "rgba_sha256": "4a9c5b39c776bfa04928772709e2f4ba113e6aa31f6a1693a2807fcc5474bcf3"
+        }
+      ],
+      "baseline": "Catz-standing-0-baseline.png",
+      "baseline_sha256": "05f9a3fce985f39643ef2006a37c02f769563cd82efb29a9bc26ec4127a7326a",
+      "step0_vs_fresh_step1_changed_pixels": 49,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "381d8e25d4e96bec9d25d8d368a92b144ab8e8ec711e3891868506db6c6d370f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "381d8e25d4e96bec9d25d8d368a92b144ab8e8ec711e3891868506db6c6d370f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "381d8e25d4e96bec9d25d8d368a92b144ab8e8ec711e3891868506db6c6d370f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "906f00be8518565ac0f32c99dcdf4852b971978a574f65c5943d1cc049900afd",
+          "state_after_sha256": "906f00be8518565ac0f32c99dcdf4852b971978a574f65c5943d1cc049900afd"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "70e9b24147ebfa2a05d648d756219f543bbb58a39441ff54e66ca927f39acecf",
+          "pixels_different_from_fresh_step1": 249,
+          "state_before_sha256": "7c1565877b7f44228bc1e50069a156906c02e37ab0460b33f2696b017161fad0",
+          "state_after_sha256": "25e097d0158e6e378b7c84f89f65c85a867a2691d1ae651fceb9237bfdbd098d"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "2a3970c42f58dfd4e696d96450375e662d126cf97aac2541ab499d11b2fdb33b",
+          "pixels_different_from_fresh_step1": 362,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "068ede7bcb8d2927b93bfbce436456ebef6ba54594645e2b14f9d172a7a819c2"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "381d8e25d4e96bec9d25d8d368a92b144ab8e8ec711e3891868506db6c6d370f",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "adc35b7e6b1147f41f876de0306fbb7cfdbecc6228eb736e4b10d98a3656c6e3",
+          "pixels_different_from_fresh_step1": 368,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "f97474b91e37ddf3673e0c7eea1764c08d6a35a288f61125c946e694ee7480c2"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "prior_other_pose": "lying",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "26e25134c6759d7648e12635224155af7c4612ce2efbfbebebdbbedcc4fc7d8a",
+      "sheet": "Catz-standing-90.png",
+      "sheet_sha256": "2061a45c0ca77e6457267feee0b232576ff58368b9249afc7e5467cf5f61c77e",
+      "cell_size": [
+        163,
+        135
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "a1ebb0926ca318b91c0c1c9287e87112248af10a978ebee514272076c344f2ac"
+        },
+        {
+          "rgba_sha256": "7334b864f35afffa3a2838ad97fa4d2bdb590ef9948b2af0eead029394b969c2"
+        },
+        {
+          "rgba_sha256": "7334b864f35afffa3a2838ad97fa4d2bdb590ef9948b2af0eead029394b969c2"
+        },
+        {
+          "rgba_sha256": "6c3084c05bbd7c8d4a44d1267be0416b8f014db7e7eb1727d07c36daaff32994"
+        },
+        {
+          "rgba_sha256": "6c3084c05bbd7c8d4a44d1267be0416b8f014db7e7eb1727d07c36daaff32994"
+        },
+        {
+          "rgba_sha256": "3141675e5f833b7cbb42dd3c2e5c11f46a08c77bf8eac570b04cce03b3044a28"
+        },
+        {
+          "rgba_sha256": "7334b864f35afffa3a2838ad97fa4d2bdb590ef9948b2af0eead029394b969c2"
+        },
+        {
+          "rgba_sha256": "d950976a11db323c95745684ab48837ed261ed40cb532ff3f59f455f3df1280b"
+        }
+      ],
+      "baseline": "Catz-standing-90-baseline.png",
+      "baseline_sha256": "d444ac78ccbd4e2c52ff463ff3925247df571973c753278ed151e96f52010e0f",
+      "step0_vs_fresh_step1_changed_pixels": 226,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "15871d5297ab86ce5e9daaacdb059cd37452c9ac9d4e7c4f3e206365a2732dbe",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "15871d5297ab86ce5e9daaacdb059cd37452c9ac9d4e7c4f3e206365a2732dbe",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd",
+          "state_after_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "68513c402515f1d181f3f6138c03f08cf63d1efa0dc96b21c221d3b2a0ef3783",
+          "pixels_different_from_fresh_step1": 198,
+          "state_before_sha256": "dcc8754fc7ba2204db84658f174f796e6f33d73f493c9eeb82c86b0d33614351",
+          "state_after_sha256": "dcc8754fc7ba2204db84658f174f796e6f33d73f493c9eeb82c86b0d33614351"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "68513c402515f1d181f3f6138c03f08cf63d1efa0dc96b21c221d3b2a0ef3783",
+          "pixels_different_from_fresh_step1": 198,
+          "state_before_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c",
+          "state_after_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "0b26660bf5ce2b8609baf3137e032cd99aa1eee4acc42ea5f9be3f5d2e3d3ef0",
+          "pixels_different_from_fresh_step1": 364,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "e13660916a3f069cfda27503c78324486b61c6442db4beb7068738c837119b13"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "15871d5297ab86ce5e9daaacdb059cd37452c9ac9d4e7c4f3e206365a2732dbe",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "a5780400dd68a834d0d33279c8947d6c7fd58a6547a9631d4dcbcdc8219f8bdf",
+          "pixels_different_from_fresh_step1": 399,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "8bccd80e822645c68bf8c328193bf72587b26f951da65301ef179b597640ef0a"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "0082d3810bf38c9adf074755680a2bfcc47dc5bd7b15575db05a7713dd5209c1",
+      "sheet": "Catz-sitting-0.png",
+      "sheet_sha256": "566e787d09dc915f9f2800c799b983431e87342770a0c51e321f798360b0d7ee",
+      "cell_size": [
+        85,
+        150
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "08ce6c114afde251a18af2510d1ba06ead61cca5f2050e2f20a69cd91cd68954"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "f9eb10c29d86795b44bae1d90baaad61a02c2393223087a1565e20f073195441"
+        },
+        {
+          "rgba_sha256": "f0a45d7afa4296aa0861ca628c3947e26999a5e95a709fa689e9429070a28424"
+        },
+        {
+          "rgba_sha256": "86471bd67d69cbfc23f1d043f81bd28d552b21bcf0d158a33becd0e20cac4b33"
+        }
+      ],
+      "baseline": "Catz-sitting-0-baseline.png",
+      "baseline_sha256": "8cd5aae954315de254ed3452308a0bfbc1debd9785730be456126999db8ba2dc",
+      "step0_vs_fresh_step1_changed_pixels": 48,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "75c804512de861650401dd2c3015a7e22bacf5a24171a91761690567c6dba721",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "75c804512de861650401dd2c3015a7e22bacf5a24171a91761690567c6dba721",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "75c804512de861650401dd2c3015a7e22bacf5a24171a91761690567c6dba721",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "906f00be8518565ac0f32c99dcdf4852b971978a574f65c5943d1cc049900afd",
+          "state_after_sha256": "906f00be8518565ac0f32c99dcdf4852b971978a574f65c5943d1cc049900afd"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "75c804512de861650401dd2c3015a7e22bacf5a24171a91761690567c6dba721",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "bdfa6c96e0ef4fa8ac5a70b51a6babc225c5f73ae5e72515bf48857ff715270e",
+          "pixels_different_from_fresh_step1": 380,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "068ede7bcb8d2927b93bfbce436456ebef6ba54594645e2b14f9d172a7a819c2"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "75c804512de861650401dd2c3015a7e22bacf5a24171a91761690567c6dba721",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "5bd8156bf819f9293ef61633b5d895cd842c48b1bea586ebcb025e4ac8ba6dcd",
+          "pixels_different_from_fresh_step1": 369,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "f97474b91e37ddf3673e0c7eea1764c08d6a35a288f61125c946e694ee7480c2"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "88952a707d0da908f397023d28a0015f3b87c60d31716aa8210fa6520ba70f24",
+      "sheet": "Catz-sitting-90.png",
+      "sheet_sha256": "fd80519d61fee5bf99a6c4ce27fab8720df5a36d36870b1e83e4a36b4df767cf",
+      "cell_size": [
+        128,
+        157
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "e8a3f3addad771a1708fb731a8059a8ac5c9643d215baf87ba0a416df283382f"
+        },
+        {
+          "rgba_sha256": "71256eec776e93db429fa13f6d7b588e2835b8a308b2559c34a551aef8524a87"
+        },
+        {
+          "rgba_sha256": "71256eec776e93db429fa13f6d7b588e2835b8a308b2559c34a551aef8524a87"
+        },
+        {
+          "rgba_sha256": "98fe59336e7d6f8be86b9b1e31d8cad477738705e3c805432ba0f78b2ee306e2"
+        },
+        {
+          "rgba_sha256": "734c9160156ed6a40886b6e45bec1924b58b2827fb54921efcebf075a1db9313"
+        },
+        {
+          "rgba_sha256": "88cf04115b5c3f873dfa5ac8bd63ab7d25c63cadf864a840498675f4d2398d39"
+        },
+        {
+          "rgba_sha256": "71256eec776e93db429fa13f6d7b588e2835b8a308b2559c34a551aef8524a87"
+        },
+        {
+          "rgba_sha256": "ff45174c0d4c4c918fce01861dee5b49d4664f412240e50a10f7d613636e29f4"
+        }
+      ],
+      "baseline": "Catz-sitting-90-baseline.png",
+      "baseline_sha256": "a0179db23277b333ce804c11ecb605055e1fb784fbbaaa658f3160ae21096127",
+      "step0_vs_fresh_step1_changed_pixels": 257,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "ceeb84a962366008c4e69a1b449bbc00ed5d0b9d80edde61f04b7cc9cb48d517",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "4a9046464c15db5a8ec4f50c0704c32d9b6e8ae91a4620b1a66c043f84145b79"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "ceeb84a962366008c4e69a1b449bbc00ed5d0b9d80edde61f04b7cc9cb48d517",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "4a9046464c15db5a8ec4f50c0704c32d9b6e8ae91a4620b1a66c043f84145b79",
+          "state_after_sha256": "4a9046464c15db5a8ec4f50c0704c32d9b6e8ae91a4620b1a66c043f84145b79"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "45848eb60306c6116da8662aa8d4aeee3871863509e85adf64223fcc08b0fc89",
+          "pixels_different_from_fresh_step1": 235,
+          "state_before_sha256": "50fd24313d07ebb1334ed13adf61d2a73cbcadf6ab07e3740989c8cf1af9e251",
+          "state_after_sha256": "50fd24313d07ebb1334ed13adf61d2a73cbcadf6ab07e3740989c8cf1af9e251"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "6b974173c93e85cd36197ae7511efec2374ecfc79f5a058c686e89de48ddb009",
+          "pixels_different_from_fresh_step1": 233,
+          "state_before_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd",
+          "state_after_sha256": "9983d4db6d8ea69b796e6cad95db9e8cc0f0fc47557b8d4b6c2e05c933d8af40"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "ba68355cccd6a7a4f3e8745d802f661b6c60dd3b756cf3e3c17898edec4bd80b",
+          "pixels_different_from_fresh_step1": 351,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "427b80b5e630be6a38f69907d90ca46da56b6731cb39b2d5088456ada70ff1f3"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "ceeb84a962366008c4e69a1b449bbc00ed5d0b9d80edde61f04b7cc9cb48d517",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "4a9046464c15db5a8ec4f50c0704c32d9b6e8ae91a4620b1a66c043f84145b79"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "910fc36e493e3cfd223cf10f1576b27f19561a94d5bf76590817bea2d040c90a",
+          "pixels_different_from_fresh_step1": 389,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "27e7d2f9c27a51debdaa1cd7be217a53cc7f955bb892fb65c1d296c2f3a09a84"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "a54214e19fc578aa75d3ad8576e918b013b9a51dff44daf4a0ae4dc90f60d730",
+      "sheet": "Catz-lying-0.png",
+      "sheet_sha256": "4b6581eca730f53abf101a2c34f48503aa885a7f09d0a12a98bd7b12fe963c7e",
+      "cell_size": [
+        72,
+        115
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "45e6e0825bb12948aaf2bc7a7e3ba78f2a8974d314e69305b38d4da690fb6c89"
+        },
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        },
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        },
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        },
+        {
+          "rgba_sha256": "c9e7dfca6033586cdd75d29ad69c5abd4737d46094842b5325d658cb14bbc53e"
+        },
+        {
+          "rgba_sha256": "a43a475493932b0b3a9a4aa216ec18dd04847395c4a719eb5dbe2aaa8d9a83b3"
+        },
+        {
+          "rgba_sha256": "7aadff0b991db92ca095fc9e418252194a0e8e64c46376654e7cfb911bf0ff54"
+        },
+        {
+          "rgba_sha256": "ae72069e2ff877c8150a91f2a3fa05975bbd23389daf9b5d4ebb12383311d9e4"
+        }
+      ],
+      "baseline": "Catz-lying-0-baseline.png",
+      "baseline_sha256": "4d249476c1dc2868de44d7d86acc34e0f4cfaeb8b238a38828d81a5dad978a0e",
+      "step0_vs_fresh_step1_changed_pixels": 101,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "d5f0c49648bb827762d649c0c6416a3d0f77348938d15d0c9138cb9383fc25d1",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "7c1565877b7f44228bc1e50069a156906c02e37ab0460b33f2696b017161fad0"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "d5f0c49648bb827762d649c0c6416a3d0f77348938d15d0c9138cb9383fc25d1",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7c1565877b7f44228bc1e50069a156906c02e37ab0460b33f2696b017161fad0",
+          "state_after_sha256": "7c1565877b7f44228bc1e50069a156906c02e37ab0460b33f2696b017161fad0"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "d5f0c49648bb827762d649c0c6416a3d0f77348938d15d0c9138cb9383fc25d1",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "9d29c6015bb5a334472642a79116ee01fddbd3a59396d66d23bb60765b3cc1e0",
+          "state_after_sha256": "9d29c6015bb5a334472642a79116ee01fddbd3a59396d66d23bb60765b3cc1e0"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "3d8e03e522d316eeef04c891cc2b564cdaacb4cf9378f59cdb89dd294bf3c803",
+          "pixels_different_from_fresh_step1": 241,
+          "state_before_sha256": "8bc7eefd791eb6481f83789bfcb50b47f71809a0178d85e6be5837b03c0c2a09",
+          "state_after_sha256": "c8b287e4bb8e406f11032240006882f7c8bb1c761ee10cf2b62057c3c89e582a"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "605a23f2b6c7593723ece95155917e6699904c30c39bb82a234aa6bfe4a9ef95",
+          "pixels_different_from_fresh_step1": 265,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "3821a6610a49acdb065bd6a125539e477fd434809043272f123208e42896eecd"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "d5f0c49648bb827762d649c0c6416a3d0f77348938d15d0c9138cb9383fc25d1",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "7c1565877b7f44228bc1e50069a156906c02e37ab0460b33f2696b017161fad0"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "af9d92b19876f7b3eb74af57a06c55e400078401ec2886a491910c61449240b7",
+          "pixels_different_from_fresh_step1": 199,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "415b15f1bbb3e1c6849810f0bf9a218edb6dc92d10cc686e00daea1a3047a6bd"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    },
+    {
+      "species": "Catz",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "prior_other_pose": "standing",
+      "input": "scratch/research/line-007/Catz-seven.cat",
+      "input_sha256": "99b4e70f26e5ba316c15b60b927fcb103b211f093aaf81daa53a64656d316efa",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "prepared_repr_sha256": "1f1360f38b26b986032915b7f92f0e6bd2d98c3d39dae99e656c568c1393dfc3",
+      "sheet": "Catz-lying-90.png",
+      "sheet_sha256": "eeba57915b19afe5423506174a7e67982de0cc94d8fc6e5545fec605355afb0c",
+      "cell_size": [
+        214,
+        96
+      ],
+      "cell_labels": [
+        "fresh_step0",
+        "fresh",
+        "repeat_scene_step1",
+        "prior_scene_step0",
+        "prior_other_pose_step1",
+        "whisker0",
+        "whisker1",
+        "prime_fuzz3"
+      ],
+      "cell_hashes": [
+        {
+          "rgba_sha256": "c4de3c7e1f278baeb0bbe12de097f721c678ab20e5ad0cdcf8ed7c0f32f3b3db"
+        },
+        {
+          "rgba_sha256": "081aa12e6ba1da95a8bc388486f496d7cfee0b87838d7dcda56b5976c97db329"
+        },
+        {
+          "rgba_sha256": "081aa12e6ba1da95a8bc388486f496d7cfee0b87838d7dcda56b5976c97db329"
+        },
+        {
+          "rgba_sha256": "e93bafb23c2d1882dd3682edc00eae9ce805dfd1295eb2a0b20fe65e4c847649"
+        },
+        {
+          "rgba_sha256": "a03571376ce827589a6a84e7264c8d3374156505ab93e049cfb84c009239f973"
+        },
+        {
+          "rgba_sha256": "9fa5d1326d40445b44bc1916f296cd1c77a8c3c0e45852b2e14b1ea9d28ff71d"
+        },
+        {
+          "rgba_sha256": "081aa12e6ba1da95a8bc388486f496d7cfee0b87838d7dcda56b5976c97db329"
+        },
+        {
+          "rgba_sha256": "f0fa695844132420c0d2dc1267b170048cfb0d748d141ce192aea1b3ff56dead"
+        }
+      ],
+      "baseline": "Catz-lying-90-baseline.png",
+      "baseline_sha256": "ca1758e670454167e5d30dddf302feb00d21763b138e3b60ce3f4547b2a51947",
+      "step0_vs_fresh_step1_changed_pixels": 187,
+      "histories": [
+        {
+          "history": "fresh",
+          "indexed_sha256": "0888fa4176bf9ef314da9295883aa8fa0d9e1e09a73258e66ca11f27ee3a8df7",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c"
+        },
+        {
+          "history": "repeat_scene_step1",
+          "indexed_sha256": "0888fa4176bf9ef314da9295883aa8fa0d9e1e09a73258e66ca11f27ee3a8df7",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c",
+          "state_after_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c"
+        },
+        {
+          "history": "prior_scene_step0",
+          "indexed_sha256": "59af85d56af65cb7b7e669173c9d2452591e87dec6a7d28faa17355592f51c3f",
+          "pixels_different_from_fresh_step1": 173,
+          "state_before_sha256": "c6cfc7f2247e52dd6408247e01dbea688d3e983528e72cf32e5d909d79b98e8d",
+          "state_after_sha256": "c6cfc7f2247e52dd6408247e01dbea688d3e983528e72cf32e5d909d79b98e8d"
+        },
+        {
+          "history": "prior_other_pose_step1",
+          "indexed_sha256": "6146770de417496d526705bca5c9679a8becf9cbbb7724483fbeafe52688538b",
+          "pixels_different_from_fresh_step1": 161,
+          "state_before_sha256": "07f86d127f20cc1dae9566fc02fe41114e2d8c77d2bf21d62d65f675d41de0cd",
+          "state_after_sha256": "f6372fc61a2dc9f35ce5264022cf67612f966aeb35c2e98467b57e05d40579cd"
+        },
+        {
+          "history": "whisker0",
+          "indexed_sha256": "a50af67934bf927cb1fd7499c74b93500b9f2c20aee81d35af416f522ce54939",
+          "pixels_different_from_fresh_step1": 269,
+          "state_before_sha256": "f390a5cc94286189a98c82cc979d26df41625d5da5427e876cb1325292c946db",
+          "state_after_sha256": "d9309c7af46580f3de397e25b8b8ebb4430ec419c5b146e0b454c726a4b0149c"
+        },
+        {
+          "history": "whisker1",
+          "indexed_sha256": "0888fa4176bf9ef314da9295883aa8fa0d9e1e09a73258e66ca11f27ee3a8df7",
+          "pixels_different_from_fresh_step1": 0,
+          "state_before_sha256": "7d8a403b5f1bbea4fd0ddbce1934a4671ec0b4296e29b7198985642a70bd2e60",
+          "state_after_sha256": "9f5b5bc81b21ba62cee9cb582d47d6fa4bf5a6e6f1bb206c3b6b59985432e28c"
+        },
+        {
+          "history": "prime_fuzz3",
+          "indexed_sha256": "fbd81a164d3545fea50616cef90f5ae67f4423b9b586cda37a49d7e701d310ae",
+          "pixels_different_from_fresh_step1": 295,
+          "state_before_sha256": "5e6fae81d054ece5042f1f63efb1e48060f782ad16f05a1b6cf2a82a8dbd4528",
+          "state_after_sha256": "e5e365d39d82a34616e92d0b814bf84b5163b7a9b6e91d0c67f77eedb1e2ec69"
+        }
+      ],
+      "local_mcp_baseline_match": true
+    }
+  ]
+}

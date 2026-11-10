@@ -172,3 +172,7 @@ Final aggregate audit corrected LINE-005 synthetic count to72 (2 texture states 
 ## Latest partial-row research
 
 [LINE-010](experiments/line-010.md):168 numerical loads,56 equal MCP pairs; two sheets reviewed. Prefix lengths3–9, globals thickness25/73 and before1/0; start-only width does not set end width. Actual omitted edge/draw columns now sampled. Private scratch/research/line-010; no renderer/native claims. Next: composed fuzzy breed history, malformed syntax only if useful, textured connectors or broader breeds/versions.
+
+## Latest composed line-history research
+
+[LINE-011](experiments/line-011.md):12 fixtures,84 history targets,12 eight-cell sheets,12 exact MCP baselines; two sheets reviewed. Fixed prepared scenes,targetstep1,discarded prior pixels. Same-step1 repeat/whisker1 controls equal fresh; other-pose history changes11/12,step0-whisker/fuzz3 priming changes12/12. Prior-scene-step0 changesthree Catz sideviews. Whole-scene attribution only; no retained FrameState or native simulation.168 RNG/table states private scratch/research/line-011/states.json. Reuses LINE-007 fuzz7 copies, verified hashes. Next: connector-only attribution, broader styles/species/version or native evidence.

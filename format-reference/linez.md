@@ -32,6 +32,8 @@ For tested two-field rows, `Default Linez Thickness` supplies both endpoint perc
 
 [LINE-008](../experiments/line-008.md) isolates random history in96 asset-free rasters: another positive fuzz index or a step0 whisker changes all12 target fixtures; repeat/fuzz0/step1 whisker controls match fresh. Fuzz tables share RNG with whiskers and retain generated rows. Clear pixels between operations to distinguish state effects from overdraw; fixed seed alone does not isolate changed scheduling. No composed-breed/native claim.
 
-[LINE-009](../experiments/line-009.md) confirms automatic mode -2 selects -1 only for edge colors exactly -1/-1; positive, mixed and -2/-2 cases select0. Fully inherited flat edges can make distinct resolved modes pixel-identical. Omitted columns themselves remain untested.
+[LINE-009](../experiments/line-009.md) confirms automatic mode -2 selects -1 only for edge colors exactly -1/-1; positive, mixed and -2/-2 cases select0. Fully inherited flat edges can make distinct resolved modes pixel-identical. Omitted columns are subsequently sampled in LINE-010.
 
 [LINE-010](../experiments/line-010.md) tests numeric row prefixes3–9 against full equivalents in56 MCP pairs. Omitted end width follows global thickness even when start width is supplied. Omitted edge mode resolves automatically; omitted draw flag follows the global before setting. Tested global thickness25/73 and before1/0. Malformed/interior-empty syntax and native grammar remain unvalidated.
+
+[LINE-011](../experiments/line-011.md) extends RNG history to twelve composed Scottie/Siamese scenes: same-step1 repeats match, other-pose histories change11/12 and step0-whisker priming changes12/12. Prepared geometry/commands are fixed, prior pixels discarded, and targetstep1 held constant. Twelve fresh step0 MCP PNGs match exactly. Whole-scene differences are not connector-only attribution or native evidence.

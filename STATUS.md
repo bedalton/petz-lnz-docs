@@ -47,6 +47,7 @@ Updated: 2026-11-10
 - Latest: [LINE-008](experiments/line-008.md),96 asset-free history rasters: positive-fuzz/step0-whisker prior draws affect shared RNG; repeat/zero/step1 controls match.
 - Latest: [LINE-009](experiments/line-009.md),48 numerical loads/twenty MCP pairs: automatic edge mode tests exact -1/-1; equal pixels can conceal resolved-mode differences.
 - Latest: [LINE-010](experiments/line-010.md),168 numerical loads/56 MCP pairs: partial3–9-field rows match full equivalents; omitted end width follows global, omitted draw flag follows before setting.
+- Latest: [LINE-011](experiments/line-011.md),twelve composed fixtures/84 history targets/twelve exact MCP baselines: other-pose RNG history changes11/12 scenes; step0-whisker priming changes12/12.
 - Next: independent native texture evidence, other list conflicts/whiskers, actual fuzzy breed histories, partial connector rows and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.

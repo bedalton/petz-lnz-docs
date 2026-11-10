@@ -62,4 +62,5 @@ Updated: 2026-11-10
 - Texture connector session: [overview/verification](docs/session-2026-11-10-connector-textures.md): four units,64 MCP pairs,126 numerical loads,72 synthetic buffers/120 exact samples;42 copies/128 RGBA cells verified; all62 installed sources match clean renderer checkout; handoff duration/scope audited.
 - Latest: [LINE-017](experiments/line-017.md), 360 asset-free diagonal rasters/10,512 exact pixel samples: exact-fit thresholds, screen-aligned sampling and 180 reversed-taper equivalences; no MCP/native claim.
 - Latest: [LINE-018](experiments/line-018.md),180 asset-free rasters/2,184 samples: viewport corner clamping precedes size rejection; nine of twelve plain cases differ from cropping a larger render.
+- Latest: [LINE-019](experiments/line-019.md),30 numerical loads/sixteen local MCP pairs extend texture routing to Petz4 Dalmatian/Persian;256x256 tiles, two sheets reviewed.
 - Resume: [HANDOFF.md](HANDOFF.md).

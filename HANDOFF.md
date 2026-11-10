@@ -222,3 +222,7 @@ Full installed-source audit:62 Python sources match renderer checkout; hash map 
 ## Latest clipped texture research
 
 [LINE-018](experiments/line-018.md):180 asset-free rasters,128 accepted/52 rejected,2,184 exact fuzz0 samples. Viewport corner clamps precede texture size guard; tile24 draws all cases on24x24 canvas. Nine of twelve plain geometry cases differ from cropping large translated controls; outside lines can collapse onto borders. Positive-fuzz support/RNG checks do not independently trace corner math. Private pixels/samples scratch/research/line-018 hash-linked; sources match checkout. No renderer/MCP/native claims. Next: signed/shaded paint,broader breeds/evolving scenes or native evidence.
+
+## Latest second-breed connector textures
+
+[LINE-019](experiments/line-019.md): Dalmatian/Persian Petz4,30 numerical loads/sixteen local stdio MCP pairs; two side sheets reviewed. Head-selected texture differs from explicit125,untextured end equals it,endpoint reversals agree. Both selected textures slot1 hair10,256x256,has_levels true/own_level-1. No new tile dimension or broader version/size/fuzz claim. Inputs/originals/source/engine/loaded texture/remapped paint/PNG/cell hashes recorded,metadata petz4 asserted. Private scratch/research/line-019. Initial ad-hoc selector lookup used incorrect DA/PE; inspected resource names resolved DM/PR before making copies. No renderer/native claims. Next: signed/shaded sampling or evolving histories/native evidence.

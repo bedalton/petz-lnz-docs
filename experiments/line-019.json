@@ -1,0 +1,1111 @@
+{
+  "experiment": "LINE-019",
+  "backend": "local stdio MCP plus asset-backed connector block checks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "pillow": "13.0.0"
+  },
+  "source_hashes": {
+    "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "synthetic": [],
+  "cases": [
+    {
+      "species": "Dogz",
+      "breed": {
+        "filename": "Dalmatian.dog",
+        "selector": "DM"
+      },
+      "source_path": "games/petz4/Resource/Dogz/Dalmatian.dog",
+      "source_sha256": "de80cf7242e1a85b32f2912834247b2cc738a7d93740398003e24b0ac9d7a91c",
+      "head_id": 52,
+      "marker_id": 88,
+      "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "head_texture": "52, 88, 0, -1, 244, 244, 100, 100, 0, 1",
+        "end_plain": "52, 88, 0, -2, 244, 244, 100, 100, 0, 1",
+        "explicit_plain": "52, 88, 0, 125, 244, 244, 100, 100, 0, 1",
+        "reverse_head": "88, 52, 0, -2, 244, 244, 100, 100, 0, 1",
+        "reverse_end": "88, 52, 0, -1, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "head_texture": "Dogz-head_texture.dog",
+        "end_plain": "Dogz-end_plain.dog",
+        "explicit_plain": "Dogz-explicit_plain.dog",
+        "reverse_head": "Dogz-reverse_head.dog",
+        "reverse_end": "Dogz-reverse_end.dog"
+      },
+      "input_hashes": {
+        "head_texture": "964bc1beb13135dcaf23aa6cc33dd6c2205fabdeade873290399ae35bbfcfb60",
+        "end_plain": "716f868bbbe43d99522e81e712d76aef2ef14dc75c1e43eefa5b4f0a2a897654",
+        "explicit_plain": "ce7dae8e1630c7c42f608fe13d08eeea879e7743ca3a98124cdfe1455146b961",
+        "reverse_head": "89479f8df307e196c7e0c7a50bd394abb850d762c9615f07ab02224d9dcad3f0",
+        "reverse_end": "fe9873d06834769cf00205628631f4820973936168e0317746f0cff7188082d9"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "standing",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "sitting",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "lying",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "breed": {
+        "filename": "Persian.cat",
+        "selector": "PR"
+      },
+      "source_path": "games/petz4/Resource/Catz/Persian.cat",
+      "source_sha256": "39a637c2afa8d7f06e878a9e0e116e2c898df275aa121be7e35290681e905594",
+      "head_id": 24,
+      "marker_id": 92,
+      "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "head_texture": "24, 92, 0, -1, 244, 244, 100, 100, 0, 1",
+        "end_plain": "24, 92, 0, -2, 244, 244, 100, 100, 0, 1",
+        "explicit_plain": "24, 92, 0, 125, 244, 244, 100, 100, 0, 1",
+        "reverse_head": "92, 24, 0, -2, 244, 244, 100, 100, 0, 1",
+        "reverse_end": "92, 24, 0, -1, 244, 244, 100, 100, 0, 1"
+      },
+      "paths": {
+        "head_texture": "Catz-head_texture.cat",
+        "end_plain": "Catz-end_plain.cat",
+        "explicit_plain": "Catz-explicit_plain.cat",
+        "reverse_head": "Catz-reverse_head.cat",
+        "reverse_end": "Catz-reverse_end.cat"
+      },
+      "input_hashes": {
+        "head_texture": "c930df223ceeec0f63ba81758b80637e97a1de12d5d284e67e49df9a32b1e454",
+        "end_plain": "f105a22a008162e02621c83761b8afe1ffd7b8c6c1689d5f754c5feb1fedc833",
+        "explicit_plain": "e9474e4bffa74913b45a777a800ca0cc9f98ab6a06b76e122805b7a904d880ae",
+        "reverse_head": "d2c9a055fa2e0154fd823ba341421f70fe0563a190fae2739555066cfe2ffadb",
+        "reverse_end": "33947345891be8ebb545601fad0ee18b0ca5b044d85408af97a5364be8cf4588"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "standing",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "standing",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "sitting",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "sitting",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "head_texture",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "lying",
+          "variant": "end_plain",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_plain",
+          "line_color": 125,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_head",
+          "line_color": -2,
+          "block_color": 120,
+          "paint_present": true,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+        },
+        {
+          "pose": "lying",
+          "variant": "reverse_end",
+          "line_color": -1,
+          "block_color": 120,
+          "paint_present": false,
+          "texture_index": 1,
+          "texture_config": {
+            "path": "\\art\\textures\\hair10.bmp",
+            "has_levels": true,
+            "own_level": -1,
+            "tile_width": 256,
+            "tile_height": 256
+          },
+          "texture_size": [
+            256,
+            256
+          ],
+          "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+          "paint_pixels_sha256": null
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "head_texture",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-head_texture.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "26659da4882bb3dd1c51622dfbe197dc7b483180e61cd1330fbef4998a7d05c1",
+      "cells_equal": false,
+      "cell_hashes": [
+        "c37c411a5821b3f5fce51d642853bb9b5f854ba95dc6283cd092f180db253ba9",
+        "7ae293079b519018f1cbd6b62b25f221e42baf9a532823bac14c2ac84f8070cd"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "head_texture",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-head_texture.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "5f1b9689e7813987500addffa166095c3fa8530ac9a39ebeccb778f83c889816",
+      "cells_equal": false,
+      "cell_hashes": [
+        "2ec8b3800b5f37d83efbd0a19ebb1dbe709738b4f1defc4bcd4a4da3aa169f53",
+        "81b091ae717e5611b6276b393416ee8797c648a9edd52b771ed3adf19dbed207"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "end_plain",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-end_plain.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "319e6c4a99272b12a11925098787ce258f0ea8a69411bacde7f6f976040588a1",
+      "cells_equal": true,
+      "cell_hashes": [
+        "7ae293079b519018f1cbd6b62b25f221e42baf9a532823bac14c2ac84f8070cd",
+        "7ae293079b519018f1cbd6b62b25f221e42baf9a532823bac14c2ac84f8070cd"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "end_plain",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-end_plain.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8e5e1382b3f58bd678d5d4ba16a65ba66b14cdfe2b3b18a12cc7595a23e7e15f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "81b091ae717e5611b6276b393416ee8797c648a9edd52b771ed3adf19dbed207",
+        "81b091ae717e5611b6276b393416ee8797c648a9edd52b771ed3adf19dbed207"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_head",
+        "head_texture"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_head.dog",
+        "after_path": "Dogz-head_texture.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c76fc6ee377b289b29b862e3307e643e1a79b7f2cf2e0906cff6fb39adab8a8f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "c37c411a5821b3f5fce51d642853bb9b5f854ba95dc6283cd092f180db253ba9",
+        "c37c411a5821b3f5fce51d642853bb9b5f854ba95dc6283cd092f180db253ba9"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_head",
+        "head_texture"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_head.dog",
+        "after_path": "Dogz-head_texture.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "83d471e7b8ce5c98f3a9ba63b8d2d9503ba417c2adc009d420115982a3a3b3de",
+      "cells_equal": true,
+      "cell_hashes": [
+        "2ec8b3800b5f37d83efbd0a19ebb1dbe709738b4f1defc4bcd4a4da3aa169f53",
+        "2ec8b3800b5f37d83efbd0a19ebb1dbe709738b4f1defc4bcd4a4da3aa169f53"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_end",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_end.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "319e6c4a99272b12a11925098787ce258f0ea8a69411bacde7f6f976040588a1",
+      "cells_equal": true,
+      "cell_hashes": [
+        "7ae293079b519018f1cbd6b62b25f221e42baf9a532823bac14c2ac84f8070cd",
+        "7ae293079b519018f1cbd6b62b25f221e42baf9a532823bac14c2ac84f8070cd"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "reverse_end",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-reverse_end.dog",
+        "after_path": "Dogz-explicit_plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8e5e1382b3f58bd678d5d4ba16a65ba66b14cdfe2b3b18a12cc7595a23e7e15f",
+      "cells_equal": true,
+      "cell_hashes": [
+        "81b091ae717e5611b6276b393416ee8797c648a9edd52b771ed3adf19dbed207",
+        "81b091ae717e5611b6276b393416ee8797c648a9edd52b771ed3adf19dbed207"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "head_texture",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-head_texture.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "0694a02af5747394b8d35254d0e46958b4f442e803a75e94e1282ada5d8d8a10",
+      "cells_equal": false,
+      "cell_hashes": [
+        "7466aa2086eee0d62e89dd00520d267d219d7cd02d088dcb572a6869c898647e",
+        "23049b01245c0e97538ab595bcc98145e6b0c41952724db0b9046942069afeba"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "head_texture",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-head_texture.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "a374a04471adeb83fd9a0733c8dbfa04d0c7d715c49d81b0d9c39ab4ff530d21",
+      "cells_equal": false,
+      "cell_hashes": [
+        "d88ae8ce30370c458d14b5646f5f8f91e7526f716f4a84052f57d7075eda76bc",
+        "f129a196f8a8d1f559c24be56fc03048de4ae5eff7ff04f2e1fb54f8bb43d4e5"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "end_plain",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-end_plain.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6a6659ec980ef26c53942934b8403abd9db9397b198ae373b3e143ca91a3dcfb",
+      "cells_equal": true,
+      "cell_hashes": [
+        "23049b01245c0e97538ab595bcc98145e6b0c41952724db0b9046942069afeba",
+        "23049b01245c0e97538ab595bcc98145e6b0c41952724db0b9046942069afeba"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "end_plain",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-end_plain.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0d67b69efdea8bdd8ee7c948b8d990774793424991bccb8ba75709e5e0cd6a0a",
+      "cells_equal": true,
+      "cell_hashes": [
+        "f129a196f8a8d1f559c24be56fc03048de4ae5eff7ff04f2e1fb54f8bb43d4e5",
+        "f129a196f8a8d1f559c24be56fc03048de4ae5eff7ff04f2e1fb54f8bb43d4e5"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_head",
+        "head_texture"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_head.cat",
+        "after_path": "Catz-head_texture.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "60d764867ca6a874a4da47d3e087f3b9d91b690b9d3ac1f7723bf2dc68284b94",
+      "cells_equal": true,
+      "cell_hashes": [
+        "7466aa2086eee0d62e89dd00520d267d219d7cd02d088dcb572a6869c898647e",
+        "7466aa2086eee0d62e89dd00520d267d219d7cd02d088dcb572a6869c898647e"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_head",
+        "head_texture"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_head.cat",
+        "after_path": "Catz-head_texture.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f66bc06bdcfd1b6d88eba7942231747e86a1dfcb9d7b4353314d5539f0bbb823",
+      "cells_equal": true,
+      "cell_hashes": [
+        "d88ae8ce30370c458d14b5646f5f8f91e7526f716f4a84052f57d7075eda76bc",
+        "d88ae8ce30370c458d14b5646f5f8f91e7526f716f4a84052f57d7075eda76bc"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_end",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_end.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6a6659ec980ef26c53942934b8403abd9db9397b198ae373b3e143ca91a3dcfb",
+      "cells_equal": true,
+      "cell_hashes": [
+        "23049b01245c0e97538ab595bcc98145e6b0c41952724db0b9046942069afeba",
+        "23049b01245c0e97538ab595bcc98145e6b0c41952724db0b9046942069afeba"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "reverse_end",
+        "explicit_plain"
+      ],
+      "controls": {
+        "before_path": "Catz-reverse_end.cat",
+        "after_path": "Catz-explicit_plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0d67b69efdea8bdd8ee7c948b8d990774793424991bccb8ba75709e5e0cd6a0a",
+      "cells_equal": true,
+      "cell_hashes": [
+        "f129a196f8a8d1f559c24be56fc03048de4ae5eff7ff04f2e1fb54f8bb43d4e5",
+        "f129a196f8a8d1f559c24be56fc03048de4ae5eff7ff04f2e1fb54f8bb43d4e5"
+      ],
+      "game_version": "petz4",
+      "renderer_version": "0.1.0"
+    }
+  ]
+}

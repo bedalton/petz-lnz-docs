@@ -1,0 +1,1642 @@
+{
+  "experiment": "LINE-020",
+  "backend": "asset-free direct indexed raster; no MCP",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0"
+  },
+  "source_hashes": {
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f"
+  },
+  "private_pixels_sha256": "ac819dad95e5514cf536c97697e1b4a67be5f0128d9f448a481cf6d2789394fd",
+  "controls": {
+    "canvas": [
+      280,
+      280
+    ],
+    "background": 254,
+    "texture_values": "0..255 along long axis",
+    "seed": 1,
+    "widths": [
+      3,
+      3
+    ],
+    "fuzz": 0,
+    "fill": 125,
+    "explicit_edges": [
+      180,
+      200
+    ]
+  },
+  "records": [
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126,
+        "255": 127
+      },
+      "indexed_sha256": "7e019d75328a78806c3bee2b514ecf95f6a5cefd07dccd382e2cb9087be47596",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126
+      },
+      "indexed_sha256": "86104360adca13d3027cc8c041bc3765be72a82c5118dc62862f0a64093c3856",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126,
+        "255": 127
+      },
+      "indexed_sha256": "fcef251d2370be2e25eb67055fd1ba64d246e66356ac321f96d1f8b668b2f151",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "a07ca3fa85b4bab642ad4f5774e21ff5454fc8b15b244ceeb21e5c52663bea4f",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "8a8354ea2d3acf6df9dab51eeae643a4f1d389a586af1c59c87455b7fc792ef8",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "aa04c3d7f6b36fe1414a0da9c36e6f39793e040855d3ffaaac57bcf2e67889ce",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253,
+        "255": 254
+      },
+      "indexed_sha256": "6631b5b9dd92ce6979bca1ce7815fbba654ae5c4d5a23b32d731633e4bd0cadc",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253
+      },
+      "indexed_sha256": "f47d36f2e1ed6a89acb263d2c0006cbca253f484b8d2876279955acb6fba83cc",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253,
+        "255": 254
+      },
+      "indexed_sha256": "12b73b630196e0fac4641a60dd4e1af2f4f8bc967e6a493d3e71a652e064b031",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "0b2726e715d73658f6a5a9e1bc73a68c29249d50a12ce954bb2931837bbdec5b",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "f5659200a2f37ef26aaf8abf438b9563470c829cf2c04a4c170cb6f8f0ad1390",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "6d402ada6ae57bad5dc81d7a08bf2111cd922aad710a92f5540939b7f81617ba",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "9770812c36a220e57c60645d00521318eb89f2e96ca066fbf678ac450182a3a7",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "ca1ad4e5464d8617f333eecc2e842ab42e2876fb8d8c1ab0eaa29512fec4b538",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "2b3a5a60d66182301971201a339d955cde4bfef60e7309cfcc8dec7ec6f933f9",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "9770812c36a220e57c60645d00521318eb89f2e96ca066fbf678ac450182a3a7",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "ca1ad4e5464d8617f333eecc2e842ab42e2876fb8d8c1ab0eaa29512fec4b538",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "2b3a5a60d66182301971201a339d955cde4bfef60e7309cfcc8dec7ec6f933f9",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255,
+        "255": 0
+      },
+      "indexed_sha256": "453291d089e2fa73246cfd07836e656dd63601d178b80f1102fd7edf2455e10a",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255
+      },
+      "indexed_sha256": "015d35b256cfbc59a5c687dda3f2a52851870763a9584c5614cdd5fbca713a03",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255,
+        "255": 0
+      },
+      "indexed_sha256": "b669ae22c9563e378b9cb2048bbb8fb45fafd696ba8af2521df27ae401d47e7e",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "ad5b0c12096745cc4745eff08a13f4d3b1a84a636c1ae5a5f8f8a64ffe1a5a3c",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "3e09c72f6a3a7dab8bc61dc271269d6542df0bda4f4a1c0b4107f72acf42cd21",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "7be34ffe116e3213c6515a08a85a80b37904de51b3599943dca519ee157f1389",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125,
+        "255": 126
+      },
+      "indexed_sha256": "3503dcf32e8d27d390fcab791bc425c55a4a3890db8e5a6861c69a3a8c1e4548",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125
+      },
+      "indexed_sha256": "eb0d6e5e59ad84d2ce57acb7757f811df776b94611fc95d5c04f44649b34ae4f",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125,
+        "255": 126
+      },
+      "indexed_sha256": "9924e4d49f0ff7f1f5e25a0d5ba971524da511dd7434457811fe7e17237ba4de",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "3d1fa9eca6ceb9d58b4991bc4fdde070f564cc4184e4a20a00696be52fc0fad8",
+      "plain_indexed_sha256": "122ffba27d81a6fea3e71cd8102e9068d71e0b481e5eecae41812973b2229901"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 762,
+      "explicit_edge_assertions": 6,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254
+      },
+      "indexed_sha256": "b066e67f8d892de3ac7f66c454416bdb583f4b3bcdea3aa52d4b69845413fd9c",
+      "plain_indexed_sha256": "acdc574b595d8ef0a7b7e951275519a4df0106adc42df8904eac8b5019902f2f"
+    },
+    {
+      "axis": "horizontal",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        256,
+        3
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "835bdfacfffda6767afa386704b96c5baf6793e00eab9e7d9f358cc5646c2934",
+      "plain_indexed_sha256": "f0e5d4aaff577ef0c25ae9739739b2809b44c8617d64fb137d71d8642ccd6723"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126,
+        "255": 127
+      },
+      "indexed_sha256": "e16626fc62e7e533f72468b70769bcf2643b2e48d87374c62a769ea2ad87a1d6",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126,
+        "255": 127
+      },
+      "indexed_sha256": "8c04310d6697f91e04370d3cb6c705b28d8000a2e1ce89ce0c04fd38e7cea5ba",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 138,
+        "127": 255,
+        "128": 0,
+        "149": 21,
+        "150": 22,
+        "254": 126,
+        "255": 127
+      },
+      "indexed_sha256": "8c04310d6697f91e04370d3cb6c705b28d8000a2e1ce89ce0c04fd38e7cea5ba",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "40fac36f8a155a555626cd0b0f6143210a4d870661261cd86a446f43886f449e",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "53f84a37d80d1f2c7b80ccb4a622a883f2b8a952871d8fd729e7d51e940da687",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -128,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 128,
+        "8": 136,
+        "9": 137,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "53f84a37d80d1f2c7b80ccb4a622a883f2b8a952871d8fd729e7d51e940da687",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253,
+        "255": 254
+      },
+      "indexed_sha256": "bffdc482332b1553c0132c8d4fe7b633d7d630b4d93f587266791210a0482508",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253,
+        "255": 254
+      },
+      "indexed_sha256": "e6932ae50472fe7dd48a4d0e5bb46b5a2028ee65beb9d41c06080974f9315f71",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 9,
+        "127": 126,
+        "128": 127,
+        "149": 148,
+        "150": 149,
+        "254": 253,
+        "255": 254
+      },
+      "indexed_sha256": "e6932ae50472fe7dd48a4d0e5bb46b5a2028ee65beb9d41c06080974f9315f71",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "887feb74d6ef7fc2f26317704170f1b4c18031bd9084011ef7f01b7eff0dee5b",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "46a5cb9725afd25d8c2ba3ebfac945400e4535d28c7c97de2cb865f102288de9",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": -1,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 255,
+        "8": 7,
+        "9": 8,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "46a5cb9725afd25d8c2ba3ebfac945400e4535d28c7c97de2cb865f102288de9",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "ed71660401504df6d219b711c5999c7ba43b2de2fc4adc06ac7a9895724ade1d",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "8b157d257b369e16113ad15802a73a5939c79bc8c1caa950a53b28baeb7f16ca",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "8b157d257b369e16113ad15802a73a5939c79bc8c1caa950a53b28baeb7f16ca",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "ed71660401504df6d219b711c5999c7ba43b2de2fc4adc06ac7a9895724ade1d",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "8b157d257b369e16113ad15802a73a5939c79bc8c1caa950a53b28baeb7f16ca",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 0,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 0,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "8b157d257b369e16113ad15802a73a5939c79bc8c1caa950a53b28baeb7f16ca",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255,
+        "255": 0
+      },
+      "indexed_sha256": "ac1f4136ed7bbedefb8f73c3591fb35b3d8ba45115e7a5083aa2ebd4f04c55ee",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255,
+        "255": 0
+      },
+      "indexed_sha256": "9513e5a1a39455f8719615b28cac6e470503e6443deb6c7b1d2d1c84569a6c53",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 11,
+        "127": 128,
+        "128": 129,
+        "149": 150,
+        "150": 151,
+        "254": 255,
+        "255": 0
+      },
+      "indexed_sha256": "9513e5a1a39455f8719615b28cac6e470503e6443deb6c7b1d2d1c84569a6c53",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "bc4619e73b49f55a3767b635b0bfd70179b3dc04d8ddd5fa0784f81bf4130a32",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "27361f6456cc95e12bd76baf75eda2a602a5f315fa851bd6781c84a4a935c200",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 1,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 1,
+        "8": 9,
+        "9": 10,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "27361f6456cc95e12bd76baf75eda2a602a5f315fa851bd6781c84a4a935c200",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 3,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125,
+        "255": 126
+      },
+      "indexed_sha256": "37b6ea8327c10af8222a84245d097b5190036484590bd224e6f2694f8c99ea1a",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125,
+        "255": 126
+      },
+      "indexed_sha256": "78b11ae622552fd0c00a38a660be9882a27259233eae5f6210d2f5832cefb568",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": false,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 1,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 137,
+        "127": 254,
+        "128": 255,
+        "149": 20,
+        "150": 21,
+        "254": 125,
+        "255": 126
+      },
+      "indexed_sha256": "78b11ae622552fd0c00a38a660be9882a27259233eae5f6210d2f5832cefb568",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": -1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 768,
+      "explicit_edge_assertions": 0,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "157a99d899b1afcb7a9b8656bbf39c1340faa4c6b22eb1773f622795c5ef95cf",
+      "plain_indexed_sha256": "bf744b69016e2d6e9448264975c37bc9de30514a4e788a7b8410496f1904c9a1"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": 0,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "67b863f01f40f7300a2f5573b3542d223c7658b733245d423e444df1402a7d47",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    },
+    {
+      "axis": "vertical",
+      "shade_offset": 127,
+      "has_sign": true,
+      "edge_mode": 1,
+      "texture_size": [
+        3,
+        256
+      ],
+      "sample_assertions": 256,
+      "explicit_edge_assertions": 512,
+      "zero_output_samples": 0,
+      "boundary_samples": {
+        "0": 127,
+        "8": 135,
+        "9": 136,
+        "10": 10,
+        "127": 127,
+        "128": 128,
+        "149": 149,
+        "150": 150,
+        "254": 254,
+        "255": 255
+      },
+      "indexed_sha256": "67b863f01f40f7300a2f5573b3542d223c7658b733245d423e444df1402a7d47",
+      "plain_indexed_sha256": "0efe02bec8793fcef7315cbb711fe2d3a473c97c9312d042496c8709dee9ee40"
+    }
+  ],
+  "summary": {
+    "fixtures": 60,
+    "sample_assertions": 30660,
+    "explicit_edge_assertions": 15420,
+    "zero_output_samples": 75
+  }
+}

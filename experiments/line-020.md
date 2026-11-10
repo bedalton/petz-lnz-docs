@@ -1,0 +1,11 @@
+# LINE-020: connector texture shade and sign boundaries
+
+Date: 2026-11-10. Asset-free direct indexed raster observations and inspected-code support, no MCP/assets/species/version/native claim. [Manifest](line-020.json). Reproduce with `scratch/petz-local-venv/bin/python tools/line_texture_shading.py`; refuses existing output. Raw pixels and exact samples under scratch/research/line-020/pixels.json, hash-linked in manifest. Installed/checkout source agreement, runtime/package version and revision recorded. Renderer unchanged.
+
+60 fixtures cross horizontal/vertical 256-pixel-long connectors, shade offsets-128/-1/0/1/127, has_sign false/true and edge modes-1/0/1. Thickness3/3, fuzz0, seed1 and explicit edge colors180/200 stay fixed. Exact-fit synthetic textures carry all source byte values0–255 along the long axis. Canvas280x280 background254 makes zero writes observable; flat untextured controls identify body coverage separately from explicit edges, so zero or254 sampled values are not mistaken for missing geometry.
+
+30,660 body-sample assertions and15,420 explicit-edge assertions pass. With has_sign=false, every texture byte is shaded by adding the signed offset modulo256. With has_sign=true, only source values below10 receive that addition; values10–255 remain unchanged. Boundary examples including0,8,9,10,127,128,149,150,254,255 are recorded per fixture where the edge path leaves them exposed.
+
+75 body samples write index0. Texture samples are written directly after this shade rule; the flat-color substitutions0→245,8→7,9→248,255→244 are not applied to sampled texture bytes. Nor is sampled0 treated as transparent by the indexed framebuffer. Interpretation by an eventual palette/RGBA exporter is outside this experiment. Source0 with offset0 remains0, while nonzero offsets can wrap other source values to0.
+
+Explicit edge pixels stay180/200 across shade/sign controls. Mode0 substitutes scan-row ends; mode1 draws polygon edges after the textured body. The flat-control mask independently identifies the resulting edge coverage for exact expected-buffer comparison. RNG/tables stay initial because fuzz0. This isolates TexturePaint consumption after any remapping; it does not assert which breed remap configuration produces a given has_sign/offset, nor texture-circle behavior or native semantics.

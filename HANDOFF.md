@@ -226,3 +226,7 @@ Full installed-source audit:62 Python sources match renderer checkout; hash map 
 ## Latest second-breed connector textures
 
 [LINE-019](experiments/line-019.md): Dalmatian/Persian Petz4,30 numerical loads/sixteen local stdio MCP pairs; two side sheets reviewed. Head-selected texture differs from explicit125,untextured end equals it,endpoint reversals agree. Both selected textures slot1 hair10,256x256,has_levels true/own_level-1. No new tile dimension or broader version/size/fuzz claim. Inputs/originals/source/engine/loaded texture/remapped paint/PNG/cell hashes recorded,metadata petz4 asserted. Private scratch/research/line-019. Initial ad-hoc selector lookup used incorrect DA/PE; inspected resource names resolved DM/PR before making copies. No renderer/native claims. Next: signed/shaded sampling or evolving histories/native evidence.
+
+## Latest texture shade/sign research
+
+[LINE-020](experiments/line-020.md):60 synthetic rasters,30,660 body/15,420 edge assertions,75 zero-index writes. All-byte art,offsets-128/-1/0/1/127,sign flags,edge modes-1/0/1,horizontal/vertical. Sign true shades only source<10; false shades all modulo256. Texture samples bypass flat-color substitutions; explicit edges unchanged. Background254 plus flat mask prevents zero/254 samples from being mistaken for absence. No exporter/remap configuration/MCP/native claim. Private pixels/samples scratch/research/line-020 hash-linked,sources match checkout; no renderer change. Next: session evidence audit,composed other tile dimensions/evolving scenes or native evidence.

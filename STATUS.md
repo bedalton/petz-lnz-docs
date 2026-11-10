@@ -2,6 +2,8 @@
 
 Updated: 2026-11-10
 
+- Known incomplete features: clothing, textured paint balls and textured Outline balls must not be inferred from MCP output; [GAP-007 records the user-relayed porting-agent report and scope](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
+
 - Environment restored: [RESTORE-002](experiments/restore-002.md); game folders corrected, local Petz 4 HTTP MCP connected, six cross-version stdio smoke pairs pass and match prior hashes. Prior private artifacts are still absent.
 
 - Complete: local MCP baseline across six species/version combinations; first copy-only Petz 4 edits and native-resolution visual review.

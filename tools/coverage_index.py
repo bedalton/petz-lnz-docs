@@ -7,6 +7,8 @@ names={k for r in rows for field in ('breed_sections','master_sections') for k i
 names.add('Draw Linez Before Ballz')
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
+ 'Adjust Clothing':'Clothing is source-reported incomplete in the Petz4 renderer; do not infer from MCP output: [GAP-007](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp)',
+ 'Paint Ballz':'Textured paint balls are source-reported incomplete in the Petz4 renderer; do not infer from MCP output: [GAP-007](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp)',
  'Texture List':'Retained static-frame controls: [TEXTURE-001](../experiments/texture-001.md); arithmetic trace: [TEXTURE-002](../experiments/texture-002.md); [state reference](../format-reference/texture-state.md); Return-to-pose state isolation: [TEXTURE-004](../experiments/texture-004.md); Mode/default parser controls and composed remapping: [TEXTURE-003](../experiments/texture-003.md); authored dimensions: [LINE-021](../experiments/line-021.md); [field reference](../format-reference/texture-list.md); native fidelity pending',
  'Default Linez Thickness':'25/100, empty fallback and explicit-row precedence: [LINE-004](../experiments/line-004.md)',
  'Draw Linez Before Ballz':'Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md)',
@@ -14,7 +16,7 @@ known={
  'Add Ball':'Synthetic attachment, ordinary/relative sizing: [ADD-001](../experiments/add-001.md); connected detail/omissions: [LINE-001](../experiments/line-001.md); default add-group behavior: [MORPH-001](../experiments/morph-001.md); body-area propagation: [AREA-001](../experiments/area-001.md); conflicting-neighbor precedence: [AREA-002](../experiments/area-002.md); body-area lists and format-version gate: [AREA-003](../experiments/area-003.md); chain ID-order propagation: [AREA-004](../experiments/area-004.md); anchored cycles and late lists: [AREA-005](../experiments/area-005.md); omitted-marker list reassignment: [AREA-006](../experiments/area-006.md); relative-size morph behavior: [MORPH-002](../experiments/morph-002.md); multiple groups/prefixes: [MORPH-003](../experiments/morph-003.md); retained assembly histories: [MORPH-004](../experiments/morph-004.md); retained-state pixel controls: [MORPH-005](../experiments/morph-005.md); remaining fields need tests',
  'Omissions':'All 67 base IDs front/side sampled: [OMIT-001](../experiments/omit-001.md); [VIS-001](../experiments/vis-001.md) separates zero-radius cases; iris/native/morph cases pending',
  'Head Enlargement':'Tested size/spacing and A=100 gate: [HEAD-001](../experiments/head-001.md), [HEAD-002](../experiments/head-002.md)',
- 'Outline Color Override':'Iris-ring perturbation: [EYE-001](../experiments/eye-001.md)',
+ 'Outline Color Override':'Iris-ring perturbation: [EYE-001](../experiments/eye-001.md); this does not validate textured Outline balls, source-reported incomplete: [GAP-007](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp)',
  'Move':'Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved',
  'Key Balls':'Master IDs inventoried; section replacement tested: [INHERIT-001](../experiments/inherit-001.md)',
  'Ball Size Override':'Head-only perturbation: [BALL-001](../experiments/ball-001.md)',

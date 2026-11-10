@@ -2,6 +2,8 @@
 
 Evidence: [TEXTURE-003](../experiments/texture-003.md) and [LINE-021](../experiments/line-021.md). Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9, Petz4 Scottie/Siamese adult copies; no native-game validation. These are decoded renderer fields, not an independently validated game specification.
 
+**Incomplete paths:** these texture controls do not validate clothing, textured paint balls or textured Outline balls. Do not infer those features from MCP output; see [GAP-007 and its source](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp).
+
 Rows are interpreted as `art_path, mode, tile_width, tile_height`. Slot indices follow row order; ball/add-ball texture indices select them. Preserve effective inherited slots when overriding the section. The controlled experiments append a dedicated slot for a diagnostic marker rather than changing existing slot indices.
 
 | Field | Code-supported decoding and sampled controls |

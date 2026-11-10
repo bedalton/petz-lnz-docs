@@ -4,7 +4,11 @@ Updated: 2026-11-10
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request authorized a fifteen-minute continuation. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is to record the porting-agent limitations; the previous timed continuation was fifteen minutes. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+
+## Known incomplete features
+
+Clothing, textured paint balls and textured Outline balls are incomplete in the Petz4 renderer according to the porting agent, as relayed by the user. Do not infer these features from MCP output. [GAP-007](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp) preserves the quote, evidence level, version/build uncertainty and conditions for revisiting the restriction. Ordinary connector texture and flat outline-color tests do not establish support for these paths.
 
 ## Current container recovery
 

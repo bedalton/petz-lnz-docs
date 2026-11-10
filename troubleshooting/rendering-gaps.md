@@ -2,6 +2,24 @@
 
 A successful PNG is not a certificate of original-game correctness. Retain complete diagnostics and exact engine/input hashes for reproduction.
 
+## Known incomplete features: do not infer from MCP
+
+On 2026-11-10 the user relayed this answer from the Petz4 porting agent when asked whether the renderer was complete:
+
+> So a stock breed with no clothes should look almost entirely right. The visible gaps are clothing, textured paint balls and textured Outline balls
+
+This is a **source-reported limitation**, relayed by the user; the originating conversation, exact renderer build and independent native comparisons were not supplied. Record these features as incomplete:
+
+- Clothing.
+- Textured paint balls.
+- Textured Outline balls (the source's terminology).
+
+**Do not infer their game appearance, behavior or authoring rules from MCP output.** A successful render, missing effect, partial effect or pixel match cannot validate these features. Use independent game evidence or an independently validated implementation before making claims about them. Keep renderer-only observations explicitly scoped as such.
+
+The stock-breed assessment is also source-reported, not a project-wide fidelity guarantee. Existing ordinary ball/connector texture and flat outline-color experiments do not establish support for textured paint balls or textured Outline balls. This report concerns the Petz4 renderer; applicability to other versions and later fixes remains unverified. Keep the restriction in force until supported evidence documents completion.
+
+## Other evidence gaps
+
 | ID | Topic | Established observation | Missing evidence / next action |
 | --- | --- | --- | --- |
 | GAP-001 | Move anchoring | [MOVE-001](../experiments/move-001.md): fifth column rotates offsets; zero offsets are no-ops in tested frames | Community tutorial describes anchoring. Need native evidence or an independently traced algorithm before choosing a renderer repair. |
@@ -9,6 +27,7 @@ A successful PNG is not a certificate of original-game correctness. Retain compl
 | GAP-004 | Iris omission | [OMIT-001](../experiments/omit-001.md): omitting iris IDs leaves front/side images unchanged, while EYE-001 color edits affect them; [EYE-002](../experiments/eye-002.md) finds host-only equals host-plus-iris and differs from control | Current host-eye overlay path bypasses a separate iris visibility gate; native behavior and intended authoring practice require validation. |
 | GAP-005 | Relative-size morphs | [MORPH-002](../experiments/morph-002.md): grouped relative-size20 stays evaluated size0, full activation equals static relative-size0 instead of size20 | Need native evidence or independent algorithm provenance before deciding whether this implementation distinction warrants repair. |
 | GAP-006 | Retained texture orientation | [TEXTURE-001](../experiments/texture-001.md): Scottie sitting yaw0 changes121 pixels by frame3 with fixed geometry; texture-only retained state reproduces it, geometry-only does not | [TEXTURE-002](../experiments/texture-002.md) traces the repeated(0,-1) delta to quantized matrix self-product/rounding. Independent native arithmetic evidence is still needed before judging or repairing behavior. |
+| GAP-007 | Incomplete rendering features | User relays Petz4 porting-agent report above: clothing, textured paint balls and textured Outline balls are incomplete | Do not infer these features from MCP output; require independent evidence and documented completion before lifting this restriction. |
 | GAP-003 | Original-game fidelity | Repeated/controlled inputs produce measurable renderer results | No controlled native captures or independent geometry oracle validated by this research project yet. |
 
 When a feature is unresolved, document the limitation beside its recipe. Use other research topics while collecting evidence; repair confirmed renderer defects with a reproducer and regression tests. Do not make a speculative change solely to match an ambiguous tutorial.

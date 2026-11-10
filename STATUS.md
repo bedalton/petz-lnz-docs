@@ -125,3 +125,5 @@ Updated: 2026-11-10
 - Latest: [PAINT-009](experiments/paint-009.md),24 same-length reorder fixtures/120 draws: actual active angles equal;distinct test angles misattach by stale index and change23/24 views.
 
 - Latest: [PAINT-010](experiments/paint-010.md),exact opposing directions at age56 reject surface paint or center non-surface commands. 32 direct/8 MCP draws; all opposed/matched sampled RGBA pairs equal.
+
+- Paint matching continuation audited: [session](docs/session-2026-11-10-paint-matching.md),368 direct/44 MCP draws,412 PNGs,9 copies,21 originals,304 RGBA comparisons,42 prior PNG and24 state links verified. Local HTTP health passes.

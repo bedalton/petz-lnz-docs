@@ -372,3 +372,7 @@ Final reference review adds Goobe to the Paint Ballz scope and places native-sem
 ## Exact paint direction midpoint
 
 [PAINT-010](experiments/paint-010.md):four same-length axis-direction copies,ages55/56/57/100,32 direct/8 MCP views. Age56 exact opposite directions produce the internal zero-vector sentinel;surface commands absent,non-surface centered in both views. All16 opposed/matched RGBA pairs equal,so difference is command-level only. tools/paint_direction_midpoint.py --verify passes;private evidence scratch/research/paint-010. Originals/renderer unchanged,no native claim. Ten-minute continuation entering audit.
+
+## Ten-minute paint matching continuation audit
+
+[Session index](docs/session-2026-11-10-paint-matching.md) consolidates PAINT-008/009/010. Full unit replays and tools/check_paint_matching_session.py pass:368 direct draws,44 MCP records,412 PNGs,nine copies,21 original hash links,304 decoded RGBA comparisons,42 prior PNG and24 state links,62-source agreement. Seven sheets reviewed;four tool hashes and unit logs recorded in scratch/research/paint-matching-session-verification.json. HTTP discovery/capabilities and actual Fuzzkin baseline pass;no restart needed. Original files/renderer unchanged;unrelated istall-node untouched. Next: additional hosts/textured pets, controlled breed-version comparisons or native evidence. Midpoint command change has no sampled pixel signal. Authorization ends with this ten-minute continuation.

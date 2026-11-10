@@ -52,6 +52,7 @@ Updated: 2026-11-10
 - Latest: [LINE-013](experiments/line-013.md),30 numerical loads/sixteen MCP pairs: textured-head selection changes connector pixels, untextured-end and explicit fill match; reversed controls agree.
 - Latest: [LINE-014](experiments/line-014.md),72 synthetic rasters/120 sample assertions: texture-size rejection precedes fuzz RNG; periods do not wrap oversize connector windows.
 - Latest: [LINE-015](experiments/line-015.md),36 numerical loads/sixteen MCP pairs: long textured connector equals marker-only while explicit fill draws; parsed/block eligibility survives.
+- Latest: [LINE-016](experiments/line-016.md),60 numerical loads/32 MCP pairs: Petz3/5 sampled connector texture routing matches Petz4 block/texture records and PNGs.
 - Next: independent native texture evidence, other list conflicts/whiskers, broader style breeds/versions, evolving fuzzy scenes and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.

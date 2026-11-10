@@ -2,7 +2,7 @@
 
 This is a lower-bound topic inventory, not a complete LNZ specification. It combines six sampled adult breed/master resources with override sections already encountered in code/experiments. More stock breeds, young resources and community references may add topics.
 
-Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also samples Project Ball edits in Petz 3 and 5. No topic has native-game validation. Ball-label agreement across versions is asset evidence only.
+Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samples Project Ball edits and LINE-016 samples connector texture routing in Petz 3 and 5. No topic has native-game validation. Ball-label agreement across versions is asset evidence only.
 
 | Topic | Current evidence / remaining work |
 | --- | --- |
@@ -33,7 +33,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | Head Tilt Limits | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Key Balls | Master IDs inventoried; section replacement tested: [INHERIT-001](../experiments/inherit-001.md) |
 | Leg Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); short-row/default-thickness controls: [LINE-004](../experiments/line-004.md); fill/endpoint selection: [LINE-005](../experiments/line-005.md); edge modes/colors: [LINE-006](../experiments/line-006.md); fuzz bounds/repeats: [LINE-007](../experiments/line-007.md); shared RNG history: [LINE-008](../experiments/line-008.md); automatic edge mode: [LINE-009](../experiments/line-009.md); partial3–9-field rows: [LINE-010](../experiments/line-010.md); composed RNG histories: [LINE-011](../experiments/line-011.md); per-connector attribution: [LINE-012](../experiments/line-012.md); inherited textures: [LINE-013](../experiments/line-013.md); texture windows/limits: [LINE-014](../experiments/line-014.md); composed size rejection: [LINE-015](../experiments/line-015.md) |
+| Linez | Base-to-added connector and endpoint omissions: [LINE-001](../experiments/line-001.md); [fields](../format-reference/linez.md); endpoint widths: [LINE-002](../experiments/line-002.md); draw-order fallback/override: [LINE-003](../experiments/line-003.md); short-row/default-thickness controls: [LINE-004](../experiments/line-004.md); fill/endpoint selection: [LINE-005](../experiments/line-005.md); edge modes/colors: [LINE-006](../experiments/line-006.md); fuzz bounds/repeats: [LINE-007](../experiments/line-007.md); shared RNG history: [LINE-008](../experiments/line-008.md); automatic edge mode: [LINE-009](../experiments/line-009.md); partial3–9-field rows: [LINE-010](../experiments/line-010.md); composed RNG histories: [LINE-011](../experiments/line-011.md); per-connector attribution: [LINE-012](../experiments/line-012.md); inherited textures: [LINE-013](../experiments/line-013.md); texture windows/limits: [LINE-014](../experiments/line-014.md); composed size rejection: [LINE-015](../experiments/line-015.md); Petz3/5 texture routing: [LINE-016](../experiments/line-016.md) |
 | Little one | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Lnz Version | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Move | Tested reference/default/zero/repeated rows: [MOVE-001](../experiments/move-001.md); native anchoring unresolved |
@@ -55,7 +55,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 | --- | --- | --- | --- | --- | --- | --- |
 | Stock render smoke | Passed | Passed | Passed | Passed | Passed | Passed |
 | Stock label/key inventory | Sampled | Sampled | Sampled | Sampled | Sampled | Sampled |
-| Controlled edits | Projection only | Projection only | Sampled | Sampled | Projection only | Projection only |
+| Controlled edits | Projection/texture only | Projection/texture only | Sampled | Sampled | Projection/texture only | Projection/texture only |
 | Base omission sweep (two views) | Pending | Pending | Sampled | Sampled | Pending | Pending |
 | Complete per-ball visual map | Pending | Pending | Pending | Pending | Pending | Pending |
 | Native-game validation | Pending | Pending | Pending | Pending | Pending | Pending |
@@ -65,7 +65,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 also
 1. Seek native iris omission evidence after EYE-002; tongue-out validation deferred (user reports provided MCP animations lack it, VIS-002).
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Expand connectors, body areas and morph groups beyond MORPH-001 ordinary sizing.
-4. Another breed per species; broaden edited cross-version checks beyond PROJECT-003 projections.
+4. Another breed per species; broaden edited cross-version checks beyond PROJECT-003 projections and LINE-016 connector texture routing.
 5. Further shape/color/texture/marking sections, growth/variation and design examples.
 
 Generated by tools/coverage_index.py from derived inventory and explicit evidence links. Update the generator when promoting topic coverage.

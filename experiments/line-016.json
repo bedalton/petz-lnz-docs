@@ -1,0 +1,1816 @@
+{
+  "experiment": "LINE-016",
+  "backend": "local stdio MCP per game version plus asset-backed texture/block checks",
+  "baseline_manifest": "line-013.json",
+  "baseline_manifest_sha256": "4235744c2fc5f5a44bac747f97ffc455f048ee2f42a95ddce72653a4ca38657a",
+  "reports": [
+    {
+      "experiment": "LINE-016",
+      "game_version": "petz3",
+      "backend": "local stdio MCP plus asset-backed connector block checks",
+      "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+      "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+      "dependencies": {
+        "petz-renderer-mcp": "0.1.0",
+        "fastmcp": "4.1.6",
+        "pillow": "13.0.0"
+      },
+      "source_hashes": {
+        "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+        "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+        "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+        "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884"
+      },
+      "engine_hashes": {
+        "games/petz3/Resource/Catz 3 Rez.dll": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+        "games/petz3/Resource/Dogz 3 Rez.dll": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+        "games/petz3/Resource/Petz 3 Rez.dll": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb"
+      },
+      "synthetic": [],
+      "cases": [
+        {
+          "species": "Dogz",
+          "source_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+          "head_id": 52,
+          "marker_id": 90,
+          "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+          "line_rows": {
+            "head_texture": "52, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+            "end_plain": "52, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+            "explicit_plain": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+            "reverse_head": "90, 52, 0, -2, 244, 244, 100, 100, 0, 1",
+            "reverse_end": "90, 52, 0, -1, 244, 244, 100, 100, 0, 1"
+          },
+          "paths": {
+            "head_texture": "Dogz-head_texture.dog",
+            "end_plain": "Dogz-end_plain.dog",
+            "explicit_plain": "Dogz-explicit_plain.dog",
+            "reverse_head": "Dogz-reverse_head.dog",
+            "reverse_end": "Dogz-reverse_end.dog"
+          },
+          "input_hashes": {
+            "head_texture": "42da5a926cb54ef3a68466b085452ce4a7dc3ad835550225d4a5816aaf4a7c2d",
+            "end_plain": "81943c74ac572f0799cd5847d4803321b7cafb45efaea4054d85be5ec52dc6ee",
+            "explicit_plain": "641f0ef5afbbc9d0106f8ccff57e6d475eb707518df927c45f9b56fd657a9cec",
+            "reverse_head": "19918f7e69ab88fa60df856fce81f5cbf1fa23cd26bc81dd686afc3e4a765be2",
+            "reverse_end": "198c6382a05cd1ab6b3117c901d537d18f7ee78927e26b8ed83e72e32e92a423"
+          },
+          "geometry": [
+            {
+              "pose": "standing",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "standing",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "sitting",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "lying",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            }
+          ],
+          "texture_and_block_checks_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "source_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+          "head_id": 24,
+          "marker_id": 90,
+          "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+          "line_rows": {
+            "head_texture": "24, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+            "end_plain": "24, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+            "explicit_plain": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+            "reverse_head": "90, 24, 0, -2, 244, 244, 100, 100, 0, 1",
+            "reverse_end": "90, 24, 0, -1, 244, 244, 100, 100, 0, 1"
+          },
+          "paths": {
+            "head_texture": "Catz-head_texture.cat",
+            "end_plain": "Catz-end_plain.cat",
+            "explicit_plain": "Catz-explicit_plain.cat",
+            "reverse_head": "Catz-reverse_head.cat",
+            "reverse_end": "Catz-reverse_end.cat"
+          },
+          "input_hashes": {
+            "head_texture": "a9281abcce8d20176408b57aaa0618519e0ee555809f8aae6d05d71808b448ca",
+            "end_plain": "7183e5a5aac9262d1b9651c8dc24e2f2e4eaa5ed9010ff439af34d91a1708d82",
+            "explicit_plain": "69408d4f1fe0ecf593c5c84a922d38aeac9cd2fbe880d0ff1ec8ecc89ad493e8",
+            "reverse_head": "08b8ef51156717e72b031c12a24808684a2d4fdd9e30f2da4b8b8a1f98364fad",
+            "reverse_end": "36ff74887a4dff4f3a0efa78e1413d372f24ca57c768d1265887822e4e2734df"
+          },
+          "geometry": [
+            {
+              "pose": "standing",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "standing",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "sitting",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "lying",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            }
+          ],
+          "texture_and_block_checks_match_petz4": true
+        }
+      ],
+      "comparisons": [
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-head_texture.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "476e201e5ec06bb68d1680e3c168cc418ff5a4fa20b457e9e11277ebe5364842",
+          "cells_equal": false,
+          "cell_hashes": [
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-head_texture.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "25b7c87631261965013e02ece9f3757a4b5ef6c0789b85f434a682a313dfb674",
+          "cells_equal": false,
+          "cell_hashes": [
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-end_plain.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "a6647bd39f58567f4c83707a87a837ec318585788ae50e25002a839d8da86310",
+          "cells_equal": true,
+          "cell_hashes": [
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-end_plain.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "cb1814fb457ef2428b47e924f0d978a7a2aefc51058db8321a753573bd42f98b",
+          "cells_equal": true,
+          "cell_hashes": [
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_head.dog",
+            "after_path": "Dogz-head_texture.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "49450ac98a1f28787f28e2e7102291caefb80ba867d75255003d698bc47e0d80",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a",
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_head.dog",
+            "after_path": "Dogz-head_texture.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "39ca4bd45f15fe5a5f13812740edee52a2be746e5fb62b8bc0d4609ef7773454",
+          "cells_equal": true,
+          "cell_hashes": [
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9",
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_end.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "a6647bd39f58567f4c83707a87a837ec318585788ae50e25002a839d8da86310",
+          "cells_equal": true,
+          "cell_hashes": [
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_end.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "cb1814fb457ef2428b47e924f0d978a7a2aefc51058db8321a753573bd42f98b",
+          "cells_equal": true,
+          "cell_hashes": [
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-head_texture.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "956928213b264c049963602addc1191ab585a95c7505fa3ee3a7fafe979057f2",
+          "cells_equal": false,
+          "cell_hashes": [
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-head_texture.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "dd01cfd68d49f651953ab3ab520830282c5ae59398ded5bfc52e933d5ca4fa7a",
+          "cells_equal": false,
+          "cell_hashes": [
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-end_plain.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "fd61fca93894c0b4448bef41f6cad777441ec61cfa75b3800855d7b34fe8a16f",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-end_plain.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "61cef16a0e984799133efe60524f39d48476f215e60049c1deab242fb985caf4",
+          "cells_equal": true,
+          "cell_hashes": [
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_head.cat",
+            "after_path": "Catz-head_texture.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "5aded7e8e8f0a63cd91ee5f9ab61f1d31750e6003e97483fe693cab0f59599bc",
+          "cells_equal": true,
+          "cell_hashes": [
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370",
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_head.cat",
+            "after_path": "Catz-head_texture.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "67bc9c90bd51c2fb4e92a0eb76f003b89281716418b733b7b04d9067f46e521a",
+          "cells_equal": true,
+          "cell_hashes": [
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403",
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_end.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "fd61fca93894c0b4448bef41f6cad777441ec61cfa75b3800855d7b34fe8a16f",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_end.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "61cef16a0e984799133efe60524f39d48476f215e60049c1deab242fb985caf4",
+          "cells_equal": true,
+          "cell_hashes": [
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        }
+      ],
+      "cross_version_matches": [
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        }
+      ]
+    },
+    {
+      "experiment": "LINE-016",
+      "game_version": "petz5",
+      "backend": "local stdio MCP plus asset-backed connector block checks",
+      "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+      "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+      "dependencies": {
+        "petz-renderer-mcp": "0.1.0",
+        "fastmcp": "4.1.6",
+        "pillow": "13.0.0"
+      },
+      "source_hashes": {
+        "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+        "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+        "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+        "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884"
+      },
+      "engine_hashes": {
+        "games/petz5/Resource/Catz 5 Rez.dll": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+        "games/petz5/Resource/Dogz 5 Rez.dll": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+        "games/petz5/Resource/Petz 5 Rez.dll": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff"
+      },
+      "synthetic": [],
+      "cases": [
+        {
+          "species": "Dogz",
+          "source_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+          "head_id": 52,
+          "marker_id": 90,
+          "marker_row": "52, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+          "line_rows": {
+            "head_texture": "52, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+            "end_plain": "52, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+            "explicit_plain": "52, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+            "reverse_head": "90, 52, 0, -2, 244, 244, 100, 100, 0, 1",
+            "reverse_end": "90, 52, 0, -1, 244, 244, 100, 100, 0, 1"
+          },
+          "paths": {
+            "head_texture": "Dogz-head_texture.dog",
+            "end_plain": "Dogz-end_plain.dog",
+            "explicit_plain": "Dogz-explicit_plain.dog",
+            "reverse_head": "Dogz-reverse_head.dog",
+            "reverse_end": "Dogz-reverse_end.dog"
+          },
+          "input_hashes": {
+            "head_texture": "342d875dc2c8960be427b02c703381eac3e169c06925f5acfc2564f874e209c7",
+            "end_plain": "bf27f59c413565a2c810e29c4d7e80c683327293002979cfd3cd526e93cce7f7",
+            "explicit_plain": "10e77c04bbe9b70dfa6d83afb348bd01a92929ddaa96b7e17f10dcfcb4153ca5",
+            "reverse_head": "6433faea36f9927f3c3d03acbf0fc386b99f5641e319b17ff57d9a6f9e8fad93",
+            "reverse_end": "bf3c3d20351b51ba6760c2706a00f13bc4fca14076b8e14d695e383b552c0a50"
+          },
+          "geometry": [
+            {
+              "pose": "standing",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "standing",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "sitting",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "lying",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": "d6c153b4ed843838c1653ccc6ac5dd265957f2cc30aaafc447c72bf6a4b7694f"
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 1,
+              "texture_pixels_sha256": "2f7560644d482ae1e2805efb3ee33a5f4f30e5b212292aaed00459a96a64c208",
+              "paint_pixels_sha256": null
+            }
+          ],
+          "texture_and_block_checks_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "source_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+          "head_id": 24,
+          "marker_id": 90,
+          "marker_row": "24, -35, -80, 0, 125, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+          "line_rows": {
+            "head_texture": "24, 90, 0, -1, 244, 244, 100, 100, 0, 1",
+            "end_plain": "24, 90, 0, -2, 244, 244, 100, 100, 0, 1",
+            "explicit_plain": "24, 90, 0, 125, 244, 244, 100, 100, 0, 1",
+            "reverse_head": "90, 24, 0, -2, 244, 244, 100, 100, 0, 1",
+            "reverse_end": "90, 24, 0, -1, 244, 244, 100, 100, 0, 1"
+          },
+          "paths": {
+            "head_texture": "Catz-head_texture.cat",
+            "end_plain": "Catz-end_plain.cat",
+            "explicit_plain": "Catz-explicit_plain.cat",
+            "reverse_head": "Catz-reverse_head.cat",
+            "reverse_end": "Catz-reverse_end.cat"
+          },
+          "input_hashes": {
+            "head_texture": "9949cc12db85d6678fbd9260e498b12060a9e5d9ae3373f8eb6866a82e42db2d",
+            "end_plain": "7e501b7410e61dfe60da870cfc2a7598f352fb3fe20232d108d8bce28059fdea",
+            "explicit_plain": "e8f6e7c9e81242b9559d9e3732e5fe6745ee2c1135c6f6d18f72d7ad7bbd2edb",
+            "reverse_head": "e8fdb8f1d47708bc3abac68baf022e10146446022138a5c3cfe0ca44703ae508",
+            "reverse_end": "e74dcaef2a30eee30a77b8a9a2ec8f569b35e4957c80a1a576a0cb07c8fc14f0"
+          },
+          "geometry": [
+            {
+              "pose": "standing",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "standing",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "standing",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "sitting",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "sitting",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "head_texture",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "lying",
+              "variant": "end_plain",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "explicit_plain",
+              "line_color": 125,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_head",
+              "line_color": -2,
+              "block_color": 120,
+              "paint_present": true,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": "ec8e2ade20ae1559766bf55c37e164db9d563b8cd2e567cebda8ea258bdf9174"
+            },
+            {
+              "pose": "lying",
+              "variant": "reverse_end",
+              "line_color": -1,
+              "block_color": 120,
+              "paint_present": false,
+              "texture_index": 0,
+              "texture_pixels_sha256": "d956e5b01e1290b2523675de2a313f0f2ca7d7f449d731ee60d2370e0370ae0d",
+              "paint_pixels_sha256": null
+            }
+          ],
+          "texture_and_block_checks_match_petz4": true
+        }
+      ],
+      "comparisons": [
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-head_texture.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "476e201e5ec06bb68d1680e3c168cc418ff5a4fa20b457e9e11277ebe5364842",
+          "cells_equal": false,
+          "cell_hashes": [
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-head_texture.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "25b7c87631261965013e02ece9f3757a4b5ef6c0789b85f434a682a313dfb674",
+          "cells_equal": false,
+          "cell_hashes": [
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-end_plain.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "a6647bd39f58567f4c83707a87a837ec318585788ae50e25002a839d8da86310",
+          "cells_equal": true,
+          "cell_hashes": [
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-end_plain.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "cb1814fb457ef2428b47e924f0d978a7a2aefc51058db8321a753573bd42f98b",
+          "cells_equal": true,
+          "cell_hashes": [
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_head.dog",
+            "after_path": "Dogz-head_texture.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "49450ac98a1f28787f28e2e7102291caefb80ba867d75255003d698bc47e0d80",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a",
+            "ea1e60b35d43275e977f2ec5e5f2b82f5aad33a914a4c4ccb520e4e0b0d9a39a"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_head.dog",
+            "after_path": "Dogz-head_texture.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "39ca4bd45f15fe5a5f13812740edee52a2be746e5fb62b8bc0d4609ef7773454",
+          "cells_equal": true,
+          "cell_hashes": [
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9",
+            "a8d63c63569b964b012c8b090575d1cc33bfde2208fc5ea69c2c0b61d287dbc9"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_end.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "a6647bd39f58567f4c83707a87a837ec318585788ae50e25002a839d8da86310",
+          "cells_equal": true,
+          "cell_hashes": [
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60",
+            "1ae4f3b436d1759194c76e79065b2fe9568c94ab35afdaaf47b0c358e9a31a60"
+          ]
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Dogz-reverse_end.dog",
+            "after_path": "Dogz-explicit_plain.dog",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "cb1814fb457ef2428b47e924f0d978a7a2aefc51058db8321a753573bd42f98b",
+          "cells_equal": true,
+          "cell_hashes": [
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703",
+            "8a11df88622f5cb7e5b50153934f9f4f3b3f447b3903721e8180fb219bc76703"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-head_texture.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "956928213b264c049963602addc1191ab585a95c7505fa3ee3a7fafe979057f2",
+          "cells_equal": false,
+          "cell_hashes": [
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-head_texture.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "dd01cfd68d49f651953ab3ab520830282c5ae59398ded5bfc52e933d5ca4fa7a",
+          "cells_equal": false,
+          "cell_hashes": [
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-end_plain.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "fd61fca93894c0b4448bef41f6cad777441ec61cfa75b3800855d7b34fe8a16f",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-end_plain.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "61cef16a0e984799133efe60524f39d48476f215e60049c1deab242fb985caf4",
+          "cells_equal": true,
+          "cell_hashes": [
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_head.cat",
+            "after_path": "Catz-head_texture.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "5aded7e8e8f0a63cd91ee5f9ab61f1d31750e6003e97483fe693cab0f59599bc",
+          "cells_equal": true,
+          "cell_hashes": [
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370",
+            "882e7fb5b43d20bbd00dbdb976099f98aaeb83c2bc8b59802f7879e825893370"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_head.cat",
+            "after_path": "Catz-head_texture.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "67bc9c90bd51c2fb4e92a0eb76f003b89281716418b733b7b04d9067f46e521a",
+          "cells_equal": true,
+          "cell_hashes": [
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403",
+            "51e23344b6b4a6c50cdcb3016af5c5cb92b5c350da6ee130b82a9c53094d1403"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_end.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 0
+          },
+          "png_sha256": "fd61fca93894c0b4448bef41f6cad777441ec61cfa75b3800855d7b34fe8a16f",
+          "cells_equal": true,
+          "cell_hashes": [
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff",
+            "ce51679a90a19ffc8c9a1e8f7fe858c34adb083a50ec1170bb13d50cf234b2ff"
+          ]
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "controls": {
+            "before_path": "Catz-reverse_end.cat",
+            "after_path": "Catz-explicit_plain.cat",
+            "pose": "standing",
+            "seed": 0,
+            "age": 100,
+            "fatness": 50,
+            "yaw_degrees": 90
+          },
+          "png_sha256": "61cef16a0e984799133efe60524f39d48476f215e60049c1deab242fb985caf4",
+          "cells_equal": true,
+          "cell_hashes": [
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790",
+            "cf825bfb46ea870bc4c9b102b8be056d177fcd7299745f0fb6fb1593c1ff8790"
+          ]
+        }
+      ],
+      "cross_version_matches": [
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Dogz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "head_texture",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "end_plain",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_head",
+            "head_texture"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 0,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        },
+        {
+          "species": "Catz",
+          "pair": [
+            "reverse_end",
+            "explicit_plain"
+          ],
+          "yaw_degrees": 90,
+          "png_matches_petz4": true,
+          "cells_match_petz4": true
+        }
+      ]
+    }
+  ]
+}

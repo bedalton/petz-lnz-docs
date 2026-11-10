@@ -134,3 +134,7 @@ tools/research_common.py checks unchanged resource metadata, unrelated payloads 
 ## Latest static texture research
 
 [TEXTURE-001](experiments/texture-001.md): twelve stock pose/view fixtures,36 sheets/216 RGBA cells, twelve byte-identical MCP first frames, three reviewed sheets. Scottie sitting yaw0 changes121 pixels on frame3,131 on frame8, without morphs. Third-frame texture-only retained state exactly reproduces full-state pixels; geometry-only/fresh match frame1. Ball42 texture angles drift by(0,-1) each repeat; numerical origin/native semantics pending GAP-006. Six installed source/four engine hashes verified. tools/static_texture_probe.py refuses overwrite; scratch/research/texture-001 private evidence, two-frame initial run archived. Next: Q8 orientation arithmetic trace/independent native evidence; no speculative renderer fix.
+
+## Latest texture arithmetic trace
+
+[TEXTURE-002](experiments/texture-002.md): seven exact replayed frame2–8 states for Scottie sitting ball42. Constant Q8 matrix self-product has last row(-2,-4,255), giving rounded(0,-1) angle delta. Identity self-product control stays identity. Sampler write-back not needed to match this specific trace. Two installed sources/four engines/dependencies verified. tools/texture_arithmetic_probe.py refuses overwrite, requires TEXTURE-001 full private snapshots. No new pixels/MCP or renderer fix. GAP-006 now has numerical origin but still lacks independent native evidence.

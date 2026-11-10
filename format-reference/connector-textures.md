@@ -20,4 +20,6 @@ Direct signed/shaded TexturePaint controls [LINE-020](../experiments/line-020.md
 
 [LINE-021](../experiments/line-021.md) appends a dedicated marker texture slot in Petz4 Scottie/Siamese while preserving all stock slots. Matched no-line controls confirm32×256,256×32 and64×64 textures suppress the diagnostic connection in standing front/side views;128×128 and256×256 draw. Explicit125 draws at every dimension. Three-pose isolated rasters agree. This samples authored tile dimensions without establishing an exact composed threshold.
 
-Remaining: texture-list mode/remap controls, retained evolving scenes and independent native evidence.
+[TEXTURE-003](../experiments/texture-003.md) tests appended slot modes and connector-only remapping in the same two Petz4 breeds. Modes-1/0 and2/10/150 form equal pairs;0/1/2 produce differing composed pixels. All sampled modes draw. See [Texture List fields](texture-list.md) for decoding and limits.
+
+Remaining: retained evolving scenes, custom art and independent native evidence.

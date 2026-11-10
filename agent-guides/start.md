@@ -16,6 +16,7 @@ Read this page first for editing tasks; read STATUS.md and HANDOFF.md when conti
 | An added detail is dormant despite visible=true | [Add groups](../format-reference/add-groups.md) |
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |
 | A ball edit appears invisible | [Visibility diagnosis](../visual-editing/visibility.md) and [Omissions](../format-reference/omissions.md) |
+| Author Texture List slots or modes | [Texture List](../format-reference/texture-list.md) |
 | Texture a connector or diagnose a long invisible line | [Connector textures](../format-reference/connector-textures.md) |
 | Fuzzy connector pixels change with prior draws | [Connector randomness](../format-reference/connector-state.md) |
 | Texture changes between repeated static frames | [Retained texture state](../format-reference/texture-state.md) |

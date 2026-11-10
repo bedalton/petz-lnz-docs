@@ -2,9 +2,11 @@
 
 Scope: Petz 4 Scottie/Siamese renderer paths. This is a focused state reference, not a complete Texture List authoring specification. Native-game behavior remains unvalidated.
 
+**Updated build:** [UPDATE-002](../experiments/update-002.md) confirms the selected history effects and corrects their pixel counts. FrameState now also retains per-paint texture angles; host-orientation-only resets are not complete texture-state resets.
+
 A default-state MCP still starts with fresh state. Repeated direct frames can retain geometry ordering, shading and per-ball texture orientations independently. In explicit renderer code, persist the FrameState returned by `draw_prepared_frame`, including texture sampler write-back; retaining only prepared state omits that write-back.
 
-[TEXTURE-001](../experiments/texture-001.md) holds the animation frame and geometry fixed, resets line randomness/step, and separates geometry-only from texture-only retained state. Scottie sitting yaw0 first changes pixels on frame3; texture-only state reproduces all121 changed pixels while geometry-only/fresh state matches frame1. Other eleven pose/view fixtures match for eight frames. Do not infer native drift or universal stability from these samples.
+[TEXTURE-001](../experiments/texture-001.md) holds the animation frame and geometry fixed, resets line randomness/step, and separates geometry-only from texture-only retained state. Scottie sitting yaw0 first changes pixels on frame3; the historical host-orientation-only state reproduces121 changed pixels while geometry-only/fresh matches frame1. On6c1d883,the focused Scottie sitting/front recheck reproduces128 changed pixels at frame3 and141 at frame8;paint-angle-only stays fresh,while host-only and combined texture state match full. Other eleven pose/view fixtures match for eight frames. Do not infer native drift or universal stability from these samples.
 
 [TEXTURE-002](../experiments/texture-002.md) replays the affected ball42 orientation: its constant quantized matrix has a nonidentity self-product, producing rounded delta(0,-1) each repeat. All seven saved repeat states match the arithmetic trace. GAP-006 remains open pending independent native evidence.
 

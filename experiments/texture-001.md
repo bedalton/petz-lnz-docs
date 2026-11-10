@@ -1,5 +1,7 @@
 # TEXTURE-001: repeated static frames and texture state
 
+**Updated renderer review:** [UPDATE-002](update-002.md) classifies confirmed relationships,corrected counts and state-schema changes on6c1d883. Values below remain historical unless explicitly rechecked there.
+
 Date: 2026-11-10. Petz 4 Scottie/Siamese, renderer-observed only. No original-game validation or renderer modifications.
 
 Run `scratch/petz-local-venv/bin/python tools/static_texture_probe.py`; refuses existing output. [Manifest](texture-001.json) records original hashes, twelve pose/view fixtures, two reset-control sheets and an eight-frame sequence per fixture, cell/PNG/indexed hashes, texture orientation traces, dependencies and six installed source hashes. The public manifest keeps orientation-state hashes and changed angles; full orientation snapshots remain in the private report. Private images/responses: scratch/research/texture-001. The initial run with two-frame controls is preserved at scratch/research/texture-001-two-frame-controls; the final run adds third-frame isolation. Four engine hashes match RESTORE-002; installed sources match checkout revision 9d72d7afd5f7460ef18133c6179caaf8055082d9. Original game files remain unchanged and are only read.

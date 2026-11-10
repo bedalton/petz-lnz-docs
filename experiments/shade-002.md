@@ -1,5 +1,7 @@
 # SHADE-002: retained shading after returning to a pose
 
+**Updated renderer review:** [UPDATE-002](update-002.md) classifies confirmed relationships,corrected counts and state-schema changes on6c1d883. Values below remain historical unless explicitly rechecked there.
+
 Date: 2026-11-10. Direct renderer preparations retain **only ShadeState**, with local stdio MCP fresh baselines. Petz4 Scottie/Siamese adult copies from [SHADE-001](shade-001.md), explicit slopes0 and100. No native-game or MCP-animation claim. [Manifest](shade-002.json). Reproducer `scratch/petz-local-venv/bin/python tools/shade_history_probe.py` refuses overwrite; verifier `scratch/petz-local-venv/bin/python tools/check_shade_history.py`. Private evidence scratch/research/shade-002; audit scratch/research/shade-002-verification.json. Renderer unchanged at9d72d7afd5f7460ef18133c6179caaf8055082d9.
 
 Twenty-four fixtures cover two species ×two slopes ×three poses ×yaw0/90 degrees. Each starts fresh, then prepares four further frames ending at the original controls. Histories: repeat; yaw offsets2,4,2,0; yaw offsets16,32,16,0; and head rotations16,32,16,0 (engine turns/256). Named animation frame, seed0, age100 and fatness50 stay fixed. Each preparation receives `FrameState(geometry=GeometryState(shade=prior_shade))`: ordering and texture orientation histories reset. Intermediate frames are prepared without drawing. Final draws use fresh line RNG seed1, raster seed1/step0 and shared fresh bounds. This isolates ShadeState, rather than simulating ordinary full-state animation.

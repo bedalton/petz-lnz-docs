@@ -1,0 +1,143 @@
+{
+  "experiment": "UPDATE-002-static",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "report_sha256": "80b055e80d372c4bfe19498452145badea0a8232856eccb143a8934db1869814",
+  "verified": {
+    "frames": 8,
+    "state_resets": 6,
+    "mcp_baselines": 1
+  },
+  "trace": [
+    {
+      "frame": 1,
+      "png": "frame1.png",
+      "png_sha256": "da3788b29161e30030280ca75fb29be847e89d2e65dbeb0e9781d160c5c692f6",
+      "indexed_sha256": "2cb4419ccdcfd290071d79ebcd2e807afa06622d3ba3853f192d7042be6f7ef0",
+      "changed_from_first": 0,
+      "ball42_angles": [
+        -5,
+        16
+      ]
+    },
+    {
+      "frame": 2,
+      "png": "frame2.png",
+      "png_sha256": "da3788b29161e30030280ca75fb29be847e89d2e65dbeb0e9781d160c5c692f6",
+      "indexed_sha256": "2cb4419ccdcfd290071d79ebcd2e807afa06622d3ba3853f192d7042be6f7ef0",
+      "changed_from_first": 0,
+      "ball42_angles": [
+        -5,
+        15
+      ]
+    },
+    {
+      "frame": 3,
+      "png": "frame3.png",
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128,
+      "ball42_angles": [
+        -5,
+        14
+      ]
+    },
+    {
+      "frame": 4,
+      "png": "frame4.png",
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128,
+      "ball42_angles": [
+        -5,
+        13
+      ]
+    },
+    {
+      "frame": 5,
+      "png": "frame5.png",
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128,
+      "ball42_angles": [
+        -5,
+        12
+      ]
+    },
+    {
+      "frame": 6,
+      "png": "frame6.png",
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128,
+      "ball42_angles": [
+        -5,
+        11
+      ]
+    },
+    {
+      "frame": 7,
+      "png": "frame7.png",
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128,
+      "ball42_angles": [
+        -5,
+        10
+      ]
+    },
+    {
+      "frame": 8,
+      "png": "frame8.png",
+      "png_sha256": "489b40c0bd8d7f04d7cad7f87e929add8b083754fb09388993b314e004dc9bac",
+      "indexed_sha256": "bfc63a17f1f321c885963d5744bbdabdb095880ac76790de1b10631877db50a2",
+      "changed_from_first": 141,
+      "ball42_angles": [
+        -5,
+        9
+      ]
+    }
+  ],
+  "third_resets": {
+    "full": {
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128
+    },
+    "geometry_only": {
+      "png_sha256": "da3788b29161e30030280ca75fb29be847e89d2e65dbeb0e9781d160c5c692f6",
+      "indexed_sha256": "2cb4419ccdcfd290071d79ebcd2e807afa06622d3ba3853f192d7042be6f7ef0",
+      "changed_from_first": 0
+    },
+    "host_texture_only": {
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128
+    },
+    "paint_angles_only": {
+      "png_sha256": "da3788b29161e30030280ca75fb29be847e89d2e65dbeb0e9781d160c5c692f6",
+      "indexed_sha256": "2cb4419ccdcfd290071d79ebcd2e807afa06622d3ba3853f192d7042be6f7ef0",
+      "changed_from_first": 0
+    },
+    "all_texture_only": {
+      "png_sha256": "f9fc42283b2cb065031b1e3b9164d560d81adb892f0ffaeca17a6b3395a8b66f",
+      "indexed_sha256": "e264ad6b1d2a160b74e885173ece3f92682b7fa72f5eac1fd8e09e5e3f1c4daa",
+      "changed_from_first": 128
+    },
+    "fresh": {
+      "png_sha256": "da3788b29161e30030280ca75fb29be847e89d2e65dbeb0e9781d160c5c692f6",
+      "indexed_sha256": "2cb4419ccdcfd290071d79ebcd2e807afa06622d3ba3853f192d7042be6f7ef0",
+      "changed_from_first": 0
+    }
+  },
+  "controls": {
+    "pose": "sitting",
+    "yaw_degrees": 0,
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "line_rng_seed": 1,
+    "raster_seed": 1,
+    "step": 0
+  },
+  "scope": "Scottie sitting/front only; no native-game evidence"
+}

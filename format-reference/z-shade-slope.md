@@ -1,5 +1,7 @@
 # Z Shade Slope in the renderer
 
+[UPDATE-002](../experiments/update-002.md) confirms slope relationships and selected shade-history/omission outcomes on6c1d883,while correcting Dogz numerical snapshots and pixel counts affected by added-ball projection.
+
 Evidence: [SHADE-001](../experiments/shade-001.md) and [SHADE-002](../experiments/shade-002.md), Petz4 adult Scottie/Siamese and synthetic arithmetic. Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9; no native-game validation.
 
 `[Z Shade Slope]` takes a scalar integer. A standalone absent/empty/invalid value defaults to0, but absent leaf sections inherit: both sampled breed/master combinations resolve100. An explicit empty section instead resolves0.

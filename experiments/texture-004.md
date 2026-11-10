@@ -1,5 +1,7 @@
 # TEXTURE-004: returning to the same pose after motion
 
+**Updated renderer review:** [UPDATE-002](update-002.md) classifies confirmed relationships,corrected counts and state-schema changes on6c1d883. Values below remain historical unless explicitly rechecked there.
+
 Date: 2026-11-10. Explicit retained-state renderer compositions, with local stdio MCP fresh-baseline checks only. Petz4 Scottie/Siamese adult seed0 copies from [LINE-021](line-021.md), appended128×128 marker texture. No native-game validation or MCP animation claim. [Manifest](texture-004.json). Reproducer `scratch/petz-local-venv/bin/python tools/texture_motion_history.py` refuses overwrite; verifier `scratch/petz-local-venv/bin/python tools/check_texture_motion_history.py`. Private evidence scratch/research/texture-004 and audit scratch/research/texture-004-verification.json. Renderer unchanged at9d72d7afd5f7460ef18133c6179caaf8055082d9.
 
 Twelve fixtures (2 species ×3 named poses ×yaw0/90) start with a fresh preparation and draw. Four subsequent draws retain the returned FrameState. Each history ends at the exact initial controls: four repeats; yaw offsets16,32,16,0; head rotations16,32,16,0; or tilt8,16,8,0. All offsets are engine turn/256 units. Animation frame, appearance/topology, age100 and fatness50 stay fixed. Each draw uses fresh line RNG seed1, raster seed1/step0; this does not simulate continuously retained fuzz randomness.

@@ -1,5 +1,7 @@
 # SHADE-003: omission can change shading elsewhere
 
+**Updated renderer review:** [UPDATE-002](update-002.md) classifies confirmed relationships,corrected counts and state-schema changes on6c1d883. Values below remain historical unless explicitly rechecked there.
+
 **Renderer update review:** [UPDATE-001](update-001.md#completed-historical-mcp-replay) confirms this unit's replayed comparison relationships on6c1d883. The measurements below remain the historical9d72d7a record; exact pixels and numerical geometry are revalidated only where explicitly listed in the review.
 
 Date: 2026-11-10. Petz4 adult Scottie/Siamese, slope100, seed0, age100, fatness50. Direct assembly/preparation with local stdio MCP comparisons. Renderer9d72d7afd5f7460ef18133c6179caaf8055082d9 unchanged. Renderer-observed/code-supported evidence only, no native-game validation. [Manifest](shade-003.json). Reproducer `scratch/petz-local-venv/bin/python tools/shade_omission_probe.py` refuses overwrite; verifier `scratch/petz-local-venv/bin/python tools/check_shade_omissions.py`. Private evidence scratch/research/shade-003; audit scratch/research/shade-003-verification.json.

@@ -8,6 +8,13 @@ from research_common import ROOT,SHA,adult
 
 def main():
     package=Path(petz_renderer.__file__).parent;copies=set();pngs=cells=loads=raws=samples=0
+    audit=json.loads((ROOT/'scratch/research/line-texture-session-source-audit.json').read_text())
+    assert audit['source_tree_sha256']=='e1cd30b0543fcd99d18ed9252a7c44de2a31a4decbcd482266df6af755681374'
+    assert SHA(json.dumps(audit['source_hashes'],sort_keys=True).encode())==audit['source_tree_sha256']
+    assert len(audit['source_hashes'])==62
+    for name,h in audit['source_hashes'].items():
+        assert SHA((package/name).read_bytes())==h
+        assert SHA((ROOT/'petz-renderer-mcp/src/petz_renderer'/name).read_bytes())==h
     for experiment in ('line-013','line-014','line-015','line-016'):
         aggregate=json.loads((ROOT/'experiments'/f'{experiment}.json').read_text());root=ROOT/'scratch/research'/experiment
         assert aggregate==json.loads((root/'report.json').read_text())

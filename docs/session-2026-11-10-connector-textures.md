@@ -26,3 +26,5 @@ See [focused texture reference](../format-reference/connector-textures.md), [fie
 Final local HTTP MCP discovery/get_capabilities pass; private health record scratch/research/line-texture-session-mcp-health.json. Actual experiment comparisons used version-specific local stdio processes.
 
 Final provenance audit: renderer checkout is clean, all session commits use the required author/committer without co-author trailers, and the only unrelated worktree item remains untracked istall-node. Handoff resume guidance now reflects the current timed request rather than an older context-based continuation note.
+
+Complete source audit: all62 installed Python sources match checkout9d72d7afd5f7460ef18133c6179caaf8055082d9. Sorted source-hash map digest `e1cd30b0543fcd99d18ed9252a7c44de2a31a4decbcd482266df6af755681374`; private manifest scratch/research/line-texture-session-source-audit.json. The session verifier now checks this full map as well as per-experiment source records.

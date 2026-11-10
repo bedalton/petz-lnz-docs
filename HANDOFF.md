@@ -368,3 +368,7 @@ Final reference review adds Goobe to the Paint Ballz scope and places native-sem
 ## Same-length paint state reordering
 
 [PAINT-009](experiments/paint-009.md):24 Fuzzkin histories/120 direct draws. Same-host real angles equal,so remap changes nothing. Distinct diagnostic angle pairs isolate stale index binding;entries16/18 misattach in24/24 and pixels differ23/24 while geometry/ordering/non-angle commands stay fixed. Reorder alone also changes23 actual views. All24 PAINT-001 state and PNG links verify. tools/paint_state_reordering.py --verify passes;no new MCP,original/renderer edits or native claims. Ten-minute continuation ongoing.
+
+## Exact paint direction midpoint
+
+[PAINT-010](experiments/paint-010.md):four same-length axis-direction copies,ages55/56/57/100,32 direct/8 MCP views. Age56 exact opposite directions produce the internal zero-vector sentinel;surface commands absent,non-surface centered in both views. All16 opposed/matched RGBA pairs equal,so difference is command-level only. tools/paint_direction_midpoint.py --verify passes;private evidence scratch/research/paint-010. Originals/renderer unchanged,no native claim. Ten-minute continuation entering audit.

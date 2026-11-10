@@ -28,4 +28,6 @@ For direct retained renders, persist the complete FrameState returned after draw
 
 [PAINT-008](../experiments/paint-008.md) separates adult and young cache edits. In the sampled Fuzzkin host, adult supplies color at every tested age. Equal counts pair by ordinal within that host and blend size and direction; a count mismatch retains its adult rows. Reordering young rows changes direction pairing below age 100.
 
+[PAINT-010](../experiments/paint-010.md) checks exactly opposing axis directions at the 50% young weight (age 56). Cancellation skips surface paint and centers the non-surface command. The sampled images remain equal; command changes need not be visible.
+
 Uncertainty:the installed diagnostic explicitly reports nonzero paint group controls as unsupported; UPDATE-001's resolved-colour remap checks do not establish end-to-end saved-group override. Native saved-group retint semantics remain open. Clothing and source-reported offscreen flat-paint edge behavior are separate gaps. No renderer observation here is game validation.

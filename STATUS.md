@@ -64,4 +64,5 @@ Updated: 2026-11-10
 - Latest: [LINE-018](experiments/line-018.md),180 asset-free rasters/2,184 samples: viewport corner clamping precedes size rejection; nine of twelve plain cases differ from cropping a larger render.
 - Latest: [LINE-019](experiments/line-019.md),30 numerical loads/sixteen local MCP pairs extend texture routing to Petz4 Dalmatian/Persian;256x256 tiles, two sheets reviewed.
 - Latest: [LINE-020](experiments/line-020.md),60 asset-free rasters/30,660 body and15,420 edge assertions: sign flag gates shade addition at source10; sampled0 writes directly to indexed buffer.
+- Sampling continuation: [session/audit](docs/session-2026-11-10-connector-sampling.md),four units;600 synthetic buffers/43,356 body samples/15,420 edge assertions,10 copies/16 MCP PNGs/32 RGBA cells,30 numerical loads verified. All62 installed sources match checkout; HTTP MCP health passes.
 - Resume: [HANDOFF.md](HANDOFF.md).

@@ -18,6 +18,7 @@ Known incomplete features: **clothing, textured paint balls and textured Outline
 | An added detail is dormant despite visible=true | [Add groups](../format-reference/add-groups.md) |
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |
 | A ball edit appears invisible | [Visibility diagnosis](../visual-editing/visibility.md) and [Omissions](../format-reference/omissions.md) |
+| Change depth shading | [Z Shade Slope](../format-reference/z-shade-slope.md) |
 | Author Texture List slots or modes | [Texture List](../format-reference/texture-list.md) |
 | Texture a connector or diagnose a long invisible line | [Connector textures](../format-reference/connector-textures.md) |
 | Fuzzy connector pixels change with prior draws | [Connector randomness](../format-reference/connector-state.md) |

@@ -252,3 +252,7 @@ The final reload verifier also re-parses each original adult layer and asserts a
 All three unit verifiers and `tools/check_texture_authoring_session.py` pass. The session verifier checks cross-unit and fresh-baseline pixel links, report hashes and all installed source files against the clean checkout. Private evidence is under scratch/research/{line-021,texture-003,texture-004}; audit, source map and HTTP MCP health use scratch/research/texture-authoring-*. Two failed LINE-021 harness attempts remain archived privately; see its writeup. Originals and renderer unchanged; unrelated untracked istall-node untouched.
 
 Next: custom art, young resources/broader versions, other evolving scenes, or independent native texture/iris evidence. GAP-006 remains open. Latest authorization was this fifteen-minute continuation only; follow the next requested duration.
+
+## Latest depth shading research
+
+[SHADE-001](experiments/shade-001.md): Petz4 Scottie/Siamese,84 assembly loads/48 local MCP pairs,765 synthetic arithmetic slots/3,328 palette assertions. Absent section inherits100; empty equals0; -110 yields zero fresh offsets; -220 reverses0 response. [Reference](format-reference/z-shade-slope.md). Two sheets reviewed; verifier checks copies/PE boundaries,assembly,RGBA crops,sources/dependencies/engines. Private scratch/research/shade-001; two failed pre-MCP attempts archived and documented. Renderer/originals unchanged; no native claim. Next: retained shading threshold/history controls; this fifteen-minute continuation is ongoing.

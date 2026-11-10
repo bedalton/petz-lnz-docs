@@ -47,7 +47,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samp
 | Texture List | Retained static-frame controls: [TEXTURE-001](../experiments/texture-001.md); arithmetic trace: [TEXTURE-002](../experiments/texture-002.md); [state reference](../format-reference/texture-state.md); Return-to-pose state isolation: [TEXTURE-004](../experiments/texture-004.md); Mode/default parser controls and composed remapping: [TEXTURE-003](../experiments/texture-003.md); authored dimensions: [LINE-021](../experiments/line-021.md); [field reference](../format-reference/texture-list.md); native fidelity pending |
 | Thin/Fat | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Whiskers | Inventoried or implementation lead only; dedicated reference/experiment pending |
-| Z Shade Slope | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Z Shade Slope | Fresh depth-gain/inheritance controls: [SHADE-001](../experiments/shade-001.md); [field reference](../format-reference/z-shade-slope.md); retained/native semantics pending |
 
 ## Species/version matrix
 

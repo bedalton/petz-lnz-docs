@@ -22,4 +22,6 @@ Direct signed/shaded TexturePaint controls [LINE-020](../experiments/line-020.md
 
 [TEXTURE-003](../experiments/texture-003.md) tests appended slot modes and connector-only remapping in the same two Petz4 breeds. Modes-1/0 and2/10/150 form equal pairs;0/1/2 produce differing composed pixels. All sampled modes draw. See [Texture List fields](texture-list.md) for decoding and limits.
 
-Remaining: retained evolving scenes, custom art and independent native evidence.
+[TEXTURE-004](../experiments/texture-004.md) samples48 return-to-pose histories with the128×128 marker slot. Whole scenes often change, but the isolated diagnostic connector matches fresh in every case. It does not establish universal retained connector stability.
+
+Remaining: custom art, other evolving scenes and independent native evidence.

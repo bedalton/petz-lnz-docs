@@ -49,6 +49,7 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 - [AREA-001: connection-derived body areas](experiments/area-001.md)
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
 - [Connector sampling session verification](docs/session-2026-11-10-connector-sampling.md)
+- [TEXTURE-004: returning to a pose after motion](experiments/texture-004.md)
 - [TEXTURE-003: Texture List modes and remapping](experiments/texture-003.md)
 - [LINE-021: appended texture slots and dimensions](experiments/line-021.md)
 - [LINE-020: texture shading and sign boundaries](experiments/line-020.md)

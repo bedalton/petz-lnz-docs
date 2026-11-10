@@ -1,4 +1,4 @@
-# Linez: first connected-detail reference
+# Linez: connector fields
 
 Evidence: [LINE-001](../experiments/line-001.md), Petz 4 Scottie/Siamese local renderer; native-game behavior remains unvalidated.
 
@@ -6,7 +6,7 @@ Evidence: [LINE-001](../experiments/line-001.md), Petz 4 Scottie/Siamese local r
 | --- | --- | --- |
 | 1–2 | Start/end ball IDs | Base head to appended marker tested |
 | 3 | Fuzz | -1/0/1/7/8 tested; clamps0–7 ([LINE-007](../experiments/line-007.md)) |
-| 4 | Fill color | 125 diagnostic color used |
+| 4 | Fill color | Explicit values and endpoint selectors -1/-2 ([LINE-005](../experiments/line-005.md)) |
 | 5–6 | Left/right colors | 180/200 and negative fill inheritance tested ([LINE-006](../experiments/line-006.md)) |
 | 7–8 | Start/end thickness | 0/0, 10/10, 25/25, 100/100, 100/0, 0/100 tested ([LINE-002](../experiments/line-002.md)) |
 | 9 | Edge mode | -1 fill-only, 0 scan-row edges, 1 polygon-side edges; 2 no pixels in sampled controls ([LINE-006](../experiments/line-006.md)) |
@@ -39,3 +39,5 @@ For tested two-field rows, `Default Linez Thickness` supplies both endpoint perc
 [LINE-011](../experiments/line-011.md) extends RNG history to twelve composed Scottie/Siamese scenes: same-step1 repeats match, other-pose histories change11/12 and step0-whisker priming changes12/12. Prepared geometry/commands are fixed, prior pixels discarded, and targetstep1 held constant. Twelve fresh step0 MCP PNGs match exactly. Whole-scene differences are not connector-only attribution or native evidence.
 
 [LINE-012](../experiments/line-012.md) attributes the whisker0-priming difference in those twelve fixed scenes: the diagnostic line alone leaves residual pixels, while substituting all positive-fuzz connector pixels reproduces the full primed scene exactly; the reverse substitution recovers fresh. Main-path RNG consumption is preserved. This is research-only state intervention, not a renderer fix or native claim.
+
+For retained RNG behavior and isolation controls, use the focused [connector state reference](connector-state.md).

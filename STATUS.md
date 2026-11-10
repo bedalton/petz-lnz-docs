@@ -49,9 +49,10 @@ Updated: 2026-11-10
 - Latest: [LINE-010](experiments/line-010.md),168 numerical loads/56 MCP pairs: partial3–9-field rows match full equivalents; omitted end width follows global, omitted draw flag follows before setting.
 - Latest: [LINE-011](experiments/line-011.md),twelve composed fixtures/84 history targets/twelve exact MCP baselines: other-pose RNG history changes11/12 scenes; step0-whisker priming changes12/12.
 - Latest: [LINE-012](experiments/line-012.md),72 composed rasters: all positive-fuzz connector pixel substitutions explain full whisker0-primed differences in12/12 fixtures; diagnostic connector alone is insufficient.
-- Next: independent native texture evidence, other list conflicts/whiskers, actual fuzzy breed histories, partial connector rows and native iris-omission evidence.
+- Next: independent native texture evidence, other list conflicts/whiskers, broader style breeds/versions, evolving fuzzy scenes and native iris-omission evidence.
 - Gaps: visual validation of anatomy maps, multi-view edited tests, version generalization and original-game validation.
 - Session verification: [2026-11-10 morphs](docs/session-2026-11-10-morphs.md): four units, 36 MCP pairs, 198 numerical morph/list cases and 60 assembly histories; 34 copies/72 RGBA cells/120 snapshots/12 engines verified.
 - Pixel/texture session: [2026-11-10 textures](docs/session-2026-11-10-textures.md): three units,24 MCP baseline checks,96 sheets/396 RGBA cells and96 orientation snapshots verified.
 - Styling session verification: [2026-11-10 connector styles](docs/session-2026-11-10-line-styles.md): five units,76 MCP pairs,156 breed loads,256 synthetic block/raster/history checks;52 copies/152 RGBA cells/192 RNG states verified.
+- History session verification: [partial rows/composed RNG](docs/session-2026-11-10-line-history.md): three units,68 local MCP comparison/baseline checks,168 numerical loads,156 history/intervention compositions;58 copies/92 PNGs/292 RGBA cells/312 RNG snapshots verified.
 - Resume: [HANDOFF.md](HANDOFF.md).

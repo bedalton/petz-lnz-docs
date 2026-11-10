@@ -26,6 +26,8 @@ An evidence-backed, agent-first guide to designing Petz breeds from images and c
 
 ## Evidence
 
+- [Partial rows/composed RNG session and verification](docs/session-2026-11-10-line-history.md)
+
 - [Connector styling session and integrity checks](docs/session-2026-11-10-line-styles.md)
 
 - [Texture/pixel session and integrity checks](docs/session-2026-11-10-textures.md)

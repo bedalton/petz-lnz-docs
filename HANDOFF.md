@@ -180,3 +180,9 @@ Final aggregate audit corrected LINE-005 synthetic count to72 (2 texture states 
 ## Latest connector pixel attribution
 
 [LINE-012](experiments/line-012.md):12 six-cell sheets/72 compositions,144 before-target/after-scene RNG states; two sheets reviewed. Diagnostic connector-only swaps leave residual; all positive-fuzz connector pixel swaps reproduce primed12/12 and restore fresh12/12, while main-path state is preserved. Fresh/primed cells match LINE-011 exactly; no new MCP. Initial four-cell exploration archived privately, final scratch/research/line-012. No renderer/native claims. Next: other history attribution, broader breeds/versions, textured connector controls or native evidence.
+
+## Second ten-minute connector continuation
+
+[Session index](docs/session-2026-11-10-line-history.md) covers LINE-010/011/012.68 local MCP comparison/baseline checks,168 partial-row numerical loads,84 composed history targets and72 intervention compositions. Six sheets reviewed. `tools/check_line_history_session.py` verifies58 unique copies,92 PNGs,292 RGBA cells,312 RNG snapshots,sources/dependencies/resource DLLs/originals; summary scratch/research/line-history-session-verification.json. [Focused connector state reference](format-reference/connector-state.md) added to agent routes. No renderer/native claims. Next: broader breeds/versions,texture-bearing connectors,evolving retained scenes or independent native evidence. Untracked istall-node untouched.
+
+Final local HTTP MCP discovery/capabilities pass; private health scratch/research/line-history-session-mcp-health.json. Renderer checkout remains unchanged.

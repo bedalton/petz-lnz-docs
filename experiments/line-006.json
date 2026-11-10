@@ -1,0 +1,1855 @@
+{
+  "experiment": "LINE-006",
+  "backend": "local stdio MCP and synthetic Python blocks",
+  "renderer_revision": "9d72d7afd5f7460ef18133c6179caaf8055082d9",
+  "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "pillow": "13.0.0"
+  },
+  "source_hashes": {
+    "appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea"
+  },
+  "engine_hashes": {
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "synthetic": [
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 843,
+        "180": 59,
+        "200": 57
+      },
+      "indexed_sha256": "fa487066682983a1c6e37efc3a90833fa58e3112bce8393363b4ca007133156b"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 837,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "6de20bfd5431c0bfeed1b86557cf5e40280d8a45243e3d53a48dbc9685e3b4db"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 893,
+        "180": 60,
+        "200": 58
+      },
+      "indexed_sha256": "05a40bce5b0d12e1f2c78b799506f3fc10e2f39c95e4a6ee77a8acee2510db86"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 889,
+        "180": 65,
+        "200": 57
+      },
+      "indexed_sha256": "5ebae8524d2c345d7f9f3045e6342393b605a7bf7ba0a87c14da44ee50b08457"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9c0ccb92a3f9d69582a406fa46644d3f153509360692593b08437298e1a59676"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9c0ccb92a3f9d69582a406fa46644d3f153509360692593b08437298e1a59676"
+    },
+    {
+      "endpoints": [
+        20,
+        20,
+        80,
+        70
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9c0ccb92a3f9d69582a406fa46644d3f153509360692593b08437298e1a59676"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 843,
+        "180": 59,
+        "200": 57
+      },
+      "indexed_sha256": "fa487066682983a1c6e37efc3a90833fa58e3112bce8393363b4ca007133156b"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 837,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "9800b2182dd41f47c2e51d00b877828e60f474d5924fc33b480f3dd698c2dbf2"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9041,
+        "220": 959,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0b64723d97a21a561ac7cf89098193c1e1ecd95291508c1088428c7568c60663"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 893,
+        "180": 60,
+        "200": 58
+      },
+      "indexed_sha256": "5748d5ede673d1a09e8a6f4c4e7e91d7e760d903745e04fbeb2198d66d0f6b2f"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 889,
+        "180": 65,
+        "200": 57
+      },
+      "indexed_sha256": "9f7b8510f86613388ac1b6a5d49b294d73f3f5c25033b55962049ed6049e311c"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "da9251d3d54fbf4020f202d9a4c23d883532888df287d3e865bedfa3ad47c075"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "da9251d3d54fbf4020f202d9a4c23d883532888df287d3e865bedfa3ad47c075"
+    },
+    {
+      "endpoints": [
+        80,
+        70,
+        20,
+        20
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 8989,
+        "220": 1011,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "da9251d3d54fbf4020f202d9a4c23d883532888df287d3e865bedfa3ad47c075"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 767,
+        "180": 13,
+        "200": 13
+      },
+      "indexed_sha256": "0c1913313ce6c49b5104d8bf3d0906d5dcb20b74bf57e68ec58d7a611577c0f4"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 671,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "522d20816bdb5b5270389256d829b89183a78c546b493bb916d4ef3e0d084291"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0594306c8be301185a75a2b0657ec2337f68b68ee932c9544f98cefbf7dcba6b"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0594306c8be301185a75a2b0657ec2337f68b68ee932c9544f98cefbf7dcba6b"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "0594306c8be301185a75a2b0657ec2337f68b68ee932c9544f98cefbf7dcba6b"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 812,
+        "180": 21,
+        "200": 21
+      },
+      "indexed_sha256": "e075b94236c4cc408f3deecb3d81642d5675971a6d9ac908be53cfc6e3bde19e"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 732,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "1286a36ae491539bb5d557d2610e1bf51ff97cb26ac24de2c1fbc14990e9ffe0"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9621b470dd0cfff2e1286b2679ace10af2a3fbc2d629da3a8dfb3132f8f241d2"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9621b470dd0cfff2e1286b2679ace10af2a3fbc2d629da3a8dfb3132f8f241d2"
+    },
+    {
+      "endpoints": [
+        20,
+        50,
+        80,
+        50
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "9621b470dd0cfff2e1286b2679ace10af2a3fbc2d629da3a8dfb3132f8f241d2"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 671,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "5e1e329baa02486fe0f67c70fc114a8516fca61471783be65b2c8afc7fc31604"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 671,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "5e1e329baa02486fe0f67c70fc114a8516fca61471783be65b2c8afc7fc31604"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "1254777009b47ba24e7c4ebd2bdd67c09fa7a134d88709d0126aa25574fb6504"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "1254777009b47ba24e7c4ebd2bdd67c09fa7a134d88709d0126aa25574fb6504"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        12,
+        12
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9207,
+        "220": 793,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "1254777009b47ba24e7c4ebd2bdd67c09fa7a134d88709d0126aa25574fb6504"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "scan",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 732,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "73a1fc429551a6883c43846666233e250e8c4d988d7b70bc02db665bfd48a497"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "polygon",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 732,
+        "180": 61,
+        "200": 61
+      },
+      "indexed_sha256": "25843cafecd5b7bd678fbb7d819ad4ab54fa7a344260338ce2c34f60af778b71"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "plain",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "b9462549e156eedec12a7fe38e934b215c07331fe6bb6f83d8f725756488fb8f"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "invalid",
+      "pixel_counts": {
+        "0": 10000,
+        "220": 0,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "95b532cc4381affdff0d956e12520a04129ed49d37e154228368fe5621f0b9a2"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "inherit",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "b9462549e156eedec12a7fe38e934b215c07331fe6bb6f83d8f725756488fb8f"
+    },
+    {
+      "endpoints": [
+        50,
+        20,
+        50,
+        80
+      ],
+      "widths": [
+        20,
+        6
+      ],
+      "variant": "explicit_fill",
+      "pixel_counts": {
+        "0": 9146,
+        "220": 854,
+        "180": 0,
+        "200": 0
+      },
+      "indexed_sha256": "b9462549e156eedec12a7fe38e934b215c07331fe6bb6f83d8f725756488fb8f"
+    }
+  ],
+  "cases": [
+    {
+      "species": "Dogz",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "marker_row": "52, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "scan": "52, 90, 0, 220, 180, 200, 100, 100, 0, 1",
+        "polygon": "52, 90, 0, 220, 180, 200, 100, 100, 1, 1",
+        "plain": "52, 90, 0, 220, 180, 200, 100, 100, -1, 1",
+        "invalid": "52, 90, 0, 220, 180, 200, 100, 100, 2, 1",
+        "inherit": "52, 90, 0, 220, -1, -1, 100, 100, 0, 1",
+        "explicit_fill": "52, 90, 0, 220, 220, 220, 100, 100, 0, 1",
+        "marker": null
+      },
+      "paths": {
+        "scan": "Dogz-scan.dog",
+        "polygon": "Dogz-polygon.dog",
+        "plain": "Dogz-plain.dog",
+        "invalid": "Dogz-invalid.dog",
+        "inherit": "Dogz-inherit.dog",
+        "explicit_fill": "Dogz-explicit_fill.dog",
+        "marker": "Dogz-marker.dog"
+      },
+      "input_hashes": {
+        "scan": "6aa01288bf1418a4f9364d8dbf0ed0a8f2feee2c3eb725c4a4295d11976c5b8b",
+        "polygon": "7b5298530efbaeb1bed99968b156bf6d27fd663ad544ac6dbb15593545abfc08",
+        "plain": "880fae6b3e7cf22f956d139976c0d057efaebf5bd03db3d768c1056d9ce9c929",
+        "invalid": "df8f74f5a6401819fdc9a2f69315c437eeb4b15053e5e6ca5e76a5aced58c62d",
+        "inherit": "4c99024bc8952d355963f9521320824692f868df160b9c9b25283b133d9fc9ac",
+        "explicit_fill": "aaa384c4931845519379092ffa14ff1ff577efc23e5a038d67cbfe11558627f9",
+        "marker": "610059d9444a1f497e8f84d6ddc4259da971d082a9e79dee86f6f4dbd298fbc8"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "marker",
+          "style": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "marker",
+          "style": null
+        },
+        {
+          "pose": "lying",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "marker",
+          "style": null
+        }
+      ]
+    },
+    {
+      "species": "Catz",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "marker_row": "24, -35, -80, 0, 200, 244, -1, 0, -1, -1, 20, 0, 0, -1, -1",
+      "line_rows": {
+        "scan": "24, 90, 0, 220, 180, 200, 100, 100, 0, 1",
+        "polygon": "24, 90, 0, 220, 180, 200, 100, 100, 1, 1",
+        "plain": "24, 90, 0, 220, 180, 200, 100, 100, -1, 1",
+        "invalid": "24, 90, 0, 220, 180, 200, 100, 100, 2, 1",
+        "inherit": "24, 90, 0, 220, -1, -1, 100, 100, 0, 1",
+        "explicit_fill": "24, 90, 0, 220, 220, 220, 100, 100, 0, 1",
+        "marker": null
+      },
+      "paths": {
+        "scan": "Catz-scan.cat",
+        "polygon": "Catz-polygon.cat",
+        "plain": "Catz-plain.cat",
+        "invalid": "Catz-invalid.cat",
+        "inherit": "Catz-inherit.cat",
+        "explicit_fill": "Catz-explicit_fill.cat",
+        "marker": "Catz-marker.cat"
+      },
+      "input_hashes": {
+        "scan": "9bce9e888ea4cb7d0cb7b87478d8d59eef4abed615a799024de6e921b4d74dd4",
+        "polygon": "6b743ef1f504187ba58ff4d1bb114800824653168af52c6d24da414b5c967e3e",
+        "plain": "1b74d5388a21aac211904de54261111052cdce03531132d48e16426fc46af087",
+        "invalid": "f2b7ffb1655833db73052112e5c93357bbb7164b811afa77a25ea8c17b88fec4",
+        "inherit": "5f56bf8fd47f687f3bf446193e98343ac30cb54171843258b0e849fd0ef246b2",
+        "explicit_fill": "aacf5b44ff84d673f66ac62f6a5fcef45c6cb3f5b99081e5544575dd2c7e6812",
+        "marker": "b29705ed75d488063d8fd76206cb1e811dce36d8adb10fecc69eedd2b847f13e"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "standing",
+          "variant": "marker",
+          "style": null
+        },
+        {
+          "pose": "sitting",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "sitting",
+          "variant": "marker",
+          "style": null
+        },
+        {
+          "pose": "lying",
+          "variant": "scan",
+          "style": [
+            0,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "polygon",
+          "style": [
+            1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "plain",
+          "style": [
+            -1,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "invalid",
+          "style": [
+            2,
+            180,
+            200
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "inherit",
+          "style": [
+            0,
+            -1,
+            -1
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "explicit_fill",
+          "style": [
+            0,
+            220,
+            220
+          ]
+        },
+        {
+          "pose": "lying",
+          "variant": "marker",
+          "style": null
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "species": "Dogz",
+      "pair": [
+        "inherit",
+        "explicit_fill"
+      ],
+      "controls": {
+        "before_path": "Dogz-inherit.dog",
+        "after_path": "Dogz-explicit_fill.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "1465deb56044f307d8792725a391036341254ace717d8e7b9f0162665f953759",
+      "cells_equal": true,
+      "cell_hashes": [
+        "f2a0164b95aa30e92bcd34c4d95590280b41c9752ddceab62bf23f84f598f7fd",
+        "f2a0164b95aa30e92bcd34c4d95590280b41c9752ddceab62bf23f84f598f7fd"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "inherit",
+        "explicit_fill"
+      ],
+      "controls": {
+        "before_path": "Dogz-inherit.dog",
+        "after_path": "Dogz-explicit_fill.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "69411c4e5af32d63ad079e23a4a92359ee19f6afaa1a971f48b45d2237569f1d",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4730e64eacbbdd8f70ea2e03fd53037985f98d61c921002889f98edd7659029d",
+        "4730e64eacbbdd8f70ea2e03fd53037985f98d61c921002889f98edd7659029d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "scan",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-scan.dog",
+        "after_path": "Dogz-plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9cfbe313e6c941bddff4bb80be36345912aa7fb19b1ec6402d198fe930770930",
+      "cells_equal": false,
+      "cell_hashes": [
+        "359889f6ee384425975a0f8025b954e175b3d2cadb89b2be83fbbe3fb6fd8386",
+        "f2a0164b95aa30e92bcd34c4d95590280b41c9752ddceab62bf23f84f598f7fd"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "scan",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-scan.dog",
+        "after_path": "Dogz-plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "c44d6cc600d2ad53327c7bce72789f3cfc3707124c841b85873e7c41aa812f91",
+      "cells_equal": false,
+      "cell_hashes": [
+        "70e3359178e20545c2784099ac8779391e989000bbef92398ea2b68b2071d4f9",
+        "4730e64eacbbdd8f70ea2e03fd53037985f98d61c921002889f98edd7659029d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "polygon",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-polygon.dog",
+        "after_path": "Dogz-plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "71872b1e6a8cadfa7197806ee96069d5ac1bc6588df2127c5a22f8bf118beace",
+      "cells_equal": false,
+      "cell_hashes": [
+        "932ebaff2b595a1a267ed29d658736452413ee7de4e2096c150f0d70eb55aa9d",
+        "f2a0164b95aa30e92bcd34c4d95590280b41c9752ddceab62bf23f84f598f7fd"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "polygon",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Dogz-polygon.dog",
+        "after_path": "Dogz-plain.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "1bbc354835f0c923d0a4f5ede34a1344bb1fc48d6b817b4fab938b1b9f202630",
+      "cells_equal": false,
+      "cell_hashes": [
+        "428f73d992f3fc46782f7e119bb3569f7a248c5a25d72fc3b91ab3a8be7e2c26",
+        "4730e64eacbbdd8f70ea2e03fd53037985f98d61c921002889f98edd7659029d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "scan",
+        "polygon"
+      ],
+      "controls": {
+        "before_path": "Dogz-scan.dog",
+        "after_path": "Dogz-polygon.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "fab4551051c330e2cff030165a1ef49980a3ebe948266114b8d6b9a838e1d458",
+      "cells_equal": false,
+      "cell_hashes": [
+        "359889f6ee384425975a0f8025b954e175b3d2cadb89b2be83fbbe3fb6fd8386",
+        "932ebaff2b595a1a267ed29d658736452413ee7de4e2096c150f0d70eb55aa9d"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "scan",
+        "polygon"
+      ],
+      "controls": {
+        "before_path": "Dogz-scan.dog",
+        "after_path": "Dogz-polygon.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "98888b694f3d9444e58fc280dad5a9f07c92e9bd08f77ba5a4af619c733aa3f5",
+      "cells_equal": false,
+      "cell_hashes": [
+        "70e3359178e20545c2784099ac8779391e989000bbef92398ea2b68b2071d4f9",
+        "428f73d992f3fc46782f7e119bb3569f7a248c5a25d72fc3b91ab3a8be7e2c26"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "invalid",
+        "marker"
+      ],
+      "controls": {
+        "before_path": "Dogz-invalid.dog",
+        "after_path": "Dogz-marker.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "51aaad387d23e0af69994e52baa5ccafd9219ba9c6f2a2c9d997ce5e6bb85c18",
+      "cells_equal": true,
+      "cell_hashes": [
+        "ab77353f3beb7c1ae22baa2a72a1a8e3e64a0327743a34fe68aeb7a88a83a740",
+        "ab77353f3beb7c1ae22baa2a72a1a8e3e64a0327743a34fe68aeb7a88a83a740"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "pair": [
+        "invalid",
+        "marker"
+      ],
+      "controls": {
+        "before_path": "Dogz-invalid.dog",
+        "after_path": "Dogz-marker.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "0e77ea1be97e7acdb3f470749983cf5d6a03e21211bf77bea06c1f05da44b659",
+      "cells_equal": true,
+      "cell_hashes": [
+        "4ce751ce0265587b6f9127851d34aedfa5fa88428eea274226adbcdc38a98ada",
+        "4ce751ce0265587b6f9127851d34aedfa5fa88428eea274226adbcdc38a98ada"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "inherit",
+        "explicit_fill"
+      ],
+      "controls": {
+        "before_path": "Catz-inherit.cat",
+        "after_path": "Catz-explicit_fill.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "4d02ab339f1835d99187c2d13e5a98780b6b5ab124388fd900ebd8250518e587",
+      "cells_equal": true,
+      "cell_hashes": [
+        "0bc9c60e0639e46510c5c41f4a6f43338d01715fade70a902559579bf9a07edb",
+        "0bc9c60e0639e46510c5c41f4a6f43338d01715fade70a902559579bf9a07edb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "inherit",
+        "explicit_fill"
+      ],
+      "controls": {
+        "before_path": "Catz-inherit.cat",
+        "after_path": "Catz-explicit_fill.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f610b88340091f0bd2ea43ce5b4cc2c3f9339a12391f10c1144e6a289087df60",
+      "cells_equal": true,
+      "cell_hashes": [
+        "1d8979e696e8a071b9071d4d1a5ba6edd01001950b18931963bd8faa0f5968bd",
+        "1d8979e696e8a071b9071d4d1a5ba6edd01001950b18931963bd8faa0f5968bd"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "scan",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Catz-scan.cat",
+        "after_path": "Catz-plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b4822adafb71fb6d96ea3cb1554c8f77ba64acce563bf33e9be241c782e47dec",
+      "cells_equal": false,
+      "cell_hashes": [
+        "104343ad72a3add265975c3a3df1d98bf3c5b627b3f624ddf3ed1962fbd5113b",
+        "0bc9c60e0639e46510c5c41f4a6f43338d01715fade70a902559579bf9a07edb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "scan",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Catz-scan.cat",
+        "after_path": "Catz-plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "7630653d263f5af5d8b59b47e5a3379e715b19826b86738751e907e5fdab59f6",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3b0cca94fa2fb83d4b59f364c9980fffca05e3369b203c18a4302bc00088bafa",
+        "1d8979e696e8a071b9071d4d1a5ba6edd01001950b18931963bd8faa0f5968bd"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "polygon",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Catz-polygon.cat",
+        "after_path": "Catz-plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "bff5b70651a6ae0bb4c4a977092e778d9ac51d5a30d80e32dcdff057020982b0",
+      "cells_equal": false,
+      "cell_hashes": [
+        "e6cd31039b785cbff096c8298ff28c040fa6526523bfff5b329de8745ce985ac",
+        "0bc9c60e0639e46510c5c41f4a6f43338d01715fade70a902559579bf9a07edb"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "polygon",
+        "plain"
+      ],
+      "controls": {
+        "before_path": "Catz-polygon.cat",
+        "after_path": "Catz-plain.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "8caf6dbc027d07d302f01563761e27d3ffb6d4abc6bea55156438dfd8f084979",
+      "cells_equal": false,
+      "cell_hashes": [
+        "599bff0e9be6e7623f6f74a3b9427edbbd70a4819dc3aadd7e523f854ca4114f",
+        "1d8979e696e8a071b9071d4d1a5ba6edd01001950b18931963bd8faa0f5968bd"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "scan",
+        "polygon"
+      ],
+      "controls": {
+        "before_path": "Catz-scan.cat",
+        "after_path": "Catz-polygon.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "4be2607bdcc02f124c71ec5a9dc504bfc5d5186cc94983a7f38c26cfd9bbf2f9",
+      "cells_equal": false,
+      "cell_hashes": [
+        "104343ad72a3add265975c3a3df1d98bf3c5b627b3f624ddf3ed1962fbd5113b",
+        "e6cd31039b785cbff096c8298ff28c040fa6526523bfff5b329de8745ce985ac"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "scan",
+        "polygon"
+      ],
+      "controls": {
+        "before_path": "Catz-scan.cat",
+        "after_path": "Catz-polygon.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "6c41fc2cd64b2b9fb6c165ce71a007ffeec4be49cc26b3d01a6d1b563c406819",
+      "cells_equal": false,
+      "cell_hashes": [
+        "3b0cca94fa2fb83d4b59f364c9980fffca05e3369b203c18a4302bc00088bafa",
+        "599bff0e9be6e7623f6f74a3b9427edbbd70a4819dc3aadd7e523f854ca4114f"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "invalid",
+        "marker"
+      ],
+      "controls": {
+        "before_path": "Catz-invalid.cat",
+        "after_path": "Catz-marker.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f585d65f6c671fc239010d7ba0a89e28699cb6d06c1d3bf20bd243a453aa474e",
+      "cells_equal": true,
+      "cell_hashes": [
+        "b9083f6b8331f8d4e0f6e282816c998a943e44318a862d187dbc010ad1d75115",
+        "b9083f6b8331f8d4e0f6e282816c998a943e44318a862d187dbc010ad1d75115"
+      ]
+    },
+    {
+      "species": "Catz",
+      "pair": [
+        "invalid",
+        "marker"
+      ],
+      "controls": {
+        "before_path": "Catz-invalid.cat",
+        "after_path": "Catz-marker.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "png_sha256": "f7c168e5499f9692607a61a50acccf9eb2c80ba0b17482a945d96f5a68d389c6",
+      "cells_equal": true,
+      "cell_hashes": [
+        "b0a3a323a9aceba1e9301f8a9980ff9bd98123bca755e92a1129061afa20ef07",
+        "b0a3a323a9aceba1e9301f8a9980ff9bd98123bca755e92a1129061afa20ef07"
+      ]
+    }
+  ]
+}

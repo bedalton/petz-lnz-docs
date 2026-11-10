@@ -7,9 +7,9 @@ Evidence: [LINE-001](../experiments/line-001.md), Petz 4 Scottie/Siamese local r
 | 1–2 | Start/end ball IDs | Base head to appended marker tested |
 | 3 | Fuzz | 0 used |
 | 4 | Fill color | 125 diagnostic color used |
-| 5–6 | Left/right colors | 244 used; independent effects untested |
+| 5–6 | Left/right colors | 180/200 and negative fill inheritance tested ([LINE-006](../experiments/line-006.md)) |
 | 7–8 | Start/end thickness | 0/0, 10/10, 25/25, 100/100, 100/0, 0/100 tested ([LINE-002](../experiments/line-002.md)) |
-| 9 | Edge mode | 0 used; other modes untested |
+| 9 | Edge mode | -1 fill-only, 0 scan-row edges, 1 polygon-side edges; 2 no pixels in sampled controls ([LINE-006](../experiments/line-006.md)) |
 | 10 | Draw after | 0/1 override; -1 follows global fallback ([LINE-003](../experiments/line-003.md)) |
 
 The current parser accepts at least two leading numeric fields and fills omitted fields with defaults. [LINE-004](../experiments/line-004.md) exercises two-field rows through breed loading and actual local MCP comparisons; this remains implementation acceptance, not a native syntax guarantee. At revision 9d72d7afd5f7460ef18133c6179caaf8055082d9, appearance/core.py defines the mapping; rendering/connectors.py derives each endpoint width from its thickness percentage times `min(2 * radius - 1, 127)`. [LINE-002](../experiments/line-002.md) checks this formula on explicit posed endpoints in three poses and compares actual local MCP images in front/side views. Both zero widths reject the block; otherwise each rounded endpoint width is clamped to at least 1. A zero at one end can still draw a narrow tip. Equal percentages taper when endpoint radii differ.
@@ -25,3 +25,5 @@ Connections can affect body-area classification as well as pixels. [AREA-001](..
 For tested two-field rows, `Default Linez Thickness` supplies both endpoint percentages. Values 25 and 100 match equivalent explicit rows; explicit row widths override global thickness. An explicitly empty thickness section falls back to 100 in LINE-004; absent-section inheritance was not tested. Other resolved defaults in that experiment are fuzz 0, fill -1, edge colors 244/244, edge mode 0, and before-endpoint scheduling with global Draw Linez Before Ballz=1.
 
 [LINE-005](../experiments/line-005.md) isolates fill selection: -1 follows the start endpoint; -2 follows the end, including reversed endpoints, in twenty Petz4 Scottie/Siamese MCP pairs with flat diagnostic colors. Nonnegative values use explicit fill. Synthetic blocks additionally show -3 selecting the end and negative values inheriting selected endpoint texture; explicit fill bypasses texture. Shading averages endpoint offsets with truncation toward zero, then clamps within a palette band for colors10–149. Synthetic texture routing and -3 acceptance are not native syntax/fidelity claims. Edge colors remain separate and untested by this unit.
+
+[LINE-006](../experiments/line-006.md) separates edge styles with flat fill220: modes0/1 differ from each other and from -1. Mode0 uses scan-row boundaries; mode1 strokes polygon sides. Edge colors are not anatomical sides. Negative edge colors inherit shaded fill; explicit edge colors bypass fill shading. Invalid mode2 draws no pixels in tested controls. Automatic -2 selection remains untested.

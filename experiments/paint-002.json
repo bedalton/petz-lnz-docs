@@ -1,0 +1,2376 @@
+{
+  "experiment": "PAINT-002",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "backend": "direct prepared-command angle substitutions; linked PAINT-001 baselines only",
+  "source_hashes": {
+    "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+    "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+    "appearance/breed_variations.py": "d1aefb0e74f4a94f6a45e145b305339a9f19ec9cc40bdbee0c93200399687225",
+    "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+    "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+    "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+    "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+    "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+    "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+    "appearance/preview.py": "79b525a2696ef383b565256b711334294fd370cac4ef8563236894563f0051cc",
+    "appearance/variations.py": "03c4ed213ec6c694d7c07ee8e6f610d90b89ed1ae89bb839a7cba98e0f81d1fb",
+    "cli.py": "2f5b30afd3dee6d16460f9efbdd378d8b731469e5bd13c853ceaa86738491761",
+    "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+    "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+    "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+    "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+    "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+    "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+    "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+    "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+    "local.py": "d3b7bbbc59cbe445a18770caf19fda7dde3ff5d530e4ef1331e30b132f49a493",
+    "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+    "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+    "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+    "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+    "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+    "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+    "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+    "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+    "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+    "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+    "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+    "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+    "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+    "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+    "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+    "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+    "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+    "service/application.py": "69f2408f6fd47b90437bdf4f712f8e9d19e9382b78ca6af2553f15d517d74173",
+    "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+    "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+    "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+    "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+    "service/inspection.py": "24524a376ce7d2dc7aa74eee1bf1e0cbfb4c3b69fca37c3ed40de207de29a0c9",
+    "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+    "service/mcp.py": "2601e07d89fc967bdc5fc221940bec2161f7102db221e191425f73662bf62be3",
+    "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649",
+    "service/sheets.py": "ca0b9eb408d7854c1b3253ac72a198ef7f1582f57bdcca6839d63c06adb08b32",
+    "service/tool_inputs.py": "68815dbd2e41afd22276a1a9c032f81a1aa86e17ab3e63e60dd2ac83e6502e3c",
+    "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+    "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "pillow": "13.0.0"
+  },
+  "prior_manifest_sha256": "6101ac76fcc6d20bf407b174cc04b3e7f83e84459414185355215364aa13de1e",
+  "controls": {
+    "saved_seed_age_fatness": true,
+    "raster_seed": 1,
+    "line_rng_seed": 1,
+    "step": 0,
+    "animation_frame": "fixed named pose",
+    "history_units": "engine turns/256"
+  },
+  "cases": [
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "repeat",
+      "folder": "case00",
+      "prior_folder": "Fuzzkin-standing-0-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 48
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "b24a251fae61d34767dc0f87cb2dc70767b78d35bc0e6c5f5f691a721e315e9c",
+          "indexed_sha256": "503938a9c1d81ccb54fb9f7186263e6709824ee139851e05c39ad0b34b2767e1",
+          "changed_from_combined": 48,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 48
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "66d45a56e1ad2515942616b3ef44e4be667df8d2cd070cc0ef19910efcc697e4",
+          "indexed_sha256": "9a69a3b0a415c24f65a80d44f80cb02e5a75ec1c051f404abeab53483b97c82c",
+          "changed_from_combined": 45,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "5fa9a482f929e1b021f9d51f8216d71c0d7de13be1ee5512ce613d04a9260c61",
+          "indexed_sha256": "f0235a6e687577a7df04d69cf18671bbb4b9a5224ddd3b771ccf5757a67380fb",
+          "changed_from_combined": 3,
+          "remaining_from_host": 45
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "b24a251fae61d34767dc0f87cb2dc70767b78d35bc0e6c5f5f691a721e315e9c",
+          "indexed_sha256": "503938a9c1d81ccb54fb9f7186263e6709824ee139851e05c39ad0b34b2767e1",
+          "changed_from_combined": 48,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "yaw_arc",
+      "folder": "case01",
+      "prior_folder": "Fuzzkin-standing-0-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "78c2a49a81e1ea26b3757c3372a6a93c17cf8158baf3a8e85a1f980507d1bd0e",
+          "indexed_sha256": "b81fcc84b05053a387cf534fecf2ab120178157630cf54313303dba92fbe69a5",
+          "changed_from_combined": 0,
+          "remaining_from_host": 52
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "ccefb1317645deec06c90ba7d37b31cb7770998831c63effd11d67b3a1f93662",
+          "indexed_sha256": "5c0a974e994cacb862344a690f3e44e76ac3027ce5d69ff4df6475a3472fdb3c",
+          "changed_from_combined": 52,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "78c2a49a81e1ea26b3757c3372a6a93c17cf8158baf3a8e85a1f980507d1bd0e",
+          "indexed_sha256": "b81fcc84b05053a387cf534fecf2ab120178157630cf54313303dba92fbe69a5",
+          "changed_from_combined": 0,
+          "remaining_from_host": 52
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "09f8a53b99f2b0d25eb55b3c311d67e9ff3accbc8a10911d0d446ffab7ed2ec1",
+          "indexed_sha256": "d5cb5cea288b40d10bcc7f6fc63c854815e9fb804c828c03e34c273664539495",
+          "changed_from_combined": 48,
+          "remaining_from_host": 4
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "cf7b513e014ab6faab2616b49dcc9f3883cb446f7d228f4354b73e1d8ce0c31e",
+          "indexed_sha256": "ed0d17e2381c004640904d647a0e8ddc56fe44c94ad6d92b25431bc7012c5994",
+          "changed_from_combined": 4,
+          "remaining_from_host": 48
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "ccefb1317645deec06c90ba7d37b31cb7770998831c63effd11d67b3a1f93662",
+          "indexed_sha256": "5c0a974e994cacb862344a690f3e44e76ac3027ce5d69ff4df6475a3472fdb3c",
+          "changed_from_combined": 52,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -9
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -9
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -9
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "head_arc",
+      "folder": "case02",
+      "prior_folder": "Fuzzkin-standing-0-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "27e936f7a3693ee097622ccfe4ad5b403552a4ca96b1d693aed643de611fb371",
+          "indexed_sha256": "3378faaa24bf66c61785048db7a0981c2ac0ee4cdcdcf28bd69bab847224bfb7",
+          "changed_from_combined": 0,
+          "remaining_from_host": 48
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "a598d1fc16e0a0079e238c7f57a1da7ebd01fba7aff16d6c9fe8870b51202dfc",
+          "indexed_sha256": "5f453f09d985f3f5e477537488c81c766c3dec18535dc57d7ed88fec1850b84f",
+          "changed_from_combined": 48,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "27e936f7a3693ee097622ccfe4ad5b403552a4ca96b1d693aed643de611fb371",
+          "indexed_sha256": "3378faaa24bf66c61785048db7a0981c2ac0ee4cdcdcf28bd69bab847224bfb7",
+          "changed_from_combined": 0,
+          "remaining_from_host": 48
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "93046ce8e50b4e1e598f98e659b4f45d62814948038ff88517fc5b19fbfc5c61",
+          "indexed_sha256": "fdfbabfb5f53f42392bd2049c4d91d4e1186ef539b54b5260455a458fd829c17",
+          "changed_from_combined": 45,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "253451d0ed9cf8272b5bdcc065b41b26bf2278905aa99c8488b5272a9b9e7ded",
+          "indexed_sha256": "5eefb0d7780053615316bfc3b859fcc755483ba15c025ade970530953fd38b9e",
+          "changed_from_combined": 3,
+          "remaining_from_host": 45
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "a598d1fc16e0a0079e238c7f57a1da7ebd01fba7aff16d6c9fe8870b51202dfc",
+          "indexed_sha256": "5f453f09d985f3f5e477537488c81c766c3dec18535dc57d7ed88fec1850b84f",
+          "changed_from_combined": 48,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "tilt_arc",
+      "folder": "case03",
+      "prior_folder": "Fuzzkin-standing-0-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "5fa9a482f929e1b021f9d51f8216d71c0d7de13be1ee5512ce613d04a9260c61",
+          "indexed_sha256": "f0235a6e687577a7df04d69cf18671bbb4b9a5224ddd3b771ccf5757a67380fb",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "9929133e49dabc278adaedeec1e93fe3b4b75bb8eb109fc6963e7df093c25620",
+          "indexed_sha256": "38654cf8e63cf02f2417e74fdb70de8d6237935f106e414b1402f00b054dfc6f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "5fa9a482f929e1b021f9d51f8216d71c0d7de13be1ee5512ce613d04a9260c61",
+          "indexed_sha256": "f0235a6e687577a7df04d69cf18671bbb4b9a5224ddd3b771ccf5757a67380fb",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "5fa9a482f929e1b021f9d51f8216d71c0d7de13be1ee5512ce613d04a9260c61",
+          "indexed_sha256": "f0235a6e687577a7df04d69cf18671bbb4b9a5224ddd3b771ccf5757a67380fb",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "repeat",
+      "folder": "case04",
+      "prior_folder": "Fuzzkin-standing-90-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "bedc081a7456d2fc0197ad0a31961c6606811a058266d7ade998ed74d2d550f9",
+          "indexed_sha256": "db509b84b07b179007d249b758278e5160be2d0a9e343f169464ad90b16bfd93",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "7131502d48d9a4d3c4d98edf1d396228dfa0e574e372848347c385fb83c6fb57",
+          "indexed_sha256": "6c60322d6b543f2bc3db569caed216f7c28a944789c4fb2bfd6078edc1c4b699",
+          "changed_from_combined": 8,
+          "remaining_from_host": 32
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "c4fe4edda9347ac7dcbd76c1fd9a8c9536af8125eb6ef564b8563ec1d16affe2",
+          "indexed_sha256": "10b9848edc15326bff5bddf5c49bc951ab6e4b12b0844a16a81df36b407553f5",
+          "changed_from_combined": 32,
+          "remaining_from_host": 8
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "bedc081a7456d2fc0197ad0a31961c6606811a058266d7ade998ed74d2d550f9",
+          "indexed_sha256": "db509b84b07b179007d249b758278e5160be2d0a9e343f169464ad90b16bfd93",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "yaw_arc",
+      "folder": "case05",
+      "prior_folder": "Fuzzkin-standing-90-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "1a125a68d56c76904bae2a50fc0983715f6a5fa50a97088efba5bfd14517bdc3",
+          "indexed_sha256": "fa808e6274f4b40013a4f01ef6eca96ce5f3904e4c5877220f964f41a2b3c8ed",
+          "changed_from_combined": 0,
+          "remaining_from_host": 33
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "c1012986ec752ced3375bf00cd8f37c9613847a9ca8abe084f2893bd7d4ab626",
+          "indexed_sha256": "96efdbb092fb6c52844893ffe8f6ac61da8808fac853d4f1eb34a38bf2575a2f",
+          "changed_from_combined": 33,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "4c69f7f66a47ca740794e314df0309342e395356d4432a370ed9e13221725eae",
+          "indexed_sha256": "ad81d6fe765e9f8f2b9779ffb9957a2c454d729fd4f1f8d9ecd67c51acd19386",
+          "changed_from_combined": 9,
+          "remaining_from_host": 24
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "12cc58c63a45aeb79b0f93fdc0807075d32adb603b8fdcf9774a6ce67d1b10f3",
+          "indexed_sha256": "ee9a7e90f2eed6b0e25ae87dd8b3b16cc4d544538cb4e39016512478155218da",
+          "changed_from_combined": 24,
+          "remaining_from_host": 9
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "1a125a68d56c76904bae2a50fc0983715f6a5fa50a97088efba5bfd14517bdc3",
+          "indexed_sha256": "fa808e6274f4b40013a4f01ef6eca96ce5f3904e4c5877220f964f41a2b3c8ed",
+          "changed_from_combined": 0,
+          "remaining_from_host": 33
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "c1012986ec752ced3375bf00cd8f37c9613847a9ca8abe084f2893bd7d4ab626",
+          "indexed_sha256": "96efdbb092fb6c52844893ffe8f6ac61da8808fac853d4f1eb34a38bf2575a2f",
+          "changed_from_combined": 33,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -16,
+            2
+          ],
+          "combined": [
+            65,
+            4
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -16,
+            2
+          ],
+          "combined": [
+            65,
+            4
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -16,
+            2
+          ],
+          "combined": [
+            65,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "head_arc",
+      "folder": "case06",
+      "prior_folder": "Fuzzkin-standing-90-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "9e86d11c5999bc8762b30d620c07263d0bcd001fbd51dd8577d76d39d4c292ed",
+          "indexed_sha256": "4cfade8b552e31947991ceb2ea1afd7a6632f4448f2cceb0c9a17d56d9214654",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "4ac3dfb818a74bd4b6b0839eb6cbc3e596300caf6fa0f113ac2f36a35ea08bc8",
+          "indexed_sha256": "757931f586b25803818c61efeebc79525ff8942c4e772f96dca17cb9f470ba70",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "ab2317b357c41fe6e1ffec4f2ddfb59f5bd5413e5df5f2ac77444ae357465d36",
+          "indexed_sha256": "60b9fdd3b2a8d62d43078b2ec177b73bc82e50440823a2a3114d747565d54700",
+          "changed_from_combined": 8,
+          "remaining_from_host": 32
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "40de99e0337970dc401dceabc77400a060bc0ee9af97c2c0a9e6e6a9a48b3a1b",
+          "indexed_sha256": "6d361b1d7a02f971fb0fed4598ed5bf6275d9615d1828fa5903fa4411f916243",
+          "changed_from_combined": 32,
+          "remaining_from_host": 8
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "9e86d11c5999bc8762b30d620c07263d0bcd001fbd51dd8577d76d39d4c292ed",
+          "indexed_sha256": "4cfade8b552e31947991ceb2ea1afd7a6632f4448f2cceb0c9a17d56d9214654",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "4ac3dfb818a74bd4b6b0839eb6cbc3e596300caf6fa0f113ac2f36a35ea08bc8",
+          "indexed_sha256": "757931f586b25803818c61efeebc79525ff8942c4e772f96dca17cb9f470ba70",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "standing",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "tilt_arc",
+      "folder": "case07",
+      "prior_folder": "Fuzzkin-standing-90-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "7690fcf7a5f3accef32c99eb6559bcc949036451222aaccf96a4f099632dcaa9",
+          "indexed_sha256": "aaa97105961451aa4c65f0b567c59ce9a9dd670102545bfdcd1d0e7d7aacb1ad",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "7131502d48d9a4d3c4d98edf1d396228dfa0e574e372848347c385fb83c6fb57",
+          "indexed_sha256": "6c60322d6b543f2bc3db569caed216f7c28a944789c4fb2bfd6078edc1c4b699",
+          "changed_from_combined": 8,
+          "remaining_from_host": 32
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "d470a92404dd66cd62bb0f8e4dcbf0cb70de50d4e46bb81a40d26a5b8c3ccc04",
+          "indexed_sha256": "cd096999e94d8fa3f6136fceb5b8bd72e5479ca0eb2084e1c2ccff8493016a08",
+          "changed_from_combined": 32,
+          "remaining_from_host": 8
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "c9858f8a1a7d063af6f477658f9fc71d4220084ac144d9edb0ac2863bd969490",
+          "indexed_sha256": "77271760230a59d6e70cda89099c05315cedd70333b71868cab26d7a7140cbad",
+          "changed_from_combined": 0,
+          "remaining_from_host": 40
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "7690fcf7a5f3accef32c99eb6559bcc949036451222aaccf96a4f099632dcaa9",
+          "indexed_sha256": "aaa97105961451aa4c65f0b567c59ce9a9dd670102545bfdcd1d0e7d7aacb1ad",
+          "changed_from_combined": 40,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            64,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "repeat",
+      "folder": "case08",
+      "prior_folder": "Fuzzkin-sitting-0-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "e7b373076eaaf199f5831be5512ba0f6877b8b196d00f0b85e817895725a7903",
+          "indexed_sha256": "31ecba2d87f5ef1267978d98de88b4df7bad37067db0ee27be3321463c86a64f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "fdc8292843eff13dd26f70367d2e96bf3677249d11d3cbfc876e036699299473",
+          "indexed_sha256": "60d97714ffce933e299947d25cd8033434ed65f4a1f3b24ea200466b5076a1d7",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "51cafdb93adaf23cc9ab3d005fd319fa003295ca3d840b9bf93996deb65409e6",
+          "indexed_sha256": "449d5be80a8e2646d963ec545a683c327c4cd9d94c26685aa181af10d892ef21",
+          "changed_from_combined": 11,
+          "remaining_from_host": 15
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "5d76985eadecd0dae59df01834e9327af4051d0fb7b08c3433d896de3373f5cf",
+          "indexed_sha256": "010352ee20238e3f4cf797bad48a29839803971bcd2b8877a169fd6d9a6b71a5",
+          "changed_from_combined": 15,
+          "remaining_from_host": 11
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "e7b373076eaaf199f5831be5512ba0f6877b8b196d00f0b85e817895725a7903",
+          "indexed_sha256": "31ecba2d87f5ef1267978d98de88b4df7bad37067db0ee27be3321463c86a64f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "fdc8292843eff13dd26f70367d2e96bf3677249d11d3cbfc876e036699299473",
+          "indexed_sha256": "60d97714ffce933e299947d25cd8033434ed65f4a1f3b24ea200466b5076a1d7",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "yaw_arc",
+      "folder": "case09",
+      "prior_folder": "Fuzzkin-sitting-0-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "a8660da441de213cb61f0fb82ae460f3a1e1035eefdd2dbd39949a3099f989e5",
+          "indexed_sha256": "7e131cf8f443d91fb6b5036e96fc09cbd7cb2b7537afe1945f625d27a1d36261",
+          "changed_from_combined": 0,
+          "remaining_from_host": 27
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "3f27301367efe64e7266552d9b8949b0c50c537dadee9b0172bcca855b0f6130",
+          "indexed_sha256": "8a4db00450a473513d3ab7b237d19d76dfc533d2ad3029cfb2307b3578b96a75",
+          "changed_from_combined": 27,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "72e24e43f6238351a3fd29dea9c7fba7f0357940d1957c6a945652b2a89d9b79",
+          "indexed_sha256": "d8df1034377673b6eda43f2d3b1a33fb023279f895d0d82c751346a8b3f6b34f",
+          "changed_from_combined": 7,
+          "remaining_from_host": 20
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "5fbe894311f5cb5bc6dbdf3eee74f99ff3b6fa7daa29ccd516b6239757050e20",
+          "indexed_sha256": "95b4a57e5101f5e77440286657027441a8713bfb1a0ff89adbaf8bf9a6fb45bc",
+          "changed_from_combined": 20,
+          "remaining_from_host": 7
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "a8660da441de213cb61f0fb82ae460f3a1e1035eefdd2dbd39949a3099f989e5",
+          "indexed_sha256": "7e131cf8f443d91fb6b5036e96fc09cbd7cb2b7537afe1945f625d27a1d36261",
+          "changed_from_combined": 0,
+          "remaining_from_host": 27
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "3f27301367efe64e7266552d9b8949b0c50c537dadee9b0172bcca855b0f6130",
+          "indexed_sha256": "8a4db00450a473513d3ab7b237d19d76dfc533d2ad3029cfb2307b3578b96a75",
+          "changed_from_combined": 27,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            0,
+            16
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            0,
+            16
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            0,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "head_arc",
+      "folder": "case10",
+      "prior_folder": "Fuzzkin-sitting-0-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "83cda24e00e8ef69fdbbb2d4e8688a24a2bdb5458521724a84447716ba5842ce",
+          "indexed_sha256": "a2a2b5cda11c9193f6e047f07062df122b54a7c40401b99a8ce9838ee59d023f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "edd5ff7084c514280262a767c4ef09f36009f8868e5ad5b704caec4f9405e2da",
+          "indexed_sha256": "7d69ed5cfe25dc46b633f64811fe20b5a62080ff90bb2a45050206fe57f58627",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "e5c1d892463f3437305e4a56ff5487ecded185c76302424229ac19d78c51945c",
+          "indexed_sha256": "6b770e5213ee5a1d04dd4bd3489b203b385ef402ec55686fda93d7e8c70e29f3",
+          "changed_from_combined": 11,
+          "remaining_from_host": 15
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "814005aa7b7873989fcfc6a8ff61c1c532f07bd5b5b3dc9b6303521365a56bc6",
+          "indexed_sha256": "0de7af207d2eaeff8525c8827d8232af5cc17415964cdc87842dd96d9a8b6527",
+          "changed_from_combined": 15,
+          "remaining_from_host": 11
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "83cda24e00e8ef69fdbbb2d4e8688a24a2bdb5458521724a84447716ba5842ce",
+          "indexed_sha256": "a2a2b5cda11c9193f6e047f07062df122b54a7c40401b99a8ce9838ee59d023f",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "edd5ff7084c514280262a767c4ef09f36009f8868e5ad5b704caec4f9405e2da",
+          "indexed_sha256": "7d69ed5cfe25dc46b633f64811fe20b5a62080ff90bb2a45050206fe57f58627",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "tilt_arc",
+      "folder": "case11",
+      "prior_folder": "Fuzzkin-sitting-0-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "a20014a7600e78df4471dd4ac46c4ddfdd76d532dfaa4c3423756818259447d2",
+          "indexed_sha256": "f3e029d25338c11c2d53f874e2e6af28bfa92d3e6b9f95cbb7774ee17bc91104",
+          "changed_from_combined": 0,
+          "remaining_from_host": 32
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "5e9b13c1bd39f8a9981dd6d3e194605b642229ebbd736fd3b168d3c943c1059c",
+          "indexed_sha256": "e07885010ed940d65d8cf559d9337eb20f46c17cc2f79c60c55d3aea9c1caabe",
+          "changed_from_combined": 32,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "8d05c787bcdce29b6968d9de3cc5b24904696d48aa26c929bcad5f183ecbe52b",
+          "indexed_sha256": "8561d292f08d3b207f24d76a013fbfe18bcddbfe14b49777a96e281a7e75b0a8",
+          "changed_from_combined": 11,
+          "remaining_from_host": 21
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "6d8913bca5328ba56b187bd6035b8618ad2322aa7030f3b7162c647bae969727",
+          "indexed_sha256": "4bd44862a48ce6eb12919eb350a93c4b9dd1c1558fb9e0147d9a4cc551b0d038",
+          "changed_from_combined": 21,
+          "remaining_from_host": 11
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "a20014a7600e78df4471dd4ac46c4ddfdd76d532dfaa4c3423756818259447d2",
+          "indexed_sha256": "f3e029d25338c11c2d53f874e2e6af28bfa92d3e6b9f95cbb7774ee17bc91104",
+          "changed_from_combined": 0,
+          "remaining_from_host": 32
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "5e9b13c1bd39f8a9981dd6d3e194605b642229ebbd736fd3b168d3c943c1059c",
+          "indexed_sha256": "e07885010ed940d65d8cf559d9337eb20f46c17cc2f79c60c55d3aea9c1caabe",
+          "changed_from_combined": 32,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            2,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "repeat",
+      "folder": "case12",
+      "prior_folder": "Fuzzkin-sitting-90-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "changed_from_combined": 0,
+          "remaining_from_host": 31
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "a9c88562ae7c6a3059b60ee9d50deddfd9eb9c88872f4bf674550844ec23fb4a",
+          "indexed_sha256": "bc37a9bea321f22f1cc83abecb6c3bf869ab574b34ebd31c1a185b5671eee3e6",
+          "changed_from_combined": 31,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "3a52523d45fcabcf31284985a419752dfc3ae6453c763a640a75ceea25f9c568",
+          "indexed_sha256": "c5b8f630bd4931d6f905c9f737e233a2a40defaac3c17d4231f1774cef1e0a54",
+          "changed_from_combined": 3,
+          "remaining_from_host": 28
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "c46ef616bb4942180c750bc9ba08a47b1a946341df7357e70e82993196bbe775",
+          "indexed_sha256": "236061b0fd374d720591cefd1c13677392fcd2ac28c070509b78e8337454db6e",
+          "changed_from_combined": 28,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "changed_from_combined": 0,
+          "remaining_from_host": 31
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "a9c88562ae7c6a3059b60ee9d50deddfd9eb9c88872f4bf674550844ec23fb4a",
+          "indexed_sha256": "bc37a9bea321f22f1cc83abecb6c3bf869ab574b34ebd31c1a185b5671eee3e6",
+          "changed_from_combined": 31,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "yaw_arc",
+      "folder": "case13",
+      "prior_folder": "Fuzzkin-sitting-90-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "a2aff7c6ef9ab409d02844e389a3dea0333a03a55299d0c9813f4796e420ee77",
+          "indexed_sha256": "10c46dc74071fd29a89985482e6bf772e1e101c29bc5acd6f534960fa07167d8",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "29378cb84e3c855f58d27f128b327d0b6c5c098c0bbe61d36197d96dc33a92bd",
+          "indexed_sha256": "c40b4cd540ed1cf314d2434dfb4eab2b6b6039166796153486feee35a7adf6ce",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "0adb8597bfc755cd0cb40a658102774598a4efb00152666889e960f02619581d",
+          "indexed_sha256": "5cd0884f3189191f67ad65c1d207796e4dbb9222ddd5919201515dd2cb4afecd",
+          "changed_from_combined": 7,
+          "remaining_from_host": 19
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "c2716b1ea01c7866fecc4340bf4e65d495ac4dd798e70fe0b5b9c23786c07f37",
+          "indexed_sha256": "c083f0e00210e703c9b72660b1e34f890ce8c840a35a04afa3412435c9b42757",
+          "changed_from_combined": 19,
+          "remaining_from_host": 7
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "a2aff7c6ef9ab409d02844e389a3dea0333a03a55299d0c9813f4796e420ee77",
+          "indexed_sha256": "10c46dc74071fd29a89985482e6bf772e1e101c29bc5acd6f534960fa07167d8",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "29378cb84e3c855f58d27f128b327d0b6c5c098c0bbe61d36197d96dc33a92bd",
+          "indexed_sha256": "c40b4cd540ed1cf314d2434dfb4eab2b6b6039166796153486feee35a7adf6ce",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -15,
+            2
+          ],
+          "combined": [
+            63,
+            64
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -15,
+            2
+          ],
+          "combined": [
+            63,
+            64
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -15,
+            2
+          ],
+          "combined": [
+            63,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "head_arc",
+      "folder": "case14",
+      "prior_folder": "Fuzzkin-sitting-90-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "9e8bc61b03c0b11217a73106d7822572d67b287ebd16e76e0de5d6f47f8b0e1c",
+          "indexed_sha256": "42de6e240f5309527282b3ad0fcbb3354fce07f96d534735ecb5b16690f82100",
+          "changed_from_combined": 0,
+          "remaining_from_host": 31
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "e624e984913011879685c33e8542787101836f31653740839fc69fc46f34d043",
+          "indexed_sha256": "44a2f580100e1d0687a99a1a4048e532eb70bd4a424cda246e5a2e96cd83b7ea",
+          "changed_from_combined": 31,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "3c7a4abb235962036fb946ecff4ce14904dfd10ee8e096fe648b2e929a6e513f",
+          "indexed_sha256": "d97ae07c2cb09c8a008abb08cef3bc740e8f0836745b9514ca2febfedf46ca7f",
+          "changed_from_combined": 3,
+          "remaining_from_host": 28
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "743040ed09e9b97888a89c5e7407cb3eef53a8b5f4403320c6016db10588f44b",
+          "indexed_sha256": "48d04dc84a4a3ac893fa1662d2694ca7b01994bb6790ea3414649cce71f89f52",
+          "changed_from_combined": 28,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "9e8bc61b03c0b11217a73106d7822572d67b287ebd16e76e0de5d6f47f8b0e1c",
+          "indexed_sha256": "42de6e240f5309527282b3ad0fcbb3354fce07f96d534735ecb5b16690f82100",
+          "changed_from_combined": 0,
+          "remaining_from_host": 31
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "e624e984913011879685c33e8542787101836f31653740839fc69fc46f34d043",
+          "indexed_sha256": "44a2f580100e1d0687a99a1a4048e532eb70bd4a424cda246e5a2e96cd83b7ea",
+          "changed_from_combined": 31,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "sitting",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "tilt_arc",
+      "folder": "case15",
+      "prior_folder": "Fuzzkin-sitting-90-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "3e844edd78987449d1f3223660cccd93de8c504f0b1be50d5be70b31599d843d",
+          "indexed_sha256": "705542b32e65ebe23b6286c65a72beabe2c523b38258339f0938ea913a94b8d5",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "3a52523d45fcabcf31284985a419752dfc3ae6453c763a640a75ceea25f9c568",
+          "indexed_sha256": "c5b8f630bd4931d6f905c9f737e233a2a40defaac3c17d4231f1774cef1e0a54",
+          "changed_from_combined": 3,
+          "remaining_from_host": 23
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "f4d50a956c4a2968addcd05d33c1a3660d4b2007e058d16bfa7bc7a9477c99fc",
+          "indexed_sha256": "dea416455bebf54b23a523da10a408763d1124aa243ea4e0b042b2af29b16daa",
+          "changed_from_combined": 23,
+          "remaining_from_host": 3
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "bdf4cb22ba6c6737c6f5a3637e9f64a44b60d926fff37f5a1ef70d0797e74504",
+          "indexed_sha256": "b62c68167cc0a3e0fac0a33671d4dc99cfb0c46fe08d72d2beefb3f7735ec97c",
+          "changed_from_combined": 0,
+          "remaining_from_host": 26
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "3e844edd78987449d1f3223660cccd93de8c504f0b1be50d5be70b31599d843d",
+          "indexed_sha256": "705542b32e65ebe23b6286c65a72beabe2c523b38258339f0938ea913a94b8d5",
+          "changed_from_combined": 26,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            61,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "repeat",
+      "folder": "case16",
+      "prior_folder": "Fuzzkin-lying-0-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "adb1b0b1dfe44af1644128ffddc4e94b7b46039e399f7b967f506d853b1eaf78",
+          "indexed_sha256": "a5f2e4c4b619d888e52c60032779b59589b0ea487de86ef30144bef7f631bccf",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "adb1b0b1dfe44af1644128ffddc4e94b7b46039e399f7b967f506d853b1eaf78",
+          "indexed_sha256": "a5f2e4c4b619d888e52c60032779b59589b0ea487de86ef30144bef7f631bccf",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "6e89a687d797008677476e41baa03f661f80afcbc0164ee8d8e605a400f10211",
+          "indexed_sha256": "cf42bca865885725374d2626576b692b164e49a84f49b8659f77c3e434d7946a",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "adb1b0b1dfe44af1644128ffddc4e94b7b46039e399f7b967f506d853b1eaf78",
+          "indexed_sha256": "a5f2e4c4b619d888e52c60032779b59589b0ea487de86ef30144bef7f631bccf",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "yaw_arc",
+      "folder": "case17",
+      "prior_folder": "Fuzzkin-lying-0-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "a82ab14e06678f079d1b2a5f18a85ad00193ed79970110e46bbae2831dc31464",
+          "indexed_sha256": "6c505b9f51c8aa59d00daaade47d2ac6d7ab23ff9198680ce295bbaea50d7eb6",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "a82ab14e06678f079d1b2a5f18a85ad00193ed79970110e46bbae2831dc31464",
+          "indexed_sha256": "6c505b9f51c8aa59d00daaade47d2ac6d7ab23ff9198680ce295bbaea50d7eb6",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "271854c53d3ca1432b2866f889caad136c30f2c5393e8dafafd26185494b57c7",
+          "indexed_sha256": "d2897c20b5dc73cf13f22b00dd45950999fd3557250684288c312cdb6b21310e",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "a82ab14e06678f079d1b2a5f18a85ad00193ed79970110e46bbae2831dc31464",
+          "indexed_sha256": "6c505b9f51c8aa59d00daaade47d2ac6d7ab23ff9198680ce295bbaea50d7eb6",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -20
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -20
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -16,
+            -1
+          ],
+          "combined": [
+            -2,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "head_arc",
+      "folder": "case18",
+      "prior_folder": "Fuzzkin-lying-0-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "1ff46988d15fc08da6b3a5048611f3201bc8d52d257a60aecb57106d85f846f2",
+          "indexed_sha256": "23f54ddf4e1e73f1af674528b5c8038006e806ae04531ed20ae51142df795b0d",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "458d392e5ee66fe447d3d4d4e98277d33b02a4d1c88d6bf6095a16942afbc36a",
+          "indexed_sha256": "3cd968fd365b2dc87484a598039fa8ea28e52a819df3c7125da7b183941df175",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "1ff46988d15fc08da6b3a5048611f3201bc8d52d257a60aecb57106d85f846f2",
+          "indexed_sha256": "23f54ddf4e1e73f1af674528b5c8038006e806ae04531ed20ae51142df795b0d",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "458d392e5ee66fe447d3d4d4e98277d33b02a4d1c88d6bf6095a16942afbc36a",
+          "indexed_sha256": "3cd968fd365b2dc87484a598039fa8ea28e52a819df3c7125da7b183941df175",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "1ff46988d15fc08da6b3a5048611f3201bc8d52d257a60aecb57106d85f846f2",
+          "indexed_sha256": "23f54ddf4e1e73f1af674528b5c8038006e806ae04531ed20ae51142df795b0d",
+          "changed_from_combined": 0,
+          "remaining_from_host": 3
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "458d392e5ee66fe447d3d4d4e98277d33b02a4d1c88d6bf6095a16942afbc36a",
+          "indexed_sha256": "3cd968fd365b2dc87484a598039fa8ea28e52a819df3c7125da7b183941df175",
+          "changed_from_combined": 3,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 0,
+      "yaw_units": 0,
+      "history": "tilt_arc",
+      "folder": "case19",
+      "prior_folder": "Fuzzkin-lying-0-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "a4a6d0f01c3c8062867603d424465396001cb386b603020e19ba1a399f2f11e1",
+          "indexed_sha256": "def405379f1168b752b977d09267af4a73e559cb921161c4288cff1e1c6552f6",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "2ce282db08f14bc55170829629ca132ed189c2507282fd443559d330caa1f43e",
+          "indexed_sha256": "5b757efae668355a1d31ca6b47b8de6cd82a94098fa12c553f15609ddbaae1ac",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "a4a6d0f01c3c8062867603d424465396001cb386b603020e19ba1a399f2f11e1",
+          "indexed_sha256": "def405379f1168b752b977d09267af4a73e559cb921161c4288cff1e1c6552f6",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "2ce282db08f14bc55170829629ca132ed189c2507282fd443559d330caa1f43e",
+          "indexed_sha256": "5b757efae668355a1d31ca6b47b8de6cd82a94098fa12c553f15609ddbaae1ac",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "a4a6d0f01c3c8062867603d424465396001cb386b603020e19ba1a399f2f11e1",
+          "indexed_sha256": "def405379f1168b752b977d09267af4a73e559cb921161c4288cff1e1c6552f6",
+          "changed_from_combined": 0,
+          "remaining_from_host": 2
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "2ce282db08f14bc55170829629ca132ed189c2507282fd443559d330caa1f43e",
+          "indexed_sha256": "5b757efae668355a1d31ca6b47b8de6cd82a94098fa12c553f15609ddbaae1ac",
+          "changed_from_combined": 2,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            0,
+            -24
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "repeat",
+      "folder": "case20",
+      "prior_folder": "Fuzzkin-lying-90-repeat",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "changed_from_combined": 0,
+          "remaining_from_host": 16
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "6bb8cb7ede3dabb9e4f1ea6a746424d359e9a499de2352aacfcd51f9205f595c",
+          "indexed_sha256": "e54d5e55e44595d3628448865cfec2c2ec039350fb25e0eab60b76e164795592",
+          "changed_from_combined": 16,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "286864148c2105fd059f5e0c6ef59176123aff1fbae44af2d687d515180bdeba",
+          "indexed_sha256": "aa6ad0b00e7fefc9a33a19d586bd008f86b56cb477676ffc38b640a6deb1084c",
+          "changed_from_combined": 6,
+          "remaining_from_host": 10
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "133823f274464ba76ca4dc9722dbe14b78f873b3e6266c5490dd62f29fe8da55",
+          "indexed_sha256": "778a520998e6f43351b6215cc93cf7250451e5291529dfc9c15afeb4f33561cc",
+          "changed_from_combined": 10,
+          "remaining_from_host": 6
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "changed_from_combined": 0,
+          "remaining_from_host": 16
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "6bb8cb7ede3dabb9e4f1ea6a746424d359e9a499de2352aacfcd51f9205f595c",
+          "indexed_sha256": "e54d5e55e44595d3628448865cfec2c2ec039350fb25e0eab60b76e164795592",
+          "changed_from_combined": 16,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "yaw_arc",
+      "folder": "case21",
+      "prior_folder": "Fuzzkin-lying-90-yaw_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "863d8bbb6ac324ff34c415cd6903fac77c19de74e9c63da0801adb10f60ea359",
+          "indexed_sha256": "64fdb6527f2fa23df07f33df8162332f78a072defe6be8b11bc5f77c51e7dbfe",
+          "changed_from_combined": 0,
+          "remaining_from_host": 15
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "687259998cad2ac713df960e3599408990cd40b9a6f0062af8d6beb4375a940b",
+          "indexed_sha256": "6ef7d042db5594bc0dc231b2f6c96c0e3cd237e99423d79e8cbc94b7a086221b",
+          "changed_from_combined": 15,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "ea06cf3c72c17a6779ca792fb9dca8467310dca2169f15fad52139e33a3c61ee",
+          "indexed_sha256": "dda81f524dcac903423d6f923b73b10bd4c397d1f2d350a0ad7fc24d8ea4fe05",
+          "changed_from_combined": 6,
+          "remaining_from_host": 9
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "1d9c79e7696bf684bcb11dfbb41c150d423b16f42285deb65f1f1efc87c70388",
+          "indexed_sha256": "59d466b276a4ac765aca3fc63b5eee9d914e07c17cb4a42122db3d0597d1bd30",
+          "changed_from_combined": 9,
+          "remaining_from_host": 6
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "863d8bbb6ac324ff34c415cd6903fac77c19de74e9c63da0801adb10f60ea359",
+          "indexed_sha256": "64fdb6527f2fa23df07f33df8162332f78a072defe6be8b11bc5f77c51e7dbfe",
+          "changed_from_combined": 0,
+          "remaining_from_host": 15
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "687259998cad2ac713df960e3599408990cd40b9a6f0062af8d6beb4375a940b",
+          "indexed_sha256": "6ef7d042db5594bc0dc231b2f6c96c0e3cd237e99423d79e8cbc94b7a086221b",
+          "changed_from_combined": 15,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            -16,
+            1
+          ],
+          "combined": [
+            66,
+            -68
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            -16,
+            1
+          ],
+          "combined": [
+            66,
+            -68
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            -16,
+            1
+          ],
+          "combined": [
+            66,
+            -68
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "head_arc",
+      "folder": "case22",
+      "prior_folder": "Fuzzkin-lying-90-head_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "002d99a0e1053da68492ee0fc914bfd48342f3c7df1d82ec475f6f448d54ac24",
+          "indexed_sha256": "73f9b8210daef74163774077cb64d3702755856f42bc5cf603b1c13e85c65049",
+          "changed_from_combined": 0,
+          "remaining_from_host": 16
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "a8a8d0968945ee842fdfdb5f611089581a76696840d3dd67008078dc01503843",
+          "indexed_sha256": "9616254bd7e85ec5bcebab5dda9b7be34eaaf431bfcf16bca4cd90ecb16d1738",
+          "changed_from_combined": 16,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "86c942ae3f0a01808366d701a2c379e8fe33cafdb77a9376a8af15eafc9af234",
+          "indexed_sha256": "6550d046fd132e41fe6745b1e58c92dbc1824a49c3bb96cf70d3c6a70878fc1e",
+          "changed_from_combined": 6,
+          "remaining_from_host": 10
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "f6f81f0d83b281992bb9058a9e9a485bd5a870ecfd79742821a0390e7674ee2f",
+          "indexed_sha256": "c53d324e90e72291fc71aebf707f864629fe5fa1e1ba59722f86fdf53668e237",
+          "changed_from_combined": 10,
+          "remaining_from_host": 6
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "002d99a0e1053da68492ee0fc914bfd48342f3c7df1d82ec475f6f448d54ac24",
+          "indexed_sha256": "73f9b8210daef74163774077cb64d3702755856f42bc5cf603b1c13e85c65049",
+          "changed_from_combined": 0,
+          "remaining_from_host": 16
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "a8a8d0968945ee842fdfdb5f611089581a76696840d3dd67008078dc01503843",
+          "indexed_sha256": "9616254bd7e85ec5bcebab5dda9b7be34eaaf431bfcf16bca4cd90ecb16d1738",
+          "changed_from_combined": 16,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            0
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fuzzkin",
+      "path": "Adopted Petz/Fuzzkin.pet",
+      "input_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "pose": "lying",
+      "yaw_degrees": 90,
+      "yaw_units": 64,
+      "history": "tilt_arc",
+      "folder": "case23",
+      "prior_folder": "Fuzzkin-lying-90-tilt_arc",
+      "eligible_indices": [
+        16,
+        17,
+        18
+      ],
+      "outputs": {
+        "combined": {
+          "png": "combined.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "changed_from_combined": 0,
+          "remaining_from_host": 14
+        },
+        "host": {
+          "png": "host.png",
+          "png_sha256": "1f78b1c9a9371cb5980252f3aae4d5e4d82ca832ac5476d6cd2c5c1e35f40c6f",
+          "indexed_sha256": "1450a0e9163b63c589ea537010c691c7e1377621ec4617d267185b460a5ff6e3",
+          "changed_from_combined": 14,
+          "remaining_from_host": 0
+        },
+        "reset_18": {
+          "png": "reset_18.png",
+          "png_sha256": "286864148c2105fd059f5e0c6ef59176123aff1fbae44af2d687d515180bdeba",
+          "indexed_sha256": "aa6ad0b00e7fefc9a33a19d586bd008f86b56cb477676ffc38b640a6deb1084c",
+          "changed_from_combined": 6,
+          "remaining_from_host": 8
+        },
+        "reset_17": {
+          "png": "reset_17.png",
+          "png_sha256": "8169c06aeeb4498c0d927472cd4fe952db9405b96048ba7663fa809ca9797d12",
+          "indexed_sha256": "eece4ead7ceb55a705dce2d62404d2e12f0172c03cca54a3e6b36b088234684c",
+          "changed_from_combined": 8,
+          "remaining_from_host": 6
+        },
+        "reset_16": {
+          "png": "reset_16.png",
+          "png_sha256": "979ff6922106d3d3d47b9f0913d1081c77065af70861ee5d18c0c7db968eb72f",
+          "indexed_sha256": "e243153b7d3648bfeb017e51c29d51c4ac748d02cc4f26d1ee1969ce4d7e9155",
+          "changed_from_combined": 0,
+          "remaining_from_host": 14
+        },
+        "reset_all": {
+          "png": "reset_all.png",
+          "png_sha256": "1f78b1c9a9371cb5980252f3aae4d5e4d82ca832ac5476d6cd2c5c1e35f40c6f",
+          "indexed_sha256": "1450a0e9163b63c589ea537010c691c7e1377621ec4617d267185b460a5ff6e3",
+          "changed_from_combined": 14,
+          "remaining_from_host": 0
+        }
+      },
+      "angle_changes": [
+        {
+          "index": 18,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 17,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        },
+        {
+          "index": 16,
+          "host": [
+            0,
+            -8
+          ],
+          "combined": [
+            66,
+            -71
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 24,
+    "final_draws": 144,
+    "prior_pixel_links": 48,
+    "all_angle_resets_match_host": 24,
+    "individual_visible_cases": {
+      "16": 4,
+      "17": 23,
+      "18": 16
+    }
+  }
+}

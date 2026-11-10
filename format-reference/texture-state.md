@@ -21,3 +21,5 @@ Relevant controls: input hash/seed, game version, pose and frame, camera, fatnes
 The UPDATE-007 pre-target paint-angle vectors are all zero (16 slots each). Its equal-pixel controls therefore do not test retention of accumulated nonzero paint angles.
 
 [PAINT-001](../experiments/paint-001.md) exercises nonzero paint angles:all24 Fuzzkin histories have three nonzero pre-target pairs,paint-only changes2–63 pixels,and host-only differs from combined texture. Homebody haszero paint-only effects in24 histories. Save the complete draw-returned FrameState;host-only orientation is insufficient for these textured markings. Named animation frames and raster RNG are fixed;native behavior remains unvalidated.
+
+[PAINT-002](../experiments/paint-002.md) isolates all24 Fuzzkin host/combined differences to paint-command angles for entries16/17/18;substituting all three restores host-only pixels exactly. Geometry and every other command field match. Paint-list indices do not name anatomical balls.

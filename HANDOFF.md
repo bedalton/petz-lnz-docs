@@ -322,3 +322,7 @@ A final actual HTTP render (Scottie sitting/front,fixed controls) matches UPDATE
 ## Second ten-minute continuation: saved paint motion
 
 [PAINT-001](experiments/paint-001.md) closes the all-zero-state limitation for sampled Fuzzkin:three nonzero paint-angle pairs before every target;paint-only changes2–63 pixels and host-only differs from combined in24/24 histories. Homebody negative control haszero effects. All192 transitions/336 final draws/12 fresh local stdio MCP baselines verify;348 PNGs and48 UPDATE-003 fresh links checked. Saved controls preserved;originals/sources untouched. Nonzero paint-state behavior is renderer evidence only. Group retint/per-paint attribution remain open. Latest authorization is another ten minutes.
+
+## Individual paint-angle attribution
+
+[PAINT-002](experiments/paint-002.md) isolates PAINT-001 host-versus-combined changes to angles on paint-list entries16/17/18. All other commands/geometry equal;all-three substitution restores host-only pixels in24/24. Individual visible counts4/23/16 of24;not anatomical semantics or additive attribution.144 PNGs/48 prior links verified,two private standing front/side sheets reviewed. No new MCP calls,renderer/original edits or native claims.

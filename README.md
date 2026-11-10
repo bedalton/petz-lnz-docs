@@ -111,3 +111,4 @@ Raw stock resources, private breed copies and rendered images remain outside Git
 Documentation checks: `scratch/petz-local-venv/bin/python tools/check_docs.py`. Regenerate the section ledger with `tools/coverage_index.py` using the same interpreter.
 
 - [Saved-pet paint-angle motion](experiments/paint-001.md)
+- [Individual paint-angle attribution](experiments/paint-002.md)

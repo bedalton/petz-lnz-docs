@@ -214,3 +214,7 @@ Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures 
 Final HTTP MCP discovery/capabilities pass; health scratch/research/line-texture-session-mcp-health.json. Actual comparisons used local stdio processes with explicit versions.
 
 Full installed-source audit:62 Python sources match renderer checkout; hash map private scratch/research/line-texture-session-source-audit.json,tree digest in the texture session index. Session verifier checks it. No source modification or native-fidelity promotion.
+
+## Latest diagonal texture research
+
+[LINE-017](experiments/line-017.md): 360 asset-free direct rasters,216 accepted/144 rejected,10,512 exact samples and180 reversed endpoint/taper pairs. Exact-fit tiles draw; one-pixel-short width/height rejects before RNG. Screen-aligned sampling holds across six slopes/directions and fuzz0/1/7. Plain support supplies window bounds; no clipping/signed shading/MCP/native claim. Private pixels/samples scratch/research/line-017/pixels.json hash-linked from manifest. Source hashes match installed/checkout; renderer unchanged. Reproducer tools/line_texture_diagonal.py refuses overwrite. Next: clipping or signed/shaded sampling, other breeds/evolving scenes or independent native evidence.

@@ -1,0 +1,11 @@
+# LINE-017: diagonal connector texture thresholds
+
+Date: 2026-11-10. Asset-free direct Python indexed raster evidence, supported by inspected renderer code; no MCP, species/version asset sample or native-game validation. [Manifest](line-017.json). Reproduce with `scratch/petz-local-venv/bin/python tools/line_texture_diagonal.py`; refuses existing output. Private raw indexed pixels and exact sample coordinates: scratch/research/line-017/pixels.json, hash in manifest. Renderer revision, installed/checkout source agreement, runtime and package version recorded.
+
+360 fixtures cover six diagonal directions/slopes, symmetric 3/3 and tapered 3/7 endpoint widths, endpoint reversal with width reversal, fuzz 0/1/7, and five tile sizes relative to each connector's raster window. Canvas 80x80, origin (30,30), seed 1, edge mode -1, shade 0 and unsigned texture paint stay fixed. Synthetic art uses `20+(x+17*y)%220`; all samples are nonzero. Plain untextured raster support supplies independent observed bounds instead of duplicating corner-rounding arithmetic. These fixtures avoid clipping.
+
+216 textured fixtures draw; 144 reject. A tile one pixel too narrow or too short rejects, whereas exact-fit and larger tiles draw. The window width is the plain width plus fuzz; height is the plain height. Rejection leaves the initial RNG and empty fuzz tables unchanged. Every paired untextured control draws.
+
+10,512 exact per-pixel assertions confirm screen-aligned rectangular sampling across the diagonal polygon. The texture is not rotated along the connector: destination x/y map to x/y within a centered texture window. Odd spare x uses floor division while odd spare y uses ceiling, matching LINE-014. Fuzz shifts row coverage within that same screen-aligned window; accepted textured and plain support, RNG state and fuzz tables match. This does not cover signed or shaded paint, explicit edge colors, clipping, retained histories or remapped breed textures.
+
+All 180 endpoint-reversal pairs are byte-identical, including taper reversal. This is scoped to these fixtures; reversing endpoints without swapping taper widths is a different geometry. Diagonal direction and taper do not rescue an undersized tile. No renderer change or native-fidelity claim follows.

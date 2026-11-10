@@ -52,6 +52,7 @@ The Petz4 porting agent reports clothing, textured paint balls and textured Outl
 - [MORPH-001: dormant groups and explicit geometry](experiments/morph-001.md)
 - [Connector sampling session verification](docs/session-2026-11-10-connector-sampling.md)
 - [Texture authoring/motion session audit](docs/session-2026-11-10-texture-authoring.md)
+- [SHADE-003: omission-induced depth shading](experiments/shade-003.md)
 - [SHADE-002: isolated retained shading histories](experiments/shade-002.md)
 - [SHADE-001: depth gain and section inheritance](experiments/shade-001.md)
 - [TEXTURE-004: returning to a pose after motion](experiments/texture-004.md)

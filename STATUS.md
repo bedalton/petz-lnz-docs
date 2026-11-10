@@ -75,4 +75,5 @@ Updated: 2026-11-10
 - Texture authoring continuation: [session/audit](docs/session-2026-11-10-texture-authoring.md),three research units;78 copies/184 PNGs/500 RGBA cells,124 MCP pairs+twelve fresh baselines,234 authoring loads+12 history fixtures,20 cross-unit pixel links and48 history fresh-baseline links verified. All62 installed sources match clean checkout; local HTTP MCP healthy.
 - Latest: [SHADE-001](experiments/shade-001.md),84 assembly loads/48 local MCP pairs,765 arithmetic slots/3,328 palette checks: absent inherits100,empty resolves0; slope changes shade without geometry changes.
 - Latest: [SHADE-002](experiments/shade-002.md),96 isolated shade histories/384 transitions/24 MCP fresh baselines: wider yaw arcs change20/24 scenes with equal final geometry/order/texture orientation;10-distance gate retains history.
+- Latest: [SHADE-003](experiments/shade-003.md),804 omission cases/23 local MCP pairs/69 counterfactual cells:11 reduce depth,seven change fills,eight change pixels through shade substitution;46 direct/MCP cell links pass.
 - Resume: [HANDOFF.md](HANDOFF.md); latest audit and next research routes are consolidated there.

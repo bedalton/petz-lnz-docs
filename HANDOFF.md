@@ -260,3 +260,7 @@ Next: custom art, young resources/broader versions, other evolving scenes, or in
 ## Latest isolated shade histories
 
 [SHADE-002](experiments/shade-002.md):96 shade-only retained histories,384 transitions,192 indexed/RGBA cells,24 exact local MCP fresh baselines. Wider yaw changes20/24 scenes;repeat/small yaw none;head arc offsets change3 but no fills/pixels.88 synthetic events distinguish distance10/11 and active-slot retention;guard/midpoint/512-slot controls included. Two sheets reviewed; private scratch/research/shade-002. Verifier replays all states/compositions and checks baseline links/provenance. No renderer/native claim. Next: omissions affecting bounds/shading or other unresearched sections; fifteen-minute continuation remains ongoing.
+
+## Latest omission/shade interaction
+
+[SHADE-003](experiments/shade-003.md):804 base omission assemblies,23 three-cell shade counterfactuals,23 local MCP pairs/46 exact direct-MCP cell links.11 omissions reduce depth,seven change fills,eight change shade-only pixels;793 depth-preserving cases retain shade/fills.12 copies,69 indexed/RGBA cells checked,three sheets reviewed. Private scratch/research/shade-003; verifier checks loader incident-line pruning separately. Renderer/originals unchanged; no native claim. This fifteen-minute continuation is entering final integrity audit.

@@ -49,3 +49,5 @@ For retained RNG behavior and isolation controls, use the focused [connector sta
 [LINE-015](../experiments/line-015.md) corroborates texture-size rejection in actual breed scenes: long offset -800 with inherited256x256 head texture equals marker-only, while explicit125 still draws; short -80 controls draw both styles. Parsed line/block survive. This is a renderer limitation with native behavior unvalidated.
 
 [LINE-016](../experiments/line-016.md) repeats the five texture-routing controls in Petz3/5: sixty numerical loads and32 MCP pairs match Petz4 block/texture records and PNGs. This narrowly broadens texture-routing evidence; size rejection and RNG histories remain Petz4-only breed samples.
+
+For texture selection, crop/size limits and disappearing-line controls, use the focused [connector texture reference](connector-textures.md).

@@ -206,3 +206,9 @@ Final scope clarification: fresh step0 versusstep1 differs in six Catz fixtures 
 ## Latest cross-version connector textures
 
 [LINE-016](experiments/line-016.md):60 numerical loads,32 local MCP pairs across Petz3/5; all block/texture records and PNG/cell hashes match Petz4 LINE-013. Two sheets reviewed. Metadata versions explicitly checked (display name remains Petz4 Renderer). Version belongs on ResourceResolver and MCP CLI, not load_breed_assets; two harness attempts archived. Final private scratch/research/line-016/{petz3,petz5}. No native/general-version claims; long-line limits and RNG histories not expanded. Coverage matrix updated narrowly.
+
+## Third ten-minute connector continuation
+
+[Texture session index](docs/session-2026-11-10-connector-textures.md) links LINE-013/014/015/016. Four units:64 local MCP pairs,126 numerical loads,72 synthetic buffers,120 exact texture samples; six sheets reviewed. `tools/check_line_texture_session.py` verifies42 copies,64 PNGs,128 RGBA cells,private/public reports,raw synthetic pixels,sources/dependencies/resource DLLs/originals and explicit MCP game-version metadata. Summary scratch/research/line-texture-session-verification.json. [Connector textures](format-reference/connector-textures.md) added to agent route. No renderer/native claims. Next: other breeds/tile sizes,threshold/diagonal sampling,evolving retained scenes or independent native evidence. Untracked istall-node untouched.
+
+Final HTTP MCP discovery/capabilities pass; health scratch/research/line-texture-session-mcp-health.json. Actual comparisons used local stdio processes with explicit versions.

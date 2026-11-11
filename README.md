@@ -28,6 +28,8 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 
 ## Evidence
 
+- [Current relative morph session and integrity audit](docs/session-2026-11-11-relative-morphs.md)
+
 - [Connector texture session and verification](docs/session-2026-11-10-connector-textures.md)
 
 - [Partial rows/composed RNG session and verification](docs/session-2026-11-10-line-history.md)

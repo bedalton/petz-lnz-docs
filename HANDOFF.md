@@ -1,20 +1,22 @@
 # Handoff
 
-Updated: 2026-11-10
+Updated: 2026-11-11
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. The latest user request is to restart the updated renderer and follow [RENDERER_CHANGES.md](RENDERER_CHANGES.md). See [the completed upgrade index](docs/renderer-upgrade-2026-11-10.md); historical fifteen-minute authorization does not apply to this upgrade task. Follow the latest requested duration on future continuations; do not infer an ongoing longer run from earlier session notes. Update documentation/status/handoff and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under 50 characters, hard limit 65; never co-authors.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. Latest completed research is the [relative morph session](docs/session-2026-11-11-relative-morphs.md), MORPH-006/007/008, on renderer6c1d883. Use `scratch/petz-local-x86-venv/bin/python` on this restored x86 host; the copied older environment is ARM. Local HTTP MCP was restarted at8765 (PID15068/session90208), with discovery/capabilities/render verified; recheck on resume.
+
+The latest user authorization is this fifteen-minute continuation only. Follow the next requested duration and do not infer an ongoing longer run. Update STATUS/HANDOFF and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under50 characters, hard limit65; never coauthors. Original-game behavior remains unvalidated.
 
 ## Known incomplete features
 
 Clothing remains unsupported. The earlier blanket textured paint/Outline limitation is withdrawn for integration6c1d883 after changed-path controls; see [UPDATE-001](experiments/update-001.md). Original-game appearance remains unvalidated. [GAP-007](troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp) preserves the quote, evidence level, version/build uncertainty and conditions for revisiting the restriction. Ordinary connector texture and flat outline-color tests do not establish support for these paths.
 
-## Current container recovery
+## Earlier container recovery (RESTORE-002)
 
 [RESTORE-002](experiments/restore-002.md): user restored games; moved nested games/games/petz3–5 to games/petz3–5. Local Petz 4 HTTP server is running at http://127.0.0.1:8765/mcp in this container session; real HTTP discovery/capability call passed. Six stdio inspect/render pairs pass and match prior SMOKE-001 records exactly. New private evidence: scratch/research/restore-002. Previous private experiments remain missing; do not assume their copies/checkpoints exist. Dependencies freshly resolved; manifest records engine and dependency hashes. No source changes.
 
-## Environment and persistence
+## Persistence and historical environment
 
 Only /workspace is guaranteed persistent. Python 3.12.16 environment is scratch/petz-local-venv; uv cache and managed Python are under scratch. Use uv --link-mode copy on this mount (default cached-wheel installation failed with permission errors). Setup commands: experiments/smoke-001.md and petz-renderer-mcp/docs/local-mcp.md.
 
@@ -398,3 +400,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Size-reference chains/cycles
 
 [MORPH-008](experiments/morph-008.md):936 Petz4 Scottie/Siamese numerical records/120 direct rasters;all six identity-remapped ABC permutations,chain/cycle graphs,five group modes,positive activation1/25/100. One-pass earlier-ID lookup changes radii with row order;fully grouped cycles remain all0. Reversed distinct-group updates preserve geometry. Full replay tools/morph_size_chains.py --verify passes;two standing sheets reviewed. No new MCP/game-file/source writes;native behavior open. Fifteen-minute continuation entering session audit.
+
+## Fifteen-minute relative morph session audit
+
+[Session evidence](docs/session-2026-11-11-relative-morphs.md) consolidates MORPH-006/007/008. Three full replays and tools/check_relative_morph_session.py pass:2,808 numerical records,228 research PNGs,36 local MCP pairs,192 direct rasters,30 private copies,84 decoded RGBA pair checks,four reviewed sheets,18 engine/breed hash links and12 cross-unit source links. Separate restoration check confirms all21 recorded originals;62 installed sources match checkout. Four tool hashes,three replay logs,manifest/image/copy hashes recorded privately. HTTP restarted PID15068/session90208;actual Scottie render equals fresh direct baseline. No renderer/original edits;pre-existing renderer .gitignore andunrelated istall-node untouched. Next:independent native evidence for GAP-005,omitted size-reference targets,other breeds or non-default scale/fatness. This fifteen-minute authorization ends with the session.

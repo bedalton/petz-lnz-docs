@@ -139,3 +139,5 @@ Updated: 2026-11-11
 - Latest: [MORPH-007](experiments/morph-007.md),1,728 numerical cases/72 direct rasters separate the nonnegative morph-size gate from earlier-ID radius lookup. Unresolved references or a dormant prior target can yield visible,unparked,radius0 markers. Full replay passes;Petz4 only,no native claim.
 
 - Latest: [MORPH-008](experiments/morph-008.md),936 numerical records/120 direct rasters show row-order-dependent size chains/cycles despite identity-remapped references;fully grouped cycles stay radius0. Full replay passes;Petz4 only,no native claim.
+
+- Relative morph continuation audited: [session](docs/session-2026-11-11-relative-morphs.md),2,808 numerical records,228 research PNGs,36 MCP pairs,192 direct rasters,30 copies,84 RGBA comparisons/four reviewed sheets;all21 recorded originals and62-source agreement pass. Local HTTP restarted andactual render matches fresh direct baseline.

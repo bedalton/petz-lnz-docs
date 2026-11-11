@@ -24,6 +24,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 | Fuzzy connector pixels change with prior draws | [Connector randomness](../format-reference/connector-state.md) |
 | Author paint markings or retain their texture angles | [Paint Ballz](../format-reference/paint-ball.md) |
 | Texture changes between repeated static frames | [Retained texture state](../format-reference/texture-state.md) |
+| Preview or edit puppies/kittens | [Young appearance and age controls](../format-reference/young-appearance.md) |
 | Assess preview reliability | [Evidence gaps](../troubleshooting/rendering-gaps.md) and the relevant experiment |
 | Find unresearched topics | [Coverage ledger](../docs/coverage.md) |
 

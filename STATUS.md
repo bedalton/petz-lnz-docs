@@ -151,3 +151,7 @@ Updated: 2026-11-11
 ## Saved young-cache continuation
 
 [YOUNG-002](experiments/young-002.md):three Petz4 saves,12 private fixtures (nine cache-omission edits),216 direct renders,84 prepared-command/PNG equalities and36 exact local MCP matches. Present caches stay authoritative;missing requested caches fall back independently at saved seed. Copies are not game-ready. Full replay underway;fifteen-minute continuation remains active.
+
+## Young-resource edits and integer ages
+
+[YOUNG-003](experiments/young-003.md):606 full-loader age records pass against independent scale/shape/ball arithmetic across Petz3/4/5. Six private Petz4 young-resource copies,84 direct outputs,28 original controls and24 exact MCP matches isolate young size/color edits;two edit sheets reviewed. Focused [reference](format-reference/young-appearance.md) and Little one coverage updated. Full replay underway;fifteen-minute continuation entering final audit.

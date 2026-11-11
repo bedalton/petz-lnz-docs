@@ -1,0 +1,7832 @@
+{
+  "provenance": {
+    "revision": "4c4d3dffdacf86c52859a15b4e826c53eb68019c",
+    "sources": {
+      "petz_renderer/local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "petz_renderer/__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "petz_renderer/cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "petz_renderer/versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "petz_renderer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "petz_renderer/inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "petz_renderer/formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "petz_renderer/formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "petz_renderer/formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "petz_renderer/formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "petz_renderer/formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "petz_renderer/formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "petz_renderer/appearance/preview.py": "2aad0bc543efcb37c11a8835953a5985a843ed9609ca284a3ad5c7c38f4d1659",
+      "petz_renderer/appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "petz_renderer/appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "petz_renderer/appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "petz_renderer/appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "petz_renderer/appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+      "petz_renderer/appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "petz_renderer/appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "petz_renderer/appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "petz_renderer/appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "petz_renderer/appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "petz_renderer/deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "petz_renderer/rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "petz_renderer/rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "petz_renderer/rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "petz_renderer/rendering/paint.py": "cb8749c2e67762fe0fe5f2b1d0addeecf90f87ce8c01b74c141a7f8d43bb54d0",
+      "petz_renderer/rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "petz_renderer/rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "petz_renderer/rendering/attachment.py": "e29179c4e5d8b3580cbd12b4131fa0cae592b201b20cedc998d754f8f502aa07",
+      "petz_renderer/rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "petz_renderer/rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "petz_renderer/rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "petz_renderer/rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "petz_renderer/rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "petz_renderer/rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "petz_renderer/rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "petz_renderer/rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "petz_renderer/rendering/composition.py": "c8e51e94b239bab4cb55ecb6a7c54bfbfb8a5b6a78fd1d0dbfdea506907a0394",
+      "petz_renderer/rendering/blocks.py": "8e6f471f69a3ac1834748b6b9a1c24c3e98cbb321dddcd61ccfc6dfe093aacf7",
+      "petz_renderer/rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "petz_renderer/rendering/raster.py": "03d3b5b3b3a68f7e6c700a87e8440973b5a9df704c8eb33984a0922f9d0a4380",
+      "petz_renderer/rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "petz_renderer/rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "petz_renderer/rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+      "petz_renderer/rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "petz_renderer/rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "petz_renderer/service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "petz_renderer/service/tool_inputs.py": "05f2fb1440957605e8848d355a08031b0f11e03f72a37f1166a5648ad207bcd0",
+      "petz_renderer/service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "petz_renderer/service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "petz_renderer/service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "petz_renderer/service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "petz_renderer/service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "petz_renderer/service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "petz_renderer/service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "petz_renderer/service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "petz_renderer/service/application.py": "b637d47d719545f1bf873ab4c721f05b7083086ffb421da3d37886863c2c785c",
+      "petz_renderer/service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "petz_renderer/service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    },
+    "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+    "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+    "dependencies": {
+      "uvicorn": "0.54.0",
+      "watchfiles": "1.3.0",
+      "platformdirs": "4.14.5",
+      "exceptiongroup": "1.3.1",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "websockets": "17.4",
+      "Pygments": "2.21.0",
+      "petz-renderer-mcp": "0.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "joserfc": "1.8.0",
+      "rich": "15.0.0",
+      "rich-rst": "2.2.0",
+      "certifi": "2026.10.23",
+      "jsonschema": "4.26.0",
+      "PyJWT": "2.15.1",
+      "pydantic": "2.14.3",
+      "dnspython": "2.9.2",
+      "fastmcp-slim": "4.1.6",
+      "click": "8.5.1",
+      "docstring_parser": "0.18.0",
+      "aiofile": "3.12.3",
+      "email-validator": "2.3.0",
+      "numpy": "2.5.4",
+      "cryptography": "50.0.2",
+      "py-key-value-aio": "0.4.6",
+      "pycparser": "3.12",
+      "pydantic_core": "2.50.4",
+      "pillow": "13.0.0",
+      "mcp-types": "2.3.0",
+      "pydantic-settings": "2.16.2",
+      "opentelemetry-api": "1.45.2",
+      "typing-inspection": "0.4.5",
+      "h11": "0.16.0",
+      "pefile": "2024.8.26",
+      "mdurl": "0.1.2",
+      "uncalled-for": "0.6.0",
+      "fastmcp": "4.1.6",
+      "PyYAML": "6.0.3",
+      "griffelib": "2.4.1",
+      "httpcore2": "2.16.0",
+      "jsonref": "1.1.0",
+      "jsonschema-path": "0.5.0",
+      "truststore": "0.10.5",
+      "python-dotenv": "1.2.4",
+      "sse-starlette": "3.6.0",
+      "cffi": "2.1.1",
+      "httpx2": "2.16.0",
+      "cyclopts": "5.3.3",
+      "annotated-types": "0.8.0",
+      "referencing": "0.37.0",
+      "markdown-it-py": "4.2.0",
+      "pyperclip": "1.11.0",
+      "rpds-py": "2026.9.1",
+      "openapi-pydantic": "0.6.0",
+      "anyio": "4.16.0",
+      "attrs": "26.1.0",
+      "python-multipart": "0.0.33",
+      "typing_extensions": "4.16.0",
+      "Authlib": "1.9.5",
+      "mcp": "2.3.0",
+      "caio": "0.12.10",
+      "pathable": "0.6.0",
+      "cachetools": "7.3.0",
+      "beartype": "0.23.1",
+      "idna": "3.20"
+    }
+  },
+  "backend": "direct renderer and local stdio MCP",
+  "numeric": [
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 76
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 78
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 80
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 115,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 60,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 62,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 64,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 66,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 68,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 70,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 72,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 74,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 76
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 78
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 80
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 115,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 60,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 62,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 64,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 66,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 68,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 70,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 72,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 74,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 76
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 78
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 80
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 101
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 103
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 105
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 111,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 112,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 113,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 114,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 115,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 116,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 117,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 118,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 116
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 119,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 117
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 120,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 121,
+      "ball_scale": 118
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 122,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 119
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 123,
+      "ball_scale": 120
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 124,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 121
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 125,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 126,
+      "ball_scale": 122
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 123
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 127,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 128,
+      "ball_scale": 124
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 129,
+      "ball_scale": 125
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 130,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 126
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 131,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 132,
+      "ball_scale": 127
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 128
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 133,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 129
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 134,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 135,
+      "ball_scale": 130
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 0,
+      "assertions": 212,
+      "pet_scale": 60,
+      "ball_scale": 82
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 1,
+      "assertions": 212,
+      "pet_scale": 62,
+      "ball_scale": 84
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 2,
+      "assertions": 212,
+      "pet_scale": 64,
+      "ball_scale": 86
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 3,
+      "assertions": 212,
+      "pet_scale": 66,
+      "ball_scale": 88
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 4,
+      "assertions": 212,
+      "pet_scale": 68,
+      "ball_scale": 90
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 5,
+      "assertions": 212,
+      "pet_scale": 70,
+      "ball_scale": 92
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 6,
+      "assertions": 212,
+      "pet_scale": 72,
+      "ball_scale": 94
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 7,
+      "assertions": 212,
+      "pet_scale": 74,
+      "ball_scale": 96
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 8,
+      "assertions": 212,
+      "pet_scale": 76,
+      "ball_scale": 98
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 9,
+      "assertions": 212,
+      "pet_scale": 78,
+      "ball_scale": 100
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 10,
+      "assertions": 212,
+      "pet_scale": 80,
+      "ball_scale": 102
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 11,
+      "assertions": 212,
+      "pet_scale": 82,
+      "ball_scale": 104
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 12,
+      "assertions": 212,
+      "pet_scale": 84,
+      "ball_scale": 106
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 13,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 14,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 15,
+      "assertions": 212,
+      "pet_scale": 85,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 16,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 17,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 18,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 19,
+      "assertions": 212,
+      "pet_scale": 86,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 20,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 21,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 22,
+      "assertions": 212,
+      "pet_scale": 87,
+      "ball_scale": 107
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 23,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 24,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 25,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 26,
+      "assertions": 212,
+      "pet_scale": 88,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 27,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 28,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 29,
+      "assertions": 212,
+      "pet_scale": 89,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 30,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 31,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 32,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 108
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 33,
+      "assertions": 212,
+      "pet_scale": 90,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 34,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 35,
+      "assertions": 212,
+      "pet_scale": 91,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 36,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 37,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 38,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 39,
+      "assertions": 212,
+      "pet_scale": 92,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 40,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 41,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 109
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 42,
+      "assertions": 212,
+      "pet_scale": 93,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 43,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 44,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 45,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 46,
+      "assertions": 212,
+      "pet_scale": 94,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 47,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 48,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 49,
+      "assertions": 212,
+      "pet_scale": 95,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 50,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 51,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 110
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 52,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 53,
+      "assertions": 212,
+      "pet_scale": 96,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 54,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 55,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 56,
+      "assertions": 212,
+      "pet_scale": 97,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 57,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 58,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 59,
+      "assertions": 212,
+      "pet_scale": 98,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 60,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 61,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 111
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 62,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 63,
+      "assertions": 212,
+      "pet_scale": 99,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 64,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 65,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 66,
+      "assertions": 212,
+      "pet_scale": 100,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 67,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 68,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 69,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 70,
+      "assertions": 212,
+      "pet_scale": 101,
+      "ball_scale": 112
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 71,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 72,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 73,
+      "assertions": 212,
+      "pet_scale": 102,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 74,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 75,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 76,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 77,
+      "assertions": 212,
+      "pet_scale": 103,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 78,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 79,
+      "assertions": 212,
+      "pet_scale": 104,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 80,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 113
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 81,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 82,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 83,
+      "assertions": 212,
+      "pet_scale": 105,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 84,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 85,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 86,
+      "assertions": 212,
+      "pet_scale": 106,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 87,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 88,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 89,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 90,
+      "assertions": 212,
+      "pet_scale": 107,
+      "ball_scale": 114
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 91,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 92,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 93,
+      "assertions": 212,
+      "pet_scale": 108,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 94,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 95,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 96,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 97,
+      "assertions": 212,
+      "pet_scale": 109,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 98,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 99,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "age": 100,
+      "assertions": 212,
+      "pet_scale": 110,
+      "ball_scale": 115
+    }
+  ],
+  "copies": [
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "path": "Dogz-control.dog",
+      "sha256": "b236d13d5e911536020cf5f07f16a90663e923da6880e0edfefa228f6d4c48cf",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "young_resource": "SCPUP",
+      "edited_offset": 59304,
+      "edited_length": 550,
+      "head": 52
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "path": "Dogz-size.dog",
+      "sha256": "42006dbef04b481a432c9e144d8e441b17134dd65dcdb9bc646dd838b4b7c394",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "young_resource": "SCPUP",
+      "edited_offset": 59304,
+      "edited_length": 550,
+      "head": 52
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "path": "Dogz-color.dog",
+      "sha256": "2fcae023cee5262820a6fe472da1bbcd3b5006d96147dc565c73859f2d820803",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "young_resource": "SCPUP",
+      "edited_offset": 59304,
+      "edited_length": 550,
+      "head": 52
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "path": "Catz-control.cat",
+      "sha256": "7c5f6c6f0182ba0f467a395bab0da3188a3b1da6d321d9a6d2043f6870dd26c5",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "young_resource": "SIKIT",
+      "edited_offset": 59016,
+      "edited_length": 983,
+      "head": 24
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "path": "Catz-size.cat",
+      "sha256": "32e3bfaf486de1db1697bdf8a5063f6ba66d6d9e797fdf15c0a9dea34e8364c4",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "young_resource": "SIKIT",
+      "edited_offset": 59016,
+      "edited_length": 983,
+      "head": 24
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "path": "Catz-color.cat",
+      "sha256": "e3a080a0cccb011526a97f68fbf2825f54a644a6cbbaef89ee33be46c1f4dec8",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "young_resource": "SIKIT",
+      "edited_offset": 59016,
+      "edited_length": 983,
+      "head": 24
+    }
+  ],
+  "renders": [
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "9a82f073f3720cb3830c7de6f7bf70c329ece7672a88738abd5c493d49cdd893",
+      "size": [
+        60,
+        76
+      ],
+      "offset": [
+        30,
+        62
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "d62e4e3ba475daf04f04a4591642914055aebbd5fef7bda64b9f11e6b6b2a339",
+      "size": [
+        100,
+        76
+      ],
+      "offset": [
+        64,
+        66
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "60966003e7b30a07552eaf4d755e0e2d58e1c0abe0137ef11a1bdd82a5a4da5e",
+      "size": [
+        69,
+        88
+      ],
+      "offset": [
+        34,
+        72
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "7a172157e674e410b74b41f22997dde1f492ccc9ad21dd13937bd3022b3bd51c",
+      "size": [
+        114,
+        86
+      ],
+      "offset": [
+        74,
+        76
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "995aa7abd71eaaf1c99013ffd46c6df2523bc79deaa4d54677138dd9c5b3f5c7",
+      "size": [
+        83,
+        113
+      ],
+      "offset": [
+        41,
+        94
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "8fa35645d0bae65e7bddaf688089afe68ed82a847b1b0e1ef1e52131630146ab",
+      "size": [
+        148,
+        108
+      ],
+      "offset": [
+        94,
+        97
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "f910db17fcb3922e223d140987dcb8b025e81f73b16da301f8f949316ed6ec17",
+      "size": [
+        60,
+        76
+      ],
+      "offset": [
+        30,
+        62
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "ded157d0ced931bab4a59914ee65ef702b9bf6b06e3a5116ff3dbc49e8ef1cbb",
+      "size": [
+        100,
+        76
+      ],
+      "offset": [
+        64,
+        66
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "e66119ab74d9fb52f22abea12248576d256f768837810512267d07bc63106b83",
+      "size": [
+        69,
+        88
+      ],
+      "offset": [
+        34,
+        72
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "aaa9b724f483aff22ee197d3d1d1bd610f077e1bc85ce27eee7cc7e55d69d296",
+      "size": [
+        114,
+        86
+      ],
+      "offset": [
+        74,
+        76
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "ac9774f8849d47f084b1f8ad7a0106f2d355877e0a990e4f0cc6737b597417f0",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "d1d711bc8e0443d2f25b462897694c531c3ad771e04bf92d7aa53607e862b9b3",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": 19,
+      "head_color": 35,
+      "png_sha256": "417aff370be62c9c6155e736f41a657615242b37914ab9733de1b9fce97c93ba",
+      "size": [
+        83,
+        113
+      ],
+      "offset": [
+        41,
+        94
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": 19,
+      "head_color": 35,
+      "png_sha256": "0bbe83aa3bf4ff6ca066f840056bca485107aaeabcad35436e5cf042f5fab8e8",
+      "size": [
+        148,
+        108
+      ],
+      "offset": [
+        94,
+        97
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "ac9774f8849d47f084b1f8ad7a0106f2d355877e0a990e4f0cc6737b597417f0",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 35,
+      "png_sha256": "d1d711bc8e0443d2f25b462897694c531c3ad771e04bf92d7aa53607e862b9b3",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "9a82f073f3720cb3830c7de6f7bf70c329ece7672a88738abd5c493d49cdd893",
+      "size": [
+        60,
+        76
+      ],
+      "offset": [
+        30,
+        62
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "d62e4e3ba475daf04f04a4591642914055aebbd5fef7bda64b9f11e6b6b2a339",
+      "size": [
+        100,
+        76
+      ],
+      "offset": [
+        64,
+        66
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "60966003e7b30a07552eaf4d755e0e2d58e1c0abe0137ef11a1bdd82a5a4da5e",
+      "size": [
+        69,
+        88
+      ],
+      "offset": [
+        34,
+        72
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "7a172157e674e410b74b41f22997dde1f492ccc9ad21dd13937bd3022b3bd51c",
+      "size": [
+        114,
+        86
+      ],
+      "offset": [
+        74,
+        76
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "995aa7abd71eaaf1c99013ffd46c6df2523bc79deaa4d54677138dd9c5b3f5c7",
+      "size": [
+        83,
+        113
+      ],
+      "offset": [
+        41,
+        94
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "8fa35645d0bae65e7bddaf688089afe68ed82a847b1b0e1ef1e52131630146ab",
+      "size": [
+        148,
+        108
+      ],
+      "offset": [
+        94,
+        97
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "size": [
+        95,
+        130
+      ],
+      "offset": [
+        47,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 35,
+      "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+      "size": [
+        170,
+        122
+      ],
+      "offset": [
+        106,
+        110
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 0,
+      "head_color": 125,
+      "png_sha256": "87ee240a37163aa76050aa266473bbb8ae4b40eb19f74439540dbdd41b318c3b",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        37,
+        81
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 0,
+      "head_color": 125,
+      "png_sha256": "bb348f02a96043cdc6c07fc112e32681a209d23df3ec7c6492efb87f77959531",
+      "size": [
+        130,
+        97
+      ],
+      "offset": [
+        84,
+        85
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "ed4dc2b8adea37da4db05c2d48e4f6d1c692467726a706314742fd582606d2ad",
+      "size": [
+        51,
+        80
+      ],
+      "offset": [
+        26,
+        66
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "714b006cf9165b8e7fbab809dee47d4cf66f35361e3597b451561a6ee3533104",
+      "size": [
+        92,
+        77
+      ],
+      "offset": [
+        58,
+        67
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "898b4d3694b614c135be5606bd7f3ecf6b6a02cb44ac0f5149cd77c3ae71edd9",
+      "size": [
+        59,
+        95
+      ],
+      "offset": [
+        30,
+        79
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "f9884db25a6f405e8b18613156f5f7c8732b9961c9226779e6865804e3e41d32",
+      "size": [
+        106,
+        89
+      ],
+      "offset": [
+        68,
+        79
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+      "size": [
+        67,
+        109
+      ],
+      "offset": [
+        34,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+      "size": [
+        122,
+        104
+      ],
+      "offset": [
+        78,
+        93
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": -18,
+      "head_color": 105,
+      "png_sha256": "39d409bdb68e4a6692b9747cd9d7bd1bd4f50860e2bcf166983ff76ccc67e638",
+      "size": [
+        69,
+        128
+      ],
+      "offset": [
+        35,
+        111
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": -18,
+      "head_color": 105,
+      "png_sha256": "04d1b2630cf5bb97ee5e1703f49a8f8370b282108570cc4a5d8ab456366078bb",
+      "size": [
+        139,
+        116
+      ],
+      "offset": [
+        85,
+        106
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+      "size": [
+        67,
+        109
+      ],
+      "offset": [
+        34,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+      "size": [
+        122,
+        104
+      ],
+      "offset": [
+        78,
+        93
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "db230fc09b797378425a240eabf23098dcb66fc14970be20420f0b70328917de",
+      "size": [
+        63,
+        80
+      ],
+      "offset": [
+        31,
+        66
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "7842886e6afc765e4e6aeda34e5c8cb5d564dc716f87a4135e58394783606392",
+      "size": [
+        95,
+        81
+      ],
+      "offset": [
+        61,
+        71
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "0af9c268660f722e8342f881b789cb5e8ff0b59bd4a60b2dbbb6d7951a86e655",
+      "size": [
+        71,
+        95
+      ],
+      "offset": [
+        35,
+        79
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "7edeb540b5d2b560567806a3f42b84854a4f9297bd5a920b5a448109893441d1",
+      "size": [
+        109,
+        93
+      ],
+      "offset": [
+        71,
+        83
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "c732d3bf283aa39db84e0bbfcc5678404d269998bad9cb829ca74be44da13dac",
+      "size": [
+        79,
+        109
+      ],
+      "offset": [
+        39,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "f8d52b759412dea44da9b0b18eee19d25759b479b6d0de5c188dfdce54ecaf5d",
+      "size": [
+        125,
+        106
+      ],
+      "offset": [
+        81,
+        95
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": 16,
+      "head_color": 105,
+      "png_sha256": "9c60f357c1c6374584234b9a6bc8d0c9933c6af0d8490fb87944e76843def68d",
+      "size": [
+        70,
+        128
+      ],
+      "offset": [
+        35,
+        111
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": 16,
+      "head_color": 105,
+      "png_sha256": "9fb8f03529b3e75e40235b269e527878d71894020b2568bed2040a458b6c411e",
+      "size": [
+        139,
+        116
+      ],
+      "offset": [
+        85,
+        106
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "c732d3bf283aa39db84e0bbfcc5678404d269998bad9cb829ca74be44da13dac",
+      "size": [
+        79,
+        109
+      ],
+      "offset": [
+        39,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": 35,
+      "head_color": 105,
+      "png_sha256": "f8d52b759412dea44da9b0b18eee19d25759b479b6d0de5c188dfdce54ecaf5d",
+      "size": [
+        125,
+        106
+      ],
+      "offset": [
+        81,
+        95
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 0,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "ed4dc2b8adea37da4db05c2d48e4f6d1c692467726a706314742fd582606d2ad",
+      "size": [
+        51,
+        80
+      ],
+      "offset": [
+        26,
+        66
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 0,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "714b006cf9165b8e7fbab809dee47d4cf66f35361e3597b451561a6ee3533104",
+      "size": [
+        92,
+        77
+      ],
+      "offset": [
+        58,
+        67
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 6,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "898b4d3694b614c135be5606bd7f3ecf6b6a02cb44ac0f5149cd77c3ae71edd9",
+      "size": [
+        59,
+        95
+      ],
+      "offset": [
+        30,
+        79
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 6,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "f9884db25a6f405e8b18613156f5f7c8732b9961c9226779e6865804e3e41d32",
+      "size": [
+        106,
+        89
+      ],
+      "offset": [
+        68,
+        79
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 12,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+      "size": [
+        67,
+        109
+      ],
+      "offset": [
+        34,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 12,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 105,
+      "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+      "size": [
+        122,
+        104
+      ],
+      "offset": [
+        78,
+        93
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 50,
+      "yaw": 0,
+      "head_size": -18,
+      "head_color": 105,
+      "png_sha256": "39d409bdb68e4a6692b9747cd9d7bd1bd4f50860e2bcf166983ff76ccc67e638",
+      "size": [
+        69,
+        128
+      ],
+      "offset": [
+        35,
+        111
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 50,
+      "yaw": 90,
+      "head_size": -18,
+      "head_color": 105,
+      "png_sha256": "04d1b2630cf5bb97ee5e1703f49a8f8370b282108570cc4a5d8ab456366078bb",
+      "size": [
+        139,
+        116
+      ],
+      "offset": [
+        85,
+        106
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "size": [
+        71,
+        149
+      ],
+      "offset": [
+        36,
+        131
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "head_size": -9,
+      "head_color": 105,
+      "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+      "size": [
+        163,
+        135
+      ],
+      "offset": [
+        95,
+        125
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 0,
+      "head_size": -25,
+      "head_color": 125,
+      "png_sha256": "2b5a7244e39f663ac2721e55e45314a48e63b546c9abeac56850fa92010f0754",
+      "size": [
+        67,
+        109
+      ],
+      "offset": [
+        34,
+        91
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "puppy",
+      "age": 0,
+      "yaw": 90,
+      "head_size": -25,
+      "head_color": 125,
+      "png_sha256": "d90dd45b675d1d24c26f24b390b75f0347a82c1e553307e184850c3a5afd314b",
+      "size": [
+        122,
+        104
+      ],
+      "offset": [
+        78,
+        93
+      ]
+    }
+  ],
+  "mcp": [
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9a82f073f3720cb3830c7de6f7bf70c329ece7672a88738abd5c493d49cdd893",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "b236d13d5e911536020cf5f07f16a90663e923da6880e0edfefa228f6d4c48cf",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "f7564b341e0085b14933696cfe53d98451a501f27a4e5e2062e3ba35fc97a96d"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "995aa7abd71eaaf1c99013ffd46c6df2523bc79deaa4d54677138dd9c5b3f5c7",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "b236d13d5e911536020cf5f07f16a90663e923da6880e0edfefa228f6d4c48cf",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "f7564b341e0085b14933696cfe53d98451a501f27a4e5e2062e3ba35fc97a96d"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "b236d13d5e911536020cf5f07f16a90663e923da6880e0edfefa228f6d4c48cf",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "f7564b341e0085b14933696cfe53d98451a501f27a4e5e2062e3ba35fc97a96d"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "b236d13d5e911536020cf5f07f16a90663e923da6880e0edfefa228f6d4c48cf",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "f7564b341e0085b14933696cfe53d98451a501f27a4e5e2062e3ba35fc97a96d"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-size.dog",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "f910db17fcb3922e223d140987dcb8b025e81f73b16da301f8f949316ed6ec17",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "42006dbef04b481a432c9e144d8e441b17134dd65dcdb9bc646dd838b4b7c394",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "2c3c2d0fac52f8c854d8bff630e8a330d1903f5517475471518a2cfdc03e4e01"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-size.dog",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "417aff370be62c9c6155e736f41a657615242b37914ab9733de1b9fce97c93ba",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "42006dbef04b481a432c9e144d8e441b17134dd65dcdb9bc646dd838b4b7c394",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "2c3c2d0fac52f8c854d8bff630e8a330d1903f5517475471518a2cfdc03e4e01"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-size.dog",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "42006dbef04b481a432c9e144d8e441b17134dd65dcdb9bc646dd838b4b7c394",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "2c3c2d0fac52f8c854d8bff630e8a330d1903f5517475471518a2cfdc03e4e01"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-size.dog",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ac9774f8849d47f084b1f8ad7a0106f2d355877e0a990e4f0cc6737b597417f0",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "42006dbef04b481a432c9e144d8e441b17134dd65dcdb9bc646dd838b4b7c394",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "2c3c2d0fac52f8c854d8bff630e8a330d1903f5517475471518a2cfdc03e4e01"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-color.dog",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9a82f073f3720cb3830c7de6f7bf70c329ece7672a88738abd5c493d49cdd893",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "2fcae023cee5262820a6fe472da1bbcd3b5006d96147dc565c73859f2d820803",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "67a2c2f061726e89937c9ad64dc58e0aa6a4cf51d3c32fc90af480df998a42ce"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-color.dog",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "995aa7abd71eaaf1c99013ffd46c6df2523bc79deaa4d54677138dd9c5b3f5c7",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "2fcae023cee5262820a6fe472da1bbcd3b5006d96147dc565c73859f2d820803",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "67a2c2f061726e89937c9ad64dc58e0aa6a4cf51d3c32fc90af480df998a42ce"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-color.dog",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "2fcae023cee5262820a6fe472da1bbcd3b5006d96147dc565c73859f2d820803",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "67a2c2f061726e89937c9ad64dc58e0aa6a4cf51d3c32fc90af480df998a42ce"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Dogz-color.dog",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "87ee240a37163aa76050aa266473bbb8ae4b40eb19f74439540dbdd41b318c3b",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "2fcae023cee5262820a6fe472da1bbcd3b5006d96147dc565c73859f2d820803",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "67a2c2f061726e89937c9ad64dc58e0aa6a4cf51d3c32fc90af480df998a42ce"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ed4dc2b8adea37da4db05c2d48e4f6d1c692467726a706314742fd582606d2ad",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "7c5f6c6f0182ba0f467a395bab0da3188a3b1da6d321d9a6d2043f6870dd26c5",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "d0c737a7b15df067841431ae5ef0228147729ab29aa1766e440b6b59d8653808"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "39d409bdb68e4a6692b9747cd9d7bd1bd4f50860e2bcf166983ff76ccc67e638",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "7c5f6c6f0182ba0f467a395bab0da3188a3b1da6d321d9a6d2043f6870dd26c5",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "d0c737a7b15df067841431ae5ef0228147729ab29aa1766e440b6b59d8653808"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "7c5f6c6f0182ba0f467a395bab0da3188a3b1da6d321d9a6d2043f6870dd26c5",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "d0c737a7b15df067841431ae5ef0228147729ab29aa1766e440b6b59d8653808"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "7c5f6c6f0182ba0f467a395bab0da3188a3b1da6d321d9a6d2043f6870dd26c5",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "d0c737a7b15df067841431ae5ef0228147729ab29aa1766e440b6b59d8653808"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-size.cat",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "db230fc09b797378425a240eabf23098dcb66fc14970be20420f0b70328917de",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "32e3bfaf486de1db1697bdf8a5063f6ba66d6d9e797fdf15c0a9dea34e8364c4",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "72992735ce7dd300b76ff3d7611b6263cd98cd7b967786f0e212b6b7efd9f086"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-size.cat",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "9c60f357c1c6374584234b9a6bc8d0c9933c6af0d8490fb87944e76843def68d",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "32e3bfaf486de1db1697bdf8a5063f6ba66d6d9e797fdf15c0a9dea34e8364c4",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "72992735ce7dd300b76ff3d7611b6263cd98cd7b967786f0e212b6b7efd9f086"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-size.cat",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "32e3bfaf486de1db1697bdf8a5063f6ba66d6d9e797fdf15c0a9dea34e8364c4",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "72992735ce7dd300b76ff3d7611b6263cd98cd7b967786f0e212b6b7efd9f086"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-size.cat",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "c732d3bf283aa39db84e0bbfcc5678404d269998bad9cb829ca74be44da13dac",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "32e3bfaf486de1db1697bdf8a5063f6ba66d6d9e797fdf15c0a9dea34e8364c4",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "72992735ce7dd300b76ff3d7611b6263cd98cd7b967786f0e212b6b7efd9f086"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-color.cat",
+        "look": "age",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "ed4dc2b8adea37da4db05c2d48e4f6d1c692467726a706314742fd582606d2ad",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "e3a080a0cccb011526a97f68fbf2825f54a644a6cbbaef89ee33be46c1f4dec8",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "17b6edd48d938fd36737d02becabc97e8a312d1abbbcef99e129440edb1419f6"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-color.cat",
+        "look": "age",
+        "age": 50,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "39d409bdb68e4a6692b9747cd9d7bd1bd4f50860e2bcf166983ff76ccc67e638",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "e3a080a0cccb011526a97f68fbf2825f54a644a6cbbaef89ee33be46c1f4dec8",
+        "age": 50,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "17b6edd48d938fd36737d02becabc97e8a312d1abbbcef99e129440edb1419f6"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-color.cat",
+        "look": "age",
+        "age": 100,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "e3a080a0cccb011526a97f68fbf2825f54a644a6cbbaef89ee33be46c1f4dec8",
+        "age": 100,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "17b6edd48d938fd36737d02becabc97e8a312d1abbbcef99e129440edb1419f6"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "age",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Catz-color.cat",
+        "look": "puppy",
+        "age": 0,
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "png_sha256": "2b5a7244e39f663ac2721e55e45314a48e63b546c9abeac56850fa92010f0754",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "e3a080a0cccb011526a97f68fbf2825f54a644a6cbbaef89ee33be46c1f4dec8",
+        "age": 0,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "17b6edd48d938fd36737d02becabc97e8a312d1abbbcef99e129440edb1419f6"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "size",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "adult",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "color",
+      "look": "age",
+      "age": 100,
+      "yaw": 90,
+      "equal": true
+    }
+  ]
+}

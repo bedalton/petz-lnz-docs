@@ -15,6 +15,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 
 - [Dogz base-ball labels](format-reference/anatomy/dogz.md), [Catz base-ball labels](format-reference/anatomy/catz.md): include automated front/side omission sensitivity; semantic visual checks mostly pending
 - [Section inheritance](format-reference/inheritance.md)
+- [Young appearance and age controls](format-reference/young-appearance.md)
 - [Head Enlargement](format-reference/head-enlargement.md), [choosing head controls](visual-editing/head-ball.md)
 - [Linez and connections](format-reference/linez.md)
 - [Move](format-reference/move.md), [Project Ball](format-reference/project-ball.md)
@@ -27,6 +28,8 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [Renderer evidence gaps](troubleshooting/rendering-gaps.md)
 
 ## Evidence
+
+- [Puppy/kitten growth, saved caches and session audit](docs/session-2026-11-11-young-appearance.md)
 
 - [Current relative morph session and integrity audit](docs/session-2026-11-11-relative-morphs.md)
 

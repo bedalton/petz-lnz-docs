@@ -1,6 +1,8 @@
 # Status
 
-Updated: 2026-11-10
+- Workspace recovery: [RESTORE-003](experiments/restore-003.md). All21 recorded game originals match; six cross-version MCP smoke pairs pass. Copied ARM runtime replaced operationally by scratch/petz-local-x86-venv; local HTTP MCP restarted and render-checked. Full installation completeness remains unverified.
+
+Updated: 2026-11-11
 
 - Upgrade review complete: [current index](docs/renderer-upgrade-2026-11-10.md).659 selected historical comparison/sheet relationships preserved;affected numerical/pixel findings corrected. All missing-input top-level controls recovered. Remaining scope is explicit in the index.
 - Renderer upgraded/restarted: [UPDATE-001](experiments/update-001.md),integration6c1d883. Textured paint/Outline blanket restrictions are withdrawn for this build after differential controls; clothing remains unsupported. Historical pixel evidence requires the linked replay review.

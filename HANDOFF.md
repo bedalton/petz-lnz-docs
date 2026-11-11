@@ -380,3 +380,7 @@ Final reference review adds Goobe to the Paint Ballz scope and places native-sem
 ## Renderer source review
 
 Private `scratch/renderer-source-review.md` lists prioritized discrepancies, controls, source paths, and questions for Renderer MCP. Start with fixed-pose texture drift, iris omission, and relative-size morph activation.
+
+## Copied workspace recovery (2026-11-11)
+
+[RESTORE-003](experiments/restore-003.md) records 21 matching original hashes, six passing cross-version stdio pairs and HTTP discovery/capabilities/render success. Use scratch/petz-local-x86-venv/bin/python on this x86_64 host; copied old environment is ARM. Endpoint127.0.0.1:8765/mcp, managed session6836. Same renderer revision6c1d883,62 installed sources match. Game originals untouched; full installation completeness is outside available manifests. Client metadata refresh/hosted app reload is separate. Reproduce originals with python3 tools/check_game_restore.py.

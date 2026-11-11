@@ -384,3 +384,5 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Copied workspace recovery (2026-11-11)
 
 [RESTORE-003](experiments/restore-003.md) records 21 matching original hashes, six passing cross-version stdio pairs and HTTP discovery/capabilities/render success. Use scratch/petz-local-x86-venv/bin/python on this x86_64 host; copied old environment is ARM. Endpoint127.0.0.1:8765/mcp, managed session6836. Same renderer revision6c1d883,62 installed sources match. Game originals untouched; full installation completeness is outside available manifests. Client metadata refresh/hosted app reload is separate. Reproduce originals with python3 tools/check_game_restore.py.
+
+- MCP follow-up: local client reconnected and six-tool discovery/render reverified; no user action needed for local research. Chat-host registry reload was attempted but unconfirmed; see [RESTORE-003](experiments/restore-003.md).

@@ -131,3 +131,5 @@ Updated: 2026-11-11
 - Paint matching continuation audited: [session](docs/session-2026-11-10-paint-matching.md),368 direct/44 MCP draws,412 PNGs,9 copies,21 originals,304 RGBA comparisons,42 prior PNG and24 state links verified. Local HTTP health passes.
 
 - Renderer source review questions are collected in private `scratch/renderer-source-review.md`.
+
+- MCP follow-up: local client reconnected and six-tool discovery/render reverified; no user action needed for local research. Chat-host registry reload was attempted but unconfirmed; see [RESTORE-003](experiments/restore-003.md).

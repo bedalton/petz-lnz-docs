@@ -143,3 +143,7 @@ Updated: 2026-11-11
 - Latest: [MORPH-008](experiments/morph-008.md),936 numerical records/120 direct rasters show row-order-dependent size chains/cycles despite identity-remapped references;fully grouped cycles stay radius0. Full replay passes;Petz4 only,no native claim.
 
 - Relative morph continuation audited: [session](docs/session-2026-11-11-relative-morphs.md),2,808 numerical records,228 research PNGs,36 MCP pairs,192 direct rasters,30 copies,84 RGBA comparisons/four reviewed sheets;all21 recorded originals and62-source agreement pass. Local HTTP restarted andactual render matches fresh direct baseline.
+
+## Puppy/kitten continuation: fresh breeds
+
+[YOUNG-001](experiments/young-001.md):306 local stdio MCP renders and132 aligned relationships pass across Petz3/4/5 Scottie/Siamese on4c4d3df. Age endpoints, aliases, defaults, three poses and front/side views sampled;two Petz4 sheets reviewed. Full replay is underway. No native-game claim or original/renderer edits. Fifteen-minute continuation remains active.

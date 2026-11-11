@@ -406,3 +406,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Fifteen-minute relative morph session audit
 
 [Session evidence](docs/session-2026-11-11-relative-morphs.md) consolidates MORPH-006/007/008. Three full replays and tools/check_relative_morph_session.py pass:2,808 numerical records,228 research PNGs,36 local MCP pairs,192 direct rasters,30 private copies,84 decoded RGBA pair checks,four reviewed sheets,18 engine/breed hash links and12 cross-unit source links. Separate restoration check confirms all21 recorded originals;62 installed sources match checkout. Four tool hashes,three replay logs,manifest/image/copy hashes recorded privately. HTTP restarted PID15068/session90208;actual Scottie render equals fresh direct baseline. No renderer/original edits;pre-existing renderer .gitignore andunrelated istall-node untouched. Next:independent native evidence for GAP-005,omitted size-reference targets,other breeds or non-default scale/fatness. This fifteen-minute authorization ends with the session.
+
+## Puppy/kitten continuation: fresh breeds
+
+[YOUNG-001](experiments/young-001.md):306 local stdio MCP renders and132 aligned relationships pass across Petz3/4/5 Scottie/Siamese on4c4d3df. Age endpoints, aliases, defaults, three poses and front/side views sampled;two Petz4 sheets reviewed. Full replay is underway. No native-game claim or original/renderer edits. Fifteen-minute continuation remains active.

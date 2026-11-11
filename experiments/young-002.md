@@ -1,0 +1,11 @@
+# YOUNG-002: independent saved-cache fallback
+
+2026-11-11. [Manifest](young-002.json). Petz4 Fuzzkin/Homebody/Goobe on renderer4c4d3df; no game validation.
+
+`tools/young_saved_probe.py` creates12 private fixtures: an exact baseline copy and copies missing adult, young or both cache contents for each pet. Nine files are edited. Only cache payload bytes are removed; their null/terminator records, remaining parsed fields, original cache contents and post-cache tail are checked independently. The reader accepts the copies. PetzInfo checksums are not recalculated or validated, so these are renderer probes, not game-ready files. Original saves and breed dependencies are hashed and preserved.
+
+There are216 fresh direct renders: four variants ×three pets ×two views ×nine age/look combinations (age0/12/50/100, adult0/100, puppy0/100, kitten0). Fatness and variation seed come from each save. Metadata confirms each requested present cache remains authoritative; each requested absent cache falls back independently to breed resources at the saved seed. Forced adult uses only adult; forced young uses only young; age mode requests both. All three referenced breeds are available in this installation. The missing-breed and saved-zero-seed error paths are code-supported but not tested by these real-save fixtures.
+
+Eighty-four prepared-command and exact PNG equalities pass: forced modes ignore age, young aliases agree, and removing the unused cache leaves the relevant forced look unchanged. Thirty-six fresh local stdio MCP renders (each pet/variant in age12,adult0,puppy0;standing front) match direct PNGs exactly. Direct side views use yaw64 in the renderer's256-unit turn; MCP uses degrees0 for its cross-checks. Preview layer hashes preserve cache/breed provenance. Pixel similarity does not establish that a fallback reproduces the saved original's genetics.
+
+Reproduce with `scratch/petz-local-x86-venv/bin/python tools/young_saved_probe.py --verify`: reconstruct every private copy, check preserved tails and parsed records, repeat all direct/MCP renders and routing relationships, and compare the complete report and PNG hashes. Fresh runs refuse an existing output directory. Private files: scratch/research/young-002. No proprietary inputs or raw images are committed; the public manifest records versions/hashes/controls/results.

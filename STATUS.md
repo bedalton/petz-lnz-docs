@@ -147,3 +147,7 @@ Updated: 2026-11-11
 ## Puppy/kitten continuation: fresh breeds
 
 [YOUNG-001](experiments/young-001.md):306 local stdio MCP renders and132 aligned relationships pass across Petz3/4/5 Scottie/Siamese on4c4d3df. Age endpoints, aliases, defaults, three poses and front/side views sampled;two Petz4 sheets reviewed. Full replay is underway. No native-game claim or original/renderer edits. Fifteen-minute continuation remains active.
+
+## Saved young-cache continuation
+
+[YOUNG-002](experiments/young-002.md):three Petz4 saves,12 private fixtures (nine cache-omission edits),216 direct renders,84 prepared-command/PNG equalities and36 exact local MCP matches. Present caches stay authoritative;missing requested caches fall back independently at saved seed. Copies are not game-ready. Full replay underway;fifteen-minute continuation remains active.

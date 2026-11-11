@@ -135,3 +135,5 @@ Updated: 2026-11-11
 - MCP follow-up: local client reconnected and six-tool discovery/render reverified; no user action needed for local research. Chat-host registry reload was attempted but unconfirmed; see [RESTORE-003](experiments/restore-003.md).
 
 - Latest: [MORPH-006](experiments/morph-006.md), current-build Petz3/4/5 replay:144 numerical records and36 local MCP pairs retain relative-size activation behavior;all six fixtures match historical Petz4 geometry. No native claim.
+
+- Latest: [MORPH-007](experiments/morph-007.md),1,728 numerical cases/72 direct rasters separate the nonnegative morph-size gate from earlier-ID radius lookup. Unresolved references or a dormant prior target can yield visible,unparked,radius0 markers. Full replay passes;Petz4 only,no native claim.

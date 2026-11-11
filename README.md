@@ -42,6 +42,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [MORPH-003: multiple groups and prefixes](experiments/morph-003.md)
 - [MORPH-002: relative-size group activation](experiments/morph-002.md)
 - [MORPH-006: current cross-version relative morph replay](experiments/morph-006.md)
+- [MORPH-007: size-reference resolution boundaries](experiments/morph-007.md)
 - [AREA-006: omitted markers and lists](experiments/area-006.md)
 - [AREA-005: anchored cycles and late lists](experiments/area-005.md)
 - [AREA-004: connected-chain ID ordering](experiments/area-004.md)

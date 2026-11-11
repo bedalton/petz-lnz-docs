@@ -390,3 +390,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Fifteen-minute relative morph continuation
 
 [MORPH-006](experiments/morph-006.md) replays the exact relative-size activation case on6c1d883 across Petz3/4/5 Scottie/Siamese:144 numerical records,30 private copies,36 local stdio MCP pairs/72 RGBA cells. All six geometry fixtures match historical Petz4;Petz3/5 PNGs match current Petz4. Full verifier passes;62-source/engine/original hashes checked. Use scratch/petz-local-x86-venv/bin/python tools/revalidate_relative_morph.py --verify. Native intent remains open;no renderer/original edits. Reference-boundary study follows during this fifteen-minute authorization.
+
+## Relative size reference boundaries
+
+[MORPH-007](experiments/morph-007.md):Petz4 Scottie/Siamese,1,728 numerical cases/72 direct rasters/two reviewed sheets;full replay passes. Morph size updates require a negative size-reference token,while radius inheritance requires an earlier assembled target. Self/forward/out-of-range nonnegative refs suppress grouped size updates but fall back to ordinary radius0. Earlier dormant target also yields radius0 without parking the activated probe. Negative sizes/1% activation included. Parsed synthetic rows in immutable memory copies only;no new MCP or file/source edits. Script tools/morph_reference_boundaries.py --verify. Chains/cycles and native behavior remain open. Fifteen-minute continuation ongoing.

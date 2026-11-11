@@ -394,3 +394,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Relative size reference boundaries
 
 [MORPH-007](experiments/morph-007.md):Petz4 Scottie/Siamese,1,728 numerical cases/72 direct rasters/two reviewed sheets;full replay passes. Morph size updates require a negative size-reference token,while radius inheritance requires an earlier assembled target. Self/forward/out-of-range nonnegative refs suppress grouped size updates but fall back to ordinary radius0. Earlier dormant target also yields radius0 without parking the activated probe. Negative sizes/1% activation included. Parsed synthetic rows in immutable memory copies only;no new MCP or file/source edits. Script tools/morph_reference_boundaries.py --verify. Chains/cycles and native behavior remain open. Fifteen-minute continuation ongoing.
+
+## Size-reference chains/cycles
+
+[MORPH-008](experiments/morph-008.md):936 Petz4 Scottie/Siamese numerical records/120 direct rasters;all six identity-remapped ABC permutations,chain/cycle graphs,five group modes,positive activation1/25/100. One-pass earlier-ID lookup changes radii with row order;fully grouped cycles remain all0. Reversed distinct-group updates preserve geometry. Full replay tools/morph_size_chains.py --verify passes;two standing sheets reviewed. No new MCP/game-file/source writes;native behavior open. Fifteen-minute continuation entering session audit.

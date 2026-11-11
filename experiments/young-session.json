@@ -1,0 +1,1598 @@
+{
+  "renderer_revision": "4c4d3dffdacf86c52859a15b4e826c53eb68019c",
+  "counts": {
+    "research_pngs": 606,
+    "breed_mcp_renders": 306,
+    "saved_direct_renders": 216,
+    "saved_mcp_matches": 36,
+    "young_edit_direct_renders": 84,
+    "young_edit_original_control_renders": 28,
+    "young_edit_mcp_matches": 24,
+    "numerical_age_records": 606,
+    "numerical_field_assertions": 128472,
+    "original_hash_checks": 21,
+    "private_saved_fixtures": 12,
+    "private_breed_fixtures": 6,
+    "aligned_breed_equalities": 132,
+    "saved_command_png_equalities": 84
+  },
+  "saved_endpoints": [
+    {
+      "name": "Fuzzkin",
+      "mode": "baseline",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "baseline",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-adult",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": false,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-adult",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": false,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-young",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": false,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-young",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": false,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-both",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Fuzzkin",
+      "mode": "missing-both",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "baseline",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "baseline",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-adult",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-adult",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-young",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-young",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-both",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Homebody",
+      "mode": "missing-both",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "baseline",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "baseline",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-adult",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-adult",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-young",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-young",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-both",
+      "yaw_degrees": 0,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    },
+    {
+      "name": "Goobe",
+      "mode": "missing-both",
+      "yaw_degrees": 90,
+      "age12_equals_forced_young": true,
+      "age100_equals_forced_adult": true
+    }
+  ],
+  "cross_version": [
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-6-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-6-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-11-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-11-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-13-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-13-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-50-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-50-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-99-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-99-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "adult-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-12-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "age-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "puppy-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "puppy-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "puppy-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "puppy-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "kitten-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "kitten-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "kitten-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "kitten-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "explicit-default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "label": "zero-seed",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-6-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-6-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-11-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-11-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-13-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-13-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-50-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-50-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-99-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-99-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "adult-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-12-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "age-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "puppy-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "puppy-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "puppy-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "puppy-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "kitten-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "kitten-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "kitten-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "kitten-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "explicit-default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "label": "zero-seed",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-6-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-6-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-11-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-11-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-13-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-13-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-50-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-50-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-99-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-99-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "adult-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-12-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "age-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "puppy-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "puppy-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "puppy-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "puppy-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "kitten-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "kitten-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "kitten-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "kitten-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "explicit-default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "label": "zero-seed",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-6-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-6-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-11-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-11-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-13-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-13-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-50-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-50-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-99-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-99-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-sitting-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-sitting-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-lying-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "adult-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-0-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-12-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "age-100-lying-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "puppy-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "puppy-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "puppy-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "puppy-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "kitten-0-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "kitten-0-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "kitten-100-standing-0",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "kitten-100-standing-90",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "explicit-default",
+      "rgba_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "label": "zero-seed",
+      "rgba_equal": true
+    }
+  ],
+  "cross_version_rgba_equal": 204,
+  "manifests": {
+    "young-001": "0140ec07012cd7cdd8dc434915e4bc5d3b110e9229b2c0ff3836a2abce859606",
+    "young-002": "0b7602d80b2c9647e09db44fbffaa9cb2f91a6a59fc6a54834b5ad6fdd442a2c",
+    "young-003": "52f6e44588e364a281d636576c541e88b3affe10793245662ccaa92ed2c176fa"
+  },
+  "scripts": {
+    "young_breed_probe.py": "086bd2922d0293eb720a0dce8897254564f5f492fdf229f255c08aaf92b015b7",
+    "young_saved_probe.py": "737b78ebf383e40612c7c7a146d5c997e3e2c20ef732e27ef255466c65b16d3b",
+    "young_layer_edits.py": "c25658c98e97bb8e02f9135d887f14f139d2970084a7541a9a4b063f15ce9148",
+    "young_sheets.py": "f2ca49e53afd2010fdcdbd47eecb0e5d8653906520955afdc0bbbe1486b63dd0",
+    "check_young_session.py": "0d10d20ffd1ed47c5f0b4216d0739b8dead2fd37cf8ba5c3e846bde3a7eb0cbc"
+  },
+  "http_health": "fresh discovery/capability and age12 Scottie render pass",
+  "originals": {
+    "scope": "Recorded engines, six stock breeds and three Petz4 saves; not a complete installation manifest or game validation",
+    "files_per_version": {
+      "petz3": 818,
+      "petz4": 1573,
+      "petz5": 1734
+    },
+    "checks": [
+      {
+        "path": "petz3/petz 3.exe",
+        "expected_sha256": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+        "actual_sha256": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/catz 3 rez.dll",
+        "expected_sha256": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+        "actual_sha256": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/catz/siamese.cat",
+        "expected_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+        "actual_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/dogz 3 rez.dll",
+        "expected_sha256": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+        "actual_sha256": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/dogz/scottie.dog",
+        "expected_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+        "actual_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/petz 3 rez.dll",
+        "expected_sha256": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb",
+        "actual_sha256": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/fuzzkin.pet",
+        "expected_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "actual_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/goobe.pet",
+        "expected_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+        "actual_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/homebody.pet",
+        "expected_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+        "actual_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+        "ok": true
+      },
+      {
+        "path": "petz4/petz 4.exe",
+        "expected_sha256": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+        "actual_sha256": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/catz 4 rez.dll",
+        "expected_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+        "actual_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/catz/siamese.cat",
+        "expected_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "actual_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/dogz 4 rez.dll",
+        "expected_sha256": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+        "actual_sha256": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/dogz/scottie.dog",
+        "expected_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "actual_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/petz 4 rez.dll",
+        "expected_sha256": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277",
+        "actual_sha256": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277",
+        "ok": true
+      },
+      {
+        "path": "petz5/petz 5.exe",
+        "expected_sha256": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+        "actual_sha256": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/catz 5 rez.dll",
+        "expected_sha256": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+        "actual_sha256": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/catz/siamese.cat",
+        "expected_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+        "actual_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/dogz 5 rez.dll",
+        "expected_sha256": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+        "actual_sha256": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/dogz/scottie.dog",
+        "expected_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+        "actual_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/petz 5 rez.dll",
+        "expected_sha256": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff",
+        "actual_sha256": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff",
+        "ok": true
+      }
+    ]
+  },
+  "renderer_source_count": 62,
+  "replay_logs": {
+    "young-001": {
+      "path": "scratch/young-001-verify.log",
+      "sha256": "8212a5e9cf89e248fdd8522a847fc454766a2a5b90fde8b587c382f44eafd1be"
+    },
+    "young-002": {
+      "path": "scratch/young-002-verify.log",
+      "sha256": "69d4aedda328e1fddc2e1609efab3a9334cd2e4736a11c47b4374dec831451fa"
+    },
+    "young-003": {
+      "path": "scratch/young-003-verify.log",
+      "sha256": "1856f0903f39e0b2f3aa1a2009f9bb8d2e0047bc8ef3ff7731dc8a4c0f35dcb6"
+    }
+  },
+  "reviewed_sheets": [
+    {
+      "path": "scratch/research/young-001/Dogz-age-sheet.png",
+      "sha256": "5736e25e996bad7872bb553454c6a9b8ead84f8c7cfe85bb19fa3dc75b45a26f"
+    },
+    {
+      "path": "scratch/research/young-001/Catz-age-sheet.png",
+      "sha256": "32bbd2bd2b572375d419d02f38cfd2160fb75b5e705360c6738b5c7609fbb576"
+    },
+    {
+      "path": "scratch/research/young-003/Dogz-edit-sheet.png",
+      "sha256": "6afab04584be61e85538629a21fab83439d54f6f21e03c06f40d5bc2099313cb"
+    },
+    {
+      "path": "scratch/research/young-003/Catz-edit-sheet.png",
+      "sha256": "2ab1bc6185e3b8b845ec54be3f59eadca740437751f5e76e0921d21647a72945"
+    }
+  ]
+}

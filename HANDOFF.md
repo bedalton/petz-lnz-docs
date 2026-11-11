@@ -1,12 +1,14 @@
 # Handoff
 
+- Latest completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. Fifteen-minute continuation complete;next work needs a new requested duration.
+
 - Latest MCP upgrade: [UPDATE-008](experiments/update-008.md), renderer `4c4d3df`; reinstalled in scratch/petz-local-x86-venv and local HTTP restarted (session58703, port8765). Fresh discovery/look schema and six Petz4 adult/young/age renders pass;21 original hashes unchanged. This supersedes older current-build/server statements below. Hosted chat endpoint remains separate.
 
 Updated: 2026-11-11
 
 ## Resume
 
-Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. Latest completed research is the [relative morph session](docs/session-2026-11-11-relative-morphs.md), MORPH-006/007/008, on renderer6c1d883. Use `scratch/petz-local-x86-venv/bin/python` on this restored x86 host; the copied older environment is ARM. Local HTTP MCP was restarted at8765 (PID15068/session90208), with discovery/capabilities/render verified; recheck on resume.
+Read AGENTS.md, STATUS.md and agent-guides/start.md; use docs/coverage.md for remaining topics. Latest completed research is the [puppy/kitten session](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003, on renderer4c4d3df. Use `scratch/petz-local-x86-venv/bin/python` on this x86 host. Local HTTP MCP restarted on port8765 in managed session82886 after final audit found the earlier process absent; recheck on resume. Earlier build/server notes below are historical.
 
 The latest user authorization is this fifteen-minute continuation only. Follow the next requested duration and do not infer an ongoing longer run. Update STATUS/HANDOFF and commit each logical unit. Identity: bedalton <3941960+bedalton@users.noreply.github.com>; conventional titles preferably under50 characters, hard limit65; never coauthors. Original-game behavior remains unvalidated.
 

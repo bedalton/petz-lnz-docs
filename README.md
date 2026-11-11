@@ -2,7 +2,7 @@
 
 An evidence-backed, agent-first guide to designing Petz breeds from images and concepts, growing into a thorough LNZ reference. Research starts with Petz 4 Dogz/Catz, then validates edited behavior across Petz 3 and 5. Current findings describe renderer behavior; original-game fidelity remains unverified.
 
-Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) reviews changed findings after paint texture,Outline,clipping and add-ball projection fixes. Clothing remains unsupported. Renderer observations do not establish original-game fidelity.
+Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) reviews changed findings after paint texture,Outline,clipping and add-ball projection fixes. Puppy/kitten loading and age defaults on4c4d3df are covered in the [young appearance session](docs/session-2026-11-11-young-appearance.md). Clothing remains unsupported. Renderer observations do not establish original-game fidelity.
 
 ## Start here
 

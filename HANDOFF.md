@@ -386,3 +386,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 [RESTORE-003](experiments/restore-003.md) records 21 matching original hashes, six passing cross-version stdio pairs and HTTP discovery/capabilities/render success. Use scratch/petz-local-x86-venv/bin/python on this x86_64 host; copied old environment is ARM. Endpoint127.0.0.1:8765/mcp, managed session6836. Same renderer revision6c1d883,62 installed sources match. Game originals untouched; full installation completeness is outside available manifests. Client metadata refresh/hosted app reload is separate. Reproduce originals with python3 tools/check_game_restore.py.
 
 - MCP follow-up: local client reconnected and six-tool discovery/render reverified; no user action needed for local research. Chat-host registry reload was attempted but unconfirmed; see [RESTORE-003](experiments/restore-003.md).
+
+## Fifteen-minute relative morph continuation
+
+[MORPH-006](experiments/morph-006.md) replays the exact relative-size activation case on6c1d883 across Petz3/4/5 Scottie/Siamese:144 numerical records,30 private copies,36 local stdio MCP pairs/72 RGBA cells. All six geometry fixtures match historical Petz4;Petz3/5 PNGs match current Petz4. Full verifier passes;62-source/engine/original hashes checked. Use scratch/petz-local-x86-venv/bin/python tools/revalidate_relative_morph.py --verify. Native intent remains open;no renderer/original edits. Reference-boundary study follows during this fifteen-minute authorization.

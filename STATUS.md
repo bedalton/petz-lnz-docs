@@ -133,3 +133,5 @@ Updated: 2026-11-11
 - Renderer source review questions are collected in private `scratch/renderer-source-review.md`.
 
 - MCP follow-up: local client reconnected and six-tool discovery/render reverified; no user action needed for local research. Chat-host registry reload was attempted but unconfirmed; see [RESTORE-003](experiments/restore-003.md).
+
+- Latest: [MORPH-006](experiments/morph-006.md), current-build Petz3/4/5 replay:144 numerical records and36 local MCP pairs retain relative-size activation behavior;all six fixtures match historical Petz4 geometry. No native claim.

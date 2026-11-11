@@ -1,0 +1,6177 @@
+{
+  "experiment": "MORPH-006",
+  "renderer_revision": "6c1d88325ced89109f8e4b9d724fa8ab6037b42c",
+  "source_hashes": {
+    "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+    "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+    "appearance/breed_variations.py": "d1aefb0e74f4a94f6a45e145b305339a9f19ec9cc40bdbee0c93200399687225",
+    "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+    "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+    "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+    "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+    "appearance/layers.py": "64ae3fa8eb64780ad925f9a6fa376f8adad2cd80136642633b0c9b4a3cdd2856",
+    "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+    "appearance/preview.py": "79b525a2696ef383b565256b711334294fd370cac4ef8563236894563f0051cc",
+    "appearance/variations.py": "03c4ed213ec6c694d7c07ee8e6f610d90b89ed1ae89bb839a7cba98e0f81d1fb",
+    "cli.py": "2f5b30afd3dee6d16460f9efbdd378d8b731469e5bd13c853ceaa86738491761",
+    "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+    "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+    "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+    "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+    "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+    "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+    "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+    "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+    "local.py": "d3b7bbbc59cbe445a18770caf19fda7dde3ff5d530e4ef1331e30b132f49a493",
+    "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+    "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+    "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+    "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+    "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+    "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+    "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+    "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+    "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+    "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+    "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+    "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+    "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+    "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+    "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+    "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+    "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+    "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+    "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+    "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+    "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+    "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+    "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+    "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+    "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+    "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+    "service/application.py": "69f2408f6fd47b90437bdf4f712f8e9d19e9382b78ca6af2553f15d517d74173",
+    "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+    "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+    "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+    "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+    "service/inspection.py": "24524a376ce7d2dc7aa74eee1bf1e0cbfb4c3b69fca37c3ed40de207de29a0c9",
+    "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+    "service/mcp.py": "2601e07d89fc967bdc5fc221940bec2161f7102db221e191425f73662bf62be3",
+    "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649",
+    "service/sheets.py": "ca0b9eb408d7854c1b3253ac72a198ef7f1582f57bdcca6839d63c06adb08b32",
+    "service/tool_inputs.py": "68815dbd2e41afd22276a1a9c032f81a1aa86e17ab3e63e60dd2ac83e6502e3c",
+    "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+    "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197"
+  },
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "fastmcp": "4.1.6",
+    "Pillow": "13.0.0",
+    "numpy": "2.5.4",
+    "pydantic": "2.14.3"
+  },
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "backend": "direct Python explicit morph percentages; local stdio MCP default state",
+  "controls": {
+    "seed": 0,
+    "age": 100,
+    "fatness": 50,
+    "poses": [
+      "standing",
+      "sitting",
+      "lying"
+    ],
+    "morph_percentages": [
+      0,
+      25,
+      50,
+      100
+    ],
+    "mcp_yaw_degrees": [
+      0,
+      90
+    ],
+    "mcp_pose": "standing"
+  },
+  "historical_manifest_sha256": "f216f03a33cac8781e64d7737d57c20f3a41826449f27e48920bc38ce7921e69",
+  "engine_hashes": {
+    "petz3": {
+      "petz 3.exe": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+      "resource/catz 3 rez.dll": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+      "resource/dogz 3 rez.dll": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+      "resource/petz 3 rez.dll": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb"
+    },
+    "petz4": {
+      "petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+      "resource/catz 4 rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+      "resource/dogz 4 rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+      "resource/petz 4 rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+    },
+    "petz5": {
+      "petz 5.exe": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+      "resource/catz 5 rez.dll": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+      "resource/dogz 5 rez.dll": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+      "resource/petz 5 rez.dll": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff"
+    }
+  },
+  "cases": [
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "source": "games/petz3/Resource/Dogz/Scottie.dog",
+      "source_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+      "head_id": 52,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz3-Dogz-static_relative20.dog",
+        "static_relative0": "petz3-Dogz-static_relative0.dog",
+        "group_relative20": "petz3-Dogz-group_relative20.dog",
+        "group_ordinary20": "petz3-Dogz-group_ordinary20.dog",
+        "static_ordinary20": "petz3-Dogz-static_ordinary20.dog"
+      },
+      "input_hashes": {
+        "static_relative20": "4bca08f97738b3539a573c1d401dc357fd747898af3dc0b529f4e3cebe64a9a5",
+        "static_relative0": "2b6f35d25177de945b7520d3e5a3f5abc14c610c3f1387aa6e5d831e5e92c4b4",
+        "group_relative20": "19247bad9727f0cff21312bfd9b61482fcf551fb57bf3dc2512c2c7eea072c65",
+        "group_ordinary20": "00b04281600855743d257fe0dc7c8730573ba5e0bfad3989684e367b51d93585",
+        "static_ordinary20": "e6104604b62460396f3a277114a3225a38099d13d8a432cdefafd029136487dd"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "source": "games/petz3/Resource/Catz/Siamese.cat",
+      "source_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+      "head_id": 24,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz3-Catz-static_relative20.cat",
+        "static_relative0": "petz3-Catz-static_relative0.cat",
+        "group_relative20": "petz3-Catz-group_relative20.cat",
+        "group_ordinary20": "petz3-Catz-group_ordinary20.cat",
+        "static_ordinary20": "petz3-Catz-static_ordinary20.cat"
+      },
+      "input_hashes": {
+        "static_relative20": "55c12b7b09116346bcb80a99e557de363fd49a31eb0627bc81bb262f7fbf71fd",
+        "static_relative0": "b575c4a8ba8bb59ac9669ad9d13d01a69ebe95e94ad7e0941db5d37e05dcf1a5",
+        "group_relative20": "d824c91c56f7790c715645b3df576c2a3dc3d71be8ac71dc8905321f714c686e",
+        "group_ordinary20": "7b53c98b5d1e66dfad5ea6c4034657e2170f0348c3cca1838892ddb57cef1a9d",
+        "static_ordinary20": "727a83a723e2cec4f4bedb6f966f9eeb056d222bd6ee8706bf3b301ee05bd83c"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "head_id": 52,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz4-Dogz-static_relative20.dog",
+        "static_relative0": "petz4-Dogz-static_relative0.dog",
+        "group_relative20": "petz4-Dogz-group_relative20.dog",
+        "group_ordinary20": "petz4-Dogz-group_ordinary20.dog",
+        "static_ordinary20": "petz4-Dogz-static_ordinary20.dog"
+      },
+      "input_hashes": {
+        "static_relative20": "fe3d3f52bd3ea3eac60840ba4bfa71fa0cfdda2cf15cd678707bcc95f0805504",
+        "static_relative0": "9d3b65fc8250ddd90b323a7258ecab6e24214dabd4a7b95812e30e7861f957b7",
+        "group_relative20": "3fd6965fb671960ae304d15c4bc5250358410d65ead40873f049b4521c123687",
+        "group_ordinary20": "29bff80ce87a1fea6be878d81fbccbd42d370d76ce0b2f624f7a373c610cba9c",
+        "static_ordinary20": "bfa41af7b0b75984ba8ad1746075b6e833afda36ed936506d432f7ad22f9d008"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "head_id": 24,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz4-Catz-static_relative20.cat",
+        "static_relative0": "petz4-Catz-static_relative0.cat",
+        "group_relative20": "petz4-Catz-group_relative20.cat",
+        "group_ordinary20": "petz4-Catz-group_ordinary20.cat",
+        "static_ordinary20": "petz4-Catz-static_ordinary20.cat"
+      },
+      "input_hashes": {
+        "static_relative20": "c78ee9f908a766c2112787bdf0cb7d066011e2a42b2128e79deb72b5596da1b3",
+        "static_relative0": "0f1393582af59d7b58984e556781d0ac7d833e34d345b966520e0f5bc7e713ab",
+        "group_relative20": "ea756dd7efacbba97cd0dc29469dca89829d8311d56332aac55b1c8d394590bd",
+        "group_ordinary20": "b1f766370d9826676718b6e1c3fabeb6a50b40e83aa3420976d797ec5e10bc11",
+        "static_ordinary20": "35f9cb860d6c86aa8639beee8906fa0b2d83b39a6a29f2d677b4c431b6be001a"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "source": "games/petz5/Resource/Dogz/Scottie.dog",
+      "source_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+      "head_id": 52,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz5-Dogz-static_relative20.dog",
+        "static_relative0": "petz5-Dogz-static_relative0.dog",
+        "group_relative20": "petz5-Dogz-group_relative20.dog",
+        "group_ordinary20": "petz5-Dogz-group_ordinary20.dog",
+        "static_ordinary20": "petz5-Dogz-static_ordinary20.dog"
+      },
+      "input_hashes": {
+        "static_relative20": "824f3457cc8186e28bbc398e7f512ed83fee9f4d79156f6e22f630d8f07fb7ba",
+        "static_relative0": "f70ee3033f48834d2f8834653296bb37a3f618ed3ee0cb5507fba74844766344",
+        "group_relative20": "74768154dfe46b93580a82421ce03e440acee39d637f4f6efef82aafe738a287",
+        "group_ordinary20": "5b646d55384989babecb49b2014064a6529d666e08a1e63780e3d8ab4b53f252",
+        "static_ordinary20": "165c90ca3e224c9289e1608a1743a5abc73bac9664f185e7030f7611e697582e"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -6,
+            "y": -61,
+            "z": -78,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -72,
+            "z": -82,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -20,
+            "y": -92,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": -95,
+            "z": -26,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -106,
+            "z": -29,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -11,
+            "y": -127,
+            "z": -35,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": 0,
+            "y": -14,
+            "z": -92,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -5,
+            "y": -25,
+            "z": -93,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 5,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 32,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -14,
+            "y": -46,
+            "z": -92,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "source": "games/petz5/Resource/Catz/Siamese.cat",
+      "source_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+      "head_id": 24,
+      "marker_id": 90,
+      "paths": {
+        "static_relative20": "petz5-Catz-static_relative20.cat",
+        "static_relative0": "petz5-Catz-static_relative0.cat",
+        "group_relative20": "petz5-Catz-group_relative20.cat",
+        "group_ordinary20": "petz5-Catz-group_ordinary20.cat",
+        "static_ordinary20": "petz5-Catz-static_ordinary20.cat"
+      },
+      "input_hashes": {
+        "static_relative20": "f63deb4214af0b8d3df0d35cd69ff0b196df28dc16cb7577e9b23272449ec1ad",
+        "static_relative0": "925b73376417220f3949eb08ba36fad3cf8cbd36206c8a2ac425e487e56bbee3",
+        "group_relative20": "fbb91a9cee7624adafab5faf4d14fdfef5d6672a8411b0874ad7db7ba7e92853",
+        "group_ordinary20": "bf6c1d3da907d874de0d0f01c2f732e0bb32cb8769062b9202d906dc5bcd6280",
+        "static_ordinary20": "2bf0af0d6be0d8726e3021ecc547dd15cac49c62e0456e5ce0ac20ae0179525e"
+      },
+      "geometry": [
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -64,
+            "z": -80,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -72,
+            "z": -83,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "standing",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": -88,
+            "z": -88,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -1,
+            "y": -105,
+            "z": -34,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -4,
+            "y": -115,
+            "z": -37,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "sitting",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -8,
+            "y": -132,
+            "z": -42,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_relative20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 0,
+          "morph_offset": [
+            0,
+            0,
+            0
+          ],
+          "morph_size": 0,
+          "head_radius": 22,
+          "marker": {
+            "x": 20480,
+            "y": 20480,
+            "z": 20480,
+            "radius": 0,
+            "visible": true,
+            "parked": true
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 25,
+          "morph_offset": [
+            -9,
+            -20,
+            0
+          ],
+          "morph_size": 5,
+          "head_radius": 22,
+          "marker": {
+            "x": -3,
+            "y": 26,
+            "z": -247,
+            "radius": 1,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 50,
+          "morph_offset": [
+            -18,
+            -40,
+            0
+          ],
+          "morph_size": 10,
+          "head_radius": 22,
+          "marker": {
+            "x": -7,
+            "y": 17,
+            "z": -249,
+            "radius": 2,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        },
+        {
+          "pose": "lying",
+          "variant": "group_ordinary20",
+          "amount": 100,
+          "morph_offset": [
+            -36,
+            -80,
+            0
+          ],
+          "morph_size": 20,
+          "head_radius": 22,
+          "marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 4,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative20_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 30,
+            "visible": true,
+            "parked": false
+          },
+          "static_relative0_marker": {
+            "x": -16,
+            "y": 1,
+            "z": -253,
+            "radius": 22,
+            "visible": true,
+            "parked": false
+          }
+        }
+      ],
+      "historical_petz4_geometry_equal": true
+    }
+  ],
+  "comparisons": [
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz3-Dogz-group_relative20.dog",
+        "after_path": "petz3-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "ec7dd1d984332813143af9933feaa5cac20df78ecabff567438ad71adac5e597",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz3-Dogz-group_relative20.dog",
+        "after_path": "petz3-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "c9510a68a34dde252ee8e9079068073bebeca4c295ab32e3800a82f89b0e9b44",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz3-Dogz-static_relative0.dog",
+        "after_path": "petz3-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "76ecdd15cd6d7b13abe50f83351a4c5a23d60c3979e3803706b114c0638821ec",
+      "cell_hashes": [
+        "f0eeb3a1c1ad254f5f4280a19e6c4d31ae70158c64b2a94df7c18d3e0a65408e",
+        "ee6d25ffd684b6402e6651e8ab65abe7883e91ca2ba3f678eab9882b27faed90"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz3-Dogz-static_relative0.dog",
+        "after_path": "petz3-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "4814c6517b25a5efdb9e6cbbd517c0cc1e2e5d160d9ca23f1f129f8ba1ac0924",
+      "cell_hashes": [
+        "1a0ad2c0b81601f766a1d7f75ddd93cb529cea664f74f3b204fac35ffb582800",
+        "c3d1725ff7cda3b70893c819178510fddcb0cff698fa8a90beb5bd5ca952f7ad"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz3-Dogz-static_relative0.dog",
+        "after_path": "petz3-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "e5b5195fa32817a9bd2f893e64b5238043d372b4f398f0671361038be3c32cd9",
+      "cell_hashes": [
+        "6e66e227689c3355cd3d25fad39c826e9c0bbfae40c21ba2b43efa313b3f9b86",
+        "677b78e1369484756cdf79965a5ae6697ff556e509391e481bbc7c20e2140f61"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Dogz",
+      "stem": "petz3-Dogz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz3-Dogz-static_relative0.dog",
+        "after_path": "petz3-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "49d37ac1c3acd23c19bde05c4471f42e53b66166da2e450de1c3dbca1ecc3340",
+      "cell_hashes": [
+        "5d7e8fe6c2846bbd57eb14fb9ce35af2c582582ac631376a9f73d3e24109acf5",
+        "37d08e3c1959875ac3162a7a28bb9e82eccf80191e4e41094fc4b46d1e053b55"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz3-Catz-group_relative20.cat",
+        "after_path": "petz3-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "1f736003bd82568040c2c8a38786bd56860e7bee2ecc89b04c35d60bf2f7816e",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz3-Catz-group_relative20.cat",
+        "after_path": "petz3-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "f291f86620bf9d65e866e1378d711dd5efcc5b512e676bb53ab2b865193667f2",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz3-Catz-static_relative0.cat",
+        "after_path": "petz3-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "bd694d938ec5fcc50a4698f1cdf105e4a1206f74955b123cc1ebeca61b1cf5c8",
+      "cell_hashes": [
+        "0e166538d4ac6f0eafe83ab75b74953e8c8a112c89e29f183e3a13b0980ae5cd",
+        "798f3439917dac3ec94a8199fe841ee58d857818f94c9614b276b73c04b57a79"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz3-Catz-static_relative0.cat",
+        "after_path": "petz3-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "94c7b85c7faaa5c801eeed274232ba5e132aa3e49d045bae99707ed5e18698f9",
+      "cell_hashes": [
+        "95c1a94505d66d3b2b814cd02f5de7d3d89bb423b1887310d1dad57d0c99add6",
+        "c18a07b320dd1abe1ad899a24bc8494e66b459fca15cd3f1e447cda950adc8a1"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz3-Catz-static_relative0.cat",
+        "after_path": "petz3-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "b9f4556ba5e2684c5bff32af2578f819ab23ac107219ef5d3f12487a6ca95f42",
+      "cell_hashes": [
+        "7852af76af593391b63d5afe208201edf8fc2290b91ebffd3c2b38b6be39aedc",
+        "96b9d05e0e6ed99fac3a1c59eb98f789fc92f9993877c3045a0ee10956da619d"
+      ]
+    },
+    {
+      "version": "petz3",
+      "species": "Catz",
+      "stem": "petz3-Catz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz3-Catz-static_relative0.cat",
+        "after_path": "petz3-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "25e473e1acc45b11c1eae19f11288cc09f6a6e842333a2a5141fd81c245c2be0",
+      "cell_hashes": [
+        "1c17c219d61569c2156ca635d43af57116fb5c06c3179e28593e6f15d7e90a26",
+        "63c8c6682cb74ebced9c4f5d8737f62e0b7afdb4eb0fcf5350a5a99ed1a4bb3e"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz4-Dogz-group_relative20.dog",
+        "after_path": "petz4-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "ec7dd1d984332813143af9933feaa5cac20df78ecabff567438ad71adac5e597",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz4-Dogz-group_relative20.dog",
+        "after_path": "petz4-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "c9510a68a34dde252ee8e9079068073bebeca4c295ab32e3800a82f89b0e9b44",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz4-Dogz-static_relative0.dog",
+        "after_path": "petz4-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "76ecdd15cd6d7b13abe50f83351a4c5a23d60c3979e3803706b114c0638821ec",
+      "cell_hashes": [
+        "f0eeb3a1c1ad254f5f4280a19e6c4d31ae70158c64b2a94df7c18d3e0a65408e",
+        "ee6d25ffd684b6402e6651e8ab65abe7883e91ca2ba3f678eab9882b27faed90"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz4-Dogz-static_relative0.dog",
+        "after_path": "petz4-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "4814c6517b25a5efdb9e6cbbd517c0cc1e2e5d160d9ca23f1f129f8ba1ac0924",
+      "cell_hashes": [
+        "1a0ad2c0b81601f766a1d7f75ddd93cb529cea664f74f3b204fac35ffb582800",
+        "c3d1725ff7cda3b70893c819178510fddcb0cff698fa8a90beb5bd5ca952f7ad"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz4-Dogz-static_relative0.dog",
+        "after_path": "petz4-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "e5b5195fa32817a9bd2f893e64b5238043d372b4f398f0671361038be3c32cd9",
+      "cell_hashes": [
+        "6e66e227689c3355cd3d25fad39c826e9c0bbfae40c21ba2b43efa313b3f9b86",
+        "677b78e1369484756cdf79965a5ae6697ff556e509391e481bbc7c20e2140f61"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Dogz",
+      "stem": "petz4-Dogz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz4-Dogz-static_relative0.dog",
+        "after_path": "petz4-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "49d37ac1c3acd23c19bde05c4471f42e53b66166da2e450de1c3dbca1ecc3340",
+      "cell_hashes": [
+        "5d7e8fe6c2846bbd57eb14fb9ce35af2c582582ac631376a9f73d3e24109acf5",
+        "37d08e3c1959875ac3162a7a28bb9e82eccf80191e4e41094fc4b46d1e053b55"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz4-Catz-group_relative20.cat",
+        "after_path": "petz4-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "1f736003bd82568040c2c8a38786bd56860e7bee2ecc89b04c35d60bf2f7816e",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz4-Catz-group_relative20.cat",
+        "after_path": "petz4-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "f291f86620bf9d65e866e1378d711dd5efcc5b512e676bb53ab2b865193667f2",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz4-Catz-static_relative0.cat",
+        "after_path": "petz4-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "bd694d938ec5fcc50a4698f1cdf105e4a1206f74955b123cc1ebeca61b1cf5c8",
+      "cell_hashes": [
+        "0e166538d4ac6f0eafe83ab75b74953e8c8a112c89e29f183e3a13b0980ae5cd",
+        "798f3439917dac3ec94a8199fe841ee58d857818f94c9614b276b73c04b57a79"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz4-Catz-static_relative0.cat",
+        "after_path": "petz4-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "94c7b85c7faaa5c801eeed274232ba5e132aa3e49d045bae99707ed5e18698f9",
+      "cell_hashes": [
+        "95c1a94505d66d3b2b814cd02f5de7d3d89bb423b1887310d1dad57d0c99add6",
+        "c18a07b320dd1abe1ad899a24bc8494e66b459fca15cd3f1e447cda950adc8a1"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz4-Catz-static_relative0.cat",
+        "after_path": "petz4-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "b9f4556ba5e2684c5bff32af2578f819ab23ac107219ef5d3f12487a6ca95f42",
+      "cell_hashes": [
+        "7852af76af593391b63d5afe208201edf8fc2290b91ebffd3c2b38b6be39aedc",
+        "96b9d05e0e6ed99fac3a1c59eb98f789fc92f9993877c3045a0ee10956da619d"
+      ]
+    },
+    {
+      "version": "petz4",
+      "species": "Catz",
+      "stem": "petz4-Catz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz4-Catz-static_relative0.cat",
+        "after_path": "petz4-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "25e473e1acc45b11c1eae19f11288cc09f6a6e842333a2a5141fd81c245c2be0",
+      "cell_hashes": [
+        "1c17c219d61569c2156ca635d43af57116fb5c06c3179e28593e6f15d7e90a26",
+        "63c8c6682cb74ebced9c4f5d8737f62e0b7afdb4eb0fcf5350a5a99ed1a4bb3e"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz5-Dogz-group_relative20.dog",
+        "after_path": "petz5-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "ec7dd1d984332813143af9933feaa5cac20df78ecabff567438ad71adac5e597",
+      "cell_hashes": [
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e",
+        "91f0b2510548145372c182d6d7b9a210042505d5d4ea9d4051f30ad23a744b7e"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz5-Dogz-group_relative20.dog",
+        "after_path": "petz5-Dogz-group_ordinary20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "c9510a68a34dde252ee8e9079068073bebeca4c295ab32e3800a82f89b0e9b44",
+      "cell_hashes": [
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35",
+        "dc99608e5a53d844259f6d044dd60faed8b792d6b9267fdda22066ae581b1e35"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz5-Dogz-static_relative0.dog",
+        "after_path": "petz5-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "76ecdd15cd6d7b13abe50f83351a4c5a23d60c3979e3803706b114c0638821ec",
+      "cell_hashes": [
+        "f0eeb3a1c1ad254f5f4280a19e6c4d31ae70158c64b2a94df7c18d3e0a65408e",
+        "ee6d25ffd684b6402e6651e8ab65abe7883e91ca2ba3f678eab9882b27faed90"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz5-Dogz-static_relative0.dog",
+        "after_path": "petz5-Dogz-static_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "4814c6517b25a5efdb9e6cbbd517c0cc1e2e5d160d9ca23f1f129f8ba1ac0924",
+      "cell_hashes": [
+        "1a0ad2c0b81601f766a1d7f75ddd93cb529cea664f74f3b204fac35ffb582800",
+        "c3d1725ff7cda3b70893c819178510fddcb0cff698fa8a90beb5bd5ca952f7ad"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz5-Dogz-static_relative0.dog",
+        "after_path": "petz5-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "e5b5195fa32817a9bd2f893e64b5238043d372b4f398f0671361038be3c32cd9",
+      "cell_hashes": [
+        "6e66e227689c3355cd3d25fad39c826e9c0bbfae40c21ba2b43efa313b3f9b86",
+        "677b78e1369484756cdf79965a5ae6697ff556e509391e481bbc7c20e2140f61"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Dogz",
+      "stem": "petz5-Dogz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz5-Dogz-static_relative0.dog",
+        "after_path": "petz5-Dogz-group_relative20.dog",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "49d37ac1c3acd23c19bde05c4471f42e53b66166da2e450de1c3dbca1ecc3340",
+      "cell_hashes": [
+        "5d7e8fe6c2846bbd57eb14fb9ce35af2c582582ac631376a9f73d3e24109acf5",
+        "37d08e3c1959875ac3162a7a28bb9e82eccf80191e4e41094fc4b46d1e053b55"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-group_relative20-group_ordinary20-0",
+      "controls": {
+        "before_path": "petz5-Catz-group_relative20.cat",
+        "after_path": "petz5-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": true,
+      "png_sha256": "1f736003bd82568040c2c8a38786bd56860e7bee2ecc89b04c35d60bf2f7816e",
+      "cell_hashes": [
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f",
+        "017f8950cdd322169ee8fb4f8cca608438d3787d0e09652bb86887004888c22f"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-group_relative20-group_ordinary20-90",
+      "controls": {
+        "before_path": "petz5-Catz-group_relative20.cat",
+        "after_path": "petz5-Catz-group_ordinary20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": true,
+      "png_sha256": "f291f86620bf9d65e866e1378d711dd5efcc5b512e676bb53ab2b865193667f2",
+      "cell_hashes": [
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f",
+        "d1d7803124a0446eede7eca10eaeab89c06b4c53d272aa513875c5c0da5d367f"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-static_relative0-static_relative20-0",
+      "controls": {
+        "before_path": "petz5-Catz-static_relative0.cat",
+        "after_path": "petz5-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "bd694d938ec5fcc50a4698f1cdf105e4a1206f74955b123cc1ebeca61b1cf5c8",
+      "cell_hashes": [
+        "0e166538d4ac6f0eafe83ab75b74953e8c8a112c89e29f183e3a13b0980ae5cd",
+        "798f3439917dac3ec94a8199fe841ee58d857818f94c9614b276b73c04b57a79"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-static_relative0-static_relative20-90",
+      "controls": {
+        "before_path": "petz5-Catz-static_relative0.cat",
+        "after_path": "petz5-Catz-static_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "94c7b85c7faaa5c801eeed274232ba5e132aa3e49d045bae99707ed5e18698f9",
+      "cell_hashes": [
+        "95c1a94505d66d3b2b814cd02f5de7d3d89bb423b1887310d1dad57d0c99add6",
+        "c18a07b320dd1abe1ad899a24bc8494e66b459fca15cd3f1e447cda950adc8a1"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-static_relative0-group_relative20-0",
+      "controls": {
+        "before_path": "petz5-Catz-static_relative0.cat",
+        "after_path": "petz5-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "equal_expected": false,
+      "png_sha256": "b9f4556ba5e2684c5bff32af2578f819ab23ac107219ef5d3f12487a6ca95f42",
+      "cell_hashes": [
+        "7852af76af593391b63d5afe208201edf8fc2290b91ebffd3c2b38b6be39aedc",
+        "96b9d05e0e6ed99fac3a1c59eb98f789fc92f9993877c3045a0ee10956da619d"
+      ]
+    },
+    {
+      "version": "petz5",
+      "species": "Catz",
+      "stem": "petz5-Catz-static_relative0-group_relative20-90",
+      "controls": {
+        "before_path": "petz5-Catz-static_relative0.cat",
+        "after_path": "petz5-Catz-group_relative20.cat",
+        "pose": "standing",
+        "seed": 0,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "equal_expected": false,
+      "png_sha256": "25e473e1acc45b11c1eae19f11288cc09f6a6e842333a2a5141fd81c245c2be0",
+      "cell_hashes": [
+        "1c17c219d61569c2156ca635d43af57116fb5c06c3179e28593e6f15d7e90a26",
+        "63c8c6682cb74ebced9c4f5d8737f62e0b7afdb4eb0fcf5350a5a99ed1a4bb3e"
+      ]
+    }
+  ]
+}

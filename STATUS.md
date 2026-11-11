@@ -1,5 +1,7 @@
 # Status
 
+- Latest MCP upgrade: [UPDATE-008](experiments/update-008.md), renderer `4c4d3df`; reinstalled in scratch/petz-local-x86-venv and local HTTP restarted (session58703, port8765). Fresh discovery/look schema and six Petz4 adult/young/age renders pass;21 original hashes unchanged. This supersedes older current-build/server statements below. Hosted chat endpoint remains separate.
+
 - Workspace recovery: [RESTORE-003](experiments/restore-003.md). All21 recorded game originals match; six cross-version MCP smoke pairs pass. Copied ARM runtime replaced operationally by scratch/petz-local-x86-venv; local HTTP MCP restarted and render-checked. Full installation completeness remains unverified.
 
 Updated: 2026-11-11

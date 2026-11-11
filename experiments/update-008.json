@@ -1,0 +1,90 @@
+{
+  "backend": "local HTTP MCP http://127.0.0.1:8765/mcp",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+  "renders": [
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "look": "adult",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "look": "puppy",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "look": "age",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "png_sha256": "60966003e7b30a07552eaf4d755e0e2d58e1c0abe0137ef11a1bdd82a5a4da5e"
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "look": "adult",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "look": "kitten",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "look": "age",
+        "age": 6,
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "seed": 41,
+        "fatness": 50
+      },
+      "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "png_sha256": "898b4d3694b614c135be5606bd7f3ecf6b6a02cb44ac0f5149cd77c3ae71edd9"
+    }
+  ],
+  "revision": "4c4d3dffdacf86c52859a15b4e826c53eb68019c",
+  "source_count": 62,
+  "source_manifest_sha256": "b9409d8add8d9d1597a2a3fa80c8c14f9bf1b4393c8f226d428a6237640d481b",
+  "private_report_sha256": "673b30a8d8cfc081b1af9889c4f2667e151fd7f4654af822f6bb7ea6b71d521c",
+  "original_checks": 21
+}

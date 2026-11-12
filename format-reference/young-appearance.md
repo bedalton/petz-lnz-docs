@@ -1,6 +1,6 @@
 # Young appearance and age controls
 
-Scope: renderer4c4d3df; Scottie/Siamese fresh breeds in Petz3/4/5, selected Petz4 saves and private young-resource edits. This is code-supported and renderer-observed behavior, not original-game validation.
+Historical scope: renderer4c4d3df; Scottie/Siamese fresh breeds in Petz3/4/5, selected Petz4 saves and private young-resource edits. This is code-supported and renderer-observed behavior, not original-game validation.
 
 For a fresh breed, use `look=age` to blend adult and young appearance at the requested age. Omitted age defaults to12; omitted or zero seed resolves41; omitted fatness defaults to50. Use `look=adult` for the adult layer or `look=puppy`/`kitten` for the young layer. Puppy and kitten are aliases in this implementation: metadata canonicalizes puppy to kitten. Forced looks ignore age for appearance selection and skip juvenile shrinking, though metadata still reports the requested age.
 
@@ -22,3 +22,5 @@ Evidence: [fresh controls](../experiments/young-001.md), [saved-cache controls](
 For MCP branch forms on this build, a [controlled schema audit](../docs/session-2026-11-12-young-routing.md) found that branch numbers are one-based despite the schema describing zero-based indexing. Branch0 is rejected; branch1 selects the first authored branch. This is a recorded interface inconsistency, not a renderer fix.
 
 Update: [UPDATE-009](../experiments/update-009.md) verifies the branch-number schema fix in49c7f62 after local reinstall/restart. The form now advertises minimum1 and one-based authored numbers,matching the preserved selection behavior. The preceding discrepancy describes4c4d3df;other appearance findings retain their stated build provenance.
+
+Current-build correction: [UPDATE-011](../experiments/update-011.md) replays the Fuzzkin endpoint substitutions on49c7f62. For missing-young lying/front, balls+add_balls now suffice; the minimal field set is outline14+outline38+add-tail, without lines. The prior two-pixel line11 residual disappears. Other34 list/field minimal-set records agree, while all804 historical attribution PNGs change. The earlier field/line paragraph retains4c4d3df provenance; its lying/front line requirement must not be applied to this newer fixture. No original-game validation is implied.

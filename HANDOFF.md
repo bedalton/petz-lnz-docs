@@ -452,3 +452,5 @@ Requested scratch document: `scratch/mcp-branch-numbering-handoff.md`. Includes 
 ## Current endpoint attribution replay
 
 [UPDATE-011](experiments/update-011.md) replays YOUNG-005/006/007 on49c7f62:804 direct PNGs all differ historically,24 MCP baselines agree. Missing-young lying/front balls+adds now suffice; field minimum omits lines and line11 reversion is now inert. Five endpoint equality observations/two minimal-set records change for that one fixture;other34 minima agree. Full replay and session audit progress are recorded in the forthcoming session index. Private sheet reviewed;no renderer/original edits. Fifteen-minute continuation ongoing.
+
+The focused [young reference](format-reference/young-appearance.md) now carries the UPDATE-011 correction alongside the historical build scope. Use the current minimum for missing-young lying/front;do not erase the original4c4d3df result.

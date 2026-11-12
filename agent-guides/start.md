@@ -26,6 +26,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 | Texture changes between repeated static frames | [Retained texture state](../format-reference/texture-state.md) |
 | Preview or edit puppies/kittens | [Young appearance and age controls](../format-reference/young-appearance.md) |
 | Assess preview reliability | [Evidence gaps](../troubleshooting/rendering-gaps.md) and the relevant experiment |
+| Compare supplied game captures with previews | [Native comparison controls](../docs/native-comparison-controls.md): saved state, exact pixel grids, embedded color profiles and remaining pose limits |
 | Find unresearched topics | [Coverage ledger](../docs/coverage.md) |
 
 ## Minimal evidence-aware editing loop

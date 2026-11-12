@@ -37,6 +37,8 @@ The tongue screenshot confirms visible tongue appearance in this Dogz example. I
 
 ## Next use
 
+The [comparison controls index](native-comparison-controls.md) links the subsequent saved-state, pixel-grid and ICC-profile studies. For visual color review use [NATIVE-004](../experiments/native-004.md) original-profile tagged or converted sRGB copies; the NATIVE-003 untagged reductions preserve encoded samples only.
+
 [NATIVE-002](../experiments/native-002.md) now crosses the old/capture-time age and fatness inputs for all three paired saves. At common controls all288 sampled source pairs match exactly in the renderer; historical Goobe coat-color causation remains unresolved. This does not establish native pose or scale equivalence.
 
-Use the contemporaneous Fuzzkin and Goobe saves for qualitative multi-view comparisons. Keep old photos as separate historical appearance states. Use NATIVE-003 reduced PNG copies when inspecting stills; exact pose/projection correspondence is still needed before quantitative alignment. Video scaling remains unresolved. A fixed-view idle clip would complement the moving video for texture-state questions, but no additional capture or breed installation is required for this intake.
+Use the contemporaneous Fuzzkin and Goobe saves for qualitative multi-view comparisons. Keep old photos as separate historical appearance states. Use NATIVE-004 profile-aware reduced PNG copies when inspecting still colors; exact pose/projection correspondence is still needed before quantitative alignment. Video scaling remains unresolved. A fixed-view idle clip would complement the moving video for texture-state questions, but no additional capture or breed installation is required for this intake.

@@ -1,0 +1,790 @@
+{
+  "experiment": "NATIVE-004",
+  "script_sha256": "158b779e4ec531c563c76821f1897f6aefe7fada997f6f4c793afdfe000be6f8",
+  "renderer_reference": {
+    "manifest_sha256": "5b447cad78a0d48b5d3fe759f246981de85db73a7a8c237f6cbdcb81d0227280",
+    "revision": "49c7f62eab51b61b9f68801ba7571178670c433e"
+  },
+  "grid_manifest_sha256": "28a85ac960b1d028f879b865f430080ac67016ddead29d819aefd761cb558151",
+  "backend": "Pillow ImageCms / LittleCMS; local renderer palette inspection only",
+  "versions": {
+    "pillow": "13.0.0",
+    "littlecms": "2.19"
+  },
+  "controls": {
+    "intent": 1,
+    "flags": 0,
+    "target_profile_sha256": "2690607e496b2a0a4ec657d244f4be9cd1c7d6e07eb28c1ea273713e9510493f",
+    "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77",
+    "renderer_rgb_assumption": "Treat untagged preview RGB as sRGB for qualitative display; no native color-fidelity claim"
+  },
+  "stills": [
+    {
+      "path": "scratch/screenshots/catz/Frisky--facing-back--climbing-wall--hind-legs.png",
+      "input_sha256": "9a03186ef137a856f342c6cbdf0e14853efe845737776487bf4465290501fccf",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-00-Frisky--facing-back--climbing-wall--hind-legs.png",
+      "tagged_png_sha256": "fca81be4a6a6cbc75ee593b8a724d0221b8f1f8ff17e9b199260d8df1ebf06b6",
+      "file_srgb": "00-Frisky--facing-back--climbing-wall--hind-legs.png",
+      "srgb_png_sha256": "20c70e9ef621d86a1c15ae4c30d99e27fc6b5afbdbf022920be2d18bb9903683",
+      "raw_counts": {
+        "pixels": 32625,
+        "unique_rgb": 101,
+        "exact_palette_pixels": 5930,
+        "within_one_channel_level_pixels": 6036,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 32625,
+        "unique_rgb": 101,
+        "exact_palette_pixels": 18358,
+        "within_one_channel_level_pixels": 32383,
+        "max_nearest_palette_channel_error": 5
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/catz/frisky--facing-forward.png",
+      "input_sha256": "a6e94131da323f8759a1a8f84dfe4114498bd9f0929fcb6405ae7b80d009c648",
+      "source_profile_sha256": "272072582a210539aa37ee602403784a96a8c7c6a18660b78ac141a94960bdad",
+      "source_profile_bytes": 4024,
+      "source_profile_name": "Display",
+      "source_mode": "RGB",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-01-frisky--facing-forward.png",
+      "tagged_png_sha256": "1f7278007ef1bd85a00b153dfab32fb645366d7684ca6dc9e10ca1d0b39dd0a2",
+      "file_srgb": "01-frisky--facing-forward.png",
+      "srgb_png_sha256": "35747ce7b06bb0da5b8f37c1bd4aa4a484de167eff72d6913cfbac846d9046d0",
+      "raw_counts": {
+        "pixels": 8701,
+        "unique_rgb": 78,
+        "exact_palette_pixels": 619,
+        "within_one_channel_level_pixels": 702,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 8701,
+        "unique_rgb": 78,
+        "exact_palette_pixels": 619,
+        "within_one_channel_level_pixels": 852,
+        "max_nearest_palette_channel_error": 23
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/catz/frisky--facing-right--face-right-slightly-forward.png",
+      "input_sha256": "83f00d3d4b66599221503a7a98ab0de2f0048aa14084bf775066319bce3d0ef9",
+      "source_profile_sha256": "272072582a210539aa37ee602403784a96a8c7c6a18660b78ac141a94960bdad",
+      "source_profile_bytes": 4024,
+      "source_profile_name": "Display",
+      "source_mode": "RGB",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-02-frisky--facing-right--face-right-slightly-forward.png",
+      "tagged_png_sha256": "9651e001e35b14802bb12a8b4579449971d64b96126748619a899e0a0a930084",
+      "file_srgb": "02-frisky--facing-right--face-right-slightly-forward.png",
+      "srgb_png_sha256": "396a416a9f1dfcdc1de51598e83d8a1edc38852d4fa262309ed6f366bfbca357",
+      "raw_counts": {
+        "pixels": 14260,
+        "unique_rgb": 90,
+        "exact_palette_pixels": 937,
+        "within_one_channel_level_pixels": 984,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 14260,
+        "unique_rgb": 90,
+        "exact_palette_pixels": 937,
+        "within_one_channel_level_pixels": 1205,
+        "max_nearest_palette_channel_error": 28
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/catz/homebody--facing-camera--stone-steps-left.png",
+      "input_sha256": "6b749cbd07a8035e12c550b5417d489a243683e15c96f5c3dd21b1b12db0f450",
+      "source_profile_sha256": "272072582a210539aa37ee602403784a96a8c7c6a18660b78ac141a94960bdad",
+      "source_profile_bytes": 4024,
+      "source_profile_name": "Display",
+      "source_mode": "RGB",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-03-homebody--facing-camera--stone-steps-left.png",
+      "tagged_png_sha256": "2d2e9823ad22f03fe6af4c7256c2e6bbd49231212f05e375b63260a966287d5e",
+      "file_srgb": "03-homebody--facing-camera--stone-steps-left.png",
+      "srgb_png_sha256": "a7c8952dc5e106ee9011ab46795ac3d0352a88f3a87feebb290868e3dc1b6788",
+      "raw_counts": {
+        "pixels": 12320,
+        "unique_rgb": 68,
+        "exact_palette_pixels": 562,
+        "within_one_channel_level_pixels": 747,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 12320,
+        "unique_rgb": 68,
+        "exact_palette_pixels": 562,
+        "within_one_channel_level_pixels": 945,
+        "max_nearest_palette_channel_error": 23
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-back-left.png",
+      "input_sha256": "46f197188bda3a8b31ec30be69547111ee7b876f06af6115fffa6cd13106b45a",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-04-boston-terrier--facing-back-left.png",
+      "tagged_png_sha256": "c3c8b4dfb6f8c5d1527f06035d3dfd7feb2daf017937e5fceb5e62c519519f86",
+      "file_srgb": "04-boston-terrier--facing-back-left.png",
+      "srgb_png_sha256": "883a497c6f3843a5550c4cbc2e1d7763d2bcbbad176cd38d1a612598f6675b88",
+      "raw_counts": {
+        "pixels": 18876,
+        "unique_rgb": 50,
+        "exact_palette_pixels": 1113,
+        "within_one_channel_level_pixels": 1171,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 18876,
+        "unique_rgb": 50,
+        "exact_palette_pixels": 5119,
+        "within_one_channel_level_pixels": 18455,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-forward--eyes-closed--tongue-out.png",
+      "input_sha256": "d9fb32bd8333a092ce73233815ca92ad7dced7e870f6f5e079b6860d08b795bb",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-05-boston-terrier--facing-forward--eyes-closed--tongue-out.png",
+      "tagged_png_sha256": "11493795b0526583eb15897c2970b3cc68c3441e1592006160b6fe9111ec7b35",
+      "file_srgb": "05-boston-terrier--facing-forward--eyes-closed--tongue-out.png",
+      "srgb_png_sha256": "44f9f6fddae0021627b719b8e4295a9f175beceb01b8c3f90d796876faf3abe3",
+      "raw_counts": {
+        "pixels": 19250,
+        "unique_rgb": 104,
+        "exact_palette_pixels": 519,
+        "within_one_channel_level_pixels": 868,
+        "max_nearest_palette_channel_error": 36
+      },
+      "srgb_counts": {
+        "pixels": 19250,
+        "unique_rgb": 104,
+        "exact_palette_pixels": 9976,
+        "within_one_channel_level_pixels": 18729,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-forward-right--head-facing-camera--eyes-drooping.png",
+      "input_sha256": "4054d1a1219db7ab387156a57e95fe12b70077b56584b0058927102746a3ab8c",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-06-boston-terrier--facing-forward-right--head-facing-camera--eyes-drooping.png",
+      "tagged_png_sha256": "92e50c07a4cc73febd32247b727c1477efcb025d228bef2be7fb6f0a54629c64",
+      "file_srgb": "06-boston-terrier--facing-forward-right--head-facing-camera--eyes-drooping.png",
+      "srgb_png_sha256": "e062e8f2f85f6ec3af200efead64499390ad3f0d8c87f9791faa6c640ebb7ab6",
+      "raw_counts": {
+        "pixels": 10573,
+        "unique_rgb": 39,
+        "exact_palette_pixels": 649,
+        "within_one_channel_level_pixels": 649,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 10573,
+        "unique_rgb": 39,
+        "exact_palette_pixels": 4377,
+        "within_one_channel_level_pixels": 10320,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left--eyes-looking-back-left.png",
+      "input_sha256": "045a2596dbd768833b6f862a92f63aee4af05c0f4635d25ca876644dae57c79b",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-07-boston-terrier--facing-left--eyes-looking-back-left.png",
+      "tagged_png_sha256": "9ff0e4056d5e16352ef383b346a042c74d7a62192083853b09ffb69f3b934bed",
+      "file_srgb": "07-boston-terrier--facing-left--eyes-looking-back-left.png",
+      "srgb_png_sha256": "4965f66ebf6404d4dff8777ae377053bde20337c27d31f7983387db8fd2171fe",
+      "raw_counts": {
+        "pixels": 30530,
+        "unique_rgb": 69,
+        "exact_palette_pixels": 805,
+        "within_one_channel_level_pixels": 830,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 30530,
+        "unique_rgb": 69,
+        "exact_palette_pixels": 9864,
+        "within_one_channel_level_pixels": 30368,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left-slightly-forward--head-forward--tongue-out.png",
+      "input_sha256": "b4f76d95beeaba4994ef28361c8510e5f387fd811b9c98859baeaba435abc981",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-08-boston-terrier--facing-left-slightly-forward--head-forward--tongue-out.png",
+      "tagged_png_sha256": "2fafae519559531d2bd97c2369a78c5c5e73250c37ce6a82812c6cf5657425e4",
+      "file_srgb": "08-boston-terrier--facing-left-slightly-forward--head-forward--tongue-out.png",
+      "srgb_png_sha256": "ac5ac67d3a56ef3464a30519c2f978c1e284da61fcad54f2e5c0d9c0681b1569",
+      "raw_counts": {
+        "pixels": 31828,
+        "unique_rgb": 90,
+        "exact_palette_pixels": 951,
+        "within_one_channel_level_pixels": 1684,
+        "max_nearest_palette_channel_error": 35
+      },
+      "srgb_counts": {
+        "pixels": 31828,
+        "unique_rgb": 90,
+        "exact_palette_pixels": 14100,
+        "within_one_channel_level_pixels": 31116,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left.png",
+      "input_sha256": "e27fe68996230b66d023b1d0bba79f9dddcce46ec25e2eb5909bf6bd3d5ab02a",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-09-boston-terrier--facing-left.png",
+      "tagged_png_sha256": "7e8092f19f835d392a30841851532949291959b79d5bd4f40d1e13c7ef04f7aa",
+      "file_srgb": "09-boston-terrier--facing-left.png",
+      "srgb_png_sha256": "02684c210148b303c998fa60b4dbebc0ba4a5b7ac6fe67e01e78e14fce2acae3",
+      "raw_counts": {
+        "pixels": 29232,
+        "unique_rgb": 69,
+        "exact_palette_pixels": 775,
+        "within_one_channel_level_pixels": 805,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 29232,
+        "unique_rgb": 69,
+        "exact_palette_pixels": 9441,
+        "within_one_channel_level_pixels": 29030,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-right--head-turned-slightly-towards-camera.png",
+      "input_sha256": "25c54b52a812fdd1f0299eb5ed3b51d989c0f7553e95b407adb65a7579f104d5",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-10-boston-terrier--facing-right--head-turned-slightly-towards-camera.png",
+      "tagged_png_sha256": "0e2d865ac8f185d8d5fb7959eeabfcd6eb8c5c598bceaf78185cda2b23c50e20",
+      "file_srgb": "10-boston-terrier--facing-right--head-turned-slightly-towards-camera.png",
+      "srgb_png_sha256": "42a641b31c72ea304fb65059a260844b0f95fd7d9b5bbc94f6bc7ddb8263a66b",
+      "raw_counts": {
+        "pixels": 11716,
+        "unique_rgb": 42,
+        "exact_palette_pixels": 681,
+        "within_one_channel_level_pixels": 684,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 11716,
+        "unique_rgb": 42,
+        "exact_palette_pixels": 4806,
+        "within_one_channel_level_pixels": 11566,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/Goobe--2026-11-12-645--facing-front--tongue-out.png",
+      "input_sha256": "8d42c2a4b290314932c277ea7169f63273d27c1318babb3140d07d30138754e6",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-11-Goobe--2026-11-12-645--facing-front--tongue-out.png",
+      "tagged_png_sha256": "34f6c0650c1db4f6cbec6ee2ebdbd0fea95bbda5288ed3c54d9bd9989c7cf3c3",
+      "file_srgb": "11-Goobe--2026-11-12-645--facing-front--tongue-out.png",
+      "srgb_png_sha256": "e15ceab97d8590e15e4888542c2e31ea79091342fd3e433e0868fafccb1787c3",
+      "raw_counts": {
+        "pixels": 43584,
+        "unique_rgb": 154,
+        "exact_palette_pixels": 20052,
+        "within_one_channel_level_pixels": 20475,
+        "max_nearest_palette_channel_error": 36
+      },
+      "srgb_counts": {
+        "pixels": 43584,
+        "unique_rgb": 154,
+        "exact_palette_pixels": 36543,
+        "within_one_channel_level_pixels": 43093,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-forward--adoption-center-behind--large-stone-pavers-on-ground--tongue-out.png",
+      "input_sha256": "35c6758aafcc70564a41494336173ef50c155b8f0a9ee704dae55eefc6733835",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-12-great-dane--facing-forward--adoption-center-behind--large-stone-pavers-on-ground--tongue-out.png",
+      "tagged_png_sha256": "b913bd89c9ac65643dcb81aaf5a4356a5a974c57fcf5a54a17a22cfb22d6b47d",
+      "file_srgb": "12-great-dane--facing-forward--adoption-center-behind--large-stone-pavers-on-ground--tongue-out.png",
+      "srgb_png_sha256": "7ba1b7c349531f43135e0bb9de9fa30cf0bc9059aab84904eb71cffecb39169d",
+      "raw_counts": {
+        "pixels": 27930,
+        "unique_rgb": 130,
+        "exact_palette_pixels": 1004,
+        "within_one_channel_level_pixels": 1554,
+        "max_nearest_palette_channel_error": 36
+      },
+      "srgb_counts": {
+        "pixels": 27930,
+        "unique_rgb": 130,
+        "exact_palette_pixels": 12741,
+        "within_one_channel_level_pixels": 27079,
+        "max_nearest_palette_channel_error": 25
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-left-back--head-left-slightly-forward--eyes-at-camera--stones-floor-path-behind.png",
+      "input_sha256": "bf97f8868359f1aa2682d5c23e3cd97308d9e61de0f09af340580d8e61dd7a94",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-13-great-dane--facing-left-back--head-left-slightly-forward--eyes-at-camera--stones-floor-path-behind.png",
+      "tagged_png_sha256": "21e8dd3b6e10ab416bba2a3e7a60b4d1cb75db12f03bad228bfc1bf5c042592b",
+      "file_srgb": "13-great-dane--facing-left-back--head-left-slightly-forward--eyes-at-camera--stones-floor-path-behind.png",
+      "srgb_png_sha256": "6bc2c4c37d446756cb7146cfff0c2f08081ce02ca5683566ba68ade778ff3019",
+      "raw_counts": {
+        "pixels": 16000,
+        "unique_rgb": 62,
+        "exact_palette_pixels": 776,
+        "within_one_channel_level_pixels": 1129,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 16000,
+        "unique_rgb": 62,
+        "exact_palette_pixels": 8710,
+        "within_one_channel_level_pixels": 15807,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-left-slightly-back--head-left-forward--eyes-looking-at-camera.png",
+      "input_sha256": "8ff1b4c4dce6f689e5ce5a02c72f1fcfdd590f03ddf3b2d4b45371f56a4b174d",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-14-great-dane--facing-left-slightly-back--head-left-forward--eyes-looking-at-camera.png",
+      "tagged_png_sha256": "9089b7b63285fd60ff20a1acfbc8ae812aa4652b24096157c0a7debe19cfe2b9",
+      "file_srgb": "14-great-dane--facing-left-slightly-back--head-left-forward--eyes-looking-at-camera.png",
+      "srgb_png_sha256": "4df480c4bfe54af6ecf47df070526b0dcaee6e79be42f7368acef9df6c104773",
+      "raw_counts": {
+        "pixels": 17328,
+        "unique_rgb": 64,
+        "exact_palette_pixels": 915,
+        "within_one_channel_level_pixels": 1298,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 17328,
+        "unique_rgb": 64,
+        "exact_palette_pixels": 9210,
+        "within_one_channel_level_pixels": 17185,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-right--head-forward.png",
+      "input_sha256": "258031ea2832fafeecad3035510f93fd53a05b30969a149388041b2d96d11452",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-15-great-dane--facing-right--head-forward.png",
+      "tagged_png_sha256": "29996959b357f16ad108545043d44e072d39fd5dac019a7565b31a93b0b7ad78",
+      "file_srgb": "15-great-dane--facing-right--head-forward.png",
+      "srgb_png_sha256": "7653a70d0ed19a2f4d2dc90f0ea9739a00ebbd7d33b9180683ec7b994e282d21",
+      "raw_counts": {
+        "pixels": 14762,
+        "unique_rgb": 38,
+        "exact_palette_pixels": 890,
+        "within_one_channel_level_pixels": 906,
+        "max_nearest_palette_channel_error": 25
+      },
+      "srgb_counts": {
+        "pixels": 14762,
+        "unique_rgb": 38,
+        "exact_palette_pixels": 4943,
+        "within_one_channel_level_pixels": 14738,
+        "max_nearest_palette_channel_error": 5
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-right--head-tilted-up-right-slightly-front--eyes-looking-at-camera.png",
+      "input_sha256": "6afaf6162a2886a4ed2f13d29ad021d11e13e67ce777c8a67f7e119064e76816",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-16-great-dane--facing-right--head-tilted-up-right-slightly-front--eyes-looking-at-camera.png",
+      "tagged_png_sha256": "9f6caaa42a8ef9783b5adab041aa31d9254c370688e2adeb8cab7720b91d502a",
+      "file_srgb": "16-great-dane--facing-right--head-tilted-up-right-slightly-front--eyes-looking-at-camera.png",
+      "srgb_png_sha256": "e3768ae4ddb27e3d0088d054dd533b91076739d885094580655fb6e5e0506e36",
+      "raw_counts": {
+        "pixels": 18088,
+        "unique_rgb": 60,
+        "exact_palette_pixels": 863,
+        "within_one_channel_level_pixels": 883,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 18088,
+        "unique_rgb": 60,
+        "exact_palette_pixels": 6128,
+        "within_one_channel_level_pixels": 18063,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-forward-slight-right--head-forward--tongue-out.png",
+      "input_sha256": "8084edecd671427fc9319a0ca5005c2e0ce79d78698835fbc97d167bf82ee246",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-17-scottie--facing-forward-slight-right--head-forward--tongue-out.png",
+      "tagged_png_sha256": "f14774c5cf3838205892b2b00559e185045ef8725aa5ce5015fc13a9dd95bc91",
+      "file_srgb": "17-scottie--facing-forward-slight-right--head-forward--tongue-out.png",
+      "srgb_png_sha256": "47ded6ab579ca8ec59dd3cedccc7bf8aae0541ea1df1d0c496d19d3ed7e2506d",
+      "raw_counts": {
+        "pixels": 10494,
+        "unique_rgb": 74,
+        "exact_palette_pixels": 1492,
+        "within_one_channel_level_pixels": 1656,
+        "max_nearest_palette_channel_error": 35
+      },
+      "srgb_counts": {
+        "pixels": 10494,
+        "unique_rgb": 74,
+        "exact_palette_pixels": 5422,
+        "within_one_channel_level_pixels": 10096,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-forward.png",
+      "input_sha256": "370528cb80f1bbea8f5a98157fdc9cdaf3f32692dfcaa8d69d8e07c22fa9c52b",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-18-scottie--facing-forward.png",
+      "tagged_png_sha256": "8a05a5a10b9e0771d8499348368491066fcce1d995a2f08926e727207694e3c6",
+      "file_srgb": "18-scottie--facing-forward.png",
+      "srgb_png_sha256": "f6c486a099484a9a19020a5236dcb9dd2b71ab7e039d2d3c43d90b8f73442602",
+      "raw_counts": {
+        "pixels": 11550,
+        "unique_rgb": 79,
+        "exact_palette_pixels": 1491,
+        "within_one_channel_level_pixels": 1743,
+        "max_nearest_palette_channel_error": 36
+      },
+      "srgb_counts": {
+        "pixels": 11550,
+        "unique_rgb": 79,
+        "exact_palette_pixels": 5932,
+        "within_one_channel_level_pixels": 11035,
+        "max_nearest_palette_channel_error": 6
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-right--head-facing-right--eyes-looking-at-camera.png",
+      "input_sha256": "39f720f0e2e674946d7913c0039d329e93ad283f9bf3c3d2aea7d15069402409",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-19-scottie--facing-right--head-facing-right--eyes-looking-at-camera.png",
+      "tagged_png_sha256": "e423bbb39cb65525ede898ae280eabcdb2de90b7f40b1a25281b4be73bb775c4",
+      "file_srgb": "19-scottie--facing-right--head-facing-right--eyes-looking-at-camera.png",
+      "srgb_png_sha256": "e92c040267fbb4b934add88671451d018588ada29a5a8b78e0d475dba8eedbc8",
+      "raw_counts": {
+        "pixels": 13448,
+        "unique_rgb": 64,
+        "exact_palette_pixels": 1330,
+        "within_one_channel_level_pixels": 1449,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 13448,
+        "unique_rgb": 64,
+        "exact_palette_pixels": 5253,
+        "within_one_channel_level_pixels": 13154,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-right--head-right-forward--eyes-looking-left.png",
+      "input_sha256": "ba53b0f9245d6f082c89259207585441d3a62490a1e7a361f58a61ff95a70e7d",
+      "source_profile_sha256": "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9",
+      "source_profile_bytes": 1164,
+      "source_profile_name": "Display",
+      "source_mode": "RGBA",
+      "dpi_metadata": [
+        143.99259999999998,
+        143.99259999999998
+      ],
+      "file_tagged": "tagged-20-scottie--facing-right--head-right-forward--eyes-looking-left.png",
+      "tagged_png_sha256": "128920352d527a28d856f45b608aef49d6f53d7e62bba6802951a752b895ed5d",
+      "file_srgb": "20-scottie--facing-right--head-right-forward--eyes-looking-left.png",
+      "srgb_png_sha256": "0bb7067e49add81993063f60c233d9f38e8507b493a9dde6be0d59b87ac7947a",
+      "raw_counts": {
+        "pixels": 17595,
+        "unique_rgb": 58,
+        "exact_palette_pixels": 1261,
+        "within_one_channel_level_pixels": 1473,
+        "max_nearest_palette_channel_error": 32
+      },
+      "srgb_counts": {
+        "pixels": 17595,
+        "unique_rgb": 58,
+        "exact_palette_pixels": 6839,
+        "within_one_channel_level_pixels": 17349,
+        "max_nearest_palette_channel_error": 3
+      },
+      "conversion_commutes_with_reduction": true,
+      "same_profile_identity": true
+    }
+  ],
+  "prefix_arrays": [
+    {
+      "name": "Goobe",
+      "prior_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+      "capture_sha256": "395ac1b168a8f24feefce0e8d68d0fc95ea17872c4b0e2f873c71a81940ef5ed",
+      "arrays": [
+        {
+          "offset": 3349,
+          "count": 512,
+          "width": 1,
+          "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+        },
+        {
+          "offset": 3865,
+          "count": 15,
+          "width": 4,
+          "sha256": "629a5c51b535fbed8cf66fe66ca7d893116c7b7a851db41f079e929680540f58"
+        },
+        {
+          "offset": 3929,
+          "count": 512,
+          "width": 4,
+          "sha256": "ac8c0886440f411b7d72e6253499213d0473958cfbf2f397a8a2d7ad3226fee7"
+        }
+      ],
+      "equal": true
+    },
+    {
+      "name": "Fuzzkin",
+      "prior_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+      "capture_sha256": "6f4c0d64910b61abf50edb44ed0994bf4b2883b495f5f33507ab52b4755b89e8",
+      "arrays": [
+        {
+          "offset": 3349,
+          "count": 512,
+          "width": 1,
+          "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+        },
+        {
+          "offset": 3865,
+          "count": 15,
+          "width": 4,
+          "sha256": "629a5c51b535fbed8cf66fe66ca7d893116c7b7a851db41f079e929680540f58"
+        },
+        {
+          "offset": 3929,
+          "count": 512,
+          "width": 4,
+          "sha256": "5dd6d872672f6609c3c356e9f929eb4cbba8f20707ec8d8dda0b71ee31fd2f86"
+        }
+      ],
+      "equal": true
+    },
+    {
+      "name": "Homebody",
+      "prior_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+      "capture_sha256": "636f82e90869bc324d89b49a1051148938da49970ae3a8b2ce4a5d12c6906c08",
+      "arrays": [
+        {
+          "offset": 3349,
+          "count": 512,
+          "width": 1,
+          "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+        },
+        {
+          "offset": 3865,
+          "count": 15,
+          "width": 4,
+          "sha256": "629a5c51b535fbed8cf66fe66ca7d893116c7b7a851db41f079e929680540f58"
+        },
+        {
+          "offset": 3929,
+          "count": 512,
+          "width": 4,
+          "sha256": "f4850f1eb5ad241e9f5f32dabdd4c8a16aa9a8178742cee6a70392298f4c71cd"
+        }
+      ],
+      "equal": true
+    }
+  ],
+  "summary": {
+    "stills": 21,
+    "source_profile_counts": {
+      "f27c6fd473b80a146a97e3a8d1b618d8209228c63ff9755141918320175c17d9": 18,
+      "272072582a210539aa37ee602403784a96a8c7c6a18660b78ac141a94960bdad": 3
+    },
+    "tagged_copies": 21,
+    "srgb_copies": 21,
+    "same_profile_controls": 21,
+    "conversion_order_controls": 21,
+    "equal_saved_prefix_arrays": 9,
+    "raw_exact_palette_pixels": 43615,
+    "srgb_exact_palette_pixels": 179880,
+    "pixels": 410690
+  }
+}

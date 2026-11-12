@@ -1,5 +1,7 @@
 # Status
 
+- Latest completed session: [young routing and endpoint attribution](docs/session-2026-11-12-young-routing.md),YOUNG-004/005/006/007 on4c4d3df. Four full replays pass;912 research PNGs,780 independent RGBA checks,40 prior links and21 unchanged originals. HTTP restarted/rechecked in session90633. MCP branch-number schema inconsistency recorded;renderer untouched.
+
 - Latest: [YOUNG-007](experiments/young-007.md),144 entry-reversion PNGs trace1–3-pixel residuals to individual line entries and sample added-tail/count sensitivity. Four-unit continuation audit underway;native endpoint semantics remain open.
 
 - Latest: [YOUNG-006](experiments/young-006.md),420 field-substitution PNGs isolate Fuzzkin mixed-cache endpoint gaps to outline colors14/38,added-list tail and,in some poses,line edge modes. Four native-resolution sheets reviewed;replay running. Fifteen-minute continuation entering audit.
@@ -14,7 +16,7 @@
 
 - Workspace recovery: [RESTORE-003](experiments/restore-003.md). All21 recorded game originals match; six cross-version MCP smoke pairs pass. Copied ARM runtime replaced operationally by scratch/petz-local-x86-venv; local HTTP MCP restarted and render-checked. Full installation completeness remains unverified.
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 
 - Upgrade review complete: [current index](docs/renderer-upgrade-2026-11-10.md).659 selected historical comparison/sheet relationships preserved;affected numerical/pixel findings corrected. All missing-input top-level controls recovered. Remaining scope is explicit in the index.
 - Renderer upgraded/restarted: [UPDATE-001](experiments/update-001.md),integration6c1d883. Textured paint/Outline blanket restrictions are withdrawn for this build after differential controls; clothing remains unsupported. Historical pixel evidence requires the linked replay review.

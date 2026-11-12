@@ -1,5 +1,7 @@
 # Status
 
+- Hidden field split: [YOUNG-011](experiments/young-011.md),192 direct outputs/96 exact prior links;full replay passes. X-only reproduces all48 combined reversion images,area-only preserves all48 geometry/fills/commands;resolved area8 throughout. Final independent session audit underway.
+
 - Hidden tail control: [YOUNG-010](experiments/young-010.md),240 direct renders/eight yaws,six MCP matches and12 prior links. Ball93 is omitted in both caches;reversion inert in48/48,then visible in15/48 after removing omission93. Full replay,720 independent RGBA checks andsheet review pass. Position/body-area separation follows;continuation active.
 
 - Count controls: [YOUNG-009](experiments/young-009.md),240 direct outputs and12 prior endpoint links;full replay passes. Indexed omission and zero-size masks agree;all-disabled matches the shorter list in12/12 sampled views,shared geometry/fills/commands preserved. Independent720-RGBA audit andsix-row sheet review pass;continuation active.

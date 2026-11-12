@@ -1,0 +1,11 @@
+# YOUNG-011: hidden position and area fields
+
+2026-11-12. [Manifest](young-011.json). Renderer49c7f62/package0.1.0, all62 sources match checkout. Petz4 Fuzzkin age12, two mixed-cache modes, three poses, eight yaws. Renderer-observed and code-supported; no game validation. Follows [omission release controls](young-010.md).
+
+On the sufficient full background with omission93 removed, revert entry26's x coordinate alone, body_area alone, both, or neither. The loader confirms these are its only differing fields. Four controls per48 cases give192 direct PNGs. The none/both cases reproduce all96 corresponding YOUNG-010 omission-removed image hashes. No new MCP requests; these are diagnostic immutable appearance substitutions, not edited pet files.
+
+The x-only reversion reproduces the combined reversion pixels in48/48 cases and changes15 views relative to full. The area-only reversion changes no pixels, geometry balls, fills or prepared commands in48/48. Every control resolves ball93 to area8, despite the authored area difference. Position reversion changes geometry/commands inall48;33 still have equal final pixels. Pixel equality therefore does not imply identical preparation.
+
+The body-area evaluator in appearance/evaluation.py initializes an authored zero area from its base ball before neighbor/list passes. Entry26 attaches to base52, whose evaluated area is8 in these fixtures; authored0 and8 therefore agree at initialization. The recorded final area8 and prepared equality support this route; this unit does not independently disable later neighbor/list passes. No native meaning is assigned to the cached field.
+
+Reproduce `scratch/petz-local-x86-venv/bin/python tools/young_hidden_fields.py --verify`. Full replay passes. The session checker `scratch/petz-local-x86-venv/bin/python tools/check_young_tail_session.py` independently checks192 aligned differences against full and48 x/both image equalities, rehashes96 prior links, and verifies the geometry/command assertion records through the complete replay provenance. Private evidence:scratch/research/young-011;replay:scratch/young-011-verify.log. Session audit evidence is linked from the session index. Other poses, ages, morph histories and game fidelity remain open.

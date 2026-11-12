@@ -482,3 +482,7 @@ All three exact current-build replays and the independent [session audit](docs/s
 ## Hidden added-entry release control
 
 [YOUNG-010](experiments/young-010.md):240 direct renders across eight yaws,two modes/three poses;6 exact local MCP matches,12 prior links. Entry26 maps to omitted ball93. All48 retained-omission reversions match;removing omission93 makes15/48 reversion outputs differ by1–15 pixels. Full replay,720 independent RGBA comparisons and16-row native sheet review pass. Initial narrower survey archived/excluded. Field split follows;no originals/renderer/copy writes;continuation active.
+
+## Hidden added-entry field split
+
+[YOUNG-011](experiments/young-011.md):192 direct PNGs,96 YOUNG-010 links,full replay passes. X-only reproduces both-field reversion across48 views,15 pixel changes;body-area-only preserves geometry/fills/commands andpixels. All resolved areas8. Code supports zero-area inheritance from base52;later-pass isolation remains outside scope. Final session checker adds240 independent RGBA comparisons. Originals/renderer/copies untouched;session audit underway.

@@ -32,3 +32,5 @@ The [49c7f62 continuation](../docs/session-2026-11-12-young-upgrade.md) replays 
 [Count visibility controls](../experiments/young-009.md) retain entries29–31 at fixed indices and exhaust omission/zero-size masks. Both methods match the shortened list with all three disabled in all12 sampled views; shared geometry, fills and prepared commands also match. Topology still differs, and these results apply only to the sufficient Fuzzkin age12 background.
 
 [Eight-yaw release controls](../experiments/young-010.md) identify entry26 as omitted ball93. Its reversion remains inert in48/48 current fixtures;removing only omission93 makes15/48 differ. This explains the scoped absence of pixel effects while preserving uncertainty about game behavior.
+
+[Hidden field separation](../experiments/young-011.md) reproduces all48 unomitted combined-reversion images with x alone. The authored body-area change resolves to8 in both cases and preserves preparation;33 position-changing views still have equal final pixels. Neither pixel equivalence nor stored area differences alone identify evaluated behavior.

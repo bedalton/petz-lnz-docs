@@ -1,16 +1,8 @@
 # Status
 
-- Latest completed session: [young routing and endpoint attribution](docs/session-2026-11-12-young-routing.md),YOUNG-004/005/006/007 on4c4d3df. Four full replays pass;912 research PNGs,780 independent RGBA checks,40 prior links and21 unchanged originals. HTTP restarted/rechecked in session90633. MCP branch-number schema inconsistency recorded;renderer untouched.
+- Latest completed session: [young routing and endpoint attribution](docs/session-2026-11-12-young-routing.md), YOUNG-004/005/006/007 on `4c4d3df`. Four full replays pass; 912 research PNGs, 780 independent RGBA checks, 40 prior links and 21 unchanged originals. HTTP restarted/rechecked in session90633. MCP branch-number schema inconsistency recorded; renderer untouched. Fifteen-minute continuation complete.
 
-- Latest: [YOUNG-007](experiments/young-007.md),144 entry-reversion PNGs trace1–3-pixel residuals to individual line entries and sample added-tail/count sensitivity. Four-unit continuation audit underway;native endpoint semantics remain open.
-
-- Latest: [YOUNG-006](experiments/young-006.md),420 field-substitution PNGs isolate Fuzzkin mixed-cache endpoint gaps to outline colors14/38,added-list tail and,in some poses,line edge modes. Four native-resolution sheets reviewed;replay running. Fifteen-minute continuation entering audit.
-
-- Latest: [YOUNG-005](experiments/young-005.md),240 immutable-list substitution PNGs/24 exact MCP baselines;full replay passes. Mixed-cache Fuzzkin age12 differences require ball/add lists and,in some poses,line list;paint substitution unnecessary. Field controls follow.
-
-- Latest: [YOUNG-004](experiments/young-004.md),14 private Petz4 copies,90 loader/MCP cases,108 direct PNGs. Explicit selectors,branch routing and36 expected missing-resource failures agree;full replay underway. Fifteen-minute continuation active.
-
-- Latest completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. Fifteen-minute continuation complete;next work needs a new requested duration.
+- Previous completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. That session is superseded by the continuation above.
 
 - Latest MCP upgrade: [UPDATE-008](experiments/update-008.md), renderer `4c4d3df`; reinstalled in scratch/petz-local-x86-venv and local HTTP restarted (session58703, port8765). Fresh discovery/look schema and six Petz4 adult/young/age renders pass;21 original hashes unchanged. This supersedes older current-build/server statements below. Hosted chat endpoint remains separate.
 

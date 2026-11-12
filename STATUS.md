@@ -1,5 +1,7 @@
 # Status
 
+- Completed continuation: [native control session](docs/session-2026-11-12-native-controls.md),NATIVE-002/003/004. All three full replays/audits pass;639 retained PNG hashes,25 unchanged intake files,21 original hashes and62-source agreement. Six HTTP capture-time renders per audit pass after restart PID33654/session86330. Documentation/private-file checks pass. Native pose/color causation remains open;earlier active/pending notes below are superseded.
+
 - Native color controls: [NATIVE-004](experiments/native-004.md),21 original-profile tagged/21 converted sRGB copies. Full replay/profile audit pass:410,690 pixels,1,583 unique mappings,84 palette tallies,nine unchanged prefix arrays. [Comparison index](docs/native-comparison-controls.md) separates raw grid evidence from color review. Native coat-color cause remains open;session audit follows.
 
 - Native still scaling: [NATIVE-003](experiments/native-003.md),all21 PNGs exactly reconstruct as cropped2× grids. Full replay and independent1,639,127-pixel/657-grid audit pass;25 intake hashes unchanged. Twelve lossy video samples fail exact replication;DPI/pose/renderer scale remain unverified. Continuation active.

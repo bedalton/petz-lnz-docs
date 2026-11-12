@@ -171,3 +171,5 @@ Updated: 2026-11-12
 - [UPDATE-010](experiments/update-010.md) replays306 fresh MCP controls and216 saved direct draws on49c7f62. All216 historical relationships hold and36 saved MCP matches pass;all522 historical RGBA images differ. All21 originals unchanged. Exact current-build replay is underway;historical manifests preserved.
 
 - [UPDATE-012](experiments/update-012.md) preserves606 independent age records and100 edited/routing equalities;192 current RGBA images differ historically. Ninety routing cases retain54 successes/36 failures;114 MCP requests yield78 exact matches and36 expected errors. Initial full replay complete;exact replay and independent audit underway.
+
+- Independent [young upgrade session audit](docs/session-2026-11-12-young-upgrade.md) passes:1,518 historical/current decoded-RGBA checks,804 endpoint checks,204 cross-version and44 cross-unit links,21 unchanged originals,62-source agreement. HTTP restarted PID29894/session35819;four actual age/adult views match fresh baselines. Final exact unit replays are finishing.

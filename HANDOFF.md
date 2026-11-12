@@ -462,3 +462,7 @@ The focused [young reference](format-reference/young-appearance.md) now carries 
 ## Current age arithmetic and dependency routing
 
 [UPDATE-012](experiments/update-012.md):606 age records (42 loader boundaries+564 age-API calls),192 direct PNGs,90 routing cases and114 MCP requests on49c7f62. All100 historical equalities and numerical records survive;all192 historical RGBA images change.78 exact MCP matches+36 expected errors. Initial harness failure archived;successful-run scope explicitly documented. Exact replay and independent session audit are underway;no renderer/original edits.
+
+## Young upgrade independent audit
+
+[Session index](docs/session-2026-11-12-young-upgrade.md) consolidates UPDATE-010/011/012. tools/check_young_upgrade_session.py passes all1,518 independent historical/current RGBA checks,804 endpoint checks,204 cross-version and44 cross-unit links,21 originals and62 sources. HTTP restarted PID29894/session35819;four health renders match fresh baselines. One correction sheet reviewed. Exact UPDATE-010/012 replays are finishing;UPDATE-011 full replay already passes. No source/original edits;next native endpoint evidence,other pets or command/raster cause isolation.

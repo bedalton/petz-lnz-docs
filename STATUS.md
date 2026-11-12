@@ -1,5 +1,7 @@
 # Status
 
+- Hidden tail control: [YOUNG-010](experiments/young-010.md),240 direct renders/eight yaws,six MCP matches and12 prior links. Ball93 is omitted in both caches;reversion inert in48/48,then visible in15/48 after removing omission93. Full replay,720 independent RGBA checks andsheet review pass. Position/body-area separation follows;continuation active.
+
 - Count controls: [YOUNG-009](experiments/young-009.md),240 direct outputs and12 prior endpoint links;full replay passes. Indexed omission and zero-size masks agree;all-disabled matches the shorter list in12/12 sampled views,shared geometry/fills/commands preserved. Independent720-RGBA audit andsix-row sheet review pass;continuation active.
 
 - Latest tail attribution: [YOUNG-008](experiments/young-008.md),1,536 exhaustive Petz4 Fuzzkin age12 subset renders,12 MCP endpoint matches and12 current prior links. Full replay and independent RGBA/minimal-set audit pass;entry26 inert across768 paired backgrounds. Count controls and broader yaw tests follow;fifteen-minute continuation active.

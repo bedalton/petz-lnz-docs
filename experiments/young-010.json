@@ -1,0 +1,5442 @@
+{
+  "provenance": {
+    "revision": "49c7f62eab51b61b9f68801ba7571178670c433e",
+    "sources": {
+      "petz_renderer/local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "petz_renderer/__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "petz_renderer/cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "petz_renderer/versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "petz_renderer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "petz_renderer/inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "petz_renderer/formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "petz_renderer/formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "petz_renderer/formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "petz_renderer/formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "petz_renderer/formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "petz_renderer/formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "petz_renderer/appearance/preview.py": "7657b44213bb88ed6cdc6cf8da65c556acf7be7a23521b5fac8819cd0c508c95",
+      "petz_renderer/appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "petz_renderer/appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "petz_renderer/appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "petz_renderer/appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "petz_renderer/appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "petz_renderer/appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "petz_renderer/appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "petz_renderer/appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "petz_renderer/appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "petz_renderer/appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "petz_renderer/deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "petz_renderer/rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "petz_renderer/rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "petz_renderer/rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "petz_renderer/rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "petz_renderer/rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "petz_renderer/rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "petz_renderer/rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "petz_renderer/rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "petz_renderer/rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "petz_renderer/rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "petz_renderer/rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "petz_renderer/rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "petz_renderer/rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "petz_renderer/rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "petz_renderer/rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "petz_renderer/rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "petz_renderer/rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "petz_renderer/rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "petz_renderer/rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "petz_renderer/rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "petz_renderer/rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "petz_renderer/rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "petz_renderer/rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "petz_renderer/rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "petz_renderer/service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "petz_renderer/service/tool_inputs.py": "96e6619279b3e589413842e9b4364b0843936589e154e7603b168b56ae2c3167",
+      "petz_renderer/service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "petz_renderer/service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "petz_renderer/service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "petz_renderer/service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "petz_renderer/service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "petz_renderer/service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "petz_renderer/service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "petz_renderer/service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "petz_renderer/service/application.py": "15f20de567549365cf937142aee2a5bb309bb8d29c991da232a64a126b5ab8a3",
+      "petz_renderer/service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "petz_renderer/service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    },
+    "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+    "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+    "dependencies": {
+      "uvicorn": "0.54.0",
+      "watchfiles": "1.3.0",
+      "platformdirs": "4.14.5",
+      "exceptiongroup": "1.3.1",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "websockets": "17.4",
+      "Pygments": "2.21.0",
+      "petz-renderer-mcp": "0.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "joserfc": "1.8.0",
+      "rich": "15.0.0",
+      "rich-rst": "2.2.0",
+      "certifi": "2026.10.23",
+      "jsonschema": "4.26.0",
+      "PyJWT": "2.15.1",
+      "pydantic": "2.14.3",
+      "dnspython": "2.9.2",
+      "fastmcp-slim": "4.1.6",
+      "click": "8.5.1",
+      "docstring_parser": "0.18.0",
+      "aiofile": "3.12.3",
+      "email-validator": "2.3.0",
+      "numpy": "2.5.4",
+      "cryptography": "50.0.2",
+      "py-key-value-aio": "0.4.6",
+      "pycparser": "3.12",
+      "pydantic_core": "2.50.4",
+      "pillow": "13.0.0",
+      "mcp-types": "2.3.0",
+      "pydantic-settings": "2.16.2",
+      "opentelemetry-api": "1.45.2",
+      "typing-inspection": "0.4.5",
+      "h11": "0.16.0",
+      "pefile": "2024.8.26",
+      "mdurl": "0.1.2",
+      "uncalled-for": "0.6.0",
+      "fastmcp": "4.1.6",
+      "PyYAML": "6.0.3",
+      "griffelib": "2.4.1",
+      "httpcore2": "2.16.0",
+      "jsonref": "1.1.0",
+      "jsonschema-path": "0.5.0",
+      "truststore": "0.10.5",
+      "python-dotenv": "1.2.4",
+      "sse-starlette": "3.6.0",
+      "cffi": "2.1.1",
+      "httpx2": "2.16.0",
+      "cyclopts": "5.3.3",
+      "annotated-types": "0.8.0",
+      "referencing": "0.37.0",
+      "markdown-it-py": "4.2.0",
+      "pyperclip": "1.11.0",
+      "rpds-py": "2026.9.1",
+      "openapi-pydantic": "0.6.0",
+      "anyio": "4.16.0",
+      "attrs": "26.1.0",
+      "python-multipart": "0.0.33",
+      "typing_extensions": "4.16.0",
+      "Authlib": "1.9.5",
+      "mcp": "2.3.0",
+      "caio": "0.12.10",
+      "pathable": "0.6.0",
+      "cachetools": "7.3.0",
+      "beartype": "0.23.1",
+      "idna": "3.20"
+    }
+  },
+  "backend": "direct installed renderer; local stdio MCP forced-young opposite-side controls",
+  "script_sha256": "8dcfe562d6ddc63afd5bd8f8f679bb0d1cbbf8b30468e830beb894d13c014cc4",
+  "prior_manifest_sha256": "4b50deee67053155ec69ada5817d7320148d535771a68e8922e4f43e64f5c1e4",
+  "inputs": {
+    "name": "Fuzzkin",
+    "source": "Adopted Petz/Fuzzkin.pet",
+    "source_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+    "breed": "\\Resource\\Dogz\\Pomeranian.dog",
+    "breed_sha256": "2d27d9e08220d0e93b6102979231b963c67147ba7a9398ad93c61a7f73be34c9",
+    "saved_age": 33,
+    "saved_seed": 7952,
+    "variants": {
+      "baseline": {
+        "path": "Fuzzkin-baseline.pet",
+        "sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "removed": [],
+        "removed_bytes": 0
+      },
+      "missing-adult": {
+        "path": "Fuzzkin-missing-adult.pet",
+        "sha256": "af8286de292dde1e00cff975f008ac64c4df83566d9c8d1652289f76f99d02c9",
+        "removed": [
+          "adult"
+        ],
+        "removed_bytes": 7581
+      },
+      "missing-young": {
+        "path": "Fuzzkin-missing-young.pet",
+        "sha256": "651b6571a6455851ddab3dc4f5011ab6572cd9b8f6d60817b0ecc146333f32c0",
+        "removed": [
+          "young"
+        ],
+        "removed_bytes": 7577
+      },
+      "missing-both": {
+        "path": "Fuzzkin-missing-both.pet",
+        "sha256": "d8e6b324381d69f93e106431f3c0981e7c73c91327952dffa2ce07f1ddccb159",
+        "removed": [
+          "adult",
+          "young"
+        ],
+        "removed_bytes": 15158
+      }
+    }
+  },
+  "renders": [
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-adult-standing-0-young.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-adult-standing-0-full.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-adult-standing-0-revert26.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-0-unomit-full.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-0-unomit-revert26.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-adult-standing-45-young.png",
+      "png_sha256": "dd4faa6928d2a7ecd1a1645165ed2420d08645a468a2be6efd1628877f7ba347",
+      "size": [
+        86,
+        90
+      ],
+      "offset": [
+        51,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-adult-standing-45-full.png",
+      "png_sha256": "dd4faa6928d2a7ecd1a1645165ed2420d08645a468a2be6efd1628877f7ba347",
+      "size": [
+        86,
+        90
+      ],
+      "offset": [
+        51,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-adult-standing-45-revert26.png",
+      "png_sha256": "dd4faa6928d2a7ecd1a1645165ed2420d08645a468a2be6efd1628877f7ba347",
+      "size": [
+        86,
+        90
+      ],
+      "offset": [
+        51,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-45-unomit-full.png",
+      "png_sha256": "840bbc77ade51e2e0507370f5026fba5e3b17588c3a91ddd1ef8418e94fee067",
+      "size": [
+        86,
+        90
+      ],
+      "offset": [
+        51,
+        78
+      ],
+      "pixels_vs_young": 6,
+      "pixels_vs_full": 6,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-45-unomit-revert26.png",
+      "png_sha256": "dd4faa6928d2a7ecd1a1645165ed2420d08645a468a2be6efd1628877f7ba347",
+      "size": [
+        86,
+        90
+      ],
+      "offset": [
+        51,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-adult-standing-90-young.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-adult-standing-90-full.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-adult-standing-90-revert26.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-90-unomit-full.png",
+      "png_sha256": "0f67939d03d7c0604e98f3adda1d1465102e383a10deeb8ef4d7a516d402d262",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_young": 2,
+      "pixels_vs_full": 2,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-90-unomit-revert26.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-adult-standing-135-young.png",
+      "png_sha256": "5bc9d8a06f31d7125547268b9c92296650e72a7eeb14eb92e787c4fba5b49737",
+      "size": [
+        84,
+        100
+      ],
+      "offset": [
+        49,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 3
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-adult-standing-135-full.png",
+      "png_sha256": "5bc9d8a06f31d7125547268b9c92296650e72a7eeb14eb92e787c4fba5b49737",
+      "size": [
+        84,
+        100
+      ],
+      "offset": [
+        49,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 3
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-adult-standing-135-revert26.png",
+      "png_sha256": "5bc9d8a06f31d7125547268b9c92296650e72a7eeb14eb92e787c4fba5b49737",
+      "size": [
+        84,
+        100
+      ],
+      "offset": [
+        49,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 3
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-135-unomit-full.png",
+      "png_sha256": "742dc1c85068ee1d5a56dabeb81b86bb9b863369a65961d72eb9f88e32d8a5ed",
+      "size": [
+        84,
+        100
+      ],
+      "offset": [
+        49,
+        88
+      ],
+      "pixels_vs_young": 3,
+      "pixels_vs_full": 3,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-135-unomit-revert26.png",
+      "png_sha256": "5bc9d8a06f31d7125547268b9c92296650e72a7eeb14eb92e787c4fba5b49737",
+      "size": [
+        84,
+        100
+      ],
+      "offset": [
+        49,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 3
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-adult-standing-180-young.png",
+      "png_sha256": "96794f461a051b8ef4735632231eb98535cbe80c7d99d46cd2b7358524747bd6",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        33,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-adult-standing-180-full.png",
+      "png_sha256": "96794f461a051b8ef4735632231eb98535cbe80c7d99d46cd2b7358524747bd6",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        33,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-adult-standing-180-revert26.png",
+      "png_sha256": "96794f461a051b8ef4735632231eb98535cbe80c7d99d46cd2b7358524747bd6",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        33,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-180-unomit-full.png",
+      "png_sha256": "96794f461a051b8ef4735632231eb98535cbe80c7d99d46cd2b7358524747bd6",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        33,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-180-unomit-revert26.png",
+      "png_sha256": "96794f461a051b8ef4735632231eb98535cbe80c7d99d46cd2b7358524747bd6",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        33,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-adult-standing-225-young.png",
+      "png_sha256": "3dee0fe15a35dfe827ca6c504fb6fe39adc346f208480673cb691c387b77011a",
+      "size": [
+        86,
+        101
+      ],
+      "offset": [
+        35,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-adult-standing-225-full.png",
+      "png_sha256": "3dee0fe15a35dfe827ca6c504fb6fe39adc346f208480673cb691c387b77011a",
+      "size": [
+        86,
+        101
+      ],
+      "offset": [
+        35,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-adult-standing-225-revert26.png",
+      "png_sha256": "3dee0fe15a35dfe827ca6c504fb6fe39adc346f208480673cb691c387b77011a",
+      "size": [
+        86,
+        101
+      ],
+      "offset": [
+        35,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-225-unomit-full.png",
+      "png_sha256": "3dee0fe15a35dfe827ca6c504fb6fe39adc346f208480673cb691c387b77011a",
+      "size": [
+        86,
+        101
+      ],
+      "offset": [
+        35,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-225-unomit-revert26.png",
+      "png_sha256": "3dee0fe15a35dfe827ca6c504fb6fe39adc346f208480673cb691c387b77011a",
+      "size": [
+        86,
+        101
+      ],
+      "offset": [
+        35,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-adult-standing-270-young.png",
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f",
+      "size": [
+        97,
+        95
+      ],
+      "offset": [
+        36,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-adult-standing-270-full.png",
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f",
+      "size": [
+        97,
+        95
+      ],
+      "offset": [
+        36,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-adult-standing-270-revert26.png",
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f",
+      "size": [
+        97,
+        95
+      ],
+      "offset": [
+        36,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-270-unomit-full.png",
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f",
+      "size": [
+        97,
+        95
+      ],
+      "offset": [
+        36,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-270-unomit-revert26.png",
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f",
+      "size": [
+        97,
+        95
+      ],
+      "offset": [
+        36,
+        84
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-adult-standing-315-young.png",
+      "png_sha256": "70834f3308113550075d8813b76926d38cfe10cf4596980580e24426dafa9c94",
+      "size": [
+        84,
+        92
+      ],
+      "offset": [
+        35,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-adult-standing-315-full.png",
+      "png_sha256": "70834f3308113550075d8813b76926d38cfe10cf4596980580e24426dafa9c94",
+      "size": [
+        84,
+        92
+      ],
+      "offset": [
+        35,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-adult-standing-315-revert26.png",
+      "png_sha256": "70834f3308113550075d8813b76926d38cfe10cf4596980580e24426dafa9c94",
+      "size": [
+        84,
+        92
+      ],
+      "offset": [
+        35,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-adult-standing-315-unomit-full.png",
+      "png_sha256": "70834f3308113550075d8813b76926d38cfe10cf4596980580e24426dafa9c94",
+      "size": [
+        84,
+        92
+      ],
+      "offset": [
+        35,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-adult-standing-315-unomit-revert26.png",
+      "png_sha256": "70834f3308113550075d8813b76926d38cfe10cf4596980580e24426dafa9c94",
+      "size": [
+        84,
+        92
+      ],
+      "offset": [
+        35,
+        78
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-adult-sitting-0-young.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-adult-sitting-0-full.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-adult-sitting-0-revert26.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-0-unomit-full.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-0-unomit-revert26.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-adult-sitting-45-young.png",
+      "png_sha256": "2d1f722384b8ab878daf42e9bb257a946fe1e1df24967ef0146b45d9b366c36e",
+      "size": [
+        77,
+        103
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-adult-sitting-45-full.png",
+      "png_sha256": "2d1f722384b8ab878daf42e9bb257a946fe1e1df24967ef0146b45d9b366c36e",
+      "size": [
+        77,
+        103
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-adult-sitting-45-revert26.png",
+      "png_sha256": "2d1f722384b8ab878daf42e9bb257a946fe1e1df24967ef0146b45d9b366c36e",
+      "size": [
+        77,
+        103
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-45-unomit-full.png",
+      "png_sha256": "2d1f722384b8ab878daf42e9bb257a946fe1e1df24967ef0146b45d9b366c36e",
+      "size": [
+        77,
+        103
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-45-unomit-revert26.png",
+      "png_sha256": "2d1f722384b8ab878daf42e9bb257a946fe1e1df24967ef0146b45d9b366c36e",
+      "size": [
+        77,
+        103
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-adult-sitting-90-young.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-adult-sitting-90-full.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-adult-sitting-90-revert26.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-90-unomit-full.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-90-unomit-revert26.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-adult-sitting-135-young.png",
+      "png_sha256": "cd789ce60c72e4709db4e8eca1d03c18f52f53b0cafb9aaefe639bf99d327872",
+      "size": [
+        76,
+        107
+      ],
+      "offset": [
+        26,
+        93
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-adult-sitting-135-full.png",
+      "png_sha256": "cd789ce60c72e4709db4e8eca1d03c18f52f53b0cafb9aaefe639bf99d327872",
+      "size": [
+        76,
+        107
+      ],
+      "offset": [
+        26,
+        93
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-adult-sitting-135-revert26.png",
+      "png_sha256": "cd789ce60c72e4709db4e8eca1d03c18f52f53b0cafb9aaefe639bf99d327872",
+      "size": [
+        76,
+        107
+      ],
+      "offset": [
+        26,
+        93
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-135-unomit-full.png",
+      "png_sha256": "cd789ce60c72e4709db4e8eca1d03c18f52f53b0cafb9aaefe639bf99d327872",
+      "size": [
+        76,
+        107
+      ],
+      "offset": [
+        26,
+        93
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-135-unomit-revert26.png",
+      "png_sha256": "cd789ce60c72e4709db4e8eca1d03c18f52f53b0cafb9aaefe639bf99d327872",
+      "size": [
+        76,
+        107
+      ],
+      "offset": [
+        26,
+        93
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-adult-sitting-180-young.png",
+      "png_sha256": "df54fcf276f83455309036d41862580bf4704d39b0947572ae88f61d34379c87",
+      "size": [
+        69,
+        108
+      ],
+      "offset": [
+        32,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 8
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-adult-sitting-180-full.png",
+      "png_sha256": "df54fcf276f83455309036d41862580bf4704d39b0947572ae88f61d34379c87",
+      "size": [
+        69,
+        108
+      ],
+      "offset": [
+        32,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 8
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-adult-sitting-180-revert26.png",
+      "png_sha256": "df54fcf276f83455309036d41862580bf4704d39b0947572ae88f61d34379c87",
+      "size": [
+        69,
+        108
+      ],
+      "offset": [
+        32,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 8
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-180-unomit-full.png",
+      "png_sha256": "c0a260da19393b84693d913852e2fd7ccb963b4994640cc4e6bd6a8f6a9efd96",
+      "size": [
+        69,
+        108
+      ],
+      "offset": [
+        32,
+        88
+      ],
+      "pixels_vs_young": 8,
+      "pixels_vs_full": 8,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-180-unomit-revert26.png",
+      "png_sha256": "df54fcf276f83455309036d41862580bf4704d39b0947572ae88f61d34379c87",
+      "size": [
+        69,
+        108
+      ],
+      "offset": [
+        32,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 8
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-adult-sitting-225-young.png",
+      "png_sha256": "4317ff710cedaf9b423f1063ffd5d41cead12600acf5846e030d22247160afa5",
+      "size": [
+        77,
+        102
+      ],
+      "offset": [
+        51,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-adult-sitting-225-full.png",
+      "png_sha256": "4317ff710cedaf9b423f1063ffd5d41cead12600acf5846e030d22247160afa5",
+      "size": [
+        77,
+        102
+      ],
+      "offset": [
+        51,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-adult-sitting-225-revert26.png",
+      "png_sha256": "4317ff710cedaf9b423f1063ffd5d41cead12600acf5846e030d22247160afa5",
+      "size": [
+        77,
+        102
+      ],
+      "offset": [
+        51,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-225-unomit-full.png",
+      "png_sha256": "4317ff710cedaf9b423f1063ffd5d41cead12600acf5846e030d22247160afa5",
+      "size": [
+        77,
+        102
+      ],
+      "offset": [
+        51,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-225-unomit-revert26.png",
+      "png_sha256": "4317ff710cedaf9b423f1063ffd5d41cead12600acf5846e030d22247160afa5",
+      "size": [
+        77,
+        102
+      ],
+      "offset": [
+        51,
+        88
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-adult-sitting-270-young.png",
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae",
+      "size": [
+        87,
+        99
+      ],
+      "offset": [
+        60,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-adult-sitting-270-full.png",
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae",
+      "size": [
+        87,
+        99
+      ],
+      "offset": [
+        60,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-adult-sitting-270-revert26.png",
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae",
+      "size": [
+        87,
+        99
+      ],
+      "offset": [
+        60,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-270-unomit-full.png",
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae",
+      "size": [
+        87,
+        99
+      ],
+      "offset": [
+        60,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-270-unomit-revert26.png",
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae",
+      "size": [
+        87,
+        99
+      ],
+      "offset": [
+        60,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-adult-sitting-315-young.png",
+      "png_sha256": "ec8654ed5c29f352155086cc889cedc424d4ca4fced609fb1ea0270b8ad71e97",
+      "size": [
+        76,
+        100
+      ],
+      "offset": [
+        50,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-adult-sitting-315-full.png",
+      "png_sha256": "ec8654ed5c29f352155086cc889cedc424d4ca4fced609fb1ea0270b8ad71e97",
+      "size": [
+        76,
+        100
+      ],
+      "offset": [
+        50,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-adult-sitting-315-revert26.png",
+      "png_sha256": "ec8654ed5c29f352155086cc889cedc424d4ca4fced609fb1ea0270b8ad71e97",
+      "size": [
+        76,
+        100
+      ],
+      "offset": [
+        50,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-adult-sitting-315-unomit-full.png",
+      "png_sha256": "ec8654ed5c29f352155086cc889cedc424d4ca4fced609fb1ea0270b8ad71e97",
+      "size": [
+        76,
+        100
+      ],
+      "offset": [
+        50,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-adult-sitting-315-unomit-revert26.png",
+      "png_sha256": "ec8654ed5c29f352155086cc889cedc424d4ca4fced609fb1ea0270b8ad71e97",
+      "size": [
+        76,
+        100
+      ],
+      "offset": [
+        50,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-adult-lying-0-young.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-adult-lying-0-full.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-adult-lying-0-revert26.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-0-unomit-full.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-0-unomit-revert26.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-adult-lying-45-young.png",
+      "png_sha256": "a750d8c1ce6f5c5f8dbfae65c1d239e21fa8c40c38d05232fd7c73b8c41203c5",
+      "size": [
+        88,
+        72
+      ],
+      "offset": [
+        61,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-adult-lying-45-full.png",
+      "png_sha256": "a750d8c1ce6f5c5f8dbfae65c1d239e21fa8c40c38d05232fd7c73b8c41203c5",
+      "size": [
+        88,
+        72
+      ],
+      "offset": [
+        61,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-adult-lying-45-revert26.png",
+      "png_sha256": "a750d8c1ce6f5c5f8dbfae65c1d239e21fa8c40c38d05232fd7c73b8c41203c5",
+      "size": [
+        88,
+        72
+      ],
+      "offset": [
+        61,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-45-unomit-full.png",
+      "png_sha256": "214df4a94a9a8388a6ecd8253767dd31083eaa0fdd81ce25f4502b36ca1e97db",
+      "size": [
+        88,
+        72
+      ],
+      "offset": [
+        61,
+        50
+      ],
+      "pixels_vs_young": 2,
+      "pixels_vs_full": 2,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-45-unomit-revert26.png",
+      "png_sha256": "a750d8c1ce6f5c5f8dbfae65c1d239e21fa8c40c38d05232fd7c73b8c41203c5",
+      "size": [
+        88,
+        72
+      ],
+      "offset": [
+        61,
+        50
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-adult-lying-90-young.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-adult-lying-90-full.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-adult-lying-90-revert26.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-90-unomit-full.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-90-unomit-revert26.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-adult-lying-135-young.png",
+      "png_sha256": "e8b6cc188b7fc3871c5fff8ceeb637bd2939eb5647210a36f9cb8a5671986b99",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-adult-lying-135-full.png",
+      "png_sha256": "e8b6cc188b7fc3871c5fff8ceeb637bd2939eb5647210a36f9cb8a5671986b99",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-adult-lying-135-revert26.png",
+      "png_sha256": "e8b6cc188b7fc3871c5fff8ceeb637bd2939eb5647210a36f9cb8a5671986b99",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-135-unomit-full.png",
+      "png_sha256": "e8b6cc188b7fc3871c5fff8ceeb637bd2939eb5647210a36f9cb8a5671986b99",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-135-unomit-revert26.png",
+      "png_sha256": "e8b6cc188b7fc3871c5fff8ceeb637bd2939eb5647210a36f9cb8a5671986b99",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-adult-lying-180-young.png",
+      "png_sha256": "36747c325311259c21d4f576372452d7f01929b280a6306266f1939b891bbf45",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-adult-lying-180-full.png",
+      "png_sha256": "36747c325311259c21d4f576372452d7f01929b280a6306266f1939b891bbf45",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-adult-lying-180-revert26.png",
+      "png_sha256": "36747c325311259c21d4f576372452d7f01929b280a6306266f1939b891bbf45",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-180-unomit-full.png",
+      "png_sha256": "36747c325311259c21d4f576372452d7f01929b280a6306266f1939b891bbf45",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-180-unomit-revert26.png",
+      "png_sha256": "36747c325311259c21d4f576372452d7f01929b280a6306266f1939b891bbf45",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-adult-lying-225-young.png",
+      "png_sha256": "1efe320e9cc45f73ade7059062f3fd39535d644c1d18651f35ac1ceb7830bdae",
+      "size": [
+        88,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-adult-lying-225-full.png",
+      "png_sha256": "1efe320e9cc45f73ade7059062f3fd39535d644c1d18651f35ac1ceb7830bdae",
+      "size": [
+        88,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-adult-lying-225-revert26.png",
+      "png_sha256": "1efe320e9cc45f73ade7059062f3fd39535d644c1d18651f35ac1ceb7830bdae",
+      "size": [
+        88,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-225-unomit-full.png",
+      "png_sha256": "1efe320e9cc45f73ade7059062f3fd39535d644c1d18651f35ac1ceb7830bdae",
+      "size": [
+        88,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-225-unomit-revert26.png",
+      "png_sha256": "1efe320e9cc45f73ade7059062f3fd39535d644c1d18651f35ac1ceb7830bdae",
+      "size": [
+        88,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-adult-lying-270-young.png",
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-adult-lying-270-full.png",
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-adult-lying-270-revert26.png",
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-270-unomit-full.png",
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-270-unomit-revert26.png",
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-adult-lying-315-young.png",
+      "png_sha256": "e5699a5d3411f17f8add58486a40ca54b93afe629f2b22372179b35e34f24f5e",
+      "size": [
+        92,
+        72
+      ],
+      "offset": [
+        30,
+        51
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-adult-lying-315-full.png",
+      "png_sha256": "e5699a5d3411f17f8add58486a40ca54b93afe629f2b22372179b35e34f24f5e",
+      "size": [
+        92,
+        72
+      ],
+      "offset": [
+        30,
+        51
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-adult-lying-315-revert26.png",
+      "png_sha256": "e5699a5d3411f17f8add58486a40ca54b93afe629f2b22372179b35e34f24f5e",
+      "size": [
+        92,
+        72
+      ],
+      "offset": [
+        30,
+        51
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-adult-lying-315-unomit-full.png",
+      "png_sha256": "e5699a5d3411f17f8add58486a40ca54b93afe629f2b22372179b35e34f24f5e",
+      "size": [
+        92,
+        72
+      ],
+      "offset": [
+        30,
+        51
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-adult-lying-315-unomit-revert26.png",
+      "png_sha256": "e5699a5d3411f17f8add58486a40ca54b93afe629f2b22372179b35e34f24f5e",
+      "size": [
+        92,
+        72
+      ],
+      "offset": [
+        30,
+        51
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-young-standing-0-young.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-young-standing-0-full.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-young-standing-0-revert26.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-young-standing-0-unomit-full.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-0-unomit-revert26.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-young-standing-45-young.png",
+      "png_sha256": "59fc925daad4a3061ef17f4d17d038790ec34b78c305d26ea31875e6c6042b94",
+      "size": [
+        87,
+        89
+      ],
+      "offset": [
+        51,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-young-standing-45-full.png",
+      "png_sha256": "59fc925daad4a3061ef17f4d17d038790ec34b78c305d26ea31875e6c6042b94",
+      "size": [
+        87,
+        89
+      ],
+      "offset": [
+        51,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-young-standing-45-revert26.png",
+      "png_sha256": "59fc925daad4a3061ef17f4d17d038790ec34b78c305d26ea31875e6c6042b94",
+      "size": [
+        87,
+        89
+      ],
+      "offset": [
+        51,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-young-standing-45-unomit-full.png",
+      "png_sha256": "59fc925daad4a3061ef17f4d17d038790ec34b78c305d26ea31875e6c6042b94",
+      "size": [
+        87,
+        89
+      ],
+      "offset": [
+        51,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-45-unomit-revert26.png",
+      "png_sha256": "59fc925daad4a3061ef17f4d17d038790ec34b78c305d26ea31875e6c6042b94",
+      "size": [
+        87,
+        89
+      ],
+      "offset": [
+        51,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-young-standing-90-young.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-young-standing-90-full.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-young-standing-90-revert26.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-young-standing-90-unomit-full.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-90-unomit-revert26.png",
+      "png_sha256": "7c1f27f02509aef9f151971b5d2adc53e4828750a6bf283c741399ca71597ed5",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_young": 5,
+      "pixels_vs_full": 5,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 5
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-young-standing-135-young.png",
+      "png_sha256": "28458e97bf2c5ed78aaf86195588f4cbb2e45427513bfa7cfde3f6eaaeb37a15",
+      "size": [
+        85,
+        99
+      ],
+      "offset": [
+        49,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-young-standing-135-full.png",
+      "png_sha256": "28458e97bf2c5ed78aaf86195588f4cbb2e45427513bfa7cfde3f6eaaeb37a15",
+      "size": [
+        85,
+        99
+      ],
+      "offset": [
+        49,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-young-standing-135-revert26.png",
+      "png_sha256": "28458e97bf2c5ed78aaf86195588f4cbb2e45427513bfa7cfde3f6eaaeb37a15",
+      "size": [
+        85,
+        99
+      ],
+      "offset": [
+        49,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-young-standing-135-unomit-full.png",
+      "png_sha256": "28458e97bf2c5ed78aaf86195588f4cbb2e45427513bfa7cfde3f6eaaeb37a15",
+      "size": [
+        85,
+        99
+      ],
+      "offset": [
+        49,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-135-unomit-revert26.png",
+      "png_sha256": "00926255c484d1e1e654a0710111e4d36cb539e06c73267884d5b6aefb0b983b",
+      "size": [
+        85,
+        99
+      ],
+      "offset": [
+        49,
+        87
+      ],
+      "pixels_vs_young": 4,
+      "pixels_vs_full": 4,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 4
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-young-standing-180-young.png",
+      "png_sha256": "a21bf0fe6c396eb80e415ddb43550211b77aca1420f2e1f8a1a3cae3576e35d2",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        33,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-young-standing-180-full.png",
+      "png_sha256": "a21bf0fe6c396eb80e415ddb43550211b77aca1420f2e1f8a1a3cae3576e35d2",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        33,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-young-standing-180-revert26.png",
+      "png_sha256": "a21bf0fe6c396eb80e415ddb43550211b77aca1420f2e1f8a1a3cae3576e35d2",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        33,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-young-standing-180-unomit-full.png",
+      "png_sha256": "a21bf0fe6c396eb80e415ddb43550211b77aca1420f2e1f8a1a3cae3576e35d2",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        33,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-180-unomit-revert26.png",
+      "png_sha256": "a21bf0fe6c396eb80e415ddb43550211b77aca1420f2e1f8a1a3cae3576e35d2",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        33,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-young-standing-225-young.png",
+      "png_sha256": "2dbc9faf5b25bdb08e939dbd2e9333f5e9af92c7c13d737cfe1e79d6d56e0cef",
+      "size": [
+        87,
+        100
+      ],
+      "offset": [
+        36,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-young-standing-225-full.png",
+      "png_sha256": "2dbc9faf5b25bdb08e939dbd2e9333f5e9af92c7c13d737cfe1e79d6d56e0cef",
+      "size": [
+        87,
+        100
+      ],
+      "offset": [
+        36,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-young-standing-225-revert26.png",
+      "png_sha256": "2dbc9faf5b25bdb08e939dbd2e9333f5e9af92c7c13d737cfe1e79d6d56e0cef",
+      "size": [
+        87,
+        100
+      ],
+      "offset": [
+        36,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-young-standing-225-unomit-full.png",
+      "png_sha256": "5f6e540171793ba1de3de3785ba638b68e7285bc1da0b6c9b8ae931dff6ba15b",
+      "size": [
+        87,
+        100
+      ],
+      "offset": [
+        36,
+        87
+      ],
+      "pixels_vs_young": 6,
+      "pixels_vs_full": 6,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-225-unomit-revert26.png",
+      "png_sha256": "2dbc9faf5b25bdb08e939dbd2e9333f5e9af92c7c13d737cfe1e79d6d56e0cef",
+      "size": [
+        87,
+        100
+      ],
+      "offset": [
+        36,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-young-standing-270-young.png",
+      "png_sha256": "5209503cf06333de43e0e14dfc56c9f3e4b39d9d69276c5c64a899f314d0de5a",
+      "size": [
+        100,
+        94
+      ],
+      "offset": [
+        37,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-young-standing-270-full.png",
+      "png_sha256": "5209503cf06333de43e0e14dfc56c9f3e4b39d9d69276c5c64a899f314d0de5a",
+      "size": [
+        100,
+        94
+      ],
+      "offset": [
+        37,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-young-standing-270-revert26.png",
+      "png_sha256": "5209503cf06333de43e0e14dfc56c9f3e4b39d9d69276c5c64a899f314d0de5a",
+      "size": [
+        100,
+        94
+      ],
+      "offset": [
+        37,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-young-standing-270-unomit-full.png",
+      "png_sha256": "ea252ac0e53b5ac59b71103b976b32e0a88e10869ad095fb2b37e164c99f70fe",
+      "size": [
+        100,
+        94
+      ],
+      "offset": [
+        37,
+        83
+      ],
+      "pixels_vs_young": 2,
+      "pixels_vs_full": 2,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-270-unomit-revert26.png",
+      "png_sha256": "5209503cf06333de43e0e14dfc56c9f3e4b39d9d69276c5c64a899f314d0de5a",
+      "size": [
+        100,
+        94
+      ],
+      "offset": [
+        37,
+        83
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-young-standing-315-young.png",
+      "png_sha256": "9cd70b94719f3e1116533511b6f0a069cea8d1d952daf14d4cb5b5f430c13fec",
+      "size": [
+        85,
+        91
+      ],
+      "offset": [
+        36,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-young-standing-315-full.png",
+      "png_sha256": "9cd70b94719f3e1116533511b6f0a069cea8d1d952daf14d4cb5b5f430c13fec",
+      "size": [
+        85,
+        91
+      ],
+      "offset": [
+        36,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-young-standing-315-revert26.png",
+      "png_sha256": "9cd70b94719f3e1116533511b6f0a069cea8d1d952daf14d4cb5b5f430c13fec",
+      "size": [
+        85,
+        91
+      ],
+      "offset": [
+        36,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-young-standing-315-unomit-full.png",
+      "png_sha256": "9cd70b94719f3e1116533511b6f0a069cea8d1d952daf14d4cb5b5f430c13fec",
+      "size": [
+        85,
+        91
+      ],
+      "offset": [
+        36,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-young-standing-315-unomit-revert26.png",
+      "png_sha256": "9cd70b94719f3e1116533511b6f0a069cea8d1d952daf14d4cb5b5f430c13fec",
+      "size": [
+        85,
+        91
+      ],
+      "offset": [
+        36,
+        77
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-young-sitting-0-young.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-young-sitting-0-full.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-young-sitting-0-revert26.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-0-unomit-full.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-0-unomit-revert26.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-young-sitting-45-young.png",
+      "png_sha256": "c0d57746d54df54e81e51aff309b2ecd88bcc489922f5d36879f574979843060",
+      "size": [
+        76,
+        102
+      ],
+      "offset": [
+        26,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-young-sitting-45-full.png",
+      "png_sha256": "c0d57746d54df54e81e51aff309b2ecd88bcc489922f5d36879f574979843060",
+      "size": [
+        76,
+        102
+      ],
+      "offset": [
+        26,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-young-sitting-45-revert26.png",
+      "png_sha256": "c0d57746d54df54e81e51aff309b2ecd88bcc489922f5d36879f574979843060",
+      "size": [
+        76,
+        102
+      ],
+      "offset": [
+        26,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-45-unomit-full.png",
+      "png_sha256": "c0d57746d54df54e81e51aff309b2ecd88bcc489922f5d36879f574979843060",
+      "size": [
+        76,
+        102
+      ],
+      "offset": [
+        26,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-45-unomit-revert26.png",
+      "png_sha256": "c0d57746d54df54e81e51aff309b2ecd88bcc489922f5d36879f574979843060",
+      "size": [
+        76,
+        102
+      ],
+      "offset": [
+        26,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-young-sitting-90-young.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-young-sitting-90-full.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-young-sitting-90-revert26.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-90-unomit-full.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-90-unomit-revert26.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-young-sitting-135-young.png",
+      "png_sha256": "21ee7044419521b3ea8f2d1aaf12f180810b0545193cc3e7a1dd81208b719521",
+      "size": [
+        75,
+        107
+      ],
+      "offset": [
+        26,
+        92
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-young-sitting-135-full.png",
+      "png_sha256": "21ee7044419521b3ea8f2d1aaf12f180810b0545193cc3e7a1dd81208b719521",
+      "size": [
+        75,
+        107
+      ],
+      "offset": [
+        26,
+        92
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-young-sitting-135-revert26.png",
+      "png_sha256": "21ee7044419521b3ea8f2d1aaf12f180810b0545193cc3e7a1dd81208b719521",
+      "size": [
+        75,
+        107
+      ],
+      "offset": [
+        26,
+        92
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-135-unomit-full.png",
+      "png_sha256": "21ee7044419521b3ea8f2d1aaf12f180810b0545193cc3e7a1dd81208b719521",
+      "size": [
+        75,
+        107
+      ],
+      "offset": [
+        26,
+        92
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-135-unomit-revert26.png",
+      "png_sha256": "21ee7044419521b3ea8f2d1aaf12f180810b0545193cc3e7a1dd81208b719521",
+      "size": [
+        75,
+        107
+      ],
+      "offset": [
+        26,
+        92
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-young-sitting-180-young.png",
+      "png_sha256": "f03b948002f1cd46bb8ac426ab0ce92a81584f8358e4b5cb8079411bde004a17",
+      "size": [
+        69,
+        107
+      ],
+      "offset": [
+        32,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-young-sitting-180-full.png",
+      "png_sha256": "f03b948002f1cd46bb8ac426ab0ce92a81584f8358e4b5cb8079411bde004a17",
+      "size": [
+        69,
+        107
+      ],
+      "offset": [
+        32,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-young-sitting-180-revert26.png",
+      "png_sha256": "f03b948002f1cd46bb8ac426ab0ce92a81584f8358e4b5cb8079411bde004a17",
+      "size": [
+        69,
+        107
+      ],
+      "offset": [
+        32,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-180-unomit-full.png",
+      "png_sha256": "f03b948002f1cd46bb8ac426ab0ce92a81584f8358e4b5cb8079411bde004a17",
+      "size": [
+        69,
+        107
+      ],
+      "offset": [
+        32,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-180-unomit-revert26.png",
+      "png_sha256": "838df28a24fb40780eef7ef8f4a77c57103f27b0e33a816a6539ea19c8c4997d",
+      "size": [
+        69,
+        107
+      ],
+      "offset": [
+        32,
+        87
+      ],
+      "pixels_vs_young": 15,
+      "pixels_vs_full": 15,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 15
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-young-sitting-225-young.png",
+      "png_sha256": "ab1f8fce71c47b11f4e2d3fd23fefd0eb14f4dc0c64788f0b7c331e15ac0f8fe",
+      "size": [
+        76,
+        101
+      ],
+      "offset": [
+        50,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-young-sitting-225-full.png",
+      "png_sha256": "ab1f8fce71c47b11f4e2d3fd23fefd0eb14f4dc0c64788f0b7c331e15ac0f8fe",
+      "size": [
+        76,
+        101
+      ],
+      "offset": [
+        50,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-young-sitting-225-revert26.png",
+      "png_sha256": "ab1f8fce71c47b11f4e2d3fd23fefd0eb14f4dc0c64788f0b7c331e15ac0f8fe",
+      "size": [
+        76,
+        101
+      ],
+      "offset": [
+        50,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-225-unomit-full.png",
+      "png_sha256": "665d2e3965b553e46327956c23e9ec43434ea23528532889cea1cfd782deedfe",
+      "size": [
+        76,
+        101
+      ],
+      "offset": [
+        50,
+        87
+      ],
+      "pixels_vs_young": 2,
+      "pixels_vs_full": 2,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-225-unomit-revert26.png",
+      "png_sha256": "ab1f8fce71c47b11f4e2d3fd23fefd0eb14f4dc0c64788f0b7c331e15ac0f8fe",
+      "size": [
+        76,
+        101
+      ],
+      "offset": [
+        50,
+        87
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-young-sitting-270-young.png",
+      "png_sha256": "6b79147c538d62fa938bbd07ca122719829e2fb2c5140c6b7c8936d681afe24f",
+      "size": [
+        89,
+        98
+      ],
+      "offset": [
+        59,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-young-sitting-270-full.png",
+      "png_sha256": "6b79147c538d62fa938bbd07ca122719829e2fb2c5140c6b7c8936d681afe24f",
+      "size": [
+        89,
+        98
+      ],
+      "offset": [
+        59,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-young-sitting-270-revert26.png",
+      "png_sha256": "6b79147c538d62fa938bbd07ca122719829e2fb2c5140c6b7c8936d681afe24f",
+      "size": [
+        89,
+        98
+      ],
+      "offset": [
+        59,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-270-unomit-full.png",
+      "png_sha256": "d38e62ee03425e73208f40c2975d20a8325049539690688ee5610c9f1fdd219b",
+      "size": [
+        89,
+        98
+      ],
+      "offset": [
+        59,
+        89
+      ],
+      "pixels_vs_young": 1,
+      "pixels_vs_full": 1,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-270-unomit-revert26.png",
+      "png_sha256": "6b79147c538d62fa938bbd07ca122719829e2fb2c5140c6b7c8936d681afe24f",
+      "size": [
+        89,
+        98
+      ],
+      "offset": [
+        59,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-young-sitting-315-young.png",
+      "png_sha256": "e09095021493bf38b87e76ca8acacb8a60afbf63f724f6e3e744d6a3529543a2",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        49,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-young-sitting-315-full.png",
+      "png_sha256": "e09095021493bf38b87e76ca8acacb8a60afbf63f724f6e3e744d6a3529543a2",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        49,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-young-sitting-315-revert26.png",
+      "png_sha256": "e09095021493bf38b87e76ca8acacb8a60afbf63f724f6e3e744d6a3529543a2",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        49,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-young-sitting-315-unomit-full.png",
+      "png_sha256": "8031aad8664a0bb77dd950f88008a5088dc86815a63d8ef80579a38aae226a3d",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        49,
+        89
+      ],
+      "pixels_vs_young": 6,
+      "pixels_vs_full": 6,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-young-sitting-315-unomit-revert26.png",
+      "png_sha256": "e09095021493bf38b87e76ca8acacb8a60afbf63f724f6e3e744d6a3529543a2",
+      "size": [
+        75,
+        99
+      ],
+      "offset": [
+        49,
+        89
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "young",
+      "file": "missing-young-lying-0-young.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "full",
+      "file": "missing-young-lying-0-full.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "revert26",
+      "file": "missing-young-lying-0-revert26.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "unomit-full",
+      "file": "missing-young-lying-0-unomit-full.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-0-unomit-revert26.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "young",
+      "file": "missing-young-lying-45-young.png",
+      "png_sha256": "e71a9cfab74f9187923de8912ebd1849ee22ec713b88607da0f111663ca98eeb",
+      "size": [
+        87,
+        70
+      ],
+      "offset": [
+        60,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "full",
+      "file": "missing-young-lying-45-full.png",
+      "png_sha256": "e71a9cfab74f9187923de8912ebd1849ee22ec713b88607da0f111663ca98eeb",
+      "size": [
+        87,
+        70
+      ],
+      "offset": [
+        60,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "revert26",
+      "file": "missing-young-lying-45-revert26.png",
+      "png_sha256": "e71a9cfab74f9187923de8912ebd1849ee22ec713b88607da0f111663ca98eeb",
+      "size": [
+        87,
+        70
+      ],
+      "offset": [
+        60,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "unomit-full",
+      "file": "missing-young-lying-45-unomit-full.png",
+      "png_sha256": "e71a9cfab74f9187923de8912ebd1849ee22ec713b88607da0f111663ca98eeb",
+      "size": [
+        87,
+        70
+      ],
+      "offset": [
+        60,
+        48
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-45-unomit-revert26.png",
+      "png_sha256": "c6f2e2b9f7821237e0fb9ab8eb7e709b41eb3b69ae1718a908e86a34db4a7ba6",
+      "size": [
+        87,
+        70
+      ],
+      "offset": [
+        60,
+        48
+      ],
+      "pixels_vs_young": 1,
+      "pixels_vs_full": 1,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "young",
+      "file": "missing-young-lying-90-young.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "full",
+      "file": "missing-young-lying-90-full.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "revert26",
+      "file": "missing-young-lying-90-revert26.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "unomit-full",
+      "file": "missing-young-lying-90-unomit-full.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-90-unomit-revert26.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "young",
+      "file": "missing-young-lying-135-young.png",
+      "png_sha256": "54a255a8846ce02dea21a9c9d9b5fe6e27e87132e32bd923b618f4bc655fb43f",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "full",
+      "file": "missing-young-lying-135-full.png",
+      "png_sha256": "54a255a8846ce02dea21a9c9d9b5fe6e27e87132e32bd923b618f4bc655fb43f",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "revert26",
+      "file": "missing-young-lying-135-revert26.png",
+      "png_sha256": "54a255a8846ce02dea21a9c9d9b5fe6e27e87132e32bd923b618f4bc655fb43f",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "unomit-full",
+      "file": "missing-young-lying-135-unomit-full.png",
+      "png_sha256": "54a255a8846ce02dea21a9c9d9b5fe6e27e87132e32bd923b618f4bc655fb43f",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-135-unomit-revert26.png",
+      "png_sha256": "54a255a8846ce02dea21a9c9d9b5fe6e27e87132e32bd923b618f4bc655fb43f",
+      "size": [
+        92,
+        73
+      ],
+      "offset": [
+        62,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "young",
+      "file": "missing-young-lying-180-young.png",
+      "png_sha256": "2e5a3e92ef03c2f8eb975f8a08a842fc523562b14a589bfa217371f7821dd027",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "full",
+      "file": "missing-young-lying-180-full.png",
+      "png_sha256": "2e5a3e92ef03c2f8eb975f8a08a842fc523562b14a589bfa217371f7821dd027",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "revert26",
+      "file": "missing-young-lying-180-revert26.png",
+      "png_sha256": "2e5a3e92ef03c2f8eb975f8a08a842fc523562b14a589bfa217371f7821dd027",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "unomit-full",
+      "file": "missing-young-lying-180-unomit-full.png",
+      "png_sha256": "2e5a3e92ef03c2f8eb975f8a08a842fc523562b14a589bfa217371f7821dd027",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-180-unomit-revert26.png",
+      "png_sha256": "2e5a3e92ef03c2f8eb975f8a08a842fc523562b14a589bfa217371f7821dd027",
+      "size": [
+        69,
+        80
+      ],
+      "offset": [
+        36,
+        66
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "young",
+      "file": "missing-young-lying-225-young.png",
+      "png_sha256": "419b322cc8841b67784ed08315c88e16c42fde2f73cacc00cc654f9675250c32",
+      "size": [
+        87,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "full",
+      "file": "missing-young-lying-225-full.png",
+      "png_sha256": "419b322cc8841b67784ed08315c88e16c42fde2f73cacc00cc654f9675250c32",
+      "size": [
+        87,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "revert26",
+      "file": "missing-young-lying-225-revert26.png",
+      "png_sha256": "419b322cc8841b67784ed08315c88e16c42fde2f73cacc00cc654f9675250c32",
+      "size": [
+        87,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "unomit-full",
+      "file": "missing-young-lying-225-unomit-full.png",
+      "png_sha256": "419b322cc8841b67784ed08315c88e16c42fde2f73cacc00cc654f9675250c32",
+      "size": [
+        87,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-225-unomit-revert26.png",
+      "png_sha256": "419b322cc8841b67784ed08315c88e16c42fde2f73cacc00cc654f9675250c32",
+      "size": [
+        87,
+        77
+      ],
+      "offset": [
+        27,
+        62
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "young",
+      "file": "missing-young-lying-270-young.png",
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "full",
+      "file": "missing-young-lying-270-full.png",
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "revert26",
+      "file": "missing-young-lying-270-revert26.png",
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "unomit-full",
+      "file": "missing-young-lying-270-unomit-full.png",
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-270-unomit-revert26.png",
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        30,
+        56
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "young",
+      "file": "missing-young-lying-315-young.png",
+      "png_sha256": "a330c62dd157680987b652ed7f37cd2860ebe05c8a5944d786b47a06f856b95b",
+      "size": [
+        92,
+        70
+      ],
+      "offset": [
+        30,
+        49
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "full",
+      "file": "missing-young-lying-315-full.png",
+      "png_sha256": "a330c62dd157680987b652ed7f37cd2860ebe05c8a5944d786b47a06f856b95b",
+      "size": [
+        92,
+        70
+      ],
+      "offset": [
+        30,
+        49
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "revert26",
+      "file": "missing-young-lying-315-revert26.png",
+      "png_sha256": "a330c62dd157680987b652ed7f37cd2860ebe05c8a5944d786b47a06f856b95b",
+      "size": [
+        92,
+        70
+      ],
+      "offset": [
+        30,
+        49
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": false,
+      "pixels_vs_unomit_full": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "unomit-full",
+      "file": "missing-young-lying-315-unomit-full.png",
+      "png_sha256": "b178045f9d84cb26a802d8e2474a5c846b4b834eca85ddedd0c13e9cb2c0aae8",
+      "size": [
+        92,
+        70
+      ],
+      "offset": [
+        30,
+        49
+      ],
+      "pixels_vs_young": 1,
+      "pixels_vs_full": 1,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "label": "unomit-revert26",
+      "file": "missing-young-lying-315-unomit-revert26.png",
+      "png_sha256": "a330c62dd157680987b652ed7f37cd2860ebe05c8a5944d786b47a06f856b95b",
+      "size": [
+        92,
+        70
+      ],
+      "offset": [
+        30,
+        49
+      ],
+      "pixels_vs_young": 0,
+      "pixels_vs_full": 0,
+      "ball93_visible": true,
+      "pixels_vs_unomit_full": 1
+    }
+  ],
+  "fixtures": [
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 6
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 3
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 8
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 2
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 5
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 4
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 15
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 2
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 6
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 45,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 1
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 135,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 180,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 225,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 270,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 0
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 315,
+      "full_pixels_vs_young": 0,
+      "reversion_pixels_vs_full": 0,
+      "unomitted_reversion_pixels": 1
+    }
+  ],
+  "mcp": [
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-adult.pet",
+        "pose": "standing",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "51403dffff8d012b2b31fbd656d65a13dd630c621f4091838abf348263e7201f"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-adult.pet",
+        "pose": "sitting",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "f047135314fc491b62c0f4642b86307ee9ab2b8c71776b4fbfe576d31e3019ae"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-adult.pet",
+        "pose": "lying",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "ad463300db5ead489b90f3208bd8700561747413a8ebb2e7a7d8c15e8bbacdc6"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-young.pet",
+        "pose": "standing",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "5209503cf06333de43e0e14dfc56c9f3e4b39d9d69276c5c64a899f314d0de5a"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-young.pet",
+        "pose": "sitting",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "6b79147c538d62fa938bbd07ca122719829e2fb2c5140c6b7c8936d681afe24f"
+    },
+    {
+      "controls": {
+        "path": "Fuzzkin-missing-young.pet",
+        "pose": "lying",
+        "look": "puppy",
+        "age": 12,
+        "yaw_degrees": 270
+      },
+      "png_sha256": "03d2400a290f16d6f7c1fcf2f12f90885794ece49656354625f7afe7948f1a6a"
+    }
+  ],
+  "summary": {
+    "renders": 240,
+    "mcp_matches": 6,
+    "prior_links": 12,
+    "reversion_changed_views": 0,
+    "unomitted_changed_views": 15,
+    "full_changed_vs_young": 0
+  }
+}

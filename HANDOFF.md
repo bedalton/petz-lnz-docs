@@ -478,3 +478,7 @@ All three exact current-build replays and the independent [session audit](docs/s
 ## Added count visibility controls
 
 [YOUNG-009](experiments/young-009.md):240 direct outputs,two cache modes/three poses/front-side,four list prefixes andeight masks each for omission/zero-size. Full replay passes;all-disabled indexed controls equal the short list in12/12. Shared96 geometry/fills/commands equal short inall240,while topology differs. Independent720-RGBA audit andsix-row sheet review pass;private evidence scratch/research/young-009. No renderer/original/copy writes;continuation active.
+
+## Hidden added-entry release control
+
+[YOUNG-010](experiments/young-010.md):240 direct renders across eight yaws,two modes/three poses;6 exact local MCP matches,12 prior links. Entry26 maps to omitted ball93. All48 retained-omission reversions match;removing omission93 makes15/48 reversion outputs differ by1–15 pixels. Full replay,720 independent RGBA comparisons and16-row native sheet review pass. Initial narrower survey archived/excluded. Field split follows;no originals/renderer/copy writes;continuation active.

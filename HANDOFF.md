@@ -448,3 +448,7 @@ Requested scratch document: `scratch/mcp-branch-numbering-handoff.md`. Includes 
 ## MCP branch fix reinstalled and restarted
 
 [UPDATE-009](experiments/update-009.md):checkout already at49c7f62,reinstalled without dependency changes. Old PID28026 stopped;new HTTP PID28631/session86021 serves127.0.0.1:8765/mcp. Fresh discovery validates allfive one-based branch schema fields;four HTTP stock renders andfour stdio fixture probes pass. Branch0 now fails form validation,branch1 matches fresh direct rendering (historical PNG differs;not attributed by this smoke test),branch2 reaches intended missing dependency,branch3 fails range. All62 installed sources match checkout;all21 tracked originals match. Scratch handoff marked fixed/superseded;historical audit unchanged. No hosted reload claimed or renderer/original edits;pre-existing .gitignore/istall-node untouched. tools/check_mcp_branch_reload.py reproduces.
+
+## Current endpoint attribution replay
+
+[UPDATE-011](experiments/update-011.md) replays YOUNG-005/006/007 on49c7f62:804 direct PNGs all differ historically,24 MCP baselines agree. Missing-young lying/front balls+adds now suffice; field minimum omits lines and line11 reversion is now inert. Five endpoint equality observations/two minimal-set records change for that one fixture;other34 minima agree. Full replay and session audit progress are recorded in the forthcoming session index. Private sheet reviewed;no renderer/original edits. Fifteen-minute continuation ongoing.

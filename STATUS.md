@@ -163,3 +163,5 @@ Updated: 2026-11-12
 ## Young-resource edits and integer ages
 
 [YOUNG-003](experiments/young-003.md):606 full-loader age records pass against independent scale/shape/ball arithmetic across Petz3/4/5. Six private Petz4 young-resource copies,84 direct outputs,28 original controls and24 exact MCP matches isolate young size/color edits;two edit sheets reviewed. Focused [reference](format-reference/young-appearance.md) and Little one coverage updated. Full replay underway;fifteen-minute continuation entering final audit.
+
+- Current endpoint correction: [UPDATE-011](experiments/update-011.md),49c7f62, replays804 Fuzzkin attribution PNGs and24 exact local MCP baselines. Missing-young lying/front no longer requires lines; the old two-pixel residual disappears. Other34 minimal-set records agree. Historical evidence preserved; no renderer/original edits. Upgrade continuation remains active.

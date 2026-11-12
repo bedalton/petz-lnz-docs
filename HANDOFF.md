@@ -470,3 +470,7 @@ The focused [young reference](format-reference/young-appearance.md) now carries 
 ## Young upgrade continuation complete
 
 All three exact current-build replays and the independent [session audit](docs/session-2026-11-12-young-upgrade.md) pass. Final replay log digests: scratch/research/young-upgrade-session/replay-logs.json. Earlier pending statements above are superseded.1,518 research PNGs,606 numeric records,316 preserved historical equalities,one corrected endpoint fixture,21 unchanged originals and62-source agreement. HTTP session35819 on8765 passes actual render checks. No renderer/original edits. Next:native endpoint evidence,other pets/breeds or controlled command/raster cause isolation. This fifteen-minute continuation is complete.
+
+## Exhaustive added-tail interactions
+
+[YOUNG-008](experiments/young-008.md):1,536 direct renders,12 exact local MCP endpoint matches,12 UPDATE-011 links. Each of12 fixtures has one minimal subset;no monotonicity violations on the fixed sufficient outline/line background. Entry26 inert across768 matched pairs;count group required front only. Full replay and tools/check_young_tail.py pass,including1,536 independent RGBA checks and5,376 factor pairs. Native-scale12-row sheet reviewed. Private evidence scratch/research/young-008;all21 original hashes unchanged. No renderer/original/copy edits. Count controls and wider yaws follow during the active fifteen-minute continuation.

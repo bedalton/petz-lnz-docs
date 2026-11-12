@@ -30,6 +30,10 @@ def run(unit):
                 for endpoint in ('short','long'):
                     masks=[m for m in range(8) if next(r for r in rows if tuple(r[k] for k in ('mode','pose','yaw'))==key and r['label']==f'{method}-{m}')[f'pixels_vs_{endpoint}']==0]
                     assert masks==fixture[f'{field}_matches_{endpoint}']
+            for mask in range(8):
+                a=next(r for r in rows if tuple(r[k] for k in ('mode','pose','yaw'))==key and r['label']==f'omit-{mask}')
+                b=next(r for r in rows if tuple(r[k] for k in ('mode','pose','yaw'))==key and r['label']==f'zero-{mask}')
+                assert independent_difference(out/a['file'],a['offset'],out/b['file'],b['offset'])==0;checks+=1
             p=next(f for f in prior['fixtures'] if tuple(f[k] for k in ('mode','pose','yaw'))==key)
             assert p['prior_full_sha256']==fixture['prior_endpoint_sha256'];links+=1
         elif fixture['yaw'] in (0,90):

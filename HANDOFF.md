@@ -424,3 +424,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Young resource routing continuation
 
 [YOUNG-004](experiments/young-004.md) tests14 Petz4 Scottie/Siamese copies:90 direct/MCP cases,54 successful MCP PNG matches,36 expected failures and108 direct front/side PNGs. Explicit young_name is case-sensitive;Little one normalizes stems,uses first row and distinguishes exact X from lowercase x. Forced adult skips young dependencies;branch overrides change effective routing and explicit young_name rescues broken branches. Full replay underway. First harness MCP-field mismatch archived privately;renderer/originals unchanged. Fifteen-minute authorization remains active.
+
+## Mixed-cache endpoint attribution
+
+[YOUNG-005](experiments/young-005.md) exhausts differing-list subsets for Fuzzkin,four cache modes,three poses/front-side:240 direct PNGs,24 exact MCP baselines and16 YOUNG-002 standing links. Full replay passes. Mixed-cache differences are46–241 aligned RGBA pixels;balls+add_balls restore standing/lying-side,lines also required for sitting/lying-front. Baseline/missing-both match pixels despite paint direction differences. Field controls now running;no originals/renderer edits or native claim. Fifteen-minute continuation active.

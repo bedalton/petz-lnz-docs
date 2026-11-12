@@ -1,5 +1,7 @@
 # Status
 
+- Latest: [YOUNG-005](experiments/young-005.md),240 immutable-list substitution PNGs/24 exact MCP baselines;full replay passes. Mixed-cache Fuzzkin age12 differences require ball/add lists and,in some poses,line list;paint substitution unnecessary. Field controls follow.
+
 - Latest: [YOUNG-004](experiments/young-004.md),14 private Petz4 copies,90 loader/MCP cases,108 direct PNGs. Explicit selectors,branch routing and36 expected missing-resource failures agree;full replay underway. Fifteen-minute continuation active.
 
 - Latest completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. Fifteen-minute continuation complete;next work needs a new requested duration.

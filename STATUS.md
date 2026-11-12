@@ -167,3 +167,5 @@ Updated: 2026-11-12
 - Current endpoint correction: [UPDATE-011](experiments/update-011.md),49c7f62, replays804 Fuzzkin attribution PNGs and24 exact local MCP baselines. Missing-young lying/front no longer requires lines; the old two-pixel residual disappears. Other34 minimal-set records agree. Historical evidence preserved; no renderer/original edits. Upgrade continuation remains active.
 
 - Focused young-appearance reference now distinguishes the historical lying/front line requirement from the [current correction](experiments/update-011.md); evidence counts unchanged.
+
+- [UPDATE-010](experiments/update-010.md) replays306 fresh MCP controls and216 saved direct draws on49c7f62. All216 historical relationships hold and36 saved MCP matches pass;all522 historical RGBA images differ. All21 originals unchanged. Exact current-build replay is underway;historical manifests preserved.

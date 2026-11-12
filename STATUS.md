@@ -1,5 +1,7 @@
 # Status
 
+- Latest: [YOUNG-007](experiments/young-007.md),144 entry-reversion PNGs trace1–3-pixel residuals to individual line entries and sample added-tail/count sensitivity. Four-unit continuation audit underway;native endpoint semantics remain open.
+
 - Latest: [YOUNG-006](experiments/young-006.md),420 field-substitution PNGs isolate Fuzzkin mixed-cache endpoint gaps to outline colors14/38,added-list tail and,in some poses,line edge modes. Four native-resolution sheets reviewed;replay running. Fifteen-minute continuation entering audit.
 
 - Latest: [YOUNG-005](experiments/young-005.md),240 immutable-list substitution PNGs/24 exact MCP baselines;full replay passes. Mixed-cache Fuzzkin age12 differences require ball/add lists and,in some poses,line list;paint substitution unnecessary. Field controls follow.

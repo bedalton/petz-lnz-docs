@@ -432,3 +432,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Endpoint field attribution
 
 [YOUNG-006](experiments/young-006.md):420 outputs,32 factor combinations+three controls in12 mixed-cache pose/views. Ball14 outline+added-list tail always required;ball38 outline required front only;line edge modes required sitting/both and lying/front. Speckle-only/paint-only controls preserve age pixels;added-prefix unnecessary in minimal sets. Full replay running. Four aligned routing/field sheets reviewed and reproducible with tools/young_continuation_sheets.py. Originals/renderer unchanged;native claims remain open. Continuation entering integrity audit.
+
+## Individual endpoint entry reversions
+
+[YOUNG-007](experiments/young-007.md):144 PNGs,12 prior links,one-entry/group reversions on the sufficient substituted background. Line11 accounts for sitting-side/lying-front residuals;line14 or12 for sitting-front depending on cache mode. Added26 inert in sampled backgrounds;three-entry count group affects front only. Individual sensitivity is not exhaustive interaction attribution. Full replay running;four-unit session integrity audit follows. Original/renderer unchanged.

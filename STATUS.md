@@ -1,5 +1,7 @@
 # Status
 
+- Latest: [YOUNG-006](experiments/young-006.md),420 field-substitution PNGs isolate Fuzzkin mixed-cache endpoint gaps to outline colors14/38,added-list tail and,in some poses,line edge modes. Four native-resolution sheets reviewed;replay running. Fifteen-minute continuation entering audit.
+
 - Latest: [YOUNG-005](experiments/young-005.md),240 immutable-list substitution PNGs/24 exact MCP baselines;full replay passes. Mixed-cache Fuzzkin age12 differences require ball/add lists and,in some poses,line list;paint substitution unnecessary. Field controls follow.
 
 - Latest: [YOUNG-004](experiments/young-004.md),14 private Petz4 copies,90 loader/MCP cases,108 direct PNGs. Explicit selectors,branch routing and36 expected missing-resource failures agree;full replay underway. Fifteen-minute continuation active.

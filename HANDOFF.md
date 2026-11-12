@@ -428,3 +428,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Mixed-cache endpoint attribution
 
 [YOUNG-005](experiments/young-005.md) exhausts differing-list subsets for Fuzzkin,four cache modes,three poses/front-side:240 direct PNGs,24 exact MCP baselines and16 YOUNG-002 standing links. Full replay passes. Mixed-cache differences are46–241 aligned RGBA pixels;balls+add_balls restore standing/lying-side,lines also required for sitting/lying-front. Baseline/missing-both match pixels despite paint direction differences. Field controls now running;no originals/renderer edits or native claim. Fifteen-minute continuation active.
+
+## Endpoint field attribution
+
+[YOUNG-006](experiments/young-006.md):420 outputs,32 factor combinations+three controls in12 mixed-cache pose/views. Ball14 outline+added-list tail always required;ball38 outline required front only;line edge modes required sitting/both and lying/front. Speckle-only/paint-only controls preserve age pixels;added-prefix unnecessary in minimal sets. Full replay running. Four aligned routing/field sheets reviewed and reproducible with tools/young_continuation_sheets.py. Originals/renderer unchanged;native claims remain open. Continuation entering integrity audit.

@@ -466,3 +466,7 @@ The focused [young reference](format-reference/young-appearance.md) now carries 
 ## Young upgrade independent audit
 
 [Session index](docs/session-2026-11-12-young-upgrade.md) consolidates UPDATE-010/011/012. tools/check_young_upgrade_session.py passes all1,518 independent historical/current RGBA checks,804 endpoint checks,204 cross-version and44 cross-unit links,21 originals and62 sources. HTTP restarted PID29894/session35819;four health renders match fresh baselines. One correction sheet reviewed. Exact UPDATE-010/012 replays are finishing;UPDATE-011 full replay already passes. No source/original edits;next native endpoint evidence,other pets or command/raster cause isolation.
+
+## Young upgrade continuation complete
+
+All three exact current-build replays and the independent [session audit](docs/session-2026-11-12-young-upgrade.md) pass. Final replay log digests: scratch/research/young-upgrade-session/replay-logs.json. Earlier pending statements above are superseded.1,518 research PNGs,606 numeric records,316 preserved historical equalities,one corrected endpoint fixture,21 unchanged originals and62-source agreement. HTTP session35819 on8765 passes actual render checks. No renderer/original edits. Next:native endpoint evidence,other pets/breeds or controlled command/raster cause isolation. This fifteen-minute continuation is complete.

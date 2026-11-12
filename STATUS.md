@@ -1,5 +1,7 @@
 # Status
 
+- Latest completed continuation: [young upgrade review](docs/session-2026-11-12-young-upgrade.md),49c7f62. UPDATE-010/011/012 full replays and independent audit pass;1,518 PNGs,606 age records,21 unchanged originals. Fuzzkin missing-young lying/front no longer needs line substitution. All work committed;HTTP session35819 healthy.
+
 - Latest MCP reload: [UPDATE-009](experiments/update-009.md), revision `49c7f62`. Reinstalled in scratch/petz-local-x86-venv; HTTP restarted PID28631/session86021 on8765. Six tools,five corrected one-based schema fields,four HTTP renders andfour branch probes pass;62 installed sources match and21 original hashes unchanged. Branch-schema issue is fixed locally;branch1 matches fresh direct rendering but differs from its historical PNG. Older notes below retain historical provenance.
 
 - Implementation handoff prepared: `scratch/mcp-branch-numbering-handoff.md` explains the MCP schema/engine indexing mismatch, exact four-value probe, compatibility options and regression requirements. Evidence remains linked in the [session record](docs/session-2026-11-12-young-routing.md); no implementation change made.

@@ -1,5 +1,7 @@
 # Status
 
+- Native saved-state controls: [NATIVE-002](experiments/native-002.md),576 direct PNGs/36 local MCP matches. Full replay/independent648-RGBA audit pass;all288 old/capture-time source pairs agree at common age/fatness across three pets/poses/eight yaws. Native coat-color causation and exact pose equivalence remain open; continuation active.
+
 - Native game captures inventoried: [2026-11-12 intake](docs/native-capture-intake-2026-11-12.md),21 PNGs/three saves/one MOV. Goobe tongue photo and Fuzzkin movement reviewed; capture-time saves preserved separately. Scaling and controlled game/renderer equivalence remain unresolved.
 
 - Latest completed research: [young added-tail session](docs/session-2026-11-12-young-tails.md),YOUNG-008/009/010/011. Four full replays andfinal audit pass:2,208 direct PNGs,18 MCP matches,3,312 independent RGBA comparisons,132 prior links,16 numerical area controls,21 unchanged originals and62-source agreement. Ball93 omission hides entry26 changes;released position changes explain15/48 views. HTTP restarted session52464;six actual render checks pass. Fifteen-minute continuation complete;the [focused reference](format-reference/young-appearance.md#current-build-added-tail-controls) indexes the current tail scope.

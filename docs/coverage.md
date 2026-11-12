@@ -2,7 +2,7 @@
 
 This is a lower-bound topic inventory, not a complete LNZ specification. It combines six sampled adult breed/master resources with override sections already encountered in code/experiments. More stock breeds, young resources and community references may add topics.
 
-Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samples Project Ball edits and LINE-016 samples connector texture routing in Petz 3 and 5. No topic has native-game validation. Ball-label agreement across versions is asset evidence only.
+Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samples Project Ball edits and LINE-016 samples connector texture routing in Petz 3 and 5. [Native captures](native-capture-intake-2026-11-12.md) now provide observational game references; no topic has controlled native-game validation. Ball-label agreement across versions is asset evidence only.
 
 | Topic | Current evidence / remaining work |
 | --- | --- |

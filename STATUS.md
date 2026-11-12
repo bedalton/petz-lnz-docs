@@ -1,5 +1,7 @@
 # Status
 
+- Implementation handoff prepared: `scratch/mcp-branch-numbering-handoff.md` explains the MCP schema/engine indexing mismatch, exact four-value probe, compatibility options and regression requirements. Evidence remains linked in the [session record](docs/session-2026-11-12-young-routing.md); no implementation change made.
+
 - Latest completed session: [young routing and endpoint attribution](docs/session-2026-11-12-young-routing.md), YOUNG-004/005/006/007 on `4c4d3df`. Four full replays pass; 912 research PNGs, 780 independent RGBA checks, 40 prior links and 21 unchanged originals. HTTP restarted/rechecked in session90633. MCP branch-number schema inconsistency recorded; renderer untouched. Fifteen-minute continuation complete.
 
 - Previous completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. That session is superseded by the continuation above.

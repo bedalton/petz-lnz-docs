@@ -1,0 +1,5662 @@
+{
+  "provenance": {
+    "revision": "4c4d3dffdacf86c52859a15b4e826c53eb68019c",
+    "sources": {
+      "petz_renderer/local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "petz_renderer/__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "petz_renderer/cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "petz_renderer/versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "petz_renderer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "petz_renderer/inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "petz_renderer/formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "petz_renderer/formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "petz_renderer/formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "petz_renderer/formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "petz_renderer/formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "petz_renderer/formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "petz_renderer/appearance/preview.py": "2aad0bc543efcb37c11a8835953a5985a843ed9609ca284a3ad5c7c38f4d1659",
+      "petz_renderer/appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "petz_renderer/appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "petz_renderer/appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "petz_renderer/appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "petz_renderer/appearance/core.py": "b710be409a765f978da8d1bc96e3ae789977b143dcca3b8ebc8ee5f19e32fa0c",
+      "petz_renderer/appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "petz_renderer/appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "petz_renderer/appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "petz_renderer/appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "petz_renderer/appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "petz_renderer/deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "petz_renderer/rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "petz_renderer/rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "petz_renderer/rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "petz_renderer/rendering/paint.py": "cb8749c2e67762fe0fe5f2b1d0addeecf90f87ce8c01b74c141a7f8d43bb54d0",
+      "petz_renderer/rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "petz_renderer/rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "petz_renderer/rendering/attachment.py": "e29179c4e5d8b3580cbd12b4131fa0cae592b201b20cedc998d754f8f502aa07",
+      "petz_renderer/rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "petz_renderer/rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "petz_renderer/rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "petz_renderer/rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "petz_renderer/rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "petz_renderer/rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "petz_renderer/rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "petz_renderer/rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "petz_renderer/rendering/composition.py": "c8e51e94b239bab4cb55ecb6a7c54bfbfb8a5b6a78fd1d0dbfdea506907a0394",
+      "petz_renderer/rendering/blocks.py": "8e6f471f69a3ac1834748b6b9a1c24c3e98cbb321dddcd61ccfc6dfe093aacf7",
+      "petz_renderer/rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "petz_renderer/rendering/raster.py": "03d3b5b3b3a68f7e6c700a87e8440973b5a9df704c8eb33984a0922f9d0a4380",
+      "petz_renderer/rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "petz_renderer/rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "petz_renderer/rendering/preparation.py": "78060c23a631ebbbd0869010fa32145ce9b42356b3bf747a8a40df04b0a9df77",
+      "petz_renderer/rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "petz_renderer/rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "petz_renderer/service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "petz_renderer/service/tool_inputs.py": "05f2fb1440957605e8848d355a08031b0f11e03f72a37f1166a5648ad207bcd0",
+      "petz_renderer/service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "petz_renderer/service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "petz_renderer/service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "petz_renderer/service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "petz_renderer/service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "petz_renderer/service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "petz_renderer/service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "petz_renderer/service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "petz_renderer/service/application.py": "b637d47d719545f1bf873ab4c721f05b7083086ffb421da3d37886863c2c785c",
+      "petz_renderer/service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "petz_renderer/service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    },
+    "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+    "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+    "dependencies": {
+      "uvicorn": "0.54.0",
+      "watchfiles": "1.3.0",
+      "platformdirs": "4.14.5",
+      "exceptiongroup": "1.3.1",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "websockets": "17.4",
+      "Pygments": "2.21.0",
+      "petz-renderer-mcp": "0.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "joserfc": "1.8.0",
+      "rich": "15.0.0",
+      "rich-rst": "2.2.0",
+      "certifi": "2026.10.23",
+      "jsonschema": "4.26.0",
+      "PyJWT": "2.15.1",
+      "pydantic": "2.14.3",
+      "dnspython": "2.9.2",
+      "fastmcp-slim": "4.1.6",
+      "click": "8.5.1",
+      "docstring_parser": "0.18.0",
+      "aiofile": "3.12.3",
+      "email-validator": "2.3.0",
+      "numpy": "2.5.4",
+      "cryptography": "50.0.2",
+      "py-key-value-aio": "0.4.6",
+      "pycparser": "3.12",
+      "pydantic_core": "2.50.4",
+      "pillow": "13.0.0",
+      "mcp-types": "2.3.0",
+      "pydantic-settings": "2.16.2",
+      "opentelemetry-api": "1.45.2",
+      "typing-inspection": "0.4.5",
+      "h11": "0.16.0",
+      "pefile": "2024.8.26",
+      "mdurl": "0.1.2",
+      "uncalled-for": "0.6.0",
+      "fastmcp": "4.1.6",
+      "PyYAML": "6.0.3",
+      "griffelib": "2.4.1",
+      "httpcore2": "2.16.0",
+      "jsonref": "1.1.0",
+      "jsonschema-path": "0.5.0",
+      "truststore": "0.10.5",
+      "python-dotenv": "1.2.4",
+      "sse-starlette": "3.6.0",
+      "cffi": "2.1.1",
+      "httpx2": "2.16.0",
+      "cyclopts": "5.3.3",
+      "annotated-types": "0.8.0",
+      "referencing": "0.37.0",
+      "markdown-it-py": "4.2.0",
+      "pyperclip": "1.11.0",
+      "rpds-py": "2026.9.1",
+      "openapi-pydantic": "0.6.0",
+      "anyio": "4.16.0",
+      "attrs": "26.1.0",
+      "python-multipart": "0.0.33",
+      "typing_extensions": "4.16.0",
+      "Authlib": "1.9.5",
+      "mcp": "2.3.0",
+      "caio": "0.12.10",
+      "pathable": "0.6.0",
+      "cachetools": "7.3.0",
+      "beartype": "0.23.1",
+      "idna": "3.20"
+    }
+  },
+  "backend": "installed direct renderer and local stdio MCP",
+  "copies": [
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "path": "Dogz-control.dog",
+      "sha256": "20b9b082e74bd316ad24817f445717797b3c6b621a48e4a2c08269274fc898a5",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "path": "Dogz-path.dog",
+      "sha256": "99bccbb948d30b66e3a81c12bdc3c482ed67b45e63f80bbe158e8f2ef10b1964",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "path": "Dogz-sentinel.dog",
+      "sha256": "47e6ebfc4db8b0ca6bacbca05e11415b968b50db66e71798dde2632d8abf4695",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "path": "Dogz-lower-x.dog",
+      "sha256": "98aba1dbfcc0b93c09ecb5175325050f80d58fa41cef84c68a87b7099dd52817",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "path": "Dogz-missing.dog",
+      "sha256": "2fd65a446c95e6439c1d4bd467476abe1d51673f0f4a7d146f117da6cb0082ad",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "path": "Dogz-first-row.dog",
+      "sha256": "42d348d0adeb6b920b330a19d6caeda76d567a493868aad8b43ee15a53d5ac7a",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "path": "Dogz-branch.dog",
+      "sha256": "51d09dfd22f6404a5dfcc52f9d5f72e3ea11394e5d1d386be26562dc601983e7",
+      "source": "games/petz4/Resource/Dogz/Scottie.dog",
+      "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+      "offset": 44208,
+      "length": 15094
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "path": "Catz-control.cat",
+      "sha256": "7aae390a8cae41f1a59f28f6a25b4821bc5b779e84e637263631510989a5ab42",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "path": "Catz-path.cat",
+      "sha256": "151053a531df7baec78893ea8b53653636a7793a3fff9b9aad56b0de61b9c10a",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "path": "Catz-sentinel.cat",
+      "sha256": "9d54f3b59f18889cdfed7a6a9eb96c2cf712a16670c53e1a180a770950f9f629",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "path": "Catz-lower-x.cat",
+      "sha256": "578d5c98e9524df01b27508d27f16b52c4e570f1cb6b391f51b11509c808c859",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "path": "Catz-missing.cat",
+      "sha256": "685bd12b5f4b13e27b6c8e95c737517e03f5b54e26c89dd6a6cdb93f462e6488",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "path": "Catz-first-row.cat",
+      "sha256": "198496b529618b06cf9e8af00d97c3d4449658c3f9b7d664b14a1659dcdc1cee",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "path": "Catz-branch.cat",
+      "sha256": "5374bc314f6591034b3f5a13d10099958d6a2b008d6fffdeaeccc80b5a8ee432",
+      "source": "games/petz4/Resource/Catz/Siamese.cat",
+      "source_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+      "offset": 43792,
+      "length": 15224
+    }
+  ],
+  "cases": [
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "breed names no kitten linez ([Little one]); supply young_name"
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "breed names no kitten linez ([Little one]); supply young_name"
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'X' (young:breed:LNZ/X)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'X' (young:breed:LNZ/X)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "age100",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "young",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "override",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "bad-override",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'scpup' (young:breed:LNZ/scpup)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee",
+          "size": [
+            95,
+            130
+          ],
+          "offset": [
+            47,
+            110
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "384d81a40b5b75113a4da3ccc0660478fdf09d484603764533c7bafc0caca7c5",
+          "size": [
+            170,
+            122
+          ],
+          "offset": [
+            106,
+            110
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-valid",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_selections": {
+          "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6": 1
+        }
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-missing",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_selections": {
+          "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6": 2
+        }
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-rescued",
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP",
+        "branch_selections": {
+          "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6": 2
+        }
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d",
+          "size": [
+            75,
+            99
+          ],
+          "offset": [
+            37,
+            81
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "eaba693156b356696b2702ef66675e910da9fe64968187e4db8105b3964d661f",
+          "size": [
+            130,
+            97
+          ],
+          "offset": [
+            84,
+            85
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SC",
+        "adult:master:LNZ/DOGMASTER",
+        "young:breed:LNZ/SCPUP",
+        "young:breed:LNZ/SC",
+        "young:master:LNZ/DOGMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "young",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "override",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "young",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "override",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "breed names no kitten linez ([Little one]); supply young_name"
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "young",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "breed names no kitten linez ([Little one]); supply young_name"
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "override",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'X' (young:breed:LNZ/X)"
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "young",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'X' (young:breed:LNZ/X)"
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "override",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "young",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "override",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "young",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "override",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "age100",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "young",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "override",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "bad-override",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'sikit' (young:breed:LNZ/sikit)"
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2",
+          "size": [
+            71,
+            149
+          ],
+          "offset": [
+            36,
+            131
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "f6c01a6d6cf01092154c93178287b2c901d0b989094e375d5463ece1d4a5f8a8",
+          "size": [
+            163,
+            135
+          ],
+          "offset": [
+            95,
+            125
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-valid",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_selections": {
+          "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4": 1
+        }
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-missing",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_selections": {
+          "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4": 2
+        }
+      },
+      "success": false,
+      "error_type": "MissingAssetError",
+      "error": "missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)"
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-rescued",
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT",
+        "branch_selections": {
+          "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4": 2
+        }
+      },
+      "success": true,
+      "renders": [
+        {
+          "yaw": 0,
+          "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80",
+          "size": [
+            67,
+            109
+          ],
+          "offset": [
+            34,
+            91
+          ]
+        },
+        {
+          "yaw": 90,
+          "png_sha256": "485e5a884ad99b23dbf4131f4fe60a45159866f5fdb3caeaea9b0e2d9e8c6bbd",
+          "size": [
+            122,
+            104
+          ],
+          "offset": [
+            78,
+            93
+          ]
+        }
+      ],
+      "layers": [
+        "adult:breed:LNZ/SI",
+        "adult:master:LNZ/CATMASTER",
+        "young:breed:LNZ/SIKIT",
+        "young:breed:LNZ/SI",
+        "young:master:LNZ/CATMASTER"
+      ]
+    }
+  ],
+  "mcp": [
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "age100",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "young",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-control.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "age100",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "young",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-path.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"breed names no kitten linez ([Little one]); supply young_name\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"breed names no kitten linez ([Little one]); supply young_name\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-sentinel.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'X\\' (young:breed:LNZ/X)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'X\\' (young:breed:LNZ/X)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-lower-x.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-missing.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-first-row.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP"
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "override",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "scpup"
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'scpup\\' (young:breed:LNZ/scpup)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "ae3662ba9e7a003894e49c068998db4d9ed9deaa2ba73b8f8e8336fd5cac4aee"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 1
+          }
+        ]
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-valid",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 2
+          }
+        ]
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-missing",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SCPUP",
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 2
+          }
+        ]
+      },
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "branch-rescued",
+      "success": true,
+      "png_sha256": "c0cc1ce1035f768436ec85cc8c513278833e6b07cec3f1c58fcf1ca3e0084f1d"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "age100",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "young",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-control.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "age100",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "young",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-path.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"breed names no kitten linez ([Little one]); supply young_name\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"breed names no kitten linez ([Little one]); supply young_name\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-sentinel.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'X\\' (young:breed:LNZ/X)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'X\\' (young:breed:LNZ/X)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-lower-x.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-missing.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-first-row.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "age",
+        "age": 100
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "age100",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "young",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT"
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "override",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "sikit"
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "bad-override",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'sikit\\' (young:breed:LNZ/sikit)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "adult",
+        "age": 100,
+        "young_name": "ZZMISSING"
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "success": true,
+      "png_sha256": "b602a1fb0027351a0629ccbb7f64397341771d4333100520a7e555f0030555f2"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4",
+            "branch": 1
+          }
+        ]
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-valid",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4",
+            "branch": 2
+          }
+        ]
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-missing",
+      "success": false,
+      "error": "[TextContent(type='text', text='{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource \\'ZZMISSING\\' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}', annotations=None, meta=None)]"
+    },
+    {
+      "controls": {
+        "path": "Catz-branch.cat",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "young_name": "SIKIT",
+        "branch_choices": [
+          {
+            "block_id": "565ba376a5529b425f627a240558f17b0ab1d395f177eac40b2df2c98da27e9d:4",
+            "branch": 2
+          }
+        ]
+      },
+      "species": "Catz",
+      "mode": "branch",
+      "label": "branch-rescued",
+      "success": true,
+      "png_sha256": "addf67f926e46c0ceb66dbee346e4f68bbe95c585891dca8ec42a268274b0f80"
+    }
+  ],
+  "relationships": [
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "control",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "path",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "sentinel",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "lower-x",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "missing",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "first-row",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Dogz",
+      "mode": "branch",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "control",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "path",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "sentinel",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "lower-x",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "missing",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "first-row",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 0,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "adult-bad-override",
+      "baseline": "adult",
+      "yaw": 90,
+      "equal": true
+    },
+    {
+      "species": "Catz",
+      "mode": "branch",
+      "label": "override",
+      "baseline": "young",
+      "yaw": 90,
+      "equal": true
+    }
+  ]
+}

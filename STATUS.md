@@ -1,5 +1,7 @@
 # Status
 
+- Latest: [YOUNG-004](experiments/young-004.md),14 private Petz4 copies,90 loader/MCP cases,108 direct PNGs. Explicit selectors,branch routing and36 expected missing-resource failures agree;full replay underway. Fifteen-minute continuation active.
+
 - Latest completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. Fifteen-minute continuation complete;next work needs a new requested duration.
 
 - Latest MCP upgrade: [UPDATE-008](experiments/update-008.md), renderer `4c4d3df`; reinstalled in scratch/petz-local-x86-venv and local HTTP restarted (session58703, port8765). Fresh discovery/look schema and six Petz4 adult/young/age renders pass;21 original hashes unchanged. This supersedes older current-build/server statements below. Hosted chat endpoint remains separate.

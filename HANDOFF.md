@@ -420,3 +420,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## Young-resource edits and integer ages
 
 [YOUNG-003](experiments/young-003.md):606 full-loader age records pass against independent scale/shape/ball arithmetic across Petz3/4/5. Six private Petz4 young-resource copies,84 direct outputs,28 original controls and24 exact MCP matches isolate young size/color edits;two edit sheets reviewed. Focused [reference](format-reference/young-appearance.md) and Little one coverage updated. Full replay underway;fifteen-minute continuation entering final audit.
+
+## Young resource routing continuation
+
+[YOUNG-004](experiments/young-004.md) tests14 Petz4 Scottie/Siamese copies:90 direct/MCP cases,54 successful MCP PNG matches,36 expected failures and108 direct front/side PNGs. Explicit young_name is case-sensitive;Little one normalizes stems,uses first row and distinguishes exact X from lowercase x. Forced adult skips young dependencies;branch overrides change effective routing and explicit young_name rescues broken branches. Full replay underway. First harness MCP-field mismatch archived privately;renderer/originals unchanged. Fifteen-minute authorization remains active.

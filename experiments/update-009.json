@@ -1,0 +1,575 @@
+{
+  "provenance": {
+    "revision": "49c7f62eab51b61b9f68801ba7571178670c433e",
+    "sources": {
+      "petz_renderer/local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "petz_renderer/__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "petz_renderer/cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "petz_renderer/versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "petz_renderer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "petz_renderer/inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "petz_renderer/formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "petz_renderer/formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "petz_renderer/formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "petz_renderer/formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "petz_renderer/formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "petz_renderer/formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "petz_renderer/appearance/preview.py": "7657b44213bb88ed6cdc6cf8da65c556acf7be7a23521b5fac8819cd0c508c95",
+      "petz_renderer/appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "petz_renderer/appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "petz_renderer/appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "petz_renderer/appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "petz_renderer/appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "petz_renderer/appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "petz_renderer/appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "petz_renderer/appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "petz_renderer/appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "petz_renderer/appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "petz_renderer/deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "petz_renderer/rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "petz_renderer/rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "petz_renderer/rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "petz_renderer/rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "petz_renderer/rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "petz_renderer/rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "petz_renderer/rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "petz_renderer/rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "petz_renderer/rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "petz_renderer/rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "petz_renderer/rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "petz_renderer/rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "petz_renderer/rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "petz_renderer/rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "petz_renderer/rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "petz_renderer/rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "petz_renderer/rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "petz_renderer/rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "petz_renderer/rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "petz_renderer/rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "petz_renderer/rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "petz_renderer/rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "petz_renderer/rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "petz_renderer/rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "petz_renderer/service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "petz_renderer/service/tool_inputs.py": "96e6619279b3e589413842e9b4364b0843936589e154e7603b168b56ae2c3167",
+      "petz_renderer/service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "petz_renderer/service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "petz_renderer/service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "petz_renderer/service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "petz_renderer/service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "petz_renderer/service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "petz_renderer/service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "petz_renderer/service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "petz_renderer/service/application.py": "15f20de567549365cf937142aee2a5bb309bb8d29c991da232a64a126b5ab8a3",
+      "petz_renderer/service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "petz_renderer/service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    },
+    "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+    "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+    "dependencies": {
+      "uvicorn": "0.54.0",
+      "watchfiles": "1.3.0",
+      "platformdirs": "4.14.5",
+      "exceptiongroup": "1.3.1",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "websockets": "17.4",
+      "Pygments": "2.21.0",
+      "petz-renderer-mcp": "0.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "joserfc": "1.8.0",
+      "rich": "15.0.0",
+      "rich-rst": "2.2.0",
+      "certifi": "2026.10.23",
+      "jsonschema": "4.26.0",
+      "PyJWT": "2.15.1",
+      "pydantic": "2.14.3",
+      "dnspython": "2.9.2",
+      "fastmcp-slim": "4.1.6",
+      "click": "8.5.1",
+      "docstring_parser": "0.18.0",
+      "aiofile": "3.12.3",
+      "email-validator": "2.3.0",
+      "numpy": "2.5.4",
+      "cryptography": "50.0.2",
+      "py-key-value-aio": "0.4.6",
+      "pycparser": "3.12",
+      "pydantic_core": "2.50.4",
+      "pillow": "13.0.0",
+      "mcp-types": "2.3.0",
+      "pydantic-settings": "2.16.2",
+      "opentelemetry-api": "1.45.2",
+      "typing-inspection": "0.4.5",
+      "h11": "0.16.0",
+      "pefile": "2024.8.26",
+      "mdurl": "0.1.2",
+      "uncalled-for": "0.6.0",
+      "fastmcp": "4.1.6",
+      "PyYAML": "6.0.3",
+      "griffelib": "2.4.1",
+      "httpcore2": "2.16.0",
+      "jsonref": "1.1.0",
+      "jsonschema-path": "0.5.0",
+      "truststore": "0.10.5",
+      "python-dotenv": "1.2.4",
+      "sse-starlette": "3.6.0",
+      "cffi": "2.1.1",
+      "httpx2": "2.16.0",
+      "cyclopts": "5.3.3",
+      "annotated-types": "0.8.0",
+      "referencing": "0.37.0",
+      "markdown-it-py": "4.2.0",
+      "pyperclip": "1.11.0",
+      "rpds-py": "2026.9.1",
+      "openapi-pydantic": "0.6.0",
+      "anyio": "4.16.0",
+      "attrs": "26.1.0",
+      "python-multipart": "0.0.33",
+      "typing_extensions": "4.16.0",
+      "Authlib": "1.9.5",
+      "mcp": "2.3.0",
+      "caio": "0.12.10",
+      "pathable": "0.6.0",
+      "cachetools": "7.3.0",
+      "beartype": "0.23.1",
+      "idna": "3.20"
+    }
+  },
+  "backend": "restarted local HTTP and fresh local stdio MCP",
+  "schemas": {
+    "inspect_input": {
+      "branch_choices": {
+        "description": "One-based authored branch number from inspection (1 selects the first branch).",
+        "minimum": 1,
+        "type": "integer"
+      }
+    },
+    "render_pet": {
+      "branch_choices": {
+        "description": "One-based authored branch number from inspection (1 selects the first branch).",
+        "minimum": 1,
+        "type": "integer"
+      }
+    },
+    "render_contact_sheet": {
+      "branch_choices": {
+        "description": "One-based authored branch number from inspection (1 selects the first branch).",
+        "minimum": 1,
+        "type": "integer"
+      }
+    },
+    "compare_appearance": {
+      "before_branch_choices": {
+        "description": "One-based authored branch number from inspection (1 selects the first branch).",
+        "minimum": 1,
+        "type": "integer"
+      },
+      "after_branch_choices": {
+        "description": "One-based authored branch number from inspection (1 selects the first branch).",
+        "minimum": 1,
+        "type": "integer"
+      }
+    }
+  },
+  "http_renders": [
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "standing",
+        "seed": 41,
+        "age": 12,
+        "fatness": 50,
+        "look": "adult",
+        "yaw_degrees": 0
+      },
+      "png_sha256": "3e9ee7e2bb7f2bb374315ac673bf25a8aab63628f4e616520ef5a47d77f69e60",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "age": 12,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "adult",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "standing",
+        "seed": 41,
+        "age": 12,
+        "fatness": 50,
+        "look": "puppy",
+        "yaw_degrees": 0
+      },
+      "png_sha256": "736b9983d4c62d988f7fd08ad28c820234c89831fd1252758c3d6b389c3c41f4",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "age": 12,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "adult:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          },
+          {
+            "label": "young:breed:LNZ/SCPUP",
+            "sha256": "2bf99201b55cfc6834015254432bfe26a968035e219649542ee9b66cfda48d26"
+          },
+          {
+            "label": "young:breed:LNZ/SC",
+            "sha256": "285e2301d2948a4cd53352733370c934e44423116d3911877e0860ecb0ca8f93"
+          },
+          {
+            "label": "young:master:LNZ/DOGMASTER",
+            "sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "standing",
+        "seed": 41,
+        "age": 12,
+        "fatness": 50,
+        "look": "adult",
+        "yaw_degrees": 0
+      },
+      "png_sha256": "6bff16d38a9f8f3e1933bd84e574c29e7aa8eca90142a0616d644934fd6745f0",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "age": 12,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "adult",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "standing",
+        "seed": 41,
+        "age": 12,
+        "fatness": 50,
+        "look": "puppy",
+        "yaw_degrees": 0
+      },
+      "png_sha256": "8b71611adcc4606db7a3d4dfdaf99e80bf84541d9a052ca7b86ef131b8117dad",
+      "appearance": {
+        "input_kind": "breed",
+        "input_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "age": 12,
+        "age_source": "override",
+        "fatness": 50,
+        "fatness_source": "override",
+        "seed": 41,
+        "seed_source": "override",
+        "layers": [
+          {
+            "label": "adult:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "adult:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          },
+          {
+            "label": "young:breed:LNZ/SIKIT",
+            "sha256": "394dbaae11f3dfb74c767de5091435469385387554d5bd94f78f2acd4d18a691"
+          },
+          {
+            "label": "young:breed:LNZ/SI",
+            "sha256": "2205db70b49c4a645bbbbec59d043a123efe1355e33c804b40ba04cda722c6be"
+          },
+          {
+            "label": "young:master:LNZ/CATMASTER",
+            "sha256": "374ef03789d5dd6a1e5e7bba4a2be904c31f809fe3c48cb1ed724c454444bd7c"
+          }
+        ],
+        "look": "kitten",
+        "mode": "seeded",
+        "branch_selections": []
+      }
+    }
+  ],
+  "branches": [
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 0
+          }
+        ]
+      },
+      "success": false,
+      "error_text": [
+        "1 validation error for call[render]\nbranch_choices.0.branch\n  Input should be greater than or equal to 1 [type=greater_than_equal, input_value=0, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v/greater_than_equal"
+      ]
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 1
+          }
+        ]
+      },
+      "success": true,
+      "png_sha256": "736b9983d4c62d988f7fd08ad28c820234c89831fd1252758c3d6b389c3c41f4",
+      "matches_prior_branch1": false,
+      "matches_fresh_direct": true
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 2
+          }
+        ]
+      },
+      "success": false,
+      "error_text": [
+        "{\"error\":{\"code\":\"missing_asset\",\"message\":\"missing effective LNZ resource 'ZZMISSING' (young:breed:LNZ/ZZMISSING)\",\"name\":null}}"
+      ]
+    },
+    {
+      "controls": {
+        "path": "Dogz-branch.dog",
+        "pose": "standing",
+        "seed": 41,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "look": "puppy",
+        "age": 12,
+        "branch_choices": [
+          {
+            "block_id": "fff99825f782b162f8b4eb4935bb368841228f59f2a399bdc7cc8108fdc96ab7:6",
+            "branch": 3
+          }
+        ]
+      },
+      "success": false,
+      "error_text": [
+        "{\"error\":{\"code\":\"render_rejected\",\"message\":\"branch must select a positive-count block within its declared range\",\"name\":null}}"
+      ]
+    }
+  ],
+  "fixture": {
+    "species": "Dogz",
+    "mode": "branch",
+    "path": "Dogz-branch.dog",
+    "sha256": "51d09dfd22f6404a5dfcc52f9d5f72e3ea11394e5d1d386be26562dc601983e7",
+    "source": "games/petz4/Resource/Dogz/Scottie.dog",
+    "source_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+    "offset": 44208,
+    "length": 15094
+  },
+  "originals": {
+    "scope": "Recorded engines, six stock breeds and three Petz4 saves; not a complete installation manifest or game validation",
+    "files_per_version": {
+      "petz3": 818,
+      "petz4": 1573,
+      "petz5": 1734
+    },
+    "checks": [
+      {
+        "path": "petz3/petz 3.exe",
+        "expected_sha256": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+        "actual_sha256": "6ed4edf4ffca2c73a7969a20268ca790afe2094e94429cf612b22f17d4291c0f",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/catz 3 rez.dll",
+        "expected_sha256": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+        "actual_sha256": "96af226e5cddda25b8c7201e235ceaf75945ca8676457b1ad513c9f0033224a9",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/catz/siamese.cat",
+        "expected_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+        "actual_sha256": "5f431adbea58571349c2ba377691ce7c4dac8ac16348425b0ff51590ddf5f00d",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/dogz 3 rez.dll",
+        "expected_sha256": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+        "actual_sha256": "84e1a7e3310ea581e70f5c2ee251ae4e564f22e43414870107ed4f5c5efc438a",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/dogz/scottie.dog",
+        "expected_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+        "actual_sha256": "68c28fa024a5240dcb9e9841067e9de91ddbf9843f08b82944ef95faf9b49553",
+        "ok": true
+      },
+      {
+        "path": "petz3/resource/petz 3 rez.dll",
+        "expected_sha256": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb",
+        "actual_sha256": "76f84e57c4fa9aef8f38ce27649476de113e3fe97d9e1dbfaa35613a34d7acbb",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/fuzzkin.pet",
+        "expected_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "actual_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/goobe.pet",
+        "expected_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+        "actual_sha256": "b44e1244432846629ce41f4bd6cb361b7b6d3591a694ada2bc57032192659c49",
+        "ok": true
+      },
+      {
+        "path": "petz4/adopted petz/homebody.pet",
+        "expected_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+        "actual_sha256": "d71566e0f495cfd566b775f39f86952770175da927c90bb62f08ba74f6111209",
+        "ok": true
+      },
+      {
+        "path": "petz4/petz 4.exe",
+        "expected_sha256": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+        "actual_sha256": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/catz 4 rez.dll",
+        "expected_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+        "actual_sha256": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/catz/siamese.cat",
+        "expected_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "actual_sha256": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/dogz 4 rez.dll",
+        "expected_sha256": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+        "actual_sha256": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/dogz/scottie.dog",
+        "expected_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "actual_sha256": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+        "ok": true
+      },
+      {
+        "path": "petz4/resource/petz 4 rez.dll",
+        "expected_sha256": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277",
+        "actual_sha256": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277",
+        "ok": true
+      },
+      {
+        "path": "petz5/petz 5.exe",
+        "expected_sha256": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+        "actual_sha256": "908052f1321f70533e1369c748c92462da24089af6b1fd97939a2b2caa6872ab",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/catz 5 rez.dll",
+        "expected_sha256": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+        "actual_sha256": "8a130c7d8ee5c0ec530d7a27d89312dbec31adbc1803f39a4d9f846648871869",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/catz/siamese.cat",
+        "expected_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+        "actual_sha256": "6e0a3b250f59450f0e93f41a88de0abde5cc6e8f5085ce21240e25e2a70c5223",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/dogz 5 rez.dll",
+        "expected_sha256": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+        "actual_sha256": "136393beff0c63cd8b30a82fe8708a4823e5a9409b62e6ce264520ff55cd0332",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/dogz/scottie.dog",
+        "expected_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+        "actual_sha256": "40ecba5a03be6592c7f96a7a5a044ce3e8d87efdb69c58f662bd26fecaa8262b",
+        "ok": true
+      },
+      {
+        "path": "petz5/resource/petz 5 rez.dll",
+        "expected_sha256": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff",
+        "actual_sha256": "9c3beb51d1eb8a1212cc06893fbf27e301454fb140109c4da69467acf55b8eff",
+        "ok": true
+      }
+    ]
+  },
+  "script_sha256": "5178965deb4fbbaecc367fa9d878b51900b38617f056899a972f463c8d6bd2e5",
+  "install_log_sha256": "7c2e1bb0ef63c9db1a3b847085f515caed883bf11de4fa901fdd1922fbf34279"
+}

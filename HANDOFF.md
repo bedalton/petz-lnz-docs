@@ -444,3 +444,7 @@ Private `scratch/renderer-source-review.md` lists prioritized discrepancies, con
 ## MCP implementation-agent prompt
 
 Requested scratch document: `scratch/mcp-branch-numbering-handoff.md`. Includes exact source cause, local fixture/controls,0/1/2/3 responses, proposed one-based schema correction with compatibility review, and focused service regressions. Links existing public evidence instead of duplicating manifests. No renderer/source changes; historical audits intentionally record pre-fix behavior.
+
+## MCP branch fix reinstalled and restarted
+
+[UPDATE-009](experiments/update-009.md):checkout already at49c7f62,reinstalled without dependency changes. Old PID28026 stopped;new HTTP PID28631/session86021 serves127.0.0.1:8765/mcp. Fresh discovery validates allfive one-based branch schema fields;four HTTP stock renders andfour stdio fixture probes pass. Branch0 now fails form validation,branch1 matches fresh direct rendering (historical PNG differs;not attributed by this smoke test),branch2 reaches intended missing dependency,branch3 fails range. All62 installed sources match checkout;all21 tracked originals match. Scratch handoff marked fixed/superseded;historical audit unchanged. No hosted reload claimed or renderer/original edits;pre-existing .gitignore/istall-node untouched. tools/check_mcp_branch_reload.py reproduces.

@@ -1,5 +1,7 @@
 # Status
 
+- Count controls: [YOUNG-009](experiments/young-009.md),240 direct outputs and12 prior endpoint links;full replay passes. Indexed omission and zero-size masks agree;all-disabled matches the shorter list in12/12 sampled views,shared geometry/fills/commands preserved. Independent720-RGBA audit andsix-row sheet review pass;continuation active.
+
 - Latest tail attribution: [YOUNG-008](experiments/young-008.md),1,536 exhaustive Petz4 Fuzzkin age12 subset renders,12 MCP endpoint matches and12 current prior links. Full replay and independent RGBA/minimal-set audit pass;entry26 inert across768 paired backgrounds. Count controls and broader yaw tests follow;fifteen-minute continuation active.
 
 - Latest completed continuation: [young upgrade review](docs/session-2026-11-12-young-upgrade.md),49c7f62. UPDATE-010/011/012 full replays and independent audit pass;1,518 PNGs,606 age records,21 unchanged originals. Fuzzkin missing-young lying/front no longer needs line substitution. All work committed;HTTP session35819 healthy.

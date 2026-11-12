@@ -474,3 +474,7 @@ All three exact current-build replays and the independent [session audit](docs/s
 ## Exhaustive added-tail interactions
 
 [YOUNG-008](experiments/young-008.md):1,536 direct renders,12 exact local MCP endpoint matches,12 UPDATE-011 links. Each of12 fixtures has one minimal subset;no monotonicity violations on the fixed sufficient outline/line background. Entry26 inert across768 matched pairs;count group required front only. Full replay and tools/check_young_tail.py pass,including1,536 independent RGBA checks and5,376 factor pairs. Native-scale12-row sheet reviewed. Private evidence scratch/research/young-008;all21 original hashes unchanged. No renderer/original/copy edits. Count controls and wider yaws follow during the active fifteen-minute continuation.
+
+## Added count visibility controls
+
+[YOUNG-009](experiments/young-009.md):240 direct outputs,two cache modes/three poses/front-side,four list prefixes andeight masks each for omission/zero-size. Full replay passes;all-disabled indexed controls equal the short list in12/12. Shared96 geometry/fills/commands equal short inall240,while topology differs. Independent720-RGBA audit andsix-row sheet review pass;private evidence scratch/research/young-009. No renderer/original/copy writes;continuation active.

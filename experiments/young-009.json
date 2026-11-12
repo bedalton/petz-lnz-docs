@@ -1,0 +1,6374 @@
+{
+  "provenance": {
+    "revision": "49c7f62eab51b61b9f68801ba7571178670c433e",
+    "sources": {
+      "petz_renderer/local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "petz_renderer/__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "petz_renderer/cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "petz_renderer/versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "petz_renderer/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "petz_renderer/inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "petz_renderer/formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "petz_renderer/formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "petz_renderer/formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "petz_renderer/formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "petz_renderer/formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "petz_renderer/formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "petz_renderer/appearance/preview.py": "7657b44213bb88ed6cdc6cf8da65c556acf7be7a23521b5fac8819cd0c508c95",
+      "petz_renderer/appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "petz_renderer/appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "petz_renderer/appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "petz_renderer/appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "petz_renderer/appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "petz_renderer/appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "petz_renderer/appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "petz_renderer/appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "petz_renderer/appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "petz_renderer/appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "petz_renderer/deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "petz_renderer/rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "petz_renderer/rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "petz_renderer/rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "petz_renderer/rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "petz_renderer/rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "petz_renderer/rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "petz_renderer/rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "petz_renderer/rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "petz_renderer/rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "petz_renderer/rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "petz_renderer/rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "petz_renderer/rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "petz_renderer/rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "petz_renderer/rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "petz_renderer/rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "petz_renderer/rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "petz_renderer/rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "petz_renderer/rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "petz_renderer/rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "petz_renderer/rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "petz_renderer/rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "petz_renderer/rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "petz_renderer/rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "petz_renderer/rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "petz_renderer/rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "petz_renderer/service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "petz_renderer/service/tool_inputs.py": "96e6619279b3e589413842e9b4364b0843936589e154e7603b168b56ae2c3167",
+      "petz_renderer/service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "petz_renderer/service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "petz_renderer/service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "petz_renderer/service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "petz_renderer/service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "petz_renderer/service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "petz_renderer/service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "petz_renderer/service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "petz_renderer/service/application.py": "15f20de567549365cf937142aee2a5bb309bb8d29c991da232a64a126b5ab8a3",
+      "petz_renderer/service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "petz_renderer/service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    },
+    "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+    "platform": "Linux-6.8.0-64-generic-x86_64-with-glibc2.36",
+    "dependencies": {
+      "uvicorn": "0.54.0",
+      "watchfiles": "1.3.0",
+      "platformdirs": "4.14.5",
+      "exceptiongroup": "1.3.1",
+      "starlette": "1.10.0",
+      "packaging": "26.3",
+      "websockets": "17.4",
+      "Pygments": "2.21.0",
+      "petz-renderer-mcp": "0.1.0",
+      "jsonschema-specifications": "2025.9.1",
+      "joserfc": "1.8.0",
+      "rich": "15.0.0",
+      "rich-rst": "2.2.0",
+      "certifi": "2026.10.23",
+      "jsonschema": "4.26.0",
+      "PyJWT": "2.15.1",
+      "pydantic": "2.14.3",
+      "dnspython": "2.9.2",
+      "fastmcp-slim": "4.1.6",
+      "click": "8.5.1",
+      "docstring_parser": "0.18.0",
+      "aiofile": "3.12.3",
+      "email-validator": "2.3.0",
+      "numpy": "2.5.4",
+      "cryptography": "50.0.2",
+      "py-key-value-aio": "0.4.6",
+      "pycparser": "3.12",
+      "pydantic_core": "2.50.4",
+      "pillow": "13.0.0",
+      "mcp-types": "2.3.0",
+      "pydantic-settings": "2.16.2",
+      "opentelemetry-api": "1.45.2",
+      "typing-inspection": "0.4.5",
+      "h11": "0.16.0",
+      "pefile": "2024.8.26",
+      "mdurl": "0.1.2",
+      "uncalled-for": "0.6.0",
+      "fastmcp": "4.1.6",
+      "PyYAML": "6.0.3",
+      "griffelib": "2.4.1",
+      "httpcore2": "2.16.0",
+      "jsonref": "1.1.0",
+      "jsonschema-path": "0.5.0",
+      "truststore": "0.10.5",
+      "python-dotenv": "1.2.4",
+      "sse-starlette": "3.6.0",
+      "cffi": "2.1.1",
+      "httpx2": "2.16.0",
+      "cyclopts": "5.3.3",
+      "annotated-types": "0.8.0",
+      "referencing": "0.37.0",
+      "markdown-it-py": "4.2.0",
+      "pyperclip": "1.11.0",
+      "rpds-py": "2026.9.1",
+      "openapi-pydantic": "0.6.0",
+      "anyio": "4.16.0",
+      "attrs": "26.1.0",
+      "python-multipart": "0.0.33",
+      "typing_extensions": "4.16.0",
+      "Authlib": "1.9.5",
+      "mcp": "2.3.0",
+      "caio": "0.12.10",
+      "pathable": "0.6.0",
+      "cachetools": "7.3.0",
+      "beartype": "0.23.1",
+      "idna": "3.20"
+    }
+  },
+  "backend": "direct installed renderer; immutable appearance controls; existing MCP-linked endpoints",
+  "script_sha256": "a0fd304bb6f028bfe6acb4d0f0e949ba3600cc3557781d413ddf570157115f47",
+  "prior_manifest_sha256": "4b50deee67053155ec69ada5817d7320148d535771a68e8922e4f43e64f5c1e4",
+  "inputs": {
+    "name": "Fuzzkin",
+    "source": "Adopted Petz/Fuzzkin.pet",
+    "source_sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+    "breed": "\\Resource\\Dogz\\Pomeranian.dog",
+    "breed_sha256": "2d27d9e08220d0e93b6102979231b963c67147ba7a9398ad93c61a7f73be34c9",
+    "saved_age": 33,
+    "saved_seed": 7952,
+    "variants": {
+      "baseline": {
+        "path": "Fuzzkin-baseline.pet",
+        "sha256": "9fc3755aa4d2f75fe710451be45ac46555c63daf67de12a0119c52a4c6d78605",
+        "removed": [],
+        "removed_bytes": 0
+      },
+      "missing-adult": {
+        "path": "Fuzzkin-missing-adult.pet",
+        "sha256": "af8286de292dde1e00cff975f008ac64c4df83566d9c8d1652289f76f99d02c9",
+        "removed": [
+          "adult"
+        ],
+        "removed_bytes": 7581
+      },
+      "missing-young": {
+        "path": "Fuzzkin-missing-young.pet",
+        "sha256": "651b6571a6455851ddab3dc4f5011ab6572cd9b8f6d60817b0ecc146333f32c0",
+        "removed": [
+          "young"
+        ],
+        "removed_bytes": 7577
+      },
+      "missing-both": {
+        "path": "Fuzzkin-missing-both.pet",
+        "sha256": "d8e6b324381d69f93e106431f3c0981e7c73c91327952dffa2ce07f1ddccb159",
+        "removed": [
+          "adult",
+          "young"
+        ],
+        "removed_bytes": 15158
+      }
+    }
+  },
+  "renders": [
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-adult-standing-0-prefix-29.png",
+      "png_sha256": "56f281d7842f6a8f14f2dcdcb454644cacc6e2d35a071bbf95e655b112b4ad10",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 38,
+      "pixels_vs_young": 38,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-adult-standing-0-prefix-30.png",
+      "png_sha256": "88349e77fa47fe59e2b6561159b4659affab6847e5cebfc5eb3caac914aafb3b",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 18,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-adult-standing-0-prefix-31.png",
+      "png_sha256": "e89c24ff323170d95075034c8906e103c4f07796d0afbe430cc8d9d07090ae93",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 31,
+      "pixels_vs_long": 9,
+      "pixels_vs_young": 9,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-adult-standing-0-prefix-32.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 38,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-adult-standing-0-omit-0.png",
+      "png_sha256": "56f281d7842f6a8f14f2dcdcb454644cacc6e2d35a071bbf95e655b112b4ad10",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 38,
+      "pixels_vs_young": 38,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-adult-standing-0-zero-0.png",
+      "png_sha256": "56f281d7842f6a8f14f2dcdcb454644cacc6e2d35a071bbf95e655b112b4ad10",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 38,
+      "pixels_vs_young": 38,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-adult-standing-0-omit-1.png",
+      "png_sha256": "88349e77fa47fe59e2b6561159b4659affab6847e5cebfc5eb3caac914aafb3b",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 18,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-adult-standing-0-zero-1.png",
+      "png_sha256": "88349e77fa47fe59e2b6561159b4659affab6847e5cebfc5eb3caac914aafb3b",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 18,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-adult-standing-0-omit-2.png",
+      "png_sha256": "26f37b7e71139c328c27a4155b48e27897cd5f39747de5996a5b1655a77fb436",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 28,
+      "pixels_vs_long": 10,
+      "pixels_vs_young": 10,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-adult-standing-0-zero-2.png",
+      "png_sha256": "26f37b7e71139c328c27a4155b48e27897cd5f39747de5996a5b1655a77fb436",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 28,
+      "pixels_vs_long": 10,
+      "pixels_vs_young": 10,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-adult-standing-0-omit-3.png",
+      "png_sha256": "e89c24ff323170d95075034c8906e103c4f07796d0afbe430cc8d9d07090ae93",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 31,
+      "pixels_vs_long": 9,
+      "pixels_vs_young": 9,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-adult-standing-0-zero-3.png",
+      "png_sha256": "e89c24ff323170d95075034c8906e103c4f07796d0afbe430cc8d9d07090ae93",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 31,
+      "pixels_vs_long": 9,
+      "pixels_vs_young": 9,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-adult-standing-0-omit-4.png",
+      "png_sha256": "6cdcf4e5d7535e81ef694d9ac05b2d83684abf1334b53b743fed30f0fe0fb277",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 11,
+      "pixels_vs_long": 28,
+      "pixels_vs_young": 28,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-adult-standing-0-zero-4.png",
+      "png_sha256": "6cdcf4e5d7535e81ef694d9ac05b2d83684abf1334b53b743fed30f0fe0fb277",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 11,
+      "pixels_vs_long": 28,
+      "pixels_vs_young": 28,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-adult-standing-0-omit-5.png",
+      "png_sha256": "ceafe46323acd256ff0bc8cdfc9b6554e1f7d8570696002ae794f6061698a5b9",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 26,
+      "pixels_vs_long": 31,
+      "pixels_vs_young": 31,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-adult-standing-0-zero-5.png",
+      "png_sha256": "ceafe46323acd256ff0bc8cdfc9b6554e1f7d8570696002ae794f6061698a5b9",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 26,
+      "pixels_vs_long": 31,
+      "pixels_vs_young": 31,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-adult-standing-0-omit-6.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 38,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-adult-standing-0-zero-6.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 38,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-adult-standing-0-omit-7.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 38,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-adult-standing-0-zero-7.png",
+      "png_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "size": [
+        69,
+        87
+      ],
+      "offset": [
+        35,
+        72
+      ],
+      "pixels_vs_short": 38,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-adult-standing-90-prefix-29.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-adult-standing-90-prefix-30.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-adult-standing-90-prefix-31.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-adult-standing-90-prefix-32.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-adult-standing-90-omit-0.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-adult-standing-90-zero-0.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-adult-standing-90-omit-1.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-adult-standing-90-zero-1.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-adult-standing-90-omit-2.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-adult-standing-90-zero-2.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-adult-standing-90-omit-3.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-adult-standing-90-zero-3.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-adult-standing-90-omit-4.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-adult-standing-90-zero-4.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-adult-standing-90-omit-5.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-adult-standing-90-zero-5.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-adult-standing-90-omit-6.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-adult-standing-90-zero-6.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-adult-standing-90-omit-7.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-adult-standing-90-zero-7.png",
+      "png_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "size": [
+        97,
+        93
+      ],
+      "offset": [
+        60,
+        84
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-adult-sitting-0-prefix-29.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-adult-sitting-0-prefix-30.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-adult-sitting-0-prefix-31.png",
+      "png_sha256": "085b364e09de6a7ab8eaf2ffbbbc31a717ce678e94acce6e4f896d233b323fe1",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 27,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 14,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-adult-sitting-0-prefix-32.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 41,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-adult-sitting-0-omit-0.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-adult-sitting-0-zero-0.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-adult-sitting-0-omit-1.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-adult-sitting-0-zero-1.png",
+      "png_sha256": "fe67b0c84665aa057a5bad8481d8402977b956f424e19611081e3d3019497422",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 41,
+      "pixels_vs_young": 41,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-adult-sitting-0-omit-2.png",
+      "png_sha256": "085b364e09de6a7ab8eaf2ffbbbc31a717ce678e94acce6e4f896d233b323fe1",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 27,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 14,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-adult-sitting-0-zero-2.png",
+      "png_sha256": "085b364e09de6a7ab8eaf2ffbbbc31a717ce678e94acce6e4f896d233b323fe1",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 27,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 14,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-adult-sitting-0-omit-3.png",
+      "png_sha256": "085b364e09de6a7ab8eaf2ffbbbc31a717ce678e94acce6e4f896d233b323fe1",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 27,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 14,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-adult-sitting-0-zero-3.png",
+      "png_sha256": "085b364e09de6a7ab8eaf2ffbbbc31a717ce678e94acce6e4f896d233b323fe1",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 27,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 14,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-adult-sitting-0-omit-4.png",
+      "png_sha256": "387bf75b94476533286df743faa923da4767616ea3e1d423507371b522b499ab",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 14,
+      "pixels_vs_long": 27,
+      "pixels_vs_young": 27,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-adult-sitting-0-zero-4.png",
+      "png_sha256": "387bf75b94476533286df743faa923da4767616ea3e1d423507371b522b499ab",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 14,
+      "pixels_vs_long": 27,
+      "pixels_vs_young": 27,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-adult-sitting-0-omit-5.png",
+      "png_sha256": "387bf75b94476533286df743faa923da4767616ea3e1d423507371b522b499ab",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 14,
+      "pixels_vs_long": 27,
+      "pixels_vs_young": 27,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-adult-sitting-0-zero-5.png",
+      "png_sha256": "387bf75b94476533286df743faa923da4767616ea3e1d423507371b522b499ab",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 14,
+      "pixels_vs_long": 27,
+      "pixels_vs_young": 27,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-adult-sitting-0-omit-6.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 41,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-adult-sitting-0-zero-6.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 41,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-adult-sitting-0-omit-7.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 41,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-adult-sitting-0-zero-7.png",
+      "png_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "size": [
+        69,
+        100
+      ],
+      "offset": [
+        36,
+        91
+      ],
+      "pixels_vs_short": 41,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-adult-sitting-90-prefix-29.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-adult-sitting-90-prefix-30.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-adult-sitting-90-prefix-31.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-adult-sitting-90-prefix-32.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-adult-sitting-90-omit-0.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-adult-sitting-90-zero-0.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-adult-sitting-90-omit-1.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-adult-sitting-90-zero-1.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-adult-sitting-90-omit-2.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-adult-sitting-90-zero-2.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-adult-sitting-90-omit-3.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-adult-sitting-90-zero-3.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-adult-sitting-90-omit-4.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-adult-sitting-90-zero-4.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-adult-sitting-90-omit-5.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-adult-sitting-90-zero-5.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-adult-sitting-90-omit-6.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-adult-sitting-90-zero-6.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-adult-sitting-90-omit-7.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-adult-sitting-90-zero-7.png",
+      "png_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "size": [
+        87,
+        104
+      ],
+      "offset": [
+        26,
+        95
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-adult-lying-0-prefix-29.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-adult-lying-0-prefix-30.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-adult-lying-0-prefix-31.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-adult-lying-0-prefix-32.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-adult-lying-0-omit-0.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-adult-lying-0-zero-0.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-adult-lying-0-omit-1.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-adult-lying-0-zero-1.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-adult-lying-0-omit-2.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-adult-lying-0-zero-2.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-adult-lying-0-omit-3.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-adult-lying-0-zero-3.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-adult-lying-0-omit-4.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-adult-lying-0-zero-4.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-adult-lying-0-omit-5.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-adult-lying-0-zero-5.png",
+      "png_sha256": "508bcf2d75c73d54f861e080b9350cd38e8ba2382010b48423c806fa1f8c28a6",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-adult-lying-0-omit-6.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-adult-lying-0-zero-6.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-adult-lying-0-omit-7.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-adult-lying-0-zero-7.png",
+      "png_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "size": [
+        69,
+        77
+      ],
+      "offset": [
+        32,
+        50
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-adult-lying-90-prefix-29.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-adult-lying-90-prefix-30.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-adult-lying-90-prefix-31.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-adult-lying-90-prefix-32.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-adult-lying-90-omit-0.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-adult-lying-90-zero-0.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-adult-lying-90-omit-1.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-adult-lying-90-zero-1.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-adult-lying-90-omit-2.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-adult-lying-90-zero-2.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-adult-lying-90-omit-3.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-adult-lying-90-zero-3.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-adult-lying-90-omit-4.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-adult-lying-90-zero-4.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-adult-lying-90-omit-5.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-adult-lying-90-zero-5.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-adult-lying-90-omit-6.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-adult-lying-90-zero-6.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-adult-lying-90-omit-7.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-adult-lying-90-zero-7.png",
+      "png_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "size": [
+        108,
+        72
+      ],
+      "offset": [
+        77,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-young-standing-0-prefix-29.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-young-standing-0-prefix-30.png",
+      "png_sha256": "cde7429fc60f77df848dfd837619055ed0a30a61f0f8ed05401a481a82eb93d5",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 1,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 1,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-young-standing-0-prefix-31.png",
+      "png_sha256": "ae583c79697d84eea3c6e77f7a6c4b356f0a7712ddd58cce2881315240586e83",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 12,
+      "pixels_vs_long": 3,
+      "pixels_vs_young": 12,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-young-standing-0-prefix-32.png",
+      "png_sha256": "e8d490ff7a5b8a8a8c31d44cc01827afc0ce37f83d5866787b0c224a0ffd4f3c",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-young-standing-0-omit-0.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-young-standing-0-zero-0.png",
+      "png_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-young-standing-0-omit-1.png",
+      "png_sha256": "cde7429fc60f77df848dfd837619055ed0a30a61f0f8ed05401a481a82eb93d5",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 1,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 1,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-young-standing-0-zero-1.png",
+      "png_sha256": "cde7429fc60f77df848dfd837619055ed0a30a61f0f8ed05401a481a82eb93d5",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 1,
+      "pixels_vs_long": 14,
+      "pixels_vs_young": 1,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-young-standing-0-omit-2.png",
+      "png_sha256": "0a42f4aceb4790dd728923918b19db476addcd39f305b07f54cc78f214ef23a1",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 11,
+      "pixels_vs_long": 4,
+      "pixels_vs_young": 11,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-young-standing-0-zero-2.png",
+      "png_sha256": "0a42f4aceb4790dd728923918b19db476addcd39f305b07f54cc78f214ef23a1",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 11,
+      "pixels_vs_long": 4,
+      "pixels_vs_young": 11,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-young-standing-0-omit-3.png",
+      "png_sha256": "ae583c79697d84eea3c6e77f7a6c4b356f0a7712ddd58cce2881315240586e83",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 12,
+      "pixels_vs_long": 3,
+      "pixels_vs_young": 12,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-young-standing-0-zero-3.png",
+      "png_sha256": "ae583c79697d84eea3c6e77f7a6c4b356f0a7712ddd58cce2881315240586e83",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 12,
+      "pixels_vs_long": 3,
+      "pixels_vs_young": 12,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-young-standing-0-omit-4.png",
+      "png_sha256": "a19173001091092fd40191c105751313523bbbed246fd5ed3b0f32e7d6c16f75",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 4,
+      "pixels_vs_long": 11,
+      "pixels_vs_young": 4,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-young-standing-0-zero-4.png",
+      "png_sha256": "a19173001091092fd40191c105751313523bbbed246fd5ed3b0f32e7d6c16f75",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 4,
+      "pixels_vs_long": 11,
+      "pixels_vs_young": 4,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-young-standing-0-omit-5.png",
+      "png_sha256": "a19173001091092fd40191c105751313523bbbed246fd5ed3b0f32e7d6c16f75",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 4,
+      "pixels_vs_long": 11,
+      "pixels_vs_young": 4,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-young-standing-0-zero-5.png",
+      "png_sha256": "a19173001091092fd40191c105751313523bbbed246fd5ed3b0f32e7d6c16f75",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 4,
+      "pixels_vs_long": 11,
+      "pixels_vs_young": 4,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-young-standing-0-omit-6.png",
+      "png_sha256": "e8d490ff7a5b8a8a8c31d44cc01827afc0ce37f83d5866787b0c224a0ffd4f3c",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-young-standing-0-zero-6.png",
+      "png_sha256": "e8d490ff7a5b8a8a8c31d44cc01827afc0ce37f83d5866787b0c224a0ffd4f3c",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-young-standing-0-omit-7.png",
+      "png_sha256": "e8d490ff7a5b8a8a8c31d44cc01827afc0ce37f83d5866787b0c224a0ffd4f3c",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-young-standing-0-zero-7.png",
+      "png_sha256": "e8d490ff7a5b8a8a8c31d44cc01827afc0ce37f83d5866787b0c224a0ffd4f3c",
+      "size": [
+        69,
+        86
+      ],
+      "offset": [
+        35,
+        71
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-young-standing-90-prefix-29.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-young-standing-90-prefix-30.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-young-standing-90-prefix-31.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-young-standing-90-prefix-32.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-young-standing-90-omit-0.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-young-standing-90-zero-0.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-young-standing-90-omit-1.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-young-standing-90-zero-1.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-young-standing-90-omit-2.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-young-standing-90-zero-2.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-young-standing-90-omit-3.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-young-standing-90-zero-3.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-young-standing-90-omit-4.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-young-standing-90-zero-4.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-young-standing-90-omit-5.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-young-standing-90-zero-5.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-young-standing-90-omit-6.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-young-standing-90-zero-6.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-young-standing-90-omit-7.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-young-standing-90-zero-7.png",
+      "png_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "size": [
+        100,
+        92
+      ],
+      "offset": [
+        62,
+        83
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-young-sitting-0-prefix-29.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-young-sitting-0-prefix-30.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-young-sitting-0-prefix-31.png",
+      "png_sha256": "e5c0174d016005d1c1c9aa716deb8379f1077bbce03f261c4e0f2e2f16721b8c",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 16,
+      "pixels_vs_long": 6,
+      "pixels_vs_young": 16,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-young-sitting-0-prefix-32.png",
+      "png_sha256": "3014b514e6f7b6b98cc590bfbd9051fd040040dca91e94e7f2bf1b9788da4f25",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 22,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 22,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-young-sitting-0-omit-0.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-young-sitting-0-zero-0.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-young-sitting-0-omit-1.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-young-sitting-0-zero-1.png",
+      "png_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 22,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-young-sitting-0-omit-2.png",
+      "png_sha256": "e5c0174d016005d1c1c9aa716deb8379f1077bbce03f261c4e0f2e2f16721b8c",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 16,
+      "pixels_vs_long": 6,
+      "pixels_vs_young": 16,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-young-sitting-0-zero-2.png",
+      "png_sha256": "e5c0174d016005d1c1c9aa716deb8379f1077bbce03f261c4e0f2e2f16721b8c",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 16,
+      "pixels_vs_long": 6,
+      "pixels_vs_young": 16,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-young-sitting-0-omit-3.png",
+      "png_sha256": "e5c0174d016005d1c1c9aa716deb8379f1077bbce03f261c4e0f2e2f16721b8c",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 16,
+      "pixels_vs_long": 6,
+      "pixels_vs_young": 16,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-young-sitting-0-zero-3.png",
+      "png_sha256": "e5c0174d016005d1c1c9aa716deb8379f1077bbce03f261c4e0f2e2f16721b8c",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 16,
+      "pixels_vs_long": 6,
+      "pixels_vs_young": 16,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-young-sitting-0-omit-4.png",
+      "png_sha256": "a8806660801b6c6802cbfc414f0c1fc9e2ee81a9bfedd314d5877d3046d1dcbc",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 6,
+      "pixels_vs_long": 16,
+      "pixels_vs_young": 6,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-young-sitting-0-zero-4.png",
+      "png_sha256": "a8806660801b6c6802cbfc414f0c1fc9e2ee81a9bfedd314d5877d3046d1dcbc",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 6,
+      "pixels_vs_long": 16,
+      "pixels_vs_young": 6,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-young-sitting-0-omit-5.png",
+      "png_sha256": "a8806660801b6c6802cbfc414f0c1fc9e2ee81a9bfedd314d5877d3046d1dcbc",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 6,
+      "pixels_vs_long": 16,
+      "pixels_vs_young": 6,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-young-sitting-0-zero-5.png",
+      "png_sha256": "a8806660801b6c6802cbfc414f0c1fc9e2ee81a9bfedd314d5877d3046d1dcbc",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 6,
+      "pixels_vs_long": 16,
+      "pixels_vs_young": 6,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-young-sitting-0-omit-6.png",
+      "png_sha256": "3014b514e6f7b6b98cc590bfbd9051fd040040dca91e94e7f2bf1b9788da4f25",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 22,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 22,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-young-sitting-0-zero-6.png",
+      "png_sha256": "3014b514e6f7b6b98cc590bfbd9051fd040040dca91e94e7f2bf1b9788da4f25",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 22,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 22,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-young-sitting-0-omit-7.png",
+      "png_sha256": "3014b514e6f7b6b98cc590bfbd9051fd040040dca91e94e7f2bf1b9788da4f25",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 22,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 22,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-young-sitting-0-zero-7.png",
+      "png_sha256": "3014b514e6f7b6b98cc590bfbd9051fd040040dca91e94e7f2bf1b9788da4f25",
+      "size": [
+        69,
+        99
+      ],
+      "offset": [
+        36,
+        90
+      ],
+      "pixels_vs_short": 22,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 22,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-young-sitting-90-prefix-29.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-young-sitting-90-prefix-30.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-young-sitting-90-prefix-31.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-young-sitting-90-prefix-32.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-young-sitting-90-omit-0.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-young-sitting-90-zero-0.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-young-sitting-90-omit-1.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-young-sitting-90-zero-1.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-young-sitting-90-omit-2.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-young-sitting-90-zero-2.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-young-sitting-90-omit-3.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-young-sitting-90-zero-3.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-young-sitting-90-omit-4.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-young-sitting-90-zero-4.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-young-sitting-90-omit-5.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-young-sitting-90-zero-5.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-young-sitting-90-omit-6.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-young-sitting-90-zero-6.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-young-sitting-90-omit-7.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-young-sitting-90-zero-7.png",
+      "png_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "size": [
+        89,
+        104
+      ],
+      "offset": [
+        29,
+        94
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-29",
+      "file": "missing-young-lying-0-prefix-29.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-30",
+      "file": "missing-young-lying-0-prefix-30.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-31",
+      "file": "missing-young-lying-0-prefix-31.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "prefix-32",
+      "file": "missing-young-lying-0-prefix-32.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-0",
+      "file": "missing-young-lying-0-omit-0.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-0",
+      "file": "missing-young-lying-0-zero-0.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-1",
+      "file": "missing-young-lying-0-omit-1.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-1",
+      "file": "missing-young-lying-0-zero-1.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-2",
+      "file": "missing-young-lying-0-omit-2.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-2",
+      "file": "missing-young-lying-0-zero-2.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-3",
+      "file": "missing-young-lying-0-omit-3.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-3",
+      "file": "missing-young-lying-0-zero-3.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-4",
+      "file": "missing-young-lying-0-omit-4.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-4",
+      "file": "missing-young-lying-0-zero-4.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-5",
+      "file": "missing-young-lying-0-omit-5.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-5",
+      "file": "missing-young-lying-0-zero-5.png",
+      "png_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 15,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-6",
+      "file": "missing-young-lying-0-omit-6.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-6",
+      "file": "missing-young-lying-0-zero-6.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "omit-7",
+      "file": "missing-young-lying-0-omit-7.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "label": "zero-7",
+      "file": "missing-young-lying-0-zero-7.png",
+      "png_sha256": "d615be5992b7a4b8ed33949768db9df2e70815bc5f1e7e8f03b2351a4b9d13c2",
+      "size": [
+        69,
+        74
+      ],
+      "offset": [
+        32,
+        48
+      ],
+      "pixels_vs_short": 15,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 15,
+      "equals_young": false,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-29",
+      "file": "missing-young-lying-90-prefix-29.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 96
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-30",
+      "file": "missing-young-lying-90-prefix-30.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 97
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-31",
+      "file": "missing-young-lying-90-prefix-31.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 98
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "prefix-32",
+      "file": "missing-young-lying-90-prefix-32.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-0",
+      "file": "missing-young-lying-90-omit-0.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-0",
+      "file": "missing-young-lying-90-zero-0.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-1",
+      "file": "missing-young-lying-90-omit-1.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-1",
+      "file": "missing-young-lying-90-zero-1.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-2",
+      "file": "missing-young-lying-90-omit-2.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-2",
+      "file": "missing-young-lying-90-zero-2.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-3",
+      "file": "missing-young-lying-90-omit-3.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-3",
+      "file": "missing-young-lying-90-zero-3.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-4",
+      "file": "missing-young-lying-90-omit-4.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-4",
+      "file": "missing-young-lying-90-zero-4.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-5",
+      "file": "missing-young-lying-90-omit-5.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-5",
+      "file": "missing-young-lying-90-zero-5.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-6",
+      "file": "missing-young-lying-90-omit-6.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-6",
+      "file": "missing-young-lying-90-zero-6.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "omit-7",
+      "file": "missing-young-lying-90-omit-7.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "label": "zero-7",
+      "file": "missing-young-lying-90-zero-7.png",
+      "png_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "size": [
+        110,
+        72
+      ],
+      "offset": [
+        79,
+        56
+      ],
+      "pixels_vs_short": 0,
+      "pixels_vs_long": 0,
+      "pixels_vs_young": 0,
+      "equals_young": true,
+      "shared_fills_equal_short": true,
+      "shared_geometry_equal_short": true,
+      "shared_commands_equal_short": true,
+      "total_geometry_balls": 99
+    }
+  ],
+  "fixtures": [
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 0,
+      "prior_endpoint_sha256": "1eadb6904f0df11833b6cc56f5ab15d7814c7fa008aaf1cd3287bd7ecc5dad39",
+      "omission_matches_short": [
+        0
+      ],
+      "zero_matches_short": [
+        0
+      ],
+      "omission_matches_long": [
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "standing",
+      "yaw": 90,
+      "prior_endpoint_sha256": "8d5b70729bbce3d5b8387c10a9f7a94808aa880795c93305d81f03798748395f",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 0,
+      "prior_endpoint_sha256": "97a536ec8c9ca7e364165986ee8c1c6b1665fe837e5f44fa03834c6d3c931766",
+      "omission_matches_short": [
+        0,
+        1
+      ],
+      "zero_matches_short": [
+        0,
+        1
+      ],
+      "omission_matches_long": [
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "sitting",
+      "yaw": 90,
+      "prior_endpoint_sha256": "092af7786ab0ee9f0d7cf11bfa30a2d311ba91014baf2514dc9738387bec1c0a",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 0,
+      "prior_endpoint_sha256": "35e8937f26928b435f5884398c93b5c39b7484ab1288680d261961b34602b7f0",
+      "omission_matches_short": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "omission_matches_long": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-adult",
+      "pose": "lying",
+      "yaw": 90,
+      "prior_endpoint_sha256": "1ad1ebad477d3252bd751d6cfc7aa4f5db24d5c739d36529344c4087e24b8750",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 0,
+      "prior_endpoint_sha256": "6592cb1daa6c135fb61ff3394240f13d59152296d1dcc1a39f317391b310ff30",
+      "omission_matches_short": [
+        0
+      ],
+      "zero_matches_short": [
+        0
+      ],
+      "omission_matches_long": [
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "standing",
+      "yaw": 90,
+      "prior_endpoint_sha256": "54b7fa20b7fe402f8698d5f7177480a52ab170ca767508d8a1afa55a1a44450c",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 0,
+      "prior_endpoint_sha256": "e41abeef24bb7def2b838608b426a191b48382498da9a5835f8dc211d660e4fb",
+      "omission_matches_short": [
+        0,
+        1
+      ],
+      "zero_matches_short": [
+        0,
+        1
+      ],
+      "omission_matches_long": [
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "sitting",
+      "yaw": 90,
+      "prior_endpoint_sha256": "866a1213af3ce0cee538af907a2a37edebea79d55a4b5ce19f2682f1a9e8d478",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 0,
+      "prior_endpoint_sha256": "26479387aac8ee27fd3c986ebe4dd9126c91d8176c9d9c512fe80c5a52fdb949",
+      "omission_matches_short": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "omission_matches_long": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "mode": "missing-young",
+      "pose": "lying",
+      "yaw": 90,
+      "prior_endpoint_sha256": "3f940c6767e9dfd14a6467b8a9ab570a39b4055f5dadbc02809311be9d8eff37",
+      "omission_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_short": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omission_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "zero_matches_long": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "summary": {
+    "renders": 240,
+    "prior_endpoint_links": 12,
+    "omit_none_matches_short": 12,
+    "zero_none_matches_short": 12
+  }
+}

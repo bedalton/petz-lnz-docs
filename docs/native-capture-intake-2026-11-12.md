@@ -1,6 +1,6 @@
 # Native capture intake, 2026-11-12
 
-The user supplied game screenshots and a Fuzzkin movement video. This is an intake and visual review, not a controlled renderer/game comparison. Petz4 is the working association from the existing saves; exact runtime/version and screenshot scale are not independently established.
+The user supplied game screenshots and a Fuzzkin movement video. This is an intake and visual review, not a controlled renderer/game comparison. Petz4 is the working association from the existing saves; exact runtime/version is not independently established. Subsequent [NATIVE-003 grid controls](../experiments/native-003.md) verify lossless cropped2× replication in all21 PNGs, without establishing display DPI or renderer scale.
 
 ## Inventory and reproduction
 
@@ -12,7 +12,7 @@ PYTHONPATH=/workspace/scratch/native-media-deps scratch/petz-local-x86-venv/bin/
 
 Pillow handles stills; PyAV19.0.2 handles video, with linked library versions recorded in the manifest. PyAV was extracted privately under scratch after a uv wheel extraction permission failure; renderer sources were not modified. Video is H.264, 2046×1472, 2.43 seconds, 138 decoded frames. Samples retain original dimensions. Private contact sheets `contact.png` and `video-contact.png` were visually reviewed, as was the full new Goobe PNG. Contact sheets are navigation aids, not pixel comparison evidence.
 
-The user reports possible Mac2× rendering, older screenshots mostly near adoption, no available puppies/kittens, Scottie images depicting Chip, and lowercase cat-name prefixes matching Adopted Petz names. Preserve these as user-reported provenance. Exact scaling is unresolved; differing crop dimensions and adjacent repeated pixels do not independently establish a uniform2× transform. Do not rescale originals or treat screenshot dimensions as pet geometry.
+The user reports possible Mac2× rendering, older screenshots mostly near adoption, no available puppies/kittens, Scottie images depicting Chip, and lowercase cat-name prefixes matching Adopted Petz names. Preserve these as user-reported provenance. At intake, differing crop dimensions and adjacent repeated pixels did not establish a uniform2× transform. The later [full-grid experiment](../experiments/native-003.md) checks every RGB pixel and provides lossless reduced copies, including clipped boundaries. Originals remain unchanged; image dimensions alone are not pet geometry.
 
 ## Save associations
 
@@ -39,4 +39,4 @@ The tongue screenshot confirms visible tongue appearance in this Dogz example. I
 
 [NATIVE-002](../experiments/native-002.md) now crosses the old/capture-time age and fatness inputs for all three paired saves. At common controls all288 sampled source pairs match exactly in the renderer; historical Goobe coat-color causation remains unresolved. This does not establish native pose or scale equivalence.
 
-Start with the contemporaneous Fuzzkin and Goobe saves for qualitative multi-view comparisons. Keep old photos as separate historical appearance states. Establish image scaling from scene/UI pixel structure before quantitative alignment. A fixed-view idle clip would complement the moving video for texture-state questions, but no additional capture or breed installation is required for this intake.
+Use the contemporaneous Fuzzkin and Goobe saves for qualitative multi-view comparisons. Keep old photos as separate historical appearance states. Use NATIVE-003 reduced PNG copies when inspecting stills; exact pose/projection correspondence is still needed before quantitative alignment. Video scaling remains unresolved. A fixed-view idle clip would complement the moving video for texture-state questions, but no additional capture or breed installation is required for this intake.

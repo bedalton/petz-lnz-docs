@@ -1,0 +1,7510 @@
+{
+  "experiment": "NATIVE-003",
+  "script_sha256": "638116edf1582ed026d3f4f3d0fc04362a31a63ec780f48c7c74bbb98d5c5d01",
+  "backend": "NumPy exact RGB grid reconstruction; Pillow PNG decoding/encoding; no renderer calls",
+  "versions": {
+    "numpy": "2.5.4",
+    "pillow": "13.0.0"
+  },
+  "intake_sha256": "f229abc497566bb22b1d341d0343b277e6f6cb9bd4dda4786b145c21e6c864f0",
+  "controls": [
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cropped-double",
+      "crop": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "case": "one-channel-one-pixel-corruption",
+      "exact": []
+    },
+    {
+      "case": "bilinear",
+      "exact": []
+    },
+    {
+      "case": "quadruple-is-also-double-compatible",
+      "exact": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            22,
+            18
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            11,
+            9
+          ]
+        }
+      ]
+    }
+  ],
+  "stills": [
+    {
+      "path": "scratch/screenshots/catz/Frisky--facing-back--climbing-wall--hind-legs.png",
+      "input_sha256": "9a03186ef137a856f342c6cbdf0e14853efe845737776487bf4465290501fccf",
+      "dimensions": [
+        290,
+        450
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            145,
+            225
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 40306,
+          "latent_dimensions": [
+            146,
+            225
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 40994,
+          "latent_dimensions": [
+            145,
+            226
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 59245,
+          "latent_dimensions": [
+            146,
+            226
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 59610,
+          "latent_dimensions": [
+            97,
+            150
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 59077,
+          "latent_dimensions": [
+            98,
+            150
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 59447,
+          "latent_dimensions": [
+            97,
+            150
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 59309,
+          "latent_dimensions": [
+            97,
+            151
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 58993,
+          "latent_dimensions": [
+            98,
+            151
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 59193,
+          "latent_dimensions": [
+            97,
+            151
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 59236,
+          "latent_dimensions": [
+            97,
+            151
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 59227,
+          "latent_dimensions": [
+            98,
+            151
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 59113,
+          "latent_dimensions": [
+            97,
+            151
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 58620,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 67056,
+          "latent_dimensions": [
+            74,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 58836,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 67556,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 67480,
+          "latent_dimensions": [
+            73,
+            114
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 71458,
+          "latent_dimensions": [
+            74,
+            114
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 67620,
+          "latent_dimensions": [
+            73,
+            114
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 71886,
+          "latent_dimensions": [
+            73,
+            114
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 59568,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 67500,
+          "latent_dimensions": [
+            74,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 59956,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 67832,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 67844,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 71821,
+          "latent_dimensions": [
+            74,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 68416,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 72242,
+          "latent_dimensions": [
+            73,
+            113
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          145,
+          225
+        ]
+      },
+      "file": "00-Frisky--facing-back--climbing-wall--hind-legs.png",
+      "png_sha256": "f2f19df9c9da9e6bcf26cdb4aac0d593ba7aca375f3832614f92558ee77eebb3"
+    },
+    {
+      "path": "scratch/screenshots/catz/frisky--facing-forward.png",
+      "input_sha256": "a6e94131da323f8759a1a8f84dfe4114498bd9f0929fcb6405ae7b80d009c648",
+      "dimensions": [
+        154,
+        226
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            77,
+            113
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 11572,
+          "latent_dimensions": [
+            78,
+            113
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 12012,
+          "latent_dimensions": [
+            77,
+            114
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 17911,
+          "latent_dimensions": [
+            78,
+            114
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 17832,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 18184,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 17771,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 17963,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 18027,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 17788,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 17863,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 18026,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 17745,
+          "latent_dimensions": [
+            52,
+            76
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 18028,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 21218,
+          "latent_dimensions": [
+            40,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 17860,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 21116,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 21510,
+          "latent_dimensions": [
+            39,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 23336,
+          "latent_dimensions": [
+            40,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 21298,
+          "latent_dimensions": [
+            39,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 23199,
+          "latent_dimensions": [
+            39,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 17868,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 21032,
+          "latent_dimensions": [
+            40,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 17888,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 21162,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 21210,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 22968,
+          "latent_dimensions": [
+            40,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 21194,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 23051,
+          "latent_dimensions": [
+            39,
+            57
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          77,
+          113
+        ]
+      },
+      "file": "01-frisky--facing-forward.png",
+      "png_sha256": "3cdc64a3eb8fa34136c02abe587631e8f9a732aca8bdf01be5f4fdca2d6b8993"
+    },
+    {
+      "path": "scratch/screenshots/catz/frisky--facing-right--face-right-slightly-forward.png",
+      "input_sha256": "83f00d3d4b66599221503a7a98ab0de2f0048aa14084bf775066319bce3d0ef9",
+      "dimensions": [
+        248,
+        230
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            124,
+            115
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 19320,
+          "latent_dimensions": [
+            125,
+            115
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 19318,
+          "latent_dimensions": [
+            124,
+            116
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 29004,
+          "latent_dimensions": [
+            125,
+            116
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 29011,
+          "latent_dimensions": [
+            83,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 29032,
+          "latent_dimensions": [
+            84,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 29143,
+          "latent_dimensions": [
+            83,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 28875,
+          "latent_dimensions": [
+            83,
+            78
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 28901,
+          "latent_dimensions": [
+            84,
+            78
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 29149,
+          "latent_dimensions": [
+            83,
+            78
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 28952,
+          "latent_dimensions": [
+            83,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 28992,
+          "latent_dimensions": [
+            84,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 28981,
+          "latent_dimensions": [
+            83,
+            77
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 29220,
+          "latent_dimensions": [
+            62,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 34310,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 28992,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 34224,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 34406,
+          "latent_dimensions": [
+            62,
+            59
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 37240,
+          "latent_dimensions": [
+            63,
+            59
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 34226,
+          "latent_dimensions": [
+            63,
+            59
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 37094,
+          "latent_dimensions": [
+            63,
+            59
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 28908,
+          "latent_dimensions": [
+            62,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 34106,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 28896,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 34178,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 33944,
+          "latent_dimensions": [
+            62,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 36904,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 34198,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 37119,
+          "latent_dimensions": [
+            63,
+            58
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          124,
+          115
+        ]
+      },
+      "file": "02-frisky--facing-right--face-right-slightly-forward.png",
+      "png_sha256": "d77b268cdb83df2ff84a1b2cf1192323eef7af6f75715cccc28890f3ebdcd3cd"
+    },
+    {
+      "path": "scratch/screenshots/catz/homebody--facing-camera--stone-steps-left.png",
+      "input_sha256": "6b749cbd07a8035e12c550b5417d489a243683e15c96f5c3dd21b1b12db0f450",
+      "dimensions": [
+        224,
+        220
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            112,
+            110
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 15716,
+          "latent_dimensions": [
+            113,
+            110
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 16760,
+          "latent_dimensions": [
+            112,
+            111
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24366,
+          "latent_dimensions": [
+            113,
+            111
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 23939,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 24111,
+          "latent_dimensions": [
+            76,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 24340,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 24025,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24436,
+          "latent_dimensions": [
+            76,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 24472,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 24603,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 24725,
+          "latent_dimensions": [
+            76,
+            74
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 24643,
+          "latent_dimensions": [
+            75,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 24012,
+          "latent_dimensions": [
+            56,
+            55
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 28082,
+          "latent_dimensions": [
+            57,
+            55
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 24468,
+          "latent_dimensions": [
+            57,
+            55
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 28602,
+          "latent_dimensions": [
+            57,
+            55
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 28786,
+          "latent_dimensions": [
+            56,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 31060,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 29404,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 31642,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 24652,
+          "latent_dimensions": [
+            56,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 28772,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 24332,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 28556,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 29486,
+          "latent_dimensions": [
+            56,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 31756,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 29232,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 31589,
+          "latent_dimensions": [
+            57,
+            56
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          112,
+          110
+        ]
+      },
+      "file": "03-homebody--facing-camera--stone-steps-left.png",
+      "png_sha256": "379505034de0772cfb6ab4c7f47742f9f52239e952c162ad50cce5bf026b12b6"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-back-left.png",
+      "input_sha256": "46f197188bda3a8b31ec30be69547111ee7b876f06af6115fffa6cd13106b45a",
+      "dimensions": [
+        312,
+        242
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            156,
+            121
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 26764,
+          "latent_dimensions": [
+            157,
+            121
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 27336,
+          "latent_dimensions": [
+            156,
+            122
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 40779,
+          "latent_dimensions": [
+            157,
+            122
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 40799,
+          "latent_dimensions": [
+            104,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 40856,
+          "latent_dimensions": [
+            105,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 40901,
+          "latent_dimensions": [
+            105,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 40920,
+          "latent_dimensions": [
+            104,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 40775,
+          "latent_dimensions": [
+            105,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 40732,
+          "latent_dimensions": [
+            105,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 40591,
+          "latent_dimensions": [
+            104,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 40679,
+          "latent_dimensions": [
+            105,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 40758,
+          "latent_dimensions": [
+            105,
+            81
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 40664,
+          "latent_dimensions": [
+            78,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 47818,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 40664,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 47876,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 47684,
+          "latent_dimensions": [
+            78,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 51481,
+          "latent_dimensions": [
+            79,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 47852,
+          "latent_dimensions": [
+            79,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 51688,
+          "latent_dimensions": [
+            79,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 40864,
+          "latent_dimensions": [
+            78,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 47918,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 40924,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 48140,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 47816,
+          "latent_dimensions": [
+            78,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 51586,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 48066,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 51925,
+          "latent_dimensions": [
+            79,
+            61
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          156,
+          121
+        ]
+      },
+      "file": "04-boston-terrier--facing-back-left.png",
+      "png_sha256": "b769eb6fceac80ff59db36fd4f8812727c9b5e0a19ea46ad11492e3eb37aedbc"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-forward--eyes-closed--tongue-out.png",
+      "input_sha256": "d9fb32bd8333a092ce73233815ca92ad7dced7e870f6f5e079b6860d08b795bb",
+      "dimensions": [
+        308,
+        250
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            154,
+            125
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 26948,
+          "latent_dimensions": [
+            155,
+            125
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 26808,
+          "latent_dimensions": [
+            154,
+            126
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 38654,
+          "latent_dimensions": [
+            155,
+            126
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 38486,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 38451,
+          "latent_dimensions": [
+            104,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 38137,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 38941,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 38870,
+          "latent_dimensions": [
+            104,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 38829,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 38757,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 38860,
+          "latent_dimensions": [
+            104,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 38555,
+          "latent_dimensions": [
+            103,
+            84
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 38684,
+          "latent_dimensions": [
+            77,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 45036,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 38672,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 45296,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 45024,
+          "latent_dimensions": [
+            77,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 48786,
+          "latent_dimensions": [
+            78,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 45198,
+          "latent_dimensions": [
+            78,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 49071,
+          "latent_dimensions": [
+            78,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 38488,
+          "latent_dimensions": [
+            77,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 44954,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 38772,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 45072,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 44984,
+          "latent_dimensions": [
+            77,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 48847,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 45172,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 48838,
+          "latent_dimensions": [
+            78,
+            63
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          154,
+          125
+        ]
+      },
+      "file": "05-boston-terrier--facing-forward--eyes-closed--tongue-out.png",
+      "png_sha256": "7a1464b6bb3d946cf5a1e2f6fa9c225a120a33fbbefdbc66a38babd8bd5100d2"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-forward-right--head-facing-camera--eyes-drooping.png",
+      "input_sha256": "4054d1a1219db7ab387156a57e95fe12b70077b56584b0058927102746a3ab8c",
+      "dimensions": [
+        218,
+        193
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 14986,
+          "latent_dimensions": [
+            109,
+            97
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 22479,
+          "latent_dimensions": [
+            110,
+            97
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            109,
+            97
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 14848,
+          "latent_dimensions": [
+            110,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 22598,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 22417,
+          "latent_dimensions": [
+            74,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 22410,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 22487,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 22475,
+          "latent_dimensions": [
+            74,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 22604,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 22349,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 22467,
+          "latent_dimensions": [
+            74,
+            65
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 22504,
+          "latent_dimensions": [
+            73,
+            65
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 26426,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 28694,
+          "latent_dimensions": [
+            56,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 26614,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 28790,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 22520,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 26619,
+          "latent_dimensions": [
+            56,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 22408,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 26646,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 26576,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 28833,
+          "latent_dimensions": [
+            56,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 26624,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 28884,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 22340,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 26567,
+          "latent_dimensions": [
+            56,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 22648,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 26646,
+          "latent_dimensions": [
+            55,
+            49
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          109,
+          97
+        ]
+      },
+      "file": "06-boston-terrier--facing-forward-right--head-facing-camera--eyes-drooping.png",
+      "png_sha256": "b637a1bdb9e728e3549ec38c3ba6a5b7bf7da21863626d4e176262a9968e461f"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left--eyes-looking-back-left.png",
+      "input_sha256": "045a2596dbd768833b6f862a92f63aee4af05c0f4635d25ca876644dae57c79b",
+      "dimensions": [
+        430,
+        284
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            215,
+            142
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 43810,
+          "latent_dimensions": [
+            216,
+            142
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 44238,
+          "latent_dimensions": [
+            215,
+            143
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 66077,
+          "latent_dimensions": [
+            216,
+            143
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 65835,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 66206,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 66079,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 66084,
+          "latent_dimensions": [
+            144,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 66126,
+          "latent_dimensions": [
+            144,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 66138,
+          "latent_dimensions": [
+            144,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 66060,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 66193,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 65972,
+          "latent_dimensions": [
+            144,
+            95
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 65916,
+          "latent_dimensions": [
+            108,
+            71
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 77412,
+          "latent_dimensions": [
+            109,
+            71
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 66616,
+          "latent_dimensions": [
+            108,
+            71
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 77706,
+          "latent_dimensions": [
+            108,
+            71
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 77100,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 83183,
+          "latent_dimensions": [
+            109,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 77742,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 83462,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 65852,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 77600,
+          "latent_dimensions": [
+            109,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 65924,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 77676,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 76986,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 83277,
+          "latent_dimensions": [
+            109,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 77272,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 83517,
+          "latent_dimensions": [
+            108,
+            72
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          215,
+          142
+        ]
+      },
+      "file": "07-boston-terrier--facing-left--eyes-looking-back-left.png",
+      "png_sha256": "3ebb233ee2f36260759da11eff6392c6d660388cba028c728e622aa9cfd7beec"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left-slightly-forward--head-forward--tongue-out.png",
+      "input_sha256": "b4f76d95beeaba4994ef28361c8510e5f387fd811b9c98859baeaba435abc981",
+      "dimensions": [
+        436,
+        292
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            218,
+            146
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 45264,
+          "latent_dimensions": [
+            219,
+            146
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 45982,
+          "latent_dimensions": [
+            218,
+            147
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 67873,
+          "latent_dimensions": [
+            219,
+            147
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 67952,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 67595,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 67676,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 68122,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 68413,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 68275,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 67668,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 67698,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 67458,
+          "latent_dimensions": [
+            146,
+            98
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 68684,
+          "latent_dimensions": [
+            109,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 80048,
+          "latent_dimensions": [
+            110,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 67528,
+          "latent_dimensions": [
+            110,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 78960,
+          "latent_dimensions": [
+            110,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 80446,
+          "latent_dimensions": [
+            109,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 86500,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 79292,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 85385,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 68036,
+          "latent_dimensions": [
+            109,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 79578,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 67244,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 78850,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 80142,
+          "latent_dimensions": [
+            109,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 86324,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 79486,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 85747,
+          "latent_dimensions": [
+            110,
+            74
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          218,
+          146
+        ]
+      },
+      "file": "08-boston-terrier--facing-left-slightly-forward--head-forward--tongue-out.png",
+      "png_sha256": "f32aa74c1150aeec41a4d5b3b50133252f6152775d45ec64c34e7d98a7610c39"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-left.png",
+      "input_sha256": "e27fe68996230b66d023b1d0bba79f9dddcce46ec25e2eb5909bf6bd3d5ab02a",
+      "dimensions": [
+        406,
+        288
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            203,
+            144
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 41822,
+          "latent_dimensions": [
+            204,
+            144
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 42132,
+          "latent_dimensions": [
+            203,
+            145
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 62978,
+          "latent_dimensions": [
+            204,
+            145
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 63084,
+          "latent_dimensions": [
+            136,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 63115,
+          "latent_dimensions": [
+            136,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 63011,
+          "latent_dimensions": [
+            136,
+            96
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 63355,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 63104,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 62886,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 62777,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 62886,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 62584,
+          "latent_dimensions": [
+            136,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 63160,
+          "latent_dimensions": [
+            102,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 74074,
+          "latent_dimensions": [
+            103,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 63172,
+          "latent_dimensions": [
+            102,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 74268,
+          "latent_dimensions": [
+            102,
+            72
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 73670,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 79509,
+          "latent_dimensions": [
+            103,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 73814,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 79728,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 62668,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 73608,
+          "latent_dimensions": [
+            103,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 62912,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 73896,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 73570,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 79243,
+          "latent_dimensions": [
+            103,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 73620,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 79335,
+          "latent_dimensions": [
+            102,
+            73
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          203,
+          144
+        ]
+      },
+      "file": "09-boston-terrier--facing-left.png",
+      "png_sha256": "ee6ab9b3207858127a8b220688cda1c01ba1e0cd3359417e7fdaad423c058886"
+    },
+    {
+      "path": "scratch/screenshots/dogz/boston-terrier/boston-terrier--facing-right--head-turned-slightly-towards-camera.png",
+      "input_sha256": "25c54b52a812fdd1f0299eb5ed3b51d989c0f7553e95b407adb65a7579f104d5",
+      "dimensions": [
+        232,
+        201
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            116,
+            101
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 16300,
+          "latent_dimensions": [
+            117,
+            101
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 16570,
+          "latent_dimensions": [
+            116,
+            101
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24734,
+          "latent_dimensions": [
+            117,
+            101
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 24577,
+          "latent_dimensions": [
+            78,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 24867,
+          "latent_dimensions": [
+            78,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 24497,
+          "latent_dimensions": [
+            78,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 24729,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24914,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 24547,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 24662,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 24910,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 24663,
+          "latent_dimensions": [
+            78,
+            68
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 24840,
+          "latent_dimensions": [
+            58,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 29167,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 24664,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 29107,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 29290,
+          "latent_dimensions": [
+            58,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 31559,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 29192,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 31595,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 24676,
+          "latent_dimensions": [
+            58,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 29151,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 24596,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 29012,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 29058,
+          "latent_dimensions": [
+            58,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 31473,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 29204,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 31596,
+          "latent_dimensions": [
+            59,
+            51
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          116,
+          101
+        ]
+      },
+      "file": "10-boston-terrier--facing-right--head-turned-slightly-towards-camera.png",
+      "png_sha256": "f75805015a217e0c99b274c5c77d383ab3edea52a6a5a18c7d963dee811a0454"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/Goobe--2026-11-12-645--facing-front--tongue-out.png",
+      "input_sha256": "8d42c2a4b290314932c277ea7169f63273d27c1318babb3140d07d30138754e6",
+      "dimensions": [
+        454,
+        384
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            227,
+            192
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 32040,
+          "latent_dimensions": [
+            228,
+            192
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 35682,
+          "latent_dimensions": [
+            227,
+            193
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 51378,
+          "latent_dimensions": [
+            228,
+            193
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 50783,
+          "latent_dimensions": [
+            152,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 50832,
+          "latent_dimensions": [
+            152,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 50707,
+          "latent_dimensions": [
+            152,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 51969,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 51922,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 52004,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 51439,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 51347,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 51399,
+          "latent_dimensions": [
+            152,
+            129
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 51636,
+          "latent_dimensions": [
+            114,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 60714,
+          "latent_dimensions": [
+            115,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 51292,
+          "latent_dimensions": [
+            114,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 60318,
+          "latent_dimensions": [
+            114,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 62924,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 68222,
+          "latent_dimensions": [
+            115,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 62642,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 67899,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 51344,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 60404,
+          "latent_dimensions": [
+            115,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 51240,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 60292,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 62682,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 67860,
+          "latent_dimensions": [
+            115,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 62466,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 67706,
+          "latent_dimensions": [
+            114,
+            97
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          227,
+          192
+        ]
+      },
+      "file": "11-Goobe--2026-11-12-645--facing-front--tongue-out.png",
+      "png_sha256": "20414b40903e2f8f28910601055e397885b4d52312dca5ba25251fd93400f1fa"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-forward--adoption-center-behind--large-stone-pavers-on-ground--tongue-out.png",
+      "input_sha256": "35c6758aafcc70564a41494336173ef50c155b8f0a9ee704dae55eefc6733835",
+      "dimensions": [
+        294,
+        380
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            147,
+            190
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 38890,
+          "latent_dimensions": [
+            148,
+            190
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 38090,
+          "latent_dimensions": [
+            147,
+            191
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 56283,
+          "latent_dimensions": [
+            148,
+            191
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 56526,
+          "latent_dimensions": [
+            98,
+            127
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 56107,
+          "latent_dimensions": [
+            99,
+            127
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 56264,
+          "latent_dimensions": [
+            99,
+            127
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 56882,
+          "latent_dimensions": [
+            98,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 56328,
+          "latent_dimensions": [
+            99,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 56359,
+          "latent_dimensions": [
+            99,
+            128
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 56365,
+          "latent_dimensions": [
+            98,
+            127
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 55856,
+          "latent_dimensions": [
+            99,
+            127
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 55860,
+          "latent_dimensions": [
+            99,
+            127
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 56008,
+          "latent_dimensions": [
+            74,
+            95
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 65930,
+          "latent_dimensions": [
+            75,
+            95
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 57040,
+          "latent_dimensions": [
+            74,
+            95
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 66878,
+          "latent_dimensions": [
+            74,
+            95
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 64996,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 71125,
+          "latent_dimensions": [
+            75,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 66398,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 72301,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 55896,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 66230,
+          "latent_dimensions": [
+            75,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 56188,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 65988,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 65400,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 71743,
+          "latent_dimensions": [
+            75,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 65656,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 71498,
+          "latent_dimensions": [
+            74,
+            96
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          147,
+          190
+        ]
+      },
+      "file": "12-great-dane--facing-forward--adoption-center-behind--large-stone-pavers-on-ground--tongue-out.png",
+      "png_sha256": "a41fdee5cb0d503bee94e1cbc1beb6676dd663be7684bde8dd156ea37590a4e6"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-left-back--head-left-slightly-forward--eyes-at-camera--stones-floor-path-behind.png",
+      "input_sha256": "bf97f8868359f1aa2682d5c23e3cd97308d9e61de0f09af340580d8e61dd7a94",
+      "dimensions": [
+        255,
+        250
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            128,
+            125
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 22714,
+          "latent_dimensions": [
+            128,
+            125
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 21307,
+          "latent_dimensions": [
+            128,
+            126
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 33687,
+          "latent_dimensions": [
+            128,
+            126
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 33548,
+          "latent_dimensions": [
+            85,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 33809,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 33486,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 33834,
+          "latent_dimensions": [
+            85,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 33804,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 33609,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 33559,
+          "latent_dimensions": [
+            85,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 33799,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 33453,
+          "latent_dimensions": [
+            86,
+            84
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 33484,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 40278,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 33684,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 40698,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 39745,
+          "latent_dimensions": [
+            64,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 43798,
+          "latent_dimensions": [
+            65,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 39964,
+          "latent_dimensions": [
+            65,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 44092,
+          "latent_dimensions": [
+            64,
+            64
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 33574,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 40622,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 33818,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 40810,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 39915,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 44145,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 40057,
+          "latent_dimensions": [
+            65,
+            63
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 44146,
+          "latent_dimensions": [
+            64,
+            63
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          128,
+          125
+        ]
+      },
+      "file": "13-great-dane--facing-left-back--head-left-slightly-forward--eyes-at-camera--stones-floor-path-behind.png",
+      "png_sha256": "4b9eaeb0cc392dcb04bcc6f4ba1c68c4dbc948106ede911c2070ff04cece2c42"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-left-slightly-back--head-left-forward--eyes-looking-at-camera.png",
+      "input_sha256": "8ff1b4c4dce6f689e5ce5a02c72f1fcfdd590f03ddf3b2d4b45371f56a4b174d",
+      "dimensions": [
+        304,
+        227
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 23298,
+          "latent_dimensions": [
+            152,
+            114
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 36461,
+          "latent_dimensions": [
+            153,
+            114
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            152,
+            114
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24366,
+          "latent_dimensions": [
+            153,
+            114
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 36451,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 36577,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 36349,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 36160,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 36534,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 36284,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 36541,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 36785,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 36468,
+          "latent_dimensions": [
+            102,
+            76
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 43354,
+          "latent_dimensions": [
+            76,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 47756,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 43594,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 47877,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 36346,
+          "latent_dimensions": [
+            76,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 43632,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 36238,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 43794,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 43266,
+          "latent_dimensions": [
+            76,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 47538,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 43154,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 47599,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 36550,
+          "latent_dimensions": [
+            76,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 43978,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 36710,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 44162,
+          "latent_dimensions": [
+            77,
+            57
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          152,
+          114
+        ]
+      },
+      "file": "14-great-dane--facing-left-slightly-back--head-left-forward--eyes-looking-at-camera.png",
+      "png_sha256": "135282bbdafd3a6d4c1f529a802455de55edec5521bf906981a122772c61522d"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-right--head-forward.png",
+      "input_sha256": "258031ea2832fafeecad3035510f93fd53a05b30969a149388041b2d96d11452",
+      "dimensions": [
+        241,
+        243
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            121,
+            122
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 21317,
+          "latent_dimensions": [
+            121,
+            122
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 20801,
+          "latent_dimensions": [
+            121,
+            122
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 31624,
+          "latent_dimensions": [
+            121,
+            122
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 31721,
+          "latent_dimensions": [
+            81,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 31461,
+          "latent_dimensions": [
+            81,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 31584,
+          "latent_dimensions": [
+            81,
+            81
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 31643,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 31505,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 31638,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 31570,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 31478,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 31525,
+          "latent_dimensions": [
+            81,
+            82
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 31600,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 37446,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 31369,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 37300,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 36971,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 40216,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 36918,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 40175,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 31654,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 37568,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 31546,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 37485,
+          "latent_dimensions": [
+            61,
+            62
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 37152,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 40399,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 37170,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 40438,
+          "latent_dimensions": [
+            61,
+            61
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          121,
+          122
+        ]
+      },
+      "file": "15-great-dane--facing-right--head-forward.png",
+      "png_sha256": "c143e283251a86ad48241f1b1cbaba2eafa29a5e672eae35e91d7d191b528602"
+    },
+    {
+      "path": "scratch/screenshots/dogz/great-dane/great-dane--facing-right--head-tilted-up-right-slightly-front--eyes-looking-at-camera.png",
+      "input_sha256": "6afaf6162a2886a4ed2f13d29ad021d11e13e67ce777c8a67f7e119064e76816",
+      "dimensions": [
+        271,
+        265
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 25684,
+          "latent_dimensions": [
+            136,
+            133
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 39223,
+          "latent_dimensions": [
+            136,
+            133
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            136,
+            133
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 26435,
+          "latent_dimensions": [
+            136,
+            133
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 39296,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 39017,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 39149,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 39264,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 39220,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 39127,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 39247,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 39327,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 39057,
+          "latent_dimensions": [
+            91,
+            89
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 45913,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 50058,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 45740,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 49959,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 39261,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 46375,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 39278,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 46603,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 45884,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 49801,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 45957,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 50023,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 39093,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 46479,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 39058,
+          "latent_dimensions": [
+            69,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 46591,
+          "latent_dimensions": [
+            68,
+            67
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          136,
+          133
+        ]
+      },
+      "file": "16-great-dane--facing-right--head-tilted-up-right-slightly-front--eyes-looking-at-camera.png",
+      "png_sha256": "d6c2bd718e7c21879d6ab7f93954e328c451d85e4189debf5358da404386b71a"
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-forward-slight-right--head-forward--tongue-out.png",
+      "input_sha256": "8084edecd671427fc9319a0ca5005c2e0ce79d78698835fbc97d167bf82ee246",
+      "dimensions": [
+        211,
+        198
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 13274,
+          "latent_dimensions": [
+            106,
+            99
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            106,
+            99
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 20177,
+          "latent_dimensions": [
+            106,
+            100
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 13543,
+          "latent_dimensions": [
+            106,
+            100
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 20248,
+          "latent_dimensions": [
+            71,
+            66
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 20474,
+          "latent_dimensions": [
+            71,
+            66
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 20484,
+          "latent_dimensions": [
+            71,
+            66
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 20029,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 20227,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 20212,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 19822,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 19995,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 20102,
+          "latent_dimensions": [
+            71,
+            67
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 23818,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 19790,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 23452,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 20130,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 26150,
+          "latent_dimensions": [
+            53,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 23730,
+          "latent_dimensions": [
+            54,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 25790,
+          "latent_dimensions": [
+            54,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 24016,
+          "latent_dimensions": [
+            53,
+            51
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 23858,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 20576,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 24286,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 20212,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 26170,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 24559,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 26701,
+          "latent_dimensions": [
+            54,
+            50
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 24057,
+          "latent_dimensions": [
+            53,
+            50
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 1,
+        "phase_y": 0,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          106,
+          99
+        ]
+      },
+      "file": "17-scottie--facing-forward-slight-right--head-forward--tongue-out.png",
+      "png_sha256": "b4f4b693b7e80125345b2ca25ac6127846c9d8283bbafd9a8def06d8b4be1ad3"
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-forward.png",
+      "input_sha256": "370528cb80f1bbea8f5a98157fdc9cdaf3f32692dfcaa8d69d8e07c22fa9c52b",
+      "dimensions": [
+        220,
+        209
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 15374,
+          "latent_dimensions": [
+            110,
+            105
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 22494,
+          "latent_dimensions": [
+            111,
+            105
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            110,
+            105
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 14766,
+          "latent_dimensions": [
+            111,
+            105
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 22570,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 22442,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 22416,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 22352,
+          "latent_dimensions": [
+            74,
+            71
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 22378,
+          "latent_dimensions": [
+            74,
+            71
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 22167,
+          "latent_dimensions": [
+            74,
+            71
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 22860,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 22632,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 22629,
+          "latent_dimensions": [
+            74,
+            70
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 26598,
+          "latent_dimensions": [
+            55,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 28795,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 26732,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 29034,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 22896,
+          "latent_dimensions": [
+            55,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 26736,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 22480,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 26437,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 27278,
+          "latent_dimensions": [
+            55,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 29425,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 26796,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 28997,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 22292,
+          "latent_dimensions": [
+            55,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 26186,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 22308,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 26325,
+          "latent_dimensions": [
+            56,
+            53
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          110,
+          105
+        ]
+      },
+      "file": "18-scottie--facing-forward.png",
+      "png_sha256": "f053206b92d52fa9ef48688e4db73da5d656daa449a156110d86d18fd7621da7"
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-right--head-facing-right--eyes-looking-at-camera.png",
+      "input_sha256": "39f720f0e2e674946d7913c0039d329e93ad283f9bf3c3d2aea7d15069402409",
+      "dimensions": [
+        326,
+        163
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 28042,
+          "latent_dimensions": [
+            163,
+            82
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 18852,
+          "latent_dimensions": [
+            164,
+            82
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 18537,
+          "latent_dimensions": [
+            163,
+            82
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            164,
+            82
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 27987,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 28027,
+          "latent_dimensions": [
+            110,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 28198,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 28099,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 27941,
+          "latent_dimensions": [
+            110,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 28092,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 27890,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 27915,
+          "latent_dimensions": [
+            110,
+            55
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 28073,
+          "latent_dimensions": [
+            109,
+            55
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 35861,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 33251,
+          "latent_dimensions": [
+            83,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 35981,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 33161,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 32956,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 27738,
+          "latent_dimensions": [
+            83,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 32794,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 28019,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 35710,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 32957,
+          "latent_dimensions": [
+            83,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 35629,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 33142,
+          "latent_dimensions": [
+            82,
+            42
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 33132,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 28162,
+          "latent_dimensions": [
+            83,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 33270,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 28145,
+          "latent_dimensions": [
+            82,
+            41
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 1,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          164,
+          82
+        ]
+      },
+      "file": "19-scottie--facing-right--head-facing-right--eyes-looking-at-camera.png",
+      "png_sha256": "43482b04852e0f47e1d78eaad472b2eee36a90a3f06220a3ec9ee9338d744bab"
+    },
+    {
+      "path": "scratch/screenshots/dogz/scottie/scottie--facing-right--head-right-forward--eyes-looking-left.png",
+      "input_sha256": "ba53b0f9245d6f082c89259207585441d3a62490a1e7a361f58a61ff95a70e7d",
+      "dimensions": [
+        305,
+        229
+      ],
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 25108,
+          "latent_dimensions": [
+            153,
+            115
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 37312,
+          "latent_dimensions": [
+            153,
+            115
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 0,
+          "latent_dimensions": [
+            153,
+            115
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 24719,
+          "latent_dimensions": [
+            153,
+            115
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 37227,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 37215,
+          "latent_dimensions": [
+            103,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 37278,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 37412,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 37412,
+          "latent_dimensions": [
+            103,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 37242,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 37342,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 37330,
+          "latent_dimensions": [
+            103,
+            77
+          ]
+        },
+        {
+          "factor": 3,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 37122,
+          "latent_dimensions": [
+            102,
+            77
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 44042,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 47519,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 0,
+          "mismatching_pixels": 43545,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 0,
+          "mismatching_pixels": 47112,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 37474,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 44027,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 1,
+          "mismatching_pixels": 37240,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 1,
+          "mismatching_pixels": 43777,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 2,
+          "mismatching_pixels": 44054,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 2,
+          "mismatching_pixels": 47505,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 2,
+          "mismatching_pixels": 43932,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 2,
+          "mismatching_pixels": 47361,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 0,
+          "phase_y": 3,
+          "mismatching_pixels": 37462,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 1,
+          "phase_y": 3,
+          "mismatching_pixels": 44023,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 2,
+          "phase_y": 3,
+          "mismatching_pixels": 36920,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        },
+        {
+          "factor": 4,
+          "phase_x": 3,
+          "phase_y": 3,
+          "mismatching_pixels": 43573,
+          "latent_dimensions": [
+            77,
+            58
+          ]
+        }
+      ],
+      "selected": {
+        "factor": 2,
+        "phase_x": 0,
+        "phase_y": 1,
+        "mismatching_pixels": 0,
+        "latent_dimensions": [
+          153,
+          115
+        ]
+      },
+      "file": "20-scottie--facing-right--head-right-forward--eyes-looking-left.png",
+      "png_sha256": "65d70e4c3c036e0bd65aff20486712b1077606dedf83544ed0b9240621a31ceb"
+    }
+  ],
+  "video_samples": [
+    {
+      "frame_index": 0,
+      "path": "scratch/research/native-001/video-000.png",
+      "input_sha256": "b9f5af40c8393d7592d50581c513bf30a7768522f871fffd116f83850e0ac6cf",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 930051,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1732075,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1742939,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141074,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 12,
+      "path": "scratch/research/native-001/video-012.png",
+      "input_sha256": "ccadee8afd8b61a166000cf46d7f4dffbb82dc04d9a4728faa3eb6ca8ff3a2b5",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 931047,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1732434,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1743633,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141573,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 25,
+      "path": "scratch/research/native-001/video-025.png",
+      "input_sha256": "aec43847b62058eda9807e07eeba9d0406c7cd9eee92cd8d14776e85bf62dee4",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 931871,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1733084,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1743898,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141826,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 37,
+      "path": "scratch/research/native-001/video-037.png",
+      "input_sha256": "4c8c792775a0b73be83b4dc4b3d28b11bdf5948cb61b697a8373d06b340bf2f6",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 933552,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1733848,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1744674,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142070,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 50,
+      "path": "scratch/research/native-001/video-050.png",
+      "input_sha256": "38063cc5aea338b37ebac366cbdf39aed6ff54ed5ec64f6bba0422a771bca5c9",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 939206,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1736783,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1747277,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142645,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 62,
+      "path": "scratch/research/native-001/video-062.png",
+      "input_sha256": "ed132cc330b09dd27d76483e61c8a9bddea8085bbaffa186f2f9b367db0debc5",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 930886,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1732312,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1743144,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141224,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 75,
+      "path": "scratch/research/native-001/video-075.png",
+      "input_sha256": "4e8dc6363a4cb75329cd88b3fe60c3c52f58a542620e4272450548d71528a2f2",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 933110,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1733774,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1744392,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141766,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 87,
+      "path": "scratch/research/native-001/video-087.png",
+      "input_sha256": "d90c61bacdc331433715e9a6e3f76bc155aa5f88d3baffcdd052a942b123c238",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 935664,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1734887,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1745570,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142213,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 100,
+      "path": "scratch/research/native-001/video-100.png",
+      "input_sha256": "83c2310291242aef03d7d88ad62781c08c9e1966f71f17a9b99a7bc5cb840def",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 937597,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1735172,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1745694,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2141591,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 112,
+      "path": "scratch/research/native-001/video-112.png",
+      "input_sha256": "2fa143ade9c10224494983670aa67f5611fc0c6a44dc19f0f9bd54bdde746192",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 939952,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1736592,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1747346,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142203,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 125,
+      "path": "scratch/research/native-001/video-125.png",
+      "input_sha256": "27f0dbace7711e0afbb63d7fcdbda791c3b1794c5ccceb61fd50e48abe400f37",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 938470,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1736256,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1746625,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142191,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    },
+    {
+      "frame_index": 137,
+      "path": "scratch/research/native-001/video-137.png",
+      "input_sha256": "8fcf0d31bf3f32445d74e2ddc09e4f3d0bbcf8f0cba5ec73cc3a5ed9c28a8465",
+      "candidates": [
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 0,
+          "mismatching_pixels": 940692,
+          "latent_dimensions": [
+            1023,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 0,
+          "mismatching_pixels": 1737117,
+          "latent_dimensions": [
+            1024,
+            736
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 0,
+          "phase_y": 1,
+          "mismatching_pixels": 1747420,
+          "latent_dimensions": [
+            1023,
+            737
+          ]
+        },
+        {
+          "factor": 2,
+          "phase_x": 1,
+          "phase_y": 1,
+          "mismatching_pixels": 2142312,
+          "latent_dimensions": [
+            1024,
+            737
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Exact encoded raster replication only; no Mac DPI, engine resolution or renderer geometry claim",
+  "summary": {
+    "stills": 21,
+    "exact_double_grids": 21,
+    "still_candidate_grids": 609,
+    "video_frames_sampled": 12,
+    "video_exact_double_grids": 0,
+    "synthetic_controls": 19
+  }
+}

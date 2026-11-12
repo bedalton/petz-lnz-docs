@@ -169,3 +169,5 @@ Updated: 2026-11-12
 - Focused young-appearance reference now distinguishes the historical lying/front line requirement from the [current correction](experiments/update-011.md); evidence counts unchanged.
 
 - [UPDATE-010](experiments/update-010.md) replays306 fresh MCP controls and216 saved direct draws on49c7f62. All216 historical relationships hold and36 saved MCP matches pass;all522 historical RGBA images differ. All21 originals unchanged. Exact current-build replay is underway;historical manifests preserved.
+
+- [UPDATE-012](experiments/update-012.md) preserves606 independent age records and100 edited/routing equalities;192 current RGBA images differ historically. Ninety routing cases retain54 successes/36 failures;114 MCP requests yield78 exact matches and36 expected errors. Initial full replay complete;exact replay and independent audit underway.

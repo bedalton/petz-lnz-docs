@@ -458,3 +458,7 @@ The focused [young reference](format-reference/young-appearance.md) now carries 
 ## Fresh and saved young upgrade replay
 
 [UPDATE-010](experiments/update-010.md):306 Petz3/4/5 Scottie/Siamese MCP controls,216 Petz4 saved direct draws,36 fresh direct/MCP matches. All132 fresh and84 saved historical relationships survive;all522 PNGs change aligned RGBA. All21 originals match,62 installed sources agree. Initial replay complete;exact current-build verification running in scratch/update-010-verify.log. Evidence remains build-specific;no source/original edits.
+
+## Current age arithmetic and dependency routing
+
+[UPDATE-012](experiments/update-012.md):606 age records (42 loader boundaries+564 age-API calls),192 direct PNGs,90 routing cases and114 MCP requests on49c7f62. All100 historical equalities and numerical records survive;all192 historical RGBA images change.78 exact MCP matches+36 expected errors. Initial harness failure archived;successful-run scope explicitly documented. Exact replay and independent session audit are underway;no renderer/original edits.

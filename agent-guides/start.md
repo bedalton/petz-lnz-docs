@@ -8,6 +8,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 
 | Need | Read next |
 | --- | --- |
+| Choose a supplied blank dog baseline | [Blank dog gallery](../clean_dogs/README.md): exact filenames, six views and stock counterparts |
 | Identify base-ball IDs | [Dogz index](../format-reference/anatomy/dogz.md) or [Catz index](../format-reference/anatomy/catz.md); mostly asset labels, not visually tested |
 | Enlarge or reshape a head | [Head control guide](../visual-editing/head-ball.md), then [field details](../format-reference/head-enlargement.md) |
 | Change iris/pupil colors | [Eye color guide](../visual-editing/eye-colors.md) |

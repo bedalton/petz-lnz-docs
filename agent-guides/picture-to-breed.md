@@ -26,6 +26,8 @@ Choose reasonable assumptions for minor missing details and record them. Ask for
 
 ## 2. Choose and inspect a baseline
 
+For supplied Petz 4 blanks, start with the [blank dog catalog](../clean_dogs/README.md): each exact filename links to six-view blank and stock sheets. Overview thumbnails fit each dog separately; compare full sheets for relative size. Transfer the ignored reference images with the breed files when handing off to another agent.
+
 Prefer an available breed with similar overall construction, proportions, ears, muzzle and coat organization. Record why it is suitable; do not choose solely by coat color. If several candidates exist, render a small comparison before committing. If only one is available, state the compromise.
 
 Identify version, species, adult/young resources, master inheritance, effective sections, existing addballs, textures and variation branches. Use [anatomy indices](start.md#route-by-task) as candidate labels; confirm important IDs with a controlled visible change. Row positions and explicit IDs are different conventions: consult the field reference before editing.

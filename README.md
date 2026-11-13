@@ -7,6 +7,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 ## Start here
 
 - [Blank dog baseline gallery](clean_dogs/README.md): six-view blank and stock references
+- [Independent Mastiff authoring-trial review](docs/mastiff-authoring-trial-review.md)
 - [Picture-to-breed authoring workflow](agent-guides/picture-to-breed.md), [task brief](agent-guides/task-brief.md), [trial report](agent-guides/trial-report.md)
 - [Agent editing entry point](agent-guides/start.md)
 - [Status](STATUS.md), [handoff](HANDOFF.md), [agent instructions](AGENTS.md)

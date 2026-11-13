@@ -1,5 +1,7 @@
 # Status
 
+- Documentation readiness: [agent ingestion assessment](docs/agent-ingestion-assessment.md). Recommend extending agent-guides with a linked picture-to-breed authoring layer; independent pilot remains untested. No corpus reorganization performed.
+
 - Completed continuation: [native control session](docs/session-2026-11-12-native-controls.md),NATIVE-002/003/004. All three full replays/audits pass;639 retained PNG hashes,25 unchanged intake files,21 original hashes and62-source agreement. Six HTTP capture-time renders per audit pass after restart PID33654/session86330. Documentation/private-file checks pass. Native pose/color causation remains open;earlier active/pending notes below are superseded.
 
 - Native color controls: [NATIVE-004](experiments/native-004.md),21 original-profile tagged/21 converted sRGB copies. Full replay/profile audit pass:410,690 pixels,1,583 unique mappings,84 palette tallies,nine unchanged prefix arrays. [Comparison index](docs/native-comparison-controls.md) separates raw grid evidence from color review. Native coat-color cause remains open;session audit follows.

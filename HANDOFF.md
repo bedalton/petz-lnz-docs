@@ -1,5 +1,7 @@
 # Handoff
 
+- Documentation readiness: [agent ingestion assessment](docs/agent-ingestion-assessment.md). Recommend extending agent-guides with a linked picture-to-breed authoring layer; independent pilot remains untested. No corpus reorganization performed.
+
 - Latest native research: [comparison controls](docs/native-comparison-controls.md) and [session audit](docs/session-2026-11-12-native-controls.md). NATIVE-002/003/004 full replays and integrity checks pass. Use profile-aware reduced stills for color review; native pose and coat-color causation remain unresolved.
 
 - Latest completed session: [puppy/kitten appearance and audit](docs/session-2026-11-11-young-appearance.md), YOUNG-001/002/003 on4c4d3df. Three full replays and final audit pass;606 research PNGs,606 numerical age records,204 cross-version pixel matches,21 unchanged originals. Local HTTP restarted/rechecked in session82886. Fifteen-minute continuation complete;next work needs a new requested duration.

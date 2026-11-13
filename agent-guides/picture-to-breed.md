@@ -1,6 +1,6 @@
 # Create a breed from a picture
 
-This is a first-trial authoring workflow, assembled from existing research on 2026-11-13. It has not yet been tested end to end by an independent agent. Most editing evidence concerns Petz 4 Scottie/Siamese; other breeds, versions and saved pets require checking the linked scope. A successful preview is renderer-observed, not game-validated.
+This authoring workflow incorporates the [Mastiff trial review](../docs/mastiff-authoring-trial-review.md) and [existing-anatomy research](../experiments/anatomy-002.md). A clean independent end-to-end trial remains unperformed. Most editing evidence concerns Petz 4 Scottie/Siamese; other breeds, versions and saved pets require checking the linked scope. A successful preview is renderer-observed, not game-validated.
 
 ## Start with a usable task
 
@@ -9,6 +9,12 @@ Read the project's AGENTS.md, then fill in the [task brief](task-brief.md). Use 
 You need the reference image, an authorized baseline breed and dependencies, a renderer, and an editing method that can write the requested output format. Documentation alone does not provide the private game assets or a general-purpose breed-file writer. If any required input is missing, record exactly what is missing; continue image analysis and planning where possible, but do not invent an executable result.
 
 Keep inputs, working copies, renders and notes under `/workspace/scratch/authoring/<task-id>/`. Make separate inputs, working, previews and evidence subfolders. Never edit originals or commit proprietary files, extracted stock LNZ or raw renders. Follow the project's status, handoff and commit requirements for documentation/code units.
+
+## Preserve and reshape existing anatomy
+
+Reuse existing ears, tails, mouth/tongue details and their attachments. Do not hide, delete, park, suppress through zero effective size or recreate an existing ear or tail to change its appearance. Do not blanket-omit stock added balls. Use the researched [existing ear/tail recipes](../visual-editing/existing-ears-and-tail.md); adding genuinely new ornaments is a separate operation. Preserve original IDs, attachment parents, connector topology, required texture references and variation structure.
+
+Authoring agents should apply the shared recipes and compare their design candidates, not rediscover fundamental field behavior on every task. If the requested anatomy cannot yet be achieved with documented controls, retain it and record the precise missing recipe for central research. An undocumented shape is an unmet requirement, not permission to substitute a replacement chain.
 
 ## 1. Turn the image into an edit plan
 
@@ -56,7 +62,7 @@ For each edit:
 4. Render baseline/checkpoint and candidate with identical controls. Inspect the actual images at native resolution and optionally nearest-neighbor enlargement. Compare front/side; add other poses before accepting a coherent structural change.
 5. Accept, revise or revert. Record why and checkpoint accepted outputs. Numerical changes or differing hashes alone do not establish visual improvement.
 
-For example, a broad-headed reference suggests trying the [head controls](../visual-editing/head-ball.md), then inspecting eye spacing, muzzle, ears and attachments in front/side views. It does not justify moving only the master head ball or using a universal enlargement amount. A new ear or tail assembled from multiple balls is a design hypothesis beyond the simple attachment tests; begin with small visible controls and test its connections and pose response.
+For example, a broad-headed reference suggests trying the [head controls](../visual-editing/head-ball.md), then inspecting eye spacing, muzzle, ears and attachments in front/side views. It does not justify moving only the master head ball or using a universal enlargement amount. For ear or tail changes, reshape the existing native nodes and attached details using the [researched recipes](../visual-editing/existing-ears-and-tail.md). Existing attachment parents and native joint structure must remain; a connected replacement silhouette does not preserve those relationships.
 
 Select coat/eye palette values by rendering candidate swatches on the actual host and lighting/texture setup. There is no complete validated palette-to-color guide here. Texture, shading and color profiles affect appearance; do not infer a palette index directly from a photograph's RGB value.
 
@@ -66,11 +72,11 @@ If an edit is invisible, inspect diagnostics, effective sections, selected varia
 
 If comparisons drift, start fresh requests with identical controls and inspect [texture state](../format-reference/texture-state.md) and [connector randomness](../format-reference/connector-state.md). Fresh stills do not prove retained animation behavior. If the reference is a native game capture, use [native comparison controls](../docs/native-comparison-controls.md) before attributing color or scale differences to the breed.
 
-Timebox an uncertain control within the agreed trial budget. Log a minimal reproducer and either use a supported approximation or mark the feature unresolved. Do not silently expand the task into renderer repair or exhaustive research. Any renderer fix requires its own applicable checkout instructions, reproducer and regression checks.
+Use the existing control reference before investigating uncertainty. Repeating established mechanics is not part of routine authoring. If a needed anatomy recipe is missing, record the baseline, target feature, relevant effective rows and specific unanswered question for shared research; retain the anatomy and mark that feature unresolved. A supported approximation must also preserve the existing anatomy. Do not silently expand the task into renderer repair or exhaustive research. Any renderer fix requires its own applicable checkout instructions, reproducer and regression checks.
 
 ## 6. Review and deliver
 
-Review the final result against the image and the task's priorities. Use the [delivery checklist and trial report](trial-report.md). Include front/side standing, sitting/lying and feature-revealing views where supported. Look for detached features, clipping, gaps, connector widths, unintended missing parts and markings crossing unsuitable surfaces.
+Review the final result against the image and the task's priorities. Use the [delivery checklist and trial report](trial-report.md). Include front/side standing, sitting/lying and feature-revealing views where supported. Look for detached features, clipping, gaps, connector widths, unintended missing parts and markings crossing unsuitable surfaces. Compare ball counts/order, omissions, attachment parents, Linez endpoint pairs, texture references and variations against the base. Reject hidden/recreated ears or tails and blanket stock-detail omissions.
 
 A single fixed seed/age is a prototype scope. If the requested breed includes variation, growth or native installation, validate those separately where tools permit, or list them as untested. Do not claim that a rendered LNZ prototype is a packaged installable breed. Give the receiving user the editable artifact's private location, dependencies, settings, known mismatches and next steps.
 

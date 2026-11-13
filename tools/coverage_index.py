@@ -7,6 +7,7 @@ names={k for r in rows for field in ('breed_sections','master_sections') for k i
 names.add('Draw Linez Before Ballz')
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
+ 'Ear Extension':'Petz 4 blank Labrador adult/young controls: [ANATOMY-002](../experiments/anatomy-002.md), [existing ear/tail recipes](../visual-editing/existing-ears-and-tail.md); native motion and broader applicability pending',
  'Head Shot':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',
  'Little one':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',
  'Fur Markings':'Source-reported genetics/breeding control rather than drawing an existing pet: [change notice](../RENDERER_CHANGES.md)',

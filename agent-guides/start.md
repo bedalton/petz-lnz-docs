@@ -1,6 +1,6 @@
 # Agent entry point
 
-Read this page first for editing tasks; read STATUS.md and HANDOFF.md when continuing research. For a picture-to-breed task, follow the [authoring workflow](picture-to-breed.md), fill in the [task brief](task-brief.md), consult the [feature-to-control map](feature-to-control.md), and complete the [delivery checklist and trial report](trial-report.md). This first-trial workflow has not yet been independently validated end to end; the reference corpus is incomplete.
+Read this page first for editing tasks; read STATUS.md and HANDOFF.md when continuing research. For a picture-to-breed task, follow the [authoring workflow](picture-to-breed.md), fill in the [task brief](task-brief.md), consult the [feature-to-control map](feature-to-control.md), and complete the [delivery checklist and trial report](trial-report.md). The [Mastiff review](../docs/mastiff-authoring-trial-review.md) informs this workflow; a clean independent end-to-end trial remains unperformed. Reuse existing anatomy: do not hide/recreate ears or tails or blanket-hide stock attachments. Use shared research recipes rather than rediscovering their mechanics during each authoring task.
 
 Read the [renderer update review](../experiments/update-001.md) before using historical pixels. Current puppy/kitten loading and age defaults on4c4d3df are documented in the [young appearance reference](../format-reference/young-appearance.md). Read the [49c7f62 young replay](../docs/session-2026-11-12-young-upgrade.md) for current pixels and the corrected Fuzzkin line requirement. Textured paint/Outline support has changed; clothing remains unsupported. Keep renderer observations separate from original-game evidence.
 
@@ -13,7 +13,8 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 | Enlarge or reshape a head | [Head control guide](../visual-editing/head-ball.md), then [field details](../format-reference/head-enlargement.md) |
 | Change iris/pupil colors | [Eye color guide](../visual-editing/eye-colors.md) |
 | Move a ball | [Move](../format-reference/move.md); distinguish local rotated offsets from native anchoring claims |
-| Add a body-attached detail | [Attachment guide](../visual-editing/attached-details.md) and [row fields](../format-reference/add-ball.md) |
+| Reshape existing ears or tail | [Existing-anatomy recipes](../visual-editing/existing-ears-and-tail.md); native nodes and existing attached surfaces, no replacement chain |
+| Add a genuinely new body-attached ornament | [Attachment guide](../visual-editing/attached-details.md) and [row fields](../format-reference/add-ball.md) |
 | Connect details or change connector width/order/style | [Linez](../format-reference/linez.md) |
 | A connected detail responds differently to head movement | [Body areas](../format-reference/body-areas.md) |
 | An added detail is dormant despite visible=true | [Add groups](../format-reference/add-groups.md) |
@@ -36,7 +37,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 2. Inspect the effective breed/master sections and preserve required rows. Never infer IDs from the other species.
 3. Write a hypothesis and exact minimal edit. Fix seed, pose, camera, age and fatness. Keep a baseline hash and renderer revision.
 4. Render aligned baseline/edited comparisons locally; inspect numerical geometry if the image hides a change. Review diagnostics and at least front/side views before interpreting shape.
-5. Test other poses, related feature balls and attached details before treating the edit as a coherent design.
+5. Check preserved anatomy and attachments, then review other poses and related feature balls before accepting the design. Missing ear/tail recipes belong in shared research; retain the original feature while unresolved.
 6. Record evidence and limits. Stop a visual claim at the level actually tested; successful previews do not establish native game fidelity.
 
-For new research, use the experiment manifests and scripts as reproducibility examples, not general-purpose breed-editing utilities. Their fixed-span replacements resolve one seed and remove alternative variation branches. Preserve private artifacts before rerunning scripts, which currently overwrite their output folders.
+For new research, use the experiment manifests and scripts as reproducibility examples, not general-purpose breed-editing utilities. Many older fixed-span replacements resolve one seed and remove alternative variation branches; the ANATOMY-002 writer instead retains raw branch directives. Check each script's stated scope. Preserve private artifacts before rerunning scripts, which currently overwrite their output folders.

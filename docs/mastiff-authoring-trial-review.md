@@ -2,6 +2,8 @@
 
 Date: 2026-11-13. Scope: frozen Petz 4 English Mastiff against its exact blank Labrador base. No breed, authoring tool, prior evidence or guide was edited. No native-game test was performed.
 
+Current authoring policy now requires preserving and reshaping existing ears/tails: [researched recipes](../visual-editing/existing-ears-and-tail.md). The historical finding below that appended nodes have identifiable purposes does not authorize replacement anatomy.
+
 ## Verdict
 
 The extra balls have identifiable design purposes; their presence alone is not a defect. The implementation preserves numbering while replacing substantial visible anatomy with appended geometry. It is a reproducible static-preview prototype with specific cleanup and movement questions, rather than a demonstrated game-ready breed.

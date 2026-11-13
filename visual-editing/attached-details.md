@@ -1,5 +1,7 @@
 # Add a detail that follows a body part
 
+Use this page for genuinely new ornaments or diagnostic markers. For existing ears, tails and their surfaces, use [reshape existing anatomy](existing-ears-and-tail.md). Do not use an added chain to replace hidden native anatomy.
+
 Initial scope: Petz 4 Scottie/Siamese, a synthetic head marker and one base-to-marker connector. Evidence: [ADD-001](../experiments/add-001.md). [LINE-001](../experiments/line-001.md) adds connector/endpoint-omission tests. This does not yet cover ears made from multiple balls/lines or inherited second-generation behavior.
 
 1. Inspect the effective Add Ball section and count its parsed rows. Compute the appended ID from base-ball count plus existing added-ball count; do not assume another file's ID.
@@ -11,7 +13,7 @@ Initial scope: Petz 4 Scottie/Siamese, a synthetic head marker and one base-to-m
 7. Check add group and parked state. [MORPH-001](../experiments/morph-001.md) distinguishes dormant geometry from omission; visible=true alone is insufficient.
 8. Check sitting/lying, depth overlap, connections and omissions before accepting the detail. Integer rounding means parent and attachment pixel deltas need not match exactly.
 
-Hide an experimental marker by adding its ID to Omissions rather than removing its row and shifting later IDs. [LINE-001](../experiments/line-001.md) also tests a connected marker: omitting either endpoint removes the connector. Omitting the parent head leaves the marker visible; hide each desired component explicitly. Read the [Linez field reference](../format-reference/linez.md) before adding connections.
+An unwanted newly added diagnostic marker can be omitted rather than shifting IDs by deleting its row; do not apply this cleanup rule to existing ears/tails or stock mouth details. [LINE-001](../experiments/line-001.md) also tests a connected marker: omitting either endpoint removes the connector. Omitting the parent head leaves the marker visible; hide each desired component explicitly. Read the [Linez field reference](../format-reference/linez.md) before adding connections.
 
 
 ## Connector controls tested so far

@@ -1,5 +1,7 @@
 # Handoff
 
+- 2026-11-13 shared anatomy research complete: [ANATOMY-002](experiments/anatomy-002.md), [existing ear/tail recipes](visual-editing/existing-ears-and-tail.md). Six nonreplacement controls, 96 local MCP renders, 48 geometry records, 512 branch-preserving parser comparisons; original anatomy/dependencies retained. Agent workflow now requires reuse and forbids hidden/recreated ears/tails. Native motion, full folds/taper and broader applicability remain open; Mastiff unchanged.
+
 - 2026-11-13 independent [Mastiff trial review](docs/mastiff-authoring-trial-review.md) complete: exact binary comparison, 34 local MCP PNG replays, 441 unchanged task files. Twenty purposeful appended balls; broad stock-detail omissions, eleven hidden invalid texture references and attachment/movement questions flagged. Breed and guides unchanged; native behavior untested.
 
 - 2026-11-13 wiki resource triage complete: [assessment](sources/hexing-resources-review.md), [163-entry external-link inventory](sources/hexing-resources-inventory.json). Six readable linked tutorials sampled; priorities and Linez restriction disagreement recorded. Most links remain unreviewed; no new renderer/game tests or canonical rule changes.

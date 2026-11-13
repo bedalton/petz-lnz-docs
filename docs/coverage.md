@@ -20,7 +20,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samp
 | Default Linez Thickness | 25/100, empty fallback and explicit-row precedence: [LINE-004](../experiments/line-004.md) |
 | Default Scales | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Draw Linez Before Ballz | Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md) |
-| Ear Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
+| Ear Extension | Petz 4 blank Labrador adult/young 70/130 controls, native ear/tail preservation: [ANATOMY-002](../experiments/anatomy-002.md), [authoring recipes](../visual-editing/existing-ears-and-tail.md). Native motion, other species/breeds/versions and full folded-ear/taper recipes remain open |
 | Eyes | Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending |
 | Face Extension | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Feet Enlargement | Inventoried or implementation lead only; dedicated reference/experiment pending |

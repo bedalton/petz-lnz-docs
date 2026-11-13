@@ -4,7 +4,7 @@ Copy this template into the task's private evidence folder. Fill unknowns explic
 
 ## Copyable agent assignment
 
-> Use agent-guides/picture-to-breed.md to create a breed interpretation of the supplied image, within the scope below. Preserve originals and work on private copies. Inspect the image and baseline, make and review edits, and deliver the editable artifact with reproducible preview controls. Record friction using agent-guides/trial-report.md, including places you needed information outside the guide. Do not describe an unrendered edit or unpackaged prototype as a finished installable breed.
+> Use agent-guides/picture-to-breed.md to create a breed interpretation of the supplied image, within the scope below. Preserve originals and work on private copies. Inspect the image and baseline, make and review edits, and deliver the editable artifact with reproducible preview controls. Reshape existing anatomy using visual-editing/existing-ears-and-tail.md; do not hide/recreate ears or tails or blanket-omit stock details. Reuse shared control knowledge and report missing recipes for central research. Record friction using agent-guides/trial-report.md, including places you needed information outside the guide. Do not describe an unrendered edit or unpackaged prototype as a finished installable breed.
 
 ## Inputs and intent
 
@@ -14,6 +14,7 @@ Copy this template into the task's private evidence folder. Fill unknowns explic
 - Intended style (faithful proportions, Petz stylization, or other):
 - Three to five defining visible features, ranked:
 - Hidden features that may be inferred; assumptions needing clarification:
+- Required anatomy preservation: existing ear/tail nodes, attachment parents, stock mouth/tongue details, original visibility and variation structure.
 - Baseline breed path and why chosen (or permission to choose among supplied assets):
 - Authorized game/master/texture resources and configured asset roots:
 - Adult, young or saved target; saved input path if applicable:

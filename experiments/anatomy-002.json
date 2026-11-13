@@ -1,0 +1,2011 @@
+{
+  "experiment": "ANATOMY-002",
+  "date": "2026-11-13",
+  "scope": "Petz 4 exact blank Labrador, adult/forced young; renderer-observed/code-supported, not game-validated",
+  "source_sha256": "9fb4c5a84a417ae53783e7409d88ac8e0d7c50a4b95670819534a993a36699c0",
+  "private_report": "scratch/research/anatomy-002/report.json",
+  "report_sha256": "6829ea41b02e5115cdfb1f0573270a8212306afcd1e4988efea7437ec20c8738",
+  "script": "tools/native_anatomy_probe.py",
+  "script_sha256": "973dfa3b28cb8aa6be3c5f9fa54cb9d444de5deed05956e94f63543d76756832",
+  "renderer_revision": "49c7f62eab51b61b9f68801ba7571178670c433e",
+  "runtime": {
+    "python": "3.12.16 (main, Oct 26 2026, 14:06:44) [Clang 23.1.3 ]",
+    "backend": "local stdio MCP",
+    "packages": {
+      "petz-renderer-mcp": "0.1.0",
+      "fastmcp": "4.1.6",
+      "Pillow": "13.0.0"
+    },
+    "renderer_sources": {
+      "local.py": "1447fabd7cfdf90afa8a816b8eb007140ab2da414d9489c7fb8704afecf7cfd7",
+      "__init__.py": "700a31b4702fff569d37a9b8d0002bbdd2fa3e047e0d48ba40130861cdf6b9f7",
+      "cli.py": "9de760487105395b479aa8bcbd9f5e6139376bc5d64d9dc8279d5fc3de90e81c",
+      "versions.py": "97ca548b467b75e677676847b22185fbc7a193a61183d7130f5f8301a99bd197",
+      "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "inventory.py": "4f4abf602e2f81a6c9d196494e82b6dcece3b9c19747ddfdecf1a0e704762658",
+      "formats/pet.py": "c42ed580cb968146554f320fad536f8c386b7035aa16166730a5a0cd6ef7eb2f",
+      "formats/__init__.py": "2e1806c2149b766013e8ebde7d8ad5e120bd87a85ee6c27e5225f6bfe9fe06b7",
+      "formats/animation.py": "654a03b778ebafcf025d939823ca60b7f1dd46dc0113b03b03743ae6dd9fe96a",
+      "formats/bmp.py": "cacfd5c0c36efacd4c654502b61f3eb0972414856f95259f6d9cd433aecae494",
+      "formats/resolver.py": "a295bd3e01630d1bf3d3cbd91c0752cae22fe67bb7cabcd0518f119adde549f6",
+      "formats/pe.py": "bf712b056ee6c3f3152a0449fe551686a6297c66bec9585782ad66f2e64a0a71",
+      "appearance/preview.py": "7657b44213bb88ed6cdc6cf8da65c556acf7be7a23521b5fac8819cd0c508c95",
+      "appearance/age.py": "138879d92f6b71cf358fb852dd32c9c54933b3889024bc31e5e529d5717687ca",
+      "appearance/lnz.py": "34c6741f6af7b9bd9314b9e908aae9f2b38b2104a1b480975b8ed5706a35cc24",
+      "appearance/evaluation.py": "7583baa605896b09d9a7c3afc7c252e400c5109f4cc305b377eaf25f1c23face",
+      "appearance/__init__.py": "2fe4beebcfa164916a4d8ca20be2875c01d879dabdf4550e31ffaec6d09c8ae7",
+      "appearance/core.py": "f87bcc0e2926448241e2954f564c1ff79fc85de0d59d5dc9ad788d9ebf7f324d",
+      "appearance/coverage.py": "5b0343c308e110b02f6462b4f4a0b5b78be865a6f0eea7e5f259e2c3e515b918",
+      "appearance/breed_variations.py": "767f97365db459fc5ad6ec9aa3da4a26ffc264404ad37cfad6a57050630ba5f6",
+      "appearance/fatness.py": "a80b713a3685c73a924dd74b56a7d5fae3814b0984e4144323121fff9542af49",
+      "appearance/layers.py": "e9a208adbd45eebbcb6603d539a890b361240e36a2896d124b4f323a527367ff",
+      "appearance/variations.py": "eb51a879311366a272b98f98c47fef74da134a880664ad8aa48d436bbf4f8582",
+      "deployment/__init__.py": "259560c5f24f2bee53397c117501c198c37b2290c17c010c303b892b63d621bc",
+      "rendering/connectors.py": "cfc9f2cfdb92b2a6c96ed11bd35a5ac630bd26bd1ebf42c4617f8c1f9382f934",
+      "rendering/circles.py": "a32297f9eda6018dc9215a41a3e840d170efbb03cc0362c800a1c2ad169d30bc",
+      "rendering/presets.py": "228dfa3c8d3077677ff98989e62b993065a098038ebd1840a9508c15e6bddb5c",
+      "rendering/paint.py": "c069747cfd044515c091682b0ff8fb894c5bee2baa1408b6acd3724104a7605f",
+      "rendering/__init__.py": "86503d790d9151b035e9bae796e061caee811ccaf4a7e5f2d374596d58ebacfe",
+      "rendering/positions.py": "aecd35e492e30c8b0eb7ca5f6e7a5d179b2968f8a4e5bbf0942b4763d99d09f0",
+      "rendering/lines.py": "0c3d48664176a8f45b506abfdf139c7f25d46375c2a9d82fb6925436ce435fea",
+      "rendering/attachment.py": "d7ffbce98febf660c4c72979f6842788b6f726d058a63c369d1b8e5c298e8868",
+      "rendering/assembly.py": "4b4000bdc785b3a10a910214ca1ad64bb5b61a9b68e946d232232fc29c04edc7",
+      "rendering/assets.py": "f0fd6bd4a7facb3adb8bac708b4970d614a77a39045b1546ee009f1c975f631f",
+      "rendering/framebuffer.py": "1e8e817d5d09e7be052d7c2ff78c990b7b735161278723315104a2081a72cc7f",
+      "rendering/pose.py": "e176793c6ce93f1369a5eb58f0cce4eec7c99637278a7f33222670c089aaf367",
+      "rendering/morphs.py": "80e8a82138cdc5328bf876a92c446e87051ad466d6f9d218c8e5dba798ab7a05",
+      "rendering/texture.py": "15a5087d35fdf0f7b65ed237a87434d142828ad55f867cd73ba327f41efbc884",
+      "rendering/ordering.py": "dde1844eb7326c0f4cb4d5b833bfaa9bac5796a8c7bf5de746a678c8da474009",
+      "rendering/shading.py": "059b65aaa4491535bcc311aaee92a8b5d9a5059959e4f50fcec99c4c5dba5e82",
+      "rendering/composition.py": "84255dad735bb3b6990ebb2f4e3fe8d47f8900455c49dcdc8ffe8deb54586a73",
+      "rendering/blocks.py": "2787b7941ff518b5905a0cfb5fdce7a5d7e09ea7a16329b835ecc3ea22b7fe3e",
+      "rendering/texture_rotation.py": "33aba34985bbceb639c9b878bc4d140814a7a9bf85b77f20e7a0c76e28cbddc5",
+      "rendering/raster.py": "17debe28eb96035286cd269e2bebb88b5d90b64c9061f6881d68209452dfa1ba",
+      "rendering/rotation.py": "d7e625ddb392ea182dc74b125f309392cc48b8eb941f1f202956c4aa3d10b06a",
+      "rendering/eyes.py": "bd63d4f6d9342ed27af37aae2d852587da6ba089e5404ee70cacda820ff04b26",
+      "rendering/preparation.py": "c2bdaaa78038d7a5353becb0740a7d36ee5a200915fa0d2fe834275848a29840",
+      "rendering/output.py": "92e8d010df93dd38b307e485f0664a0a0939178ac69184e5deaa74cde3594fc9",
+      "rendering/sizing.py": "106ac72dc705827f4976679a0d97dc8e0c7ea686502f09d64323fdccd38e1a7d",
+      "service/worker.py": "f863e432c3c7eb4ee3aca49a3b51b4c51dd8948ac1028d5815bdc6ed198a563f",
+      "service/tool_inputs.py": "96e6619279b3e589413842e9b4364b0843936589e154e7603b168b56ae2c3167",
+      "service/sheets.py": "b9b8a1934d03f08ed4debd7ff5eae4c51102c148a5a4cd1474d2ac7e7a3ee251",
+      "service/deployment.py": "ae0dabd69b387df39ea75feb10b7580d71f3ac7a2b77981e4576545568f0f61b",
+      "service/bundles.py": "95228bcba62f13d178fec6bc1e34cefd8fdf33e22a472278df38f7bfa3bf833a",
+      "service/http_limits.py": "deaa18616e0272b55d555555b3a43b78788440083edcf927417748410daa6707",
+      "service/__init__.py": "310cbe4d12f05085adc08c153f28a2ab984bc0fd086323df01745a60e22d52f0",
+      "service/downloads.py": "714181e47306a85c8043b4b3ac3d2d4f23cd39cdcdf7edf2574dfe0010abff34",
+      "service/inspection.py": "367dd78650b3ca038940ff81e69df3d2d35d4261bfd706494e053d139f8b6dc1",
+      "service/local_mcp.py": "a5f8497284b9986e24ad15cfc2fc39bf3b9e5fb7459defa6c9fa6b7eecfa4350",
+      "service/application.py": "15f20de567549365cf937142aee2a5bb309bb8d29c991da232a64a126b5ab8a3",
+      "service/mcp.py": "1a68079c3380ba38c98602ffd63b733d95d3b153e4cbf857abdffacf9cae4fb8",
+      "service/provisioning.py": "44d619049d33a5b359ae99916e188ccf11c420413200afee6c22b2af6fa54649"
+    }
+  },
+  "input_hashes": {
+    "clean_dogs/petz4/Labrador.dog": "9fb4c5a84a417ae53783e7409d88ac8e0d7c50a4b95670819534a993a36699c0",
+    "games/petz4/Petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "variant_hashes": {
+    "source": "9fb4c5a84a417ae53783e7409d88ac8e0d7c50a4b95670819534a993a36699c0",
+    "roundtrip": "76512bdaba0da6f165ff6a40ca32fc680be4e8ccf4923498b57bdcdeb9b4a64a",
+    "ear70": "6d930b4e9858dc1bf95ae0731542c4f7646ff5656a54a2d58be89ee91c6ecd7d",
+    "ear130": "c0904f4266e61575a08f6c6dfa9f177dc48f55d8bca9d652957f4975f6027e4d",
+    "ear_fold": "3b0bb77ef52b345a671ef56de99732cee52ce5e4c44955ffec54a8fd7be79f7e",
+    "ear_width": "f27f8a8f906a0223c87a18ccb687b960ae8dae617008cf400f104a69474a8b06",
+    "tail_short": "e7c6f8f2c2aafbd152aedeea2b1c4b38bc7a4f57f08b81173890474df94dce0c",
+    "tail_lower": "9d884255f2a3e4beae4ee767e70075b64b971fe93f011499213f9b022daf47d5"
+  },
+  "counts": {
+    "renders": 96,
+    "geometry_records": 48,
+    "branch_parse_equalities": 512,
+    "reviewed_sheets": 8,
+    "reviewed_cells": 64
+  },
+  "geometry_changed_ids": [
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "standing",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "sitting",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "adult",
+      "pose": "lying",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "standing",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "sitting",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "source",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "roundtrip",
+      "changed_geometry_ids": []
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "ear70",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "ear130",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "ear_fold",
+      "changed_geometry_ids": [
+        5,
+        6,
+        29,
+        30,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "ear_width",
+      "changed_geometry_ids": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "tail_short",
+      "changed_geometry_ids": [
+        59,
+        60,
+        94
+      ]
+    },
+    {
+      "look": "puppy",
+      "pose": "lying",
+      "variant": "tail_lower",
+      "changed_geometry_ids": [
+        57,
+        58,
+        59,
+        60,
+        94
+      ]
+    }
+  ],
+  "pixel_changes": [
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "dde383a3b75ae87455297db2ad00af04b9ffdfcbd92b2199e3914a8679815109",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "dde383a3b75ae87455297db2ad00af04b9ffdfcbd92b2199e3914a8679815109",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "747dd6687b77db43af1fdf583481864653b107c331c8c517d7fae4d7c4e5b095",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "0fd9b1df17926ef63acb955fa4c66a1774cf75e4714ab015cba5db958ba68141",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8dccc943e6c5c251aea0288612e18a84d3420b6a1cba4eb36b22ff37c86b7919",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "d6996e561d41d6775517de792f0c5ae8a03b76cc02448512a01c13bad78ff46a",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f4eee31728441c0f7aac84a8b219433d6f2492fe238edf72513099a8c568551b",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "222836f2f32dee51addb251b7ecbd7b0828476a5972bb4cc9b2718356a401577",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "c21d7ae7f83f05292e2eac4c7fff9443bec4950db77e879db0091efbb6324d4d",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "c21d7ae7f83f05292e2eac4c7fff9443bec4950db77e879db0091efbb6324d4d",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f54fcafe0237d15014a90da502c3b933e2fc3046b5f70669205253f4603d81cf",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "aea59c9b736df2263cf3c75a37a3d4791a800238889d9f2892269b72f3b81c30",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "c601f04ec6b5f6bbb282e4eee3c5bd0a82339f81e6cec6984791f9996d891786",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e24fc4be953b3fbebe3a5f1adacf743274a25962f50853f2ad7a71f4c79750a3",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "1088e954a293a061366c27c044b5c584e735a27b840a9baae52b96fed29819cb",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f8f78122f1d68d0c9ef63d5e37e3bc28f3d7c7763a7bc8c98ad67d29904a8abc",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "543c1a4c2c7464e8df5987f4b4ff9756ddfad888ecd775cb168bceb03705905a",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "543c1a4c2c7464e8df5987f4b4ff9756ddfad888ecd775cb168bceb03705905a",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "cc6b3fe08af96e2a1ee685ea720175bcfc73a5436eeae7a77e706190eb0762af",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "5b8817824263e3680df835e4a595f678343f7871857aece58936c1a0581efed4",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "24c5efb70eed3abf743bc9f2dd2b9636f9111c18affaba6b6076a2b0fa461096",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "296b1421c9651f7810c7aa89664617036c02435461dd2dd9146e296904c2f920",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "543c1a4c2c7464e8df5987f4b4ff9756ddfad888ecd775cb168bceb03705905a",
+      "differs_from_source": false
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "efb27c9a7f9fb4c1ee8520575aaa423360eaf749c968da45ee5c63870d92c230",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "b8bb74ca8901a0636a2c77c22a0288ac18ddcdc5df85c45b15e662236b0778b0",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "b8bb74ca8901a0636a2c77c22a0288ac18ddcdc5df85c45b15e662236b0778b0",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "af63a1d9ac31c675b54c6499d8182208f672998408eb47857555e4b1090f0e2b",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "6d60eb7602912d8974373db82ad63d8f6108a218e8e6b636e1664ae06a6b4a52",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "38000cebe3072bb0521ff0762781ae8c307b397bfdec3d7c89b6ac72c78fc418",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "7e016562c2aeebd1b47a6bbc51aae968f2d48f7c17a6cdac377a1e3da3a8fb8c",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "2aa01f3cddd4e36ba22a7c7e60caa8ab046c60405ced0bcc2c21bb16dd67d5b6",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e89027f9e7b25515f6b9a9e07e4d77b1be0ce864e980b42d6d662e2c43243536",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "66727b6f76f8437059df16028943dc554a17bde62444c97c01c8f5731e9a2882",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "66727b6f76f8437059df16028943dc554a17bde62444c97c01c8f5731e9a2882",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "10a76665d1a669ed46bfb58a6ccd05000a0336a760c99ab24f4bb948509aae30",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "aa29a9a3aa3106d4c475b0d9549e0871ecd179eefd4366866eeb200064a0b407",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "95fe239e9dc5e586fdb351754c75c58557eca22d11f14bfdb6d0247838c199ad",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "d7c7028b25d94d07aee3cb5c0e4b4d5998e0e2641f7dafa9361fecb6feb52fa0",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "202d62af2f95a9e3a6a6f9df6fdb6048003dc3da2091fcf6cc1843c4e983a336",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "56d660b246a6d13832641f966de6991aa300c1d164ad9b24bab5d3f5d469e17c",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "634afce7eb8b273fa760ad6808f60628d2789b838cb42bdd0d67a52c37e673e6",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "634afce7eb8b273fa760ad6808f60628d2789b838cb42bdd0d67a52c37e673e6",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e99922b2caf3b7715ce0062088acd718e6e163b6db3b3df342823d136e2cb568",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "1170332d1402e451dce0ac444cc898cf75d17f20e605b01a1970d616d4a68a79",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8eb3f009839bb9b7dda8a0e6e0f449cfc34456afe37e4de543b26efccef5f7c3",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "13809cfd1c78923ac143f63a8999766a4f84d5d5d0c5b12c7d99a59129967ba7",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "c44bde7e71245ab2f92f22d62b621ab4b31624106838274f960f10c54b207c42",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "adult",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 100,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e0ec6803e3c71aeb87fb8d2cfb23c9782fad3189dbba8ba78b00ddec0985990f",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8aaafcae763849e845357b4e4b41f7b128f02358c8968944af8f26bfb0405deb",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8aaafcae763849e845357b4e4b41f7b128f02358c8968944af8f26bfb0405deb",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "3a15ccb44001fc9a2d546a9e63e36cfe96894592214c8ccd6c1629ea6fd6f324",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "b49fc2f8aa874e32c12cb43dc5fe1f3ab7e6cc78b27e9c26cf291fc3b29b7a64",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "14fb79967c6fee3a1c52968c0c6e03d7b02a219864335803683ee1b26cbf6d74",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f2f2339cd68f56059c06f1a15f590a96f73867008fc4a543f2eb5e0d1a59f7cb",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "588d0bc400814ca6853675e09d33bb17b625eeb60fb16834f0be40f95f41fe45",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "a75e0a2ded40bda3c0be482a5a1661fd5a13da3e3232d1be9bd6eab5bf175848",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "18241d4d3c20d48041e1c891d41ad3c9f4dafd22afb2269a1355fab77a603202",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "18241d4d3c20d48041e1c891d41ad3c9f4dafd22afb2269a1355fab77a603202",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "5cd8a23174e2f3d0db647ae5899dcc1898b81ee849043ceca7d87cad5942b999",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "841e6945175c1d2c71205326d6af4110cdc10de8320763872bc9aea25226aad5",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "92c8d71506d2a9408804f5c583176804e6671109857245ef02aaf49c5a2972e8",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "de2ced9c20e781cbd47df150b55d98c172bb8cc4570ae7ba1745fa68926b308e",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "22747ac86fd081f39fda1edd0d9d4115eaec6d129f785e7fe34653ba472381ae",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "standing",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "5cb2865849f961121d2b584f9fe142bca57d4f4c52e8b9e58aecd71eb623f92c",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "7aff1a563dc047a460cc1e80365f744e14b8d4277718295ceeefc4fe4172424b",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "7aff1a563dc047a460cc1e80365f744e14b8d4277718295ceeefc4fe4172424b",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f921c2a6bf3e82cbde0263a5699a95f12341abf09863701fb0fe52e33f936511",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "4f08bd2854d454429ffa72a7d38e3f5649dd4ab4365bd959456c8fce97d9d0cb",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "09cb1f8d69d9b539e02ff38a1b59d4fa735480b4b42f4b5c0c5d080f5215e4a6",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "585807995d9f95d5f45602566076d84ae84cf8148c61d7e7d1505fdb9b4c706e",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "19f820674b9b8f421e983e894a0ade6637d381e2a7b53412a2e7f6f209798659",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "ea386ca3fac425edaf94e45c04cfdb15ea6ff56ae5e390ea62f743f733da78d3",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e3fc3b6ce77461222294079257e866e190fcca191b24a4bbf0a09a57316bcdad",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e3fc3b6ce77461222294079257e866e190fcca191b24a4bbf0a09a57316bcdad",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "b039be90a779e0f5ab103c22aa326384f7df981b726374f2789a9c2e0c43bdd8",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "9bd3bac9deaf66c1954c8d0419d75a63ef48d339376ca23efe52197a2b950050",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "b18901bef110db4b0db57e33cf5e51cdd320a939bc57595bffa3aff56408d284",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "3cca0659120de367c3ef98b55eb1f8bda1c2d5a7ff26a9362b529ec0c91b8b6c",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "2a80b00fa7c95555b62e3ff9330998e99b177e8391574452d4a80e77c928480e",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "sitting",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "adca9700139664001c6a4f9870d0488840d3968e2d2e06dc1562c3df27515ee2",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "47ca27dacc87798a34e16ce2bd08e2ecbbdc9d555b07b8f0b614b094e26fac94",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "47ca27dacc87798a34e16ce2bd08e2ecbbdc9d555b07b8f0b614b094e26fac94",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "4fd23a9624749f7085b23d0fa25be18937ca92f0b37887c7c30abd6c1c027e61",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "be35ccd17a51c8751df21fe7713c6f25d3e3069b7a2d60c6a39e28e8af7d7130",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "f054508b44e8694ee6984fac50071e9803bbcfd19961b1e8cee35ae654054320",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "7c9a2e15f5161f000d3649fc73b2fb8d59e51b3fef5cf947a6b2e407546104b3",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "0f6c3e985766f7bd1ea01649d84233092e5719e63d67216d641d7d22ea7b53cd",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 0,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8fc9d1aca0609a1559edf8c75324cfdf4f2ef83d4095151b6bb8a023c24b1235",
+      "differs_from_source": true
+    },
+    {
+      "variant": "source",
+      "args": {
+        "path": "source.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8ecbb8e5b4633fd95fc4f13b1086f76781f732468ea3dc4f1646c39215c0145e",
+      "differs_from_source": false
+    },
+    {
+      "variant": "roundtrip",
+      "args": {
+        "path": "roundtrip.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "8ecbb8e5b4633fd95fc4f13b1086f76781f732468ea3dc4f1646c39215c0145e",
+      "differs_from_source": false
+    },
+    {
+      "variant": "ear70",
+      "args": {
+        "path": "ear70.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "34cc9b676cb8c0a52f31a164b13e46d100738eb5894b93c669dd6dbbeb1b2bb2",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear130",
+      "args": {
+        "path": "ear130.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "75c492b79e9a9f757474979d9e5df4e82298c68b7ca2b3a62eaf8784e3da4e81",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_fold",
+      "args": {
+        "path": "ear_fold.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "0cd918ceb0645af2acdcb8e4884f9cfdb0ba6b5944e7416e25f77367cf57989d",
+      "differs_from_source": true
+    },
+    {
+      "variant": "ear_width",
+      "args": {
+        "path": "ear_width.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "64bd1c0a2b7199797af8c545bb4bad087e86de811e17be230d67b7684d2630d7",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_short",
+      "args": {
+        "path": "tail_short.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "e2338750549466cb683043513b678997fc0bcdd21adb9f4a453482f8588d98fe",
+      "differs_from_source": true
+    },
+    {
+      "variant": "tail_lower",
+      "args": {
+        "path": "tail_lower.dog",
+        "look": "puppy",
+        "pose": "lying",
+        "yaw_degrees": 90,
+        "age": 12,
+        "seed": 41,
+        "fatness": 50
+      },
+      "sha256": "0ce8b0e36bcc372f9de5729d3d0e7433470baefd60f299bb47db7380d5722b3a",
+      "differs_from_source": true
+    }
+  ],
+  "sheets": [
+    {
+      "file": "sheet-adult-standing-0.png",
+      "sha256": "af269fd2d26160fcae010cc76931068b7cda7c0a3c0abcfb61417ef6895e8d83"
+    },
+    {
+      "file": "sheet-adult-standing-90.png",
+      "sha256": "4356163d70a8ab5f020642c968a3dc6459bc660c6261d19234f16503f7b03690"
+    },
+    {
+      "file": "sheet-adult-sitting-90.png",
+      "sha256": "839d2ee347dc8181b09436b982e01da250a4ef0add9ca8aa437174289657ce8a"
+    },
+    {
+      "file": "sheet-adult-lying-90.png",
+      "sha256": "4d0a81e17bd8aa7d5a8afb71eb5124498c47bc3b0edf244dfd30df2085d901fa"
+    },
+    {
+      "file": "sheet-puppy-standing-0.png",
+      "sha256": "2ba03d951353773b737d5481724be93eec65a950dc1e7f2dfc2a4cfe670821c6"
+    },
+    {
+      "file": "sheet-puppy-standing-90.png",
+      "sha256": "94f0278c9ece4ef16363f66478b0cc093ac00cf980ea644183426fd2fa3d2c77"
+    },
+    {
+      "file": "sheet-puppy-sitting-90.png",
+      "sha256": "a7ec2d2c903433fd8860151d26ebe28847bd0d8d52143da424185cbb4e9ab6cb"
+    },
+    {
+      "file": "sheet-puppy-lying-90.png",
+      "sha256": "1f3c7a7e995bb6911265a2e2a98c640a21e45018f0b7dc702fab3e5834d1fa8e"
+    }
+  ]
+}

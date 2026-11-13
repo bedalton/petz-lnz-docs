@@ -12,7 +12,7 @@ Keep inputs, working copies, renders and notes under `/workspace/scratch/authori
 
 ## Preserve and reshape existing anatomy
 
-Reuse existing ears, tails, mouth/tongue details and their attachments. Do not hide, delete, park, suppress through zero effective size or recreate an existing ear or tail to change its appearance. Do not blanket-omit stock added balls. Use the researched [existing ear/tail recipes](../visual-editing/existing-ears-and-tail.md); adding genuinely new ornaments is a separate operation. Preserve original IDs, attachment parents, connector topology, required texture references and variation structure.
+Reuse all existing functional anatomy and attachments, explicitly including ears, tail, muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue. Do not hide, delete, park, suppress through zero effective size or recreate any of these parts to change its appearance. Do not blanket-omit stock added balls. Use the researched [existing ear/tail recipes](../visual-editing/existing-ears-and-tail.md) and the [mouth/muzzle preservation guide](../visual-editing/existing-mouth-and-muzzle.md); adding genuinely new ornaments is a separate operation. Preserve original IDs, attachment parents, connector topology, required texture references and variation structure.
 
 Authoring agents should apply the shared recipes and compare their design candidates, not rediscover fundamental field behavior on every task. If the requested anatomy cannot yet be achieved with documented controls, retain it and record the precise missing recipe for central research. An undocumented shape is an unmet requirement, not permission to substitute a replacement chain.
 
@@ -76,7 +76,7 @@ Use the existing control reference before investigating uncertainty. Repeating e
 
 ## 6. Review and deliver
 
-Review the final result against the image and the task's priorities. Use the [delivery checklist and trial report](trial-report.md). Include front/side standing, sitting/lying and feature-revealing views where supported. Look for detached features, clipping, gaps, connector widths, unintended missing parts and markings crossing unsuitable surfaces. Compare ball counts/order, omissions, attachment parents, Linez endpoint pairs, texture references and variations against the base. Reject hidden/recreated ears or tails and blanket stock-detail omissions.
+Review the final result against the image and the task's priorities. Use the [delivery checklist and trial report](trial-report.md). Include front/side standing, sitting/lying and feature-revealing views where supported. Look for detached features, clipping, gaps, connector widths, unintended missing parts and markings crossing unsuitable surfaces. Compare ball counts/order, omissions, attachment parents, Linez endpoint pairs, texture references and variations against the base. Reject hidden/recreated functional anatomy, explicitly including muzzle, jowls, lips, chin, jaw and tongue as well as ears/tail. Reject blanket stock-detail omissions. A closed-mouth still is insufficient evidence that mouth attachments are unnecessary.
 
 A single fixed seed/age is a prototype scope. If the requested breed includes variation, growth or native installation, validate those separately where tools permit, or list them as untested. Do not claim that a rendered LNZ prototype is a packaged installable breed. Give the receiving user the editable artifact's private location, dependencies, settings, known mismatches and next steps.
 

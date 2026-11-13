@@ -12,9 +12,11 @@ Copy this into the private task evidence folder. Link artifacts rather than comm
 - [ ] Front/side and supported sitting/lying or feature-revealing views reviewed; failures listed.
 - [ ] Each defining image feature is matched, approximated or unresolved with evidence.
 - [ ] No diagnostic markers or unintended section/row losses remain.
-- [ ] Existing ears/tails are reshaped in place; no hidden, parked, zeroed or recreated substitutes, and no blanket stock-add omissions.
+- [ ] Existing functional anatomy is reshaped in place: ears, tail, muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue. No hidden, parked, suppressed or recreated substitutes, and no blanket stock-add omissions.
+- [ ] Original base and added mouth parts, parents, size references, conditional visibility and valid textures are inventoried and preserved; a closed-mouth still is not used to justify removing them.
+- [ ] Mouth-opening, tongue-out and eating/panting motion checks are reported as performed or untested, separately from static shape review.
 - [ ] Ball order, attachment parents, connector endpoints, valid textures and variations are preserved; intended changes are explicitly inventoried.
-- [ ] Shared ear/tail recipes were reused; any missing capability is recorded for central research with the original anatomy retained.
+- [ ] Shared anatomy guidance, including mouth/muzzle preservation and ear/tail recipes, was reused; any missing capability is recorded for central research with the original anatomy retained.
 - [ ] Variation preservation or normalization is disclosed; variation/growth coverage is explicit.
 - [ ] Saved-cache behavior and adult/young resources checked if relevant.
 - [ ] Native installation/game checks are reported as performed or untested; preview success is not called game validation.

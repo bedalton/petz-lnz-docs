@@ -1,6 +1,6 @@
 # Add a detail that follows a body part
 
-Use this page for genuinely new ornaments or diagnostic markers. For existing ears, tails and their surfaces, use [reshape existing anatomy](existing-ears-and-tail.md). Do not use an added chain to replace hidden native anatomy.
+Use this page for genuinely new ornaments or diagnostic markers. For existing ears/tail use [reshape existing anatomy](existing-ears-and-tail.md); for muzzle, cheeks, jowls, lips, chin, jaw or tongue use [mouth/muzzle preservation](existing-mouth-and-muzzle.md). Do not use an added chain to replace hidden native anatomy.
 
 Initial scope: Petz 4 Scottie/Siamese, a synthetic head marker and one base-to-marker connector. Evidence: [ADD-001](../experiments/add-001.md). [LINE-001](../experiments/line-001.md) adds connector/endpoint-omission tests. This does not yet cover ears made from multiple balls/lines or inherited second-generation behavior.
 

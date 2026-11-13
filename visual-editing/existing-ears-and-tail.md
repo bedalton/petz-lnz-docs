@@ -1,6 +1,6 @@
 # Reshape existing ears and tail
 
-Authoring requirement: reuse the baseline's anatomy and attachments. Do not omit, delete, park, suppress through zero effective size or replace an existing ear or tail to achieve a different shape. Do not blanket-hide stock addballs. Additional ornaments are a separate feature, not a substitute for missing knowledge about anatomy.
+Authoring requirement: reuse the baseline's anatomy and attachments. Do not omit, delete, park, suppress through zero effective size or replace an existing ear or tail to achieve a different shape. The same restriction applies to muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue; see [mouth/muzzle preservation](existing-mouth-and-muzzle.md). Do not blanket-hide stock addballs. Additional ornaments are a separate feature, not a substitute for missing knowledge about anatomy.
 
 This page supplies researched controls, so authoring agents need not rediscover the field behavior. Apply the applicable recipe and review the resulting design. If a requested shape exceeds the documented controls, retain the original anatomy and record the specific missing capability for the central research corpus. Do not silently substitute a replacement chain or spend each authoring task repeating fundamental control experiments.
 

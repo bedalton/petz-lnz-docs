@@ -9,3 +9,7 @@ Accessed: 2026-11-09. Summaries below are source-reported, not independently gam
 | SRC-003 | [Nova: anchoring balls in Move, preserved at PetzU](https://petzmainstreet.com/petzu/tutorial/nova-s-guide-to-anchoring-ballz-in-move-lnzpro) | Describes a fifth Move column as an anchor, including zero-offset entries. Local renderer uses that column as a rotation reference. [MOVE-001](../experiments/move-001.md) confirms zero-vector no-op and rotated nonzero offsets in three poses. The stronger anchoring claim remains unvalidated; see GAP-001. |
 
 These are community authors' practical accounts, not official specifications. Dates/versions and precise experimental conditions are often unspecified. Keep version applicability open until tested. Further leads: LNZPro's editing manual, texture behavior and inherited body areas. Avoid copying whole external manuals into the repository.
+
+## Broader directory review
+
+[Hexing Resources and Guides: initial triage](hexing-resources-review.md) assesses a six-tutorial sample and indexes 163 external bullet entries from the wiki. Includes priorities, overlap and specific renderer-supported disagreements; most linked material remains unreviewed.

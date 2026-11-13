@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-13 wiki resource triage complete: [assessment](sources/hexing-resources-review.md), [163-entry external-link inventory](sources/hexing-resources-inventory.json). Six readable linked tutorials sampled; priorities and Linez restriction disagreement recorded. Most links remain unreviewed; no new renderer/game tests or canonical rule changes.
+
 - 2026-11-13 blank dog catalog complete: [gallery](clean_dogs/README.md), [evidence and reproduction](docs/clean-dog-catalog.md). 28 blanks + ten stock breeds, six views each (228 PNGs), 38 sheets and overview; 38 unchanged inputs, 228 tile checks and six exact local MCP replays pass. Transfer ignored clean_dogs/reference images with the breeds; Git holds documentation/tooling only.
 
 - 2026-11-13 authoring guide ready for a user-arranged trial: [workflow](agent-guides/picture-to-breed.md), [feature map](agent-guides/feature-to-control.md), [brief](agent-guides/task-brief.md), [delivery and pain-point report](agent-guides/trial-report.md). Existing references remain canonical. No breed creation, renderer changes or independent trial performed; this supersedes the earlier recommendation to create the authoring layer.

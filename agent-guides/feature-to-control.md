@@ -1,0 +1,23 @@
+# Map visual features to editing controls
+
+Use this as a routing table, not a universal preset. Read the linked page for fields, evidence, build and species/version limits. “Tested” below means sampled renderer observations, not native-game validation. The authoring order and selection of controls are proposed guidance.
+
+| Desired visual change | Candidate control and reference | Evidence and review requirement |
+| --- | --- | --- |
+| Broader/larger head; change facial spacing | [Head control guide](../visual-editing/head-ball.md), [Head Enlargement](../format-reference/head-enlargement.md) | Sampled Petz 4 tests. Radius and spacing interact; A=100 has a gate. Check eyes, muzzle, ears and attachments. |
+| Resize an individual base ball | Ball Size Override: [BALL-001](../experiments/ball-001.md) | Head-only tests; value is not final pixel diameter. General body sculpting is a hypothesis. |
+| Reposition a feature | [Move](../format-reference/move.md), [Project Ball](../format-reference/project-ball.md) | Local rotated vectors and downstream dependencies. Identify the entire feature group; master-head movement alone leaves features behind. |
+| Change torso, legs, feet, ear or muzzle proportions | Inspect anatomy and effective shape sections; [coverage](../docs/coverage.md) | Body Extension, Face Extension, Feet Enlargement and Ear Extension lack dedicated controlled recipes. Do not invent numeric presets; test small candidates or record a research gap. |
+| Find a feature's IDs | [Dogz](../format-reference/anatomy/dogz.md), [Catz](../format-reference/anatomy/catz.md) | Mostly stock labels and omission sensitivity, not a complete visual atlas. Confirm species and actual effective resource. |
+| Recolor an exposed ball | Color Info Override: [BALL-001](../experiments/ball-001.md) | Narrow head controls. Textures/shading can change the visible result; no complete palette guide. |
+| Change iris ring, pupil or outer eye | [Eye color recipe](../visual-editing/eye-colors.md) | Petz 4 Scottie/Siamese color tests; eye shape/size and other styling remain separate work. |
+| Add a spot, patch or other surface marking | [Paint Ballz](../format-reference/paint-ball.md), [Texture List](../format-reference/texture-list.md) | Field/code and sampled renderer controls. Placement on a new host needs a visible control; group retint support is incomplete. |
+| Change texture or fuzz | [Texture List](../format-reference/texture-list.md), [texture state](../format-reference/texture-state.md), [coverage](../docs/coverage.md) | Texture routing has focused controls; a full coat/fuzz design recipe is missing. Test actual material/host and multiple poses. |
+| Add an attached ear, tail or ornament | [Attachment guide](../visual-editing/attached-details.md), [Add Ball fields](../format-reference/add-ball.md) | Simple marker attachment tested. Multi-ball anatomy is an extrapolation. Append rows, compute IDs, test scaling/pose behavior. |
+| Join balls or adjust a connection | [Linez](../format-reference/linez.md), [connector textures](../format-reference/connector-textures.md) | Widths depend on endpoint radii; order is endpoint-relative. Connections can change body areas. |
+| Hide an existing component | [Omissions](../format-reference/omissions.md), [visibility](../visual-editing/visibility.md) | Keep IDs stable. Parent omission need not hide added children; incident lines can disappear. |
+| Detail follows the wrong body motion | [Body areas](../format-reference/body-areas.md), [add groups](../format-reference/add-groups.md) | Lists, connection order and group state can affect results; visible=true alone is insufficient. |
+| Match puppy/kitten or saved appearance | [Young appearance](../format-reference/young-appearance.md) | Explicitly select age/look and inspect caches; adult and young data are not interchangeable. |
+| Add clothing | [Known incomplete features](../troubleshooting/rendering-gaps.md#known-incomplete-features-do-not-infer-from-mcp) | Clothing remains unsupported in the documented renderer. Record an unresolved requirement rather than claiming a preview verifies it. |
+
+For every chosen control, record the exact effective section and rows, linked evidence, your proposed edit and what the rendered comparison actually showed. If the effect is undocumented, label it as a trial hypothesis until tested.

@@ -24,3 +24,7 @@ Keep start.md short; resolve current versus historical operational facts in a la
 A receiving agent also needs the reference image, authorized private baseline assets, a working renderer and current invocation instructions. Git intentionally excludes private inputs and raw evidence, so documentation links alone are not a portable execution package. The entry point warns that research scripts are not general editing utilities and some overwrite output folders.
 
 Test the authoring layer with one fresh-agent attempt using one image and authorized baseline. Record clarification needs, control selection, multi-view resemblance, reproducibility and preservation of originals. This trial has not been run. No corpus reorganization was performed during this assessment.
+
+## Implementation follow-up
+
+2026-11-13: the [authoring workflow](../agent-guides/picture-to-breed.md), feature map and task/trial templates are now available through the agent entry point. The proposed layer is implemented; independent trial and historical STATUS/HANDOFF cleanup remain outstanding.

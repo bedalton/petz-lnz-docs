@@ -1,5 +1,7 @@
 # Handoff
 
+- 2026-11-13 authoring guide ready for a user-arranged trial: [workflow](agent-guides/picture-to-breed.md), [feature map](agent-guides/feature-to-control.md), [brief](agent-guides/task-brief.md), [delivery and pain-point report](agent-guides/trial-report.md). Existing references remain canonical. No breed creation, renderer changes or independent trial performed; this supersedes the earlier recommendation to create the authoring layer.
+
 - Documentation readiness: [agent ingestion assessment](docs/agent-ingestion-assessment.md). Recommend extending agent-guides with a linked picture-to-breed authoring layer; independent pilot remains untested. No corpus reorganization performed.
 
 - Latest native research: [comparison controls](docs/native-comparison-controls.md) and [session audit](docs/session-2026-11-12-native-controls.md). NATIVE-002/003/004 full replays and integrity checks pass. Use profile-aware reduced stills for color review; native pose and coat-color causation remain unresolved.

@@ -7,7 +7,7 @@ names={k for r in rows for field in ('breed_sections','master_sections') for k i
 names.add('Draw Linez Before Ballz')
 names.update(('Ball Size Override','Outline Color Override','Fuzz Override','Add Ball Override'))
 known={
- 'Face Extension':'Petz 4 blank Labrador/stock Siamese scalar controls with existing anatomy retained: [FACE-001](../experiments/face-001.md), [field reference](../format-reference/face-extension.md); native motion and broader applicability pending',
+ 'Face Extension':'Petz 4 blank Labrador/stock Siamese: [FACE-001](../experiments/face-001.md); stock Scottie/Siamese Petz3/4/5 matched controls: [FACE-002](../experiments/face-002.md); [field reference](../format-reference/face-extension.md). Native motion and other assets remain open',
  'Ear Extension':'Petz 4 blank Labrador adult/young controls: [ANATOMY-002](../experiments/anatomy-002.md), [existing ear/tail recipes](../visual-editing/existing-ears-and-tail.md); native motion and broader applicability pending',
  'Head Shot':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',
  'Little one':'Source-reported unrendered: [renderer change notice](../RENDERER_CHANGES.md)',

@@ -22,7 +22,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samp
 | Draw Linez Before Ballz | Global 0/1 fallback and row overrides: [LINE-003](../experiments/line-003.md) |
 | Ear Extension | Petz 4 blank Labrador adult/young 70/130 controls, native ear/tail preservation: [ANATOMY-002](../experiments/anatomy-002.md), [authoring recipes](../visual-editing/existing-ears-and-tail.md). Native motion, other species/breeds/versions and full folded-ear/taper recipes remain open |
 | Eyes | Colors: [EYE-001](../experiments/eye-001.md); right iris/host omissions: [EYE-002](../experiments/eye-002.md); shape/clip controls pending |
-| Face Extension | Petz 4 blank Labrador/stock Siamese scalar controls with existing anatomy retained: [FACE-001](../experiments/face-001.md), [field reference](../format-reference/face-extension.md); native motion and broader applicability pending |
+| Face Extension | Petz 4 blank Labrador/stock Siamese: [FACE-001](../experiments/face-001.md); stock Scottie/Siamese Petz3/4/5 matched controls: [FACE-002](../experiments/face-002.md); [field reference](../format-reference/face-extension.md). Native motion and other assets remain open |
 | Feet Enlargement | Inventoried or implementation lead only; dedicated reference/experiment pending |
 | Fur Color Areas | Source-reported genetics/breeding control rather than drawing an existing pet: [change notice](../RENDERER_CHANGES.md) |
 | Fur Markings | Source-reported genetics/breeding control rather than drawing an existing pet: [change notice](../RENDERER_CHANGES.md) |

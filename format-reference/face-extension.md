@@ -19,6 +19,8 @@ Head spacing, Ear Extension, Move and Project Ball run later. Added balls attach
 
 ## Renderer-observed scope
 
+[FACE-002](../experiments/face-002.md) extends the scalar controls to stock Scottie/Siamese in Petz3/4/5 on the same20cd029 build. All720 matched Petz3/5 geometry records and360 anchor-aligned images equal the Petz4 controls. Three look modes, numerical ages0/12/50/100, three poses and the recorded front/profile samples are covered; no other breed/version equivalence is implied. Age12/100 match forced young/adult geometry in180 comparisons; age0 has separate juvenile shrink and differs in all90 forced-young comparisons despite matching Face Extension values.
+
 [FACE-001](../experiments/face-001.md) records the exact inputs, current build, local MCP controls, unchanged anatomy/dependencies, arithmetic oracle and aligned comparisons. Its isolated oracle disables unrelated shape/Move/Project controls before checking the formula; the asset sweep separately records the complete original construction. Do not substitute isolated displacements for final breed geometry.
 
-Use the [mouth guide](../visual-editing/existing-mouth-and-muzzle.md) for the authoring loop and preservation requirement. Values here are diagnostic controls, not a safe range, finished muzzle recipe or native-game specification. Native behavior, expression blending, extreme values, genetics and other breeds remain outside this initial experiment. [Community cautions](../sources/mouth-shaping.md) remain attributed source reports.
+Use the [mouth guide](../visual-editing/existing-mouth-and-muzzle.md) for the authoring loop and preservation requirement. Values here are diagnostic controls, not a safe range, finished muzzle recipe or native-game specification. Native behavior, expression blending, extreme values, genetics and other breeds remain outside these experiments. [Community cautions](../sources/mouth-shaping.md) remain attributed source reports.

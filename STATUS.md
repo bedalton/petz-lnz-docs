@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-15 cross-version muzzle controls: [FACE-002](experiments/face-002.md).540 local MCP renders,1,080 geometry records,3,072 parser controls;720 cross-version geometry and360 RGBA pairs all match Petz4.180 age12/100 endpoints pass;90 age0 cases retain separate shrink. Original anatomy/18 inputs preserved; native behavior and other breeds unvalidated.
+
 - 2026-11-15 existing mouth-detail controls: [MOUTH-002](experiments/mouth-002.md), [recipe](visual-editing/existing-mouth-and-muzzle.md#existing-labrador-surface-controls).120 local MCP renders,60 geometry records,512 parser controls;130-PNG full replay and aligned audit pass. Four nonreplacement controls retain all references; lower-y can occlude tongue despite preserved flags. Closed presets retain zero tongue radius. Native motion/complete muzzle design remain open.
 
 - 2026-11-15 raw mouth-state research: [MOUTH-001](experiments/mouth-001.md). 29,497 Petz4 frames independently re-read; 24 selected raw states,288 exact local MCP/direct pairs,144 tongue geometry records,296 PNG hashes and192 aligned comparisons pass. Extends VIS-002 preset scope; raw numbers have no behavior labels and native scheduling remains unvalidated.

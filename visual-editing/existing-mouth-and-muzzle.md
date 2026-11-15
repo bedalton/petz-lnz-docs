@@ -25,9 +25,18 @@ These are asset-reported names for the exact Petz 4 Labrador, not universal addb
 
 Start from the original mouth inventory, including all attached details and incoming/outgoing Move, Project Ball and Linez rows. A muzzle comprises multiple hosts and dependents; moving one visible ball is not a coherent muzzle edit. Keep the original parent and optional size-reference fields when reshaping an attached cheek, jowl or lip. Check whether young inherits the adult row or defines a separate controlling section before changing either layer.
 
-Use [Move](../format-reference/move.md) for documented local offsets, [Project Ball](../format-reference/project-ball.md) for documented endpoint relationships, and [Add Ball fields](../format-reference/add-ball.md) for existing attached-row coordinates/size. General head controls affect spacing and radius differently; read the [head guide](head-ball.md). The tested head-to-nose projection is a localized control, not a tested full-muzzle recipe. Face Extension and coordinated jowl/lip shaping still need dedicated shared controls before offering numerical presets.
+Use [Move](../format-reference/move.md) for documented local offsets, [Project Ball](../format-reference/project-ball.md) for documented endpoint relationships, and [Add Ball fields](../format-reference/add-ball.md) for existing attached-row coordinates/size. General head controls affect spacing and radius differently; read the [head guide](head-ball.md). The tested head-to-nose projection is a localized control, not a tested full-muzzle recipe. [Face Extension](../format-reference/face-extension.md) now has dedicated scalar controls; coordinated jowl/lip shaping still needs shared recipes before offering numerical presets.
 
 The authoring agent should reuse established field behavior, preserve the original functional construction and report an unmet shape requirement when a recipe is missing. It must not invent replacement mouth geometry or independently repeat fundamental research on each task. The shared research priorities below identify the missing knowledge explicitly.
+
+## Tested Face Extension loop
+
+[FACE-001](../experiments/face-001.md) retains the full original construction while testing Face Extension `0`, `-12` and `12` in adult/young Petz 4 blank Labrador and stock Siamese. Use these as diagnostic examples, not a safe interval or finished design. The source scalar may already be nonzero.
+
+1. Read the effective adult and young scalar separately; preserve all inherited sections and original anatomy.
+2. Make a small deliberate scalar adjustment, then compare aligned front, three-quarter and profile views against the unchanged source.
+3. Review jaw/head continuity and attached surfaces. The control moves a fixed muzzle set, not the whole face; projections can also move details with unchanged parents. In this Labrador even existing ear details 82/83 respond through mouth projections.
+4. Check numerical positions when rounding or occlusion hides a change. Keep original size references and frame-dependent visibility. Treat motion and native behavior as untested until separately observed.
 
 ## Required mouth review
 
@@ -39,4 +48,4 @@ The authoring agent should reuse established field behavior, preserve the origin
 
 ## Shared research still required
 
-The preservation rule is firm; the missing design recipes must be researched centrally. Priorities are controlled Face Extension effects on the entire original muzzle and its dependents; coordinated original jowl/cheek/lip width, depth and size changes; chin/jaw and tongue size-reference interactions; then open-mouth motion, growth and native-game comparisons. Record species, exact baseline, version/build and tested states with each result, then publish the reusable recipe here. No new mouth-shaping or native-motion experiment is claimed by this page.
+The preservation rule is firm; the missing design recipes must be researched centrally. Face Extension scalar effects now have [scoped evidence](../experiments/face-001.md). Remaining priorities are coordinated original jowl/cheek/lip width, depth and size changes; chin/jaw and tongue size-reference interactions; then open-mouth motion, growth and native-game comparisons. Record species, exact baseline, version/build and tested states with each result, then publish the reusable recipe here. The scalar experiment establishes static renderer behavior; native motion and a complete muzzle design remain unvalidated.

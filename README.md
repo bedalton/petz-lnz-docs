@@ -21,6 +21,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [Young appearance and age controls](format-reference/young-appearance.md)
 - [Head Enlargement](format-reference/head-enlargement.md), [choosing head controls](visual-editing/head-ball.md)
 - [Linez and connections](format-reference/linez.md)
+- [Face Extension](format-reference/face-extension.md), [preserved muzzle controls](experiments/face-001.md)
 - [Move](format-reference/move.md), [Project Ball](format-reference/project-ball.md)
 - [Iris/pupil colors](visual-editing/eye-colors.md)
 - [Body areas](format-reference/body-areas.md)

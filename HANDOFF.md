@@ -1,5 +1,7 @@
 # Handoff
 
+- 2026-11-15 preserved muzzle controls: [FACE-001](experiments/face-001.md), [reference](format-reference/face-extension.md). 240 local MCP renders, 60 geometry records, 1,024 parser controls; full 252-PNG replay and independent aligned audit pass on20cd029. All original anatomy/radii/visibility and six inputs preserved. Native motion unvalidated; version/raw-frame follow-ups continue in this 30-minute session.
+
 - 2026-11-15 mouth-source review: [attributed claims and boundaries](sources/mouth-shaping.md). Face Extension and tongue size-reference passages checked against the primary author’s pages; private retrieval hashes retained. No native-game validation; controlled mouth research continues under the current 30-minute authorization.
 
 - 2026-11-13 functional-anatomy rule expanded explicitly to muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue: [mouth guide](visual-editing/existing-mouth-and-muzzle.md). All authoring routes/checklists updated. Mastiff hid added mouth details, not every base mouth ball. Mouth-specific recipe/motion gaps remain shared research; no new experiment or breed edit.

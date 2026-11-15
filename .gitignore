@@ -8,3 +8,7 @@ __pycache__/
 /clean_dogs/**/*.dog
 /clean_dogs/**/*.cat
 /clean_dogs/reference/
+# Private supplied texture artwork, contact sheets and editor sidecars.
+/texture-index/*.bmp
+/texture-index/*.png
+/texture-index/*.import

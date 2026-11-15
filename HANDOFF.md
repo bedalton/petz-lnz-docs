@@ -562,3 +562,8 @@ Final reference pass gives the [current-build tail controls](format-reference/yo
 ## Texture index review preflight
 
 2026-11-15: [review record](docs/texture-index-review.md). User requested verification and improvements to `./texture-index`; directory is absent, with no matching tracked paths or directories under `/workspace`. Asked for actual path/restoration. Resume content/source verification once available; no asset or renderer changes.
+
+
+## Texture index review complete
+
+2026-11-15: user restored texture-index. [Findings and reproduction](docs/texture-index-review.md), [consuming-agent entry](texture-index/README.md). All238 indexed BMPs have exact opaque RGB PNG previews and correct dimensions;10 indexed/RGB duplicate groups,8 whole-file groups. Four omitted visual-table entries restored; existing sheets remain234 and are explicitly scoped. Corrected mode/syntax/loading/tint/transparency guidance and visible mislabels. Added metadata status/provenance, search/audit CLI, retained hash/index report, navigation and private-artwork guards. Full audit, search controls, copied-fixture negative controls and docs checks pass. Source artwork read only and ignored; no renders, renderer/game edits or native compatibility claims. Unknown source/version availability and remaining editorial breed-use claims require separate evidence. Earlier missing-files preflight is superseded.

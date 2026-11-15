@@ -21,3 +21,5 @@ Mode0,1 and2 produce different sampled connector pixels at base color125. Modes1
 The isolated connector samples also group modes125/149 with mode0 despite different flags/shade metadata. Standing Catz mode125 has a different whole remapped-art hash but equal connector-window pixels. Treat these equal previews as local observations, not equivalent authoring settings.
 
 All effective slots are loaded, so parser acceptance alone does not establish that dimensions or resources can be rendered. Invalid dimension loading, young resources, other breeds/versions and native tint semantics remain untested here. [CUSTOM-001](../experiments/custom-001.md) now tests original generated artwork embedded into private copied breed resources; loose external BMP loading fails in those controls. Use the [custom texture workflow](../visual-editing/custom-textures.md) for palette conversion and artwork transforms. Repeated preview agreement is not game validation.
+
+For candidate artwork, use the [texture selection catalog](../texture-index/README.md). Its dimensions describe source BMPs, and its descriptive tags do not establish resource availability or rendered appearance.

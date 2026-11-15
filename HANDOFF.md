@@ -574,3 +574,10 @@ Texture catalog follow-up: synchronized supplied offline `catalog.html` metadata
 ## Client-agent texture and gradient reference
 
 2026-11-15: [agent reference](agent-guides/textures.md), [orientation evidence/source distinctions](format-reference/no-texture-rotate.md). Selection, slots, palette/loading constraints, calibrated bitmap placement and a proposed anatomy-relative surface-paint gradient workflow. No supported LNZ initial-angle field found; No Texture Rotate accepts host IDs and disables updates, not angle assignment or anatomical locking. Three primary tutorials reviewed; Carolyn default -1 account conflicts with renderer disable-all and is explicit. tools/check_texture_reference.py verifies eight list cases, extra Texture List columns, default/yaw orientation and16px window shift; four installed files match20cd029 checkout. Private numerical/hash evidence scratch/research/texture-reference/verification.json. No new renders, target breed edit, renderer modification or native test; particular gradient appearance and motion remain unvalidated.
+
+
+## Supplied textures included in repository
+
+2026-11-15: user requested repository storage so recipients need not locate the artwork separately. [Evidence and scope](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15). Versioned238 BMPs,238 matching PNG previews andfive contact sheets unchanged; retained238-entry hash audit and documentation checks pass. Updated scoped AGENTS exception, ignore/checker rules and catalog instructions; `.import` sidecars and other private assets stay excluded. Earlier local-only texture guidance is superseded. Provenance, licensing and native applicability remain unresolved; no rendering or original-file edits.
+
+Texture asset delivery: local commit includes the supplied palette PNG as well as catalog images. GitHub push failed because HTTPS credentials are unavailable; upload remains pending. See [repository follow-up](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15).

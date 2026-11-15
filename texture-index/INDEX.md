@@ -14,7 +14,7 @@ The previews show each BMP's embedded RGB palette, at forced square thumbnail si
 - [Surfaces and environment](sheet_4_surfaces_and_environment.png)
 - [Babyz and utility](sheet_5_babyz_and_utility.png)
 
-Contact sheets and source artwork stay local and are excluded from Git. Metadata remains usable without them; auditing and visual selection require the supplied assets.
+BMP source artwork, PNG previews and contact sheets are included in Git so a clone supports visual selection and auditing. Editor sidecars remain excluded. Provenance and target-game resource availability remain unknown.
 
 ## Pet Fur & Coats (9 textures)
 

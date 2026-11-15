@@ -6,6 +6,7 @@
 - Set Git author and committer to bedalton <3941960+bedalton@users.noreply.github.com>.
 - Never include agent co-authors or any other co-authors or Co-authored-by trailers.
 - Preserve original game files. Edit copies only. Never commit proprietary game files, extracted stock LNZ, raw renders, environments or credentials.
+- User-authorized exception: include the supplied `texture-index/*.bmp` and `texture-index/*.png` catalog assets (including contact sheets) in Git so users can obtain them with the repository. Keep editor `.import` sidecars excluded; this exception does not cover other game files or raw renders.
 - Prefer local petz-render MCP; use hosted rendering when needed. Record backend, versions, hashes and controls.
 - Distinguish source-reported, code-supported, renderer-observed and game-validated claims. Repeatability does not establish game fidelity.
 - Keep reference pages focused and indexed. Link claims to reproducible evidence and explicitly record uncertainty and species/version applicability.

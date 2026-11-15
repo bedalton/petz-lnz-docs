@@ -24,8 +24,8 @@ for path in (ROOT/'experiments').glob('*.json'):
     except ValueError as exc:errors.append(f'{path.name}: {exc}')
 tracked=subprocess.check_output(['git','-c',f'safe.directory={ROOT}','ls-files','-z'],cwd=ROOT).decode().split('\0')
 for path in tracked:
-    if path.startswith('texture-index/') and Path(path).suffix.lower() in ('.bmp','.png','.import'):
-        errors.append(f'private texture artwork tracked: {path}')
+    if path.startswith('texture-index/') and Path(path).suffix.lower() == '.import':
+        errors.append(f'texture editor sidecar tracked: {path}')
     if path.startswith(('games/','scratch/','petz-renderer-mcp/','clean_dogs/reference/')) or Path(path).suffix.lower() in ('.dog','.cat','.pet','.dll','.exe','.lnz'):
         errors.append(f'private asset tracked: {path}')
 if errors:raise SystemExit('\n'.join(errors))

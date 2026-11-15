@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-15 supplied texture assets included at user request: [repository follow-up](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15). All238 BMPs,238 PNG previews andfive contact sheets versioned unchanged; editor sidecars excluded. Full catalog audit and documentation checks pass; provenance/game applicability remain unknown. Supersedes earlier local-only artwork guidance.
+
 - 2026-11-15 client-agent [texture reference](agent-guides/textures.md) added, including face-relative gradient recipe and [No Texture Rotate](format-reference/no-texture-rotate.md). Eight parser controls and sampler arithmetic pass on20cd029; no supported initial-angle LNZ field found. Older source/renderer -1 disagreement documented; gradient workflow proposed, not rendered/game-validated.
 
 - 2026-11-15 texture catalog reviewed: [findings](docs/texture-index-review.md), [agent workflow](texture-index/README.md). All238 BMP/PNG/dimension controls pass; four omitted table entries restored, unsafe syntax/behavior claims corrected, searchable metadata, synchronized offline HTML explorer and hash/duplicate audit added. Provenance, resource availability and native behavior remain unvalidated; artwork stays local/ignored. Missing-files preflight resolved.
@@ -233,3 +235,5 @@ Updated: 2026-11-12
 - [UPDATE-012](experiments/update-012.md) preserves606 independent age records and100 edited/routing equalities;192 current RGBA images differ historically. Ninety routing cases retain54 successes/36 failures;114 MCP requests yield78 exact matches and36 expected errors. Initial full replay complete;exact replay and independent audit underway.
 
 - Independent [young upgrade session audit](docs/session-2026-11-12-young-upgrade.md) passes:1,518 historical/current decoded-RGBA checks,804 endpoint checks,204 cross-version and44 cross-unit links,21 unchanged originals,62-source agreement. HTTP restarted PID29894/session35819;four actual age/adult views match fresh baselines. Final exact unit replays are finishing.
+
+Texture asset delivery: local commit includes the supplied palette PNG as well as catalog images. GitHub push failed because HTTPS credentials are unavailable; upload remains pending. See [repository follow-up](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15).

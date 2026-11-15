@@ -44,3 +44,11 @@ The supplied `catalog.html` also embeds a complete copy of the metadata. Synchro
 ## Initial preflight — superseded
 
 The requested `/workspace/texture-index` directory was initially absent. `git ls-files '*texture*index*'` returned no tracked paths, and `find /workspace -type d -iname '*texture*index*'` returned no directories. The worktree was clean before that record. The user subsequently restored the folder; the missing-files condition is resolved.
+
+## Repository assets follow-up — 2026-11-15
+
+The user explicitly requested storing the supplied textures in the GitHub repository because recipients may not be able to locate them. This supersedes the earlier local-only artwork decision above. The repository now includes all 238 original BMPs, 238 matching PNG previews and five supplied contact sheets, plus the supplied `petzpalette.png` reference; editor `.import` sidecars remain ignored. Catalog artwork was added without modification. The scoped project-instruction exception and documentation checker allow these assets while retaining the other private-file exclusions.
+
+Verification: the full retained 238-entry audit and documentation checks pass with the assets staged. The audit’s existing per-file hashes still match; no new rendering or game validation was performed. Source provenance, redistribution licensing and target-version availability remain unknown; repository inclusion does not resolve those uncertainties.
+
+Local commit prepared; `git push origin HEAD` failed because HTTPS GitHub credentials are unavailable (`could not read Username`). The assets are committed locally but have not been uploaded.

@@ -22,6 +22,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 | Introduce or clear a section | [Inheritance](../format-reference/inheritance.md) |
 | A ball edit appears invisible | [Visibility diagnosis](../visual-editing/visibility.md) and [Omissions](../format-reference/omissions.md) |
 | Change depth shading | [Z Shade Slope](../format-reference/z-shade-slope.md) |
+| Choose, assign or orient textures; design directional gradients | [Client-agent texture reference](textures.md) |
 | Choose texture artwork | [Texture catalog](../texture-index/README.md): candidate search and visual index; verify target resource availability |
 | Create/recolor/orient original texture artwork | [Custom texture workflow](../visual-editing/custom-textures.md): generated BMPs, index conversion, transforms and loading limits |
 | Author Texture List slots or modes | [Texture List](../format-reference/texture-list.md) |

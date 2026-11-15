@@ -1,6 +1,6 @@
 # Choose a texture
 
-Use this catalog to shortlist artwork, then test it on a copy of the intended host. The collection has 238 supplied BMPs, 238 matching opaque PNG previews and five contact sheets. It mixes pet materials, Babyz hair, environment artwork and test images. Its original source and game/version coverage are unknown; it is not an inventory of everything installed in Petz.
+For assignment, orientation and directional gradients, start with the [client-agent texture reference](../agent-guides/textures.md). Use this catalog to shortlist artwork, then test it on a copy of the intended host. The collection has 238 supplied BMPs, 238 matching opaque PNG previews and five contact sheets. It mixes pet materials, Babyz hair, environment artwork and test images. Its original source and game/version coverage are unknown; it is not an inventory of everything installed in Petz.
 
 Open the [offline HTML explorer](catalog.html) for browser search and category filtering. It embeds the same metadata, so it works without a local server; images require the local PNGs. The audit rejects drift between its embedded data and `index.json`.
 

@@ -25,3 +25,5 @@ The UPDATE-007 pre-target paint-angle vectors are all zero (16 slots each). Its 
 [PAINT-002](../experiments/paint-002.md) isolates all24 Fuzzkin host/combined differences to paint-command angles for entries16/17/18;substituting all three restores host-only pixels exactly. Geometry and every other command field match. Paint-list indices do not name anatomical balls.
 
 Direct API contract: [PAINT-003](../experiments/paint-003.md) confirms a paint-angle vector length mismatch resets every entry during preparation (Fuzzkin19 entries;18/20-entry inputs both reset). Preserve the complete vector indexed by original paint-list order,including inactive entries. Equal length does not establish compatibility after appearance edits. This is renderer state handling,not a native-game format claim.
+
+For authored controls rather than retained API state, see [No Texture Rotate and starting orientation](no-texture-rotate.md). Disabling texture motion does not establish face-relative attachment.

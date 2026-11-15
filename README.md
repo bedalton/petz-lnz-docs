@@ -26,6 +26,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [Iris/pupil colors](visual-editing/eye-colors.md)
 - [Body areas](format-reference/body-areas.md)
 - [Added-ball groups](format-reference/add-groups.md)
+- [Client-agent texture reference](agent-guides/textures.md): selection, assignment, initial orientation and face-relative gradients
 - [Texture selection catalog](texture-index/README.md): searchable local candidates, verified dimensions/previews and availability limits
 - [Custom texture creation, palettes and orientation](visual-editing/custom-textures.md)
 - [Retained texture state](format-reference/texture-state.md)

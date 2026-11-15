@@ -1,6 +1,6 @@
 # Status
 
-- 2026-11-15 renderer reinstall/reload pending: [UPDATE-013 preflight](experiments/update-013.md). Updated renderer directory contains documentation but no src/pyproject.toml/Git checkout; installed package retains old lying presets, HTTP8765 is absent. Full checkout/repository location requested. No reinstall/reload performed;21 original hashes match.
+- 2026-11-15 renderer reinstalled/reloaded: [UPDATE-013](experiments/update-013.md), source20cd029 in scratch/petz-local-x86-venv. HTTP8765 PID1543/session9456; six tools,12 named/raw/direct pose triples and21 original hashes pass;62 installed sources match. Corrected lying DOG79/29 and CAT263/24 active. Earlier missing-source preflight is superseded; hosted/client caches and broad historical replays remain outside scope.
 
 - 2026-11-15 original texture authoring complete: [guide](visual-editing/custom-textures.md), [CUSTOM-001](experiments/custom-001.md), [community review](sources/custom-textures.md). Indexed BMP generator/converter/recolor/transform CLI;84 local MCP/direct matches,169 private PNGs, full replay and CLI/hash checks pass. Loose BMP loading fails; private copied-breed embedding demonstrated. Native loading/orientation remains unvalidated; originals/renderer unchanged.
 

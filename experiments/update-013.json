@@ -1,0 +1,304 @@
+{
+  "backend": "restarted local HTTP MCP and fresh installed direct Python",
+  "endpoint": "http://127.0.0.1:8765/mcp",
+  "revision": "20cd02946c53ea702db789d5b6eeda62c54c429d",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "pillow": "13.0.0",
+    "fastmcp": "4.1.6",
+    "pefile": "2024.8.26"
+  },
+  "script_sha256": "32088bab90b931476fdfcec215b00aeeed7de9f6cc0c278f20f5737734b8c1dc",
+  "install_log_sha256": "fbccc9fa75152bf2a74959c710fa6b54b3066d88deafbd14e08bc32220f75b43",
+  "installed_source_count": 62,
+  "changed_installed_sources": [
+    "rendering/presets.py"
+  ],
+  "server_pid": 1543,
+  "managed_session": 9456,
+  "asset_roots": [
+    "scratch/screenshots",
+    "scratch/research/young-002",
+    "scratch/research/custom-001"
+  ],
+  "tools": [
+    "compare_appearance",
+    "get_capabilities",
+    "inspect_input",
+    "list_poses",
+    "render_contact_sheet",
+    "render_pet"
+  ],
+  "render_checks": [
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "standing",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 99,
+        "frame": 0
+      },
+      "png_sha256": "3e9ee7e2bb7f2bb374315ac673bf25a8aab63628f4e616520ef5a47d77f69e60",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "standing",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 99,
+        "frame": 0
+      },
+      "png_sha256": "47fd72e30b0fb1bf333151c6dd78e30c747dbf741a04433a299fcf9b421b81e3",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "sitting",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 177,
+        "frame": 1
+      },
+      "png_sha256": "6f3ccc2658356dd022c06b83cad5283613f2ce89f7b169f98a3b49c7eff32cab",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "sitting",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 177,
+        "frame": 1
+      },
+      "png_sha256": "54b6d229cdea682bcc9db65877c8253fcaef90bfe93d8d48bd5a83177d236710",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "lying",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 79,
+        "frame": 29
+      },
+      "png_sha256": "7cb9940160ad9a568f4c7a98f520d5bd3f88e0ade39f6a0bb47a129471ab1d6f",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "lying",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Dogz/Scottie.dog",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 79,
+        "frame": 29
+      },
+      "png_sha256": "c6c3652a9898d3e83e1e0866677164e48911b9b38f860c7a3ec687d0de84352d",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "standing",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 139,
+        "frame": 0
+      },
+      "png_sha256": "6bff16d38a9f8f3e1933bd84e574c29e7aa8eca90142a0616d644934fd6745f0",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "standing",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 139,
+        "frame": 0
+      },
+      "png_sha256": "7672cc6e51625824b6e1bedfecc87fdcfeb9b3679cb1fa04f615b0aa21c7519d",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "sitting",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 261,
+        "frame": 14
+      },
+      "png_sha256": "f12e5cbfd53855f4871c1a2ddf6fa20e62642b0906cf21bf2d00e29f7bf7f164",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "sitting",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 261,
+        "frame": 14
+      },
+      "png_sha256": "10e83b465e73a4488f2a6a5ee248d6f789c3eb53b9a23b40cb6cd681926464fa",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "lying",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 0,
+        "animation": 263,
+        "frame": 24
+      },
+      "png_sha256": "eac2f12d88b21103c1ca254e39b17c219522d476c604f49d59fc3c5c92e5925b",
+      "matches_raw_and_direct": true
+    },
+    {
+      "controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "lying",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90
+      },
+      "raw_controls": {
+        "path": "Resource/Catz/Siamese.cat",
+        "pose": "default",
+        "seed": 41,
+        "age": 100,
+        "fatness": 50,
+        "yaw_degrees": 90,
+        "animation": 263,
+        "frame": 24
+      },
+      "png_sha256": "8f23cd4d63ab13d6663e60f26f34ceb8439cb162af1d4158d6b22f349337bdc9",
+      "matches_raw_and_direct": true
+    }
+  ],
+  "original_checks": 21,
+  "report_path": "scratch/research/update-013/report.json",
+  "report_sha256": "f73b48b3ca915cec007835f43d64d6947afc007863af3a04baedbafc91543d5a",
+  "schemas_sha256": "f98bbab863a055a48f1a82075646a2dabd00f1bdbe94ab7ea697076d43ffaf2e",
+  "capabilities_sha256": "ff428282629cc33d5e48ad12ed8a0ced3b76a66cefcd374b9fa9ef782fce2a59",
+  "poses_sha256": "8e0f65ba54f39daa4865dc5dee91f3207178d2d9e3a19b774ed856fb589f98dd"
+}

@@ -557,3 +557,8 @@ Final reference pass gives the [current-build tail controls](format-reference/yo
 ## Untracked NodeSource setup script
 
 2026-11-15 [investigation](docs/workspace-node-installer.md): istall-node is a3907-byte NodeSource24 repository setup script with November9 mtime. Existing notes show repeated preservation, not observed recreation. Searched project/tooling/startup locations yield no creator. Origin remains uncertain; no script execution, deletion or ignore change. Private stat/hash evidence scratch/research/workspace-node-installer/inspection.json.
+
+
+## Texture index review preflight
+
+2026-11-15: [review record](docs/texture-index-review.md). User requested verification and improvements to `./texture-index`; directory is absent, with no matching tracked paths or directories under `/workspace`. Asked for actual path/restoration. Resume content/source verification once available; no asset or renderer changes.

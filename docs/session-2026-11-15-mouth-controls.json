@@ -1,0 +1,47 @@
+{
+  "session": "2026-11-15 preserved mouth controls",
+  "authorization_minutes": 30,
+  "started_utc": "2026-11-15 15:29:57 UTC",
+  "revision": "20cd02946c53ea702db789d5b6eeda62c54c429d",
+  "backend": "fresh local stdio MCP, three explicit game versions",
+  "verification_path": "scratch/research/mouth-session-2026-11-15/verification.json",
+  "verification_sha256": "ce968fe0a6e988ec1bca2e590ead9e4e73f787dc002a60bc0b2e61fcbf8f16c1",
+  "aggregate_script_sha256": "91a0fd5e3908da31139cb293445c8f17d2ae9f88e3a06995cc953a400545eba0",
+  "unit_manifest_hashes": {
+    "face-001": "075346a281f5943da9af80f11a3d9015fef6cc173256294093fc1fd79b3d3cc5",
+    "face-002": "24512615127eb39558eb8cb2f0d042ea5e7c3ad0fb7a2abac9ad7e867fa64fb4",
+    "mouth-001": "47a3f97834034b73a19041a9dda0e353b9c86dc8ca48f7e6dad3992e4d37539a",
+    "mouth-002": "233ce13798a2f1de5c23082f72d8d0f9b04c3fcea0267a71af7a4b69e74dc176"
+  },
+  "png_checks": 1218,
+  "geometry_records": 1344,
+  "private_copies": 46,
+  "unique_inputs": 19,
+  "recorded_originals": 21,
+  "installed_source_count": 62,
+  "initial_mcp_renders": 1188,
+  "full_replay_mcp_renders": 360,
+  "fresh_mcp_matches": 6,
+  "parser_controls": 4608,
+  "independently_parsed_raw_frames": 29497,
+  "tool_hashes": {
+    "tools/mouth_frame_inventory.py": "fe56658b7c10f8002ec95376faadb0d42755548ce60f3a48211fc5c5e92e7623",
+    "tools/check_mouth_frames.py": "84959e865ab08c7eb67526371038cf2e3bc7b19735f1c3ef1027621ae396ea21",
+    "tools/face_extension_versions.py": "5e1fcf3386c32b5fb5587185fc55ecd87b8f93516188257f369b3e1d4ddf7d2a",
+    "tools/check_face_extension.py": "13b9f34d5d81b04637e1ba7d68417ae240a51c6a1a2d9d45d10e47815be0af07",
+    "tools/check_mouth_session.py": "91a0fd5e3908da31139cb293445c8f17d2ae9f88e3a06995cc953a400545eba0",
+    "tools/check_face_versions.py": "b7e75a5728150c0e0b30e1bb0e831723c870e101085b62420e5f0326466512ca",
+    "tools/mouth_detail_probe.py": "675942a4a5c7456a9be6d8db9da691d0d63f1a4c7ce9241a37642bbe1970ce82",
+    "tools/face_extension_probe.py": "c414ea89fa097c8593642368527177b36a63dbc73d122491aa732e452e61b435",
+    "tools/check_mouth_details.py": "8229a3d1a541ae45dc097b6a1792f40647f344e67bd8a4e5e61b2d2fa4624afa",
+    "tools/native_anatomy_probe.py": "973dfa3b28cb8aa6be3c5f9fa54cb9d444de5deed05956e94f63543d76756832",
+    "tools/mouth_frame_probe.py": "9e65be5298d2052f50cd335b3afc323d30f83d3aa4f4cf334c7e8e580c5d2f2e"
+  },
+  "research_commits": [
+    "f8ac33d",
+    "88be09b",
+    "ace7497",
+    "caeaf3d",
+    "2316192"
+  ]
+}

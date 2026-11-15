@@ -62,7 +62,7 @@ Most controlled editing results concern Petz 4 Scottie/Siamese; PROJECT-003 samp
 
 ## Next priorities
 
-1. Seek native iris omission evidence after EYE-002; tongue-out validation deferred (user reports provided MCP animations lack it, VIS-002).
+1. Seek native iris omission evidence after EYE-002 and native tongue-function evidence. [MOUTH-001](../experiments/mouth-001.md) extends VIS-002 with explicit raw tongue states; native scheduling/function remains open.
 2. Expand eye recipe beyond two stock breeds and front-view color tests.
 3. Expand connectors, body areas and morph groups beyond MORPH-001 ordinary sizing.
 4. Another breed per species; broaden edited cross-version checks beyond PROJECT-003 projections and LINE-016 connector texture routing.

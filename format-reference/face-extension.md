@@ -19,7 +19,7 @@ Head spacing, Ear Extension, Move and Project Ball run later. Added balls attach
 
 ## Renderer-observed scope
 
-[FACE-002](../experiments/face-002.md) extends the scalar controls to stock Scottie/Siamese in Petz3/4/5 on the same20cd029 build. All720 matched Petz3/5 geometry records and360 anchor-aligned images equal the Petz4 controls. Three look modes, numerical ages0/12/50/100, three poses and the recorded front/profile samples are covered; no other breed/version equivalence is implied. Age12/100 match forced young/adult geometry in180 comparisons; age0 has separate juvenile shrink and differs in all90 forced-young comparisons despite matching Face Extension values.
+[FACE-002](../experiments/face-002.md) extends the scalar controls to stock Scottie/Siamese in Petz 3/4/5 on the same 20cd029 build. All 720 matched Petz 3/5 geometry records and 360 anchor-aligned images equal the Petz 4 controls. Three look modes, numerical ages 0/12/50/100, three poses and the recorded front/profile samples are covered; no other breed/version equivalence is implied. Age 12/100 match forced young/adult geometry in 180 comparisons; age 0 has separate juvenile shrink and differs in all 90 forced-young comparisons despite matching Face Extension values.
 
 [FACE-001](../experiments/face-001.md) records the exact inputs, current build, local MCP controls, unchanged anatomy/dependencies, arithmetic oracle and aligned comparisons. Its isolated oracle disables unrelated shape/Move/Project controls before checking the formula; the asset sweep separately records the complete original construction. Do not substitute isolated displacements for final breed geometry.
 

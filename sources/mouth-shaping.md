@@ -10,4 +10,4 @@ Reviewed 2026-11-15. Primary author: Carolyn Horn. Start at her [LNZ File Detail
 
 Renderer work is indexed from the [mouth preservation guide](../visual-editing/existing-mouth-and-muzzle.md). A matching static preview cannot validate eating, panting, tongue-out, breeding or other game behavior. The project preservation requirement remains authoritative for authoring: retain functional anatomy and original dependencies when a requested shape exceeds an established recipe.
 
-Private retrievals, response metadata and content SHA-256 values are in `scratch/research/mouth-sources/retrieval.json`. These are retrieval dates, not publication dates. The source text remains private; the public documentation records attributed summaries and links rather than reproducing tutorials.
+The [retrieval manifest](mouth-shaping-retrieval.json) retains URLs, content lengths and hashes. Private retrievals and response metadata are in `scratch/research/mouth-sources/retrieval.json`. These are retrieval dates, not publication dates. The source text remains private; the public documentation records attributed summaries and links rather than reproducing tutorials.

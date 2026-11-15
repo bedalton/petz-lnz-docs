@@ -40,20 +40,20 @@ The authoring agent should reuse established field behavior, preserve the origin
 
 ## Existing Labrador surface controls
 
-[MOUTH-002](../experiments/mouth-002.md) tests the following exact Petz4 blank Labrador adjustments with original IDs/parents/size references retained. These are controlled primitives, not universal IDs or a finished mouth. Young inherits the adult Add Ball rows in this asset.
+[MOUTH-002](../experiments/mouth-002.md) tests the following exact Petz 4 blank Labrador adjustments with original IDs/parents/size references retained. These are controlled primitives, not universal IDs or a finished mouth. Young inherits the adult Add Ball rows in this asset.
 
 | Existing part | Tested change | Review requirement |
 | --- | --- | --- |
-| Cheek details78/79 | Local x+6/−6 | Check both cheek boundaries in front and profile, adult and young |
-| Mouth corners80/81 and jowls91/92 | Paired local x+4/−4 | Retain original host balls and connectors; check joins in raw mouth states |
-| Chin/jowl details88–92 | Local y+6 | Diagnostic only: the sampled raw27 preview covers more of the tongue; do not accept from a closed-mouth still |
-| Relative tongue detail77 | Ordinary size−1→0, keeping parent/reference63 | Sampled closed presets remain radius0; raw frames retain positive reference-driven size. Zero relative offset does not suppress the tongue |
+| Cheek details 78/79 | Local x+6/−6 | Check both cheek boundaries in front and profile, adult and young |
+| Mouth corners 80/81 and jowls 91/92 | Paired local x+4/−4 | Retain original host balls and connectors; check joins in raw mouth states |
+| Chin/jowl details 88–92 | Local y+6 | Diagnostic only: the sampled raw27 preview covers more of the tongue; do not accept from a closed-mouth still |
+| Relative tongue detail 77 | Ordinary size−1→0, keeping parent/reference 63 | Sampled closed presets remain radius 0; raw frames retain positive reference-driven size. Zero relative offset does not suppress the tongue |
 
-Only the listed added IDs change numerical geometry in these controls; base mouth anatomy remains unchanged. Coordinate-only controls retain all radii. The relative tongue edit changes only detail77 and equals the original reference63 radius. For a different breed, inventory the actual rows first. Native function, intermediate growth and combined edits remain unvalidated.
+Only the listed added IDs change numerical geometry in these controls; base mouth anatomy remains unchanged. Coordinate-only controls retain all radii. The relative tongue edit changes only detail 77 and equals the original reference 63 radius. For a pixel-positive check of this exact tongue detail, raw Dogz animation 19/frame 31 adult front/profile exposes the relative-size adjustment; animation 27/frame 5 retains identical sampled pixels despite a larger radius. For a different breed, inventory the actual rows first. Native function, intermediate growth and combined edits remain unvalidated.
 
 ## Additional raw mouth states
 
-[MOUTH-001](../experiments/mouth-001.md) inventories Petz4 raw animation data and selects twelve tongue-size-positive frames per species. Existing Labrador/Siamese anatomy is previewed in adult/young with exact local MCP/direct agreement. For example, Dogz animation27/frame5 exposes positive tongue geometry. Use explicit raw frame controls and retain the exact species/version/asset identity; do not assign a panting/eating label or claim native motion from an isolated frame. These additional samples extend the preset review; native expression scheduling and continuous movement remain untested.
+[MOUTH-001](../experiments/mouth-001.md) inventories Petz 4 raw animation data and selects twelve tongue-size-positive frames per species. Existing Labrador/Siamese anatomy is previewed in adult/young with exact local MCP/direct agreement. For example, Dogz animation 27/frame 5 exposes positive tongue geometry. Use explicit raw frame controls and retain the exact species/version/asset identity; do not assign a panting/eating label or claim native motion from an isolated frame. These additional samples extend the preset review; native expression scheduling and continuous movement remain untested.
 
 ## Required mouth review
 

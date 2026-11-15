@@ -36,6 +36,8 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 
 ## Evidence
 
+- [Preserved-mouth controls, raw frames and session audit](docs/session-2026-11-15-mouth-controls.md)
+
 - [Puppy/kitten growth, saved caches and session audit](docs/session-2026-11-11-young-appearance.md)
 
 - [Current relative morph session and integrity audit](docs/session-2026-11-11-relative-morphs.md)

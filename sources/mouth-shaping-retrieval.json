@@ -1,0 +1,20 @@
+{
+  "reviewed_utc": "2026-11-15",
+  "sources": [
+    {
+      "url": "https://homebody.eu/carolyn/downloabx/tutorials/tutorialbits/LNZdetails.htm",
+      "sha256": "4c2fcfc11293dce08a9846b8314b2fc22dcdbb49b2e2948689d6cfb3a0470af2",
+      "bytes": 4523
+    },
+    {
+      "url": "https://homebody.eu/carolyn/downloabx/tutorials/tutorialbits/LNZ3rd.txt",
+      "sha256": "e54f24501c66e073498fec802a4bb5f8ce4b221c49087d47a2c9314c7f3e8d39",
+      "bytes": 33377
+    },
+    {
+      "url": "https://homebody.eu/carolyn/downloabx/tutorials/tutorialbits/LNZ2nd.txt",
+      "sha256": "fd80061416604e076e20a69bc4305dccd431889cc0e941eb49df7f6c8af916b7",
+      "bytes": 38253
+    }
+  ]
+}

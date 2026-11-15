@@ -13,7 +13,7 @@ Read the [renderer update review](../experiments/update-001.md) before using his
 | Enlarge or reshape a head | [Head control guide](../visual-editing/head-ball.md), then [field details](../format-reference/head-enlargement.md) |
 | Change iris/pupil colors | [Eye color guide](../visual-editing/eye-colors.md) |
 | Move a ball | [Move](../format-reference/move.md); distinguish local rotated offsets from native anchoring claims |
-| Reshape muzzle, cheeks, jowls, lips, chin, jaw or tongue | [Mouth/muzzle preservation](../visual-editing/existing-mouth-and-muzzle.md); retain existing components and motion dependencies |
+| Reshape muzzle, cheeks, jowls, lips, chin, jaw or tongue | [Mouth/muzzle controls](../visual-editing/existing-mouth-and-muzzle.md), [Face Extension](../format-reference/face-extension.md); retain existing components and review raw states alongside presets |
 | Reshape existing ears or tail | [Existing-anatomy recipes](../visual-editing/existing-ears-and-tail.md); native nodes and existing attached surfaces, no replacement chain |
 | Add a genuinely new body-attached ornament | [Attachment guide](../visual-editing/attached-details.md) and [row fields](../format-reference/add-ball.md) |
 | Connect details or change connector width/order/style | [Linez](../format-reference/linez.md) |

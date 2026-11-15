@@ -538,3 +538,8 @@ Final reference pass gives the [current-build tail controls](format-reference/yo
 ## Renderer update installed and local MCP reloaded
 
 2026-11-15 [UPDATE-013](experiments/update-013.md) completed after user restored full source20cd029. Reinstalled no-deps into scratch/petz-local-x86-venv;62 sources match checkout, only rendering/presets.py changed from preflight. New HTTP PID1543/session9456 on127.0.0.1:8765/mcp with screenshots,young-002,custom-001 asset roots. Six-tool discovery/capabilities/list_poses/inspection pass;12 exact named/raw/direct pose triples (24 HTTP calls) verify Scottie/Siamese standing/sitting/lying front/side and cataloguev3, DOG79/29/CAT263/24 lying. All21 originals match. tools/check_renderer_pose_reload.py reproduces; private evidence scratch/research/update-013, public compact manifest linked from experiment. Prior missing-source condition is resolved. No renderer/source edits or hosted/client refresh; existing renderer .gitignore/uv.lock and unrelated istall-node untouched. Historical pixel evidence remains build-specific; no broad replay or game validation claimed.
+
+
+## Untracked NodeSource setup script
+
+2026-11-15 [investigation](docs/workspace-node-installer.md): istall-node is a3907-byte NodeSource24 repository setup script with November9 mtime. Existing notes show repeated preservation, not observed recreation. Searched project/tooling/startup locations yield no creator. Origin remains uncertain; no script execution, deletion or ignore change. Private stat/hash evidence scratch/research/workspace-node-installer/inspection.json.

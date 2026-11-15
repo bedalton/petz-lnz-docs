@@ -38,6 +38,10 @@ The authoring agent should reuse established field behavior, preserve the origin
 3. Review jaw/head continuity and attached surfaces. The control moves a fixed muzzle set, not the whole face; projections can also move details with unchanged parents. In this Labrador even existing ear details 82/83 respond through mouth projections.
 4. Check numerical positions when rounding or occlusion hides a change. Keep original size references and frame-dependent visibility. Treat motion and native behavior as untested until separately observed.
 
+## Additional raw mouth states
+
+[MOUTH-001](../experiments/mouth-001.md) inventories Petz4 raw animation data and selects twelve tongue-size-positive frames per species. Existing Labrador/Siamese anatomy is previewed in adult/young with exact local MCP/direct agreement. For example, Dogz animation27/frame5 exposes positive tongue geometry. Use explicit raw frame controls and retain the exact species/version/asset identity; do not assign a panting/eating label or claim native motion from an isolated frame. These additional samples extend the preset review; native expression scheduling and continuous movement remain untested.
+
 ## Required mouth review
 
 - Inventory original and final base/added mouth components. Every original row must retain its ID and attachment relationship; identify deliberate coordinate/size/color edits separately.

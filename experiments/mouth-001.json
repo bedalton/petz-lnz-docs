@@ -1,0 +1,183 @@
+{
+  "experiment": "MOUTH-001",
+  "backend": "local stdio MCP plus fresh direct Python",
+  "revision": "20cd02946c53ea702db789d5b6eeda62c54c429d",
+  "packages": {
+    "petz-renderer-mcp": "0.1.0",
+    "Pillow": "13.0.0",
+    "fastmcp": "4.1.6"
+  },
+  "script_sha256": "9e65be5298d2052f50cd335b3afc323d30f83d3aa4f4cf334c7e8e580c5d2f2e",
+  "inventory_script_sha256": "fe56658b7c10f8002ec95376faadb0d42755548ce60f3a48211fc5c5e92e7623",
+  "inventory_path": "scratch/research/mouth-001/inventory.json",
+  "inventory_sha256": "d2fdb5e49f25f1db78a9bc9696a9387119896a16d94a8e68d2a15a7baec7e971",
+  "report_path": "scratch/research/mouth-001/renders/report.json",
+  "report_sha256": "a457a0f6260481834a8159400d602ce4fbe515f881500cbc501f1c9c52df55b4",
+  "verification_path": "scratch/research/mouth-001/verification.json",
+  "verification_sha256": "eebe1ed9d2d303ddf7020471f8358748696bbfea9defff153b7ac596aeb09fe9",
+  "input_hashes": {
+    "clean_dogs/petz4/Labrador.dog": "9fb4c5a84a417ae53783e7409d88ac8e0d7c50a4b95670819534a993a36699c0",
+    "games/petz4/Resource/Catz/Siamese.cat": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674",
+    "games/petz4/Petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "installed_source_count": 62,
+  "inventory_summary": [
+    {
+      "species": "Dogz",
+      "animations": 445,
+      "frames": 13457,
+      "positive_mod_frames": 2666,
+      "positive_mod_animations": 125,
+      "tongue_bhd_sizes": [
+        0,
+        0
+      ]
+    },
+    {
+      "species": "Catz",
+      "animations": 493,
+      "frames": 16040,
+      "positive_mod_frames": 5655,
+      "positive_mod_animations": 223,
+      "tongue_bhd_sizes": [
+        0,
+        0
+      ]
+    }
+  ],
+  "mcp_direct_matches": 288,
+  "geometry_records": 144,
+  "png_checks": 296,
+  "rgba_comparisons": 192,
+  "tongue_radius_range": {
+    "labrador": {
+      "63": [
+        4,
+        7
+      ],
+      "64": [
+        4,
+        7
+      ],
+      "77": [
+        3,
+        6
+      ]
+    },
+    "siamese": {
+      "55": [
+        4,
+        7
+      ],
+      "56": [
+        4,
+        8
+      ]
+    }
+  },
+  "selected_frames": {
+    "Dogz": [
+      {
+        "animation": 27,
+        "frame": 5
+      },
+      {
+        "animation": 19,
+        "frame": 31
+      },
+      {
+        "animation": 197,
+        "frame": 13
+      },
+      {
+        "animation": 28,
+        "frame": 18
+      },
+      {
+        "animation": 231,
+        "frame": 14
+      },
+      {
+        "animation": 1,
+        "frame": 14
+      },
+      {
+        "animation": 34,
+        "frame": 5
+      },
+      {
+        "animation": 42,
+        "frame": 15
+      },
+      {
+        "animation": 148,
+        "frame": 48
+      },
+      {
+        "animation": 215,
+        "frame": 12
+      },
+      {
+        "animation": 403,
+        "frame": 26
+      },
+      {
+        "animation": 2,
+        "frame": 5
+      }
+    ],
+    "Catz": [
+      {
+        "animation": 167,
+        "frame": 4
+      },
+      {
+        "animation": 257,
+        "frame": 20
+      },
+      {
+        "animation": 402,
+        "frame": 54
+      },
+      {
+        "animation": 401,
+        "frame": 32
+      },
+      {
+        "animation": 259,
+        "frame": 1
+      },
+      {
+        "animation": 453,
+        "frame": 10
+      },
+      {
+        "animation": 187,
+        "frame": 52
+      },
+      {
+        "animation": 40,
+        "frame": 7
+      },
+      {
+        "animation": 258,
+        "frame": 12
+      },
+      {
+        "animation": 260,
+        "frame": 1
+      },
+      {
+        "animation": 41,
+        "frame": 7
+      },
+      {
+        "animation": 439,
+        "frame": 19
+      }
+    ]
+  }
+}

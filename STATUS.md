@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-15 original texture authoring complete: [guide](visual-editing/custom-textures.md), [CUSTOM-001](experiments/custom-001.md), [community review](sources/custom-textures.md). Indexed BMP generator/converter/recolor/transform CLI;84 local MCP/direct matches,169 private PNGs, full replay and CLI/hash checks pass. Loose BMP loading fails; private copied-breed embedding demonstrated. Native loading/orientation remains unvalidated; originals/renderer unchanged.
+
 - 2026-11-13 functional-anatomy rule expanded explicitly to muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue: [mouth guide](visual-editing/existing-mouth-and-muzzle.md). All authoring routes/checklists updated. Mastiff hid added mouth details, not every base mouth ball. Mouth-specific recipe/motion gaps remain shared research; no new experiment or breed edit.
 
 - 2026-11-13 shared anatomy research complete: [ANATOMY-002](experiments/anatomy-002.md), [existing ear/tail recipes](visual-editing/existing-ears-and-tail.md). Six nonreplacement controls, 96 local MCP renders, 48 geometry records, 512 branch-preserving parser comparisons; original anatomy/dependencies retained. Agent workflow now requires reuse and forbids hidden/recreated ears/tails. Native motion, full folds/taper and broader applicability remain open; Mastiff unchanged.

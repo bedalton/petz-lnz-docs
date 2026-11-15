@@ -25,6 +25,7 @@ Renderer upgrade: [completed review](docs/renderer-upgrade-2026-11-10.md) review
 - [Iris/pupil colors](visual-editing/eye-colors.md)
 - [Body areas](format-reference/body-areas.md)
 - [Added-ball groups](format-reference/add-groups.md)
+- [Custom texture creation, palettes and orientation](visual-editing/custom-textures.md)
 - [Retained texture state](format-reference/texture-state.md)
 - [Preserve and reshape the mouth/muzzle](visual-editing/existing-mouth-and-muzzle.md)
 - [Reshape existing ears and tail](visual-editing/existing-ears-and-tail.md), [ANATOMY-002 controls](experiments/anatomy-002.md)

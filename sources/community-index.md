@@ -13,3 +13,7 @@ These are community authors' practical accounts, not official specifications. Da
 ## Broader directory review
 
 [Hexing Resources and Guides: initial triage](hexing-resources-review.md) assesses a six-tutorial sample and indexes 163 external bullet entries from the wiki. Includes priorities, overlap and specific renderer-supported disagreements; most linked material remains unreviewed.
+
+## Custom texture authoring
+
+[Focused texture-source review](custom-textures.md) (2026-11-15) covers Shadowfinder palette conversion, Cat Magic indexed BMP creation and Unique Petz dithering. [CUSTOM-001](../experiments/custom-001.md) tests original artwork separately from those source-reported workflows.

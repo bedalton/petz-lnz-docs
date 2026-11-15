@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "url": "https://petzhexing.weebly.com/furfilepalette.html",
+      "retrieved_date": "2026-11-15",
+      "method": "direct HTTPS curl GET",
+      "http_status": 200,
+      "private_path": "scratch/research/custom-textures-sources/shadowfinder.html",
+      "sha256": "6326dba627ed9618c7e1d1d10cde630fbf529c7a4846ea8cf2c14c7f2be6ad52",
+      "bytes": 27881
+    },
+    {
+      "url": "https://catmagic.neocities.org/texturemaking",
+      "retrieved_date": "2026-11-15",
+      "method": "direct HTTPS curl GET",
+      "http_status": 200,
+      "private_path": "scratch/research/custom-textures-sources/catmagic.html",
+      "sha256": "8eab0981fcbdf6e8c04d563eba12da4d7b6b0c73263e726075d3ed9f49f397d7",
+      "bytes": 2740
+    },
+    {
+      "url": "https://uniquepetz.spellwork.dev/dither/",
+      "retrieved_date": "2026-11-15",
+      "method": "direct HTTPS curl GET",
+      "http_status": 200,
+      "private_path": "scratch/research/custom-textures-sources/dither.html",
+      "sha256": "43bd4fea268ccfed727aa9413e7249db7efa1df0741dd50f92866d5def531fa3",
+      "bytes": 5247
+    }
+  ]
+}

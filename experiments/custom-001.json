@@ -1,0 +1,174 @@
+{
+  "experiment": "CUSTOM-001",
+  "backend": "local stdio MCP and direct Python",
+  "revision": "49c7f62eab51b61b9f68801ba7571178670c433e",
+  "python": "3.12.16 (main, Oct 26 2026, 14:08:45) [Clang 23.1.3 ]",
+  "dependencies": {
+    "petz-renderer-mcp": "0.1.0",
+    "pillow": "13.0.0",
+    "fastmcp": "4.1.6",
+    "pefile": "2024.8.26"
+  },
+  "originals": {
+    "games/petz4/Resource/Dogz/Scottie.dog": "dec10d46f63375aaad95e317c65354b9918f41c4f0465a85df1f9aaf846b104a",
+    "games/petz4/Resource/Catz/Siamese.cat": "c2ced2c874366b6b17f6a3107efaaa21433eba8b033eaf0bef4abfe3be4a4674"
+  },
+  "engine_hashes": {
+    "games/petz4/Petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "files": {
+    "base": {
+      "file": "base.bmp",
+      "sha256": "769cde5e2b9c28d474a840dfa59575888b4e5a763a1c6f0642feb5e34fa21e91",
+      "indices_sha256": "1cf35431265fc5afb9f46afa99cfea0a56723ff1d63ec631e198386ea1c4e65c",
+      "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77"
+    },
+    "table": {
+      "file": "table.bmp",
+      "sha256": "ad6458a7d8cd09d8b3d6d079ea7f3e98cda58d6ff431c26b01d1acdf285b6cb5",
+      "indices_sha256": "1cf35431265fc5afb9f46afa99cfea0a56723ff1d63ec631e198386ea1c4e65c",
+      "palette_sha256": "78a2d84b294d6c447e6b6e78516f12c1659958fd93f9ec3716c62b4357e780a2"
+    },
+    "indices": {
+      "file": "indices.bmp",
+      "sha256": "085a4a4f495adcc4472687ded8127122a977447d660e88a6262144ef717c19b7",
+      "indices_sha256": "9b1f0fed190ee804843c1cdb6ce8ba90c9a56e75f92fb5b86a7a0511597e8937",
+      "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77"
+    },
+    "cw90": {
+      "file": "cw90.bmp",
+      "sha256": "f61f05792237020148022b9b464983be9d6e3af2a1e4178d2649e89dd6466a27",
+      "indices_sha256": "b34f699667e89117e02bc133bf138b90286ba4aeb6f6c3a64a64026c080eeb66",
+      "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77"
+    },
+    "mirror": {
+      "file": "mirror.bmp",
+      "sha256": "86bb44d593f910d9ab5d2bab584bfad3f42bb12d509c4a0c0ac90b36a1128da0",
+      "indices_sha256": "c87eb1b110c1fc1c5ec2d11f0568945c834e63069586789af589769232f41b57",
+      "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77"
+    },
+    "fur": {
+      "file": "fur.bmp",
+      "sha256": "8fa45ebd8bc5cc735182fead41b0dba3f9622def65f3d2e615479632741a9c70",
+      "indices_sha256": "70da5d11c763731eec2fe9783a539428fe48d0a1985ae023551aa024cd585c1d",
+      "palette_sha256": "12faa970c6c2732b78f9582ae0225b72ab7bec804ad6d67e5b5f30753b9cae77"
+    }
+  },
+  "windows": [
+    {
+      "angles": null,
+      "start": [
+        112,
+        112
+      ]
+    },
+    {
+      "angles": [
+        0,
+        0
+      ],
+      "start": [
+        112,
+        112
+      ]
+    },
+    {
+      "angles": [
+        64,
+        0
+      ],
+      "start": [
+        128,
+        112
+      ]
+    },
+    {
+      "angles": [
+        0,
+        64
+      ],
+      "start": [
+        112,
+        128
+      ]
+    },
+    {
+      "angles": [
+        -64,
+        0
+      ],
+      "start": [
+        96,
+        112
+      ]
+    }
+  ],
+  "report_path": "scratch/research/custom-001/report.json",
+  "report_sha256": "0f1e609d03fa0fe0503f6fe2a65c7bb0b7cafd992193b57f92cc02ee7824397d",
+  "script_sha256": "303e2b679803114cd7bd4c5b866c6688c7e785e2cb1b2c5b0042db72406f5b17",
+  "author_tool_sha256": "590ca6cafa550b9e411ea5ceda48a6f1251934e206930b506faaffb39c30240a",
+  "source_files": 62,
+  "views": [
+    {
+      "pose": "standing",
+      "yaw_degrees": 0
+    },
+    {
+      "pose": "standing",
+      "yaw_degrees": 90
+    },
+    {
+      "pose": "standing",
+      "yaw_degrees": 180
+    },
+    {
+      "pose": "standing",
+      "yaw_degrees": 270
+    },
+    {
+      "pose": "sitting",
+      "yaw_degrees": 0
+    },
+    {
+      "pose": "lying",
+      "yaw_degrees": 90
+    }
+  ],
+  "counts": {
+    "breed_copies": 16,
+    "direct_portraits": 84,
+    "mcp_portraits": 84,
+    "saved_pngs": 169,
+    "table_equal_fixtures": 12,
+    "each_transformation_changed_fixtures": 12
+  },
+  "species": [
+    {
+      "species": "Dogz",
+      "head": 52,
+      "marker": 90,
+      "slot": 2,
+      "resource": "CHIP",
+      "external_error": "missing BMP/CUSTOM_DIAG in [Dogz-external.dog, Resource/Petz 4 Rez.dll, Resource/Dogz 4 Rez.dll, Resource/Catz 4 Rez.dll]"
+    },
+    {
+      "species": "Catz",
+      "head": 24,
+      "marker": 90,
+      "slot": 3,
+      "resource": "SOPHISTO",
+      "external_error": "missing BMP/CUSTOM_DIAG in [Catz-external.cat, Resource/Petz 4 Rez.dll, Resource/Dogz 4 Rez.dll, Resource/Catz 4 Rez.dll]"
+    }
+  ],
+  "verification_path": "scratch/research/custom-001/verification.json",
+  "verification_sha256": "962742c66036ac8d0e942c614e390b53ea692ebb736a06a30b8a5aedf5f18782",
+  "full_replay": {
+    "compared_png_hashes": 169,
+    "all_equal": true,
+    "previous_report_path": "scratch/research/custom-001-first-success/report.json",
+    "previous_report_sha256": "93d94636bfbefb0ccff2cbb7d0be06e1ce679e66a68c7fb7d02dbbad562f33a4"
+  }
+}

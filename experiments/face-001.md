@@ -21,7 +21,7 @@ Sixty geometry records check all variant/breed/look/pose combinations. Each effe
 | Blank Labrador | 23 | 23 | 24 |
 | Stock Siamese | 10 | 24 | 24 |
 
-All 48 source/roundtrip render pairs are byte-identical. Unchanged views can conceal numerical changes. The source adult scalar is -2 for this Labrador and +2 for this Siamese; setting zero is an intervention rather than a general no-op.
+All 48 source/roundtrip render pairs are byte-identical. Unchanged views can conceal numerical changes. The twelve young Siamese Face=0 images are a different case: its source scalar −1 truncates to an isolated zero displacement in all three sampled frames, and the complete geometry is unchanged. Adult Siamese Face=0 changes geometry in all three poses, yet lying yaw0/180 retain identical pixels. Distinguish integer no-ops from pixel-hidden geometry changes. The source adult scalar is -2 for this Labrador and +2 for this Siamese; setting zero is an intervention rather than a general no-op.
 
 The field translates a fixed species-specific muzzle set without directly resizing it; the [reference](../format-reference/face-extension.md) records the formula, ordering and repeated utility ID. The complete asset result is broader than that fixed base set because original attachments and projections remain active. In the Labrador, added ear details 82/83 can move despite unchanged parents 4/28: existing projections 51→82/83 and 39→82 /15→83 couple them to the mouth. Do not infer dependency scope from parent IDs alone.
 

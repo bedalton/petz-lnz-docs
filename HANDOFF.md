@@ -1,5 +1,7 @@
 # Handoff
 
+- 2026-11-15 final Face=0 interpretation: [FACE-001](experiments/face-001.md) now distinguishes young Siamese −1→0 integer no-ops (three geometries/twelve images) from adult lying yaw0/180 pixel-hidden geometry changes. Derived from the audited retained evidence; no new renders or input edits.
+
 - 2026-11-15 30-minute mouth research session audited: [session/resume index](docs/session-2026-11-15-mouth-controls.md). Source review + FACE-001/002 + MOUTH-001/002 complete;1,218 PNG hashes,1,344 geometry records,46 copies,21 recorded originals and62 sources pass. Six fresh local MCP matches across Petz3/4/5; native behavior remains unvalidated. New guide covers scalar/detail controls and raw tongue states; earlier ongoing notes are superseded. No renderer/original edits; authorization ends with this session.
 
 - 2026-11-15 cross-version muzzle controls: [FACE-002](experiments/face-002.md).540 local MCP renders,1,080 geometry records,3,072 parser controls;720 cross-version geometry and360 RGBA pairs all match Petz4.180 age12/100 endpoints pass;90 age0 cases retain separate shrink. Original anatomy/18 inputs preserved; native behavior and other breeds unvalidated.

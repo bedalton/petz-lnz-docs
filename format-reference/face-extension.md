@@ -15,7 +15,7 @@ The implementation adds the same vector to a fixed species-specific list:
 
 ID 65 occurs twice in each implementation list and receives two additions. Its source labels are uncertain; this code observation supplies no authoring reason to edit or replace it. The head and jaw anchors are outside these lists. This control consequently changes muzzle-to-jaw relationships; it does not translate the entire face as one rigid object.
 
-Head spacing, Ear Extension, Move and Project Ball run later. Added balls attach afterward, and projections involving added IDs can move them again. A moved attachment therefore need not have a moved parent. Pet scale and integer rounding mean `12` does not promise a 12-pixel shift in the final PNG. Face Extension does not directly enlarge radii or alter visibility.
+Head spacing, Ear Extension, Move and Project Ball run later. Added balls attach afterward, and projections involving added IDs can move them again. A moved attachment therefore need not have a moved parent. Pet scale and integer rounding mean `12` does not promise a 12-pixel shift in the final PNG. Face Extension does not directly enlarge radii or alter visibility. A small nonzero scalar can truncate to a zero vector: the sampled young Siamese source value −1 does so in all three FACE-001 frames, and setting it to zero leaves geometry unchanged. This is distinct from a geometry change hidden in the rendered image.
 
 ## Renderer-observed scope
 

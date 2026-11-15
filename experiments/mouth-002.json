@@ -1,0 +1,663 @@
+{
+  "experiment": "MOUTH-002",
+  "backend": "local stdio MCP",
+  "revision": "20cd02946c53ea702db789d5b6eeda62c54c429d",
+  "packages": {
+    "petz-renderer-mcp": "0.1.0",
+    "Pillow": "13.0.0",
+    "fastmcp": "4.1.6"
+  },
+  "script_sha256": "675942a4a5c7456a9be6d8db9da691d0d63f1a4c7ce9241a37642bbe1970ce82",
+  "helper_hashes": {
+    "tools/face_extension_probe.py": "c414ea89fa097c8593642368527177b36a63dbc73d122491aa732e452e61b435",
+    "tools/native_anatomy_probe.py": "973dfa3b28cb8aa6be3c5f9fa54cb9d444de5deed05956e94f63543d76756832"
+  },
+  "report_path": "scratch/research/mouth-002/report.json",
+  "report_sha256": "1a2b30db5028b67ea5dbcda85a41b2d67fa194a75d18eae221068ed8c8896dc7",
+  "verification_path": "scratch/research/mouth-002/verification.json",
+  "verification_sha256": "3827e7b5a185c84ea1dd701ca0450afb310d349f4bb3dc4c320788b7c43801fb",
+  "input_hashes": {
+    "clean_dogs/petz4/Labrador.dog": "9fb4c5a84a417ae53783e7409d88ac8e0d7c50a4b95670819534a993a36699c0",
+    "games/petz4/Petz 4.exe": "6f492e37b4fb76aff970b80e2fd7ac1e2de01caedd5551ddc505e80ff714bdae",
+    "games/petz4/Resource/Dogz 4 Rez.dll": "1bb60e94afd49a1ec8283057728436f8b5de6a9b8eb672e53ef48d2c85d2fa25",
+    "games/petz4/Resource/Catz 4 Rez.dll": "87c6b9ad32dc6b14569cf5953cba8281e04a522dde31a22b5f86e012b7989a71",
+    "games/petz4/Resource/Petz 4 Rez.dll": "80c08158ba80030d31c6aa5bd2078da36a10652caf2fdb7bdd6701ef8f675277"
+  },
+  "installed_source_count": 62,
+  "parse_checks": 512,
+  "mcp_renders": 120,
+  "geometry_records": 60,
+  "png_checks": 130,
+  "replay_png_matches": 130,
+  "rgba_comparisons": 120,
+  "geometry_summary": [
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "standing",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "sitting",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "lying",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "adult",
+      "state": "raw27",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [
+        77
+      ],
+      "tongue_before_radius": 6,
+      "tongue_after_radius": 7
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "adult",
+      "state": "raw19",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [
+        77
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "standing",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "sitting",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "lying",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 0,
+      "tongue_after_radius": 0
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 5
+    },
+    {
+      "look": "puppy",
+      "state": "raw27",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [
+        77
+      ],
+      "tongue_before_radius": 5,
+      "tongue_after_radius": 6
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "source",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 4
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "roundtrip",
+      "changed_geometry_ids": [],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 4
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "cheek_x",
+      "changed_geometry_ids": [
+        78,
+        79
+      ],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 4
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "lip_jowl_x",
+      "changed_geometry_ids": [
+        80,
+        81,
+        91,
+        92
+      ],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 4
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "lower_y",
+      "changed_geometry_ids": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 4
+    },
+    {
+      "look": "puppy",
+      "state": "raw19",
+      "variant": "tongue_relative0",
+      "changed_geometry_ids": [
+        77
+      ],
+      "tongue_before_radius": 4,
+      "tongue_after_radius": 5
+    }
+  ]
+}

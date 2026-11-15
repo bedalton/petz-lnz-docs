@@ -25,7 +25,7 @@ These are asset-reported names for the exact Petz 4 Labrador, not universal addb
 
 Start from the original mouth inventory, including all attached details and incoming/outgoing Move, Project Ball and Linez rows. A muzzle comprises multiple hosts and dependents; moving one visible ball is not a coherent muzzle edit. Keep the original parent and optional size-reference fields when reshaping an attached cheek, jowl or lip. Check whether young inherits the adult row or defines a separate controlling section before changing either layer.
 
-Use [Move](../format-reference/move.md) for documented local offsets, [Project Ball](../format-reference/project-ball.md) for documented endpoint relationships, and [Add Ball fields](../format-reference/add-ball.md) for existing attached-row coordinates/size. General head controls affect spacing and radius differently; read the [head guide](head-ball.md). The tested head-to-nose projection is a localized control, not a tested full-muzzle recipe. [Face Extension](../format-reference/face-extension.md) now has dedicated scalar controls; coordinated jowl/lip shaping still needs shared recipes before offering numerical presets.
+Use [Move](../format-reference/move.md) for documented local offsets, [Project Ball](../format-reference/project-ball.md) for documented endpoint relationships, and [Add Ball fields](../format-reference/add-ball.md) for existing attached-row coordinates/size. General head controls affect spacing and radius differently; read the [head guide](head-ball.md). The tested head-to-nose projection is a localized control, not a tested full-muzzle recipe. [Face Extension](../format-reference/face-extension.md) now has dedicated scalar controls; [existing-detail controls](../experiments/mouth-002.md) now cover paired cheek, mouth-corner/jowl and chin/jowl offsets. A complete coordinated base-mouth design still needs further work.
 
 The authoring agent should reuse established field behavior, preserve the original functional construction and report an unmet shape requirement when a recipe is missing. It must not invent replacement mouth geometry or independently repeat fundamental research on each task. The shared research priorities below identify the missing knowledge explicitly.
 
@@ -37,6 +37,19 @@ The authoring agent should reuse established field behavior, preserve the origin
 2. Make a small deliberate scalar adjustment, then compare aligned front, three-quarter and profile views against the unchanged source.
 3. Review jaw/head continuity and attached surfaces. The control moves a fixed muzzle set, not the whole face; projections can also move details with unchanged parents. In this Labrador even existing ear details 82/83 respond through mouth projections.
 4. Check numerical positions when rounding or occlusion hides a change. Keep original size references and frame-dependent visibility. Treat motion and native behavior as untested until separately observed.
+
+## Existing Labrador surface controls
+
+[MOUTH-002](../experiments/mouth-002.md) tests the following exact Petz4 blank Labrador adjustments with original IDs/parents/size references retained. These are controlled primitives, not universal IDs or a finished mouth. Young inherits the adult Add Ball rows in this asset.
+
+| Existing part | Tested change | Review requirement |
+| --- | --- | --- |
+| Cheek details78/79 | Local x+6/−6 | Check both cheek boundaries in front and profile, adult and young |
+| Mouth corners80/81 and jowls91/92 | Paired local x+4/−4 | Retain original host balls and connectors; check joins in raw mouth states |
+| Chin/jowl details88–92 | Local y+6 | Diagnostic only: the sampled raw27 preview covers more of the tongue; do not accept from a closed-mouth still |
+| Relative tongue detail77 | Ordinary size−1→0, keeping parent/reference63 | Sampled closed presets remain radius0; raw frames retain positive reference-driven size. Zero relative offset does not suppress the tongue |
+
+Only the listed added IDs change numerical geometry in these controls; base mouth anatomy remains unchanged. Coordinate-only controls retain all radii. The relative tongue edit changes only detail77 and equals the original reference63 radius. For a different breed, inventory the actual rows first. Native function, intermediate growth and combined edits remain unvalidated.
 
 ## Additional raw mouth states
 
@@ -52,4 +65,4 @@ The authoring agent should reuse established field behavior, preserve the origin
 
 ## Shared research still required
 
-The preservation rule is firm; the missing design recipes must be researched centrally. Face Extension scalar effects now have [scoped evidence](../experiments/face-001.md). Remaining priorities are coordinated original jowl/cheek/lip width, depth and size changes; chin/jaw and tongue size-reference interactions; then open-mouth motion, growth and native-game comparisons. Record species, exact baseline, version/build and tested states with each result, then publish the reusable recipe here. The scalar experiment establishes static renderer behavior; native motion and a complete muzzle design remain unvalidated.
+The preservation rule is firm; the missing design recipes must be researched centrally. Face Extension scalar effects now have [scoped evidence](../experiments/face-001.md). Existing-detail offsets and one reference-preserving tongue adjustment now have [scoped controls](../experiments/mouth-002.md). Remaining priorities are coordinated base-host plus attached-surface width/depth/size design; chin/jaw interactions; sustained open-mouth motion, growth and native-game comparisons. Record species, exact baseline, version/build and tested states with each result, then publish the reusable recipe here. The scalar experiment establishes static renderer behavior; native motion and a complete muzzle design remain unvalidated.

@@ -3,6 +3,7 @@ import argparse
 import collections
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,6 +19,11 @@ def audit(root, rows):
     names = [r['filename'] for r in rows]
     if len(set(n.casefold() for n in names)) != len(names):
         errors.append('duplicate/case-colliding catalog filenames')
+    html = root / 'catalog.html'
+    if html.exists():
+        embedded = re.search(r'const data = (.*?);\n', html.read_text())
+        if not embedded or json.loads(embedded.group(1)) != rows:
+            errors.append('HTML catalog data differs from JSON')
     visual_index = (root / 'INDEX.md').read_text()
     for row in rows:
         expected = f"**`{row['filename']}`** | {row['subcategory']} | `{row['width']}x{row['height']}` | {row['description']} | {row['usage']} |"

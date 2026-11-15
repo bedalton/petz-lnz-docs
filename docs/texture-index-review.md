@@ -37,6 +37,10 @@ Full retained audit passes all 238 entries. Search controls pass zero-match, cas
 
 No renderer/backend was invoked, changed or newly validated. No breed/game original was edited. Existing renderer observations are linked from [CUSTOM-001](../experiments/custom-001.md) and the Texture List reference, with their original version/species/control scope. Native game loading, tinting, transparency, orientation, collision and motion remain unvalidated. Resource provenance and target-version availability need separate verification before deployment.
 
+## Offline HTML explorer follow-up
+
+The supplied `catalog.html` also embeds a complete copy of the metadata. Synchronized it with corrected JSON, replaced the built-in-resource claim with verification limits, linked the selection guidance, labeled suggested uses and aligned browser multiword search with AND queries. The full audit now rejects HTML/JSON data drift. Verified embedded metadata equality for all238 entries and static document structure; browser interaction was not exercised. No artwork changed.
+
 ## Initial preflight — superseded
 
 The requested `/workspace/texture-index` directory was initially absent. `git ls-files '*texture*index*'` returned no tracked paths, and `find /workspace -type d -iname '*texture*index*'` returned no directories. The worktree was clean before that record. The user subsequently restored the folder; the missing-files condition is resolved.

@@ -1,6 +1,6 @@
 # Status
 
-- 2026-11-15 texture catalog reviewed: [findings](docs/texture-index-review.md), [agent workflow](texture-index/README.md). All238 BMP/PNG/dimension controls pass; four omitted table entries restored, unsafe syntax/behavior claims corrected, searchable metadata and hash/duplicate audit added. Provenance, resource availability and native behavior remain unvalidated; artwork stays local/ignored. Missing-files preflight resolved.
+- 2026-11-15 texture catalog reviewed: [findings](docs/texture-index-review.md), [agent workflow](texture-index/README.md). All238 BMP/PNG/dimension controls pass; four omitted table entries restored, unsafe syntax/behavior claims corrected, searchable metadata, synchronized offline HTML explorer and hash/duplicate audit added. Provenance, resource availability and native behavior remain unvalidated; artwork stays local/ignored. Missing-files preflight resolved.
 
 - 2026-11-15 final Face=0 interpretation: [FACE-001](experiments/face-001.md) now distinguishes young Siamese −1→0 integer no-ops (three geometries/twelve images) from adult lying yaw0/180 pixel-hidden geometry changes. Derived from the audited retained evidence; no new renders or input edits.
 

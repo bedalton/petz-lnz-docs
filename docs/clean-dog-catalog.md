@@ -41,3 +41,11 @@ Private evidence:
 ## Handoff
 
 Transfer the whole `clean_dogs/` folder, including ignored `petz4/` breed inputs and `reference/` images/metadata, with the documentation. Stock preview sheets are included there; stock binary links additionally need `games/petz4/`. A Git clone alone contains only the index and reproducible tooling. Input game files and renders were not committed. Original-game fidelity remains unverified.
+
+## Repository inclusion — 2026-11-15
+
+At the user’s request, the supplied baseline catalog is now versioned: 28 blank `.dog` inputs, 228 raw PNG views, 38 six-view sheets, the overview and 41 JSON evidence files. This supersedes the earlier ignored/private-only handoff instructions. Original stock binaries and game resources remain excluded; their table links are local-installation references. The catalog JSON records historical local paths and the renderer build above, not credentials. Supplied-file provenance and redistribution licensing remain unverified.
+
+No catalog assets were modified or regenerated. Retained input, image and sheet hashes and all 228 independently reconstructed tiles were checked against the original manifest; the documentation/private-file checks pass with assets staged. This verifies repository packaging of existing evidence, not current-renderer replay or native-game fidelity. The historical manifest and builder are preserved, including its original generated README wording; the current README supplies the revised sharing guidance.
+
+The local commit is ready for upload. GitHub delivery remains pending because this workspace has no HTTPS GitHub credentials, as recorded during texture delivery.

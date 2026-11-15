@@ -26,7 +26,8 @@ tracked=subprocess.check_output(['git','-c',f'safe.directory={ROOT}','ls-files',
 for path in tracked:
     if path.startswith('texture-index/') and Path(path).suffix.lower() == '.import':
         errors.append(f'texture editor sidecar tracked: {path}')
-    if path.startswith(('games/','scratch/','petz-renderer-mcp/','clean_dogs/reference/')) or Path(path).suffix.lower() in ('.dog','.cat','.pet','.dll','.exe','.lnz'):
+    shared_blank = Path(path).parent == Path('clean_dogs/petz4') and Path(path).suffix.lower() == '.dog'
+    if path.startswith(('games/','scratch/','petz-renderer-mcp/')) or (Path(path).suffix.lower() in ('.dog','.cat','.pet','.dll','.exe','.lnz') and not shared_blank):
         errors.append(f'private asset tracked: {path}')
 if errors:raise SystemExit('\n'.join(errors))
 print(f'Checked {len(pages)} Markdown pages, experiment JSON/hash syntax and tracked private-file exclusion.')

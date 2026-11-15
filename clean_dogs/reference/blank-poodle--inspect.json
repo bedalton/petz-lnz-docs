@@ -1,0 +1,893 @@
+{
+  "renderer_version": "0.1.0",
+  "game_version": "petz4",
+  "input": "petz4/poodle.dog",
+  "input_sha256": "7d12c21b10a9243431fb28252a4f0e67f3cac68e93be8e13bbf41a48ed9952fb",
+  "uploads": [
+    {
+      "name": "petz4/poodle.dog",
+      "sha256": "7d12c21b10a9243431fb28252a4f0e67f3cac68e93be8e13bbf41a48ed9952fb"
+    }
+  ],
+  "kind": "breed",
+  "species": "DOG",
+  "seed": 41,
+  "young_name": "PDPUP",
+  "layers": [
+    {
+      "label": "adult",
+      "breed_name": "PD",
+      "master_name": "DOGMASTER",
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Fur Markings",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "variation_pages": [
+    {
+      "label": "adult:breed:LNZ/PD",
+      "content_sha256": "b9eb191a90dba52222fec0c5c4b7378be8df57e7ca997fa53a770a74485c40b7",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    },
+    {
+      "label": "adult:master:LNZ/DOGMASTER",
+      "content_sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "Eyes",
+        "Fur Markings",
+        "Head Rotation Limits",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Num Ballz",
+        "Species",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "resources": {
+    "total": 93,
+    "offset": 0,
+    "limit": 100,
+    "next_offset": null,
+    "entries": [
+      {
+        "type": "BMP",
+        "name": "FIFI",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 34996,
+        "size": 10688
+      },
+      {
+        "type": "BMP",
+        "name": "SKIN1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 45684,
+        "size": 5174
+      },
+      {
+        "type": "LNZ",
+        "name": "PD",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 50860,
+        "size": 10586
+      },
+      {
+        "type": "LNZ",
+        "name": "PDPUP",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 61448,
+        "size": 8035
+      },
+      {
+        "type": "LNZ",
+        "name": "RAW_PD",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 69484,
+        "size": 35214
+      },
+      {
+        "type": "LNZ",
+        "name": "RAW_PDPUP",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 104700,
+        "size": 3404
+      },
+      {
+        "type": "SCP",
+        "name": "PD",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 108104,
+        "size": 33824
+      },
+      {
+        "type": "TXT",
+        "name": "BEVENT_DOG_PD",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 141928,
+        "size": 90
+      },
+      {
+        "type": "TXT",
+        "name": "PDSND",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 142020,
+        "size": 18742
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK10",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 160764,
+        "size": 4056
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK11",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 164820,
+        "size": 4458
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK13",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 169280,
+        "size": 2558
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK15",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 171840,
+        "size": 5632
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK16",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 177472,
+        "size": 5596
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK17",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 183068,
+        "size": 8274
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK19",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 191344,
+        "size": 11976
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK20",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 203320,
+        "size": 7784
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK21",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 211104,
+        "size": 10714
+      },
+      {
+        "type": "WAV",
+        "name": "POBANK22",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 221820,
+        "size": 6074
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 227896,
+        "size": 6182
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 234080,
+        "size": 3912
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 237992,
+        "size": 4094
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH7",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 242088,
+        "size": 7248
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH8",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 249336,
+        "size": 3580
+      },
+      {
+        "type": "WAV",
+        "name": "POBANKH9",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 252916,
+        "size": 2918
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKA0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 255836,
+        "size": 3548
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKA3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 259384,
+        "size": 5574
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKA4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 264960,
+        "size": 4020
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKF1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 268980,
+        "size": 5088
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKF2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 274068,
+        "size": 7318
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKF3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 281388,
+        "size": 7808
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKL0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 289196,
+        "size": 8264
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKL1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 297460,
+        "size": 6162
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKL2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 303624,
+        "size": 3692
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKL3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 307316,
+        "size": 5674
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 312992,
+        "size": 3104
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 316096,
+        "size": 10070
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 326168,
+        "size": 9214
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 335384,
+        "size": 3574
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 338960,
+        "size": 2370
+      },
+      {
+        "type": "WAV",
+        "name": "POBARKPUP6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 341332,
+        "size": 3472
+      },
+      {
+        "type": "WAV",
+        "name": "POCURIO0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 344804,
+        "size": 5574
+      },
+      {
+        "type": "WAV",
+        "name": "POCURIO1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 350380,
+        "size": 3988
+      },
+      {
+        "type": "WAV",
+        "name": "POCURIO2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 354368,
+        "size": 4026
+      },
+      {
+        "type": "WAV",
+        "name": "POCURIO3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 358396,
+        "size": 4496
+      },
+      {
+        "type": "WAV",
+        "name": "PODISGU0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 362892,
+        "size": 13282
+      },
+      {
+        "type": "WAV",
+        "name": "PODISGU1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 376176,
+        "size": 12272
+      },
+      {
+        "type": "WAV",
+        "name": "PODISGU4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 388448,
+        "size": 9392
+      },
+      {
+        "type": "WAV",
+        "name": "POGRUNT2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 397840,
+        "size": 4064
+      },
+      {
+        "type": "WAV",
+        "name": "POGRUNT3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 401904,
+        "size": 6818
+      },
+      {
+        "type": "WAV",
+        "name": "POGRUNT4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 408724,
+        "size": 6094
+      },
+      {
+        "type": "WAV",
+        "name": "POGRUNT5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 414820,
+        "size": 5170
+      },
+      {
+        "type": "WAV",
+        "name": "POGRUNT6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 419992,
+        "size": 4364
+      },
+      {
+        "type": "WAV",
+        "name": "POHOWL00",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 424356,
+        "size": 13234
+      },
+      {
+        "type": "WAV",
+        "name": "POHOWLY2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 437592,
+        "size": 2924
+      },
+      {
+        "type": "WAV",
+        "name": "POHOWLY3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 440516,
+        "size": 3016
+      },
+      {
+        "type": "WAV",
+        "name": "POHOWLY4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 443532,
+        "size": 5312
+      },
+      {
+        "type": "WAV",
+        "name": "POHOWLY5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 448844,
+        "size": 3174
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN00",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 452020,
+        "size": 8012
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 460032,
+        "size": 7118
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 467152,
+        "size": 11226
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 478380,
+        "size": 9290
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 487672,
+        "size": 11088
+      },
+      {
+        "type": "WAV",
+        "name": "POMOAN06",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 498760,
+        "size": 5604
+      },
+      {
+        "type": "WAV",
+        "name": "POPICKE0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 504364,
+        "size": 7880
+      },
+      {
+        "type": "WAV",
+        "name": "POPICKE1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 512244,
+        "size": 4926
+      },
+      {
+        "type": "WAV",
+        "name": "POPICKE2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 517172,
+        "size": 3902
+      },
+      {
+        "type": "WAV",
+        "name": "POPICKE3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 521076,
+        "size": 6010
+      },
+      {
+        "type": "WAV",
+        "name": "POPICKE4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 527088,
+        "size": 5304
+      },
+      {
+        "type": "WAV",
+        "name": "POSIGHH0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 532392,
+        "size": 7190
+      },
+      {
+        "type": "WAV",
+        "name": "POSIGHH1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 539584,
+        "size": 9068
+      },
+      {
+        "type": "WAV",
+        "name": "POSIGHH2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 548652,
+        "size": 11752
+      },
+      {
+        "type": "WAV",
+        "name": "POSTRUG0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 560404,
+        "size": 9636
+      },
+      {
+        "type": "WAV",
+        "name": "POSTRUG1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 570040,
+        "size": 3354
+      },
+      {
+        "type": "WAV",
+        "name": "POSTRUG2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 573396,
+        "size": 3310
+      },
+      {
+        "type": "WAV",
+        "name": "POSTRUG3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 576708,
+        "size": 9992
+      },
+      {
+        "type": "WAV",
+        "name": "POSTRUG4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 586700,
+        "size": 11160
+      },
+      {
+        "type": "WAV",
+        "name": "POSURPR0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 597860,
+        "size": 5234
+      },
+      {
+        "type": "WAV",
+        "name": "POSURPR1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 603096,
+        "size": 4188
+      },
+      {
+        "type": "WAV",
+        "name": "POSURPR2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 607284,
+        "size": 4502
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 611788,
+        "size": 6510
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 618300,
+        "size": 8218
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 626520,
+        "size": 11666
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 638188,
+        "size": 15736
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 653924,
+        "size": 6270
+      },
+      {
+        "type": "WAV",
+        "name": "POWHIMP7",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 660196,
+        "size": 7032
+      },
+      {
+        "type": "WAV",
+        "name": "PO_BARKANGRY02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 667228,
+        "size": 3132
+      },
+      {
+        "type": "WAV",
+        "name": "PO_BARKANGRY04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 670360,
+        "size": 2620
+      },
+      {
+        "type": "WAV",
+        "name": "PO_HOWL01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 672980,
+        "size": 16444
+      },
+      {
+        "type": "WAV",
+        "name": "PO_HOWL03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 689424,
+        "size": 11324
+      },
+      {
+        "type": 6,
+        "name": 1,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 700748,
+        "size": 78
+      },
+      {
+        "type": 6,
+        "name": 63,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 700828,
+        "size": 56
+      },
+      {
+        "type": 10,
+        "name": 1003,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 700884,
+        "size": 76
+      }
+    ]
+  },
+  "warnings": [
+    "inspection is data-only; rendering fidelity remains unverified"
+  ]
+}

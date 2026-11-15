@@ -1,0 +1,731 @@
+{
+  "renderer_version": "0.1.0",
+  "game_version": "petz4",
+  "input": "petz4/dalmatian--scottie-ears.dog",
+  "input_sha256": "43aa4991682b6ef386082f065388c8dbe2cb1013e5bad22d119277f5cc88c6eb",
+  "uploads": [
+    {
+      "name": "petz4/dalmatian--scottie-ears.dog",
+      "sha256": "43aa4991682b6ef386082f065388c8dbe2cb1013e5bad22d119277f5cc88c6eb"
+    }
+  ],
+  "kind": "breed",
+  "species": "DOG",
+  "seed": 41,
+  "young_name": "DMPUP",
+  "layers": [
+    {
+      "label": "adult",
+      "breed_name": "DM",
+      "master_name": "DOGMASTER",
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Additional Frames",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Fur Color Areas",
+        "Fur Markings",
+        "Fuzz Override",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "variation_pages": [
+    {
+      "label": "adult:breed:LNZ/DM",
+      "content_sha256": "b9206342c0c0ddc03a0937d0ae554f584f015fd938f05842ed04de4077acc8d8",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Additional Frames",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Fur Color Areas",
+        "Fuzz Override",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    },
+    {
+      "label": "adult:master:LNZ/DOGMASTER",
+      "content_sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "Eyes",
+        "Fur Markings",
+        "Head Rotation Limits",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Num Ballz",
+        "Species",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "resources": {
+    "total": 72,
+    "offset": 0,
+    "limit": 100,
+    "next_offset": null,
+    "entries": [
+      {
+        "type": "BMP",
+        "name": "SPOT",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 33588,
+        "size": 10688
+      },
+      {
+        "type": "LNZ",
+        "name": "DM",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 44276,
+        "size": 10366
+      },
+      {
+        "type": "LNZ",
+        "name": "DMPUP",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 54644,
+        "size": 8107
+      },
+      {
+        "type": "SCP",
+        "name": "DM",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 62752,
+        "size": 31148
+      },
+      {
+        "type": "TXT",
+        "name": "BEVENT_DOG_DM",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 93900,
+        "size": 97
+      },
+      {
+        "type": "TXT",
+        "name": "DMSND",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 94000,
+        "size": 19352
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKA2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 113352,
+        "size": 2630
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKA3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 115984,
+        "size": 2740
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKA4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 118724,
+        "size": 1914
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKA5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 120640,
+        "size": 5262
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKA6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 125904,
+        "size": 3366
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKF1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 129272,
+        "size": 2426
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKF3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 131700,
+        "size": 2612
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 134312,
+        "size": 1944
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 136256,
+        "size": 1654
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 137912,
+        "size": 2156
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 140068,
+        "size": 1768
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 141836,
+        "size": 2198
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKH6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 144036,
+        "size": 3340
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 147376,
+        "size": 2282
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 149660,
+        "size": 2842
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 152504,
+        "size": 2402
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 154908,
+        "size": 2934
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 157844,
+        "size": 2218
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKL6",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 160064,
+        "size": 2584
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 162648,
+        "size": 3546
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 166196,
+        "size": 4600
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 170796,
+        "size": 5030
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 175828,
+        "size": 4590
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 180420,
+        "size": 4354
+      },
+      {
+        "type": "WAV",
+        "name": "DABARKP5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 184776,
+        "size": 5512
+      },
+      {
+        "type": "WAV",
+        "name": "DABREED0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 190288,
+        "size": 7234
+      },
+      {
+        "type": "WAV",
+        "name": "DABREED1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 197524,
+        "size": 5878
+      },
+      {
+        "type": "WAV",
+        "name": "DABREED2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 203404,
+        "size": 5768
+      },
+      {
+        "type": "WAV",
+        "name": "DACURIO0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 209172,
+        "size": 4716
+      },
+      {
+        "type": "WAV",
+        "name": "DACURIO1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 213888,
+        "size": 2596
+      },
+      {
+        "type": "WAV",
+        "name": "DACURIO2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 216484,
+        "size": 3144
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELL10",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 219628,
+        "size": 2212
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELL11",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 221840,
+        "size": 2408
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELLO0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 224248,
+        "size": 2164
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELLO1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 226412,
+        "size": 4316
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELLO5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 230728,
+        "size": 2396
+      },
+      {
+        "type": "WAV",
+        "name": "DAHELLO9",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 233124,
+        "size": 2908
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWL00",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 236032,
+        "size": 10128
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWL01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 246160,
+        "size": 19962
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWL02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 266124,
+        "size": 20534
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYHI1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 286660,
+        "size": 2546
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYHI4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 289208,
+        "size": 2684
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYHI5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 291892,
+        "size": 2984
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYLO0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 294876,
+        "size": 3226
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYLO2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 298104,
+        "size": 2812
+      },
+      {
+        "type": "WAV",
+        "name": "DAHOWLYLO3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 300916,
+        "size": 2536
+      },
+      {
+        "type": "WAV",
+        "name": "DAMOAN00",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 303452,
+        "size": 6250
+      },
+      {
+        "type": "WAV",
+        "name": "DAMOAN01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 309704,
+        "size": 11274
+      },
+      {
+        "type": "WAV",
+        "name": "DAMOAN02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 320980,
+        "size": 4888
+      },
+      {
+        "type": "WAV",
+        "name": "DAMOAN03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 325868,
+        "size": 3516
+      },
+      {
+        "type": "WAV",
+        "name": "DAMOAN04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 329384,
+        "size": 8120
+      },
+      {
+        "type": "WAV",
+        "name": "DAPICK00",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 337504,
+        "size": 3600
+      },
+      {
+        "type": "WAV",
+        "name": "DAPICK01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 341104,
+        "size": 3548
+      },
+      {
+        "type": "WAV",
+        "name": "DAPICK02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 344652,
+        "size": 3700
+      },
+      {
+        "type": "WAV",
+        "name": "DAPICK03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 348352,
+        "size": 3034
+      },
+      {
+        "type": "WAV",
+        "name": "DASURPR0",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 351388,
+        "size": 2786
+      },
+      {
+        "type": "WAV",
+        "name": "DASURPR1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 354176,
+        "size": 2530
+      },
+      {
+        "type": "WAV",
+        "name": "DASURPR2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 356708,
+        "size": 3480
+      },
+      {
+        "type": "WAV",
+        "name": "DMFLEEI1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 360188,
+        "size": 7228
+      },
+      {
+        "type": "WAV",
+        "name": "DMFLEEI2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 367416,
+        "size": 5692
+      },
+      {
+        "type": "WAV",
+        "name": "DMFLEEI3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 373108,
+        "size": 12860
+      },
+      {
+        "type": "WAV",
+        "name": "DMFLEEI4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 385968,
+        "size": 10544
+      },
+      {
+        "type": "WAV",
+        "name": "DMFLEEI5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 396512,
+        "size": 8564
+      },
+      {
+        "type": 6,
+        "name": 1,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 405076,
+        "size": 78
+      },
+      {
+        "type": 6,
+        "name": 63,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 405156,
+        "size": 62
+      },
+      {
+        "type": 10,
+        "name": 1003,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 405220,
+        "size": 76
+      }
+    ]
+  },
+  "warnings": [
+    "inspection is data-only; rendering fidelity remains unverified"
+  ]
+}

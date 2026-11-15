@@ -1,0 +1,85 @@
+{
+  "renderer_version": "0.1.0",
+  "game_versions": [
+    "petz3",
+    "petz4",
+    "petz5"
+  ],
+  "application_operations": [
+    "get_capabilities",
+    "list_poses",
+    "render_pet",
+    "render_contact_sheet",
+    "compare_appearance",
+    "inspect_input"
+  ],
+  "transport_available": true,
+  "hard_deadline_enforced": true,
+  "input_extensions": [
+    "pet",
+    "dog",
+    "cat"
+  ],
+  "saved_game_versions": [
+    "petz4"
+  ],
+  "output_mime_type": "image/png",
+  "limits": {
+    "files": 32,
+    "file_bytes": 16777216,
+    "bundle_bytes": 33554432,
+    "max_width": 2048,
+    "max_height": 2048,
+    "max_pixels": 4194304,
+    "max_cells": 16,
+    "deadline_seconds": 60,
+    "worker_memory_bytes": 2147483648,
+    "worker_concurrency": 2,
+    "http_body_bytes": 67108864
+  },
+  "defaults": {
+    "breed_age": 12,
+    "breed_seed": 41,
+    "look": "age",
+    "breed_fatness": 50,
+    "saved_fatness": "saved_file_unless_overridden"
+  },
+  "limitations": [
+    "saved fatness needs a supported personality tail unless explicitly overridden",
+    "young breed previews require a valid [Little one] or explicit young_name",
+    "original-game fidelity is unverified"
+  ],
+  "service_contract": {
+    "repeatability": {
+      "deterministic_rendering": true,
+      "requires": [
+        "identical input bytes",
+        "identical shared engine bytes",
+        "identical parameters",
+        "identical renderer and dependency versions",
+        "identical Python runtime/platform"
+      ],
+      "scope": "rendered pixels and resolved appearance; audit IDs and timings may vary",
+      "breed_default_seed": 41,
+      "saved_seed": "saved seed; missing-cache fallback requires nonzero",
+      "local_files": "file changes change the input; paths alone do not identify content"
+    },
+    "data_handling": {
+      "source_files_modified": false,
+      "input_contents_persisted_by_renderer": false,
+      "output_images_persisted_by_renderer": false,
+      "request_history_persisted_by_renderer": false,
+      "processing": "request contents and images are held in memory for processing and response",
+      "audit_logs": "when configured, record IDs, hashes, versions, timings and error codes; no contents",
+      "external_retention": "MCP clients and hosting providers may retain their own logs or responses",
+      "outbound_network_calls_by_tools": "only user-supplied public HTTPS file URLs in hosted/advanced mode",
+      "download_urls": "fetched anew; URLs are not included in renderer audit logs; destination sees download requests"
+    }
+  },
+  "local_file_inputs": true,
+  "input_mode": "local_forms",
+  "request_envelope_available": false,
+  "upload_bundle_inputs": false,
+  "memory_limit_enforced": true,
+  "authentication": "local process/loopback access"
+}

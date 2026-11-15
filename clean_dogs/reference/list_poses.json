@@ -1,0 +1,65 @@
+{
+  "game_version": "petz4",
+  "poses": [
+    {
+      "name": "standing",
+      "set_name": "DOG",
+      "animation": 99,
+      "frame": 0,
+      "neutral_state": 61,
+      "bhd_sha256": "313787ca2af8137b76634097970408e38f519b1f9bd481dee72989be3d010a82",
+      "bdt_sha256": "7bbff82947bd1762fa99058ac6848528e3952058676e327c781d2b165cf1e870",
+      "catalogue": "petz4-stock-v1"
+    },
+    {
+      "name": "sitting",
+      "set_name": "DOG",
+      "animation": 177,
+      "frame": 1,
+      "neutral_state": 47,
+      "bhd_sha256": "313787ca2af8137b76634097970408e38f519b1f9bd481dee72989be3d010a82",
+      "bdt_sha256": "743efa638ab39361be18683f9f5641f4e66b2b4b4aca6c1c4a61951746a26695",
+      "catalogue": "petz4-stock-v1"
+    },
+    {
+      "name": "lying",
+      "set_name": "DOG",
+      "animation": 84,
+      "frame": 9,
+      "neutral_state": 60,
+      "bhd_sha256": "313787ca2af8137b76634097970408e38f519b1f9bd481dee72989be3d010a82",
+      "bdt_sha256": "d1d2f8c04a19a115a08c3dc979410d2845fefb3ad5fa96e9688c2c43e118f86d",
+      "catalogue": "petz4-stock-v1"
+    },
+    {
+      "name": "standing",
+      "set_name": "CAT",
+      "animation": 139,
+      "frame": 0,
+      "neutral_state": 130,
+      "bhd_sha256": "59425249ccc52aec792bfd83725dff541cc9f5279250b8f9262e45b39bcc4a67",
+      "bdt_sha256": "8555c6969f54c1c949c8eacb94b701852a97aec4a9a10e4f9c45442925cba746",
+      "catalogue": "petz4-stock-v1"
+    },
+    {
+      "name": "sitting",
+      "set_name": "CAT",
+      "animation": 261,
+      "frame": 14,
+      "neutral_state": 116,
+      "bhd_sha256": "59425249ccc52aec792bfd83725dff541cc9f5279250b8f9262e45b39bcc4a67",
+      "bdt_sha256": "07506f537bc8e36317801ee5d3320e2920bf81538708e0577d2a327f6317acde",
+      "catalogue": "petz4-stock-v1"
+    },
+    {
+      "name": "lying",
+      "set_name": "CAT",
+      "animation": 311,
+      "frame": 0,
+      "neutral_state": 129,
+      "bhd_sha256": "59425249ccc52aec792bfd83725dff541cc9f5279250b8f9262e45b39bcc4a67",
+      "bdt_sha256": "29ed7986a5a3cb84a3391df586e4d8a0af5f0862381d74226a27901bb4e40d85",
+      "catalogue": "petz4-stock-v1"
+    }
+  ]
+}

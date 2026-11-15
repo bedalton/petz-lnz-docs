@@ -32,7 +32,7 @@ Choose reasonable assumptions for minor missing details and record them. Ask for
 
 ## 2. Choose and inspect a baseline
 
-For supplied Petz 4 blanks, start with the [blank dog catalog](../clean_dogs/README.md): each exact filename links to six-view blank and stock sheets. Overview thumbnails fit each dog separately; compare full sheets for relative size. Transfer the ignored reference images with the breed files when handing off to another agent.
+For supplied Petz 4 blanks, start with the [blank dog catalog](../clean_dogs/README.md): each exact filename links to six-view blank and stock sheets. Overview thumbnails fit each dog separately; compare full sheets for relative size. The supplied blank breed files and reference gallery are included in Git for handoff to another agent; stock game binaries still require a local installation.
 
 Prefer an available breed with similar overall construction, proportions, ears, muzzle and coat organization. Record why it is suitable; do not choose solely by coat color. If several candidates exist, render a small comparison before committing. If only one is available, state the compromise.
 

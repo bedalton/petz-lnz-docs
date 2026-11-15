@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-15 clean_dogs catalog versioned at user request: [packaging evidence](docs/clean-dog-catalog.md#repository-inclusion--2026-11-15). Includes28 blank breeds,267 PNGs and41 JSON files; retained hashes/228 sheet tiles and docs checks pass. Stock game binaries remain excluded; earlier local-only handoff guidance is superseded. GitHub upload remains pending credentials.
+
 - 2026-11-15 supplied texture assets included at user request: [repository follow-up](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15). All238 BMPs,238 PNG previews andfive contact sheets versioned unchanged; editor sidecars excluded. Full catalog audit and documentation checks pass; provenance/game applicability remain unknown. Supersedes earlier local-only artwork guidance.
 
 - 2026-11-15 client-agent [texture reference](agent-guides/textures.md) added, including face-relative gradient recipe and [No Texture Rotate](format-reference/no-texture-rotate.md). Eight parser controls and sampler arithmetic pass on20cd029; no supported initial-angle LNZ field found. Older source/renderer -1 disagreement documented; gradient workflow proposed, not rendered/game-validated.

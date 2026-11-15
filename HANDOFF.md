@@ -581,3 +581,8 @@ Texture catalog follow-up: synchronized supplied offline `catalog.html` metadata
 2026-11-15: user requested repository storage so recipients need not locate the artwork separately. [Evidence and scope](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15). Versioned238 BMPs,238 matching PNG previews andfive contact sheets unchanged; retained238-entry hash audit and documentation checks pass. Updated scoped AGENTS exception, ignore/checker rules and catalog instructions; `.import` sidecars and other private assets stay excluded. Earlier local-only texture guidance is superseded. Provenance, licensing and native applicability remain unresolved; no rendering or original-file edits.
 
 Texture asset delivery: local commit includes the supplied palette PNG as well as catalog images. GitHub push failed because HTTPS credentials are unavailable; upload remains pending. See [repository follow-up](docs/texture-index-review.md#repository-assets-follow-up--2026-11-15).
+
+
+## clean_dogs repository packaging
+
+2026-11-15: user identified referenced baseline assets missing from Git. [Scope and verification](docs/clean-dog-catalog.md#repository-inclusion--2026-11-15). Added28 supplied blank breeds,267 PNGs (228 raw views,38 sheets,overview) and41 JSON evidence files unchanged; updated scoped instruction/checker exception and handoff guidance. Stock game originals and unrelated private assets remain excluded. Retained hashes and228 reconstructed sheet tiles pass; no renderer replay/new native validation. Historical builder/manifest preserved. GitHub upload remains pending unavailable HTTPS credentials.

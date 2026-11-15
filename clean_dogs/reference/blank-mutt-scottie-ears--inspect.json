@@ -1,0 +1,705 @@
+{
+  "renderer_version": "0.1.0",
+  "game_version": "petz4",
+  "input": "petz4/mutt--scottie-ears.dog",
+  "input_sha256": "6eca3c28a4f427d1bab34df9fb4a3dc75bd25240faa4b672837227326a495e67",
+  "uploads": [
+    {
+      "name": "petz4/mutt--scottie-ears.dog",
+      "sha256": "6eca3c28a4f427d1bab34df9fb4a3dc75bd25240faa4b672837227326a495e67"
+    }
+  ],
+  "kind": "breed",
+  "species": "DOG",
+  "seed": 41,
+  "young_name": "MTPUP",
+  "layers": [
+    {
+      "label": "adult",
+      "breed_name": "MT",
+      "master_name": "DOGMASTER",
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Fur Color Areas",
+        "Fur Markings",
+        "Fuzz Override",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "variation_pages": [
+    {
+      "label": "adult:breed:LNZ/MT",
+      "content_sha256": "6aae98b29e7e61fe61753cc6b191caa51ba5dc8eafeec977130141957856c459",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "256 Eyelid Color",
+        "Add Ball",
+        "Adjust Clothing",
+        "Ballz Info",
+        "Body Extension",
+        "Circle Render Mode",
+        "Color Info Override",
+        "Default Glue Ball",
+        "Default Linez File",
+        "Default Scales",
+        "Draw Linez Before Ballz",
+        "Draw Small Balls",
+        "Ear Extension",
+        "Eyes",
+        "Face Extension",
+        "Feet Enlargement",
+        "Force To Female",
+        "Force To Male",
+        "Fur Color Areas",
+        "Fuzz Override",
+        "Head Enlargement",
+        "Head Rotation Limits",
+        "Head Shot",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Leg Extension",
+        "Line Render Mode",
+        "Linez",
+        "Little one",
+        "Lnz Version",
+        "Move",
+        "Num Ballz",
+        "Omissions",
+        "Outline Color Override",
+        "Paint Ballz",
+        "Project Ball",
+        "Sounds",
+        "Species",
+        "Texture List",
+        "Thin/Fat",
+        "Z Shade Slope"
+      ]
+    },
+    {
+      "label": "adult:master:LNZ/DOGMASTER",
+      "content_sha256": "3ea6eb93e2238448d13cf7122de6b4db66d39c209c07c68c303c8a86d49dae01",
+      "seed": 41,
+      "total_blocks": 0,
+      "offset": 0,
+      "next_offset": null,
+      "blocks": [],
+      "editor_override": false,
+      "section_names": [
+        "Eyes",
+        "Fur Markings",
+        "Head Rotation Limits",
+        "Head Tilt Limits",
+        "Key Balls",
+        "Num Ballz",
+        "Species",
+        "Z Shade Slope"
+      ]
+    }
+  ],
+  "resources": {
+    "total": 69,
+    "offset": 0,
+    "limit": 100,
+    "next_offset": null,
+    "entries": [
+      {
+        "type": "BMP",
+        "name": "SCRAPPY",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 33836,
+        "size": 10688
+      },
+      {
+        "type": "LNZ",
+        "name": "MT",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 44524,
+        "size": 9903
+      },
+      {
+        "type": "LNZ",
+        "name": "MTPUP",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 54428,
+        "size": 7557
+      },
+      {
+        "type": "SCP",
+        "name": "MT",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 61988,
+        "size": 30272
+      },
+      {
+        "type": "TXT",
+        "name": "BEVENT_DOG_MT",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 92260,
+        "size": 104
+      },
+      {
+        "type": "TXT",
+        "name": "MTSND",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 92364,
+        "size": 19544
+      },
+      {
+        "type": "WAV",
+        "name": "MTFLEEI1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 111908,
+        "size": 7228
+      },
+      {
+        "type": "WAV",
+        "name": "MTFLEEI2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 119136,
+        "size": 5692
+      },
+      {
+        "type": "WAV",
+        "name": "MTFLEEI3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 124828,
+        "size": 12860
+      },
+      {
+        "type": "WAV",
+        "name": "MTFLEEI4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 137688,
+        "size": 10544
+      },
+      {
+        "type": "WAV",
+        "name": "MTFLEEI5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 148232,
+        "size": 8564
+      },
+      {
+        "type": "WAV",
+        "name": "MTPLEAS1",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 156796,
+        "size": 10314
+      },
+      {
+        "type": "WAV",
+        "name": "MTPLEAS2",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 167112,
+        "size": 14826
+      },
+      {
+        "type": "WAV",
+        "name": "MTPLEAS3",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 181940,
+        "size": 13018
+      },
+      {
+        "type": "WAV",
+        "name": "MTPLEAS4",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 194960,
+        "size": 14992
+      },
+      {
+        "type": "WAV",
+        "name": "MTPLEAS5",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 209952,
+        "size": 7878
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKANGRY01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 217832,
+        "size": 2374
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKANGRY03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 220208,
+        "size": 2976
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKANGRY04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 223184,
+        "size": 2174
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKANGRY05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 225360,
+        "size": 2140
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 227500,
+        "size": 2174
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 229676,
+        "size": 2174
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY10",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 231852,
+        "size": 2718
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY11",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 234572,
+        "size": 2304
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY13",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 236876,
+        "size": 2174
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHAPPY14",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 239052,
+        "size": 2158
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 241212,
+        "size": 2836
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 244048,
+        "size": 2836
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 246884,
+        "size": 2646
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO06",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 249532,
+        "size": 2612
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO07",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 252144,
+        "size": 2436
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKHELLO08",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 254580,
+        "size": 2114
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKLOW02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 256696,
+        "size": 2540
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKLOW03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 259236,
+        "size": 2072
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKLOW04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 261308,
+        "size": 2274
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKLOW05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 263584,
+        "size": 2174
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKLOW06",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 265760,
+        "size": 2876
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKPLAY01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 268636,
+        "size": 3546
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKPLAY02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 272184,
+        "size": 3412
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKPLAY03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 275596,
+        "size": 3644
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKPLAY04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 279240,
+        "size": 2506
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BARKPLAY05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 281748,
+        "size": 3982
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BREED01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 285732,
+        "size": 6560
+      },
+      {
+        "type": "WAV",
+        "name": "MT_BREED02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 292292,
+        "size": 7300
+      },
+      {
+        "type": "WAV",
+        "name": "MT_CURIOUS01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 299592,
+        "size": 4034
+      },
+      {
+        "type": "WAV",
+        "name": "MT_CURIOUS02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 303628,
+        "size": 3882
+      },
+      {
+        "type": "WAV",
+        "name": "MT_CURIOUS03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 307512,
+        "size": 4484
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWL03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 311996,
+        "size": 9676
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWL04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 321672,
+        "size": 10012
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWL05",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 331684,
+        "size": 9812
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWL09",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 341496,
+        "size": 17414
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWLYIPHIGH02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 358912,
+        "size": 3412
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWLYIPLOW01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 362324,
+        "size": 3330
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWLYIPLOW06",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 365656,
+        "size": 3076
+      },
+      {
+        "type": "WAV",
+        "name": "MT_HOWLYIPLOW07",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 368732,
+        "size": 3392
+      },
+      {
+        "type": "WAV",
+        "name": "MT_MOAN01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 372124,
+        "size": 9710
+      },
+      {
+        "type": "WAV",
+        "name": "MT_PICKEDUP01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 381836,
+        "size": 7316
+      },
+      {
+        "type": "WAV",
+        "name": "MT_PICKEDUP02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 389152,
+        "size": 4820
+      },
+      {
+        "type": "WAV",
+        "name": "MT_PICKEDUP03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 393972,
+        "size": 3882
+      },
+      {
+        "type": "WAV",
+        "name": "MT_PICKEDUP04",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 397856,
+        "size": 3262
+      },
+      {
+        "type": "WAV",
+        "name": "MT_SPEAK01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 401120,
+        "size": 6158
+      },
+      {
+        "type": "WAV",
+        "name": "MT_SPEAK02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 407280,
+        "size": 8704
+      },
+      {
+        "type": "WAV",
+        "name": "MT_SPEAK03",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 415984,
+        "size": 10514
+      },
+      {
+        "type": "WAV",
+        "name": "MT_SURPRISED01",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 426500,
+        "size": 3612
+      },
+      {
+        "type": "WAV",
+        "name": "MT_SURPRISED02",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 430112,
+        "size": 3816
+      },
+      {
+        "type": "WAV",
+        "name": "MT_WHINE10",
+        "language": 1033,
+        "codepage": 0,
+        "offset": 433928,
+        "size": 9978
+      },
+      {
+        "type": 6,
+        "name": 1,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 443908,
+        "size": 78
+      },
+      {
+        "type": 6,
+        "name": 63,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 443988,
+        "size": 58
+      },
+      {
+        "type": 10,
+        "name": 1003,
+        "language": 1033,
+        "codepage": 0,
+        "offset": 444048,
+        "size": 76
+      }
+    ]
+  },
+  "warnings": [
+    "inspection is data-only; rendering fidelity remains unverified"
+  ]
+}

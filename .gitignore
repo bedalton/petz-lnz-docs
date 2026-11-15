@@ -4,9 +4,6 @@
 # Existing external renderer checkout: record integration before vendoring.
 /petz-renderer-mcp/
 __pycache__/
-# Private blank-breed inputs and generated renderer reference images.
-/clean_dogs/**/*.dog
-/clean_dogs/**/*.cat
-/clean_dogs/reference/
+# Supplied clean_dogs catalog is shared; OS metadata stays ignored.
 # Editor sidecars are unnecessary for the shared texture catalog.
 /texture-index/*.import

@@ -17,3 +17,5 @@ These are community authors' practical accounts, not official specifications. Da
 ## Custom texture authoring
 
 [Focused texture-source review](custom-textures.md) (2026-11-15) covers Shadowfinder palette conversion, Cat Magic indexed BMP creation and Unique Petz dithering. [CUSTOM-001](../experiments/custom-001.md) tests original artwork separately from those source-reported workflows.
+
+[Focused mouth-source review](mouth-shaping.md) (2026-11-15) separates Carolyn Horn’s Face Extension and tongue size-reference claims from renderer tests and untested native motion.

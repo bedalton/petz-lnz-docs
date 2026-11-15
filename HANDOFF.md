@@ -1,5 +1,7 @@
 # Handoff
 
+- 2026-11-15 mouth-source review: [attributed claims and boundaries](sources/mouth-shaping.md). Face Extension and tongue size-reference passages checked against the primary author’s pages; private retrieval hashes retained. No native-game validation; controlled mouth research continues under the current 30-minute authorization.
+
 - 2026-11-13 functional-anatomy rule expanded explicitly to muzzle/snout, nose/nostrils, cheeks, jowls, lips/mouth corners, chin, jaw and tongue: [mouth guide](visual-editing/existing-mouth-and-muzzle.md). All authoring routes/checklists updated. Mastiff hid added mouth details, not every base mouth ball. Mouth-specific recipe/motion gaps remain shared research; no new experiment or breed edit.
 
 - 2026-11-13 shared anatomy research complete: [ANATOMY-002](experiments/anatomy-002.md), [existing ear/tail recipes](visual-editing/existing-ears-and-tail.md). Six nonreplacement controls, 96 local MCP renders, 48 geometry records, 512 branch-preserving parser comparisons; original anatomy/dependencies retained. Agent workflow now requires reuse and forbids hidden/recreated ears/tails. Native motion, full folds/taper and broader applicability remain open; Mastiff unchanged.

@@ -1,5 +1,7 @@
 # Status
 
+- 2026-11-15 mouth-source review: [attributed claims and boundaries](sources/mouth-shaping.md). Face Extension and tongue size-reference passages checked against the primary author’s pages; private retrieval hashes retained. No native-game validation; controlled mouth research continues under the current 30-minute authorization.
+
 - 2026-11-15 untracked istall-node inspected: [findings](docs/workspace-node-installer.md). NodeSource24 repository setup script, November9 mtime, repeatedly preserved since November10. Creator/recreation mechanism not established; no execution or file change.
 
 - 2026-11-15 renderer reinstalled/reloaded: [UPDATE-013](experiments/update-013.md), source20cd029 in scratch/petz-local-x86-venv. HTTP8765 PID1543/session9456; six tools,12 named/raw/direct pose triples and21 original hashes pass;62 installed sources match. Corrected lying DOG79/29 and CAT263/24 active. Earlier missing-source preflight is superseded; hosted/client caches and broad historical replays remain outside scope.
